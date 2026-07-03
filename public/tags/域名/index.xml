@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on 欣淇AI网站</title>
-    <link>/posts/</link>
-    <description>Recent content in Posts on 欣淇AI网站</description>
+    <title>域名 on 欣淇AI网站</title>
+    <link>/tags/%E5%9F%9F%E5%90%8D/</link>
+    <description>Recent content in 域名 on 欣淇AI网站</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 03 Jul 2026 22:00:00 +0800</lastBuildDate>
-    <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/%E5%9F%9F%E5%90%8D/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>搞了个免费域名，真香。手把手注册教程</title>
       <link>/posts/free-domain-guide/</link>
       <pubDate>Fri, 03 Jul 2026 22:00:00 +0800</pubDate>
       <guid>/posts/free-domain-guide/</guid>
       <description>最近白嫖了一个永久免费的域名，配合 Cloudflare 用起来贼爽。写篇教程分享给需要的朋友。</description>
-    </item>
-    <item>
-      <title>AI 新纪元：從深度學習到大語言模型</title>
-      <link>/posts/my-first-post/</link>
-      <pubDate>Fri, 03 Jul 2026 20:55:59 +0800</pubDate>
-      <guid>/posts/my-first-post/</guid>
-      <description>回顧人工智能發展歷程，從深度學習崛起到大語言模型的爆發，我們正站在技術革命的關鍵節點。</description>
     </item>
   </channel>
 </rss>
