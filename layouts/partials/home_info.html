@@ -1,0 +1,67 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content md-content">
+        {{ $opts := dict "display" "block" }}
+        {{ .Content | $.Page.RenderString $opts }}
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+    </footer>
+
+    {{- with site.Params.contact }}
+    <div class="home-contact">
+        <div class="home-contact-card">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>联系我：</span>
+            <a href="mailto:{{ .email }}" class="contact-email">{{ .email }}</a>
+        </div>
+    </div>
+    {{- end }}
+</article>
+
+<style>
+.home-contact {
+    margin-top: 32px;
+    padding-top: 24px;
+}
+
+.home-contact-card {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: rgba(0, 210, 255, 0.06);
+    border: 1px solid rgba(0, 210, 255, 0.15);
+    border-radius: 10px;
+    color: var(--secondary);
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.home-contact-card:hover {
+    background: rgba(0, 210, 255, 0.1);
+    border-color: rgba(0, 210, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.08);
+}
+
+.home-contact-card svg {
+    color: #00d2ff;
+    flex-shrink: 0;
+}
+
+.contact-email {
+    color: #00d2ff !important;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: all 0.3s ease;
+}
+
+.contact-email:hover {
+    color: #00ff66 !important;
+    text-shadow: 0 0 10px rgba(0, 255, 102, 0.3);
+}
+</style>
+{{- end -}}

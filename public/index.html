@@ -180,7 +180,57 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
     </footer>
+    <div class="home-contact">
+        <div class="home-contact-card">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>联系我：</span>
+            <a href="mailto:daipo971@gmail.com" class="contact-email">daipo971@gmail.com</a>
+        </div>
+    </div>
 </article>
+
+<style>
+.home-contact {
+    margin-top: 32px;
+    padding-top: 24px;
+}
+
+.home-contact-card {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: rgba(0, 210, 255, 0.06);
+    border: 1px solid rgba(0, 210, 255, 0.15);
+    border-radius: 10px;
+    color: var(--secondary);
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.home-contact-card:hover {
+    background: rgba(0, 210, 255, 0.1);
+    border-color: rgba(0, 210, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.08);
+}
+
+.home-contact-card svg {
+    color: #00d2ff;
+    flex-shrink: 0;
+}
+
+.contact-email {
+    color: #00d2ff !important;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: all 0.3s ease;
+}
+
+.contact-email:hover {
+    color: #00ff66 !important;
+    text-shadow: 0 0 10px rgba(0, 255, 102, 0.3);
+}
+</style>
 
 <article class="post-entry"> 
   <header class="entry-header">
@@ -231,14 +281,26 @@ Transformer 的誕生 2017 年，Google 發表了論文 “Attention Is All You 
         <span>&copy; 2026 <a href="/">欣淇AI网站</a></span> · 
         探索 · 创新 · 未来 · 
 
-    
-    
+    <span>
+        联系我：
+        <a href="mailto:daipo971@gmail.com" title="发送邮件" style="color: var(--secondary); transition: color 0.3s ease;">
+            daipo971@gmail.com
+        </a> · 
+    </span>
+
     <span>
         Powered by
         <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
+
+<style>
+.footer a[href^="mailto"]:hover {
+    color: #00ff66 !important;
+    text-shadow: 0 0 10px rgba(0, 255, 102, 0.3);
+}
+</style>
 <a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
@@ -250,12 +312,11 @@ Transformer 的誕生 2017 年，Google 發表了論文 “Attention Is All You 
 <script>
     let menu = document.getElementById('menu');
     if (menu) {
-        
         const scrollPosition = localStorage.getItem("menu-scroll-position");
         if (scrollPosition) {
             menu.scrollLeft = parseInt(scrollPosition, 10);
         }
-        
+
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }

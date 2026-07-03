@@ -16,6 +16,10 @@ theme = "PaperMod"
     hideCopyright = false
     text = "探索 · 创新 · 未来"
 
+  # 聯絡方式
+  [params.contact]
+    email = "daipo971@gmail.com"
+
 [menu]
   [[menu.main]]
     identifier = "home"

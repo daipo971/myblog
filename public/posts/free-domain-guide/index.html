@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
   "keywords": [
     "域名", "教程", "免费资源", "Cloudflare"
   ],
-  "articleBody": "前几天折腾个人项目的时候，发现域名又要续费了。.com 一年十几刀倒也不算贵，但折腾项目多的时候，一个项目配一个域名，累积下来也是一笔开销。\n然后群里老哥丢了个链接过来：DigitalPlat FreeDomain，一个免费域名项目。\n试了一下，确实能注册到正经的域名，不是那种二级域名或者跳转子域名，是可以在 Cloudflare 上自己管 NS 记录的真·域名。香。\n写篇完整的教程，省得你们再踩坑。\n能薅到什么 目前 DigitalPlat 提供的免费后缀有这几个：\n后缀 推荐度 说明 .dpdns.org ⭐⭐⭐⭐⭐ 最稳，推荐 .qzz.io ⭐⭐⭐⭐ 也可以，短 .us.kg ❌ 要付 $2，不建议 .xx.kg ❌ 同样要付 $2 我这个教程里就用 .dpdns.org，完全免费，一年后续期也是免费的，只剩 180 天的时候可以续。\n配合 Cloudflare 的免费 DNS 解析 + 免费 CDN，零成本跑一个个人站完全没问题——比如我这个博客就是 Hugo + Cloudflare Pages 搭的，域名再白嫖一个，成本为零。\n注册步骤 第一步：打开注册页面 点这个链接：https://dash.domain.digitalplat.org/signup?ref=2di59PPMUK\n填表。字段看着多，其实都是常规信息。\n我填的示例：\n字段 示例值 Username 你想要的用户名 Full Name San Zhang（空格隔开，姓和名都要） Email 你的邮箱 Phone +1-1234567890（格式要对） Full Address 13 Sweet William Way, West Tisbury, ma, 2575 United States Password 至少12位，大小写+数字+符号混搭 地址不用写真实的，格式搞对就行。\n第二步：验证邮箱 提交后去邮箱收验证链接，点一下。如果收件箱没有，看看垃圾箱。\n第三步：KYC 验证 登录进去之后，会让你做 KYC。这里需要用 GitHub 账号来验证——没错，没 GitHub 号的话先去注册一个。\n验证方式很简单：在 Dashboard 里点 GitHub 授权，跳转到 GitHub 点一下 Authorize，完事。\n第四步：Star 仓库提额度 默认注册完只能搞一个域名。想要第二个？去 GitHub 上 Star 一下 FreeDomain 仓库，回到 Dashboard 点 “Verify” 刷新一下，额度就变成 2 个了。\n第五步：注册域名 左边菜单点 Domain Registration，输入你想要的前缀（比如你的博客名、项目名），选 .dpdns.org。\nNameservers 这里有两种玩法：\n方案一：填 Cloudflare 的 NS（如果你打算用 Cloudflare 管理） 方案二：填 DigitalPlat 自带的 ns1.digitalplat.net / ns2.digitalplat.net 如果你要用 Cloudflare，操作顺序是：\n先在 Cloudflare 添加域名（它会扫描现有记录） 把 Cloudflare 给的 NS 地址填进 DigitalPlat 等 Cloudflare 那边激活（通常几分钟） 遇到的一些坑 注册时 “Network Error” 刷新一下页面重新提交就行，偶尔会有网络波动。\nPhone 格式不对 严格按 +1-XXXXXXXXXX 的格式，区号不能少。\nKYC 验证不通过 确保你的 GitHub 账号是正常注册的，不要是刚注册的新号。建议注册完过几天再做 KYC。\n域名注册后不生效 NS 记录可能有缓存，等 5-10 分钟。如果超过半小时还没生效，检查 NS 地址有没有填错。\n还能怎么用 拿到域名之后，玩法很多：\nCloudflare Pages / Vercel / Netlify 绑定自定义域名，免费部署个人站 Github Pages 绑定自定义域名，装逼指数飙升 反向代理自建服务，配合 Cloudflare Tunnel 不用暴露家里 IP 临时邮箱 / 短链接 / 图床 等自建小工具 我自己是绑了 Cloudflare Pages，Hugo 构建完推送 GitHub 自动部署，域名也是白嫖的——整条链路花销为零。\n写在最后 免费域名这种资源说多不多，说少不少。DigitalPlat 这个项目目前还算良心，一年后续约也是免费的，至于能撑多久不好说——这类项目大多靠捐助和爱发电运营，且用且珍惜。\n有需要的趁早注册，链接再放一次：https://dash.domain.digitalplat.org/signup?ref=2di59PPMUK\n有什么问题评论区见。\n",
+  "articleBody": "前几天折腾个人项目的时候，发现域名又要续费了。.com 一年十几刀倒也不算贵，但折腾项目多的时候，一个项目配一个域名，累积下来也是一笔开销。\n然后群里老哥丢了个链接过来：DigitalPlat FreeDomain，一个免费域名项目。\n试了一下，确实能注册到正经的域名，不是那种二级域名或者跳转子域名，是可以在 Cloudflare 上自己管 NS 记录的真·域名。香。\n写篇完整的教程，省得你们再踩坑。\n能薅到什么 目前 DigitalPlat 提供的免费后缀有这几个：\n后缀 推荐度 说明 .dpdns.org ⭐⭐⭐⭐⭐ 最稳，推荐 .qzz.io ⭐⭐⭐⭐ 也可以，短 .us.kg ❌ 要付 $2，不建议 .xx.kg ❌ 同样要付 $2 我这个教程里就用 .dpdns.org，完全免费，一年后续期也是免费的，只剩 180 天的时候可以续。\n配合 Cloudflare 的免费 DNS 解析 + 免费 CDN，零成本跑一个个人站完全没问题——比如我这个博客就是 Hugo + Cloudflare Pages 搭的，域名再白嫖一个，成本为零。\n注册步骤 第一步：打开注册页面 点这个链接：https://dash.domain.digitalplat.org/signup?ref=2di59PPMUK\n填表。字段看着多，其实都是常规信息。\n我填的示例：\n字段 示例值 Username 你想要的用户名 Full Name San Zhang（空格隔开，姓和名都要） Email 你的邮箱 Phone +1-1234567890（格式要对） Full Address 13 Sweet William Way, West Tisbury, ma, 2575 United States Password 至少12位，大小写+数字+符号混搭 地址不用写真实的，格式搞对就行。\n第二步：验证邮箱 提交后去邮箱收验证链接，点一下。如果收件箱没有，看看垃圾箱。\n第三步：KYC 验证 登录进去之后，会让你做 KYC。这里需要用 GitHub 账号来验证——没错，没 GitHub 号的话先去注册一个。\n验证方式很简单：在 Dashboard 里点 GitHub 授权，跳转到 GitHub 点一下 Authorize，完事。\n第四步：Star 仓库提额度 默认注册完只能搞一个域名。想要第二个？去 GitHub 上 Star 一下 FreeDomain 仓库，回到 Dashboard 点 “Verify” 刷新一下，额度就变成 2 个了。\n第五步：注册域名 左边菜单点 Domain Registration，输入你想要的前缀（比如你的博客名、项目名），选 .dpdns.org。\nNameservers 这里有两种玩法：\n方案一：填 Cloudflare 的 NS（如果你打算用 Cloudflare 管理） 方案二：填 DigitalPlat 自带的 ns1.digitalplat.net / ns2.digitalplat.net 如果你要用 Cloudflare，操作顺序是：\n先在 Cloudflare 添加域名（它会扫描现有记录） 把 Cloudflare 给的 NS 地址填进 DigitalPlat 等 Cloudflare 那边激活（通常几分钟） 遇到的一些坑 注册时 “Network Error” 刷新一下页面重新提交就行，偶尔会有网络波动。\nPhone 格式不对 严格按 +1-XXXXXXXXXX 的格式，区号不能少。\nKYC 验证不通过 确保你的 GitHub 账号是正常注册的，不要是刚注册的新号。建议注册完过几天再做 KYC。\n域名注册后不生效 NS 记录可能有缓存，等 5-10 分钟。如果超过半小时还没生效，检查 NS 地址有没有填错。\n还能怎么用 拿到域名之后，玩法很多：\nCloudflare Pages / Vercel / Netlify 绑定自定义域名，免费部署个人站 Github Pages 绑定自定义域名，装逼指数飙升 反向代理自建服务，配合 Cloudflare Tunnel 不用暴露家里 IP 临时邮箱 / 短链接 / 图床 等自建小工具 我自己是绑了 Cloudflare Pages，Hugo 构建完推送 GitHub 自动部署，域名也是白嫖的——整条链路花销为零。\n写在最后 免费域名这种资源说多不多，说少不少。DigitalPlat 这个项目目前还算良心，一年后续约也是免费的，至于能撑多久不好说——这类项目大多靠捐助和爱发电运营，且用且珍惜。\n有需要的趁早注册，链接再放一次：https://dash.domain.digitalplat.org/signup?ref=2di59PPMUK\n有什么问题可以给我发邮件：daipo971@gmail.com，或者直接在下面评论区留言。\n",
   "wordCount" : "203",
   "inLanguage": "en",
   "datePublished": "2026-07-03T22:00:00+08:00",
@@ -347,7 +347,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <h2 id="写在最后">写在最后<a hidden class="anchor" aria-hidden="true" href="#写在最后">#</a></h2>
 <p>免费域名这种资源说多不多，说少不少。DigitalPlat 这个项目目前还算良心，一年后续约也是免费的，至于能撑多久不好说——这类项目大多靠捐助和爱发电运营，且用且珍惜。</p>
 <p>有需要的趁早注册，链接再放一次：https://dash.domain.digitalplat.org/signup?ref=2di59PPMUK</p>
-<p>有什么问题评论区见。</p>
+<p>有什么问题可以给我发邮件：<strong><a href="mailto:daipo971@gmail.com">daipo971@gmail.com</a></strong>，或者直接在下面评论区留言。</p>
 
 
   </div>
@@ -360,6 +360,184 @@ document.addEventListener('DOMContentLoaded', function() {
       <li><a href="/tags/cloudflare/">Cloudflare</a></li>
     </ul>
   </footer>
+<div class="comment-section">
+    <h2 id="comments">💬 评论区</h2>
+    <p class="comment-intro">欢迎在下方留言交流。提交后我会收到你的评论，会尽快回复。</p>
+
+    <form id="comment-form" class="comment-form" onsubmit="return submitComment(event)">
+        <div class="comment-field">
+            <label for="comment-name">昵称 *</label>
+            <input type="text" id="comment-name" name="name" required placeholder="你的名字或昵称">
+        </div>
+        <div class="comment-field">
+            <label for="comment-email">邮箱（不公开）</label>
+            <input type="email" id="comment-email" name="email" placeholder="可选，方便我回复你">
+        </div>
+        <div class="comment-field">
+            <label for="comment-content">评论内容 *</label>
+            <textarea id="comment-content" name="content" rows="5" required placeholder="写下你的想法……"></textarea>
+        </div>
+        <div class="comment-actions">
+            <button type="submit" class="comment-submit">
+                <span>发送评论</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+        </div>
+        <div id="comment-status" class="comment-status hidden"></div>
+    </form>
+</div>
+
+<style>
+.comment-section {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(0, 210, 255, 0.15);
+}
+
+.comment-section h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.comment-intro {
+    color: var(--secondary);
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.comment-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.comment-field label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--secondary);
+}
+
+.comment-field input,
+.comment-field textarea {
+    background: rgba(17, 17, 24, 0.8);
+    border: 1px solid rgba(0, 210, 255, 0.15);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: var(--primary);
+    font-family: inherit;
+    font-size: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.comment-field input:focus,
+.comment-field textarea:focus {
+    border-color: #00d2ff;
+    box-shadow: 0 0 12px rgba(0, 210, 255, 0.15);
+}
+
+.comment-field textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.comment-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.comment-submit {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, rgba(0, 210, 255, 0.15) 0%, rgba(0, 255, 102, 0.1) 100%);
+    border: 1px solid rgba(0, 210, 255, 0.25);
+    border-radius: 8px;
+    color: #00d2ff;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.comment-submit:hover {
+    background: linear-gradient(135deg, rgba(0, 210, 255, 0.25) 0%, rgba(0, 255, 102, 0.2) 100%);
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+.comment-status {
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.comment-status.success {
+    background: rgba(0, 255, 102, 0.1);
+    border: 1px solid rgba(0, 255, 102, 0.2);
+    color: #00ff66;
+}
+
+.comment-status.error {
+    background: rgba(255, 68, 102, 0.1);
+    border: 1px solid rgba(255, 68, 102, 0.2);
+    color: #ff4466;
+}
+
+.comment-status.hidden {
+    display: none;
+}
+</style>
+
+<script>
+function submitComment(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('comment-name').value.trim();
+    const email = document.getElementById('comment-email').value.trim();
+    const content = document.getElementById('comment-content').value.trim();
+    const status = document.getElementById('comment-status');
+
+    if (!name || !content) return false;
+
+    const pageTitle = document.title || '搞了个免费域名，真香。手把手注册教程';
+    const pageUrl = window.location.href;
+
+    const body = `来自博客评论区的新评论\n\n` +
+        `文章：${pageTitle}\n` +
+        `链接：${pageUrl}\n` +
+        `昵称：${name}\n` +
+        `邮箱：${email || '未填写'}\n\n` +
+        `评论内容：\n${content}\n\n---\n本邮件由博客评论区自动生成`;
+
+    const mailto = `mailto:daipo971@gmail.com?subject=${encodeURIComponent('[博客评论] ' + pageTitle)}&body=${encodeURIComponent(body)}`;
+
+    status.className = 'comment-status success';
+    status.textContent = '✅ 正在打开你的邮件客户端发送评论……发送后我会尽快回复！';
+
+    window.location.href = mailto;
+
+    
+    setTimeout(() => {
+        document.getElementById('comment-name').value = '';
+        document.getElementById('comment-email').value = '';
+        document.getElementById('comment-content').value = '';
+    }, 2000);
+
+    return false;
+}
+</script>
 </article>
     </main>
     
@@ -367,14 +545,26 @@ document.addEventListener('DOMContentLoaded', function() {
         <span>&copy; 2026 <a href="/">欣淇AI网站</a></span> · 
         探索 · 创新 · 未来 · 
 
-    
-    
+    <span>
+        联系我：
+        <a href="mailto:daipo971@gmail.com" title="发送邮件" style="color: var(--secondary); transition: color 0.3s ease;">
+            daipo971@gmail.com
+        </a> · 
+    </span>
+
     <span>
         Powered by
         <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
+
+<style>
+.footer a[href^="mailto"]:hover {
+    color: #00ff66 !important;
+    text-shadow: 0 0 10px rgba(0, 255, 102, 0.3);
+}
+</style>
 <a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
@@ -386,12 +576,11 @@ document.addEventListener('DOMContentLoaded', function() {
 <script>
     let menu = document.getElementById('menu');
     if (menu) {
-        
         const scrollPosition = localStorage.getItem("menu-scroll-position");
         if (scrollPosition) {
             menu.scrollLeft = parseInt(scrollPosition, 10);
         }
-        
+
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }

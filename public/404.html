@@ -157,14 +157,26 @@ document.addEventListener('DOMContentLoaded', function() {
         <span>&copy; 2026 <a href="/">欣淇AI网站</a></span> · 
         探索 · 创新 · 未来 · 
 
-    
-    
+    <span>
+        联系我：
+        <a href="mailto:daipo971@gmail.com" title="发送邮件" style="color: var(--secondary); transition: color 0.3s ease;">
+            daipo971@gmail.com
+        </a> · 
+    </span>
+
     <span>
         Powered by
         <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
+
+<style>
+.footer a[href^="mailto"]:hover {
+    color: #00ff66 !important;
+    text-shadow: 0 0 10px rgba(0, 255, 102, 0.3);
+}
+</style>
 <a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
@@ -176,12 +188,11 @@ document.addEventListener('DOMContentLoaded', function() {
 <script>
     let menu = document.getElementById('menu');
     if (menu) {
-        
         const scrollPosition = localStorage.getItem("menu-scroll-position");
         if (scrollPosition) {
             menu.scrollLeft = parseInt(scrollPosition, 10);
         }
-        
+
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }

@@ -1,0 +1,182 @@
+{{- /* Comments area start */ -}}
+{{- if (not .Params.hideComments) }}
+<div class="comment-section">
+    <h2 id="comments">💬 评论区</h2>
+    <p class="comment-intro">欢迎在下方留言交流。提交后我会收到你的评论，会尽快回复。</p>
+
+    <form id="comment-form" class="comment-form" onsubmit="return submitComment(event)">
+        <div class="comment-field">
+            <label for="comment-name">昵称 *</label>
+            <input type="text" id="comment-name" name="name" required placeholder="你的名字或昵称">
+        </div>
+        <div class="comment-field">
+            <label for="comment-email">邮箱（不公开）</label>
+            <input type="email" id="comment-email" name="email" placeholder="可选，方便我回复你">
+        </div>
+        <div class="comment-field">
+            <label for="comment-content">评论内容 *</label>
+            <textarea id="comment-content" name="content" rows="5" required placeholder="写下你的想法……"></textarea>
+        </div>
+        <div class="comment-actions">
+            <button type="submit" class="comment-submit">
+                <span>发送评论</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+        </div>
+        <div id="comment-status" class="comment-status hidden"></div>
+    </form>
+</div>
+
+<style>
+.comment-section {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(0, 210, 255, 0.15);
+}
+
+.comment-section h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.comment-intro {
+    color: var(--secondary);
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.comment-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.comment-field label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--secondary);
+}
+
+.comment-field input,
+.comment-field textarea {
+    background: rgba(17, 17, 24, 0.8);
+    border: 1px solid rgba(0, 210, 255, 0.15);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: var(--primary);
+    font-family: inherit;
+    font-size: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.comment-field input:focus,
+.comment-field textarea:focus {
+    border-color: #00d2ff;
+    box-shadow: 0 0 12px rgba(0, 210, 255, 0.15);
+}
+
+.comment-field textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.comment-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.comment-submit {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, rgba(0, 210, 255, 0.15) 0%, rgba(0, 255, 102, 0.1) 100%);
+    border: 1px solid rgba(0, 210, 255, 0.25);
+    border-radius: 8px;
+    color: #00d2ff;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.comment-submit:hover {
+    background: linear-gradient(135deg, rgba(0, 210, 255, 0.25) 0%, rgba(0, 255, 102, 0.2) 100%);
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+.comment-status {
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.comment-status.success {
+    background: rgba(0, 255, 102, 0.1);
+    border: 1px solid rgba(0, 255, 102, 0.2);
+    color: #00ff66;
+}
+
+.comment-status.error {
+    background: rgba(255, 68, 102, 0.1);
+    border: 1px solid rgba(255, 68, 102, 0.2);
+    color: #ff4466;
+}
+
+.comment-status.hidden {
+    display: none;
+}
+</style>
+
+<script>
+function submitComment(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('comment-name').value.trim();
+    const email = document.getElementById('comment-email').value.trim();
+    const content = document.getElementById('comment-content').value.trim();
+    const status = document.getElementById('comment-status');
+
+    if (!name || !content) return false;
+
+    const pageTitle = document.title || '{{ .Title }}';
+    const pageUrl = window.location.href;
+
+    const body = `来自博客评论区的新评论\n\n` +
+        `文章：${pageTitle}\n` +
+        `链接：${pageUrl}\n` +
+        `昵称：${name}\n` +
+        `邮箱：${email || '未填写'}\n\n` +
+        `评论内容：\n${content}\n\n---\n本邮件由博客评论区自动生成`;
+
+    const mailto = `mailto:daipo971@gmail.com?subject=${encodeURIComponent('[博客评论] ' + pageTitle)}&body=${encodeURIComponent(body)}`;
+
+    status.className = 'comment-status success';
+    status.textContent = '✅ 正在打开你的邮件客户端发送评论……发送后我会尽快回复！';
+
+    window.location.href = mailto;
+
+    // Reset form after delay
+    setTimeout(() => {
+        document.getElementById('comment-name').value = '';
+        document.getElementById('comment-email').value = '';
+        document.getElementById('comment-content').value = '';
+    }, 2000);
+
+    return false;
+}
+</script>
+{{- end }}
+{{- /* Comments area end */ -}}
