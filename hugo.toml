@@ -1,0 +1,6 @@
+title = "欣淇AI网站"
+locale = "zh-cn"
+theme = "PaperMod"
+
+[params]
+  defaultTheme = "auto"
