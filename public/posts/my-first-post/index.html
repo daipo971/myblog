@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto" data-theme="dark">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=53517&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
-<title>这是一个介绍ai的网站 | 欣淇AI网站</title>
-<meta name="keywords" content="">
-<meta name="description" content="这是一个介绍ai的网站 - 欣淇AI网站">
+<meta name="robots" content="index, follow">
+<title>AI 新纪元：從深度學習到大語言模型 | 欣淇AI网站</title>
+<meta name="keywords" content="AI, 深度学习, LLM">
+<meta name="description" content="回顧人工智能發展歷程，從深度學習崛起到大語言模型的爆發，我們正站在技術革命的關鍵節點。">
 <meta name="author" content="">
-<link rel="canonical" href="//localhost:53517/posts/my-first-post/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
-<link rel="icon" href="//localhost:53517/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="//localhost:53517/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="//localhost:53517/favicon-32x32.png">
-<link rel="apple-touch-icon" href="//localhost:53517/apple-touch-icon.png">
-<link rel="mask-icon" href="//localhost:53517/safari-pinned-tab.svg">
+<link rel="canonical" href="/posts/my-first-post/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bbd8334f1100c574e93a6ade12917bff9c8e8fa09f17d4c8ccdf351eba38f4bc.css" integrity="sha256-u9gzTxEAxXTpOmreEpF7/5yOj6CfF9TIzN81Hro49Lw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="//localhost:53517/posts/my-first-post/">
+<link rel="alternate" hreflang="en" href="/posts/my-first-post/">
 <noscript>
     <style>
         #theme-toggle,
@@ -27,50 +27,139 @@
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-    </style>
 </noscript>
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
+    if (localStorage.getItem("pref-theme") === "light") {
         document.querySelector("html").dataset.theme = 'light';
     }
 
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  const canvas = document.createElement('canvas');
+  canvas.id = 'matrix-rain';
+  canvas.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:-2;opacity:0.15;';
+  document.body.appendChild(canvas);
+
+  const ctx = canvas.getContext('2d');
+  let W, H, drops, fontSize = 14, columns;
+
+  function resize() {
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+    columns = Math.floor(W / fontSize);
+    drops = Array(columns).fill(1).map(() => Math.random() * -H);
+  }
+
+  const chars = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン0123456789ABCDEF><(:)[]{}#&@%';
+
+  function draw() {
+    ctx.fillStyle = 'rgba(10,10,15,0.05)';
+    ctx.fillRect(0, 0, W, H);
+    ctx.font = fontSize + 'px "JetBrains Mono", monospace';
+
+    for (let i = 0; i < drops.length; i++) {
+      const char = chars[Math.floor(Math.random() * chars.length)];
+      const x = i * fontSize;
+      const y = drops[i];
+
+      const brightness = 1 - (y / H);
+      const alpha = Math.max(0.1, brightness * 0.8);
+      ctx.fillStyle = `rgba(0, 255, 102, ${alpha})`;
+      ctx.shadowBlur = brightness * 8;
+      ctx.shadowColor = 'rgba(0, 255, 102, 0.3)';
+      ctx.fillText(char, x, y);
+      ctx.shadowBlur = 0;
+
+      if (drops[i] > H && Math.random() > 0.975) {
+        drops[i] = 0;
+      }
+      drops[i] += fontSize * 0.6;
+    }
+  }
+
+  resize();
+  window.addEventListener('resize', resize);
+  setInterval(draw, 45);
+});
+</script>
+<meta property="og:url" content="/posts/my-first-post/">
+  <meta property="og:site_name" content="欣淇AI网站">
+  <meta property="og:title" content="AI 新纪元：從深度學習到大語言模型">
+  <meta property="og:description" content="回顧人工智能發展歷程，從深度學習崛起到大語言模型的爆發，我們正站在技術革命的關鍵節點。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-07-03T20:55:59+08:00">
+    <meta property="article:modified_time" content="2026-07-03T20:55:59+08:00">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="深度学习">
+    <meta property="article:tag" content="LLM">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AI 新纪元：從深度學習到大語言模型">
+  <meta name="twitter:description" content="回顧人工智能發展歷程，從深度學習崛起到大語言模型的爆發，我們正站在技術革命的關鍵節點。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "/posts/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "AI 新纪元：從深度學習到大語言模型",
+      "item": "/posts/my-first-post/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI 新纪元：從深度學習到大語言模型",
+  "name": "AI 新纪元：從深度學習到大語言模型",
+  "description": "回顧人工智能發展歷程，從深度學習崛起到大語言模型的爆發，我們正站在技術革命的關鍵節點。",
+  "keywords": [
+    "AI", "深度学习", "LLM"
+  ],
+  "articleBody": "引言 人工智能正在重塑我們的世界。從 2012 年 AlexNet 在 ImageNet 上取得突破性進展，到 2022 年 ChatGPT 的橫空出世，AI 技術的迭代速度前所未有。\n深度學習的崛起 import torch import torch.nn as nn class NeuralNetwork(nn.Module): def __init__(self): super().__init__() self.layers = nn.Sequential( nn.Linear(784, 256), nn.ReLU(), nn.Dropout(0.2), nn.Linear(256, 128), nn.ReLU(), nn.Linear(128, 10) ) def forward(self, x): return self.layers(x) 深度學習（Deep Learning）是機器學習的一個子領域，它使用多層神經網絡來學習數據的層次化表示。其核心優勢在於自動特徵提取——不再需要人工設計特徵，模型可以從原始數據中自主學習。\n卷積神經網絡（CNN） CNN 擅長處理網格狀數據（如圖像），通過卷積核提取局部特徵。從 LeNet 到 ResNet，再到 EfficientNet，網絡架構不斷演化。\n循環神經網絡（RNN） RNN 專注於序列數據處理，但存在長程依賴問題。LSTM 和 GRU 的出現緩解了這一問題，為 NLP 領域帶來了重大突破。\nTransformer 的誕生 2017 年，Google 發表了論文 “Attention Is All You Need”，提出了 Transformer 架構：\n組件 功能 創新點 Self-Attention 捕捉序列內所有位置的依賴關係 並行計算，效率遠超 RNN Multi-Head Attention 從不同表示子空間學習信息 增強模型表達能力 Positional Encoding 注入序列位置信息 無需遞歸結構 Feed-Forward 非線性變換 增加模型容量 大語言模型時代 “Scale is all you need.” — 當模型規模、數據量和計算資源達到臨界點，湧現能力（Emergent Abilities）出現了。\n2020 年 GPT-3 的發布標誌著大語言模型（LLM）時代的來臨。1750 億參數的規模展現了令人驚嘆的少樣本學習能力。此後的 GPT-4、Claude、Gemini 等模型更是將語言理解和生成能力推向新高。\nPrompt Engineering 系統: 你是一位專業的程式設計師，擅長用 Python 解決問題。 用戶: 請寫一個函數來計算 Fibonacci 數列的第 n 項。 Prompt 工程已成為與 LLM 互動的關鍵技能。好的 Prompt 可以顯著提升模型輸出品質。\n未來展望 AI 的未來充滿無限可能：\n多模態融合：文本、圖像、語音、影片的統一理解 Agent 系統：能夠自主規劃、執行任務的 AI Agent 可解釋性：讓 AI 的決策過程透明化 邊緣計算：在終端設備上運行高效模型 我們正身處 AI 的寒武紀大爆發時代，每一天都有新的可能性在誕生。\n",
+  "wordCount" : "139",
+  "inLanguage": "en",
+  "datePublished": "2026-07-03T20:55:59+08:00",
+  "dateModified": "2026-07-03T20:55:59+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/posts/my-first-post/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "欣淇AI网站",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
-            <a href="//localhost:53517/" accesskey="h" title="欣淇AI网站 (Alt + H)">欣淇AI网站</a>
+            <a href="/" accesskey="h" title="欣淇AI网站 (Alt + H)">欣淇AI网站</a>
             <div class="logo-switches">
                 <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
@@ -95,6 +184,26 @@
             </div>
         </div>
         <ul id="menu" class="menu">
+            <li>
+                <a href="/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -104,24 +213,113 @@
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      这是一个介绍ai的网站
+      AI 新纪元：從深度學習到大語言模型
     </h1>
+    <div class="post-description">
+      回顧人工智能發展歷程，從深度學習崛起到大語言模型的爆發，我們正站在技術革命的關鍵節點。
+    </div>
     <div class="post-meta">
 
 <span title='2026-07-03 20:55:59 +0800 CST'>July 3, 2026</span>
 
 </div>
   </header> 
+  <div class="post-content md-content"><h2 id="引言">引言<a hidden class="anchor" aria-hidden="true" href="#引言">#</a></h2>
+<p>人工智能正在重塑我們的世界。從 2012 年 AlexNet 在 ImageNet 上取得突破性進展，到 2022 年 ChatGPT 的橫空出世，AI 技術的迭代速度前所未有。</p>
+<h2 id="深度學習的崛起">深度學習的崛起<a hidden class="anchor" aria-hidden="true" href="#深度學習的崛起">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> torch
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> torch.nn <span style="color:#66d9ef">as</span> nn
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NeuralNetwork</span>(nn<span style="color:#f92672">.</span>Module):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self):
+</span></span><span style="display:flex;"><span>        super()<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span>()
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>layers <span style="color:#f92672">=</span> nn<span style="color:#f92672">.</span>Sequential(
+</span></span><span style="display:flex;"><span>            nn<span style="color:#f92672">.</span>Linear(<span style="color:#ae81ff">784</span>, <span style="color:#ae81ff">256</span>),
+</span></span><span style="display:flex;"><span>            nn<span style="color:#f92672">.</span>ReLU(),
+</span></span><span style="display:flex;"><span>            nn<span style="color:#f92672">.</span>Dropout(<span style="color:#ae81ff">0.2</span>),
+</span></span><span style="display:flex;"><span>            nn<span style="color:#f92672">.</span>Linear(<span style="color:#ae81ff">256</span>, <span style="color:#ae81ff">128</span>),
+</span></span><span style="display:flex;"><span>            nn<span style="color:#f92672">.</span>ReLU(),
+</span></span><span style="display:flex;"><span>            nn<span style="color:#f92672">.</span>Linear(<span style="color:#ae81ff">128</span>, <span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">forward</span>(self, x):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>layers(x)
+</span></span></code></pre></div><p>深度學習（Deep Learning）是機器學習的一個子領域，它使用多層神經網絡來學習數據的層次化表示。其核心優勢在於<strong>自動特徵提取</strong>——不再需要人工設計特徵，模型可以從原始數據中自主學習。</p>
+<h3 id="卷積神經網絡cnn">卷積神經網絡（CNN）<a hidden class="anchor" aria-hidden="true" href="#卷積神經網絡cnn">#</a></h3>
+<p>CNN 擅長處理網格狀數據（如圖像），通過卷積核提取局部特徵。從 LeNet 到 ResNet，再到 EfficientNet，網絡架構不斷演化。</p>
+<h3 id="循環神經網絡rnn">循環神經網絡（RNN）<a hidden class="anchor" aria-hidden="true" href="#循環神經網絡rnn">#</a></h3>
+<p>RNN 專注於序列數據處理，但存在長程依賴問題。LSTM 和 GRU 的出現緩解了這一問題，為 NLP 領域帶來了重大突破。</p>
+<h2 id="transformer-的誕生">Transformer 的誕生<a hidden class="anchor" aria-hidden="true" href="#transformer-的誕生">#</a></h2>
+<p>2017 年，Google 發表了論文 <em>&ldquo;Attention Is All You Need&rdquo;</em>，提出了 Transformer 架構：</p>
+<table>
+	<thead>
+			<tr>
+					<th>組件</th>
+					<th>功能</th>
+					<th>創新點</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Self-Attention</td>
+					<td>捕捉序列內所有位置的依賴關係</td>
+					<td>並行計算，效率遠超 RNN</td>
+			</tr>
+			<tr>
+					<td>Multi-Head Attention</td>
+					<td>從不同表示子空間學習信息</td>
+					<td>增強模型表達能力</td>
+			</tr>
+			<tr>
+					<td>Positional Encoding</td>
+					<td>注入序列位置信息</td>
+					<td>無需遞歸結構</td>
+			</tr>
+			<tr>
+					<td>Feed-Forward</td>
+					<td>非線性變換</td>
+					<td>增加模型容量</td>
+			</tr>
+	</tbody>
+</table>
+<h2 id="大語言模型時代">大語言模型時代<a hidden class="anchor" aria-hidden="true" href="#大語言模型時代">#</a></h2>
+<blockquote>
+<p>&ldquo;Scale is all you need.&rdquo; — 當模型規模、數據量和計算資源達到臨界點，湧現能力（Emergent Abilities）出現了。</p>
+</blockquote>
+<p>2020 年 GPT-3 的發布標誌著大語言模型（LLM）時代的來臨。1750 億參數的規模展現了令人驚嘆的少樣本學習能力。此後的 GPT-4、Claude、Gemini 等模型更是將語言理解和生成能力推向新高。</p>
+<h3 id="prompt-engineering">Prompt Engineering<a hidden class="anchor" aria-hidden="true" href="#prompt-engineering">#</a></h3>
+<pre tabindex="0"><code>系統: 你是一位專業的程式設計師，擅長用 Python 解決問題。
+用戶: 請寫一個函數來計算 Fibonacci 數列的第 n 項。
+</code></pre><p>Prompt 工程已成為與 LLM 互動的關鍵技能。好的 Prompt 可以顯著提升模型輸出品質。</p>
+<h2 id="未來展望">未來展望<a hidden class="anchor" aria-hidden="true" href="#未來展望">#</a></h2>
+<p>AI 的未來充滿無限可能：</p>
+<ol>
+<li><strong>多模態融合</strong>：文本、圖像、語音、影片的統一理解</li>
+<li><strong>Agent 系統</strong>：能夠自主規劃、執行任務的 AI Agent</li>
+<li><strong>可解釋性</strong>：讓 AI 的決策過程透明化</li>
+<li><strong>邊緣計算</strong>：在終端設備上運行高效模型</li>
+</ol>
+<hr>
+<blockquote>
+<p><em>我們正身處 AI 的寒武紀大爆發時代，每一天都有新的可能性在誕生。</em></p>
+</blockquote>
+
+
+  </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="/tags/ai/">AI</a></li>
+      <li><a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</a></li>
+      <li><a href="/tags/llm/">LLM</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="//localhost:53517/">欣淇AI网站</a></span> · 
+        <span>&copy; 2026 <a href="/">欣淇AI网站</a></span> · 
+        探索 · 创新 · 未来 · 
 
     
     

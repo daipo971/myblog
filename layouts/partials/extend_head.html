@@ -1,0 +1,57 @@
+<!-- 科技風自定義頭部引入 -->
+{{- /* Google Fonts: Outfit + JetBrains Mono + Noto Sans SC */}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+{{- /* Matrix / Cyber 背景裝飾 JS */}}
+<script>
+// === Matrix 數字雨效果（背景裝飾）===
+document.addEventListener('DOMContentLoaded', function() {
+  const canvas = document.createElement('canvas');
+  canvas.id = 'matrix-rain';
+  canvas.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:-2;opacity:0.15;';
+  document.body.appendChild(canvas);
+
+  const ctx = canvas.getContext('2d');
+  let W, H, drops, fontSize = 14, columns;
+
+  function resize() {
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+    columns = Math.floor(W / fontSize);
+    drops = Array(columns).fill(1).map(() => Math.random() * -H);
+  }
+
+  const chars = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン0123456789ABCDEF><(:)[]{}#&@%';
+
+  function draw() {
+    ctx.fillStyle = 'rgba(10,10,15,0.05)';
+    ctx.fillRect(0, 0, W, H);
+    ctx.font = fontSize + 'px "JetBrains Mono", monospace';
+
+    for (let i = 0; i < drops.length; i++) {
+      const char = chars[Math.floor(Math.random() * chars.length)];
+      const x = i * fontSize;
+      const y = drops[i];
+
+      const brightness = 1 - (y / H);
+      const alpha = Math.max(0.1, brightness * 0.8);
+      ctx.fillStyle = `rgba(0, 255, 102, ${alpha})`;
+      ctx.shadowBlur = brightness * 8;
+      ctx.shadowColor = 'rgba(0, 255, 102, 0.3)';
+      ctx.fillText(char, x, y);
+      ctx.shadowBlur = 0;
+
+      if (drops[i] > H && Math.random() > 0.975) {
+        drops[i] = 0;
+      }
+      drops[i] += fontSize * 0.6;
+    }
+  }
+
+  resize();
+  window.addEventListener('resize', resize);
+  setInterval(draw, 45);
+});
+</script>
