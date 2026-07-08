@@ -6,8 +6,22 @@
     <description>Recent content in AI on 欣淇AI网站</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 03 Jul 2026 20:55:59 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2026 00:00:00 +0800</lastBuildDate>
     <atom:link href="/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anthropic Claude 入门完整指南（2026版）</title>
+      <link>/posts/claude-guide/</link>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 +0800</pubDate>
+      <guid>/posts/claude-guide/</guid>
+      <description>从零开始学习 Anthropic Claude，包括 API 调用、Claude Pro 介绍、Claude Code CLI 使用、Artifacts 功能详解。适合新手入门。</description>
+    </item>
+    <item>
+      <title>OpenAI Codex 代码生成入门完整指南（2026版）</title>
+      <link>/posts/codex-guide/</link>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 +0800</pubDate>
+      <guid>/posts/codex-guide/</guid>
+      <description>从零开始学习 OpenAI Codex，包括 API 调用、集成开发、代码生成技巧。Codex 是 OpenAI 的代码生成大模型，适合开发者快速上手。</description>
+    </item>
     <item>
       <title>AI 新纪元：從深度學習到大語言模型</title>
       <link>/posts/my-first-post/</link>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Claude on 欣淇AI网站</title>
+    <link>/tags/claude/</link>
+    <description>Recent content in Claude on 欣淇AI网站</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 05 Jul 2026 00:00:00 +0800</lastBuildDate>
+    <atom:link href="/tags/claude/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anthropic Claude 入门完整指南（2026版）</title>
+      <link>/posts/claude-guide/</link>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 +0800</pubDate>
+      <guid>/posts/claude-guide/</guid>
+      <description>从零开始学习 Anthropic Claude，包括 API 调用、Claude Pro 介绍、Claude Code CLI 使用、Artifacts 功能详解。适合新手入门。</description>
+    </item>
+  </channel>
+</rss>

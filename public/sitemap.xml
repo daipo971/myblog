@@ -2,13 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tags/cloudflare/</loc>
-    <lastmod>2026-07-03T22:00:00+08:00</lastmod>
+    <loc>/posts/free-ai-api-guide/</loc>
+    <lastmod>2026-07-06T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/tags/ai-api/</loc>
+    <lastmod>2026-07-06T00:00:00+08:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2026-07-03T22:00:00+08:00</lastmod>
+    <lastmod>2026-07-06T00:00:00+08:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
+    <lastmod>2026-07-06T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/tags/%E5%85%8D%E8%B4%B9/</loc>
+    <lastmod>2026-07-06T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/tags/%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2026-07-06T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/tags/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2026-07-06T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2026-07-06T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/tags/ai/</loc>
+    <lastmod>2026-07-05T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/tags/anthropic/</loc>
+    <lastmod>2026-07-05T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/posts/claude-guide/</loc>
+    <lastmod>2026-07-05T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/tags/claude/</loc>
+    <lastmod>2026-07-05T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/tags/codex/</loc>
+    <lastmod>2026-07-05T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/tags/openai/</loc>
+    <lastmod>2026-07-05T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/posts/codex-guide/</loc>
+    <lastmod>2026-07-05T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/tags/%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90/</loc>
+    <lastmod>2026-07-05T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/tags/free-vps/</loc>
+    <lastmod>2026-07-04T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/tags/oracle-cloud/</loc>
+    <lastmod>2026-07-04T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
+    <lastmod>2026-07-04T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/posts/free-vps-guide/</loc>
+    <lastmod>2026-07-04T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/tags/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2026-07-04T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/tags/cloudflare/</loc>
     <lastmod>2026-07-03T22:00:00+08:00</lastmod>
   </url><url>
     <loc>/tags/%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90/</loc>
@@ -19,15 +76,6 @@
   </url><url>
     <loc>/posts/free-domain-guide/</loc>
     <lastmod>2026-07-03T22:00:00+08:00</lastmod>
-  </url><url>
-    <loc>/tags/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2026-07-03T22:00:00+08:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2026-07-03T22:00:00+08:00</lastmod>
-  </url><url>
-    <loc>/tags/ai/</loc>
-    <lastmod>2026-07-03T20:55:59+08:00</lastmod>
   </url><url>
     <loc>/posts/my-first-post/</loc>
     <lastmod>2026-07-03T20:55:59+08:00</lastmod>
