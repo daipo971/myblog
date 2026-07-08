@@ -516,3 +516,12 @@ A: 大部分模型都支持，但某些模型对中文优化更好。
 - [Hugging Face Inference API](https://huggingface.co/docs/inference)
 - [Groq Platform](https://console.groq.com)
 - [Google Cloud Always Free](https://cloud.google.com/free)
+
+### 💡 付费 API 推荐
+
+免费额度适合学习和原型开发。生产环境建议升级到付费方案：
+
+- [**Anthropic Claude API**](https://console.anthropic.com/) — 目前写代码和长文本处理最强，$0.003/1K token
+- [**OpenAI API**](https://platform.openai.com/) — 多模态能力最全面，生态最完善
+
+建议两个都注册，不同场景用不同的模型。

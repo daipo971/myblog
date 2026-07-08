@@ -254,6 +254,15 @@ A:
 - GitHub Issues：https://github.com/oracle/oci-cli/issues
 - V2EX: [免费 VPS 組](https://www.v2ex.com/go/freedom)
 
+## 💡 付费 VPS 推荐
+
+免费 VPS 适合学习和测试，生产环境建议用付费 VPS，稳定性更有保障。
+
+| 推荐 | 价格 | 适合人群 |
+|------|------|----------|
+| [**RackNerd**](https://my.racknerd.com/aff.php?aff=0000) 🏆 | 年付 $10.88 起 | 新手首选，性价比最高 |
+| [**搬瓦工 BandwagonHost**](https://bandwagonhost.com/aff.php?aff=0000) | 年付 $49.99 起 | 需要稳定线路的老手 |
+
 ## 写在最后
 
 免费 VPS 真的香，特别是 Oracle Cloud 这种「拿来就能用」的。

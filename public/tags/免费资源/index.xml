@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>免费资源 on 欣淇AI网站</title>
-    <link>/tags/%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90/</link>
-    <description>Recent content in 免费资源 on 欣淇AI网站</description>
+    <title>免费资源 on 欣淇AI网 - AI工具教程与免费资源</title>
+    <link>https://xinqiai.dpdns.org/tags/%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90/</link>
+    <description>Recent content in 免费资源 on 欣淇AI网 - AI工具教程与免费资源</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 03 Jul 2026 22:00:00 +0800</lastBuildDate>
-    <atom:link href="/tags/%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xinqiai.dpdns.org/tags/%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>搞了个免费域名，真香。手把手注册教程</title>
-      <link>/posts/free-domain-guide/</link>
+      <link>https://xinqiai.dpdns.org/posts/free-domain-guide/</link>
       <pubDate>Fri, 03 Jul 2026 22:00:00 +0800</pubDate>
-      <guid>/posts/free-domain-guide/</guid>
+      <guid>https://xinqiai.dpdns.org/posts/free-domain-guide/</guid>
       <description>最近白嫖了一个永久免费的域名，配合 Cloudflare 用起来贼爽。写篇教程分享给需要的朋友。</description>
     </item>
   </channel>

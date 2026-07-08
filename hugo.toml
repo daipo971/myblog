@@ -1,24 +1,45 @@
-title = "欣淇AI网站"
+title = "欣淇AI网 - AI工具教程与免费资源"
+baseURL = "https://xinqiai.dpdns.org"
 locale = "zh-cn"
 theme = "PaperMod"
 
 [params]
   defaultTheme = "dark"
   disableThemeToggle = false
+  env = "production"
 
-  # 首頁 Hero 資訊
+  # SEO
+  [params.analytics.google]
+    SiteVerificationTag = "googlee78fbd130bd563d5"
+  [params.analytics.bing]
+    SiteVerificationTag = "F7ED783B3CF5AA4252FD5454135D5D82"
+
+  # 首页
   [params.homeInfoParams]
-    title = "欣淇AI网站"
-    content = "探索人工智能的无限可能。我们致力于分享 AI 技术前沿、深度学习实践与科技创新。\n\n站在数字时代的浪潮之巅，用代码与算法描绘未来世界的蓝图。"
+    title = "欣淇AI网"
+    content = "探索人工智能的无限可能。分享 AI 工具评测、免费资源教程与实战技巧。\n\n🎯 **AI 工具评测** · 💰 **免费资源** · 🔧 **实战教程**"
 
-  # 頁腳設置
+  # 页脚
   [params.footer]
     hideCopyright = false
-    text = "探索 · 创新 · 未来"
+    text = "探索 · 创新 · 赚钱"
 
-  # 聯絡方式
+  # 联系
   [params.contact]
-    email = "daipo971@gmail.com"
+    email = "daipo971@outlook.com"
+
+  # 文章默认配置
+  [params.assets]
+    disableFingerprinting = false
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
 
 [menu]
   [[menu.main]]
@@ -32,6 +53,12 @@ theme = "PaperMod"
     name = "文章"
     url = "/posts/"
     weight = 20
+
+  [[menu.main]]
+    identifier = "tools"
+    name = "推荐工具"
+    url = "/tools/"
+    weight = 25
 
   [[menu.main]]
     identifier = "archives"

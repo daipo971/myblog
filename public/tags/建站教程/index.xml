@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>建站教程 on 欣淇AI网站</title>
-    <link>/tags/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/</link>
-    <description>Recent content in 建站教程 on 欣淇AI网站</description>
+    <title>建站教程 on 欣淇AI网 - AI工具教程与免费资源</title>
+    <link>https://xinqiai.dpdns.org/tags/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/</link>
+    <description>Recent content in 建站教程 on 欣淇AI网 - AI工具教程与免费资源</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 04 Jul 2026 00:00:00 +0800</lastBuildDate>
-    <atom:link href="/tags/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xinqiai.dpdns.org/tags/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>免费 VPS 对比：Oracle Cloud 免费层完全指南（2026更新）</title>
-      <link>/posts/free-vps-guide/</link>
+      <link>https://xinqiai.dpdns.org/posts/free-vps-guide/</link>
       <pubDate>Sat, 04 Jul 2026 00:00:00 +0800</pubDate>
-      <guid>/posts/free-vps-guide/</guid>
+      <guid>https://xinqiai.dpdns.org/posts/free-vps-guide/</guid>
       <description>Oracle Cloud Free Tier 永久免费，Google Cloud Always Free 服务丰富。写一篇专业对比，适合建站、学习使用。</description>
     </item>
   </channel>
