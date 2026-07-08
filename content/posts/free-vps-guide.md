@@ -260,8 +260,8 @@ A:
 
 | 推荐 | 价格 | 适合人群 |
 |------|------|----------|
-| [**RackNerd**](https://my.racknerd.com/aff.php?aff=0000) 🏆 | 年付 $10.88 起 | 新手首选，性价比最高 |
-| [**搬瓦工 BandwagonHost**](https://bandwagonhost.com/aff.php?aff=0000) | 年付 $49.99 起 | 需要稳定线路的老手 |
+| [**RackNerd**](https://my.racknerd.com/aff.php?aff=20566) 🏆 | 年付 $10.88 起 | 新手首选，性价比最高 |
+| [**搬瓦工 BandwagonHost**](https://bandwagonhost.com/aff.php?aff=20566) | 年付 $49.99 起 | 需要稳定线路的老手 |
 
 ## 写在最后
 
