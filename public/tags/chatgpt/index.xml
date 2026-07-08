@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Claude on 欣淇AI网 - AI工具教程与免费资源</title>
-    <link>https://xinqiai.dpdns.org/tags/claude/</link>
-    <description>Recent content in Claude on 欣淇AI网 - AI工具教程与免费资源</description>
+    <title>ChatGPT on 欣淇AI网 - AI工具教程与免费资源</title>
+    <link>https://xinqiai.dpdns.org/tags/chatgpt/</link>
+    <description>Recent content in ChatGPT on 欣淇AI网 - AI工具教程与免费资源</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 08 Jul 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xinqiai.dpdns.org/tags/claude/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xinqiai.dpdns.org/tags/chatgpt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>10 Best Free AI Tools in 2026 — Tried &amp; Tested</title>
       <link>https://xinqiai.dpdns.org/posts/best-free-ai-tools-2026/</link>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://xinqiai.dpdns.org/posts/best-free-ai-tools-2026/</guid>
       <description>After testing dozens of AI tools this year, here are 10 that are actually worth your time — including free options for ChatGPT 4o, Claude, Cursor and more.</description>
-    </item>
-    <item>
-      <title>Anthropic Claude 入门完整指南（2026版）</title>
-      <link>https://xinqiai.dpdns.org/posts/claude-guide/</link>
-      <pubDate>Sun, 05 Jul 2026 00:00:00 +0800</pubDate>
-      <guid>https://xinqiai.dpdns.org/posts/claude-guide/</guid>
-      <description>从零开始学习 Anthropic Claude，包括 API 调用、Claude Pro 介绍、Claude Code CLI 使用、Artifacts 功能详解。适合新手入门。</description>
     </item>
   </channel>
 </rss>
