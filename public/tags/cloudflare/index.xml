@@ -6,8 +6,15 @@
     <description>Recent content in Cloudflare on 欣淇AI网 - AI工具教程与免费资源</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 03 Jul 2026 22:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xinqiai.dpdns.org/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从零搭建个人博客：免费VPS &#43; 免费域名 &#43; Cloudflare托管</title>
+      <link>https://xinqiai.dpdns.org/posts/free-blog-tutorial/</link>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://xinqiai.dpdns.org/posts/free-blog-tutorial/</guid>
+      <description>手把手教你从零搭建一个完全免费的Hugo博客，包含免费VPS、免费域名和Cloudflare Pages部署。</description>
+    </item>
     <item>
       <title>搞了个免费域名，真香。手把手注册教程</title>
       <link>https://xinqiai.dpdns.org/posts/free-domain-guide/</link>

@@ -112,6 +112,8 @@ OpenAI 的招牌产品，多模态能力最强。
 
 - .com 域名 $8.99/年起
 - 免费 WHOIS 隐私保护
+
+👉 **[注册 NameSilo →](https://www.namesilo.com/)**
 - 续费不涨价
 
 ---

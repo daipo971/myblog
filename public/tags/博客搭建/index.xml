@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>博客搭建 on 欣淇AI网 - AI工具教程与免费资源</title>
+    <link>https://xinqiai.dpdns.org/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+    <description>Recent content in 博客搭建 on 欣淇AI网 - AI工具教程与免费资源</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 11 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xinqiai.dpdns.org/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从零搭建个人博客：免费VPS &#43; 免费域名 &#43; Cloudflare托管</title>
+      <link>https://xinqiai.dpdns.org/posts/free-blog-tutorial/</link>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://xinqiai.dpdns.org/posts/free-blog-tutorial/</guid>
+      <description>手把手教你从零搭建一个完全免费的Hugo博客，包含免费VPS、免费域名和Cloudflare Pages部署。</description>
+    </item>
+  </channel>
+</rss>
