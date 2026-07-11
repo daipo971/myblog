@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Sitemap locations
+Sitemap: https://xinqiai.dpdns.org/sitemap.xml
+Sitemap: https://xinqiai.dpdns.org/index.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Disallow specific paths
+Disallow: /search/
+Disallow: /tags/
+Disallow: /categories/
+Disallow: /archives/
+
+# Allow specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /

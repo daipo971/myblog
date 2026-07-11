@@ -1,0 +1,126 @@
+{{- /* Performance optimization */}}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Lazy loading for images
+  const images = document.querySelectorAll('img[data-src]');
+  const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src;
+        img.classList.remove('lazy');
+        imageObserver.unobserve(img);
+      }
+    });
+  });
+
+  images.forEach(img => imageObserver.observe(img));
+
+  // Preload critical resources
+  const preloadLink = document.createElement('link');
+  preloadLink.rel = 'preload';
+  preloadLink.href = '{{ .Site.BaseURL }}assets/css/main.css';
+  preloadLink.as = 'style';
+  document.head.appendChild(preloadLink);
+
+  // Optimize font loading
+  const fontLink = document.createElement('link');
+  fontLink.rel = 'preconnect';
+  fontLink.href = 'https://fonts.googleapis.com';
+  document.head.appendChild(fontLink);
+
+  // Remove unused CSS
+  const unusedCss = document.querySelectorAll('.unused-css');
+  unusedCss.forEach(el => el.remove());
+});
+</script>
+
+<style>
+/* Critical CSS */
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0a0a12 0%, #0d0d1a 50%, #0f0a1a 100%);
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.header {
+  background: rgba(10,10,18,0.9);
+  backdrop-filter: blur(12px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0,212,255,0.1);
+}
+
+.logo a {
+  color: #00d4ff;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px 40px;
+}
+
+.post-entry {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0,212,255,0.1);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.post-entry:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(0,212,255,0.1);
+}
+
+.entry-header h2 {
+  color: #00d4ff;
+  margin-bottom: 15px;
+}
+
+.entry-content {
+  color: #b0b0b0;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 80px 15px 30px;
+  }
+  
+  .post-entry {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+}
+</style>
+
+<script>
+// Performance monitoring
+window.addEventListener('load', function() {
+  const perfData = window.performance.timing;
+  const loadTime = perfData.loadEventEnd - perfData.navigationStart;
+  const domReadyTime = perfData.domContentLoadedEventEnd - perfData.navigationStart;
+  
+  if (window.gtag) {
+    gtag('event', 'page_load_time', {
+      'event_category': 'Performance',
+      'event_label': 'Page Load Time',
+      'value': loadTime
+    });
+  }
+  
+  console.log('Page load time:', loadTime + 'ms');
+});
+</script>

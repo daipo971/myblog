@@ -1,0 +1,27 @@
+{{- /* Basic head with SEO integration */}}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+  
+  {{- /* SEO Meta Tags */}}
+  {{ partial "seo.html" . }}
+  
+  {{- /* Theme and styles */}}
+  {{ partial "extend_head.html" . }}
+  
+  {{- /* Analytics */}}
+  {{- with .Site.Params.analytics.google }}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .SiteVerificationTag }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ .SiteVerificationTag }}');
+  </script>
+  {{- end }}
+  
+  {{- with .Site.Params.analytics.bing }}
+  <meta name="msvalidate.01" content="{{ .SiteVerificationTag }}">
+  {{- end }}
+</head>
