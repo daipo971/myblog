@@ -1,61 +1,26 @@
-{{- /* SEO Meta Tags and Structured Data */}}
+{{- /* Additional SEO structured data - complements theme's head */}}
+
 {{- $title := .Title }}
 {{- $description := .Description }}
 {{- $keywords := .Params.tags }}
 {{- $author := .Site.Params.author | default "欣淇AI网" }}
 {{- $url := .Permalink }}
-{{- $type := .Type | default "article" }}
 {{- $image := .Params.image | default (printf "%s%s" .Site.BaseURL "assets/og-image.png") }}
-{{- $date := .PublishDate }}
-{{- $modified := .Lastmod }}
-
-{{- /* Open Graph Tags */}}
-<meta property="og:title" content="{{ $title }}" />
-<meta property="og:description" content="{{ $description }}" />
-<meta property="og:type" content="{{ $type }}" />
-<meta property="og:url" content="{{ $url }}" />
-<meta property="og:image" content="{{ $image }}" />
-<meta property="og:site_name" content="{{ .Site.Title }}" />
-<meta property="og:locale" content="zh_CN" />
-
-{{- /* Twitter Cards */}}
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="{{ $title }}" />
-<meta name="twitter:description" content="{{ $description }}" />
-<meta name="twitter:image" content="{{ $image }}" />
-
-{{- /* Basic Meta Tags */}}
-<meta name="description" content="{{ $description }}" />
-{{- if $keywords }}
-<meta name="keywords" content="{{ delimit $keywords "," }}" />
-{{- end }}
-<meta name="author" content="{{ $author }}" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="canonical" href="{{ $url }}" />
 
 {{- /* Article Structured Data */}}
-{{- if eq $type "article" }}
+{{- if .IsPage }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "{{ $title }}",
   "description": "{{ $description }}",
-  "image": "{{ $image }}",
   "author": {
     "@type": "Person",
     "name": "{{ $author }}"
   },
-  "publisher": {
-    "@type": "Organization",
-    "name": "{{ .Site.Title }}",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ printf "%s%s" .Site.BaseURL "assets/logo.png" }}"
-    }
-  },
-  "datePublished": "{{ $date.Format "2006-01-02T15:04:05Z07:00" }}",
-  "dateModified": "{{ $modified.Format "2006-01-02T15:04:05Z07:00" }}",
+  "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "{{ $url }}"
@@ -63,45 +28,26 @@
   {{- if $keywords }}
   "keywords": "{{ delimit $keywords "," }}",
   {{- end }}
-  "articleSection": "AI工具",
-  "wordCount": {{ .WordCount }},
-  "inLanguage": "zh-CN",
-  "isAccessibleForFree": true
-}
-</script>
-{{- end }}
-
-{{- /* Website Structured Data */}}
-{{- if eq $type "home" }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "{{ .Site.Title }}",
-  "description": "{{ .Site.Params.description }}",
-  "url": "{{ .Site.BaseURL }}",
-  "publisher": {
-    "@type": "Organization",
-    "name": "{{ .Site.Title }}",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ printf "%s%s" .Site.BaseURL "assets/logo.png" }}"
-    }
-  },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "{{ .Site.BaseURL }}search/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  },
   "inLanguage": "zh-CN"
 }
 </script>
 {{- end }}
 
-{{- /* Favicon and App Icons */}}
-<link rel="icon" href="{{ printf "%s%s" .Site.BaseURL "assets/favicon.ico" }}" />
-<link rel="apple-touch-icon" href="{{ printf "%s%s" .Site.BaseURL "assets/apple-touch-icon.png" }}" />
-
-{{- /* RSS Feed */}}
-<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} RSS Feed" href="{{ .Site.BaseURL }}index.xml" />
-<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} Posts RSS Feed" href="{{ .Site.BaseURL }}posts/index.xml" />
+{{- /* Organization schema for homepage */}}
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "description": "{{ .Site.Params.description }}",
+  "inLanguage": "zh-CN",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ .Site.BaseURL }}search/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{{- end }}
