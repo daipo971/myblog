@@ -1,5 +1,6 @@
 {{- /* Basic head with SEO integration */}}
-<head>
+{{- /* NOTE: <head> and </head> are in baseof.html, do NOT add them here */}}
+<meta name="generator" content="Hugo 0.163.3">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
@@ -7,7 +8,7 @@
   {{- /* SEO Meta Tags */}}
   {{ partial "seo.html" . }}
   
-  {{- /* Theme and styles */}}
+  {{- /* Custom styles */}}
   {{ partial "extend_head.html" . }}
   
   {{- /* Analytics */}}
@@ -24,4 +25,3 @@
   {{- with .Site.Params.analytics.bing }}
   <meta name="msvalidate.01" content="{{ .SiteVerificationTag }}">
   {{- end }}
-</head>
