@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "skills": {
+    "mystery-archive-style": {
+      "name": "mystery-archive-style",
+      "version": "1.0.0",
+      "source": "redskill",
+      "install_dir": "/Users/ty/myblog/skills/mystery-archive-style",
+      "installed_at": "1783594395218",
+      "sha256": "65b4528c948a05840f0fb232ffcd1f652ddb99dfec3bf41c62f448a31a3c98ef"
+    }
+  }
+}

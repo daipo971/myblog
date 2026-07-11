@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: "小红书帖文模板 - 免费VPS"
 description: "复制到小红书直接发布"
 ---
