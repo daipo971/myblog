@@ -248,3 +248,11 @@ showtoc: true
 欢迎访问查看完整内容，有任何问题欢迎交流！
 
 #AI工具 #ChatGPT #Claude #Cursor #编程 #写作 #效率工具
+
+---
+
+*部分链接是联盟链接，通过这些链接购买，我可能会获得少量佣金。价格对你来说是一样的。*
+
+👉 [使用ChatGPT 4o免费版](https://chatgpt.com/)
+👉 [使用Claude 3.5免费版](https://claude.ai/)
+👉 [下载Cursor免费版](https://cursor.sh/)

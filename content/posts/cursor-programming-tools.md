@@ -290,3 +290,10 @@ Cursor是一个优秀的AI编程工具，适合大多数开发场景。但它不
 - [ChatGPT 4o免费版真实体验](/posts/chatgpt-4o-real-experience)
 - [Claude 3.5编程能力评测](/posts/claude-programming-review)
 - [2026年最好用的编程AI工具](/posts/best-programming-ai-tools)
+
+---
+
+*部分链接是联盟链接，通过这些链接购买，我可能会获得少量佣金。价格对你来说是一样的。*
+
+👉 [下载Cursor免费版](https://cursor.sh/)
+👉 [升级Cursor Pro→](https://cursor.sh/)

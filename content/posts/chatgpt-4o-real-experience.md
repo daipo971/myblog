@@ -191,3 +191,9 @@ showtoc: true
 - [Claude 3.5 vs ChatGPT 4o：哪个更适合你？](/posts/claude-vs-chatgpt-2026)
 - [AI编程工具Cursor真实使用体验](/posts/cursor-real-experience)
 - [2026年最好用的免费AI工具](/posts/best-free-ai-tools-2026)
+
+---
+
+*部分链接是联盟链接，通过这些链接购买，我可能会获得少量佣金。价格对你来说是一样的。*
+
+👉 [使用ChatGPT 4o免费版](https://chatgpt.com/)
