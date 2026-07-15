@@ -184,7 +184,9 @@ response = requests.post(url, headers=headers, json=data)
 print(response.json()['choices'][0]['message']['content'])
 ```
 
-### Groq 加速技巧
+### Groq
+> 💡 **Groq 的推理速度是目前最快的免费 API，** 如果你想体验极速 AI 推理，可以直接去 [Groq Console](https://console.groq.com) 注册免费账号。
+ 加速技巧
 
 - 使用 `llama3-8b-8192` 模型（速度快）
 - 同一会话内持续对话（更快）
@@ -525,3 +527,7 @@ A: 大部分模型都支持，但某些模型对中文优化更好。
 - [**OpenAI API**](https://platform.openai.com/) — 多模态能力最全面，生态最完善
 
 建议两个都注册，不同场景用不同的模型。
+
+---
+
+*有些外部工具链接是联盟链接，如果你通过这些链接购买，我会获得少量佣金（不影响你的价格）。所有推荐都是我亲自用过并觉得不错的产品。*

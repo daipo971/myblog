@@ -8,10 +8,24 @@
     <language>zh-cn</language>
     <atom:link href="https://xinqiai.dpdns.org/xhs/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>小红书帖文模板 - AI写作赚钱</title>
+      <link>https://xinqiai.dpdns.org/xhs/post-05-ai-writing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xinqiai.dpdns.org/xhs/post-05-ai-writing/</guid>
+      <description>复制到小红书直接发布</description>
+    </item>
+    <item>
       <title>小红书帖文模板 - AI编程</title>
       <link>https://xinqiai.dpdns.org/xhs/post-03-ai-coding/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://xinqiai.dpdns.org/xhs/post-03-ai-coding/</guid>
+      <description>复制到小红书直接发布</description>
+    </item>
+    <item>
+      <title>小红书帖文模板 - 低价VPS推荐</title>
+      <link>https://xinqiai.dpdns.org/xhs/post-06-cheap-vps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xinqiai.dpdns.org/xhs/post-06-cheap-vps/</guid>
       <description>复制到小红书直接发布</description>
     </item>
     <item>
@@ -26,6 +40,13 @@
       <link>https://xinqiai.dpdns.org/xhs/post-01-free-vps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://xinqiai.dpdns.org/xhs/post-01-free-vps/</guid>
+      <description>复制到小红书直接发布</description>
+    </item>
+    <item>
+      <title>小红书帖文模板 - 免费域名</title>
+      <link>https://xinqiai.dpdns.org/xhs/post-04-free-domain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xinqiai.dpdns.org/xhs/post-04-free-domain/</guid>
       <description>复制到小红书直接发布</description>
     </item>
   </channel>

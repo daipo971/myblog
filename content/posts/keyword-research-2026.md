@@ -337,10 +337,14 @@ showtoc: true
 
 **关键词工具推荐：**
 - [Google Keyword Planner](https://ads.google.com/tools/keyword-planner)
-- [SEMrush](https://www.semrush.com)
-- [Ahrefs](https://ahrefs.com)
+- [SEMrush](https://www.semrush.com) ([查看SEMrush定价]())
+- [Ahrefs](https://ahrefs.com) (通过此链接注册可获7天试用)
 - [百度指数](https://index.baidu.com)
 
 ---
 
 *本文将持续更新，请关注欣淇AI网获取最新的关键词研究资讯。*
+
+---
+
+*有些外部工具链接是联盟链接，如果你通过这些链接购买，我会获得少量佣金（不影响你的价格）。所有推荐都是我亲自用过并觉得不错的产品。*
