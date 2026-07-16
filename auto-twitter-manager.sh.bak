@@ -1,0 +1,435 @@
+#!/bin/bash
+
+# ============================================
+# 自动推特运营管理脚本
+# 使用 OpenCLI 浏览器控制推特，自动发布推文
+# 每日按计划执行，跟踪发布记录
+# ============================================
+
+BLOG_URL="https://xinqiai.dpdns.org"
+TWEET_FILE="auto-tweets.txt"
+LOG_FILE=".tweet_auto_log.json"
+SCHEDULE_FILE="promotion-schedule.txt"
+CURRENT_WEEK_FILE=".current_week.txt"
+
+# 颜色
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+RED='\033[0;31m'
+NC='\033[0m'
+
+log_info()  { echo -e "${BLUE}[INFO]${NC} $1"; }
+log_ok()    { echo -e "${GREEN}[OK]${NC} $1"; }
+log_warn()  { echo -e "${YELLOW}[WARN]${NC} $1"; }
+log_error() { echo -e "${RED}[ERROR]${NC} $1"; }
+
+# 确保日志文件存在
+init_log() {
+    if [ ! -f "$LOG_FILE" ]; then
+        echo '{"published":[],"last_run":"","today_count":0}' > "$LOG_FILE"
+    fi
+}
+
+# 获取今天已发布数量
+get_today_count() {
+    local today=$(date +%Y-%m-%d)
+    local count=0
+    if [ -f "$LOG_FILE" ]; then
+        count=$(python3 -c "import json; d=json.load(open('$LOG_FILE')); print(d.get('today_count',0) if d.get('last_run','')=='$today' else 0)" 2>/dev/null || echo 0)
+    fi
+    echo $count
+}
+
+# 更新日志
+update_log() {
+    local tweet_id="$1"
+    local today=$(date +%Y-%m-%d)
+    local count=$(get_today_count)
+    count=$((count + 1))
+    python3 -c "
+import json
+d = json.load(open('$LOG_FILE'))
+if '$today' not in d: d['$today'] = []
+d['$today'].append('$tweet_id')
+d['last_run'] = '$today'
+d['today_count'] = $count
+json.dump(d, open('$LOG_FILE','w'), indent=2)
+" 2>/dev/null
+}
+
+# 获取一条未发布的推文
+pick_unpublished_tweet() {
+    local today=$(date +%Y-%m-%d)
+    local published_today=""
+    if [ -f "$LOG_FILE" ]; then
+        published_today=$(python3 -c "
+import json
+try:
+    d = json.load(open('$LOG_FILE'))
+    print(','.join(d.get('$today', [])))
+except: print('')
+" 2>/dev/null)
+    fi
+    
+    # 读取推文文件，按 --- 分隔
+    local current_tweet=""
+    local in_tweet=false
+    local tweet_count=0
+    
+    while IFS= read -r line; do
+        if [[ "$line" == "---" ]]; then
+            if [ "$in_tweet" = true ] && [ -n "$current_tweet" ]; then
+                # 检查是否已经发布过
+                local tweet_hash=$(echo "$current_tweet" | md5)
+                if ! echo "$published_today" | grep -q "$tweet_hash"; then
+                    echo "$current_tweet"
+                    return 0
+                fi
+                current_tweet=""
+            fi
+            in_tweet=true
+            continue
+        fi
+        
+        if [ "$in_tweet" = true ]; then
+            if [ -z "$current_tweet" ]; then
+                current_tweet="$line"
+            else
+                current_tweet="$current_tweet"$'\n'"$line"
+            fi
+        fi
+    done < "$TWEET_FILE"
+    
+    # 最后一个推文
+    if [ -n "$current_tweet" ]; then
+        echo "$current_tweet"
+        return 0
+    fi
+    
+    return 1
+}
+
+# 从文件中提取标题用于生成推文
+extract_title_from_file() {
+    local file="$1"
+    local title=$(grep "^title:" "$file" | head -1 | sed 's/title: "*//' | sed 's/"//' | sed "s/^'//" | sed "s/'$//")
+    echo "$title"
+}
+
+# 获取热门话题并生成推文
+generate_hot_tweet() {
+    log_info "获取推特热门趋势..."
+    
+    # 获取热门趋势
+    local trending_json=$(opencli twitter trending --format json --window background 2>&1)
+    local hot_topics=$(echo "$trending_json" | python3 -c "
+import json, sys
+try:
+    data = json.loads(sys.stdin.read())
+    topics = []
+    for item in data:
+        if item.get('category','').startswith('科技'):
+            topics.append(item['topic'])
+    for item in data:
+        if item.get('category','') != '科技 趋势' and 'trend' not in item.get('category','').lower():
+            if len(topics) < 5:
+                topics.append(item['topic'])
+    print('|'.join(topics[:5]))
+except:
+    print('')
+" 2>/dev/null)
+    
+    if [ -z "$hot_topics" ]; then
+        log_warn "无法获取热门趋势，使用备用推文"
+        pick_unpublished_tweet
+        return
+    fi
+    
+    log_info "当前热门话题: $hot_topics"
+    
+    # 随机选一篇博客文章
+    local articles=(content/posts/*.md)
+    local article_count=${#articles[@]}
+    
+    if [ $article_count -eq 0 ]; then
+        log_error "没有找到博客文章"
+        pick_unpublished_tweet
+        return
+    fi
+    
+    local random_index=$((RANDOM % article_count))
+    local article="${articles[$random_index]}"
+    local article_name=$(basename "$article" .md)
+    local title=$(extract_title_from_file "$article")
+    
+    if [ -z "$title" ]; then
+        title="$article_name"
+    fi
+    
+    # 从热门话题中选第一个科技相关的
+    local main_topic=$(echo "$hot_topics" | cut -d'|' -f1)
+    
+    # 创建推文
+    local hashtags=""
+    IFS='|' read -ra TOPICS <<< "$hot_topics"
+    for topic in "${TOPICS[@]}"; do
+        local tag=$(echo "$topic" | sed 's/[^a-zA-Z0-9]//g')
+        if [ -n "$tag" ]; then
+            hashtags="$hashtags #$tag"
+        fi
+    done
+    
+    cat << TWEET_EOF
+🔥 $main_topic 登上热搜！刚好我写了篇关于「$title」的详细文章
+
+📌 内容包括：
+• 实测体验和技巧
+• 完整配置教程
+• 省钱使用方案
+
+完整阅读 👉 $BLOG_URL/posts/$article_name/
+
+$hashtags #AI工具 #技术分享
+TWEET_EOF
+}
+
+# 发布推文
+publish_tweet() {
+    local text="$1"
+    local source="${2:-manual}"
+    
+    log_info "发布推文 (${#text} 字符)..."
+    
+    # 使用 opencli 发布
+    local result=$(opencli twitter post "$text" --window background --site-session persistent --keep-tab true 2>&1)
+    
+    if echo "$result" | grep -q "success"; then
+        local tweet_id=$(echo "$result" | python3 -c "import json,sys; print(json.load(sys.stdin)[0].get('id',''))" 2>/dev/null)
+        if [ -n "$tweet_id" ]; then
+            update_log "$tweet_id"
+        fi
+        log_ok "推文发布成功!"
+        echo "$result" | python3 -c "
+import json,sys
+d = json.load(sys.stdin)[0]
+print(f'  📎 ID: {d.get(\"id\",\"\")}')
+print(f'  🔗 链接: {d.get(\"url\",\"\")}')
+" 2>/dev/null
+        return 0
+    else
+        log_error "推文发布失败: $result"
+        return 1
+    fi
+}
+
+# 关注相关用户（增加粉丝策略）
+follow_related_users() {
+    log_info "关注相关AI领域用户..."
+    
+    local keywords=("AI" "ChatGPT" "Claude" "人工智能" "编程" "技术")
+    local keyword=${keywords[$((RANDOM % ${#keywords[@]}))]}
+    
+    # 搜索相关用户并关注
+    local search_result=$(opencli twitter search "$keyword" --format json --window background 2>&1)
+    
+    local users=$(echo "$search_result" | python3 -c "
+import json,sys
+try:
+    data = json.loads(sys.stdin.read())
+    authors = set()
+    for item in data[:5]:
+        author = item.get('author','').strip()
+        if author and author != 'tangjia6688' and author not in authors:
+            authors.add(author)
+    print('\n'.join(list(authors)[:3]))
+except: print('')
+" 2>/dev/null)
+    
+    if [ -n "$users" ]; then
+        local user_list=$(echo "$users" | tr '\n' ',')
+        log_info "关注用户: $user_list"
+        local follow_result=$(opencli twitter follow-batch "$user_list" --window background 2>&1)
+        log_ok "关注操作完成"
+    else
+        log_warn "没有找到可关注的用户"
+    fi
+}
+
+# 互动策略 - 点赞相关推文
+like_related_tweets() {
+    log_info "点赞相关热门推文..."
+    
+    local keywords=("GPT-5.6" "Claude" "AI工具" "编程" "免费AI")
+    local keyword=${keywords[$((RANDOM % ${#keywords[@]}))]}
+    
+    local search_result=$(opencli twitter search "$keyword" --format json --window background 2>&1)
+    
+    local tweet_ids=$(echo "$search_result" | python3 -c "
+import json,sys
+try:
+    data = json.loads(sys.stdin.read())
+    ids = []
+    for item in data[:3]:
+        tid = item.get('id','').strip()
+        if tid:
+            ids.append(tid)
+    print('\n'.join(ids[:2]))
+except: print('')
+" 2>/dev/null)
+    
+    if [ -n "$tweet_ids" ]; then
+        while IFS= read -r tid; do
+            if [ -n "$tid" ]; then
+                local tweet_url="https://x.com/i/status/$tid"
+                log_info "点赞: $tweet_url"
+                local like_result=$(opencli twitter like "$tweet_url" --window background 2>&1)
+                sleep 2
+            fi
+        done <<< "$tweet_ids"
+        log_ok "点赞操作完成"
+    fi
+}
+
+# 今日运营任务
+run_daily_operations() {
+    local today=$(date +%Y-%m-%d)
+    local day_of_week=$(date +%u)  # 1=周一, 7=周日
+    local today_count=$(get_today_count)
+    
+    log_info "==================================="
+    log_info "📅 开始今日运营 - $today"
+    log_info "📊 今日已发布: $today_count 条"
+    log_info "==================================="
+    
+    # 每天发布1-2条推文
+    local max_posts=2
+    if [ $today_count -ge $max_posts ]; then
+        log_info "今日已达发布上限 ($max_posts 条)"
+        return 0
+    fi
+    
+    # 第一条：基于热门话题生成
+    log_info "生成基于热门话题的推文..."
+    local hot_tweet=$(generate_hot_tweet)
+    if [ -n "$hot_tweet" ]; then
+        publish_tweet "$hot_tweet" "hot_topic"
+        sleep 3
+    fi
+    
+    # 更新计数
+    today_count=$(get_today_count)
+    
+    # 第二条：从预设推文中选一条
+    if [ $today_count -lt $max_posts ]; then
+        log_info "从预设推文中选一条发布..."
+        local preset_tweet=$(pick_unpublished_tweet)
+        if [ -n "$preset_tweet" ]; then
+            publish_tweet "$preset_tweet" "preset"
+            sleep 3
+        fi
+    fi
+    
+    # 互动策略（每两天做一次）
+    local day_num=$(date +%j)
+    if [ $((day_num % 2)) -eq 0 ]; then
+        follow_related_users
+        sleep 2
+        like_related_tweets
+    fi
+    
+    log_info "✅ 今日运营完成！"
+}
+
+# 查看统计数据
+show_stats() {
+    echo ""
+    echo "━━━━━━━━━━━━━━━━━━━━━━━━━━"
+    echo "  📊 推特运营统计"
+    echo "━━━━━━━━━━━━━━━━━━━━━━━━━━"
+    
+    # 总推文数
+    local total_tweets=$(grep -c "^---" "$TWEET_FILE" 2>/dev/null || echo 0)
+    echo "  预设推文总数: $total_tweets"
+    
+    # 今天发布数
+    local today_count=$(get_today_count)
+    echo "  今日已发布: $today_count"
+    
+    # 总发布数
+    local total_published=0
+    if [ -f "$LOG_FILE" ]; then
+        total_published=$(python3 -c "
+import json
+d = json.load(open('$LOG_FILE'))
+count = 0
+for k,v in d.items():
+    if k not in ('published','last_run','today_count'):
+        count += len(v) if isinstance(v, list) else 0
+print(count)
+" 2>/dev/null || echo 0)
+    fi
+    echo "  历史总发布: $total_published"
+    
+    # 博客文章数
+    local article_count=$(ls content/posts/*.md 2>/dev/null | wc -l)
+    echo "  博客文章数: $article_count"
+    
+    echo "━━━━━━━━━━━━━━━━━━━━━━━━━━"
+}
+
+# 主函数
+case "${1:-run}" in
+    run)
+        init_log
+        run_daily_operations
+        ;;
+    tweet)
+        # 手动发布一条推文
+        if [ -z "$2" ]; then
+            log_error "请提供推文内容"
+            echo "用法: ./auto-twitter-manager.sh tweet \"推文内容\""
+            exit 1
+        fi
+        publish_tweet "$2" "manual"
+        ;;
+    hot)
+        # 基于热门话题生成并发布
+        init_log
+        local tweet=$(generate_hot_tweet)
+        if [ -n "$tweet" ]; then
+            echo "$tweet"
+            echo ""
+            read -p "是否发布这条推文? (y/n): " confirm
+            if [ "$confirm" = "y" ]; then
+                publish_tweet "$tweet" "manual_hot"
+            fi
+        fi
+        ;;
+    follow)
+        follow_related_users
+        ;;
+    like)
+        like_related_tweets
+        ;;
+    stats)
+        show_stats
+        ;;
+    reset)
+        # 重置今天的发布计数
+        echo '{"published":[],"last_run":"","today_count":0}' > "$LOG_FILE"
+        log_ok "日志已重置"
+        ;;
+    *)
+        echo "用法: ./auto-twitter-manager.sh [命令]"
+        echo ""
+        echo "命令:"
+        echo "  run      - 执行今日运营任务（自动获取热点+发布+互动）"
+        echo "  tweet    - 手动发布一条推文"
+        echo "  hot      - 基于热门话题生成推文"
+        echo "  follow   - 关注相关用户"
+        echo "  like     - 点赞相关推文"
+        echo "  stats    - 查看运营统计"
+        echo "  reset    - 重置发布记录"
+        ;;
+esac

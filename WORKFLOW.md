@@ -122,3 +122,40 @@ git status
 - [x] 联盟链接已布局（RackNerd, BandwagonHost, Cursor, Claude, ChatGPT）
 - [x] 推送机制已打通（GitHub → Cloudflare Pages）
 - [ ] 下一篇：__________（手写填入）
+
+---
+
+## 推特自动化运营 (2026-07-15新增)
+
+### 运营方式
+使用 `opencli` 浏览器控制工具，直接操作推特网页版发布推文，无需 API Key。
+
+### 文件说明
+- `auto-twitter-manager.sh` - 自动运营管理脚本（获取热点、发布推文、关注用户）
+- `auto-twitter-daemon.sh` - 定时守护进程（每天 08:00 / 12:00 / 20:00 自动执行）
+- `auto-tweets.txt` - 预设推文库（27条，持续新增中）
+- `promotion-schedule.txt` - 推广时间表
+
+### 命令手册
+```bash
+# 查看运营统计
+./auto-twitter-manager.sh stats
+
+# 手动运行一次运营任务
+./auto-twitter-manager.sh run
+
+# 查看守护进程状态
+./auto-twitter-daemon.sh status
+
+# 启动守护进程（后台）
+nohup ./auto-twitter-daemon.sh start &>/dev/null &
+
+# 停止守护进程
+./auto-twitter-daemon.sh stop
+```
+
+### 运营计划
+每天 08:00、12:00、20:00 自动发布推文
+- 每条推文链接到博客文章引流
+- 基于推特实时热门趋势生成内容
+- 每2天关注相关领域用户增加粉丝

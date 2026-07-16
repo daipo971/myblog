@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>致·李嘉雪</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Noto+Sans+SC:wght@300;400;700;900&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Noto Sans SC',sans-serif;
+  background:#0d0a1a;
+  color:#f0e6ff;
+  overflow-x:hidden;min-height:100vh;
+  cursor:default;
+}
+canvas{
+  position:fixed;top:0;left:0;
+  width:100vw;height:100vh;
+  pointer-events:none;
+}
+#bgCanvas{z-index:0}
+#particleCanvas{z-index:1}
+
+/* ===== Gradient Overlay ===== */
+.bg-gradient{
+  position:fixed;top:0;left:0;width:100vw;height:100vh;
+  background:linear-gradient(160deg,#0d0a1a 0%,#1a0a1e 15%,#2d1535 30%,#4a1942 50%,#6b2fa0 68%,#e84393 83%,#fd79a8 93%,#d4e8f0 100%);
+  background-size:250% 250%;
+  animation:bgShift 25s ease-in-out infinite alternate;
+  z-index:0;pointer-events:none;opacity:0.7;
+}
+@keyframes bgShift{
+  0%{background-position:0% 0%}
+  50%{background-position:100% 80%}
+  100%{background-position:30% 100%}
+}
+
+/* ===== Floating Orbs ===== */
+.float-orb{
+  position:fixed;border-radius:50%;pointer-events:none;z-index:1;
+  animation:orbDrift linear infinite;
+  opacity:0.08;
+}
+@keyframes orbDrift{
+  0%{transform:translate(0,0) scale(1)}
+  25%{transform:translate(30px,-25px) scale(1.06)}
+  50%{transform:translate(-25px,30px) scale(0.94)}
+  75%{transform:translate(25px,25px) scale(1.03)}
+  100%{transform:translate(0,0) scale(1)}
+}
+
+/* ===== Section Base ===== */
+section{
+  position:relative;z-index:3;
+  min-height:100vh;display:flex;
+  flex-direction:column;align-items:center;justify-content:center;
+  padding:80px 24px;
+}
+section:not(.hero){min-height:auto;padding:120px 24px}
+
+/* ===== Hero ===== */
+.hero{text-align:center;justify-content:center;min-height:100vh;position:relative}
+.hero-snow-row{
+  position:absolute;top:8vh;left:0;right:0;text-align:center;
+  font-size:clamp(1.2rem,3vw,2rem);
+  opacity:0;transform:translateY(20px);
+  transition:all 1.2s 0.2s;
+  filter:drop-shadow(0 0 20px rgba(180,200,230,0.3));
+}
+.hero-snow-row.visible{opacity:1;transform:translateY(0);animation:gentleSway 4s ease-in-out infinite}
+@keyframes gentleSway{
+  0%,100%{transform:translateX(-5px)}
+  50%{transform:translateX(5px)}
+}
+.hero-sub{
+  font-size:clamp(0.8rem,1.4vw,1rem);
+  letter-spacing:8px;color:rgba(180,200,230,0.5);
+  margin-bottom:10px;
+  opacity:0;transform:translateY(20px);
+  transition:all 1.2s 0.5s;
+}
+.hero-sub.visible{opacity:1;transform:translateY(0)}
+.hero-title{
+  font-family:'ZCOOL KuaiLe','Ma Shan Zheng',sans-serif;
+  font-size:clamp(3rem,14vw,8rem);
+  background:linear-gradient(135deg,#ffd700,#ff9eb5,#d4e8f0,#fff,#ffd700);
+  background-size:400% 400%;
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  animation:goldShift 5s ease-in-out infinite;
+  opacity:0;transform:scale(0.6) translateY(30px);
+  transition:all 1.5s cubic-bezier(0.34,1.56,0.64,1);
+  filter:drop-shadow(0 0 40px rgba(255,215,0,0.15));
+  letter-spacing:6px;
+}
+.hero-title.visible{opacity:1;transform:scale(1) translateY(0)}
+@keyframes goldShift{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+.hero-snow-title{
+  font-family:'Ma Shan Zheng',cursive;
+  font-size:clamp(1rem,2.5vw,1.8rem);
+  color:rgba(180,200,230,0.35);
+  margin-top:8px;letter-spacing:12px;
+  opacity:0;transition:all 1.5s 1.2s;
+}
+.hero-snow-title.visible{opacity:1}
+.hero-subtitle{
+  font-size:clamp(1rem,2.5vw,1.6rem);
+  font-weight:300;color:rgba(255,255,255,0.6);
+  margin-top:24px;min-height:2.8em;
+  opacity:0;transition:opacity 0.5s;
+}
+.hero-subtitle.visible{opacity:1}
+.hero-subtitle .cursor{
+  display:inline-block;width:2px;height:1.3em;
+  background:linear-gradient(180deg,#ffd700,rgba(212,232,240,0.3));
+  margin-left:4px;vertical-align:text-bottom;
+  animation:blink 0.7s infinite;
+}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.2}}
+.hero-emoji-row{
+  font-size:clamp(1.2rem,3.5vw,2.8rem);margin-top:40px;
+  opacity:0;transform:translateY(20px);
+  transition:all 1s 4.5s;
+  filter:drop-shadow(0 0 15px rgba(180,200,230,0.2));
+}
+.hero-emoji-row.visible{opacity:1;transform:translateY(0);animation:floatRow 4s ease-in-out infinite}
+@keyframes floatRow{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-12px)}
+}
+.scroll-hint{
+  position:absolute;bottom:28px;left:0;right:0;text-align:center;
+  font-size:1.4rem;color:rgba(180,200,230,0.35);
+  animation:scrollBounce 2.5s ease-in-out infinite;
+  cursor:pointer;opacity:0;transition:opacity 1s;
+  z-index:5;
+}
+.scroll-hint.visible{opacity:1}
+@keyframes scrollBounce{
+  0%,100%{transform:translateY(0);opacity:0.35}
+  50%{transform:translateY(12px);opacity:0.8}
+}
+
+/* ===== Content Card ===== */
+.content-card{
+  max-width:720px;width:100%;
+  background:linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02));
+  backdrop-filter:blur(28px);
+  -webkit-backdrop-filter:blur(28px);
+  border-radius:32px;
+  padding:clamp(36px,5vw,64px) clamp(28px,4vw,52px);
+  box-shadow:0 8px 80px rgba(233,69,147,0.06),0 0 120px rgba(106,47,160,0.04),inset 0 1px 0 rgba(255,255,255,0.08);
+  text-align:center;position:relative;overflow:hidden;
+  margin:0 auto;
+  border:1px solid rgba(180,200,230,0.06);
+  transform-style:preserve-3d;perspective:1000px;
+}
+.content-card::before{
+  content:'';position:absolute;top:0;left:-100%;right:-100%;height:2px;
+  background:linear-gradient(90deg,transparent,rgba(180,200,230,0.15),rgba(255,215,0,0.3),rgba(180,200,230,0.15),transparent);
+  animation:goldScan 5s ease-in-out infinite;
+}
+@keyframes goldScan{
+  0%{transform:translateX(-100%)}
+  50%{transform:translateX(100%)}
+  100%{transform:translateX(200%)}
+}
+.content-card .snow-deco{
+  position:absolute;top:12px;left:50%;transform:translateX(-50%);
+  font-size:0.6rem;letter-spacing:12px;
+  color:rgba(180,200,230,0.12);
+}
+
+.content-card h2{
+  font-family:'Ma Shan Zheng','ZCOOL KuaiLe',cursive,sans-serif;
+  font-size:clamp(1.8rem,4.5vw,2.8rem);
+  background:linear-gradient(135deg,#ffd700,#ff9eb5);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  margin-bottom:8px;letter-spacing:4px;
+}
+.content-card .subtitle{
+  font-size:0.9rem;color:rgba(180,200,230,0.35);margin-bottom:28px;letter-spacing:4px;
+}
+.content-card p{
+  font-size:clamp(0.95rem,2.2vw,1.15rem);
+  line-height:2.1;color:rgba(255,255,255,0.70);margin-bottom:6px;font-weight:300;
+}
+.content-card p strong{font-weight:700;color:#ffd700}
+.content-card p em{
+  font-style:normal;color:rgba(180,200,230,0.5);
+}
+.content-card p.gold-glow{
+  font-size:clamp(1rem,2.5vw,1.4rem);
+  color:#ffd700;font-weight:700;margin-top:20px;
+  text-shadow:0 0 25px rgba(255,215,0,0.2);
+}
+.content-card p.pink-glow{
+  font-size:clamp(1rem,2.8vw,1.5rem);
+  background:linear-gradient(135deg,#ff9eb5,#ffd700);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  font-weight:700;margin-top:24px;
+}
+.content-card p.snow-line{
+  color:rgba(180,200,230,0.3);font-size:0.85rem;margin-top:4px;
+}
+
+/* ===== Reveal Animations ===== */
+.reveal-up{opacity:0;transform:translateY(60px);transition:all 1s cubic-bezier(0.34,1.56,0.64,1)}
+.reveal-up.visible{opacity:1;transform:translateY(0)}
+.reveal-scale{opacity:0;transform:scale(0.6);transition:all 1.2s cubic-bezier(0.34,1.56,0.64,1)}
+.reveal-scale.visible{opacity:1;transform:scale(1)}
+.reveal-left{opacity:0;transform:translateX(-80px);transition:all 1s cubic-bezier(0.34,1.56,0.64,1)}
+.reveal-left.visible{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(80px);transition:all 1s cubic-bezier(0.34,1.56,0.64,1)}
+.reveal-right.visible{opacity:1;transform:translateX(0)}
+.reveal-rotate{opacity:0;transform:rotateX(20deg) translateY(40px);transition:all 1.2s cubic-bezier(0.34,1.56,0.64,1)}
+.reveal-rotate.visible{opacity:1;transform:rotateX(0) translateY(0)}
+.reveal-d1{transition-delay:0.1s}
+.reveal-d2{transition-delay:0.2s}
+.reveal-d3{transition-delay:0.3s}
+.reveal-d4{transition-delay:0.4s}
+.reveal-d5{transition-delay:0.5s}
+.reveal-d6{transition-delay:0.6s}
+.reveal-d7{transition-delay:0.7s}
+.reveal-d8{transition-delay:0.8s}
+.reveal-d9{transition-delay:0.9s}
+.reveal-d10{transition-delay:1.0s}
+
+/* ===== Sparkle Burst ===== */
+.sparkle-container{
+  position:absolute;top:0;left:0;right:0;bottom:0;
+  pointer-events:none;overflow:hidden;
+}
+.sparkle-dot{
+  position:absolute;border-radius:50%;
+  animation:sparkleFly 2.5s ease-out forwards;
+}
+@keyframes sparkleFly{
+  0%{opacity:1;transform:translate(0,0) scale(1)}
+  100%{opacity:0;transform:translate(var(--tx),var(--ty)) scale(0)}
+}
+
+.bg-stardust{
+  position:absolute;top:0;left:0;right:0;bottom:0;
+  background-image:radial-gradient(circle,rgba(180,200,230,0.04) 1px,transparent 1px);
+  background-size:24px 24px;pointer-events:none;
+}
+
+/* ===== Blessing Cards ===== */
+.blessing-grid{
+  display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:24px;
+}
+.blessing-item{
+  flex:1 1 170px;max-width:220px;
+  background:linear-gradient(135deg,rgba(255,255,255,0.05),rgba(180,200,230,0.02));
+  border:1px solid rgba(180,200,230,0.06);
+  border-radius:20px;padding:22px 14px;
+  transition:all 0.4s;position:relative;overflow:hidden;
+}
+.blessing-item::before{
+  content:'❄';position:absolute;top:-8px;right:-4px;
+  font-size:1.5rem;color:rgba(180,200,230,0.04);
+  transform:rotate(15deg);
+}
+.blessing-item:hover{
+  transform:translateY(-6px) scale(1.02);
+  background:linear-gradient(135deg,rgba(255,255,255,0.10),rgba(255,215,0,0.04));
+  border-color:rgba(255,215,0,0.12);
+  box-shadow:0 8px 40px rgba(180,200,230,0.06);
+}
+.blessing-item .icon{font-size:1.8rem;margin-bottom:10px;display:block}
+.blessing-item .text{font-size:0.9rem;line-height:1.7;color:rgba(255,255,255,0.60)}
+.blessing-item .text strong{color:#ffd700}
+
+/* ===== Ending ===== */
+.ending-section{text-align:center;padding:100px 20px}
+.ending-section h2{
+  font-family:'Ma Shan Zheng','ZCOOL KuaiLe',cursive,sans-serif;
+  font-size:clamp(2rem,5vw,3.5rem);
+  background:linear-gradient(135deg,#ffd700,#ff9eb5);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  margin-bottom:8px;letter-spacing:6px;
+}
+.ending-section .from-text{font-size:0.9rem;color:rgba(180,200,230,0.3);margin-top:30px;letter-spacing:6px;}
+.ending-section .end-emoji{
+  font-size:2rem;margin-top:24px;
+  animation:heartBeat 2s ease-in-out infinite;
+  filter:drop-shadow(0 0 20px rgba(255,107,157,0.2));
+}
+@keyframes heartBeat{
+  0%,100%{transform:scale(1)}
+  15%{transform:scale(1.2)}
+  30%{transform:scale(1)}
+  45%{transform:scale(1.15)}
+  60%{transform:scale(1)}
+}
+.end-dec-line{
+  font-size:0.65rem;letter-spacing:10px;color:rgba(180,200,230,0.1);margin:20px 0;
+}
+
+/* ===== Confetti ===== */
+.confetti-piece{
+  position:fixed;z-index:100;pointer-events:none;
+  animation:confettiFall linear forwards;
+}
+@keyframes confettiFall{
+  0%{opacity:1;transform:translateY(-10vh) rotate(0deg) scale(1)}
+  100%{opacity:0;transform:translateY(115vh) rotate(720deg) scale(0.3)}
+}
+
+/* ===== Floating decorations ===== */
+.float-deco{
+  position:fixed;pointer-events:none;z-index:1;
+  animation:decoRise linear infinite;
+  opacity:0.06;
+}
+@keyframes decoRise{
+  0%{transform:translateY(100vh) rotate(0deg);opacity:0}
+  10%{opacity:0.06}
+  85%{opacity:0.06}
+  100%{transform:translateY(-15vh) rotate(360deg);opacity:0}
+}
+
+/* ===== Trail Sparkle ===== */
+.trail-sparkle{
+  position:fixed;pointer-events:none;z-index:99;
+  border-radius:50%;
+  animation:trailFade 0.8s ease-out forwards;
+}
+@keyframes trailFade{
+  0%{opacity:1;transform:scale(1)}
+  100%{opacity:0;transform:scale(0) translateY(-20px)}
+}
+
+/* ===== Click Burst ===== */
+.burst-heart{
+  position:fixed;pointer-events:none;z-index:98;
+  font-size:1rem;
+  animation:heartBurst 1.4s ease-out forwards;
+}
+@keyframes heartBurst{
+  0%{opacity:1;transform:translate(0,0) scale(1) rotate(0deg)}
+  100%{opacity:0;transform:translate(var(--bx),var(--by)) scale(0) rotate(var(--br))}
+}
+
+/* ===== Responsive ===== */
+@media(max-width:600px){
+  section:not(.hero){padding:70px 16px}
+  .content-card{border-radius:24px;padding:32px 20px}
+  .blessing-item{flex:1 1 140px;max-width:100%}
+}
+</style>
+</head>
+<body>
+
+<div class="bg-gradient"></div>
+<canvas id="bgCanvas"></canvas>
+<canvas id="particleCanvas"></canvas>
+
+<div class="float-orb" style="width:500px;height:500px;top:-150px;right:-100px;background:radial-gradient(circle,rgba(233,69,147,0.10),transparent);animation-duration:28s"></div>
+<div class="float-orb" style="width:350px;height:350px;bottom:20%;left:-100px;background:radial-gradient(circle,rgba(106,47,160,0.08),transparent);animation-duration:32s;animation-delay:-12s"></div>
+<div class="float-orb" style="width:280px;height:280px;top:35%;right:5%;background:radial-gradient(circle,rgba(180,200,230,0.05),transparent);animation-duration:22s;animation-delay:-6s"></div>
+
+<div class="float-deco" style="left:5%;animation-duration:38s;animation-delay:-3s;font-size:3rem">❄️</div>
+<div class="float-deco" style="left:20%;animation-duration:42s;animation-delay:-15s;font-size:2rem">🌸</div>
+<div class="float-deco" style="left:38%;animation-duration:35s;animation-delay:-8s;font-size:2.5rem">❄️</div>
+<div class="float-deco" style="left:55%;animation-duration:45s;animation-delay:-20s;font-size:1.8rem">✨</div>
+<div class="float-deco" style="left:72%;animation-duration:33s;animation-delay:-12s;font-size:3rem">❄️</div>
+<div class="float-deco" style="left:88%;animation-duration:40s;animation-delay:-25s;font-size:2rem">🌸</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero-snow-row" id="heroSnowRow">❄️ 🌸 ❄️ 🌸 ❄️</div>
+  <p class="hero-sub" id="heroSub">—— 致 · 嘉 · 雪 ——</p>
+  <h1 class="hero-title" id="heroTitle">李嘉雪</h1>
+  <p class="hero-snow-title" id="heroSnowTitle">— 雪落无声 梅开有时 —</p>
+  <p class="hero-subtitle" id="heroSubtitle"></p>
+  <div class="hero-emoji-row" id="heroEmojiRow">❄️ 💕 🌸 ✨ 🌟 ❄️</div>
+  <div class="scroll-hint" id="scrollHint">❄</div>
+</section>
+
+<div class="end-dec-line">❄ ❄ ❄</div>
+
+<!-- ===== SECTION 2 ===== -->
+<section class="section" id="s2">
+  <div class="content-card">
+    <div class="bg-stardust"></div>
+    <div class="sparkle-container" id="sp2"></div>
+    <div class="snow-deco">❄ ✦ ❄ ✦ ❄</div>
+    <h2 class="reveal-scale">雪一样的女孩</h2>
+    <p class="subtitle reveal-up reveal-d1">—— 初见时只觉得你安静，后来才发现，你像雪一样，干净得让人挪不开眼</p>
+
+    <p class="reveal-up reveal-d2">每个人的名字都是一首诗</p>
+    <p class="reveal-up reveal-d2">而你，叫李嘉雪</p>
+    <p class="reveal-up reveal-d3" style="margin-top:14px">嘉，是美好</p>
+    <p class="reveal-up reveal-d3">雪，是纯粹</p>
+
+    <p class="reveal-up reveal-d4" style="margin-top:18px">你就像冬天的第一场雪</p>
+    <p class="reveal-up reveal-d4">落在哪里，哪里就变得干净了几分</p>
+
+    <p class="reveal-up reveal-d5" style="margin-top:18px;color:rgba(255,255,255,0.45)">每次路过你的工位</p>
+    <p class="reveal-up reveal-d5" style="color:rgba(255,255,255,0.45)">你总是低着头对着屏幕</p>
+    <p class="reveal-up reveal-d5" style="color:rgba(255,255,255,0.45)">键盘声噼里啪啦，Excel 的格子被你填得整整齐齐</p>
+
+    <p class="reveal-up reveal-d6" style="margin-top:18px">别人半小时做完的事，你要花一个小时</p>
+    <p class="reveal-up reveal-d6">不是因为慢，是因为你每一个数字都要对上</p>
+    <p class="reveal-up reveal-d6">「差不多就行了」——这个词在你的字典里不存在</p>
+
+    <p class="gold-glow reveal-scale reveal-d7">认真，是你写给这个世界的情书</p>
+    <p class="snow-line reveal-up reveal-d8">—— 雪落无声，却覆满山河 —</p>
+  </div>
+</section>
+
+<div class="end-dec-line">❄ ❄ ❄</div>
+
+<!-- ===== SECTION 3 ===== -->
+<section class="section" id="s3">
+  <div class="content-card">
+    <div class="bg-stardust"></div>
+    <div class="sparkle-container" id="sp3"></div>
+    <div class="snow-deco">❄ ✦ ❄ ✦ ❄</div>
+    <h2 class="reveal-scale">雪的心，最干净</h2>
+    <p class="subtitle reveal-up reveal-d1">—— 你知道吗？我最羡慕你的，是你心里那片雪</p>
+
+    <p class="reveal-up reveal-d2">这个社会总是教我们</p>
+    <p class="reveal-up reveal-d2">要学会说话，要学会看脸色，要学会「变通」</p>
+    <p class="reveal-up reveal-d2">要圆滑一点，别太直</p>
+
+    <p class="reveal-up reveal-d3" style="margin-top:20px">可你没有</p>
+    <p class="reveal-up reveal-d3"><strong>你始终是那个李嘉雪</strong></p>
+
+    <p class="reveal-up reveal-d4" style="margin-top:18px">心里想什么，脸上就写着什么</p>
+    <p class="reveal-up reveal-d4">不会拐弯抹角，不会欲言又止</p>
+    <p class="reveal-up reveal-d4">喜欢就是喜欢，难过就是难过</p>
+    <p class="reveal-up reveal-d4">像小孩子一样，干干净净</p>
+
+    <p class="reveal-up reveal-d5" style="margin-top:18px">有人说你「太老实了，不懂变通」</p>
+    <p class="reveal-up reveal-d5">可你只是眨眨眼睛，继续做自己</p>
+
+    <p class="reveal-up reveal-d6" style="margin-top:18px;color:rgba(255,255,255,0.4)">你知道吗？</p>
+    <p class="reveal-up reveal-d6" style="color:rgba(255,255,255,0.4)">一个人能在职场里保持这样的纯粹</p>
+    <p class="reveal-up reveal-d6" style="color:rgba(255,255,255,0.4)">不是因为她不懂人情世故</p>
+    <p class="reveal-up reveal-d6" style="color:rgba(255,255,255,0.4)">而是她选择了不变成自己不喜欢的样子</p>
+
+    <p class="reveal-rotate reveal-d7" style="margin-top:22px;color:rgba(180,200,230,0.3);font-size:0.9rem">
+      这样的你，比谁都勇敢
+    </p>
+
+    <div class="reveal-scale reveal-d8" style="margin-top:22px">
+      <p style="font-size:clamp(1.1rem,3vw,1.8rem);background:linear-gradient(135deg,#d4e8f0,#ffd700,#ff9eb5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:900;line-height:1.8">
+        雪从来不需要变成雨<br>
+        做雪就好<br>
+        冰清玉洁，自有光芒
+      </p>
+    </div>
+    <p class="snow-line reveal-up reveal-d9">—— 嘉雪，你的名字就是最好的祝福 —</p>
+  </div>
+</section>
+
+<div class="end-dec-line">❄ ❄ ❄</div>
+
+<!-- ===== SECTION 4 ===== -->
+<section class="section" id="s4">
+  <div class="content-card">
+    <div class="bg-stardust"></div>
+    <div class="snow-deco">❄ ✦ ❄ ✦ ❄</div>
+    <h2 class="reveal-scale">给未来的你</h2>
+    <p class="subtitle reveal-up reveal-d1">—— 雪会融化，但美好不会 —</p>
+
+    <div class="blessing-grid">
+      <div class="blessing-item reveal-left reveal-d2">
+        <span class="icon">💼</span>
+        <div class="text">愿你的新同事<br>看得见你的认真<br>懂得你的好</div>
+      </div>
+      <div class="blessing-item reveal-right reveal-d2">
+        <span class="icon">🤗</span>
+        <div class="text">愿有人护着你的天真<br>让你永远可以<br>笑得像个孩子</div>
+      </div>
+      <div class="blessing-item reveal-left reveal-d3">
+        <span class="icon">🌟</span>
+        <div class="text">愿你的未来<br>像雪后初晴<br><strong>干净而明亮</strong></div>
+      </div>
+      <div class="blessing-item reveal-right reveal-d3">
+        <span class="icon">🌈</span>
+        <div class="text">愿你永远不必改变<br>去迎合这个世界<br><strong>做李嘉雪就足够好</strong></div>
+      </div>
+      <div class="blessing-item reveal-left reveal-d4">
+        <span class="icon">🌸</span>
+        <div class="text">愿你的善良<br>像雪中梅花<br>终有人懂得欣赏</div>
+      </div>
+      <div class="blessing-item reveal-right reveal-d4">
+        <span class="icon">💝</span>
+        <div class="text">愿你的世界<br>永远简单、干净、温暖<br>就像——你</div>
+      </div>
+    </div>
+
+    <p class="reveal-up reveal-d5" style="margin-top:32px;font-size:clamp(1rem,2.5vw,1.3rem)">
+      李嘉雪，你要相信<br>
+      <strong>像你这样的女孩</strong>
+    </p>
+    <p class="gold-glow reveal-scale reveal-d6">一定会被这个世界，偷偷爱着</p>
+    <p class="snow-line reveal-up reveal-d7">—— 嘉雪，前路漫漫，皆是光明 —</p>
+  </div>
+</section>
+
+<div class="end-dec-line">❄ ❄ ❄</div>
+
+<!-- ===== SECTION 5 ===== -->
+<section class="section ending-section" id="s5">
+  <div class="content-card" style="text-align:center;max-width:600px">
+    <div class="bg-stardust"></div>
+    <div class="sparkle-container" id="sp5"></div>
+    <div class="snow-deco">❄ ✦ ❄ ✦ ❄</div>
+
+    <h2 class="reveal-scale">谢谢你，来过</h2>
+    <div class="end-dec-line reveal-up reveal-d1">❄ ✦ ❄</div>
+
+    <div class="reveal-up reveal-d2" style="margin-top:12px">
+      <p style="font-size:clamp(1rem,2.5vw,1.2rem);line-height:2;color:rgba(255,255,255,0.55)">
+        以后不在同一层楼了
+      </p>
+      <p style="font-size:clamp(1rem,2.5vw,1.2rem);line-height:2;color:rgba(255,255,255,0.55)">
+        但那个认真对账的背影
+      </p>
+      <p style="font-size:clamp(1rem,2.5vw,1.2rem);line-height:2;color:rgba(255,255,255,0.55)">
+        那个笑起来像个孩子的笑容
+      </p>
+      <p style="font-size:clamp(1rem,2.5vw,1.2rem);line-height:2;color:rgba(255,255,255,0.55)">
+        像雪一样干净的心
+      </p>
+      <p style="font-size:clamp(1rem,2.5vw,1.2rem);line-height:2;color:rgba(180,200,230,0.4)">
+        我会一直记得
+      </p>
+    </div>
+
+    <div class="end-dec-line reveal-up reveal-d3">❄ ✦ ❄</div>
+
+    <p class="reveal-scale reveal-d4" style="font-size:clamp(1.4rem,3.5vw,2.5rem);background:linear-gradient(135deg,#ffd700,#ff9eb5,#d4e8f0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:900">
+      最好的李嘉雪 💕
+    </p>
+
+    <div class="end-dec-line reveal-up reveal-d5">❄ ✦ ❄</div>
+
+    <p class="reveal-up reveal-d5" style="font-size:0.9rem;color:rgba(255,255,255,0.25);line-height:1.8;margin-top:8px">
+      带着你的认真和雪一样的干净<br>
+      去下一站，继续闪闪发光吧
+    </p>
+
+    <p class="reveal-up reveal-d7" style="margin-top:28px;font-size:0.85rem;color:rgba(180,200,230,0.3);letter-spacing:6px">
+      —— 嘉雪满山路，梅香伴君行 ——
+    </p>
+
+    <p class="reveal-up reveal-d8 from-text">—— 来自你的同事</p>
+    <div class="end-emoji reveal-up reveal-d9">❄️ 💖 ❄️ ✨ 🌸 💕 ❄️ ✨ ❄️</div>
+  </div>
+</section>
+
+<script>
+// ================================================
+// 1. BACKGROUND - Stars
+// ================================================
+const bc = document.getElementById('bgCanvas');
+const bctx = bc.getContext('2d');
+let bW, bH;
+function rb(){bW=bc.width=window.innerWidth;bH=bc.height=window.innerHeight}
+rb();window.addEventListener('resize',rb);
+
+const stars=[];
+for(let i=0;i<Math.min(200,Math.floor(bW*bH/4000));i++){
+  stars.push({
+    x:Math.random()*bW,y:Math.random()*bH,
+    s:Math.random()*2+0.3,
+    sp:Math.random()*0.02+0.002,
+    ph:Math.random()*Math.PI*2,
+    bo:Math.random()*0.4+0.15
+  });
+}
+function drawBg(t){
+  bctx.clearRect(0,0,bW,bH);
+  stars.forEach(s=>{
+    const op=s.bo*(0.3+0.7*Math.sin(t*s.sp+s.ph));
+    bctx.beginPath();bctx.arc(s.x,s.y,s.s,0,Math.PI*2);
+    if(s.s>1.3){
+      bctx.fillStyle='rgba(180,200,230,'+(op*0.4)+')';
+      bctx.beginPath();bctx.arc(s.x,s.y,s.s*4,0,Math.PI*2);
+      bctx.fill();
+    }
+    bctx.fillStyle='rgba(255,255,255,'+op+')';
+    bctx.beginPath();bctx.arc(s.x,s.y,s.s,0,Math.PI*2);
+    bctx.fill();
+  });
+}
+
+// ================================================
+// 2. PARTICLES - Hearts, Stars & SNOWFLAKES
+// ================================================
+const pc = document.getElementById('particleCanvas');
+const pctx = pc.getContext('2d');
+let pW, pH;
+function rp(){pW=pc.width=window.innerWidth;pH=pc.height=window.innerHeight}
+rp();window.addEventListener('resize',rp);
+
+const warmColors=['#ff9eb5','#ff6b9d','#ffd700','#fd79a8','#ffd54f','#e8a0d4','#ff8a80'];
+const snowColors=['#d4e8f0','#e8f4f8','#ffffff','#b8d4e3','#f0f8ff'];
+let pps=[];
+const ppCount=Math.min(55,Math.floor(pW*pH/28000));
+
+function drawFlake(ctx,x,y,sz,op){
+  ctx.save();ctx.globalAlpha=op;
+  ctx.translate(x,y);
+  ctx.strokeStyle='rgba(180,200,230,0.6)';
+  ctx.lineWidth=Math.max(0.8,sz*0.12);
+  for(let i=0;i<6;i++){
+    const a=i*Math.PI/3;
+    ctx.beginPath();ctx.moveTo(0,0);
+    ctx.lineTo(Math.cos(a)*sz,Math.sin(a)*sz);ctx.stroke();
+    const md=sz*0.45;
+    ctx.beginPath();
+    ctx.moveTo(Math.cos(a)*md,Math.sin(a)*md);
+    ctx.lineTo(Math.cos(a+0.5)*sz*0.7,Math.sin(a+0.5)*sz*0.7);ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(Math.cos(a)*md,Math.sin(a)*md);
+    ctx.lineTo(Math.cos(a-0.5)*sz*0.7,Math.sin(a-0.5)*sz*0.7);ctx.stroke();
+  }
+  ctx.restore();
+}
+
+class PP{
+  constructor(){this.reset();this.y=Math.random()*pH}
+  reset(){
+    this.x=Math.random()*pW;this.y=pH+20+Math.random()*40;
+    this.s=Math.random()*8+3;
+    this.sy=Math.random()*0.5+0.15;
+    this.sx=(Math.random()-0.5)*0.2;
+    this.op=Math.random()*0.3+0.08;
+    const r=Math.random();
+    if(r<0.3){this.t='h';this.c=warmColors[Math.floor(Math.random()*warmColors.length)]}
+    else if(r<0.55){this.t='s';this.c=warmColors[Math.floor(Math.random()*warmColors.length)]}
+    else{this.t='f';this.c=snowColors[Math.floor(Math.random()*snowColors.length)];this.s=Math.random()*10+5}
+    this.r=Math.random()*Math.PI*2;
+    this.rs=(Math.random()-0.5)*0.01;
+    this.w=Math.random()*2;this.ws=Math.random()*0.012+0.003;
+    this.wo=Math.random()*Math.PI*2;
+  }
+  update(t){
+    this.y-=this.sy;this.x+=this.sx+Math.sin(this.wo+this.w*t*0.001)*0.12;
+    this.r+=this.rs;
+    if(this.y<-30){this.reset();this.y=-30-Math.random()*30}
+  }
+  draw(){
+    if(this.t==='f'){
+      drawFlake(pctx,this.x,this.y,this.s,this.op*0.8);
+      return;
+    }
+    pctx.save();pctx.globalAlpha=this.op;
+    pctx.translate(this.x,this.y);pctx.rotate(this.r);
+    pctx.fillStyle=this.c;
+    if(this.t==='h'){
+      const s=this.s;
+      pctx.beginPath();pctx.moveTo(0,s*0.3);
+      pctx.bezierCurveTo(-s*0.5,-s*0.4,-s*1.0,s*0.1,0,s*0.8);
+      pctx.bezierCurveTo(s*1.0,s*0.1,s*0.5,-s*0.4,0,s*0.3);
+      pctx.fill();
+    }else{
+      const s=this.s;
+      pctx.beginPath();
+      for(let i=0;i<5;i++){
+        const a=i*4*Math.PI/5-Math.PI/2;
+        const px=Math.cos(a)*s,py=Math.sin(a)*s;
+        i===0?pctx.moveTo(px,py):pctx.lineTo(px,py);
+      }
+      pctx.closePath();pctx.fill();
+    }
+    pctx.restore();
+  }
+}
+for(let i=0;i<ppCount;i++){pps.push(new PP())}
+
+// ================================================
+// 3. MOUSE SPARKLE TRAIL
+// ================================================
+let mx=-100,my=-100;
+const trailColors=['#ffd700','#ff9eb5','#fff','#d4e8f0','#fd79a8','#e8f4f8'];
+document.addEventListener('mousemove',function(e){
+  mx=e.clientX;my=e.clientY;
+  const el=document.createElement('div');el.className='trail-sparkle';
+  const sz=2+Math.random()*5;
+  const cl=trailColors[Math.floor(Math.random()*trailColors.length)];
+  el.style.cssText='left:'+(mx+(Math.random()-0.5)*10)+'px;top:'+(my+(Math.random()-0.5)*10)+'px;width:'+sz+'px;height:'+sz+'px;background:'+cl+';box-shadow:0 0 8px '+cl;
+  document.body.appendChild(el);
+  setTimeout(function(){el.remove()},800);
+});
+
+// ================================================
+// 4. CLICK HEART BURST (now includes snowflakes)
+// ================================================
+document.addEventListener('click',function(e){
+  const items=['💕','❤️','✨','🌟','💖','💗','🌸','❄️','⭐','💫','🕊️'];
+  for(let i=0;i<22;i++){
+    const el=document.createElement('div');el.className='burst-heart';
+    el.textContent=items[Math.floor(Math.random()*items.length)];
+    const angle=Math.random()*Math.PI*2;
+    const dist=50+Math.random()*160;
+    const br=Math.random()*360;
+    const fs=0.7+Math.random()*1.4;
+    el.style.cssText='left:'+e.clientX+'px;top:'+e.clientY+'px;font-size:'+fs+'rem;--bx:'+(Math.cos(angle)*dist)+'px;--by:'+(Math.sin(angle)*dist)+'px;--br:'+br+'deg;';
+    document.body.appendChild(el);
+    setTimeout(function(){el.remove()},1400);
+  }
+});
+
+// ================================================
+// 5. TYPEWRITER
+// ================================================
+const st=document.getElementById('heroSubtitle');
+const tw='雪落下来的时候，每一片都不一样。而你，是特别的那一片 ✨';
+let ci=0;
+function startTw(){
+  st.classList.add('visible');
+  function go(){
+    if(ci<tw.length){
+      const c=tw[ci];
+      st.innerHTML=tw.slice(0,ci+1)+'<span class="cursor"></span>';
+      ci++;
+      setTimeout(go,c==='，'||c==='。'||c==='！'||c==='？'||c===','||c==='.'?320:55);
+    }else{
+      st.innerHTML=tw;
+      setTimeout(function(){st.innerHTML=tw+'<span class="cursor"></span>'},3000);
+    }
+  }
+  setTimeout(go,1100);
+}
+
+// ================================================
+// 6. SCROLL REVEAL
+// ================================================
+['reveal-up','reveal-scale','reveal-left','reveal-right','reveal-rotate'].forEach(function(cls){
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        e.target.classList.add('visible');
+        var sc=e.target.querySelector('.sparkle-container');
+        if(sc&&!sc.dataset.sparked){sc.dataset.sparked='true';burstSparkles(sc)}
+      }
+    });
+  },{threshold:0.1});
+  document.querySelectorAll('.'+cls).forEach(function(el){obs.observe(el)});
+});
+
+document.querySelectorAll('.content-card').forEach(function(card){
+  const sc=card.querySelector('.sparkle-container');
+  if(sc){
+    new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting&&!sc.dataset.sparked){sc.dataset.sparked='true';burstSparkles(sc)}
+      });
+    },{threshold:0.25}).observe(card);
+  }
+});
+
+function burstSparkles(container){
+  const cx=container.offsetWidth/2,cy=container.offsetHeight/2;
+  const colors=['#ffd700','#ff9eb5','#d4e8f0','#d4a5e6','#ff8a80','#f7d794','#fff','#fd79a8','#e8f4f8','#b8d4e3'];
+  for(let i=0;i<40;i++){
+    const el=document.createElement('div');el.className='sparkle-dot';
+    const angle=i/40*Math.PI*2+Math.random()*0.3;
+    const dist=40+Math.random()*200;
+    const sz=2+Math.random()*9;
+    const cl=colors[i%colors.length];
+    el.style.cssText='left:'+cx+'px;top:'+cy+'px;width:'+sz+'px;height:'+sz+'px;background:'+cl+';--tx:'+(Math.cos(angle)*dist)+'px;--ty:'+(Math.sin(angle)*dist)+'px;animation-delay:'+(Math.random()*0.15)+'s;box-shadow:0 0 8px '+cl;
+    container.appendChild(el);
+    setTimeout(function(){el.remove()},2800);
+  }
+}
+
+// ================================================
+// 7. CONFETTI
+// ================================================
+function fireConfetti(n){
+  n=n||60;
+  const cols=['#ffd700','#ff9eb5','#d4e8f0','#e8f4f8','#ff8a80','#f7d794','#fff','#fd79a8','#b8d4e3','#d4a5e6'];
+  for(let i=0;i<n;i++){
+    const el=document.createElement('div');el.className='confetti-piece';
+    const sz=4+Math.random()*10;
+    const shape=Math.random()>0.7?'50%':(Math.random()>0.5?'2px':'0');
+    el.style.cssText='left:'+(Math.random()*100)+'vw;top:-10vh;width:'+sz+'px;height:'+(sz*0.7)+'px;background:'+cols[Math.floor(Math.random()*cols.length)]+';border-radius:'+shape+';animation-duration:'+(2+Math.random()*3.5)+'s;animation-delay:'+(Math.random()*1.5)+'s;';
+    document.body.appendChild(el);
+    setTimeout(function(){el.remove()},6000);
+  }
+}
+
+// ================================================
+// 8. MAIN LOOP
+// ================================================
+function loop(t){
+  drawBg(t);
+  pctx.clearRect(0,0,pW,pH);
+  pps.forEach(function(p){p.update(t);p.draw()});
+  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+
+// ================================================
+// 9. ENTRANCE SEQUENCE
+// ================================================
+window.addEventListener('load',function(){
+  setTimeout(function(){document.getElementById('heroSnowRow').classList.add('visible')},100);
+  setTimeout(function(){document.getElementById('heroSub').classList.add('visible')},300);
+  setTimeout(function(){document.getElementById('heroTitle').classList.add('visible')},700);
+  setTimeout(function(){document.getElementById('heroSnowTitle').classList.add('visible')},1400);
+  setTimeout(startTw,2000);
+  setTimeout(function(){document.getElementById('heroEmojiRow').classList.add('visible')},5200);
+  setTimeout(function(){document.getElementById('scrollHint').classList.add('visible')},5800);
+  setTimeout(function(){fireConfetti(90)},1600);
+  setTimeout(function(){fireConfetti(50)},4000);
+});
+
+document.getElementById('scrollHint').addEventListener('click',function(){
+  document.getElementById('s2').scrollIntoView({behavior:'smooth'});
+});
+
+new IntersectionObserver(function(entries){
+  entries.forEach(function(e){if(e.isIntersecting)fireConfetti(120)});
+},{threshold:0.35}).observe(document.getElementById('s5'));
+
+console.log('❄️ 致李嘉雪 — 雪落无声 梅开有时 ❄️');
+</script>
+</body>
+</html>
