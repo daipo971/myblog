@@ -351,6 +351,36 @@ section:not(.hero){min-height:auto;padding:120px 24px}
 }
 
 /* ===== Responsive ===== */
+
+/* ===== Music Control ===== */
+.music-btn{
+  position:fixed;bottom:30px;right:30px;z-index:99;
+  width:48px;height:48px;border-radius:50%;
+  background:linear-gradient(135deg,rgba(255,255,255,0.12),rgba(255,255,255,0.04));
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid rgba(180,200,230,0.15);
+  color:rgba(255,255,255,0.6);font-size:1.3rem;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;
+  transition:all 0.3s;opacity:0;transform:scale(0.6);
+  box-shadow:0 4px 20px rgba(0,0,0,0.2);
+}
+.music-btn:hover{background:linear-gradient(135deg,rgba(255,255,255,0.18),rgba(255,255,255,0.08));color:#ffd700;transform:scale(1.08);border-color:rgba(255,215,0,0.2)}
+.music-btn.visible{opacity:1;transform:scale(1)}
+.music-btn.playing{color:#ffd700;border-color:rgba(255,215,0,0.2)}
+.music-btn .pulse-ring{
+  position:absolute;width:100%;height:100%;border-radius:50%;
+  border:1px solid rgba(255,215,0,0.15);
+  animation:pulseRing 2s ease-out infinite;
+}
+@keyframes pulseRing{
+  0%{transform:scale(1);opacity:1}
+  100%{transform:scale(1.6);opacity:0}
+}
+.music-btn.playing .pulse-ring{display:block}
+.music-btn:not(.playing) .pulse-ring{display:none}
+@media(max-width:600px){
+  .music-btn{bottom:20px;right:20px;width:42px;height:42px;font-size:1.1rem}
+}
 @media(max-width:600px){
   section:not(.hero){padding:70px 16px}
   .content-card{border-radius:24px;padding:32px 20px}
@@ -831,6 +861,133 @@ new IntersectionObserver(function(entries){
 },{threshold:0.35}).observe(document.getElementById('s5'));
 
 console.log('❄️ 致李嘉雪 — 雪落无声 梅开有时 ❄️');
+
+// ================================================
+// 10. AMBIENT MUSIC (Web Audio API)
+// ================================================
+var audioCtx=null;
+var musicPlaying=false;
+var musicTimeout=null;
+var reverbNode=null;
+var musicVolume=0.12;
+var musicStarted=false;
+
+function initAudio(){
+  if(audioCtx)return;
+  audioCtx=new(window.AudioContext||window.webkitAudioContext)();
+  // Create reverb
+  var sr=audioCtx.sampleRate;
+  var len=sr*3;
+  var imp=audioCtx.createBuffer(2,len,sr);
+  for(var ch=0;ch<2;ch++){
+    var d=imp.getChannelData(ch);
+    for(var i=0;i<len;i++){d[i]=(Math.random()*2-1)*Math.pow(1-i/len,3)}
+  }
+  var c=audioCtx.createConvolver();c.buffer=imp;
+  reverbNode=c;
+}
+
+function playNote(freq,time,dur){
+  if(!audioCtx||!reverbNode)return;
+  var osc=audioCtx.createOscillator();
+  var gain=audioCtx.createGain();
+  var filter=audioCtx.createBiquadFilter();
+  osc.type='sine';
+  osc.frequency.setValueAtTime(freq,time);
+  filter.type='lowpass';
+  filter.frequency.setValueAtTime(1200,time);
+  gain.gain.setValueAtTime(0,time);
+  gain.gain.linearRampToValueAtTime(musicVolume,time+0.1);
+  gain.gain.exponentialRampToValueAtTime(0.001,time+dur-0.1);
+  osc.connect(filter);filter.connect(gain);gain.connect(reverbNode);
+  reverbNode.connect(audioCtx.destination);
+  osc.start(time);osc.stop(time+dur);
+}
+
+function playHarmony(freq,time,dur){
+  if(!audioCtx||!reverbNode)return;
+  var osc=audioCtx.createOscillator();
+  var gain=audioCtx.createGain();
+  osc.type='triangle';
+  osc.frequency.setValueAtTime(freq,time);
+  gain.gain.setValueAtTime(0,time);
+  gain.gain.linearRampToValueAtTime(musicVolume*0.5,time+0.2);
+  gain.gain.exponentialRampToValueAtTime(0.001,time+dur);
+  osc.connect(gain);gain.connect(reverbNode);
+  reverbNode.connect(audioCtx.destination);
+  osc.start(time);osc.stop(time+dur);
+}
+
+function scheduleNextNote(){
+  if(!musicPlaying)return;
+  var now=audioCtx.currentTime;
+  // Pentatonic scale: C4 D4 E4 G4 A4 C5 D5 E5
+  var scale=[261.63,293.66,329.63,392.00,440.00,523.25,587.33,659.25];
+  var freq=scale[Math.floor(Math.random()*scale.length)];
+  var dur=2.5+Math.random()*3;
+  playNote(freq,now+0.2,dur);
+  // Occasional harmony note
+  if(Math.random()>0.55){
+    var ratios=[1.25,1.333,1.5];
+    var ratio=ratios[Math.floor(Math.random()*ratios.length)];
+    var hf=freq*ratio;
+    if(hf<1000){playHarmony(hf,now+0.4,dur*0.6)}
+  }
+  // Very occasional low note
+  if(Math.random()>0.85){
+    playNote(196.00+Math.random()*80,now+0.8,3+Math.random()*2);
+  }
+  var delay=2000+Math.random()*3000;
+  musicTimeout=setTimeout(scheduleNextNote,delay);
+}
+
+function startMusic(){
+  if(!audioCtx)initAudio();
+  if(!musicStarted){
+    musicStarted=true;
+    // Resume if suspended
+    if(audioCtx.state==='suspended')audioCtx.resume();
+  }
+  musicPlaying=true;
+  scheduleNextNote();
+  document.getElementById('musicBtn').classList.add('playing');
+  document.getElementById('musicIcon').textContent='♫';
+}
+
+function stopMusic(){
+  musicPlaying=false;
+  if(musicTimeout){clearTimeout(musicTimeout);musicTimeout=null}
+  document.getElementById('musicBtn').classList.remove('playing');
+  document.getElementById('musicIcon').textContent='♪';
+}
+
+function toggleMusic(){
+  if(musicPlaying){stopMusic()}
+  else{
+    if(!audioCtx||!musicStarted){initAudio();if(audioCtx&&audioCtx.state==='suspended')audioCtx.resume();startMusic()}
+    else{startMusic()}
+  }
+}
+
+// Show music button after hero animation
+setTimeout(function(){document.getElementById('musicBtn').classList.add('visible')},4000);
+
+// First click anywhere initializes audio
+document.addEventListener('click',function(){
+  if(!musicStarted){
+    initAudio();startMusic();
+  }
+},{once:true});
+
+document.getElementById('musicBtn').addEventListener('click',function(e){
+  e.stopPropagation();
+  toggleMusic();
+});
 </script>
+
+<button class="music-btn" id="musicBtn" title="背景音乐">
+  <span class="pulse-ring"></span>
+  <span id="musicIcon">♪</span>
+</button>
 </body>
 </html>
