@@ -9,6 +9,13 @@
     <lastBuildDate>Tue, 21 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xinqiai.dpdns.org/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>2026年AI设计工具横评：Canva AI vs 稿定AI vs 创客贴AI vs Midjourney，做图党必看</title>
+      <link>https://xinqiai.dpdns.org/posts/ai-design-tools-comparison-2026/</link>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://xinqiai.dpdns.org/posts/ai-design-tools-comparison-2026/</guid>
+      <description>Canva AI、稿定AI、创客贴AI、Midjourney四款AI做图设计工具横评，从模板、AI生成、编辑功能、价格等维度对比</description>
+    </item>
+    <item>
       <title>2026年个人知识管理体系搭建：用Notion AI &#43; Obsidian &#43; Readwise打造第二大脑</title>
       <link>https://xinqiai.dpdns.org/posts/personal-knowledge-management-2026/</link>
       <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
@@ -16,11 +23,32 @@
       <description>用Notion AI、Obsidian、Readwise等工具搭建个人知识管理体系，从信息收集到知识输出的完整工作流</description>
     </item>
     <item>
+      <title>AI简历面试工具推荐 2026：找工作必备的AI辅助神器</title>
+      <link>https://xinqiai.dpdns.org/posts/ai-resume-interview-tools-2026/</link>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://xinqiai.dpdns.org/posts/ai-resume-interview-tools-2026/</guid>
+      <description>AI写简历、优化简历、模拟面试、面试题库工具推荐，覆盖ChatGPT、Claude、Kickresume等实用AI求职辅助工具</description>
+    </item>
+    <item>
+      <title>AI编程入门到接单赚钱 2026：零基础也能用AI写出能卖钱的项目</title>
+      <link>https://xinqiai.dpdns.org/posts/ai-programming-to-freelance-2026/</link>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://xinqiai.dpdns.org/posts/ai-programming-to-freelance-2026/</guid>
+      <description>零基础用AI编程入门并接单赚钱的完整指南，从学编程到接外包的全流程，包含Cursor使用、项目实战、接单平台推荐</description>
+    </item>
+    <item>
       <title>AI翻译工具横评 2026：DeepL vs ChatGPT vs Claude vs Google翻译，哪个最准？</title>
       <link>https://xinqiai.dpdns.org/posts/ai-translation-tools-comparison-2026/</link>
       <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://xinqiai.dpdns.org/posts/ai-translation-tools-comparison-2026/</guid>
       <description>DeepL、ChatGPT、Claude、Google翻译四款AI翻译工具实测对比，覆盖中英日韩法德等多语种翻译质量、专业术语、价格等</description>
+    </item>
+    <item>
+      <title>AI自动化办公指南 2026：用ChatGPT处理Excel、Word、邮件和会议纪要</title>
+      <link>https://xinqiai.dpdns.org/posts/ai-automation-office-2026/</link>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://xinqiai.dpdns.org/posts/ai-automation-office-2026/</guid>
+      <description>AI自动化办公完整指南，教你用ChatGPT、Claude等AI工具处理Excel数据分析、Word文档撰写、邮件自动回复、会议纪要整理</description>
     </item>
     <item>
       <title>AI自动生成PPT工具推荐 2026：Gamma、Tome、Beautiful.ai、讯飞智文实测对比</title>
@@ -42,6 +70,13 @@
       <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://xinqiai.dpdns.org/posts/cursor-vs-windsurf-2026/</guid>
       <description>Cursor和Windsurf两款最热门AI编程IDE的深度对比评测，从代码补全、Composer/Cascade、价格、性能等全方位对比</description>
+    </item>
+    <item>
+      <title>Midjourney V7完整教程 2026：从入门到精通的AI绘画实战指南</title>
+      <link>https://xinqiai.dpdns.org/posts/midjourney-complete-guide-2026/</link>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://xinqiai.dpdns.org/posts/midjourney-complete-guide-2026/</guid>
+      <description>Midjourney V7完整使用教程，从注册订阅到高级提示词技巧，涵盖文生图、图生图、参数调节、风格参考等实战技巧</description>
     </item>
     <item>
       <title>LLM 应用后端开发实战：构建生产级 AI 应用的工程实践</title>
