@@ -1,6 +1,867 @@
-<!doctype html><html lang=en dir=auto data-theme=dark><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Anthropic Claude 入门完整指南（2026版） | 欣淇AI网 - AI工具教程与免费资源</title><meta name=keywords content="Anthropic,Claude,AI,教程"><meta name=description content="从零开始学习 Anthropic Claude，包括 API 调用、Claude Pro 介绍、Claude Code CLI 使用、Artifacts 功能详解。适合新手入门。"><meta name=author content><link rel=canonical href=https://xinqiai.dpdns.org/posts/claude-guide/><meta name=google-site-verification content="googlee78fbd130bd563d5"><meta name=msvalidate.01 content="F7ED783B3CF5AA4252FD5454135D5D82"><link crossorigin=anonymous href=/assets/css/stylesheet.47939802696e3f8589c087db9a189456b636541579828bc908d8a592f6a1144c.css integrity="sha256-R5OYAmluP4WJwIfbmhiUVrY2VBV5govJCNilkvahFEw=" rel="preload stylesheet" as=style><link rel=icon href=https://xinqiai.dpdns.org/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://xinqiai.dpdns.org/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://xinqiai.dpdns.org/favicon-32x32.png><link rel=apple-touch-icon href=https://xinqiai.dpdns.org/apple-touch-icon.png><link rel=mask-icon href=https://xinqiai.dpdns.org/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://xinqiai.dpdns.org/posts/claude-guide/><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><script>localStorage.getItem("pref-theme")==="light"&&(document.querySelector("html").dataset.theme="light")</script><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel=stylesheet><style>:root{--cyber-bg-1:#0a0a12;--cyber-bg-2:#0d0d1a;--cyber-accent:#00d4ff;--cyber-accent2:#7c3aed;--cyber-accent3:#00ff88;--cyber-glow:rgba(0,212,255,0.15);--glass-bg:rgba(255,255,255,0.04);--glass-border:rgba(0,212,255,0.08);--glass-blur:12px}[data-theme=dark]{--cyber-bg-1:#080810;--cyber-bg-2:#0b0b18;--glass-bg:rgba(255,255,255,0.04);--glass-border:rgba(0,212,255,0.08)}body{background:linear-gradient(135deg,var(--cyber-bg-1) 0%,var(--cyber-bg-2) 50%,#0f0a1a 100%)!important;background-attachment:fixed!important}body::before{content:'';position:fixed;top:0;left:0;width:100%;height:100%;background-image:linear-gradient(rgba(0,212,255,3%) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,3%) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;z-index:-1}body::after{content:'';position:fixed;top:0;left:0;width:100%;height:100%;background:repeating-linear-gradient( 0,transparent,transparent 2px,rgba(0,212,255,.8%) 2px,rgba(0,212,255,.8%) 4px );pointer-events:none;z-index:-1}.header{background:rgba(10,10,18,.7)!important;backdrop-filter:blur(var(--glass-blur))!important;-webkit-backdrop-filter:blur(var(--glass-blur))!important;border-bottom:1px solid var(--glass-border)!important}.logo a{background:linear-gradient(135deg,var(--cyber-accent),var(--cyber-accent2),var(--cyber-accent3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:800!important;letter-spacing:.5px}.logo a::after{content:'';display:block;height:2px;background:linear-gradient(90deg,var(--cyber-accent),var(--cyber-accent2));border-radius:2px;margin-top:2px;animation:logoGlow 3s ease-in-out infinite alternate}@keyframes logoGlow{0%{opacity:.4;width:60%}100%{opacity:1;width:100%}}.menu a{position:relative;color:var(--secondary)!important;transition:color .3s ease!important}.menu a::before{content:'';position:absolute;bottom:2px;left:0;width:100%;height:1px;background:linear-gradient(90deg,var(--cyber-accent),var(--cyber-accent2));transform:scaleX(0);transform-origin:right;transition:transform .4s ease}.menu a:hover{color:var(--cyber-accent)!important}.menu a:hover::before{transform:scaleX(1);transform-origin:left}.menu .active{color:var(--cyber-accent)!important;text-decoration:none!important}.menu .active::before{transform:scaleX(1)}.theme-toggle{color:var(--secondary)!important;transition:all .3s ease!important}.theme-toggle:hover{color:var(--cyber-accent)!important;text-shadow:0 0 12px var(--cyber-glow)}.home-info{position:relative;border:none!important;background:var(--glass-bg)!important;backdrop-filter:blur(var(--glass-blur))!important;-webkit-backdrop-filter:blur(var(--glass-blur))!important;border-radius:16px!important;padding:40px var(--gap)!important;box-shadow:0 0 30px rgba(0,212,255,3%),inset 0 1px rgba(0,212,255,6%);transition:all .4s ease}.home-info::before{content:'';position:absolute;top:-1px;left:-1px;right:-1px;bottom:-1px;border-radius:17px;background:linear-gradient(135deg,rgba(0,212,255,.15),transparent 40%,transparent 60%,rgba(124,58,237,.15));z-index:-1;opacity:.6;transition:opacity .4s ease}.home-info:hover::before{opacity:1}.home-info .entry-header h1{background:linear-gradient(135deg,var(--cyber-accent),var(--cyber-accent2),var(--cyber-accent3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-size:40px!important;letter-spacing:1px;line-height:1.2!important}.home-info .entry-content{color:rgba(196,196,197,.85)!important;font-size:16px!important;line-height:1.8!important}.home-contact-card{background:rgba(0,212,255,4%)!important;border:1px solid rgba(0,212,255,.1)!important;backdrop-filter:blur(8px)!important;-webkit-backdrop-filter:blur(8px)!important;transition:all .3s ease!important}.home-contact-card:hover{background:rgba(0,212,255,8%)!important;border-color:rgba(0,212,255,.25)!important;box-shadow:0 0 25px rgba(0,212,255,.1),inset 0 0 25px rgba(0,212,255,3%)!important}.post-entry{background:var(--glass-bg)!important;backdrop-filter:blur(8px)!important;-webkit-backdrop-filter:blur(8px)!important;border:1px solid var(--glass-border)!important;border-radius:12px!important;transition:all .35s cubic-bezier(.25,.46,.45,.94)!important;position:relative;overflow:hidden}.post-entry::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(0,212,255,3%),transparent);transition:left .6s ease}.post-entry:hover{transform:translateY(-3px)!important;border-color:rgba(0,212,255,.2)!important;box-shadow:0 8px 32px rgba(0,212,255,8%),0 0 60px rgba(0,212,255,2%)!important}.post-entry:hover::before{left:100%}.entry-header h2 a{color:var(--primary)!important;transition:color .3s ease}.post-entry:hover .entry-header h2 a{color:var(--cyber-accent)!important}.entry-content{color:var(--secondary)!important}.tags-list a,.terms-tags a,.tag a,.post-tags a{background:rgba(0,212,255,5%)!important;border:1px solid rgba(0,212,255,8%)!important;border-radius:6px!important;transition:all .3s ease!important;padding:2px 10px!important}.tags-list a:hover,.terms-tags a:hover,.tag a:hover,.post-tags a:hover{background:rgba(0,212,255,.1)!important;border-color:rgba(0,212,255,.25)!important;box-shadow:0 0 15px rgba(0,212,255,6%)!important;transform:translateY(-1px)}.page-link{background:var(--glass-bg)!important;border:1px solid var(--glass-border)!important;backdrop-filter:blur(6px)!important;-webkit-backdrop-filter:blur(6px)!important;transition:all .3s ease!important}.page-link:hover{background:rgba(0,212,255,8%)!important;border-color:rgba(0,212,255,.2)!important;box-shadow:0 0 12px rgba(0,212,255,5%)}.current .page-link{background:rgba(0,212,255,.12)!important;border-color:rgba(0,212,255,.3)!important;color:var(--cyber-accent)!important}.footer{background:rgba(10,10,18,.6)!important;backdrop-filter:blur(var(--glass-blur))!important;-webkit-backdrop-filter:blur(var(--glass-blur))!important;border-top:1px solid var(--glass-border)!important}.footer a:hover{color:var(--cyber-accent)!important;text-shadow:0 0 10px rgba(0,212,255,.2)}.top-link{background:var(--glass-bg)!important;border:1px solid var(--glass-border)!important;backdrop-filter:blur(8px)!important;-webkit-backdrop-filter:blur(8px)!important;transition:all .3s ease!important}.top-link:hover{background:rgba(0,212,255,.1)!important;border-color:rgba(0,212,255,.3)!important;box-shadow:0 0 20px rgba(0,212,255,.1);transform:translateY(-3px)}.search-form input{background:var(--glass-bg)!important;border:1px solid var(--glass-border)!important;backdrop-filter:blur(8px)!important;-webkit-backdrop-filter:blur(8px)!important;transition:all .3s ease!important;color:var(--primary)!important}.search-form input:focus{border-color:rgba(0,212,255,.3)!important;box-shadow:0 0 20px rgba(0,212,255,6%)}.searchResults .focus,.searchResults li:active{background:rgba(0,212,255,8%)!important;border-color:rgba(0,212,255,.2)!important}pre,.chroma{border-radius:10px!important;border:1px solid rgba(0,212,255,6%)!important}::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar-track{background:var(--cyber-bg-1)}::-webkit-scrollbar-thumb{background:rgba(0,212,255,.15);border-radius:3px;transition:background .3s ease}::-webkit-scrollbar-thumb:hover{background:rgba(0,212,255,.3)}@media screen and (max-width:768px){.home-info{padding:28px 16px!important;border-radius:12px!important;backdrop-filter:blur(6px)!important;-webkit-backdrop-filter:blur(6px)!important}.home-info .entry-header h1{font-size:28px!important}.home-info .entry-content{font-size:15px!important}.post-entry{backdrop-filter:blur(6px)!important;-webkit-backdrop-filter:blur(6px)!important;padding:16px!important}.header{backdrop-filter:blur(8px)!important;-webkit-backdrop-filter:blur(8px)!important}.footer{backdrop-filter:blur(8px)!important;-webkit-backdrop-filter:blur(8px)!important}body::before{background-size:40px 40px}}@media screen and (max-width:480px){:root{--glass-blur:8px}.logo a{font-size:20px!important}.home-info .entry-header h1{font-size:24px!important}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}</style><script>(function(){"use strict";var e,t,n,s,o,i,a,c,l,d,r=window.innerWidth<768,f=window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(f)return;s=document.createElement("canvas"),s.id="cyber-particles",s.style.cssText="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:-1;",document.body.appendChild(s),e=s.getContext("2d"),n=[],t={x:-1e3,y:-1e3},a=null,d=r?40:80,c=r?120:150,l=r?100:150;function u(){o=s.width=window.innerWidth,i=s.height=window.innerHeight,p()}function p(){n=[];for(var e=0;e<d;e++)n.push({x:Math.random()*o,y:Math.random()*i,vx:(Math.random()-.5)*.5,vy:(Math.random()-.5)*.5,r:Math.random()*2+1,alpha:Math.random()*.5+.2})}function h(){e.clearRect(0,0,o,i);for(var s,a,d,u,m,f,p,g,v,b,j,y,r=0;r<n.length;r++){s=n[r],s.x+=s.vx,s.y+=s.vy,s.x<-20&&(s.x=o+20),s.x>o+20&&(s.x=-20),s.y<-20&&(s.y=i+20),s.y>i+20&&(s.y=-20),e.beginPath(),e.arc(s.x,s.y,s.r,0,Math.PI*2),d=e.createRadialGradient(s.x,s.y,0,s.x,s.y,s.r*3),d.addColorStop(0,"rgba(0, 212, 255, "+s.alpha+")"),d.addColorStop(1,"rgba(0, 212, 255, 0)"),e.fillStyle=d,e.fill(),e.beginPath(),e.arc(s.x,s.y,s.r*.4,0,Math.PI*2),e.fillStyle="rgba(0, 212, 255, "+s.alpha*.8+")",e.fill();for(u=r+1;u<n.length;u++)a=n[u],f=s.x-a.x,m=s.y-a.y,p=(f*f+m*m)**.5,p<c&&(j=(1-p/c)*.3,e.beginPath(),e.moveTo(s.x,s.y),e.lineTo(a.x,a.y),e.strokeStyle="rgba(0, 212, 255, "+j+")",e.lineWidth=.5,e.stroke());g=s.x-t.x,v=s.y-t.y,b=(g*g+v*v)**.5,b<l&&(y=(1-b/l)*.5,e.beginPath(),e.moveTo(t.x,t.y),e.lineTo(s.x,s.y),e.strokeStyle="rgba(124, 58, 237, "+y+")",e.lineWidth=1,e.stroke())}requestAnimationFrame(h)}function g(e){if(a)return;a=setTimeout(function(){t.x=e.clientX,t.y=e.clientY,a=null},16)}function v(e){var n=e.touches[0];n&&(t.x=n.clientX,t.y=n.clientY)}function m(){t.x=-1e3,t.y=-1e3}document.addEventListener("mousemove",g),document.addEventListener("mouseleave",m),document.addEventListener("touchmove",v,{passive:!0}),document.addEventListener("touchend",m),u(),window.addEventListener("resize",u),h()})()</script><meta property="og:url" content="https://xinqiai.dpdns.org/posts/claude-guide/"><meta property="og:site_name" content="欣淇AI网 - AI工具教程与免费资源"><meta property="og:title" content="Anthropic Claude 入门完整指南（2026版）"><meta property="og:description" content="从零开始学习 Anthropic Claude，包括 API 调用、Claude Pro 介绍、Claude Code CLI 使用、Artifacts 功能详解。适合新手入门。"><meta property="og:locale" content="zh_cn"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2026-07-05T00:00:00+08:00"><meta property="article:modified_time" content="2026-07-05T00:00:00+08:00"><meta property="article:tag" content="Anthropic"><meta property="article:tag" content="Claude"><meta property="article:tag" content="AI"><meta property="article:tag" content="教程"><meta name=twitter:card content="summary"><meta name=twitter:title content="Anthropic Claude 入门完整指南（2026版）"><meta name=twitter:description content="从零开始学习 Anthropic Claude，包括 API 调用、Claude Pro 介绍、Claude Code CLI 使用、Artifacts 功能详解。适合新手入门。"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://xinqiai.dpdns.org/posts/"},{"@type":"ListItem","position":2,"name":"Anthropic Claude 入门完整指南（2026版）","item":"https://xinqiai.dpdns.org/posts/claude-guide/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Anthropic Claude 入门完整指南（2026版）","name":"Anthropic Claude 入门完整指南（2026版）","description":"从零开始学习 Anthropic Claude，包括 API 调用、Claude Pro 介绍、Claude Code CLI 使用、Artifacts 功能详解。适合新手入门。","keywords":["Anthropic","Claude","AI","教程"],"articleBody":"这两年 AI 工具发展太快，Anthropic 的 Claude 成了很多人首选的 AI 助手。相比其他模型，Claude 的优势很明显：\n特性 Claude ChatGPT Claude 的优势 上下文窗口 200K token 128K 能处理超长文档 长度限制 任意长 32K 写文章、代码更流畅 代码能力 优秀 良好 支持 30+ 种语言 安全性 首屈一指 良好 很少胡说八道 思考模式 Sonnet/Opus 没有 处理复杂任务更强 这篇文章从零教你使用 Claude，不管是日常对话、API 调用还是代码开发，都能帮你快速上手。\nClaude 有哪些产品？ 1. Claude Pro / Claude Max Claude Pro 是付费订阅服务，每月 $20 美元（国内充值约 ¥140）。\nPro 计划特色：\n⚡️ 更快响应速度 🎯 更快切换到 Sonnet 模型 📈 更高使用限额（每天 200 次对话 vs 普通 50 次） 🚫 去除未来可能的功能水印 适用人群：\n日常高频使用者 开发者需要大量代码生成 想体验最新功能 2. Claude API Claude API 提供完整的程序化访问能力，按 Token 计费。\n计费方式：\n模型 输入价格 输出价格 典型场景 Claude Haiku $1/M $5/M 批量处理、成本低 Claude Sonnet $3/M $15/M 日常开发、最常用 Claude Opus $15/M $75/M 复杂任务、精细工作 3. Claude Desktop App 桌面应用，支持 macOS、Windows、Linux。\n4. Claude Web + Claude Artifacts 网页版支持最新功能：\nArtifacts - 实时预览代码/设计 Projects - 持久化对话项目 Canvas - 协作文档编辑 快速开始 注册 Claude 访问 https://claude.ai 使用 Google / Apple / Email 注册 完成手机号验证 注册注意：\n首次注册可以免费试用 3 次对话 试用期结束后会要求绑定支付方式（不是扣款，只是验证） 不绑定也能继续用，但限额会降到每天 5 次对话 使用 Claude Web ┌──────────────────────────────────────────────────────────┐ │ Claude.ai (https://claude.ai) │ ├──────────────────────────────────────────────────────────┤ │ ┌────────────────────────────────────────────────────┐ │ │ │ 聊天窗口 │ │ │ │ \"帮我写一个 Python 函数\" │ │ │ │ │ │ │ │ ┌──────────────────────────────────────────────┐ │ │ │ │ │ Claude 响应区域 │ │ │ │ │ │ │ │ │ │ │ │ 代码块高亮显示 │ │ │ │ │ │ ┌──────────────────────────────────────┐ │ │ │ │ │ │ │ def hello(): │ │ │ │ │ │ │ │ print(\"Hello, Claude!\") │ │ │ │ │ │ │ └──────────────────────────────────────┘ │ │ │ │ │ │ │ │ │ │ │ │ [Artifacts 按钮] │ │ │ │ │ └──────────────────────────────────────────────┘ │ │ │ └────────────────────────────────────────────────────┘ │ │ │ │ 提示词输入框 → 发送按钮 │ └──────────────────────────────────────────────────────────┘ 基础使用技巧 1. 清晰的 Prompt 模板\n# 角色设定 你是一位 Python 专家，擅长写清晰、高效的代码。 # 任务目标 写一个函数，功能是... # 输入格式 输入：... # 输出要求 - 代码必须包含类型注解 - 必须有 Docstring - 示例测试代码 # 上下文 我正在... 2. 代码示例 Prompt\n# 用 Python 写一个函数，计算斐波那契数列的第 n 项 # 要求：使用动态规划优化性能 # 返回值类型：int 3. 多轮对话技巧\n你：帮我优化这段代码 AI：这是优化后的版本... 你：速度还可以再快一点吗？ AI：这是进一步优化的版本... 你：最后一个版本最慢的部分是哪里？ AI：慢在递归调用... Claude API 快速入门 1. 注册并获取 API Key 访问 https://console.anthropic.com 使用 Google / GitHub 账号登录 进入 API Keys 页面 → Create Key 复制 API Key（格式：sk-ant-xxx） 2. 安装 SDK Python：\npip install anthropic Node.js：\nnpm install @anthropic-ai/sdk Go：\ngo get github.com/anthropics/anthropics-go 3. Python 示例代码 from anthropic import Anthropic # 初始化客户端 client = Anthropic( api_key=\"你的 API Key\" ) # 发送消息 message = client.messages.create( model=\"claude-sonnet-4-20250514\", # 推荐用 Sonnet max_tokens=1024, messages=[ { \"role\": \"user\", \"content\": \"解释一下什么是递归算法\" } ] ) # 获取响应 print(message.content[0].text) 4. 常见 API 模式 流式输出（Streaming）：\nwith client.messages.stream( model=\"claude-sonnet-4-20250514\", max_tokens=1024, messages=[{\"role\": \"user\", \"content\": \"写一首诗\"}] ) as stream: for text in stream.text_stream: print(text, end=\"\", flush=True) 系统提示词（System Prompt）：\nmessage = client.messages.create( model=\"claude-sonnet-4-20250514\", max_tokens=1024, system=\"\"\"你是一位资深软件工程师， 专注于后端开发，擅长 Python 和 Go。 回答风格： 1. 代码优先 2. 简洁明了 3. 包含示例\"\"\", messages=[ {\"role\": \"user\", \"content\": \"我想学 Go\"} ] ) 并行内容：\nmessage = client.messages.create( model=\"claude-sonnet-4-20250514\", max_tokens=1024, messages=[ { \"role\": \"user\", \"content\": [ {\"type\": \"text\", \"text\": \"分析这张图片\"}, { \"type\": \"image\", \"source\": { \"type\": \"base64\", \"media_type\": \"image/jpeg\", \"data\": \"图片base64数据...\" } } ] } ] ) Claude Code CLI 使用教程 Claude Code CLI 是在终端里直接调用 Claude 的命令行工具，对开发者非常友好。\n安装 Claude Code 使用 Homebrew（macOS）：\nbrew install anthropic/claude-code/claude-code 使用 npm（Node.js）：\nnpm install -g @anthropic/claude-code 配置 API Key claude-code configure 按提示输入 API Key，会保存在 ~/.config/claude-code/config.json。\n基础命令 # 打开交互式模式 claude-code # 执行单条命令 claude-code \"解释这段代码\" claude-code --prompt \"帮我写一个函数\" --language python # 批量处理文件 claude-code --files path/to/file1.py path/to/file2.js # 使用特定模型 claude-code --model opus \"处理这个任务\" 实战示例 示例 1：代码分析\nclaude-code --files app.py Claude 会：\n读取文件内容 分析代码结构和逻辑 返回详细的分析报告 示例 2：代码生成\nclaude-code --language python --prompt \"写一个 REST API 的装饰器\" Claude 会直接生成可运行的代码，包含注释和示例。\n示例 3：批量重构\nclaude-code --files src/old/*.py Claude 会逐个分析文件，提供重构建议。\nClaude Artifacts 功能详解 Artifacts 是 Claude 最受欢迎的功能之一——实时预览你生成的内容。\n什么是 Artifacts？ 简单说，就是：\n你在聊天里让 Claude 生成代码 Claude 生成后立即渲染成可交互的预览 不用切换标签页，直接在聊天里就能测试 使用 Artifacts 1. 生成代码后点击 “Create”\n你：用 React 写一个计数器组件 Claude：这是一个计数器组件... [Create Artifact] 按钮 点击后，代码会渲染成一个实时预览页面。\n2. 在 Artifact 中交互\n// 代码 function Counter() { const [count, setCount] = useState(0); return \u003cdiv onClick={() =\u003e setCount(c =\u003e c + 1)}\u003e{count}\u003c/div\u003e; } 点击数字就能测试计数功能，不需要打开新标签页。\n3. 分享 Artifact\n点击 Artifact 右上角的分享图标，可以生成公开链接。\nArtifacts 适用场景 类型 说明 示例 代码 React/Vue/HTML 组件 计数器、表单 设计 Figma 风格的界面设计 Landing page 原型 文档 Markdown/文档结构 技术文档、教程 数据 交互式数据可视化 图表、报表 Claude Projects 功能 Projects 是 Claude 的「项目对话」功能，让你把相关内容集中管理。\n创建 Project 点击左侧 “Projects” 标签 点击 “New Project” 输入项目名称，如 “个人博客项目” 在 Project 中工作 ┌─────────────────────────────────────────────────────┐ │ 📁 我的博客项目 │ │ │ │ ├── Hugo 配置 │ │ ├── 主题文件 │ │ ├── 内容草稿 │ │ └── 部署脚本 │ └─────────────────────────────────────────────────────┘ 在 Project 中，Claude 会记住上下文，能更好地理解你的项目结构。\nProject 优势 📂 结构化组织对话 🔄 支持多人协作 💾 保存对话历史 🔍 快速搜索历史内容 Claude 最佳实践 1. 合理使用模型 ┌─────────────────────────────────────────────────────┐ │ 快速问答 → Haiku │ │ 日常对话/代码 → Sonnet │ │ 复杂任务/精细 → Opus │ └─────────────────────────────────────────────────────┘ 2. Prompt 工程技巧 少样本提示（Few-shot Prompting）：\n# 输入格式 输入：1 + 1 输出：2 输入：2 + 2 输出：4 输入：3 + 3 输出：6 输入：5 + 5 结构化输出：\n请以 JSON 格式返回： { \"summary\": \"一句话总结\", \"key_points\": [\"要点1\", \"要点2\"], \"action_items\": [\"任务1\", \"任务2\"] } 3. 代码工作流 ┌─────────────────────────────────────────────────────┐ │ 第1步：让 Claude 理解需求 │ │ 第2步：生成初始代码 │ │ 第3步：Claude Code CLI 本地调试 │ │ 第4步：返回 Claude 运行测试 │ │ 第5步：迭代优化 │ └─────────────────────────────────────────────────────┘ 常见问题 Q: Claude 和 ChatGPT 怎么选？\nA:\nClaude → 上下文长、代码能力强、更安全 ChatGPT → 生态更丰富、工具更多 Q: API Key 安全吗？\nA: 不要分享给别人，使用环境变量或 .env 文件存储。\nQ: 有免费额度吗？\nA: 注册后会送 3 次试用，之后 Pro 每月 200 次免费。\nQ: Claude 会记住之前的对话吗？\nA: 单次对话内可以，Projects 功能支持跨会话记忆。\nQ: 如何设置 Claude 为默认搜索引擎？\nA: 浏览器扩展可以设置，或者直接用 Claude 搜索网站。\n写在最后 Claude 已经成为我日常工作的核心工具。不管是写代码、写文章还是分析问题，它都能提供很大帮助。\n推荐学习路线：\n先用 Claude Web 体验基础功能 注册 Claude Pro 享受更快的速度和更高的限额 下载 Claude Desktop App 随时随地使用 尝试 Claude Code CLI 提升开发效率 最后使用 API 把 Claude 集成到你的项目里 官方资源：\nClaude 官网：https://claude.ai Claude API 文档：https://docs.anthropic.com/ Claude Code GitHub：https://github.com/anthropics/claude-code 有问题欢迎留言，或者发邮件到 daipo971@gmail.com。\n相关文章：\n免费 VPS 对比指南 💡 升级 Claude Pro 免费版足够日常使用。如果你需要处理大量长文本、深度分析项目代码，或者想体验最前沿的 Sonnet/Opus 模型，可以升级到 Pro 版（$20/月）。\n👉 免费注册 Claude →\n有些外部工具链接是联盟链接，如果你通过这些链接购买，我会获得少量佣金（不影响你的价格）。所有推荐都是我亲自用过并觉得不错的产品。\n","wordCount":"886","inLanguage":"en","datePublished":"2026-07-05T00:00:00+08:00","dateModified":"2026-07-05T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://xinqiai.dpdns.org/posts/claude-guide/"},"publisher":{"@type":"Organization","name":"欣淇AI网 - AI工具教程与免费资源","logo":{"@type":"ImageObject","url":"https://xinqiai.dpdns.org/favicon.ico"}}}</script></head><body id=top><header class=header><nav class=header-nav><div class=logo><a href=https://xinqiai.dpdns.org/ accesskey=h title="欣淇AI网 - AI工具教程与免费资源 (Alt + H)">欣淇AI网 - AI工具教程与免费资源</a><div class=logo-switches><button id=theme-toggle class=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
-<svg class="moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-<svg class="sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu class=menu><li><a href=https://xinqiai.dpdns.org/ title=首页><span>首页</span></a></li><li><a href=https://xinqiai.dpdns.org/posts/ title=文章><span>文章</span></a></li><li><a href=https://xinqiai.dpdns.org/tools/ title=推荐工具><span>推荐工具</span></a></li><li><a href=https://xinqiai.dpdns.org/archives/ title=归档><span>归档</span></a></li><li><a href=https://xinqiai.dpdns.org/search/ title="搜索 (Alt + /)" accesskey=/><span>搜索</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class="post-title entry-hint-parent">Anthropic Claude 入门完整指南（2026版）</h1><div class=post-description>从零开始学习 Anthropic Claude，包括 API 调用、Claude Pro 介绍、Claude Code CLI 使用、Artifacts 功能详解。适合新手入门。</div><div class=post-meta><span title='2026-07-05 00:00:00 +0800 CST'>July 5, 2026</span></div></header><div class="post-content md-content"><p>这两年 AI 工具发展太快，Anthropic 的 Claude 成了很多人首选的 AI 助手。相比其他模型，Claude 的优势很明显：</p><table><thead><tr><th>特性</th><th>Claude</th><th>ChatGPT</th><th>Claude 的优势</th></tr></thead><tbody><tr><td>上下文窗口</td><td>200K token</td><td>128K</td><td>能处理超长文档</td></tr><tr><td>长度限制</td><td>任意长</td><td>32K</td><td>写文章、代码更流畅</td></tr><tr><td>代码能力</td><td>优秀</td><td>良好</td><td>支持 30+ 种语言</td></tr><tr><td>安全性</td><td>首屈一指</td><td>良好</td><td>很少胡说八道</td></tr><tr><td>思考模式</td><td>Sonnet/Opus</td><td>没有</td><td>处理复杂任务更强</td></tr></tbody></table><p>这篇文章从零教你使用 Claude，不管是日常对话、API 调用还是代码开发，都能帮你快速上手。</p><h2 id=claude-有哪些产品>Claude 有哪些产品？<a hidden class=anchor aria-hidden=true href=#claude-有哪些产品>#</a></h2><h3 id=1-claude-pro--claude-max>1. Claude Pro / Claude Max<a hidden class=anchor aria-hidden=true href=#1-claude-pro--claude-max>#</a></h3><p>Claude Pro 是付费订阅服务，每月 $20 美元（国内充值约 ¥140）。</p><p><strong>Pro 计划特色：</strong></p><ul><li>⚡️ 更快响应速度</li><li>🎯 更快切换到 Sonnet 模型</li><li>📈 更高使用限额（每天 200 次对话 vs 普通 50 次）</li><li>🚫 去除未来可能的功能水印</li></ul><p><strong>适用人群：</strong></p><ul><li>日常高频使用者</li><li>开发者需要大量代码生成</li><li>想体验最新功能</li></ul><h3 id=2-claude-api>2. Claude API<a hidden class=anchor aria-hidden=true href=#2-claude-api>#</a></h3><p>Claude API 提供完整的程序化访问能力，按 Token 计费。</p><p><strong>计费方式：</strong></p><table><thead><tr><th>模型</th><th>输入价格</th><th>输出价格</th><th>典型场景</th></tr></thead><tbody><tr><td>Claude Haiku</td><td>$1/M</td><td>$5/M</td><td>批量处理、成本低</td></tr><tr><td>Claude Sonnet</td><td>$3/M</td><td>$15/M</td><td>日常开发、最常用</td></tr><tr><td>Claude Opus</td><td>$15/M</td><td>$75/M</td><td>复杂任务、精细工作</td></tr></tbody></table><h3 id=3-claude-desktop-app>3. Claude Desktop App<a hidden class=anchor aria-hidden=true href=#3-claude-desktop-app>#</a></h3><p>桌面应用，支持 macOS、Windows、Linux。</p><h3 id=4-claude-web--claude-artifacts>4. Claude Web + Claude Artifacts<a hidden class=anchor aria-hidden=true href=#4-claude-web--claude-artifacts>#</a></h3><p>网页版支持最新功能：</p><ul><li><strong>Artifacts</strong> - 实时预览代码/设计</li><li><strong>Projects</strong> - 持久化对话项目</li><li><strong>Canvas</strong> - 协作文档编辑</li></ul><h2 id=快速开始>快速开始<a hidden class=anchor aria-hidden=true href=#快速开始>#</a></h2><h3 id=注册-claude>注册 Claude<a hidden class=anchor aria-hidden=true href=#注册-claude>#</a></h3><ol><li>访问 <a href=https://claude.ai>https://claude.ai</a></li><li>使用 Google / Apple / Email 注册</li><li>完成手机号验证</li></ol><p><strong>注册注意：</strong></p><ul><li>首次注册可以免费试用 3 次对话</li><li>试用期结束后会要求绑定支付方式（不是扣款，只是验证）</li><li>不绑定也能继续用，但限额会降到每天 5 次对话</li></ul><h3 id=使用-claude-web>使用 Claude Web<a hidden class=anchor aria-hidden=true href=#使用-claude-web>#</a></h3><pre tabindex=0><code>┌──────────────────────────────────────────────────────────┐
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="dark">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Anthropic Claude 入门完整指南（2026版） | 欣淇AI网 - AI工具教程与免费资源</title>
+<meta name="keywords" content="Anthropic, Claude, AI, 教程">
+<meta name="description" content="从零开始学习 Anthropic Claude，包括 API 调用、Claude Pro 介绍、Claude Code CLI 使用、Artifacts 功能详解。适合新手入门。">
+<meta name="author" content="">
+<link rel="canonical" href="https://xinqiai.dpdns.org/posts/claude-guide/">
+<meta name="google-site-verification" content="googlee78fbd130bd563d5">
+<meta name="msvalidate.01" content="F7ED783B3CF5AA4252FD5454135D5D82">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.47939802696e3f8589c087db9a189456b636541579828bc908d8a592f6a1144c.css" integrity="sha256-R5OYAmluP4WJwIfbmhiUVrY2VBV5govJCNilkvahFEw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xinqiai.dpdns.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xinqiai.dpdns.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xinqiai.dpdns.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xinqiai.dpdns.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xinqiai.dpdns.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://xinqiai.dpdns.org/posts/claude-guide/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+ 
+
+ 
+:root {
+  --cyber-bg-1: #0a0a12;
+  --cyber-bg-2: #0d0d1a;
+  --cyber-accent: #00d4ff;
+  --cyber-accent2: #7c3aed;
+  --cyber-accent3: #00ff88;
+  --cyber-glow: rgba(0,212,255,0.15);
+  --glass-bg: rgba(255,255,255,0.04);
+  --glass-border: rgba(0,212,255,0.08);
+  --glass-blur: 12px;
+}
+
+[data-theme="dark"] {
+  --cyber-bg-1: #080810;
+  --cyber-bg-2: #0b0b18;
+  --glass-bg: rgba(255,255,255,0.04);
+  --glass-border: rgba(0,212,255,0.08);
+}
+
+ 
+body {
+  background: linear-gradient(135deg, var(--cyber-bg-1) 0%, var(--cyber-bg-2) 50%, #0f0a1a 100%) !important;
+  background-attachment: fixed !important;
+}
+
+ 
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image:
+    linear-gradient(rgba(0,212,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,212,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+ 
+body::after {
+  content: '';
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,212,255,0.008) 2px,
+    rgba(0,212,255,0.008) 4px
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+ 
+.header {
+  background: rgba(10,10,18,0.7) !important;
+  backdrop-filter: blur(var(--glass-blur)) !important;
+  -webkit-backdrop-filter: blur(var(--glass-blur)) !important;
+  border-bottom: 1px solid var(--glass-border) !important;
+}
+
+.logo a {
+  background: linear-gradient(135deg, var(--cyber-accent), var(--cyber-accent2), var(--cyber-accent3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800 !important;
+  letter-spacing: 0.5px;
+}
+
+.logo a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: linear-gradient(90deg, var(--cyber-accent), var(--cyber-accent2));
+  border-radius: 2px;
+  margin-top: 2px;
+  animation: logoGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes logoGlow {
+  0% { opacity: 0.4; width: 60%; }
+  100% { opacity: 1; width: 100%; }
+}
+
+ 
+.menu a {
+  position: relative;
+  color: var(--secondary) !important;
+  transition: color 0.3s ease !important;
+}
+
+.menu a::before {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, var(--cyber-accent), var(--cyber-accent2));
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+}
+
+.menu a:hover {
+  color: var(--cyber-accent) !important;
+}
+
+.menu a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.menu .active {
+  color: var(--cyber-accent) !important;
+  text-decoration: none !important;
+}
+
+.menu .active::before {
+  transform: scaleX(1);
+}
+
+ 
+.theme-toggle {
+  color: var(--secondary) !important;
+  transition: all 0.3s ease !important;
+}
+
+.theme-toggle:hover {
+  color: var(--cyber-accent) !important;
+  text-shadow: 0 0 12px var(--cyber-glow);
+}
+
+ 
+.home-info {
+  position: relative;
+  border: none !important;
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(var(--glass-blur)) !important;
+  -webkit-backdrop-filter: blur(var(--glass-blur)) !important;
+  border-radius: 16px !important;
+  padding: 40px var(--gap) !important;
+  box-shadow:
+    0 0 30px rgba(0,212,255,0.03),
+    inset 0 1px 0 rgba(0,212,255,0.06);
+  transition: all 0.4s ease;
+}
+
+.home-info::before {
+  content: '';
+  position: absolute;
+  top: -1px; left: -1px; right: -1px; bottom: -1px;
+  border-radius: 17px;
+  background: linear-gradient(135deg, rgba(0,212,255,0.15), transparent 40%, transparent 60%, rgba(124,58,237,0.15));
+  z-index: -1;
+  opacity: 0.6;
+  transition: opacity 0.4s ease;
+}
+
+.home-info:hover::before {
+  opacity: 1;
+}
+
+.home-info .entry-header h1 {
+  background: linear-gradient(135deg, var(--cyber-accent), var(--cyber-accent2), var(--cyber-accent3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 40px !important;
+  letter-spacing: 1px;
+  line-height: 1.2 !important;
+}
+
+.home-info .entry-content {
+  color: rgba(196,196,197,0.85) !important;
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+}
+
+ 
+.home-contact-card {
+  background: rgba(0,212,255,0.04) !important;
+  border: 1px solid rgba(0,212,255,0.1) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  transition: all 0.3s ease !important;
+}
+
+.home-contact-card:hover {
+  background: rgba(0,212,255,0.08) !important;
+  border-color: rgba(0,212,255,0.25) !important;
+  box-shadow: 0 0 25px rgba(0,212,255,0.1), inset 0 0 25px rgba(0,212,255,0.03) !important;
+}
+
+ 
+.post-entry {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 12px !important;
+  transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.post-entry::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0,212,255,0.03), transparent);
+  transition: left 0.6s ease;
+}
+
+.post-entry:hover {
+  transform: translateY(-3px) !important;
+  border-color: rgba(0,212,255,0.2) !important;
+  box-shadow:
+    0 8px 32px rgba(0,212,255,0.08),
+    0 0 60px rgba(0,212,255,0.02) !important;
+}
+
+.post-entry:hover::before {
+  left: 100%;
+}
+
+.entry-header h2 a {
+  color: var(--primary) !important;
+  transition: color 0.3s ease;
+}
+
+.post-entry:hover .entry-header h2 a {
+  color: var(--cyber-accent) !important;
+}
+
+.entry-content {
+  color: var(--secondary) !important;
+}
+
+ 
+.tags-list a, .terms-tags a, .tag a, .post-tags a {
+  background: rgba(0,212,255,0.05) !important;
+  border: 1px solid rgba(0,212,255,0.08) !important;
+  border-radius: 6px !important;
+  transition: all 0.3s ease !important;
+  padding: 2px 10px !important;
+}
+
+.tags-list a:hover, .terms-tags a:hover, .tag a:hover, .post-tags a:hover {
+  background: rgba(0,212,255,0.1) !important;
+  border-color: rgba(0,212,255,0.25) !important;
+  box-shadow: 0 0 15px rgba(0,212,255,0.06) !important;
+  transform: translateY(-1px);
+}
+
+ 
+.page-link {
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+  transition: all 0.3s ease !important;
+}
+
+.page-link:hover {
+  background: rgba(0,212,255,0.08) !important;
+  border-color: rgba(0,212,255,0.2) !important;
+  box-shadow: 0 0 12px rgba(0,212,255,0.05);
+}
+
+.current .page-link {
+  background: rgba(0,212,255,0.12) !important;
+  border-color: rgba(0,212,255,0.3) !important;
+  color: var(--cyber-accent) !important;
+}
+
+ 
+.footer {
+  background: rgba(10,10,18,0.6) !important;
+  backdrop-filter: blur(var(--glass-blur)) !important;
+  -webkit-backdrop-filter: blur(var(--glass-blur)) !important;
+  border-top: 1px solid var(--glass-border) !important;
+}
+
+.footer a:hover {
+  color: var(--cyber-accent) !important;
+  text-shadow: 0 0 10px rgba(0,212,255,0.2);
+}
+
+ 
+.top-link {
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  transition: all 0.3s ease !important;
+}
+
+.top-link:hover {
+  background: rgba(0,212,255,0.1) !important;
+  border-color: rgba(0,212,255,0.3) !important;
+  box-shadow: 0 0 20px rgba(0,212,255,0.1);
+  transform: translateY(-3px);
+}
+
+ 
+.search-form input {
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  transition: all 0.3s ease !important;
+  color: var(--primary) !important;
+}
+
+.search-form input:focus {
+  border-color: rgba(0,212,255,0.3) !important;
+  box-shadow: 0 0 20px rgba(0,212,255,0.06);
+}
+
+.searchResults .focus, .searchResults li:active {
+  background: rgba(0,212,255,0.08) !important;
+  border-color: rgba(0,212,255,0.2) !important;
+}
+
+ 
+pre, .chroma {
+  border-radius: 10px !important;
+  border: 1px solid rgba(0,212,255,0.06) !important;
+}
+
+ 
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cyber-bg-1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0,212,255,0.15);
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,212,255,0.3);
+}
+
+ 
+@media screen and (max-width: 768px) {
+  .home-info {
+    padding: 28px 16px !important;
+    border-radius: 12px !important;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+  }
+
+  .home-info .entry-header h1 {
+    font-size: 28px !important;
+  }
+
+  .home-info .entry-content {
+    font-size: 15px !important;
+  }
+
+  .post-entry {
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+    padding: 16px !important;
+  }
+
+  .header {
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+  }
+
+  .footer {
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+  }
+
+  body::before {
+    background-size: 40px 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --glass-blur: 8px;
+  }
+
+  .logo a {
+    font-size: 20px !important;
+  }
+
+  .home-info .entry-header h1 {
+    font-size: 24px !important;
+  }
+}
+
+ 
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+<script>
+(function() {
+  'use strict';
+
+  var isMobile = window.innerWidth < 768;
+  var isReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (isReduced) return;
+
+  var canvas = document.createElement('canvas');
+  canvas.id = 'cyber-particles';
+  canvas.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:-1;';
+  document.body.appendChild(canvas);
+
+  var ctx = canvas.getContext('2d');
+  var W, H, particles = [];
+  var mouse = { x: -1000, y: -1000 };
+  var mouseTimer = null;
+
+  var PARTICLE_COUNT = isMobile ? 40 : 80;
+  var CONNECT_DIST = isMobile ? 120 : 150;
+  var MOUSE_RADIUS = isMobile ? 100 : 150;
+
+  function resize() {
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+    initParticles();
+  }
+
+  function initParticles() {
+    particles = [];
+    for (var i = 0; i < PARTICLE_COUNT; i++) {
+      particles.push({
+        x: Math.random() * W,
+        y: Math.random() * H,
+        vx: (Math.random() - 0.5) * 0.5,
+        vy: (Math.random() - 0.5) * 0.5,
+        r: Math.random() * 2 + 1,
+        alpha: Math.random() * 0.5 + 0.2
+      });
+    }
+  }
+
+  function drawParticles() {
+    ctx.clearRect(0, 0, W, H);
+
+    for (var i = 0; i < particles.length; i++) {
+      var p = particles[i];
+
+      p.x += p.vx;
+      p.y += p.vy;
+
+      if (p.x < -20) p.x = W + 20;
+      if (p.x > W + 20) p.x = -20;
+      if (p.y < -20) p.y = H + 20;
+      if (p.y > H + 20) p.y = -20;
+
+      
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      var gradient = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r * 3);
+      gradient.addColorStop(0, 'rgba(0, 212, 255, ' + p.alpha + ')');
+      gradient.addColorStop(1, 'rgba(0, 212, 255, 0)');
+      ctx.fillStyle = gradient;
+      ctx.fill();
+
+      
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r * 0.4, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(0, 212, 255, ' + (p.alpha * 0.8) + ')';
+      ctx.fill();
+
+      
+      for (var j = i + 1; j < particles.length; j++) {
+        var p2 = particles[j];
+        var dx = p.x - p2.x;
+        var dy = p.y - p2.y;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+
+        if (dist < CONNECT_DIST) {
+          var alpha = (1 - dist / CONNECT_DIST) * 0.3;
+          ctx.beginPath();
+          ctx.moveTo(p.x, p.y);
+          ctx.lineTo(p2.x, p2.y);
+          ctx.strokeStyle = 'rgba(0, 212, 255, ' + alpha + ')';
+          ctx.lineWidth = 0.5;
+          ctx.stroke();
+        }
+      }
+
+      
+      var mdx = p.x - mouse.x;
+      var mdy = p.y - mouse.y;
+      var mdist = Math.sqrt(mdx * mdx + mdy * mdy);
+      if (mdist < MOUSE_RADIUS) {
+        var mAlpha = (1 - mdist / MOUSE_RADIUS) * 0.5;
+        ctx.beginPath();
+        ctx.moveTo(mouse.x, mouse.y);
+        ctx.lineTo(p.x, p.y);
+        ctx.strokeStyle = 'rgba(124, 58, 237, ' + mAlpha + ')';
+        ctx.lineWidth = 1;
+        ctx.stroke();
+      }
+    }
+
+    requestAnimationFrame(drawParticles);
+  }
+
+  function onMouseMove(e) {
+    if (mouseTimer) return;
+    mouseTimer = setTimeout(function() {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+      mouseTimer = null;
+    }, 16);
+  }
+
+  function onTouchMove(e) {
+    var touch = e.touches[0];
+    if (touch) {
+      mouse.x = touch.clientX;
+      mouse.y = touch.clientY;
+    }
+  }
+
+  function onMouseLeave() {
+    mouse.x = -1000;
+    mouse.y = -1000;
+  }
+
+  document.addEventListener('mousemove', onMouseMove);
+  document.addEventListener('mouseleave', onMouseLeave);
+  document.addEventListener('touchmove', onTouchMove, { passive: true });
+  document.addEventListener('touchend', onMouseLeave);
+
+  resize();
+  window.addEventListener('resize', resize);
+  drawParticles();
+})();
+</script>
+<meta property="og:url" content="https://xinqiai.dpdns.org/posts/claude-guide/">
+  <meta property="og:site_name" content="欣淇AI网 - AI工具教程与免费资源">
+  <meta property="og:title" content="Anthropic Claude 入门完整指南（2026版）">
+  <meta property="og:description" content="从零开始学习 Anthropic Claude，包括 API 调用、Claude Pro 介绍、Claude Code CLI 使用、Artifacts 功能详解。适合新手入门。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-07-05T00:00:00+08:00">
+    <meta property="article:modified_time" content="2026-07-05T00:00:00+08:00">
+    <meta property="article:tag" content="Anthropic">
+    <meta property="article:tag" content="Claude">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="教程">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Anthropic Claude 入门完整指南（2026版）">
+  <meta name="twitter:description" content="从零开始学习 Anthropic Claude，包括 API 调用、Claude Pro 介绍、Claude Code CLI 使用、Artifacts 功能详解。适合新手入门。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://xinqiai.dpdns.org/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Anthropic Claude 入门完整指南（2026版）",
+      "item": "https://xinqiai.dpdns.org/posts/claude-guide/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Anthropic Claude 入门完整指南（2026版）",
+  "name": "Anthropic Claude 入门完整指南（2026版）",
+  "description": "从零开始学习 Anthropic Claude，包括 API 调用、Claude Pro 介绍、Claude Code CLI 使用、Artifacts 功能详解。适合新手入门。",
+  "keywords": [
+    "Anthropic", "Claude", "AI", "教程"
+  ],
+  "articleBody": "这两年 AI 工具发展太快，Anthropic 的 Claude 成了很多人首选的 AI 助手。相比其他模型，Claude 的优势很明显：\n特性 Claude ChatGPT Claude 的优势 上下文窗口 200K token 128K 能处理超长文档 长度限制 任意长 32K 写文章、代码更流畅 代码能力 优秀 良好 支持 30+ 种语言 安全性 首屈一指 良好 很少胡说八道 思考模式 Sonnet/Opus 没有 处理复杂任务更强 这篇文章从零教你使用 Claude，不管是日常对话、API 调用还是代码开发，都能帮你快速上手。\nClaude 有哪些产品？ 1. Claude Pro / Claude Max Claude Pro 是付费订阅服务，每月 $20 美元（国内充值约 ¥140）。\nPro 计划特色：\n⚡️ 更快响应速度 🎯 更快切换到 Sonnet 模型 📈 更高使用限额（每天 200 次对话 vs 普通 50 次） 🚫 去除未来可能的功能水印 适用人群：\n日常高频使用者 开发者需要大量代码生成 想体验最新功能 2. Claude API Claude API 提供完整的程序化访问能力，按 Token 计费。\n计费方式：\n模型 输入价格 输出价格 典型场景 Claude Haiku $1/M $5/M 批量处理、成本低 Claude Sonnet $3/M $15/M 日常开发、最常用 Claude Opus $15/M $75/M 复杂任务、精细工作 3. Claude Desktop App 桌面应用，支持 macOS、Windows、Linux。\n4. Claude Web + Claude Artifacts 网页版支持最新功能：\nArtifacts - 实时预览代码/设计 Projects - 持久化对话项目 Canvas - 协作文档编辑 快速开始 注册 Claude 访问 https://claude.ai 使用 Google / Apple / Email 注册 完成手机号验证 注册注意：\n首次注册可以免费试用 3 次对话 试用期结束后会要求绑定支付方式（不是扣款，只是验证） 不绑定也能继续用，但限额会降到每天 5 次对话 使用 Claude Web ┌──────────────────────────────────────────────────────────┐ │ Claude.ai (https://claude.ai) │ ├──────────────────────────────────────────────────────────┤ │ ┌────────────────────────────────────────────────────┐ │ │ │ 聊天窗口 │ │ │ │ \"帮我写一个 Python 函数\" │ │ │ │ │ │ │ │ ┌──────────────────────────────────────────────┐ │ │ │ │ │ Claude 响应区域 │ │ │ │ │ │ │ │ │ │ │ │ 代码块高亮显示 │ │ │ │ │ │ ┌──────────────────────────────────────┐ │ │ │ │ │ │ │ def hello(): │ │ │ │ │ │ │ │ print(\"Hello, Claude!\") │ │ │ │ │ │ │ └──────────────────────────────────────┘ │ │ │ │ │ │ │ │ │ │ │ │ [Artifacts 按钮] │ │ │ │ │ └──────────────────────────────────────────────┘ │ │ │ └────────────────────────────────────────────────────┘ │ │ │ │ 提示词输入框 → 发送按钮 │ └──────────────────────────────────────────────────────────┘ 基础使用技巧 1. 清晰的 Prompt 模板\n# 角色设定 你是一位 Python 专家，擅长写清晰、高效的代码。 # 任务目标 写一个函数，功能是... # 输入格式 输入：... # 输出要求 - 代码必须包含类型注解 - 必须有 Docstring - 示例测试代码 # 上下文 我正在... 2. 代码示例 Prompt\n# 用 Python 写一个函数，计算斐波那契数列的第 n 项 # 要求：使用动态规划优化性能 # 返回值类型：int 3. 多轮对话技巧\n你：帮我优化这段代码 AI：这是优化后的版本... 你：速度还可以再快一点吗？ AI：这是进一步优化的版本... 你：最后一个版本最慢的部分是哪里？ AI：慢在递归调用... Claude API 快速入门 1. 注册并获取 API Key 访问 https://console.anthropic.com 使用 Google / GitHub 账号登录 进入 API Keys 页面 → Create Key 复制 API Key（格式：sk-ant-xxx） 2. 安装 SDK Python：\npip install anthropic Node.js：\nnpm install @anthropic-ai/sdk Go：\ngo get github.com/anthropics/anthropics-go 3. Python 示例代码 from anthropic import Anthropic # 初始化客户端 client = Anthropic( api_key=\"你的 API Key\" ) # 发送消息 message = client.messages.create( model=\"claude-sonnet-4-20250514\", # 推荐用 Sonnet max_tokens=1024, messages=[ { \"role\": \"user\", \"content\": \"解释一下什么是递归算法\" } ] ) # 获取响应 print(message.content[0].text) 4. 常见 API 模式 流式输出（Streaming）：\nwith client.messages.stream( model=\"claude-sonnet-4-20250514\", max_tokens=1024, messages=[{\"role\": \"user\", \"content\": \"写一首诗\"}] ) as stream: for text in stream.text_stream: print(text, end=\"\", flush=True) 系统提示词（System Prompt）：\nmessage = client.messages.create( model=\"claude-sonnet-4-20250514\", max_tokens=1024, system=\"\"\"你是一位资深软件工程师， 专注于后端开发，擅长 Python 和 Go。 回答风格： 1. 代码优先 2. 简洁明了 3. 包含示例\"\"\", messages=[ {\"role\": \"user\", \"content\": \"我想学 Go\"} ] ) 并行内容：\nmessage = client.messages.create( model=\"claude-sonnet-4-20250514\", max_tokens=1024, messages=[ { \"role\": \"user\", \"content\": [ {\"type\": \"text\", \"text\": \"分析这张图片\"}, { \"type\": \"image\", \"source\": { \"type\": \"base64\", \"media_type\": \"image/jpeg\", \"data\": \"图片base64数据...\" } } ] } ] ) Claude Code CLI 使用教程 Claude Code CLI 是在终端里直接调用 Claude 的命令行工具，对开发者非常友好。\n安装 Claude Code 使用 Homebrew（macOS）：\nbrew install anthropic/claude-code/claude-code 使用 npm（Node.js）：\nnpm install -g @anthropic/claude-code 配置 API Key claude-code configure 按提示输入 API Key，会保存在 ~/.config/claude-code/config.json。\n基础命令 # 打开交互式模式 claude-code # 执行单条命令 claude-code \"解释这段代码\" claude-code --prompt \"帮我写一个函数\" --language python # 批量处理文件 claude-code --files path/to/file1.py path/to/file2.js # 使用特定模型 claude-code --model opus \"处理这个任务\" 实战示例 示例 1：代码分析\nclaude-code --files app.py Claude 会：\n读取文件内容 分析代码结构和逻辑 返回详细的分析报告 示例 2：代码生成\nclaude-code --language python --prompt \"写一个 REST API 的装饰器\" Claude 会直接生成可运行的代码，包含注释和示例。\n示例 3：批量重构\nclaude-code --files src/old/*.py Claude 会逐个分析文件，提供重构建议。\nClaude Artifacts 功能详解 Artifacts 是 Claude 最受欢迎的功能之一——实时预览你生成的内容。\n什么是 Artifacts？ 简单说，就是：\n你在聊天里让 Claude 生成代码 Claude 生成后立即渲染成可交互的预览 不用切换标签页，直接在聊天里就能测试 使用 Artifacts 1. 生成代码后点击 “Create”\n你：用 React 写一个计数器组件 Claude：这是一个计数器组件... [Create Artifact] 按钮 点击后，代码会渲染成一个实时预览页面。\n2. 在 Artifact 中交互\n// 代码 function Counter() { const [count, setCount] = useState(0); return \u003cdiv onClick={() =\u003e setCount(c =\u003e c + 1)}\u003e{count}\u003c/div\u003e; } 点击数字就能测试计数功能，不需要打开新标签页。\n3. 分享 Artifact\n点击 Artifact 右上角的分享图标，可以生成公开链接。\nArtifacts 适用场景 类型 说明 示例 代码 React/Vue/HTML 组件 计数器、表单 设计 Figma 风格的界面设计 Landing page 原型 文档 Markdown/文档结构 技术文档、教程 数据 交互式数据可视化 图表、报表 Claude Projects 功能 Projects 是 Claude 的「项目对话」功能，让你把相关内容集中管理。\n创建 Project 点击左侧 “Projects” 标签 点击 “New Project” 输入项目名称，如 “个人博客项目” 在 Project 中工作 ┌─────────────────────────────────────────────────────┐ │ 📁 我的博客项目 │ │ │ │ ├── Hugo 配置 │ │ ├── 主题文件 │ │ ├── 内容草稿 │ │ └── 部署脚本 │ └─────────────────────────────────────────────────────┘ 在 Project 中，Claude 会记住上下文，能更好地理解你的项目结构。\nProject 优势 📂 结构化组织对话 🔄 支持多人协作 💾 保存对话历史 🔍 快速搜索历史内容 Claude 最佳实践 1. 合理使用模型 ┌─────────────────────────────────────────────────────┐ │ 快速问答 → Haiku │ │ 日常对话/代码 → Sonnet │ │ 复杂任务/精细 → Opus │ └─────────────────────────────────────────────────────┘ 2. Prompt 工程技巧 少样本提示（Few-shot Prompting）：\n# 输入格式 输入：1 + 1 输出：2 输入：2 + 2 输出：4 输入：3 + 3 输出：6 输入：5 + 5 结构化输出：\n请以 JSON 格式返回： { \"summary\": \"一句话总结\", \"key_points\": [\"要点1\", \"要点2\"], \"action_items\": [\"任务1\", \"任务2\"] } 3. 代码工作流 ┌─────────────────────────────────────────────────────┐ │ 第1步：让 Claude 理解需求 │ │ 第2步：生成初始代码 │ │ 第3步：Claude Code CLI 本地调试 │ │ 第4步：返回 Claude 运行测试 │ │ 第5步：迭代优化 │ └─────────────────────────────────────────────────────┘ 常见问题 Q: Claude 和 ChatGPT 怎么选？\nA:\nClaude → 上下文长、代码能力强、更安全 ChatGPT → 生态更丰富、工具更多 Q: API Key 安全吗？\nA: 不要分享给别人，使用环境变量或 .env 文件存储。\nQ: 有免费额度吗？\nA: 注册后会送 3 次试用，之后 Pro 每月 200 次免费。\nQ: Claude 会记住之前的对话吗？\nA: 单次对话内可以，Projects 功能支持跨会话记忆。\nQ: 如何设置 Claude 为默认搜索引擎？\nA: 浏览器扩展可以设置，或者直接用 Claude 搜索网站。\n写在最后 Claude 已经成为我日常工作的核心工具。不管是写代码、写文章还是分析问题，它都能提供很大帮助。\n推荐学习路线：\n先用 Claude Web 体验基础功能 注册 Claude Pro 享受更快的速度和更高的限额 下载 Claude Desktop App 随时随地使用 尝试 Claude Code CLI 提升开发效率 最后使用 API 把 Claude 集成到你的项目里 官方资源：\nClaude 官网：https://claude.ai Claude API 文档：https://docs.anthropic.com/ Claude Code GitHub：https://github.com/anthropics/claude-code 有问题欢迎留言，或者发邮件到 daipo971@gmail.com。\n相关文章：\n免费 VPS 对比指南 💡 升级 Claude Pro 免费版足够日常使用。如果你需要处理大量长文本、深度分析项目代码，或者想体验最前沿的 Sonnet/Opus 模型，可以升级到 Pro 版（$20/月）。\n👉 免费注册 Claude →\n有些外部工具链接是联盟链接，如果你通过这些链接购买，我会获得少量佣金（不影响你的价格）。所有推荐都是我亲自用过并觉得不错的产品。\n",
+  "wordCount" : "886",
+  "inLanguage": "en",
+  "datePublished": "2026-07-05T00:00:00+08:00",
+  "dateModified": "2026-07-05T00:00:00+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xinqiai.dpdns.org/posts/claude-guide/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "欣淇AI网 - AI工具教程与免费资源",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xinqiai.dpdns.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://xinqiai.dpdns.org/" accesskey="h" title="欣淇AI网 - AI工具教程与免费资源 (Alt + H)">欣淇AI网 - AI工具教程与免费资源</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://xinqiai.dpdns.org/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xinqiai.dpdns.org/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xinqiai.dpdns.org/tools/" title="推荐工具">
+                    <span>推荐工具</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xinqiai.dpdns.org/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xinqiai.dpdns.org/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Anthropic Claude 入门完整指南（2026版）
+    </h1>
+    <div class="post-description">
+      从零开始学习 Anthropic Claude，包括 API 调用、Claude Pro 介绍、Claude Code CLI 使用、Artifacts 功能详解。适合新手入门。
+    </div>
+    <div class="post-meta">
+
+<span title='2026-07-05 00:00:00 +0800 CST'>July 5, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><p>这两年 AI 工具发展太快，Anthropic 的 Claude 成了很多人首选的 AI 助手。相比其他模型，Claude 的优势很明显：</p>
+<table>
+	<thead>
+			<tr>
+					<th>特性</th>
+					<th>Claude</th>
+					<th>ChatGPT</th>
+					<th>Claude 的优势</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>上下文窗口</td>
+					<td>200K token</td>
+					<td>128K</td>
+					<td>能处理超长文档</td>
+			</tr>
+			<tr>
+					<td>长度限制</td>
+					<td>任意长</td>
+					<td>32K</td>
+					<td>写文章、代码更流畅</td>
+			</tr>
+			<tr>
+					<td>代码能力</td>
+					<td>优秀</td>
+					<td>良好</td>
+					<td>支持 30+ 种语言</td>
+			</tr>
+			<tr>
+					<td>安全性</td>
+					<td>首屈一指</td>
+					<td>良好</td>
+					<td>很少胡说八道</td>
+			</tr>
+			<tr>
+					<td>思考模式</td>
+					<td>Sonnet/Opus</td>
+					<td>没有</td>
+					<td>处理复杂任务更强</td>
+			</tr>
+	</tbody>
+</table>
+<p>这篇文章从零教你使用 Claude，不管是日常对话、API 调用还是代码开发，都能帮你快速上手。</p>
+<h2 id="claude-有哪些产品">Claude 有哪些产品？<a hidden class="anchor" aria-hidden="true" href="#claude-有哪些产品">#</a></h2>
+<h3 id="1-claude-pro--claude-max">1. Claude Pro / Claude Max<a hidden class="anchor" aria-hidden="true" href="#1-claude-pro--claude-max">#</a></h3>
+<p>Claude Pro 是付费订阅服务，每月 $20 美元（国内充值约 ¥140）。</p>
+<p><strong>Pro 计划特色：</strong></p>
+<ul>
+<li>⚡️ 更快响应速度</li>
+<li>🎯 更快切换到 Sonnet 模型</li>
+<li>📈 更高使用限额（每天 200 次对话 vs 普通 50 次）</li>
+<li>🚫 去除未来可能的功能水印</li>
+</ul>
+<p><strong>适用人群：</strong></p>
+<ul>
+<li>日常高频使用者</li>
+<li>开发者需要大量代码生成</li>
+<li>想体验最新功能</li>
+</ul>
+<h3 id="2-claude-api">2. Claude API<a hidden class="anchor" aria-hidden="true" href="#2-claude-api">#</a></h3>
+<p>Claude API 提供完整的程序化访问能力，按 Token 计费。</p>
+<p><strong>计费方式：</strong></p>
+<table>
+	<thead>
+			<tr>
+					<th>模型</th>
+					<th>输入价格</th>
+					<th>输出价格</th>
+					<th>典型场景</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Claude Haiku</td>
+					<td>$1/M</td>
+					<td>$5/M</td>
+					<td>批量处理、成本低</td>
+			</tr>
+			<tr>
+					<td>Claude Sonnet</td>
+					<td>$3/M</td>
+					<td>$15/M</td>
+					<td>日常开发、最常用</td>
+			</tr>
+			<tr>
+					<td>Claude Opus</td>
+					<td>$15/M</td>
+					<td>$75/M</td>
+					<td>复杂任务、精细工作</td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="3-claude-desktop-app">3. Claude Desktop App<a hidden class="anchor" aria-hidden="true" href="#3-claude-desktop-app">#</a></h3>
+<p>桌面应用，支持 macOS、Windows、Linux。</p>
+<h3 id="4-claude-web--claude-artifacts">4. Claude Web + Claude Artifacts<a hidden class="anchor" aria-hidden="true" href="#4-claude-web--claude-artifacts">#</a></h3>
+<p>网页版支持最新功能：</p>
+<ul>
+<li><strong>Artifacts</strong> - 实时预览代码/设计</li>
+<li><strong>Projects</strong> - 持久化对话项目</li>
+<li><strong>Canvas</strong> - 协作文档编辑</li>
+</ul>
+<h2 id="快速开始">快速开始<a hidden class="anchor" aria-hidden="true" href="#快速开始">#</a></h2>
+<h3 id="注册-claude">注册 Claude<a hidden class="anchor" aria-hidden="true" href="#注册-claude">#</a></h3>
+<ol>
+<li>访问 <a href="https://claude.ai">https://claude.ai</a></li>
+<li>使用 Google / Apple / Email 注册</li>
+<li>完成手机号验证</li>
+</ol>
+<p><strong>注册注意：</strong></p>
+<ul>
+<li>首次注册可以免费试用 3 次对话</li>
+<li>试用期结束后会要求绑定支付方式（不是扣款，只是验证）</li>
+<li>不绑定也能继续用，但限额会降到每天 5 次对话</li>
+</ul>
+<h3 id="使用-claude-web">使用 Claude Web<a hidden class="anchor" aria-hidden="true" href="#使用-claude-web">#</a></h3>
+<pre tabindex="0"><code>┌──────────────────────────────────────────────────────────┐
 │  Claude.ai (https://claude.ai)                           │
 ├──────────────────────────────────────────────────────────┤
 │  ┌────────────────────────────────────────────────────┐  │
@@ -22,26 +883,30 @@
 │                                                             │
 │  提示词输入框 → 发送按钮                                    │
 └──────────────────────────────────────────────────────────┘
-</code></pre><h3 id=基础使用技巧>基础使用技巧<a hidden class=anchor aria-hidden=true href=#基础使用技巧>#</a></h3><p><strong>1. 清晰的 Prompt 模板</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-markdown data-lang=markdown><span style=display:flex><span># 角色设定
-</span></span><span style=display:flex><span>你是一位 Python 专家，擅长写清晰、高效的代码。
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span># 任务目标
-</span></span><span style=display:flex><span>写一个函数，功能是...
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span># 输入格式
-</span></span><span style=display:flex><span>输入：...
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span># 输出要求
-</span></span><span style=display:flex><span><span style=color:#66d9ef>-</span> 代码必须包含类型注解
-</span></span><span style=display:flex><span><span style=color:#66d9ef>-</span> 必须有 Docstring
-</span></span><span style=display:flex><span><span style=color:#66d9ef>-</span> 示例测试代码
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span># 上下文
-</span></span><span style=display:flex><span>我正在...
-</span></span></code></pre></div><p><strong>2. 代码示例 Prompt</strong></p><pre tabindex=0><code># 用 Python 写一个函数，计算斐波那契数列的第 n 项
+</code></pre><h3 id="基础使用技巧">基础使用技巧<a hidden class="anchor" aria-hidden="true" href="#基础使用技巧">#</a></h3>
+<p><strong>1. 清晰的 Prompt 模板</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># 角色设定
+</span></span><span style="display:flex;"><span>你是一位 Python 专家，擅长写清晰、高效的代码。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># 任务目标
+</span></span><span style="display:flex;"><span>写一个函数，功能是...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># 输入格式
+</span></span><span style="display:flex;"><span>输入：...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># 输出要求
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> 代码必须包含类型注解
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> 必须有 Docstring
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> 示例测试代码
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># 上下文
+</span></span><span style="display:flex;"><span>我正在...
+</span></span></code></pre></div><p><strong>2. 代码示例 Prompt</strong></p>
+<pre tabindex="0"><code># 用 Python 写一个函数，计算斐波那契数列的第 n 项
 # 要求：使用动态规划优化性能
 # 返回值类型：int
-</code></pre><p><strong>3. 多轮对话技巧</strong></p><pre tabindex=0><code>你：帮我优化这段代码
+</code></pre><p><strong>3. 多轮对话技巧</strong></p>
+<pre tabindex="0"><code>你：帮我优化这段代码
 
 AI：这是优化后的版本...
 
@@ -52,100 +917,194 @@ AI：这是进一步优化的版本...
 你：最后一个版本最慢的部分是哪里？
 
 AI：慢在递归调用...
-</code></pre><h2 id=claude-api-快速入门>Claude API 快速入门<a hidden class=anchor aria-hidden=true href=#claude-api-快速入门>#</a></h2><h3 id=1-注册并获取-api-key>1. 注册并获取 API Key<a hidden class=anchor aria-hidden=true href=#1-注册并获取-api-key>#</a></h3><ol><li>访问 <a href=https://console.anthropic.com>https://console.anthropic.com</a></li><li>使用 Google / GitHub 账号登录</li><li>进入 API Keys 页面 → Create Key</li><li>复制 API Key（格式：<code>sk-ant-xxx</code>）</li></ol><h3 id=2-安装-sdk>2. 安装 SDK<a hidden class=anchor aria-hidden=true href=#2-安装-sdk>#</a></h3><p><strong>Python：</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>pip install anthropic
-</span></span></code></pre></div><p><strong>Node.js：</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>npm install @anthropic-ai/sdk
-</span></span></code></pre></div><p><strong>Go：</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>go get github.com/anthropics/anthropics-go
-</span></span></code></pre></div><h3 id=3-python-示例代码>3. Python 示例代码<a hidden class=anchor aria-hidden=true href=#3-python-示例代码>#</a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>from</span> anthropic <span style=color:#f92672>import</span> Anthropic
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 初始化客户端</span>
-</span></span><span style=display:flex><span>client <span style=color:#f92672>=</span> Anthropic(
-</span></span><span style=display:flex><span>    api_key<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;你的 API Key&#34;</span>
-</span></span><span style=display:flex><span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 发送消息</span>
-</span></span><span style=display:flex><span>message <span style=color:#f92672>=</span> client<span style=color:#f92672>.</span>messages<span style=color:#f92672>.</span>create(
-</span></span><span style=display:flex><span>    model<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;claude-sonnet-4-20250514&#34;</span>,  <span style=color:#75715e># 推荐用 Sonnet</span>
-</span></span><span style=display:flex><span>    max_tokens<span style=color:#f92672>=</span><span style=color:#ae81ff>1024</span>,
-</span></span><span style=display:flex><span>    messages<span style=color:#f92672>=</span>[
-</span></span><span style=display:flex><span>        {
-</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;role&#34;</span>: <span style=color:#e6db74>&#34;user&#34;</span>,
-</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;content&#34;</span>: <span style=color:#e6db74>&#34;解释一下什么是递归算法&#34;</span>
-</span></span><span style=display:flex><span>        }
-</span></span><span style=display:flex><span>    ]
-</span></span><span style=display:flex><span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 获取响应</span>
-</span></span><span style=display:flex><span>print(message<span style=color:#f92672>.</span>content[<span style=color:#ae81ff>0</span>]<span style=color:#f92672>.</span>text)
-</span></span></code></pre></div><h3 id=4-常见-api-模式>4. 常见 API 模式<a hidden class=anchor aria-hidden=true href=#4-常见-api-模式>#</a></h3><p><strong>流式输出（Streaming）：</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>with</span> client<span style=color:#f92672>.</span>messages<span style=color:#f92672>.</span>stream(
-</span></span><span style=display:flex><span>    model<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;claude-sonnet-4-20250514&#34;</span>,
-</span></span><span style=display:flex><span>    max_tokens<span style=color:#f92672>=</span><span style=color:#ae81ff>1024</span>,
-</span></span><span style=display:flex><span>    messages<span style=color:#f92672>=</span>[{<span style=color:#e6db74>&#34;role&#34;</span>: <span style=color:#e6db74>&#34;user&#34;</span>, <span style=color:#e6db74>&#34;content&#34;</span>: <span style=color:#e6db74>&#34;写一首诗&#34;</span>}]
-</span></span><span style=display:flex><span>) <span style=color:#66d9ef>as</span> stream:
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> text <span style=color:#f92672>in</span> stream<span style=color:#f92672>.</span>text_stream:
-</span></span><span style=display:flex><span>        print(text, end<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;&#34;</span>, flush<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>)
-</span></span></code></pre></div><p><strong>系统提示词（System Prompt）：</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-python data-lang=python><span style=display:flex><span>message <span style=color:#f92672>=</span> client<span style=color:#f92672>.</span>messages<span style=color:#f92672>.</span>create(
-</span></span><span style=display:flex><span>    model<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;claude-sonnet-4-20250514&#34;</span>,
-</span></span><span style=display:flex><span>    max_tokens<span style=color:#f92672>=</span><span style=color:#ae81ff>1024</span>,
-</span></span><span style=display:flex><span>    system<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;&#34;&#34;你是一位资深软件工程师，
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    专注于后端开发，擅长 Python 和 Go。
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    回答风格：
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    1. 代码优先
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    2. 简洁明了
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    3. 包含示例&#34;&#34;&#34;</span>,
-</span></span><span style=display:flex><span>    messages<span style=color:#f92672>=</span>[
-</span></span><span style=display:flex><span>        {<span style=color:#e6db74>&#34;role&#34;</span>: <span style=color:#e6db74>&#34;user&#34;</span>, <span style=color:#e6db74>&#34;content&#34;</span>: <span style=color:#e6db74>&#34;我想学 Go&#34;</span>}
-</span></span><span style=display:flex><span>    ]
-</span></span><span style=display:flex><span>)
-</span></span></code></pre></div><p><strong>并行内容：</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-python data-lang=python><span style=display:flex><span>message <span style=color:#f92672>=</span> client<span style=color:#f92672>.</span>messages<span style=color:#f92672>.</span>create(
-</span></span><span style=display:flex><span>    model<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;claude-sonnet-4-20250514&#34;</span>,
-</span></span><span style=display:flex><span>    max_tokens<span style=color:#f92672>=</span><span style=color:#ae81ff>1024</span>,
-</span></span><span style=display:flex><span>    messages<span style=color:#f92672>=</span>[
-</span></span><span style=display:flex><span>        {
-</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;role&#34;</span>: <span style=color:#e6db74>&#34;user&#34;</span>,
-</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;content&#34;</span>: [
-</span></span><span style=display:flex><span>                {<span style=color:#e6db74>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;text&#34;</span>, <span style=color:#e6db74>&#34;text&#34;</span>: <span style=color:#e6db74>&#34;分析这张图片&#34;</span>},
-</span></span><span style=display:flex><span>                {
-</span></span><span style=display:flex><span>                    <span style=color:#e6db74>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;image&#34;</span>,
-</span></span><span style=display:flex><span>                    <span style=color:#e6db74>&#34;source&#34;</span>: {
-</span></span><span style=display:flex><span>                        <span style=color:#e6db74>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;base64&#34;</span>,
-</span></span><span style=display:flex><span>                        <span style=color:#e6db74>&#34;media_type&#34;</span>: <span style=color:#e6db74>&#34;image/jpeg&#34;</span>,
-</span></span><span style=display:flex><span>                        <span style=color:#e6db74>&#34;data&#34;</span>: <span style=color:#e6db74>&#34;图片base64数据...&#34;</span>
-</span></span><span style=display:flex><span>                    }
-</span></span><span style=display:flex><span>                }
-</span></span><span style=display:flex><span>            ]
-</span></span><span style=display:flex><span>        }
-</span></span><span style=display:flex><span>    ]
-</span></span><span style=display:flex><span>)
-</span></span></code></pre></div><h2 id=claude-code-cli-使用教程>Claude Code CLI 使用教程<a hidden class=anchor aria-hidden=true href=#claude-code-cli-使用教程>#</a></h2><p>Claude Code CLI 是在终端里直接调用 Claude 的命令行工具，对开发者非常友好。</p><h3 id=安装-claude-code>安装 Claude Code<a hidden class=anchor aria-hidden=true href=#安装-claude-code>#</a></h3><p><strong>使用 Homebrew（macOS）：</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>brew install anthropic/claude-code/claude-code
-</span></span></code></pre></div><p><strong>使用 npm（Node.js）：</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>npm install -g @anthropic/claude-code
-</span></span></code></pre></div><h3 id=配置-api-key>配置 API Key<a hidden class=anchor aria-hidden=true href=#配置-api-key>#</a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>claude-code configure
-</span></span></code></pre></div><p>按提示输入 API Key，会保存在 <code>~/.config/claude-code/config.json</code>。</p><h3 id=基础命令>基础命令<a hidden class=anchor aria-hidden=true href=#基础命令>#</a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e># 打开交互式模式</span>
-</span></span><span style=display:flex><span>claude-code
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 执行单条命令</span>
-</span></span><span style=display:flex><span>claude-code <span style=color:#e6db74>&#34;解释这段代码&#34;</span>
-</span></span><span style=display:flex><span>claude-code --prompt <span style=color:#e6db74>&#34;帮我写一个函数&#34;</span> --language python
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 批量处理文件</span>
-</span></span><span style=display:flex><span>claude-code --files path/to/file1.py path/to/file2.js
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 使用特定模型</span>
-</span></span><span style=display:flex><span>claude-code --model opus <span style=color:#e6db74>&#34;处理这个任务&#34;</span>
-</span></span></code></pre></div><h3 id=实战示例>实战示例<a hidden class=anchor aria-hidden=true href=#实战示例>#</a></h3><p><strong>示例 1：代码分析</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>claude-code --files app.py
-</span></span></code></pre></div><p>Claude 会：</p><ol><li>读取文件内容</li><li>分析代码结构和逻辑</li><li>返回详细的分析报告</li></ol><p><strong>示例 2：代码生成</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>claude-code --language python --prompt <span style=color:#e6db74>&#34;写一个 REST API 的装饰器&#34;</span>
-</span></span></code></pre></div><p>Claude 会直接生成可运行的代码，包含注释和示例。</p><p><strong>示例 3：批量重构</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>claude-code --files src/old/*.py
-</span></span></code></pre></div><p>Claude 会逐个分析文件，提供重构建议。</p><h2 id=claude-artifacts-功能详解>Claude Artifacts 功能详解<a hidden class=anchor aria-hidden=true href=#claude-artifacts-功能详解>#</a></h2><p>Artifacts 是 Claude 最受欢迎的功能之一——实时预览你生成的内容。</p><h3 id=什么是-artifacts>什么是 Artifacts？<a hidden class=anchor aria-hidden=true href=#什么是-artifacts>#</a></h3><p>简单说，就是：</p><ul><li>你在聊天里让 Claude 生成代码</li><li>Claude 生成后立即渲染成可交互的预览</li><li>不用切换标签页，直接在聊天里就能测试</li></ul><h3 id=使用-artifacts>使用 Artifacts<a hidden class=anchor aria-hidden=true href=#使用-artifacts>#</a></h3><p><strong>1. 生成代码后点击 &ldquo;Create&rdquo;</strong></p><pre tabindex=0><code>你：用 React 写一个计数器组件
+</code></pre><h2 id="claude-api-快速入门">Claude API 快速入门<a hidden class="anchor" aria-hidden="true" href="#claude-api-快速入门">#</a></h2>
+<h3 id="1-注册并获取-api-key">1. 注册并获取 API Key<a hidden class="anchor" aria-hidden="true" href="#1-注册并获取-api-key">#</a></h3>
+<ol>
+<li>访问 <a href="https://console.anthropic.com">https://console.anthropic.com</a></li>
+<li>使用 Google / GitHub 账号登录</li>
+<li>进入 API Keys 页面 → Create Key</li>
+<li>复制 API Key（格式：<code>sk-ant-xxx</code>）</li>
+</ol>
+<h3 id="2-安装-sdk">2. 安装 SDK<a hidden class="anchor" aria-hidden="true" href="#2-安装-sdk">#</a></h3>
+<p><strong>Python：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install anthropic
+</span></span></code></pre></div><p><strong>Node.js：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm install @anthropic-ai/sdk
+</span></span></code></pre></div><p><strong>Go：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>go get github.com/anthropics/anthropics-go
+</span></span></code></pre></div><h3 id="3-python-示例代码">3. Python 示例代码<a hidden class="anchor" aria-hidden="true" href="#3-python-示例代码">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> anthropic <span style="color:#f92672">import</span> Anthropic
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 初始化客户端</span>
+</span></span><span style="display:flex;"><span>client <span style="color:#f92672">=</span> Anthropic(
+</span></span><span style="display:flex;"><span>    api_key<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;你的 API Key&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 发送消息</span>
+</span></span><span style="display:flex;"><span>message <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>messages<span style="color:#f92672">.</span>create(
+</span></span><span style="display:flex;"><span>    model<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;claude-sonnet-4-20250514&#34;</span>,  <span style="color:#75715e"># 推荐用 Sonnet</span>
+</span></span><span style="display:flex;"><span>    max_tokens<span style="color:#f92672">=</span><span style="color:#ae81ff">1024</span>,
+</span></span><span style="display:flex;"><span>    messages<span style="color:#f92672">=</span>[
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;role&#34;</span>: <span style="color:#e6db74">&#34;user&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;content&#34;</span>: <span style="color:#e6db74">&#34;解释一下什么是递归算法&#34;</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 获取响应</span>
+</span></span><span style="display:flex;"><span>print(message<span style="color:#f92672">.</span>content[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>text)
+</span></span></code></pre></div><h3 id="4-常见-api-模式">4. 常见 API 模式<a hidden class="anchor" aria-hidden="true" href="#4-常见-api-模式">#</a></h3>
+<p><strong>流式输出（Streaming）：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">with</span> client<span style="color:#f92672">.</span>messages<span style="color:#f92672">.</span>stream(
+</span></span><span style="display:flex;"><span>    model<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;claude-sonnet-4-20250514&#34;</span>,
+</span></span><span style="display:flex;"><span>    max_tokens<span style="color:#f92672">=</span><span style="color:#ae81ff">1024</span>,
+</span></span><span style="display:flex;"><span>    messages<span style="color:#f92672">=</span>[{<span style="color:#e6db74">&#34;role&#34;</span>: <span style="color:#e6db74">&#34;user&#34;</span>, <span style="color:#e6db74">&#34;content&#34;</span>: <span style="color:#e6db74">&#34;写一首诗&#34;</span>}]
+</span></span><span style="display:flex;"><span>) <span style="color:#66d9ef">as</span> stream:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> text <span style="color:#f92672">in</span> stream<span style="color:#f92672">.</span>text_stream:
+</span></span><span style="display:flex;"><span>        print(text, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>, flush<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span></code></pre></div><p><strong>系统提示词（System Prompt）：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>message <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>messages<span style="color:#f92672">.</span>create(
+</span></span><span style="display:flex;"><span>    model<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;claude-sonnet-4-20250514&#34;</span>,
+</span></span><span style="display:flex;"><span>    max_tokens<span style="color:#f92672">=</span><span style="color:#ae81ff">1024</span>,
+</span></span><span style="display:flex;"><span>    system<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;&#34;你是一位资深软件工程师，
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    专注于后端开发，擅长 Python 和 Go。
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    回答风格：
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    1. 代码优先
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    2. 简洁明了
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    3. 包含示例&#34;&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>    messages<span style="color:#f92672">=</span>[
+</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;role&#34;</span>: <span style="color:#e6db74">&#34;user&#34;</span>, <span style="color:#e6db74">&#34;content&#34;</span>: <span style="color:#e6db74">&#34;我想学 Go&#34;</span>}
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p><strong>并行内容：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>message <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>messages<span style="color:#f92672">.</span>create(
+</span></span><span style="display:flex;"><span>    model<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;claude-sonnet-4-20250514&#34;</span>,
+</span></span><span style="display:flex;"><span>    max_tokens<span style="color:#f92672">=</span><span style="color:#ae81ff">1024</span>,
+</span></span><span style="display:flex;"><span>    messages<span style="color:#f92672">=</span>[
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;role&#34;</span>: <span style="color:#e6db74">&#34;user&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;content&#34;</span>: [
+</span></span><span style="display:flex;"><span>                {<span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;text&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;分析这张图片&#34;</span>},
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    <span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;image&#34;</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#e6db74">&#34;source&#34;</span>: {
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;base64&#34;</span>,
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;media_type&#34;</span>: <span style="color:#e6db74">&#34;image/jpeg&#34;</span>,
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;data&#34;</span>: <span style="color:#e6db74">&#34;图片base64数据...&#34;</span>
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            ]
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><h2 id="claude-code-cli-使用教程">Claude Code CLI 使用教程<a hidden class="anchor" aria-hidden="true" href="#claude-code-cli-使用教程">#</a></h2>
+<p>Claude Code CLI 是在终端里直接调用 Claude 的命令行工具，对开发者非常友好。</p>
+<h3 id="安装-claude-code">安装 Claude Code<a hidden class="anchor" aria-hidden="true" href="#安装-claude-code">#</a></h3>
+<p><strong>使用 Homebrew（macOS）：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install anthropic/claude-code/claude-code
+</span></span></code></pre></div><p><strong>使用 npm（Node.js）：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm install -g @anthropic/claude-code
+</span></span></code></pre></div><h3 id="配置-api-key">配置 API Key<a hidden class="anchor" aria-hidden="true" href="#配置-api-key">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>claude-code configure
+</span></span></code></pre></div><p>按提示输入 API Key，会保存在 <code>~/.config/claude-code/config.json</code>。</p>
+<h3 id="基础命令">基础命令<a hidden class="anchor" aria-hidden="true" href="#基础命令">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 打开交互式模式</span>
+</span></span><span style="display:flex;"><span>claude-code
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 执行单条命令</span>
+</span></span><span style="display:flex;"><span>claude-code <span style="color:#e6db74">&#34;解释这段代码&#34;</span>
+</span></span><span style="display:flex;"><span>claude-code --prompt <span style="color:#e6db74">&#34;帮我写一个函数&#34;</span> --language python
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 批量处理文件</span>
+</span></span><span style="display:flex;"><span>claude-code --files path/to/file1.py path/to/file2.js
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 使用特定模型</span>
+</span></span><span style="display:flex;"><span>claude-code --model opus <span style="color:#e6db74">&#34;处理这个任务&#34;</span>
+</span></span></code></pre></div><h3 id="实战示例">实战示例<a hidden class="anchor" aria-hidden="true" href="#实战示例">#</a></h3>
+<p><strong>示例 1：代码分析</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>claude-code --files app.py
+</span></span></code></pre></div><p>Claude 会：</p>
+<ol>
+<li>读取文件内容</li>
+<li>分析代码结构和逻辑</li>
+<li>返回详细的分析报告</li>
+</ol>
+<p><strong>示例 2：代码生成</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>claude-code --language python --prompt <span style="color:#e6db74">&#34;写一个 REST API 的装饰器&#34;</span>
+</span></span></code></pre></div><p>Claude 会直接生成可运行的代码，包含注释和示例。</p>
+<p><strong>示例 3：批量重构</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>claude-code --files src/old/*.py
+</span></span></code></pre></div><p>Claude 会逐个分析文件，提供重构建议。</p>
+<h2 id="claude-artifacts-功能详解">Claude Artifacts 功能详解<a hidden class="anchor" aria-hidden="true" href="#claude-artifacts-功能详解">#</a></h2>
+<p>Artifacts 是 Claude 最受欢迎的功能之一——实时预览你生成的内容。</p>
+<h3 id="什么是-artifacts">什么是 Artifacts？<a hidden class="anchor" aria-hidden="true" href="#什么是-artifacts">#</a></h3>
+<p>简单说，就是：</p>
+<ul>
+<li>你在聊天里让 Claude 生成代码</li>
+<li>Claude 生成后立即渲染成可交互的预览</li>
+<li>不用切换标签页，直接在聊天里就能测试</li>
+</ul>
+<h3 id="使用-artifacts">使用 Artifacts<a hidden class="anchor" aria-hidden="true" href="#使用-artifacts">#</a></h3>
+<p><strong>1. 生成代码后点击 &ldquo;Create&rdquo;</strong></p>
+<pre tabindex="0"><code>你：用 React 写一个计数器组件
 
 Claude：这是一个计数器组件...
 
            [Create Artifact] 按钮
-</code></pre><p>点击后，代码会渲染成一个实时预览页面。</p><p><strong>2. 在 Artifact 中交互</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-jsx data-lang=jsx><span style=display:flex><span><span style=color:#75715e>// 代码
-</span></span></span><span style=display:flex><span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>Counter</span>() {
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>const</span> [<span style=color:#a6e22e>count</span>, <span style=color:#a6e22e>setCount</span>] <span style=color:#f92672>=</span> <span style=color:#a6e22e>useState</span>(<span style=color:#ae81ff>0</span>);
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>return</span> &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>onClick</span><span style=color:#f92672>=</span>{() =&gt; <span style=color:#a6e22e>setCount</span>(<span style=color:#a6e22e>c</span> =&gt; <span style=color:#a6e22e>c</span> <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>)}&gt;{<span style=color:#a6e22e>count</span>}&lt;/<span style=color:#f92672>div</span>&gt;;
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div><p>点击数字就能测试计数功能，不需要打开新标签页。</p><p><strong>3. 分享 Artifact</strong></p><p>点击 Artifact 右上角的分享图标，可以生成公开链接。</p><h3 id=artifacts-适用场景>Artifacts 适用场景<a hidden class=anchor aria-hidden=true href=#artifacts-适用场景>#</a></h3><table><thead><tr><th>类型</th><th>说明</th><th>示例</th></tr></thead><tbody><tr><td>代码</td><td>React/Vue/HTML 组件</td><td>计数器、表单</td></tr><tr><td>设计</td><td>Figma 风格的界面设计</td><td>Landing page 原型</td></tr><tr><td>文档</td><td>Markdown/文档结构</td><td>技术文档、教程</td></tr><tr><td>数据</td><td>交互式数据可视化</td><td>图表、报表</td></tr></tbody></table><h2 id=claude-projects-功能>Claude Projects 功能<a hidden class=anchor aria-hidden=true href=#claude-projects-功能>#</a></h2><p>Projects 是 Claude 的「项目对话」功能，让你把相关内容集中管理。</p><h3 id=创建-project>创建 Project<a hidden class=anchor aria-hidden=true href=#创建-project>#</a></h3><ol><li>点击左侧 &ldquo;Projects&rdquo; 标签</li><li>点击 &ldquo;New Project&rdquo;</li><li>输入项目名称，如 &ldquo;个人博客项目&rdquo;</li></ol><h3 id=在-project-中工作>在 Project 中工作<a hidden class=anchor aria-hidden=true href=#在-project-中工作>#</a></h3><pre tabindex=0><code>┌─────────────────────────────────────────────────────┐
+</code></pre><p>点击后，代码会渲染成一个实时预览页面。</p>
+<p><strong>2. 在 Artifact 中交互</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#75715e">// 代码
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Counter</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">count</span>, <span style="color:#a6e22e">setCount</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span>{() =&gt; <span style="color:#a6e22e">setCount</span>(<span style="color:#a6e22e">c</span> =&gt; <span style="color:#a6e22e">c</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)}&gt;{<span style="color:#a6e22e">count</span>}&lt;/<span style="color:#f92672">div</span>&gt;;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>点击数字就能测试计数功能，不需要打开新标签页。</p>
+<p><strong>3. 分享 Artifact</strong></p>
+<p>点击 Artifact 右上角的分享图标，可以生成公开链接。</p>
+<h3 id="artifacts-适用场景">Artifacts 适用场景<a hidden class="anchor" aria-hidden="true" href="#artifacts-适用场景">#</a></h3>
+<table>
+	<thead>
+			<tr>
+					<th>类型</th>
+					<th>说明</th>
+					<th>示例</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>代码</td>
+					<td>React/Vue/HTML 组件</td>
+					<td>计数器、表单</td>
+			</tr>
+			<tr>
+					<td>设计</td>
+					<td>Figma 风格的界面设计</td>
+					<td>Landing page 原型</td>
+			</tr>
+			<tr>
+					<td>文档</td>
+					<td>Markdown/文档结构</td>
+					<td>技术文档、教程</td>
+			</tr>
+			<tr>
+					<td>数据</td>
+					<td>交互式数据可视化</td>
+					<td>图表、报表</td>
+			</tr>
+	</tbody>
+</table>
+<h2 id="claude-projects-功能">Claude Projects 功能<a hidden class="anchor" aria-hidden="true" href="#claude-projects-功能">#</a></h2>
+<p>Projects 是 Claude 的「项目对话」功能，让你把相关内容集中管理。</p>
+<h3 id="创建-project">创建 Project<a hidden class="anchor" aria-hidden="true" href="#创建-project">#</a></h3>
+<ol>
+<li>点击左侧 &ldquo;Projects&rdquo; 标签</li>
+<li>点击 &ldquo;New Project&rdquo;</li>
+<li>输入项目名称，如 &ldquo;个人博客项目&rdquo;</li>
+</ol>
+<h3 id="在-project-中工作">在 Project 中工作<a hidden class="anchor" aria-hidden="true" href="#在-project-中工作">#</a></h3>
+<pre tabindex="0"><code>┌─────────────────────────────────────────────────────┐
 │  📁 我的博客项目                                     │
 │                                                      │
 │  ├── Hugo 配置                                       │
@@ -153,58 +1112,375 @@ Claude：这是一个计数器组件...
 │  ├── 内容草稿                                       │
 │  └── 部署脚本                                       │
 └─────────────────────────────────────────────────────┘
-</code></pre><p>在 Project 中，Claude 会记住上下文，能更好地理解你的项目结构。</p><h3 id=project-优势>Project 优势<a hidden class=anchor aria-hidden=true href=#project-优势>#</a></h3><ul><li>📂 结构化组织对话</li><li>🔄 支持多人协作</li><li>💾 保存对话历史</li><li>🔍 快速搜索历史内容</li></ul><h2 id=claude-最佳实践>Claude 最佳实践<a hidden class=anchor aria-hidden=true href=#claude-最佳实践>#</a></h2><h3 id=1-合理使用模型>1. 合理使用模型<a hidden class=anchor aria-hidden=true href=#1-合理使用模型>#</a></h3><pre tabindex=0><code>┌─────────────────────────────────────────────────────┐
+</code></pre><p>在 Project 中，Claude 会记住上下文，能更好地理解你的项目结构。</p>
+<h3 id="project-优势">Project 优势<a hidden class="anchor" aria-hidden="true" href="#project-优势">#</a></h3>
+<ul>
+<li>📂 结构化组织对话</li>
+<li>🔄 支持多人协作</li>
+<li>💾 保存对话历史</li>
+<li>🔍 快速搜索历史内容</li>
+</ul>
+<h2 id="claude-最佳实践">Claude 最佳实践<a hidden class="anchor" aria-hidden="true" href="#claude-最佳实践">#</a></h2>
+<h3 id="1-合理使用模型">1. 合理使用模型<a hidden class="anchor" aria-hidden="true" href="#1-合理使用模型">#</a></h3>
+<pre tabindex="0"><code>┌─────────────────────────────────────────────────────┐
 │  快速问答 → Haiku                                    │
 │  日常对话/代码 → Sonnet                             │
 │  复杂任务/精细 → Opus                              │
 └─────────────────────────────────────────────────────┘
-</code></pre><h3 id=2-prompt-工程技巧>2. Prompt 工程技巧<a hidden class=anchor aria-hidden=true href=#2-prompt-工程技巧>#</a></h3><p><strong>少样本提示（Few-shot Prompting）：</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-markdown data-lang=markdown><span style=display:flex><span># 输入格式
-</span></span><span style=display:flex><span>输入：1 + 1
-</span></span><span style=display:flex><span>输出：2
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>输入：2 + 2
-</span></span><span style=display:flex><span>输出：4
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>输入：3 + 3
-</span></span><span style=display:flex><span>输出：6
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>输入：5 + 5
-</span></span></code></pre></div><p><strong>结构化输出：</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-markdown data-lang=markdown><span style=display:flex><span>请以 JSON 格式返回：
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>{
-</span></span><span style=display:flex><span>  &#34;summary&#34;: &#34;一句话总结&#34;,
-</span></span><span style=display:flex><span>  &#34;key_points&#34;: [&#34;要点1&#34;, &#34;要点2&#34;],
-</span></span><span style=display:flex><span>  &#34;action_items&#34;: [&#34;任务1&#34;, &#34;任务2&#34;]
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div><h3 id=3-代码工作流>3. 代码工作流<a hidden class=anchor aria-hidden=true href=#3-代码工作流>#</a></h3><pre tabindex=0><code>┌─────────────────────────────────────────────────────┐
+</code></pre><h3 id="2-prompt-工程技巧">2. Prompt 工程技巧<a hidden class="anchor" aria-hidden="true" href="#2-prompt-工程技巧">#</a></h3>
+<p><strong>少样本提示（Few-shot Prompting）：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># 输入格式
+</span></span><span style="display:flex;"><span>输入：1 + 1
+</span></span><span style="display:flex;"><span>输出：2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：2 + 2
+</span></span><span style="display:flex;"><span>输出：4
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：3 + 3
+</span></span><span style="display:flex;"><span>输出：6
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：5 + 5
+</span></span></code></pre></div><p><strong>结构化输出：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>请以 JSON 格式返回：
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  &#34;summary&#34;: &#34;一句话总结&#34;,
+</span></span><span style="display:flex;"><span>  &#34;key_points&#34;: [&#34;要点1&#34;, &#34;要点2&#34;],
+</span></span><span style="display:flex;"><span>  &#34;action_items&#34;: [&#34;任务1&#34;, &#34;任务2&#34;]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="3-代码工作流">3. 代码工作流<a hidden class="anchor" aria-hidden="true" href="#3-代码工作流">#</a></h3>
+<pre tabindex="0"><code>┌─────────────────────────────────────────────────────┐
 │  第1步：让 Claude 理解需求                            │
 │  第2步：生成初始代码                                  │
 │  第3步：Claude Code CLI 本地调试                      │
 │  第4步：返回 Claude 运行测试                          │
 │  第5步：迭代优化                                      │
 └─────────────────────────────────────────────────────┘
-</code></pre><h2 id=常见问题>常见问题<a hidden class=anchor aria-hidden=true href=#常见问题>#</a></h2><p><strong>Q: Claude 和 ChatGPT 怎么选？</strong></p><p>A:</p><ul><li>Claude → 上下文长、代码能力强、更安全</li><li>ChatGPT → 生态更丰富、工具更多</li></ul><p><strong>Q: API Key 安全吗？</strong></p><p>A: 不要分享给别人，使用环境变量或 <code>.env</code> 文件存储。</p><p><strong>Q: 有免费额度吗？</strong></p><p>A: 注册后会送 3 次试用，之后 Pro 每月 200 次免费。</p><p><strong>Q: Claude 会记住之前的对话吗？</strong></p><p>A: 单次对话内可以，Projects 功能支持跨会话记忆。</p><p><strong>Q: 如何设置 Claude 为默认搜索引擎？</strong></p><p>A: 浏览器扩展可以设置，或者直接用 Claude 搜索网站。</p><h2 id=写在最后>写在最后<a hidden class=anchor aria-hidden=true href=#写在最后>#</a></h2><p>Claude 已经成为我日常工作的核心工具。不管是写代码、写文章还是分析问题，它都能提供很大帮助。</p><p><strong>推荐学习路线：</strong></p><ol><li>先用 Claude Web 体验基础功能</li><li>注册 Claude Pro 享受更快的速度和更高的限额</li><li>下载 Claude Desktop App 随时随地使用</li><li>尝试 Claude Code CLI 提升开发效率</li><li>最后使用 API 把 Claude 集成到你的项目里</li></ol><p><strong>官方资源：</strong></p><ul><li>Claude 官网：https://claude.ai</li><li>Claude API 文档：https://docs.anthropic.com/</li><li>Claude Code GitHub：https://github.com/anthropics/claude-code</li></ul><p>有问题欢迎留言，或者发邮件到 <code>daipo971@gmail.com</code>。</p><hr><p><strong>相关文章：</strong></p><ul><li><a href=/posts/free-vps-guide/>免费 VPS 对比指南</a></li></ul><h3 id=-升级-claude-pro>💡 升级 Claude Pro<a hidden class=anchor aria-hidden=true href=#-升级-claude-pro>#</a></h3><p>免费版足够日常使用。如果你需要处理大量长文本、深度分析项目代码，或者想体验最前沿的 Sonnet/Opus 模型，可以升级到 Pro 版（$20/月）。</p><p>👉 <strong><a href=https://claude.ai/>免费注册 Claude →</a></strong></p><hr><p><em>有些外部工具链接是联盟链接，如果你通过这些链接购买，我会获得少量佣金（不影响你的价格）。所有推荐都是我亲自用过并觉得不错的产品。</em></p></div><footer class=post-footer><ul class=post-tags><li><a href=https://xinqiai.dpdns.org/tags/anthropic/>Anthropic</a></li><li><a href=https://xinqiai.dpdns.org/tags/claude/>Claude</a></li><li><a href=https://xinqiai.dpdns.org/tags/ai/>AI</a></li><li><a href=https://xinqiai.dpdns.org/tags/%E6%95%99%E7%A8%8B/>教程</a></li></ul></footer><div class=comment-section><h2 id=comments>💬 评论区</h2><p class=comment-intro>欢迎在下方留言交流。提交后我会收到你的评论，会尽快回复。</p><form id=comment-form class=comment-form onsubmit="return submitComment(event)"><div class=comment-field><label for=comment-name>昵称 *</label>
-<input type=text id=comment-name name=name required placeholder=你的名字或昵称></div><div class=comment-field><label for=comment-email>邮箱（不公开）</label>
-<input type=email id=comment-email name=email placeholder=可选，方便我回复你></div><div class=comment-field><label for=comment-content>评论内容 *</label>
-<textarea id=comment-content name=content rows=5 required placeholder=写下你的想法……></textarea></div><div class=comment-actions><button type=submit class=comment-submit>
-<span>发送评论</span>
-<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></div><div id=comment-status class="comment-status hidden"></div></form></div><style>.comment-section{margin-top:40px;padding-top:30px;border-top:1px solid rgba(0,210,255,.15)}.comment-section h2{font-size:22px;font-weight:600;color:var(--primary);margin-bottom:8px}.comment-intro{color:var(--secondary);font-size:14px;margin-bottom:24px}.comment-form{display:flex;flex-direction:column;gap:16px}.comment-field{display:flex;flex-direction:column;gap:6px}.comment-field label{font-size:14px;font-weight:500;color:var(--secondary)}.comment-field input,.comment-field textarea{background:rgba(17,17,24,.8);border:1px solid rgba(0,210,255,.15);border-radius:8px;padding:10px 14px;color:var(--primary);font-family:inherit;font-size:15px;transition:border-color .3s ease,box-shadow .3s ease;outline:none}.comment-field input:focus,.comment-field textarea:focus{border-color:#00d2ff;box-shadow:0 0 12px rgba(0,210,255,.15)}.comment-field textarea{resize:vertical;min-height:100px}.comment-actions{display:flex;align-items:center;gap:12px}.comment-submit{display:inline-flex;align-items:center;gap:8px;padding:10px 24px;background:linear-gradient(135deg,rgba(0,210,255,.15) 0%,rgba(0,255,102,.1) 100%);border:1px solid rgba(0,210,255,.25);border-radius:8px;color:#00d2ff;font-size:15px;font-weight:500;font-family:inherit;cursor:pointer;transition:all .3s ease}.comment-submit:hover{background:linear-gradient(135deg,rgba(0,210,255,.25) 0%,rgba(0,255,102,.2) 100%);box-shadow:0 0 20px rgba(0,210,255,.2);transform:translateY(-1px)}.comment-status{padding:10px 16px;border-radius:8px;font-size:14px}.comment-status.success{background:rgba(0,255,102,.1);border:1px solid rgba(0,255,102,.2);color:#0f6}.comment-status.error{background:rgba(255,68,102,.1);border:1px solid rgba(255,68,102,.2);color:#f46}.comment-status.hidden{display:none}</style><script>function submitComment(e){e.preventDefault();const t=document.getElementById("comment-name").value.trim(),i=document.getElementById("comment-email").value.trim(),n=document.getElementById("comment-content").value.trim(),s=document.getElementById("comment-status");if(!t||!n)return!1;const o=document.title||"Anthropic Claude 入门完整指南（2026版）",a=window.location.href,r=`来自博客评论区的新评论
+</code></pre><h2 id="常见问题">常见问题<a hidden class="anchor" aria-hidden="true" href="#常见问题">#</a></h2>
+<p><strong>Q: Claude 和 ChatGPT 怎么选？</strong></p>
+<p>A:</p>
+<ul>
+<li>Claude → 上下文长、代码能力强、更安全</li>
+<li>ChatGPT → 生态更丰富、工具更多</li>
+</ul>
+<p><strong>Q: API Key 安全吗？</strong></p>
+<p>A: 不要分享给别人，使用环境变量或 <code>.env</code> 文件存储。</p>
+<p><strong>Q: 有免费额度吗？</strong></p>
+<p>A: 注册后会送 3 次试用，之后 Pro 每月 200 次免费。</p>
+<p><strong>Q: Claude 会记住之前的对话吗？</strong></p>
+<p>A: 单次对话内可以，Projects 功能支持跨会话记忆。</p>
+<p><strong>Q: 如何设置 Claude 为默认搜索引擎？</strong></p>
+<p>A: 浏览器扩展可以设置，或者直接用 Claude 搜索网站。</p>
+<h2 id="写在最后">写在最后<a hidden class="anchor" aria-hidden="true" href="#写在最后">#</a></h2>
+<p>Claude 已经成为我日常工作的核心工具。不管是写代码、写文章还是分析问题，它都能提供很大帮助。</p>
+<p><strong>推荐学习路线：</strong></p>
+<ol>
+<li>先用 Claude Web 体验基础功能</li>
+<li>注册 Claude Pro 享受更快的速度和更高的限额</li>
+<li>下载 Claude Desktop App 随时随地使用</li>
+<li>尝试 Claude Code CLI 提升开发效率</li>
+<li>最后使用 API 把 Claude 集成到你的项目里</li>
+</ol>
+<p><strong>官方资源：</strong></p>
+<ul>
+<li>Claude 官网：https://claude.ai</li>
+<li>Claude API 文档：https://docs.anthropic.com/</li>
+<li>Claude Code GitHub：https://github.com/anthropics/claude-code</li>
+</ul>
+<p>有问题欢迎留言，或者发邮件到 <code>daipo971@gmail.com</code>。</p>
+<hr>
+<p><strong>相关文章：</strong></p>
+<ul>
+<li><a href="/posts/free-vps-guide/">免费 VPS 对比指南</a></li>
+</ul>
+<h3 id="-升级-claude-pro">💡 升级 Claude Pro<a hidden class="anchor" aria-hidden="true" href="#-升级-claude-pro">#</a></h3>
+<p>免费版足够日常使用。如果你需要处理大量长文本、深度分析项目代码，或者想体验最前沿的 Sonnet/Opus 模型，可以升级到 Pro 版（$20/月）。</p>
+<p>👉 <strong><a href="https://claude.ai/">免费注册 Claude →</a></strong></p>
+<hr>
+<p><em>有些外部工具链接是联盟链接，如果你通过这些链接购买，我会获得少量佣金（不影响你的价格）。所有推荐都是我亲自用过并觉得不错的产品。</em></p>
 
-`+`文章：${o}
-`+`链接：${a}
-`+`昵称：${t}
-`+`邮箱：${i||"未填写"}
 
-`+`评论内容：
-${n}
+  </div>
 
----
-本邮件由博客评论区自动生成`,c=`mailto:daipo971@gmail.com?subject=${encodeURIComponent("[博客评论] "+o)}&body=${encodeURIComponent(r)}`;return s.className="comment-status success",s.textContent="✅ 正在打开你的邮件客户端发送评论……发送后我会尽快回复！",window.location.href=c,setTimeout(()=>{document.getElementById("comment-name").value="",document.getElementById("comment-email").value="",document.getElementById("comment-content").value=""},2e3),!1}</script></article></main><footer class=footer><span>&copy; 2026 <a href=https://xinqiai.dpdns.org/>欣淇AI网 - AI工具教程与免费资源</a></span> ·
-探索 · 创新 · 赚钱 ·
-<span>联系我：
-<a href=mailto:daipo971@outlook.com title=发送邮件 style="color:var(--secondary);transition:color .3s ease">daipo971@outlook.com
-</a>·
-</span><span>Powered by
-<a href="https://gohugo.io/?utm_source=papermod" rel=noopener target=_blank>Hugo</a> &
-<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><style>.footer a[href^=mailto]:hover{color:#0f6!important;text-shadow:0 0 10px rgba(0,255,102,.3)}</style><a href=#top id=top-link class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey=g><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up"><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg>
-</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var toplink=document.getElementById("top-link");window.onscroll=function(){const e=window.innerHeight;document.body.scrollTop>e||document.documentElement.scrollTop>e?toplink.classList.remove("hidden"):toplink.classList.add("hidden")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script></body></html>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://xinqiai.dpdns.org/tags/anthropic/">Anthropic</a></li>
+      <li><a href="https://xinqiai.dpdns.org/tags/claude/">Claude</a></li>
+      <li><a href="https://xinqiai.dpdns.org/tags/ai/">AI</a></li>
+      <li><a href="https://xinqiai.dpdns.org/tags/%E6%95%99%E7%A8%8B/">教程</a></li>
+    </ul>
+  </footer>
+<div class="comment-section">
+    <h2 id="comments">💬 评论区</h2>
+    <p class="comment-intro">欢迎在下方留言交流。提交后我会收到你的评论，会尽快回复。</p>
+
+    <form id="comment-form" class="comment-form" onsubmit="return submitComment(event)">
+        <div class="comment-field">
+            <label for="comment-name">昵称 *</label>
+            <input type="text" id="comment-name" name="name" required placeholder="你的名字或昵称">
+        </div>
+        <div class="comment-field">
+            <label for="comment-email">邮箱（不公开）</label>
+            <input type="email" id="comment-email" name="email" placeholder="可选，方便我回复你">
+        </div>
+        <div class="comment-field">
+            <label for="comment-content">评论内容 *</label>
+            <textarea id="comment-content" name="content" rows="5" required placeholder="写下你的想法……"></textarea>
+        </div>
+        <div class="comment-actions">
+            <button type="submit" class="comment-submit">
+                <span>发送评论</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+        </div>
+        <div id="comment-status" class="comment-status hidden"></div>
+    </form>
+</div>
+
+<style>
+.comment-section {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(0, 210, 255, 0.15);
+}
+
+.comment-section h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.comment-intro {
+    color: var(--secondary);
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.comment-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.comment-field label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--secondary);
+}
+
+.comment-field input,
+.comment-field textarea {
+    background: rgba(17, 17, 24, 0.8);
+    border: 1px solid rgba(0, 210, 255, 0.15);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: var(--primary);
+    font-family: inherit;
+    font-size: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.comment-field input:focus,
+.comment-field textarea:focus {
+    border-color: #00d2ff;
+    box-shadow: 0 0 12px rgba(0, 210, 255, 0.15);
+}
+
+.comment-field textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.comment-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.comment-submit {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, rgba(0, 210, 255, 0.15) 0%, rgba(0, 255, 102, 0.1) 100%);
+    border: 1px solid rgba(0, 210, 255, 0.25);
+    border-radius: 8px;
+    color: #00d2ff;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.comment-submit:hover {
+    background: linear-gradient(135deg, rgba(0, 210, 255, 0.25) 0%, rgba(0, 255, 102, 0.2) 100%);
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+.comment-status {
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.comment-status.success {
+    background: rgba(0, 255, 102, 0.1);
+    border: 1px solid rgba(0, 255, 102, 0.2);
+    color: #00ff66;
+}
+
+.comment-status.error {
+    background: rgba(255, 68, 102, 0.1);
+    border: 1px solid rgba(255, 68, 102, 0.2);
+    color: #ff4466;
+}
+
+.comment-status.hidden {
+    display: none;
+}
+</style>
+
+<script>
+function submitComment(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('comment-name').value.trim();
+    const email = document.getElementById('comment-email').value.trim();
+    const content = document.getElementById('comment-content').value.trim();
+    const status = document.getElementById('comment-status');
+
+    if (!name || !content) return false;
+
+    const pageTitle = document.title || 'Anthropic Claude 入门完整指南（2026版）';
+    const pageUrl = window.location.href;
+
+    const body = `来自博客评论区的新评论\n\n` +
+        `文章：${pageTitle}\n` +
+        `链接：${pageUrl}\n` +
+        `昵称：${name}\n` +
+        `邮箱：${email || '未填写'}\n\n` +
+        `评论内容：\n${content}\n\n---\n本邮件由博客评论区自动生成`;
+
+    const mailto = `mailto:daipo971@gmail.com?subject=${encodeURIComponent('[博客评论] ' + pageTitle)}&body=${encodeURIComponent(body)}`;
+
+    status.className = 'comment-status success';
+    status.textContent = '✅ 正在打开你的邮件客户端发送评论……发送后我会尽快回复！';
+
+    window.location.href = mailto;
+
+    
+    setTimeout(() => {
+        document.getElementById('comment-name').value = '';
+        document.getElementById('comment-email').value = '';
+        document.getElementById('comment-content').value = '';
+    }, 2000);
+
+    return false;
+}
+</script>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://xinqiai.dpdns.org/">欣淇AI网 - AI工具教程与免费资源</a></span> · 
+        探索 · 创新 · 赚钱 · 
+
+    <span>
+        联系我：
+        <a href="mailto:daipo971@outlook.com" title="发送邮件" style="color: var(--secondary); transition: color 0.3s ease;">
+            daipo971@outlook.com
+        </a> · 
+    </span>
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<style>
+.footer a[href^="mailto"]:hover {
+    color: #00ff66 !important;
+    text-shadow: 0 0 10px rgba(0, 255, 102, 0.3);
+}
+</style>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,1 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Cloudflare on 欣淇AI网 - AI工具教程与免费资源</title><link>https://xinqiai.dpdns.org/tags/cloudflare/</link><description>Recent content in Cloudflare on 欣淇AI网 - AI工具教程与免费资源</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 11 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://xinqiai.dpdns.org/tags/cloudflare/index.xml" rel="self" type="application/rss+xml"/><item><title>从零搭建个人博客：免费VPS + 免费域名 + Cloudflare托管</title><link>https://xinqiai.dpdns.org/posts/free-blog-tutorial/</link><pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate><guid>https://xinqiai.dpdns.org/posts/free-blog-tutorial/</guid><description>手把手教你从零搭建一个完全免费的Hugo博客，包含免费VPS、免费域名和Cloudflare Pages部署。</description></item><item><title>搞了个免费域名，真香。手把手注册教程</title><link>https://xinqiai.dpdns.org/posts/free-domain-guide/</link><pubDate>Fri, 03 Jul 2026 22:00:00 +0800</pubDate><guid>https://xinqiai.dpdns.org/posts/free-domain-guide/</guid><description>最近白嫖了一个永久免费的域名，配合 Cloudflare 用起来贼爽。写篇教程分享给需要的朋友。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cloudflare on 欣淇AI网 - AI工具教程与免费资源</title>
+    <link>https://xinqiai.dpdns.org/tags/cloudflare/</link>
+    <description>Recent content in Cloudflare on 欣淇AI网 - AI工具教程与免费资源</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 11 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xinqiai.dpdns.org/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从零搭建个人博客：免费VPS &#43; 免费域名 &#43; Cloudflare托管</title>
+      <link>https://xinqiai.dpdns.org/posts/free-blog-tutorial/</link>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://xinqiai.dpdns.org/posts/free-blog-tutorial/</guid>
+      <description>手把手教你从零搭建一个完全免费的Hugo博客，包含免费VPS、免费域名和Cloudflare Pages部署。</description>
+    </item>
+    <item>
+      <title>搞了个免费域名，真香。手把手注册教程</title>
+      <link>https://xinqiai.dpdns.org/posts/free-domain-guide/</link>
+      <pubDate>Fri, 03 Jul 2026 22:00:00 +0800</pubDate>
+      <guid>https://xinqiai.dpdns.org/posts/free-domain-guide/</guid>
+      <description>最近白嫖了一个永久免费的域名，配合 Cloudflare 用起来贼爽。写篇教程分享给需要的朋友。</description>
+    </item>
+  </channel>
+</rss>
