@@ -1,6 +1,6 @@
 ---
 title: "Linux服务器入门教程：零基础搭建网站和部署项目"
-date: 2026-07-25
+date: 2026-07-25T06:00:00+08:00
 description: "Linux服务器从零到一的入门教程，教你服务器选购、SSH连接、LNMP环境搭建、网站部署、安全配置和日常管理。"
 summary: "Linux服务器入门完整教程，包含VPS购买、SSH连接、LNMP、Docker、站点部署和安全配置。"
 tags: ["Linux", "服务器", "VPS", "建站", "运维", "入门教程"]

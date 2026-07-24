@@ -6,8 +6,15 @@
     <description>Recent content in Hugo on 欣淇AI网 - AI工具教程与免费资源</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 11 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 06:00:00 +0800</lastBuildDate>
     <atom:link href="https://xinqiai.dpdns.org/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloudflare Pages 完全教程：从部署到优化的全套指南</title>
+      <link>https://xinqiai.dpdns.org/posts/cloudflare-pages-tutorial-2026/</link>
+      <pubDate>Sat, 25 Jul 2026 06:00:00 +0800</pubDate>
+      <guid>https://xinqiai.dpdns.org/posts/cloudflare-pages-tutorial-2026/</guid>
+      <description>Cloudflare Pages 完整教程，涵盖部署Hugo/Next.js/React项目、自定义域名、CDN加速、Workers集成、数据分析等全部功能。</description>
+    </item>
     <item>
       <title>从零搭建个人博客：免费VPS &#43; 免费域名 &#43; Cloudflare托管</title>
       <link>https://xinqiai.dpdns.org/posts/free-blog-tutorial/</link>
