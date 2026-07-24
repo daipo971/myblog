@@ -118,7 +118,7 @@ git status
 
 ## 当前进度
 
-- [x] 46篇文章已上线
+- [x] 47篇文章已上线
 - [x] 联盟链接已布局（RackNerd, BandwagonHost, Cursor, Claude, ChatGPT）
 - [x] 推送机制已打通（GitHub → Cloudflare Pages）
 - [ ] 下一篇：__________（手写填入）
