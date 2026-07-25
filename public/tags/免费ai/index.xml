@@ -6,8 +6,15 @@
     <description>Recent content in 免费AI on 欣淇AI网 - AI工具教程与免费资源</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 19 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xinqiai.dpdns.org/tags/%E5%85%8D%E8%B4%B9ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>不用联网也能用AI：本机运行大模型完整指南（Ollama &#43; LM Studio）</title>
+      <link>https://xinqiai.dpdns.org/posts/ai-local-llm-guide-2026/</link>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://xinqiai.dpdns.org/posts/ai-local-llm-guide-2026/</guid>
+      <description>完全免费、离线可用、隐私安全。手把手教你用Ollama和LM Studio在自己电脑上运行AI大模型，Mac和Windows都能用。</description>
+    </item>
     <item>
       <title>DeepSeek完全指南 2026：从入门到精通的免费AI模型使用教程</title>
       <link>https://xinqiai.dpdns.org/posts/deepseek-complete-guide-2026/</link>
