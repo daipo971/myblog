@@ -237,7 +237,7 @@ ChatGPT的视觉能力被严重低估了。
 "我要做一个博客系统，帮我设计数据库表结构和API接口"
 ```
 
-我用这个方式写了很多自动化脚本，没写过一行代码 👉 [用AI做自动化](https://xinqiai.dpdns.org/posts/ai-automation-tools-2026/)
+我用这个方式写了很多自动化脚本，没写过一行代码 👉 [用AI做自动化](/posts/ai-automation-tools-2026/)
 
 ## 技巧十：Projects + GPTs + Memory 组合技
 
@@ -267,7 +267,7 @@ ChatGPT从入门到高级的10个技巧，但核心只有一句话：**不要把
 ---
 
 **相关阅读：**
-- 👉 [ChatGPT vs Claude vs Cursor 2026 对比](https://xinqiai.dpdns.org/posts/chatgpt-vs-claude-vs-cursor-guide/)
-- 👉 [ChatGPT 4o免费版使用指南](https://xinqiai.dpdns.org/posts/chatgpt-4o-free-guide-2026/)
-- 👉 [AI提示词工程指南](https://xinqiai.dpdns.org/posts/ai-prompt-engineering-guide-2026/)
-- 👉 [Cursor AI编程工具教程](https://xinqiai.dpdns.org/posts/cursor-ai-tutorial-2026/)
+- 👉 [ChatGPT vs Claude vs Cursor 2026 对比](/posts/chatgpt-vs-claude-vs-cursor-guide/)
+- 👉 [ChatGPT 4o免费版使用指南](/posts/chatgpt-4o-free-guide-2026/)
+- 👉 [AI提示词工程指南](/posts/ai-prompt-engineering-guide-2026/)
+- 👉 [Cursor AI编程工具教程](/posts/cursor-ai-tutorial-2026/)
