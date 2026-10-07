@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ .Site.Title }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>{{ .Site.Params.description | default .Site.Title }}</description>
+    <generator>Hugo</generator>
+    <language>{{ .Site.LanguageCode | default "zh-CN" }}</language>
+    <atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml" />
+    {{ range first 50 (where .Site.RegularPages "Section" "posts") }}
+    {{ if and .Title (ne .Title "") }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
+      <guid>{{ .Permalink }}</guid>
+      <description>{{ .Summary | plainify }}</description>
+    </item>
+    {{ end }}
+    {{ end }}
+  </channel>
+</rss>
