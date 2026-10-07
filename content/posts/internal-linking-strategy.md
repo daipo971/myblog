@@ -106,7 +106,7 @@ showtoc: true
 
 #### URL锚文本
 ```
-示例：访问 <a href="https://xinqiai.dpdns.org/posts/chatgpt-4o-free-guide-2026">完整教程</a>
+示例：访问 <a href="/posts/chatgpt-4o-free-guide-2026">完整教程</a>
 ```
 - **优点**：自然
 - **缺点**：SEO效果最弱
