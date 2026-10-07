@@ -1,8 +1,9 @@
 title = "欣淇AI网 - AI工具教程与免费资源"
 baseURL = "https://xinqiai.dpdns.org"
-locale = "zh-cn"
+locale = "zh-CN"
 theme = "PaperMod"
 languageCode = "zh-CN"
+defaultContentLanguage = "zh-CN"
 
 [params]
   defaultTheme = "dark"
