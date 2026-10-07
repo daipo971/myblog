@@ -190,7 +190,7 @@ Tableau AI 或 Microsoft Power BI AI。虽然贵但功能完整。
 ---
 
 **相关阅读：**
-- 👉 [2026年AI自动化办公指南](https://xinqiai.dpdns.org/posts/ai-automation-office-2026/)
-- 👉 [AI工作流程优化指南](https://xinqiai.dpdns.org/posts/ai-workflow-guide-2026/)
-- 👉 [学生党必备AI工具清单](https://xinqiai.dpdns.org/posts/student-ai-tools-2026/)
-- 👉 [免费AI工具大全](https://xinqiai.dpdns.org/posts/free-ai-tools-2026/)
+- 👉 [2026年AI自动化办公指南](/posts/ai-automation-office-2026/)
+- 👉 [AI工作流程优化指南](/posts/ai-workflow-guide-2026/)
+- 👉 [学生党必备AI工具清单](/posts/student-ai-tools-2026/)
+- 👉 [免费AI工具大全](/posts/free-ai-tools-2026/)
