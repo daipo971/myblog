@@ -35,7 +35,7 @@ DigitalPlat 提供永久免费的 `.dpdns.org` 等后缀域名，一年后续约
 2. 注册账号
 3. 申请免费域名
 
-详细的步骤看这篇：[搞了个免费域名，真香。手把手注册教程](https://xinqiai.dpdns.org/posts/free-domain-guide)
+详细的步骤看这篇：[搞了个免费域名，真香。手把手注册教程](/posts/free-domain-guide)
 
 ### 备用方案：NameSilo
 
@@ -86,7 +86,7 @@ Oracle Cloud 免费配置：
 - 200GB 硬盘
 - 10TB 出站流量
 
-详细教程看这篇：[白嫖一台永久免费服务器？Oracle Cloud 真香！](https://xinqiai.dpdns.org/posts/free-vps-guide)
+详细教程看这篇：[白嫖一台永久免费服务器？Oracle Cloud 真香！](/posts/free-vps-guide)
 
 ## 第三步：安装 Hugo
 
