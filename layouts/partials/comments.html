@@ -17,11 +17,12 @@
             <label for="comment-content">评论内容 *</label>
             <textarea id="comment-content" name="content" rows="5" required placeholder="写下你的想法……"></textarea>
         </div>
-        <div class="comment-actions">
+        <div class="comment-actions"><span class="comment-note">评论将通过邮件发送给站长</span>
             <button type="submit" class="comment-submit">
                 <span>发送评论</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
             </button>
+            
         </div>
         <div id="comment-status" class="comment-status hidden"></div>
     </form>
@@ -95,6 +96,8 @@
     gap: 12px;
 }
 
+
+    .comment-note { font-size: 12px; color: var(--secondary); }
 .comment-submit {
     display: inline-flex;
     align-items: center;
@@ -161,7 +164,7 @@ function submitComment(e) {
         `邮箱：${email || '未填写'}\n\n` +
         `评论内容：\n${content}\n\n---\n本邮件由博客评论区自动生成`;
 
-    const mailto = `mailto:daipo971@gmail.com?subject=${encodeURIComponent('[博客评论] ' + pageTitle)}&body=${encodeURIComponent(body)}`;
+    const mailto = `mailto:daipo971@outlook.com?subject=${encodeURIComponent('[博客评论] ' + pageTitle)}&body=${encodeURIComponent(body)}`;
 
     status.className = 'comment-status success';
     status.textContent = '✅ 正在打开你的邮件客户端发送评论……发送后我会尽快回复！';
