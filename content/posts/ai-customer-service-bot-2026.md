@@ -62,7 +62,7 @@ docker compose up -d
 - 或者用国产模型：通义千问、文心一言（国内网络更稳定）
 
 **没有API Key怎么办？**
-我之前整理过免费AI API的获取方法 👉 [免费AI API完全指南](https://xinqiai.dpdns.org/posts/free-ai-api-guide/)
+我之前整理过免费AI API的获取方法 👉 [免费AI API完全指南](/posts/free-ai-api-guide/)
 也可以去 Hugging Face 申请免费API额度。
 
 **第三步：创建知识库**
@@ -187,7 +187,7 @@ Dify支持接入多个平台：
 
 AI客服真的不需要花大钱。
 
-我自己用的Dify + OpenAI API 方案，部署在一个免费的 Oracle Cloud VPS 上（之前写过教程 👉 [免费VPS指南](https://xinqiai.dpdns.org/posts/free-vps-guide/)），每月成本约$5（API费用）。
+我自己用的Dify + OpenAI API 方案，部署在一个免费的 Oracle Cloud VPS 上（之前写过教程 👉 [免费VPS指南](/posts/free-vps-guide/)），每月成本约$5（API费用）。
 
 **教程行动清单：**
 1. 注册 Dify Cloud 账号（免费）
@@ -201,7 +201,7 @@ AI客服真的不需要花大钱。
 ---
 
 **相关阅读：**
-- 👉 [免费AI API完全指南](https://xinqiai.dpdns.org/posts/free-ai-api-guide/)
-- 👉 [免费VPS指南：Oracle Cloud免费层](https://xinqiai.dpdns.org/posts/free-vps-guide/)
-- 👉 [Cloudflare Pages完全教程](https://xinqiai.dpdns.org/posts/cloudflare-pages-tutorial-2026/)
-- 👉 [AI自动化工具推荐](https://xinqiai.dpdns.org/posts/ai-automation-tools-2026/)
+- 👉 [免费AI API完全指南](/posts/free-ai-api-guide/)
+- 👉 [免费VPS指南：Oracle Cloud免费层](/posts/free-vps-guide/)
+- 👉 [Cloudflare Pages完全教程](/posts/cloudflare-pages-tutorial-2026/)
+- 👉 [AI自动化工具推荐](/posts/ai-automation-tools-2026/)
