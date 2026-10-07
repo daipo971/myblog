@@ -286,6 +286,6 @@ Midjourney V7是目前为止我个人认为对**大众用户最友好且出图�
 - [2026年最值得订阅的AI工具：这8个我每个月都在花钱](/posts/best-ai-subscriptions-2026/)
 - [AI视频生成工具对比：Sora、Runway、可灵实测](/posts/ai-video-generation-comparison-2026/)
 
-有啥问题欢迎在评论区留言，我平时刷博客的时间不多，但看到了就会回。如果想交流AI工具的用法，也可以去 [xinqiai.dpdns.org](https://xinqiai.dpdns.org) 找我。
+有啥问题欢迎在评论区留言，我平时刷博客的时间不多，但看到了就会回。如果想交流AI工具的用法，也可以去 [xinqiai.dpdns.org](/) 找我。
 
 Happy prompting 🎨
