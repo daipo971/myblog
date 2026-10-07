@@ -153,7 +153,7 @@ Logseq是完全开源免费的，如果你对数据主权有执念，选它。
 
 这套组合覆盖了所有场景，而且每个工具都发挥了它的最大优势。
 
-之前在个人知识管理文章里写过方法论 👉 [个人知识管理系统搭建指南](https://xinqiai.dpdns.org/posts/personal-knowledge-management-2026/)
+之前在个人知识管理文章里写过方法论 👉 [个人知识管理系统搭建指南](/posts/personal-knowledge-management-2026/)
 
 ## 避坑建议
 
@@ -175,7 +175,7 @@ Logseq是完全开源免费的，如果你对数据主权有执念，选它。
 ---
 
 **相关阅读：**
-- 👉 [个人知识管理系统搭建指南](https://xinqiai.dpdns.org/posts/personal-knowledge-management-2026/)
-- 👉 [ChatGPT vs Claude vs Cursor 对比评测](https://xinqiai.dpdns.org/posts/chatgpt-vs-claude-vs-cursor-guide/)
-- 👉 [2026年AI工具月省钱攻略](https://xinqiai.dpdns.org/posts/ai-tools-monthly-savings-2026/)
-- 👉 [用AI提高工作效率的7个方法](https://xinqiai.dpdns.org/posts/ai-workflow-guide-2026/)
+- 👉 [个人知识管理系统搭建指南](/posts/personal-knowledge-management-2026/)
+- 👉 [ChatGPT vs Claude vs Cursor 对比评测](/posts/chatgpt-vs-claude-vs-cursor-guide/)
+- 👉 [2026年AI工具月省钱攻略](/posts/ai-tools-monthly-savings-2026/)
+- 👉 [用AI提高工作效率的7个方法](/posts/ai-workflow-guide-2026/)
