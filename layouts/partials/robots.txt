@@ -2,8 +2,8 @@ User-agent: *
 Allow: /
 
 # Sitemap locations
-Sitemap: https://xinqiai.dpdns.org/sitemap.xml
-Sitemap: https://xinqiai.dpdns.org/index.xml
+Sitemap: {{ .Site.BaseURL }}sitemap.xml
+Sitemap: {{ .Site.BaseURL }}index.xml
 
 # Crawl delay
 Crawl-delay: 1
