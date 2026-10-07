@@ -2,11 +2,14 @@ title = "欣淇AI网 - AI工具教程与免费资源"
 baseURL = "https://xinqiai.dpdns.org"
 locale = "zh-cn"
 theme = "PaperMod"
+languageCode = "zh-CN"
 
 [params]
   defaultTheme = "dark"
   disableThemeToggle = false
   env = "production"
+  showPostNavLinks = true
+  description = "欣淇AI网 - 分享 AI 工具评测、免费资源教程与实战技巧"
 
   # SEO
   [params.analytics.google]
@@ -53,6 +56,12 @@ theme = "PaperMod"
     name = "文章"
     url = "/posts/"
     weight = 20
+    
+    [[menu.main]]
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+    weight = 22
 
   [[menu.main]]
     identifier = "tools"
@@ -71,3 +80,6 @@ theme = "PaperMod"
     name = "搜索"
     url = "/search/"
     weight = 40
+    
+    [outputs]
+    home = ["HTML", "RSS", "JSON"]
