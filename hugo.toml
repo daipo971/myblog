@@ -16,6 +16,9 @@ defaultContentLanguage = "zh-cn"
   showPostNavLinks = true
   description = "欣淇AI网 - 分享 AI 工具评测、免费资源教程与实战技巧"
 
+  # 评论后端 API（Botkeep 自托管 FastAPI）
+  commentAPI = "https://wsxw4z.bot-keep.xyz"
+
   # SEO
   [params.analytics.google]
     SiteVerificationTag = "googlee78fbd130bd563d5"
