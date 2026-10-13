@@ -68,7 +68,7 @@ defaultContentLanguage = "zh-cn"
     [[menu.main]]
     identifier = "categories"
     name = "分类"
-    url = "/categories/"
+  url = "/categories/"
     weight = 22
 
   [[menu.main]]
@@ -91,3 +91,9 @@ defaultContentLanguage = "zh-cn"
     
     [outputs]
     home = ["HTML", "RSS", "JSON"]
+
+# 站点 logo
+[params.label]
+  text = "欣淇AI网"
+  icon = "/images/logo.png"
+  iconHeight = 35
