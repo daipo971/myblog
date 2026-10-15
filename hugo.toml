@@ -16,6 +16,9 @@ defaultContentLanguage = "zh-cn"
   showPostNavLinks = true
   description = "欣淇AI网 - 分享 AI 工具评测、免费资源教程与实战技巧"
 
+  # 日期显示格式（中文）：2026年10月15日
+  DateFormat = "2006年1月2日"
+
   # 评论后端 API（Botkeep 自托管 FastAPI）
   commentAPI = "https://wsxw4z.bot-keep.xyz"
 
