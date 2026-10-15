@@ -422,3 +422,23 @@ pre, .chroma {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ---------- 首页文章卡片日期醒目化 ---------- */
+/* 日期现在是中文格式（hugo.toml DateFormat），这里再加大加亮 */
+.entry-footer {
+  font-size: 14px;
+}
+.entry-footer > span[title] {
+  color: var(--cyber-accent);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.entry-footer > span[title]::before {
+  content: "📅 ";
+  filter: saturate(0.8);
+}
+/* 文章页日期同样醒目 */
+.post-meta > span[title] {
+  color: var(--cyber-accent);
+  font-weight: 600;
+}
