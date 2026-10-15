@@ -1,0 +1,31 @@
+name: 推送新文章到 TG 频道
+on:
+  push:
+    branches: [main]
+    paths: ['content/posts/**']
+  workflow_dispatch:
+jobs:
+  tg-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: 发送新文章到 Telegram 频道
+        env:
+          TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          set -e
+          files=$(git diff --name-only --diff-filter=A HEAD~1 HEAD -- 'content/posts/*.md' || true)
+          if [ -z "$files" ]; then echo "没有新增文章"; exit 0; fi
+          for f in $files; do
+            [ -f "$f" ] || continue
+            title=$(grep -m1 '^title:' "$f" | sed -e 's/^title:[[:space:]]*//' -e 's/^"//' -e 's/"$//' -e "s/^'//" -e "s/'$//")
+            slug=$(basename "$f" .md)
+            fslug=$(grep -m1 '^slug:' "$f" | sed -e 's/^slug:[[:space:]]*//' -e 's/^"//' -e 's/"$//')
+            [ -n "$fslug" ] && slug="$fslug"
+            url="https://xinqiai.dpdns.org/posts/${slug}/"
+            msg=$(printf '📝 %s\n\n%s' "$title" "$url")
+            curl -s --max-time 20 --data-urlencode "chat_id=@xinqiaigongju" --data-urlencode "text=$msg" "https://api.telegram.org/bot${TG_TOKEN}/sendMessage"
+            echo
+          done
