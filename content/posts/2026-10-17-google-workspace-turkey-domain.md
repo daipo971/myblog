@@ -1,6 +1,6 @@
 ---
 title: "₺75/年拿下 .com：Google Workspace 土耳其区注册域名全流程避坑"
-date: 2026-10-17
+date: 2026-10-17T07:00:00+08:00
 description: "昨天实测：通过 Google Workspace 土耳其区，75 里拉（约10元人民币）注册了一个 .com 域名。流程和坑完整记录：取消订阅后邮箱被清空、域名是否受影响，一次讲清。"
 tags: ["域名", "教程", "省钱", "Google Workspace", "避坑"]
 ---
