@@ -15,17 +15,22 @@ jobs:
         env:
           TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: |
-          set -e
-          files=$(git diff --name-only --diff-filter=A HEAD~1 HEAD -- 'content/posts/*.md' || true)
-          if [ -z "$files" ]; then echo "没有新增文章"; exit 0; fi
-          for f in $files; do
-            [ -f "$f" ] || continue
-            title=$(grep -m1 '^title:' "$f" | sed -e 's/^title:[[:space:]]*//' -e 's/^"//' -e 's/"$//' -e "s/^'//" -e "s/'$//")
-            slug=$(basename "$f" .md)
-            fslug=$(grep -m1 '^slug:' "$f" | sed -e 's/^slug:[[:space:]]*//' -e 's/^"//' -e 's/"$//')
-            [ -n "$fslug" ] && slug="$fslug"
-            url="https://xinqiai.dpdns.org/posts/${slug}/"
-            msg=$(printf '📝 %s\n\n%s' "$title" "$url")
-            curl -s --max-time 20 --data-urlencode "chat_id=@xinqiaigongju" --data-urlencode "text=$msg" "https://api.telegram.org/bot${TG_TOKEN}/sendMessage"
-            echo
-          done
+            set -e
+            files=$(git diff --name-only --diff-filter=A HEAD~1 HEAD -- 'content/posts/*.md' || true)
+            if [ -z "$files" ]; then echo "没有新增文章"; exit 0; fi
+            for f in $files; do
+              [ -f "$f" ] || continue
+              title=$(grep -m1 '^title:' "$f" | sed -e 's/^title:[[:space:]]*//' -e 's/^"//' -e 's/"$//' -e "s/^'//" -e "s/'$//")
+              desc=$(grep -m1 '^description:' "$f" | sed -e 's/^description:[[:space:]]*//' -e 's/^"//' -e 's/"$//' -e "s/^'//" -e "s/'$//")
+              tags=$(grep -m1 '^tags:' "$f" | sed -e 's/^tags:[[:space:]]*//' -e 's/^\[//' -e 's/\]$//' -e 's/"//g' -e "s/'//g" | tr ',' '\n' | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' -e 's/[[:space:]]//g' -e 's/^/#/' | tr '\n' ' ' | sed -e 's/ $//')
+              slug=$(basename "$f" .md)
+              fslug=$(grep -m1 '^slug:' "$f" | sed -e 's/^slug:[[:space:]]*//' -e 's/^"//' -e 's/"$//')
+              [ -n "$fslug" ] && slug="$fslug"
+              url="https://xinqai.com/posts/${slug}/"
+              msg="📝 ${title}"
+              [ -n "$desc" ] && msg+=$'\n\n'"${desc}"
+              [ -n "$tags" ] && msg+=$'\n\n🏷️ '"${tags}"
+              msg+=$'\n\n🔗 '"${url}"
+              curl -s --max-time 20 --data-urlencode "chat_id=@xinqiaigongju" --data-urlencode "text=$msg" "https://api.telegram.org/bot${TG_TOKEN}/sendMessage"
+              echo
+            done
