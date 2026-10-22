@@ -1,7 +1,7 @@
 ---
 title: "友情链接"
 url: "/links/"
-summary: "好用的朋友站点推荐：接码、加密聊天、传文件"
+summary: "好用的朋友站点推荐：代充、加密聊天、传文件"
 showtoc: false
 disableShare: true
 ---
@@ -10,11 +10,11 @@ disableShare: true
 
 ---
 
-## 📱 HopeX — 接码平台
+## 💳 HopeX — 海外会员代充
 
-注册各类账号时收短信验证码用，提供临时手机号码，不用暴露自己的真实号码，保护隐私。
+海外会员代充与独享账号商城：ChatGPT Plus 官方代充、X Premium 蓝标、Google One、Muse 独享账号等，支持微信/支付宝付款，下单后邮箱交付，附新手图文教程。
 
-👉 **[访问 HopeX 接码平台 →](https://hopex.cc.cd)**
+👉 **[访问 HopeX 代充商城 →](https://hopex.cc.cd)**
 
 ## 🔒 HopeX Chat — 加密聊天
 
