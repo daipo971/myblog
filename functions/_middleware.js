@@ -3,6 +3,9 @@
 // 文章深链：非首页路径额外显示"在新站阅读本文"按钮（同路径指向新域名），老链接可找回对应文章。
 export async function onRequest(context) {
   const url = new URL(context.request.url);
+  if (url.hostname === 'www.xinqai.com') {
+    return Response.redirect('https://xinqai.com' + url.pathname + url.search, 301);
+  }
   if (url.hostname === 'xinqiai.dpdns.org') {
     const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     const articleBtn = url.pathname !== '/'
