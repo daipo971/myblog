@@ -14,7 +14,7 @@ disableShare: true
 
 海外会员代充与独享账号商城：ChatGPT Plus 官方代充、X Premium 蓝标、Google One、Muse 独享账号等，支持微信/支付宝付款，下单后邮箱交付，附新手图文教程。
 
-👉 **[访问 HopeX 代充商城 →](https://hopex.cc.cd)**
+👉 **[访问 HopeX 代充商城 →](https://shop.xinqai.com)**
 
 ## 🔒 HopeX Chat — 加密聊天
 
