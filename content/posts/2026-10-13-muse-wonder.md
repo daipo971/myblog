@@ -3,7 +3,7 @@ title: "Muse Wonder 不免费：Meta 首个前沿模型定价对标 Opus，开�
 date: 2026-10-13T15:45:00+08:00
 draft: false
 tags: ["AI大模型", "Meta", "Muse", "定价", "解读"]
-categories: ["中国与开源模型"]
+categories: ["AI前沿动态"]
 description: "Meta 昨日发布首个前沿模型 Muse Wonder / Wonder Full，API 定价 $4/$20 每百万 token，直接对标 Claude Opus 5.5——是上一代 Muse Spark 1.3 的三倍。本文解析它的能力、定价和背后的转向。"
 ---
 
@@ -67,4 +67,4 @@ Muse Wonder 标志着 Meta 的彻底转向：从"Llama 普惠开源"到"前沿�
 - [开源倒计时：阶跃 Step 5 Preview 登顶 OpenRouter 趋势榜，10 月 15 日放出权重前先看懂这几件事](/posts/2026-10-13-step-5-preview/)
 - [Kimi K3.1 Pro 发布了：国产 3T 大模型，能跟 Claude Opus 掰手腕，普通人这样免费用上](/posts/2026-10-27-kimi-k3-1-pro-guide/)
 - [Reflection Beam 解析：501B 参数的「西方 DeepSeek」，权重还没发，先看懂这 8 件事](/posts/2026-10-08-reflection-beam-jiexi/)
-- 更多「中国与开源模型」文章：[/categories/中国与开源模型/](/categories/中国与开源模型/)
+- 更多「AI前沿动态」文章：[/categories/ai前沿动态/](/categories/ai前沿动态/)

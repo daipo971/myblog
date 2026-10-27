@@ -43,13 +43,10 @@ description: "DeepSeek、Kimi、MiniMax、阶跃 Step、智谱 GLM、可灵等�
 - [Reflection Beam 模型档案](/posts/reflection-beam-guide/)
 - [Reflection Beam 解析：501B 的「西方 DeepSeek」](/posts/2026-10-08-reflection-beam-jiexi/)
 - [Beam 开源：Apache 2.0 许可证意味着什么](/posts/2026-10-18-reflection-beam/)
-- [Muse Wonder 不免费：Meta 前沿模型定价](/posts/2026-10-13-muse-wonder/)
 
-## 国行设备上的 AI
+## 相关支柱
 
-- [国行 iPhone 的 AI：阿里百度双引擎](/posts/2026-10-15-apple-intelligence-china/)
-- [库克确认国行 AI 测试版](/posts/2026-10-15-cook-china-ai-beta/)
-- [国行 Apple Intelligence 准备清单](/posts/2026-10-20-apple-ai-prep-checklist/)
+- 国行 iPhone 的 Apple Intelligence、OpenAI / Anthropic / Google / Meta 等海外闭源模型的动态，见 [AI前沿动态](/categories/ai前沿动态/)。
 
 ## 行业观察
 

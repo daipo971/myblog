@@ -3,7 +3,7 @@ title: "AI英语学习工具推荐 2026：ChatGPT、DeepL、多邻国、有道�
 date: 2026-07-21
 description: "用AI学英语的工具推荐，ChatGPT练口语、DeepL辅助阅读、多邻国AI版、有道词典AI功能实测对比"
 summary: "2026年AI学英语工具推荐，ChatGPT口语陪练、DeepL阅读辅助、多邻国AI版、有道词典AI功能实测，还有免费学习方案"
-categories: ["AI工具实测"]
+categories: ["AI应用场景"]
 tags: ["AI学英语", "英语学习", "ChatGPT", "DeepL", "多邻国", "AI工具", "学习工具"]
 showtoc: true
 ---
@@ -218,3 +218,7 @@ Claude的写作能力——尤其英文写作——我个人觉得比ChatGPT稍�
 这篇文章就写到这了。如果你也有用AI学英语的经验，欢迎分享你踩过的坑或者找到的好方法。
 
 咱们下次见。
+
+## 相关阅读
+
+- 更多「AI应用场景」文章：[/categories/ai应用场景/](/categories/ai应用场景/)

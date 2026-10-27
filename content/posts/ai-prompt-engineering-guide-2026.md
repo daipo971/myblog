@@ -4,7 +4,7 @@ description: "AI 提示词工程从入门到进阶：提示词基本要素、基
 date: 2026-07-14
 author: "AI专家"
 tags: ["AI提示词工程", "AI应用", "提示词技巧", "2026年"]
-categories: ["AI工具实测"]
+categories: ["AI应用场景"]
 summary: "全面介绍2026年AI提示词工程，从基础概念到高级技巧，帮助用户更好地使用AI工具。"
 showtoc: true
 disableShare: false
@@ -561,4 +561,4 @@ disableShare: false
 - [Midjourney V7完整教程 2026：从入门到精通的AI绘画实战指南](/posts/midjourney-complete-guide-2026/)
 - [2026年AI安全工具完全指南：从数据保护到模型安全](/posts/ai-security-tools-2026/)
 - [2026年AI Agent完全指南：从Claude Agent到OpenAI Agent SDK，手把手搭建AI智能体](/posts/ai-agent-complete-guide-2026/)
-- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)
+- 更多「AI应用场景」文章：[/categories/ai应用场景/](/categories/ai应用场景/)

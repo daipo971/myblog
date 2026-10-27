@@ -3,7 +3,7 @@ title: "ChatGPT提示词进阶技巧 2026：从能用到好用的10个Prompt秘�
 date: 2026-07-19
 description: "ChatGPT提示词进阶技巧，从基础的prompt engineering到高级技巧，包含角色扮演、思维链、few-shot等实用方法"
 summary: "10个ChatGPT提示词进阶技巧，角色扮演、思维链Chain-of-Thought、Few-Shot、结构化输出等高级Prompt Engineering方法实测"
-categories: ["AI工具实测"]
+categories: ["AI应用场景"]
 tags: ["ChatGPT", "提示词", "Prompt Engineering", "AI教程", "提示词技巧"]
 showtoc: true
 ---
@@ -359,3 +359,7 @@ ChatGPT的"温度"参数控制输出随机性：
 ---
 
 *部分外部工具链接为联盟链接，如果你通过这些链接购买，我会获得少量佣金（不影响你的价格）。所有推荐都是亲自用过并觉得不错的产品。*
+
+## 相关阅读
+
+- 更多「AI应用场景」文章：[/categories/ai应用场景/](/categories/ai应用场景/)

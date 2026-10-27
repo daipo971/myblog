@@ -3,7 +3,7 @@ title: "AI工具更新：2026年7月最新变化和趋势"
 date: 2026-07-09
 description: "2026年7月AI工具最新更新，包括ChatGPT、Claude、Cursor等工具的最新功能和价格变化。"
 summary: "2026年7月AI工具更新，最新功能和价格变化分析。"
-categories: ["AI工具实测"]
+categories: ["AI前沿动态"]
 tags: ["AI工具更新", "2026年7月", "ChatGPT", "Claude", "Cursor"]
 showtoc: true
 ---
@@ -250,4 +250,4 @@ showtoc: true
 - [2026年最值得订阅的AI工具：这8个我每个月都花钱，但觉得值](/posts/best-ai-subscriptions-2026/)
 - [ChatGPT vs Claude vs Cursor：2026年深度对比与选择指南](/posts/chatgpt-vs-claude-vs-cursor-guide/)
 - [2026年AI效率工作流搭建指南：把ChatGPT+Claude+Cursor串起来用才叫效率翻倍](/posts/ai-workflow-guide-2026/)
-- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)
+- 更多「AI前沿动态」文章：[/categories/ai前沿动态/](/categories/ai前沿动态/)

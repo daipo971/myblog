@@ -3,7 +3,7 @@ title: "AI客服机器人搭建教程：零成本用开源工具打造智能客�
 date: 2026-07-25T07:30:00+08:00
 description: "手把手教你搭建AI客服机器人，使用开源工具和免费API，从零搭建一个智能客服系统，支持网站嵌入、知识库训练和多平台接入。"
 summary: "AI客服机器人搭建完整教程，使用开源工具+免费API零成本打造智能客服，支持网站嵌入和多平台接入。"
-categories: ["AI工具实测"]
+categories: ["AI应用场景"]
 tags: ["AI客服", "聊天机器人", "开源", "教程", "自动化", "客户服务"]
 showtoc: true
 ---
@@ -205,3 +205,7 @@ AI客服真的不需要花大钱。
 - 👉 [免费VPS指南：Oracle Cloud免费层](/posts/free-vps-guide/)
 - 👉 [Cloudflare Pages完全教程](/posts/cloudflare-pages-tutorial-2026/)
 - 👉 [AI自动化工具推荐](/posts/ai-automation-tools-2026/)
+
+## 相关阅读
+
+- 更多「AI应用场景」文章：[/categories/ai应用场景/](/categories/ai应用场景/)

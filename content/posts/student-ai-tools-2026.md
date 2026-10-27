@@ -3,7 +3,7 @@ title: "2026年学生党AI工具组合：预算100块以内，把这些免费+�
 date: 2026-07-16
 description: "学生党预算有限怎么玩AI？100块以内的免费+低价AI工具搭配方案，ChatGPT免费版、Claude、DeepSeek、Cursor、Perplexity全攻略。"
 summary: "手把手教学生党用最少的钱组出最强AI工具组合。ChatGPT免费版、Claude、DeepSeek、Cursor、Perplexity怎么搭配最好用，全在这了。"
-categories: ["AI工具实测"]
+categories: ["AI应用场景"]
 tags: ["AI工具", "学生党", "省钱", "免费AI", "效率工具", "ChatGPT", "Claude"]
 showtoc: true
 ---
@@ -214,3 +214,7 @@ ChatGPT 免费版管日常，Claude 免费版管长篇写作和论文，DeepSeek
 - [我用了半年Cursor AI，有些话不吐不快](/posts/cursor-programming-tools/)
 - [Perplexity AI深度体验：用了一个月，我卸载了Google](/posts/perplexity-ai-deep-review-2026/)
 *** End of File
+
+## 相关阅读
+
+- 更多「AI应用场景」文章：[/categories/ai应用场景/](/categories/ai应用场景/)

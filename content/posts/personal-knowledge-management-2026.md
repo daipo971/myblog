@@ -3,7 +3,7 @@ title: "2026年个人知识管理体系搭建：用Notion AI + Obsidian + Readwi
 date: 2026-07-21
 description: "用Notion AI、Obsidian、Readwise等工具搭建个人知识管理体系，从信息收集到知识输出的完整工作流"
 summary: "2026年个人知识管理体系搭建指南，Notion AI + Obsidian + Readwise组合方案，信息收集到知识输出的完整工作流"
-categories: ["AI工具实测"]
+categories: ["AI应用场景"]
 tags: ["知识管理", "Notion", "Obsidian", "Readwise", "第二大脑", "效率工具", "AI工具"]
 showtoc: true
 ---
@@ -262,3 +262,7 @@ PKM这件事，说复杂很复杂，说简单也简单——就是**把看过的
 如果你刚开始搭建PKM体系，不用一次上满所有工具。从Obsidian开始，把笔记写起来，慢慢加工具、慢慢优化流程。半年之后你会感谢现在的自己。
 
 想聊具体的PKM方案，欢迎留言讨论。如果你用过其他好用的知识管理工具，也请分享出来，我一直在找更好的方案。
+
+## 相关阅读
+
+- 更多「AI应用场景」文章：[/categories/ai应用场景/](/categories/ai应用场景/)

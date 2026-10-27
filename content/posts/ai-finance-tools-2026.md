@@ -4,7 +4,7 @@ description: "Wealthfront、Betterment、Robinhood 等智能投顾，以及 Bloo
 date: 2026-07-12
 author: "金融科技专家"
 tags: ["AI金融", "投资决策", "风险管理", "2026年"]
-categories: ["AI工具实测"]
+categories: ["AI应用场景"]
 summary: "全面分析2026年AI在金融领域的应用，从智能投顾到风险管理，为投资者和金融机构提供专业指导。"
 showtoc: true
 disableShare: false
@@ -565,4 +565,4 @@ AI金融工具正在深刻改变金融行业的格局。选择合适的工具需
 - [2026年AI教育工具革命：从个性化学习到智能教学](/posts/ai-education-tools-2026/)
 - [2026年AI安全工具完全指南：从数据保护到模型安全](/posts/ai-security-tools-2026/)
 - [2026年AI自动化工具对比：从零开始构建智能工作流](/posts/ai-automation-tools-2026/)
-- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)
+- 更多「AI应用场景」文章：[/categories/ai应用场景/](/categories/ai应用场景/)

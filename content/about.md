@@ -13,10 +13,12 @@ disableShare: true
 
 ## 写什么
 
-本站内容分为四个方向：
+本站内容分为六个方向：
 
 - **[中国与开源模型](/categories/中国与开源模型/)**：DeepSeek、Kimi、MiniMax、阶跃 Step、智谱 GLM、可灵等模型的发布解读、价格、许可证和上手方法。
 - **[AI工具实测](/categories/ai工具实测/)**：ChatGPT、Claude、Cursor 等 AI 工具的评测、对比和省钱组合。
+- **[AI应用场景](/categories/ai应用场景/)**：按身份和任务讲怎么用 AI，包括办公、学习、创作、求职、理财，以及 AI 入门知识和提示词。
+- **[AI前沿动态](/categories/ai前沿动态/)**：OpenAI、Anthropic、Google、苹果等海外 AI 公司的新模型、新功能和行业大事解读。
 - **[海外服务通关](/categories/海外服务通关/)**：国内用户如何开通和使用海外 AI 服务，包括账号、支付、网络和封号申诉。
 - **[建站与副业](/categories/建站与副业/)**：VPS、Cloudflare、个人博客搭建、SEO，以及用 AI 做副业。
 
