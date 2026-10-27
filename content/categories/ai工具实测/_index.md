@@ -1,0 +1,55 @@
+---
+title: "AI工具实测"
+description: "ChatGPT、Claude、Cursor、Midjourney 等 AI 工具的实测评测、横向对比和省钱组合，按使用场景整理，帮你选对工具、少花冤枉钱。"
+---
+
+这里收录本站所有 AI 工具评测和对比。不知道从哪看起，就按下面的场景找；每个场景先看对比文章，再看单个工具的深度评测。
+
+## 先选一个主力 AI
+
+- [ChatGPT vs Claude vs Cursor 深度对比](/posts/chatgpt-vs-claude-vs-cursor-guide/)：三个最常用工具怎么选、怎么搭配。
+- [Claude 入门完整指南](/posts/claude-guide/)
+- [ChatGPT 免费版三个月真实体验](/posts/chatgpt-4o-real-experience/)
+- [ChatGPT 高级使用技巧](/posts/chatgpt-advanced-techniques-2026/) · [ChatGPT 提示词进阶](/posts/chatgpt-prompt-advanced-2026/) · [提示词工程完全指南](/posts/ai-prompt-engineering-guide-2026/)
+
+## 省钱：免费工具与订阅组合
+
+- [真正好用的免费 AI 工具](/posts/free-ai-tools-2026/)
+- [最值得订阅的 AI 工具](/posts/best-ai-subscriptions-2026/)
+- [AI 工具月度省钱攻略](/posts/ai-tools-monthly-savings-2026/) · [每月省下 $100 的方法](/posts/save-money-with-ai/)
+- [学生党 AI 工具组合](/posts/student-ai-tools-2026/)
+- [免费 AI API 完整清单](/posts/free-ai-api-guide/)
+
+## AI 编程
+
+- [AI 编程工具横向评测](/posts/ai-coding-tools-comparison-2026/)
+- [Cursor vs Windsurf](/posts/cursor-vs-windsurf-2026/) · [Cursor 深度评测](/posts/cursor-programming-tools/) · [AI 代码编辑器评测](/posts/ai-code-editor-2026/)
+- [Claude Code 与 Codex CLI](/posts/claude-code-codex-cli-2026/) · [Codex 入门](/posts/codex-guide/)
+
+## Agent 与自动化
+
+- [AI Agent 完全指南](/posts/ai-agent-complete-guide-2026/)
+- [用 n8n 搭建 AI 自动化工作流](/posts/ai-agent-workflow-guide-2026/)
+- [AI 效率工作流搭建](/posts/ai-workflow-guide-2026/) · [AI 自动化工具对比](/posts/ai-automation-tools-2026/) · [AI 自动化办公](/posts/ai-automation-office-2026/)
+- [AI 客服机器人搭建](/posts/ai-customer-service-bot-2026/)
+
+## 图片、视频与声音
+
+- [AI 图片生成横评](/posts/ai-image-generation-comparison-2026/) · [Midjourney 完整教程](/posts/midjourney-complete-guide-2026/) · [AI 设计工具横评](/posts/ai-design-tools-comparison-2026/)
+- [AI 视频生成横评](/posts/ai-video-generation-comparison-2026/) · [免费 AI 视频生成工具](/posts/free-ai-video-generators-2026/) · [AI 视频剪辑工具](/posts/ai-video-editing-tools-2026/) · [AI 短视频创作](/posts/ai-short-video-creation-2026/)
+- [AI 语音克隆与 TTS](/posts/ai-voice-clone-tts-tools-2026/) · [AI 音乐生成](/posts/ai-music-generation-2026/) · [AI 播客制作](/posts/2026-10-05-ai-podcast/)
+
+## 学习、办公与生活
+
+- [AI 搜索引擎评测](/posts/ai-search-engines-comparison-2026/) · [Perplexity 深度体验](/posts/perplexity-ai-deep-review-2026/)
+- [AI 翻译工具横评](/posts/ai-translation-tools-comparison-2026/) · [AI 英语学习工具](/posts/ai-english-learning-tools-2026/)
+- [AI 笔记软件对比](/posts/ai-note-taking-comparison-2026/) · [个人知识管理体系](/posts/personal-knowledge-management-2026/) · [AI PDF 工具](/posts/ai-pdf-tools-comparison-2026/)
+- [AI 生成 PPT](/posts/ai-presentation-tools-2026/) · [AI 数据分析](/posts/ai-data-analysis-tools-2026/) · [AI 简历面试](/posts/ai-resume-interview-tools-2026/)
+- [AI 旅行规划](/posts/ai-travel-planning-tools-2026/) · [AI 理财工具](/posts/ai-personal-finance-management-2026/) · [AI 健康工具](/posts/ai-health-tools-2026/)
+
+## 新品与行业动态
+
+- [GPT-6.1 Terra](/posts/2026-10-27-gpt-6-1-terra-launch/) · [Claude Duet](/posts/2026-10-22-claude-duet-launch/) · [Claude 杀入谷歌](/posts/2026-10-23-claude-enters-google/) · [Anthropic 招股书解读](/posts/2026-10-27-anthropic-ipo-s1-analysis/)
+- [Gemini 代理](/posts/2026-10-09-gemini-agent/) · [Gemini Task 模式](/posts/2026-10-14-gemini-task-mode/) · [Manus Cue](/posts/2026-10-14-manus-cue/) · [HeyGen 语音模型](/posts/2026-10-14-heygen-voice/)
+
+下面是本分类全部文章，按发布时间倒序排列。
