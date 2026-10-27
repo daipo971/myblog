@@ -1,7 +1,7 @@
 ---
 title: "Cursor vs Windsurf 2026深度对比：两个最强AI编程IDE到底怎么选？"
 date: 2026-07-21
-lastmod: 2026-07-21
+lastmod: 2026-10-28T09:00:00+08:00
 description: "Cursor和Windsurf两款最热门AI编程IDE的深度对比评测，从代码补全、Composer/Cascade、价格、性能等全方位对比"
 summary: "Cursor vs Windsurf 2026深度对比，代码补全、Composer vs Cascade、Tab补全准确率、价格性价比、适用场景全方位评测"
 categories: ["AI工具实测"]
@@ -242,3 +242,24 @@ Cursor 和 Windsurf，谁更强？我的答案很直白：
 - [2026年AI代码编辑器深度评测](/posts/ai-code-editor-2026/)
 - [Cursor编程工具深度评测：真的能提升10倍效率吗？](/posts/cursor-programming-tools/)
 - [AI工具订阅省钱攻略 2026](/posts/best-ai-subscriptions-2026/)
+
+## 常见问题
+
+**Cursor 和 Windsurf 能导入 VS Code 的配置吗？**
+都可以。两者都基于 VS Code，首次启动时可以一键导入扩展、快捷键和主题，迁移成本很低。
+
+**免费版够用吗？**
+写练习项目、偶尔改代码，免费版够用。每天高强度写代码、频繁用 Composer 或 Cascade 做多文件修改，额度会很快用完，建议升级 Pro。两家的免费额度调整很频繁，以官网当前说明为准。
+
+**新手选哪个？**
+本文的判断是：想让 AI 主动多做一些、少折腾的新手可以先试 Windsurf 的 Cascade；想掌控每一处改动、Tab 补全体验优先的选 Cursor。两个都有免费版，最好用同一个小项目各试一周。
+
+**代码会被上传吗？**
+会。补全和对话都需要把相关代码发到服务端。两家都提供隐私模式选项，公司项目使用前确认团队的安全规定。
+
+**和 Claude Code、Codex 这类命令行工具比呢？**
+Cursor、Windsurf 是编辑器形态，适合边看边改；Claude Code、Codex 是终端里的智能体，更适合交代任务让它自己完成。对比见 [Claude Code 与 Codex CLI](/posts/claude-code-codex-cli-2026/)。
+
+## 更新记录
+
+- 2026-10-28：补充常见问题
