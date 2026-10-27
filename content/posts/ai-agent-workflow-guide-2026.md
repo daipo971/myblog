@@ -3,6 +3,7 @@ title: "AI智能体实战指南：用n8n搭建你自己的AI自动化工作流"
 date: 2026-07-25
 description: "从零开始用n8n搭建AI智能体工作流，自动处理邮件、生成报告、监控数据。不需要写代码，拖拽就能用。"
 summary: "一步步教你用n8n搭建AI自动化工作流，自动处理重复任务。不用写代码，全是可视化拖拽操作。"
+categories: ["AI工具实测"]
 tags: ["AI智能体", "n8n", "自动化", "工作流", "效率工具", "AI Agent"]
 showtoc: true
 ---
@@ -149,6 +150,6 @@ n8n里就是拖几个节点的事情：
 
 👉 [n8n官网](https://n8n.io/)
 👉 相关阅读：[AI自动化办公工具](/posts/ai-automation-office-2026/)
-👉 更多：[2026年免费AI工具](/posts/7-free-ai-tools-2026/)
+👉 更多：[2026年免费AI工具](/posts/free-ai-tools-2026/)
 
 *文章写于2026年7月，工具版本和价格可能会有更新。*

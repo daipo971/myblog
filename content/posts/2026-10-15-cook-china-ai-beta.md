@@ -3,7 +3,7 @@ title: "库克亲口确认：国行 AI 本月先上测试版，实时翻译也�
 date: 2026-10-15T20:38:00+08:00
 draft: false
 tags: ["Apple", "Apple Intelligence", "国行", "库克"]
-categories: ["AI前沿"]
+categories: ["中国与开源模型"]
 description: "库克访华期间亲口确认：国行 Apple Intelligence 首批功能包括实时翻译、照片消除工具、写作工具，测试版本月晚些时候推送。本文是对《国行 iPhone 终于有 AI 了》的跟进。"
 ---
 

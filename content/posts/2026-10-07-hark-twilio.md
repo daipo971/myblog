@@ -4,7 +4,7 @@ date: 2026-10-07T08:00:00+08:00
 lastmod: 2026-10-07T08:00:00+08:00
 description: "Figure 创始人新作 Hark Pro 上线首日实测：免费档全功能、面板系统是亮点，但登录流程槽点密集。另附 Twilio 免费美国号完整翻车记录——教程没告诉你的 6 个坑。"
 tags: ["AI工具", "Hark", "Twilio", "实测", "避坑"]
-categories: ["AI工具评测"]
+categories: ["海外服务通关"]
 draft: false
 showTableOfContents: true
 ---
@@ -95,3 +95,10 @@ Hark 和 Twilio 的实测，其实是同一个故事：**教程/宣传只告诉�
 我的实测原则还是一样：凡是声称"免费"的东西，先问三个问题——要不要手机号？要不要绑卡？到期后怎么办？问完再动手，能避掉 90% 的坑。
 
 *（本文所有流程均为 2026 年 10 月 6–7 日实测，产品界面和政策可能随时变化，仅供参考。）*
+
+## 相关阅读
+
+- [Wise 多币种账户：大陆居民免费开户指南，顺带拆穿「包过」话术](/posts/2026-10-20-wise-guide/)
+- [₺75/年拿下 .com：Google Workspace 土耳其区注册域名全流程避坑](/posts/2026-10-17-google-workspace-turkey-domain/)
+- [Meta Muse 邀请码实测：注册领 10 亿 Token，双方各得（附兑换教程与避坑）](/posts/2026-10-09-muse-referral/)
+- 更多「海外服务通关」文章：[/categories/海外服务通关/](/categories/海外服务通关/)

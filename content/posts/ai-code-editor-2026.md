@@ -1,15 +1,15 @@
 ---
 title: "2026年AI代码编辑器深度评测：从VS Code到Cursor的全面对比"
+description: "Cursor、GitHub Copilot、Tabnine、Codeium、Amazon Q 五款 AI 代码编辑器对比：功能对比表、实际使用体验和价格，帮程序员选出最适合自己的 AI 编程工具。"
 date: 2026-07-14
 author: "程序员专家"
 tags: ["AI代码编辑器", "代码工具", "编程辅助", "2026年"]
-categories: ["编程工具"]
+categories: ["AI工具实测"]
 summary: "全面对比2026年主流AI代码编辑器，从VS Code到Cursor，帮助程序员选择最适合的编程工具。"
 showtoc: true
 disableShare: false
 ---
 
-# 2026年AI代码编辑器深度评测：从VS Code到Cursor的全面对比
 
 ## 引言
 
@@ -468,3 +468,10 @@ disableShare: false
 ---
 
 *有些外部工具链接是联盟链接，如果你通过这些链接购买，我会获得少量佣金（不影响你的价格）。所有推荐都是我亲自用过并觉得不错的产品。*
+
+## 相关阅读
+
+- [2026年AI编程工具横向评测：Cursor vs Windsurf vs GitHub Copilot vs Claude，谁才是最强辅助？](/posts/ai-coding-tools-comparison-2026/)
+- [ChatGPT vs Claude vs Cursor：2026年深度对比与选择指南](/posts/chatgpt-vs-claude-vs-cursor-guide/)
+- [2026年AI效率工作流搭建指南：把ChatGPT+Claude+Cursor串起来用才叫效率翻倍](/posts/ai-workflow-guide-2026/)
+- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

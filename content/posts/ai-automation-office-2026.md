@@ -3,6 +3,7 @@ title: "AI自动化办公指南 2026：用ChatGPT处理Excel、Word、邮件和�
 date: 2026-07-21
 description: "AI自动化办公完整指南，教你用ChatGPT、Claude等AI工具处理Excel数据分析、Word文档撰写、邮件自动回复、会议纪要整理"
 summary: "2026年AI自动化办公指南，用ChatGPT+Claude处理Excel/Word/邮件/会议纪要，含可直接复用的提示词模板和实操案例"
+categories: ["AI工具实测"]
 tags: ["AI办公", "自动化办公", "ChatGPT", "Claude", "Excel", "效率工具", "职场工具"]
 showtoc: true
 ---
@@ -239,4 +240,4 @@ AI 自动化办公这件事，和其他效率提升一样——门槛不在工�
 - [2026年AI效率工作流搭建指南](/posts/ai-workflow-guide-2026/)
 - [Anthropic Claude 入门完整指南（2026版）](/posts/claude-guide/)
 - [2026年真正好用的免费AI工具](/posts/free-ai-tools-2026/)
-- [I've Been Using ChatGPT 4o for Free — Here's the Truth](/posts/chatgpt-4o-free-guide-2026/)
+

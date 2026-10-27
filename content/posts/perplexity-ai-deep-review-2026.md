@@ -3,11 +3,11 @@ title: "Perplexity AI深度体验：用了一个月，我卸载了Google"
 date: 2026-07-12
 description: "一个月深度使用Perplexity AI，真实记录从Google切换到AI搜索的体验、优缺点和适用场景。"
 summary: "Perplexity AI一个月真实体验：它真的能取代Google吗？优缺点全记录。"
+categories: ["AI工具实测"]
 tags: ["Perplexity", "AI搜索", "搜索引擎", "AI工具"]
 showtoc: true
 ---
 
-# Perplexity AI深度体验：用了一个月，我卸载了Google
 
 ## 开头先说真实感受
 
@@ -221,3 +221,10 @@ Perplexity非常好用，但不要神化它。它不是一个"万能搜索神器
 ---
 
 *部分链接是联盟链接，通过这些链接购买，我可能会获得少量佣金。价格对你来说是一样的。*
+
+## 相关阅读
+
+- [2026年AI搜索引擎深度评测：Perplexity、Google AI Overviews、Bing Copilot、Komo，谁才是最佳AI搜索？](/posts/ai-search-engines-comparison-2026/)
+- [Google 发布 Gemini 代理：统一的工作 AI Agent，能当同事使唤（详解+上手）](/posts/2026-10-09-gemini-agent/)
+- [AI翻译工具横评 2026：DeepL vs ChatGPT vs Claude vs Google翻译，哪个最准？](/posts/ai-translation-tools-comparison-2026/)
+- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

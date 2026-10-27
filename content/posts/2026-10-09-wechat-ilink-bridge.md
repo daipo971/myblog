@@ -1,9 +1,10 @@
 ---
 title: "免翻墙！微信官方通道直连 AI 助手：iLink / ClawBot 扫码登录完整教程"
+description: "腾讯官方给个人 AI 助手开放的微信通道 iLink / ClawBot：扫码授权、长轮询收发消息，附完整 Python bridge.py 实现（登录、常驻、自动回复、看门狗）和限制、坑点、隐私取舍。"
 date: 2026-10-09
 draft: false
 tags: ["微信", "AI助手", "iLink", "ClawBot", "教程"]
-categories: ["AI工具"]
+categories: ["海外服务通关"]
 summary: "腾讯官方给个人 AI 助手开的微信通道：扫码授权、长轮询收发消息。附完整 Python 实现 bridge.py（登录/常驻/自动回复/看门狗），以及必须知道的限制、坑点与隐私取舍。"
 ---
 
@@ -435,3 +436,10 @@ python3 bridge.py send --text "链路测试：收发正常"
 如果你照着教程跑通了，或者踩了新的坑，欢迎留言交流。教程里的协议细节对照的是 `@tencent-weixin/openclaw-weixin` 2.4.9，将来腾讯升级版本，`channel_version` 和 `ClientVersion` 记得跟着改。
 
 （本文协议细节对照官方源码验证，接口行为以腾讯服务器实际返回为准。）
+
+## 相关阅读
+
+- [Gate Card 虚拟卡教程：用 USDT 全球消费，最高 8% 返现](/posts/2026-10-16-gate-card-tutorial/)
+- [ChatGPT 网页端大面积 \"Model not found\"：原因找到了，3 种解法](/posts/2026-10-16-chatgpt-model-not-found/)
+- [美区 Apple ID 注册保姆级教程：免信用卡，App Store 入口是关键](/posts/2026-10-15-us-apple-id/)
+- 更多「海外服务通关」文章：[/categories/海外服务通关/](/categories/海外服务通关/)

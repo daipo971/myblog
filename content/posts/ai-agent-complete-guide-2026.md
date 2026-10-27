@@ -4,7 +4,7 @@ date: 2026-07-27
 description: "2026年最火的AI Agent（智能体）到底是什么？从Anthropic Agent SDK到OpenAI Agents SDK，从浏览器Agent到代码Agent，完整指南和实战教程。"
 summary: "2026年AI Agent最全指南：Anthropic Agent SDK、OpenAI Agents SDK、浏览器Agent、代码Agent，从概念到实战，手把手教你搭建自己的AI智能体。"
 tags: ["AI Agent", "AI智能体", "Agent SDK", "Anthropic", "OpenAI", "自动化", "AI工具"]
-categories: ["AI工具"]
+categories: ["AI工具实测"]
 showtoc: true
 ---
 
@@ -348,3 +348,10 @@ AI Agent不仅是技术趋势，也是**赚钱工具**。这里分享几个已�
 ---
 
 *你对AI Agent有什么看法？有没有搭建过自己的Agent？欢迎在评论区分享你的经验。*
+
+## 相关阅读
+
+- [Claude Duet 发布：不等你开口先干活，主动型 Agent 大战开始了](/posts/2026-10-22-claude-duet-launch/)
+- [2026年AI效率工作流搭建指南：把ChatGPT+Claude+Cursor串起来用才叫效率翻倍](/posts/ai-workflow-guide-2026/)
+- [AI智能体实战指南：用n8n搭建你自己的AI自动化工作流](/posts/ai-agent-workflow-guide-2026/)
+- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

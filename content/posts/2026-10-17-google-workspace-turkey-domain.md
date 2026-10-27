@@ -2,6 +2,7 @@
 title: "₺75/年拿下 .com：Google Workspace 土耳其区注册域名全流程避坑"
 date: 2026-10-17T07:00:00+08:00
 description: "昨天实测：通过 Google Workspace 土耳其区，75 里拉（约10元人民币）注册了一个 .com 域名。流程和坑完整记录：取消订阅后邮箱被清空、域名是否受影响，一次讲清。"
+categories: ["海外服务通关"]
 tags: ["域名", "教程", "省钱", "Google Workspace", "避坑"]
 ---
 
@@ -72,3 +73,10 @@ tags: ["域名", "教程", "省钱", "Google Workspace", "避坑"]
 ## 一句话总结
 
 土耳其 IP + 外币卡 → Workspace 试用 → ₺75 买域名 → 点 ICANN 验证 → 转 Cloudflare 自管 → **备份邮件** → 取消订阅。域名一年有效，邮箱会清空，提前备份就行。
+
+## 相关阅读
+
+- [Google Play 商店改地区保姆级教程：手机+电脑两种方法，一年只能改一次别踩坑](/posts/2026-10-15-google-play-region/)
+- [才发现用域名邮箱能无限白嫖AI工具额度，试了确实行](/posts/domain-email-free-ai/)
+- [Wise 多币种账户：大陆居民免费开户指南，顺带拆穿「包过」话术](/posts/2026-10-20-wise-guide/)
+- 更多「海外服务通关」文章：[/categories/海外服务通关/](/categories/海外服务通关/)

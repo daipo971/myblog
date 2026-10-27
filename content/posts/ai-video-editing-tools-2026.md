@@ -3,11 +3,11 @@ title: "2026年AI视频剪辑工具评测：10款工具从入门到专业级实�
 date: 2026-07-25T07:00:00+08:00
 description: "实测10款AI视频剪辑工具，从自动剪辑、AI字幕、智能抠像到自动卡点，涵盖剪映、Descript、CapCut、Runway等，附完整对比表。"
 summary: "2026年10款AI视频剪辑工具全面评测，含剪映、Descript、CapCut、Runway实测对比，帮你选最适合的工具。"
+categories: ["AI工具实测"]
 tags: ["AI视频", "视频剪辑", "AI工具", "剪映", "CapCut", "视频编辑", "工具评测"]
 showtoc: true
 ---
 
-# 2026年AI视频剪辑工具评测：10款工具从入门到专业级实测对比
 
 做视频最痛苦的是什么？剪辑。
 

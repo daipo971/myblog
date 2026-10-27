@@ -3,11 +3,11 @@ title: "AI翻译工具横评 2026：DeepL vs ChatGPT vs Claude vs Google翻译�
 date: 2026-07-21
 description: "DeepL、ChatGPT、Claude、Google翻译四款AI翻译工具实测对比，覆盖中英日韩法德等多语种翻译质量、专业术语、价格等"
 summary: "DeepL vs ChatGPT vs Claude vs Google翻译横评，多语种翻译质量实测，含翻译准确度、专业术语处理、价格对比和推荐方案"
+categories: ["AI工具实测"]
 tags: ["AI翻译", "DeepL", "ChatGPT", "Claude", "Google翻译", "翻译工具", "效率工具"]
 showtoc: true
 ---
 
-# AI翻译工具横评 2026：DeepL vs ChatGPT vs Claude vs Google翻译，哪个最准？
 
 先说说我为什么想做这个对比。
 

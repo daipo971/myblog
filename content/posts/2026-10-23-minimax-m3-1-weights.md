@@ -4,7 +4,7 @@ date: 2026-10-23T09:40:00+08:00
 draft: false
 description: "MiniMax 10 月 23 日放出 M3.1 Flash 模型权重：总参数 428B、激活 23B，上线 72 小时真实用户 token 超 1 万亿，首日即获 vLLM、SGLang 与多家国产芯片支持。同日许可证落地：MiniMax 社区许可证——非商用免费；商用只需标注来源并发邮件通知，年营收超 2000 万美元才需书面许可，门槛比预想低得多。"
 tags: ["MiniMax", "M3.1 Flash", "开源模型", "国产模型"]
-categories: ["AI工具"]
+categories: ["中国与开源模型"]
 ---
 
 10 月 19 日发布 API 的 MiniMax M3.1 Flash，今天（10 月 23 日）按计划放出了模型权重。这是 10 月国产模型「Flash 双强」格局里的另一只靴子落地——另一只是 10 月 17 日的 DeepSeek V4.1 Flash。
@@ -37,3 +37,10 @@ categories: ["AI工具"]
 有分析把 10 月 23 日这个时间点和 10 月 16 日的中国 AI 出口管制新规连起来看：已开源的模型明确豁免，拿到「公开发布」的事实标记后，商用 API 不受 23 项管制目录约束。开源既是技术动作，也是合规动作。
 
 接下来值得盯的两件事：Hugging Face 上的实际下载量与社区评测，以及 GLM、Kimi、Qwen 是否跟进打价格战。
+
+## 相关阅读
+
+- [MiniMax M3.1 Flash 发布：价格只有 DeepSeek 的一半，但有个毛病得先说清](/posts/2026-10-21-minimax-m3-1-flash/)
+- [DeepSeek-V4.1-Flash 来了：更快更便宜，MIT 开源随便用，附国内使用指南](/posts/2026-10-18-deepseek-v41-flash/)
+- [Kimi K3.1 Pro 发布：编程跑分超 GPT-6，11 月 4 日开源全部权重](/posts/2026-10-24-kimi-k3-1-pro-launch/)
+- 更多「中国与开源模型」文章：[/categories/中国与开源模型/](/categories/中国与开源模型/)
