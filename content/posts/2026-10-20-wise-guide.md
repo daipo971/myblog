@@ -51,5 +51,5 @@ Wise 多币种账户对大陆用户是真实可用的好工具，但"包过+实�
 
 - [₺75/年拿下 .com：Google Workspace 土耳其区注册域名全流程避坑](/posts/2026-10-17-google-workspace-turkey-domain/)
 - [Hark Pro 首发实测：面板系统真香，登录先坑你三回（附 Twilio 免费美国号翻车记）](/posts/2026-10-07-hark-twilio/)
-- [才发现用域名邮箱能无限白嫖AI工具额度，试了确实行](/posts/domain-email-free-ai/)
+- [Gate Card 虚拟卡教程：用 USDT 全球消费，最高 8% 返现](/posts/2026-10-16-gate-card-tutorial/)
 - 更多「海外服务通关」文章：[/categories/海外服务通关/](/categories/海外服务通关/)

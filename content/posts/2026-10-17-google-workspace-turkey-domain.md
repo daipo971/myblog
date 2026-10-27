@@ -77,6 +77,6 @@ tags: ["域名", "教程", "省钱", "Google Workspace", "避坑"]
 ## 相关阅读
 
 - [Google Play 商店改地区保姆级教程：手机+电脑两种方法，一年只能改一次别踩坑](/posts/2026-10-15-google-play-region/)
-- [才发现用域名邮箱能无限白嫖AI工具额度，试了确实行](/posts/domain-email-free-ai/)
+- [搞了个免费域名，真香。手把手注册教程](/posts/free-domain-guide/)
 - [Wise 多币种账户：大陆居民免费开户指南，顺带拆穿「包过」话术](/posts/2026-10-20-wise-guide/)
 - 更多「海外服务通关」文章：[/categories/海外服务通关/](/categories/海外服务通关/)
