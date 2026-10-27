@@ -3,7 +3,7 @@ title: "AI 新纪元：从深度学习到大语言模型"
 date: 2026-07-03T20:55:59+08:00
 draft: false
 description: "回顾人工智能发展历程，从深度学习崛起到大语言模型的爆发，我们正站在技术革命的关键节点。"
-categories: ["AI工具实测"]
+categories: ["AI应用场景"]
 tags: ["AI", "深度学习", "LLM"]
 ---
 
@@ -91,4 +91,4 @@ AI 的未来充满无限可能：
 - [2026年机器学习平台对比：从入门到生产部署完整指南](/posts/machine-learning-platforms-2026/)
 - [2026年AI教育工具革命：从个性化学习到智能教学](/posts/ai-education-tools-2026/)
 - [2026 免费 AI API 完整清单：从入门到实践](/posts/free-ai-api-guide/)
-- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)
+- 更多「AI应用场景」文章：[/categories/ai应用场景/](/categories/ai应用场景/)

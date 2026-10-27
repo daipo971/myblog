@@ -1,0 +1,225 @@
+# 欣淇AI网 分类与标签词表（机器可读）
+# 说明见 docs/framework/03-taxonomy.md。scripts/lint_posts.py 读取本文件检查文章。
+# 新增标签：先确认没有近义词，再加到对应组里，并在同一个 PR 里说明。
+
+categories:
+  - 中国与开源模型
+  - AI工具实测
+  - AI应用场景
+  - AI前沿动态
+  - 海外服务通关
+  - 建站与副业
+
+# 类型标签：每篇恰好 1 个，说明这是哪种文章
+type_tags:
+  - 快讯
+  - 档案
+  - 教程
+  - 评测
+  - 对比
+  - 指南
+  - 科普
+  - 合集
+  - 复盘
+
+# 主题标签：每篇 1–2 个，说明讲的是 AI 的哪个方面（对应 02-topic-map 的领域）
+topic_tags:
+  - 国产大模型
+  - 开源模型
+  - 本地部署
+  - AI编程
+  - AI绘画
+  - AI视频
+  - AI音频
+  - AI搜索
+  - 知识管理
+  - AI Agent
+  - 自动化
+  - AI办公
+  - AI写作
+  - AI翻译
+  - AI学习
+  - 提示词
+  - AI入门
+  - AI安全
+  - AI政策
+  - AI硬件
+  - 前沿研究
+  - 行业动态
+  - API
+  - 订阅省钱
+  - 注册开通
+  - 海外支付
+  - 风控申诉
+  - 建站
+  - VPS
+  - Cloudflare
+  - SEO
+  - AI副业
+  - 自媒体
+
+# 实体标签：产品、模型、公司名。每篇 0–2 个。
+# 只用下面这些写法；没有的实体，第 2 篇相关文章出现时再加进来。
+entity_tags:
+  # 中国模型与公司
+  - DeepSeek
+  - Kimi
+  - 通义千问
+  - 智谱GLM
+  - 豆包
+  - MiniMax
+  - 阶跃星辰
+  - 腾讯混元
+  - 文心一言
+  - 可灵
+  - 即梦
+  - Seedance
+  # 海外模型与公司
+  - ChatGPT
+  - OpenAI
+  - Claude
+  - Anthropic
+  - Gemini
+  - Google
+  - Meta
+  - Llama
+  - Grok
+  - Mistral
+  - Reflection
+  - Apple Intelligence
+  # 工具
+  - Claude Code
+  - Codex
+  - Cursor
+  - Windsurf
+  - GitHub Copilot
+  - Midjourney
+  - Stable Diffusion
+  - Sora
+  - Runway
+  - HeyGen
+  - ElevenLabs
+  - Perplexity
+  - NotebookLM
+  - Notion
+  - Obsidian
+  - DeepL
+  - Manus
+  - n8n
+  - Dify
+  - Coze
+  - Ollama
+  - LM Studio
+  - Muse
+  # 海外服务与基础设施
+  - Apple ID
+  - Google Play
+  - Wise
+  - eSIM
+  - RackNerd
+  - Hugo
+
+# 近义词归并：左边的旧写法以后不再使用，统一改成右边
+synonyms:
+  AI工具: ""            # 太泛，删掉，改用具体主题标签
+  AI 工具: ""
+  效率工具: AI办公
+  AI: ""
+  2026年: ""
+  2026: ""
+  2026年7月: ""
+  AI大模型: 国产大模型   # 若讲的是海外模型则删掉
+  大模型: ""
+  LLM: ""
+  国产模型: 国产大模型
+  AI智能体: AI Agent
+  Agent: AI Agent
+  AI agents: AI Agent
+  AI自动化: 自动化
+  工作流: 自动化
+  AI工作流: 自动化
+  编程工具: AI编程
+  AI代码编辑器: AI编程
+  代码编辑器: AI编程
+  代码生成: AI编程
+  编程辅助: AI编程
+  AI开发: AI编程
+  视频生成: AI视频
+  AI视频生成: AI视频
+  视频剪辑: AI视频
+  视频编辑: AI视频
+  AI短视频: AI视频
+  AI数字人: AI视频
+  AI图片生成: AI绘画
+  AI图片: AI绘画
+  图像生成: AI绘画
+  AI艺术: AI绘画
+  AI设计: AI绘画
+  AI语音: AI音频
+  TTS: AI音频
+  语音克隆: AI音频
+  AI配音: AI音频
+  配音: AI音频
+  AI音乐: AI音频
+  音乐生成: AI音频
+  播客: AI音频
+  翻译工具: AI翻译
+  提示词技巧: 提示词
+  AI提示词工程: 提示词
+  Prompt Engineering: 提示词
+  AI教程: 教程
+  入门教程: 教程
+  建站教程: 教程
+  注册教程: 注册开通
+  注册指南: 注册开通
+  省钱: 订阅省钱
+  省钱攻略: 订阅省钱
+  AI省钱: 订阅省钱
+  订阅优化: 订阅省钱
+  付费订阅: 订阅省钱
+  封号: 风控申诉
+  申诉: 风控申诉
+  风控: 风控申诉
+  虚拟卡: 海外支付
+  礼品卡: 海外支付
+  充值: 海外支付
+  跨境收款: 海外支付
+  多币种账户: 海外支付
+  SEO优化: SEO
+  搜索引擎优化: SEO
+  关键词研究: SEO
+  内链建设: SEO
+  副业: AI副业
+  赚钱: AI副业
+  赚钱计划: AI副业
+  AI赚钱: AI副业
+  被动收入: AI副业
+  变现: AI副业
+  博客搭建: 建站
+  博客赚钱: AI副业
+  服务器: VPS
+  免费VPS: VPS
+  便宜VPS: VPS
+  搜索引擎: AI搜索
+  笔记软件: 知识管理
+  第二大脑: 知识管理
+  办公效率: AI办公
+  自动化办公: AI办公
+  职场工具: AI办公
+  AI学英语: AI学习
+  英语学习: AI学习
+  学习工具: AI学习
+  AI教育: AI学习
+  月之暗面: Kimi
+  Moonshot AI: Kimi
+  GLM: 智谱GLM
+  Z.ai: 智谱GLM
+  Step 5: 阶跃星辰
+  Reflection AI: Reflection
+  Beam: Reflection
+  可灵AI: 可灵
+  Codex CLI: Codex
+  解读: 快讯
+  实测: 评测
+  工具评测: 评测
+  AI工具对比: 对比

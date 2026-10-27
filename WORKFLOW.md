@@ -1,3 +1,5 @@
+> **本文件已过时（2026-10-28）**：当前规则见 [CLAUDE.md](CLAUDE.md)，运营框架见 [docs/framework/](docs/framework/README.md)。下文仅保留作历史记录，其中的文章模板、发布命令和推广方式不再作为标准。
+
 # 赚钱计划操作手册
 
 ## 核心理念

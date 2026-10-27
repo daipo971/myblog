@@ -1,6 +1,6 @@
 # 欣淇AI网 内容长期规划
 
-制定于 2026-10-27。规则部分见根目录 [CLAUDE.md](../CLAUDE.md)，本文件记录现状、方向和路线图进度。
+制定于 2026-10-27。规则部分见根目录 [CLAUDE.md](../CLAUDE.md)，完整运营框架见 [docs/framework/](framework/README.md)，本文件记录现状、方向和当前阶段进度。
 完成一项就把 `[ ]` 改成 `[x]` 并写上日期。
 
 ## 2026-10-27 现状
@@ -39,7 +39,7 @@
 | 模型优化泛论 | ai-model-optimization-2026、ai-inference-optimization-guide、ai-training-optimization-2026、ai-deployment-optimization-guide、ai-model-quantization-guide | 合并为一篇 |
 | 同一模型多篇快讯 | Reflection Beam、MiniMax M3.1、Kimi K3.1、Step 5、国行 Apple Intelligence | 合并成模型档案页 |
 
-## 四个支柱
+## 支柱（2026-10-28 起为六个，详见 [选题地图](framework/02-topic-map.md)）
 
 | 分类 | 变现 | 要补的选题 |
 | --- | --- | --- |
@@ -47,6 +47,8 @@
 | AI工具实测 | 联盟链接 | 按场景的工具组合；每季度更新的对比表；编程工具长期追踪 |
 | 海外服务通关（仅中文） | shop.xinqai.com | ChatGPT / Claude / Gemini 国内开通总纲；封号与申诉汇总；支付方式对比 |
 | 建站与副业 | VPS 佣金 | 本站真实数据复盘；用 Claude Code 搭站实录 |
+| AI应用场景（新） | 工具联盟、广告 | 新手入门路线、科普系列、办公场景系列、按人群的工具组合 |
+| AI前沿动态（新，仅中文） | 广告、Telegram | 海外大厂模型时间线、重大事件快讯、AI 硬件与政策 |
 
 ## 路线图
 
@@ -68,6 +70,11 @@
 - [x] 「ChatGPT / Claude / Gemini 国内开通总纲」：chatgpt-claude-gemini-china-access-guide（PR #7）
 - [~] 给 10 月快讯补一手来源链接（2026-10-28 第一批：Kimi K3.1 Pro、MiniMax M3.1 Flash、Step-5、Reflection Beam、DeepSeek V4.1 Flash 共 9 篇 + Google Play 改区教程，加「参考来源」小节；其余快讯待补，GPT-6.1 Terra 暂无可靠来源不加）
 - [ ] 给教程补截图（需要站长实际操作截图，清单见下文「待补截图」）
+- [x] 运营框架 docs/framework/（12 份文档）+ 文章模板 archetypes/ + 自检脚本 scripts/lint_posts.py、scripts/check_links.py（2026-10-28）
+- [x] 分类由四个扩为六个（新增 AI应用场景、AI前沿动态），30 篇文章迁移，新建两个中心页（2026-10-28，站长确认）
+- [ ] 标签清理：按 data/taxonomy.yaml 归并旧标签、补类型与主题标签（框架 SOP-7，分批）
+- [ ] 新手从这里开始（/start/）、AI 术语表、中国模型 API 价格表（见 framework/backlog.md S01、S02、C05）
+- [ ] 档案页 Qwen、GLM、豆包、可灵（backlog C01–C04）
 
 ### 第 3 阶段：扩张与复盘（2027 年 1–3 月）
 

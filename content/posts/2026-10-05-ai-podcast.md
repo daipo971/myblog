@@ -4,7 +4,7 @@ date: 2026-10-05T10:00:00+08:00
 lastmod: 2026-10-05T10:00:00+08:00
 description: "从写稿、配音到剪辑发布，实测 NotebookLM、ElevenLabs、讯飞配音等 AI 播客工具，一个人半小时就能做出一档像样的播客节目。"
 tags: ["AI工具", "播客", "AI配音", "实测"]
-categories: ["AI工具实测"]
+categories: ["AI应用场景"]
 draft: false
 showTableOfContents: true
 ---
@@ -75,4 +75,4 @@ AI 做播客真正的价值不是"代替你说话"，而是把制作成本降到
 - [2026年AI短视频创作全攻略：从脚本生成到AI数字人，一条视频10分钟搞定](/posts/ai-short-video-creation-2026/)
 - [AI语音克隆与TTS工具实测：3分钟克隆你自己的声音](/posts/ai-voice-clone-tts-tools-2026/)
 - [2026年个人知识管理体系搭建：用Notion AI + Obsidian + Readwise打造第二大脑](/posts/personal-knowledge-management-2026/)
-- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)
+- 更多「AI应用场景」文章：[/categories/ai应用场景/](/categories/ai应用场景/)

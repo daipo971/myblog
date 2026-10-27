@@ -4,7 +4,7 @@ description: "Khan Academy AI、Duolingo Max、Coursera、Squirrel AI 等 AI 教
 date: 2026-07-12
 author: "教育技术专家"
 tags: ["AI教育", "个性化学习", "智能教学", "2026年"]
-categories: ["AI工具实测"]
+categories: ["AI应用场景"]
 summary: "深度分析2026年AI教育工具市场，从K12到高等教育，为教育工作者和学习者提供全面指导。"
 showtoc: true
 disableShare: false
@@ -469,4 +469,4 @@ AI教育工具正在深刻改变传统教育模式。选择合适的工具需要
 - [2026年AI金融工具革命：从投资决策到风险管理](/posts/ai-finance-tools-2026/)
 - [2026年AI自动化工具对比：从零开始构建智能工作流](/posts/ai-automation-tools-2026/)
 - [2026年AI安全工具完全指南：从数据保护到模型安全](/posts/ai-security-tools-2026/)
-- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)
+- 更多「AI应用场景」文章：[/categories/ai应用场景/](/categories/ai应用场景/)

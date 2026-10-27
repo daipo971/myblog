@@ -3,7 +3,7 @@ title: "AI简历面试工具推荐 2026：找工作必备的AI辅助神器"
 date: 2026-07-21
 description: "AI写简历、优化简历、模拟面试、面试题库工具推荐，覆盖ChatGPT、Claude、Kickresume等实用AI求职辅助工具"
 summary: "2026年AI求职辅助工具推荐，AI写简历优化简历、模拟面试、面试题库、薪资谈判全流程辅助，含免费方案和付费对比"
-categories: ["AI工具实测"]
+categories: ["AI应用场景"]
 tags: ["AI简历", "AI面试", "求职", "找工作", "ChatGPT", "Claude", "效率工具"]
 showtoc: true
 ---
@@ -221,3 +221,7 @@ ChatGPT会给出一套完整的策略，包括**如果你被问到"你期望多�
 祝每一个正在找工作的朋友都能早日拿到心仪的offer。
 
 *如果你对AI工具有更多兴趣，可以看看我专栏里的其他文章，比如[AI工具大比拼](/posts/chatgpt-vs-claude-vs-cursor-guide/)和[2026年AI工具月报](/posts/ai-tools-monthly-savings-2026/)，里面有更多实用的工具推荐和使用技巧。*
+
+## 相关阅读
+
+- 更多「AI应用场景」文章：[/categories/ai应用场景/](/categories/ai应用场景/)

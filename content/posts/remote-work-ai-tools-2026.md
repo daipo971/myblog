@@ -4,7 +4,7 @@ description: "远程办公 AI 工具按沟通协作、项目管理、时间管�
 date: 2026-07-14
 author: "远程工作专家"
 tags: ["远程工作", "AI工具", "远程办公", "2026年"]
-categories: ["AI工具实测"]
+categories: ["AI应用场景"]
 summary: "全面介绍2026年远程工作AI工具，从沟通协作到项目管理，帮助远程工作者提升效率。"
 showtoc: true
 disableShare: false
@@ -574,4 +574,4 @@ disableShare: false
 - [2026年AI安全工具完全指南：从数据保护到模型安全](/posts/ai-security-tools-2026/)
 - [2026年AI提示词工程完全指南：从入门到精通的完整教程](/posts/ai-prompt-engineering-guide-2026/)
 - [2026年AI Agent完全指南：从Claude Agent到OpenAI Agent SDK，手把手搭建AI智能体](/posts/ai-agent-complete-guide-2026/)
-- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)
+- 更多「AI应用场景」文章：[/categories/ai应用场景/](/categories/ai应用场景/)
