@@ -5,6 +5,8 @@ description: "国内用户开通和使用海外 AI 服务的完整指南：美�
 
 想在国内用上 ChatGPT、Claude、Gemini、Muse 这些海外 AI 服务，通常要过四关：账号、支付、网络环境、风控。这里按这四关整理本站教程，建议按顺序看。
 
+**第一次来，先看总纲**：[ChatGPT、Claude、Gemini 国内怎么开通：四关总纲](/posts/chatgpt-claude-gemini-china-access-guide/)
+
 ## 第一关：账号
 
 - [美区 Apple ID 注册教程](/posts/2026-10-15-us-apple-id/)：免信用卡，很多海外 App 的前提。

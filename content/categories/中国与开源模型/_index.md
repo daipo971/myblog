@@ -13,17 +13,21 @@ description: "DeepSeek、Kimi、MiniMax、阶跃 Step、智谱 GLM、可灵等�
 ## 按模型看
 
 **DeepSeek**
+- [DeepSeek 完全指南与版本档案](/posts/deepseek-complete-guide-2026/)
 - [DeepSeek-V4.1-Flash 发布与国内使用指南](/posts/2026-10-18-deepseek-v41-flash/)
 
 **Kimi（月之暗面）**
+- [Kimi 模型档案](/posts/kimi-guide/)：全版本、价格、开源进度，先看这页
 - [Kimi K3.1 Pro 发布：跑分与开源时间表](/posts/2026-10-24-kimi-k3-1-pro-launch/)
 - [Kimi K3.1 Pro 普通人上手指南](/posts/2026-10-27-kimi-k3-1-pro-guide/)
 
 **MiniMax**
+- [MiniMax 模型档案](/posts/minimax-guide/)
 - [MiniMax M3.1 Flash 发布：价格和短板](/posts/2026-10-21-minimax-m3-1-flash/)
 - [MiniMax M3.1 Flash 权重放出：许可证解读](/posts/2026-10-23-minimax-m3-1-weights/)
 
 **阶跃 Step**
+- [阶跃 Step 模型档案](/posts/stepfun-step-guide/)
 - [Step 5 Preview 登顶 OpenRouter 趋势榜](/posts/2026-10-13-step-5-preview/)
 - [Step 5 开源复盘：协议、量化与成本](/posts/2026-10-15-step-5-review/)
 
@@ -36,6 +40,7 @@ description: "DeepSeek、Kimi、MiniMax、阶跃 Step、智谱 GLM、可灵等�
 
 ## 海外对标与开源格局
 
+- [Reflection Beam 模型档案](/posts/reflection-beam-guide/)
 - [Reflection Beam 解析：501B 的「西方 DeepSeek」](/posts/2026-10-08-reflection-beam-jiexi/)
 - [Beam 开源：Apache 2.0 许可证意味着什么](/posts/2026-10-18-reflection-beam/)
 - [Muse Wonder 不免费：Meta 前沿模型定价](/posts/2026-10-13-muse-wonder/)
