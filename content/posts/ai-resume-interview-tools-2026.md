@@ -1,6 +1,7 @@
 ---
 title: "AI简历面试工具推荐 2026：找工作必备的AI辅助神器"
 date: 2026-07-21
+lastmod: 2026-07-21
 description: "AI写简历、优化简历、模拟面试、面试题库工具推荐，覆盖ChatGPT、Claude、Kickresume等实用AI求职辅助工具"
 summary: "2026年AI求职辅助工具推荐，AI写简历优化简历、模拟面试、面试题库、薪资谈判全流程辅助，含免费方案和付费对比"
 categories: ["AI应用场景"]

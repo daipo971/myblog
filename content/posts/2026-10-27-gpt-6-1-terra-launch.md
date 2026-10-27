@@ -1,6 +1,7 @@
 ---
 title: "OpenAI 又发新模型 GPT-6.1 Terra：不拼最强，拼每干一件事花多少钱"
 date: 2026-10-27T10:55:00+08:00
+lastmod: 2026-10-27T10:55:00+08:00
 draft: false
 categories: ["AI前沿动态"]
 tags: ["快讯", "行业动态", "OpenAI", "ChatGPT"]

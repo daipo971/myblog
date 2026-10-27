@@ -1,6 +1,7 @@
 ---
 title: "不用联网也能用AI：本机运行大模型完整指南（Ollama + LM Studio）"
 date: 2026-07-25
+lastmod: 2026-07-25
 description: "完全免费、离线可用、隐私安全。手把手教你用Ollama和LM Studio在自己电脑上运行AI大模型，Mac和Windows都能用。"
 summary: "Ollama和LM Studio双教程，教你完全免费地在自己的电脑上运行AI大模型。离线可用、隐私安全、没有限额。"
 categories: ["中国与开源模型"]
@@ -156,3 +157,9 @@ Windows用户如果有NVIDIA显卡，LM Studio 会自动用CUDA加速。
 👉 更多：[Claude Code和Codex CLI指南](/posts/claude-code-codex-cli-2026/)
 
 *文章写于2026年7月，各工具版本可能会有更新。*
+
+## 相关阅读
+
+- [Reflection Beam 模型档案：501B 开源模型的规格、Apache 2.0 许可、跑分与部署门槛](/posts/reflection-beam-guide/)
+- [阶跃 Step 模型档案：Step 5 规格、开源许可证、价格与「1/8 成本」争议](/posts/stepfun-step-guide/)
+- 更多「中国与开源模型」文章：[/categories/中国与开源模型/](/categories/中国与开源模型/)

@@ -1,6 +1,7 @@
 ---
 title: "ChatGPT 网页端大面积 \"Model not found\"：原因找到了，3 种解法"
 date: 2026-10-16T04:30:00+08:00
+lastmod: 2026-10-16T04:30:00+08:00
 draft: false
 tags: ["快讯", "风控申诉", "ChatGPT"]
 categories: ["海外服务通关"]

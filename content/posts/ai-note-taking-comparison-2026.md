@@ -1,6 +1,7 @@
 ---
 title: "2026年AI笔记软件深度对比：Notion AI vs Obsidian vs 其他6款"
 date: 2026-07-25T07:10:00+08:00
+lastmod: 2026-07-25T07:10:00+08:00
 description: "2026年最值得使用的AI笔记软件全面对比，从Notion AI、Obsidian、Craft、Logseq、Mem等8款工具的功能、价格、AI能力等维度实测。"
 summary: "8款AI笔记软件实测对比，Notion AI、Obsidian、Craft、Logseq、Mem全面评测，帮你选最适合的知识管理工具。"
 categories: ["AI工具实测"]

@@ -1,6 +1,7 @@
 ---
 title: "美区 Apple ID 礼品卡充值教程：哪里买、怎么充，黑卡千万别碰"
 date: 2026-10-15T11:18:00+08:00
+lastmod: 2026-10-15T11:18:00+08:00
 draft: false
 tags: ["教程", "海外支付", "Apple ID"]
 categories: ["海外服务通关"]
@@ -69,3 +70,9 @@ Mac 上：App Store → 左侧边栏点你的名字 → **兑换礼品卡**，�
 ---
 
 *教程核实时间：2026-10-15。购买渠道以实际可用为准，第三方平台请自行甄别信誉。*
+
+## 相关阅读
+
+- [没有海外信用卡？Duolingo、Muse 这些海外会员，几十块就能开通](/posts/2026-10-23-hopex-membership-store-guide/)
+- [Gate Card 虚拟卡教程：用 USDT 全球消费，最高 8% 返现](/posts/2026-10-16-gate-card-tutorial/)
+- 更多「海外服务通关」文章：[/categories/海外服务通关/](/categories/海外服务通关/)

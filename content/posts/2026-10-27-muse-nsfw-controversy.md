@@ -1,6 +1,7 @@
 ---
 title: "Muse 能聊成人话题、真人发帖却被删：Meta 这次的双标争议是怎么来的"
 date: 2026-10-27T14:20:00+08:00
+lastmod: 2026-10-27T14:20:00+08:00
 draft: false
 categories: ["海外服务通关"]
 tags: ["快讯", "风控申诉", "Muse", "Meta"]

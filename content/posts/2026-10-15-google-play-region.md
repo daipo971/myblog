@@ -1,6 +1,7 @@
 ---
 title: "Google Play 商店改地区保姆级教程：手机+电脑两种方法，一年只能改一次别踩坑"
 date: 2026-10-15T11:00:00+08:00
+lastmod: 2026-10-15T11:00:00+08:00
 draft: false
 tags: ["教程", "注册开通", "Google Play"]
 categories: ["海外服务通关"]

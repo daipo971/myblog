@@ -1,6 +1,7 @@
 ---
 title: "2026 免费 AI API 完整清单：从入门到实践"
 date: 2026-07-06T00:00:00+08:00
+lastmod: 2026-07-06T00:00:00+08:00
 draft: false
 description: "整理全网免费 AI API，包括 OpenAI、Anthropic、Hugging Face、Groq 等，每天都能用的免费额度。"
 categories: ["AI工具实测"]

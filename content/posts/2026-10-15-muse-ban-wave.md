@@ -1,6 +1,7 @@
 ---
 title: "Muse 大面积封号始末：邀请码羊毛薅崩了风控，申诉指南来了"
 date: 2026-10-15T07:45:00+08:00
+lastmod: 2026-10-15T07:45:00+08:00
 draft: false
 tags: ["指南", "风控申诉", "Muse"]
 categories: ["海外服务通关"]
@@ -75,3 +76,9 @@ Muse 这波封号，本质是**免费额度引发的攻防战**：Meta 用 10 �
 ---
 
 *信息核实时间：2026-10-15 07:50（CST）。参考：Meta Help Center、Analytics Insight、9to5Google、vandatateam.com 邀请码机制整理、社交媒体社区反馈。封号规模为社区反馈汇总，无官方数字。*
+
+## 相关阅读
+
+- [今天 Muse 大规模风控：已解除关联的按这 6 步申诉，非美日 IP 先停一停](/posts/2026-10-27-muse-risk-control-unlink-appeal/)
+- [Muse 能聊成人话题、真人发帖却被删：Meta 这次的双标争议是怎么来的](/posts/2026-10-27-muse-nsfw-controversy/)
+- 更多「海外服务通关」文章：[/categories/海外服务通关/](/categories/海外服务通关/)

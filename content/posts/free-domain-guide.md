@@ -1,6 +1,7 @@
 ---
 title: "搞了个免费域名，真香。手把手注册教程"
 date: 2026-07-03T22:00:00+08:00
+lastmod: 2026-07-03T22:00:00+08:00
 draft: false
 description: "手把手注册永久免费域名，并接入 Cloudflare 做解析和 HTTPS，零成本拥有自己的网址。附完整注册步骤和常见问题。"
 categories: ["建站与副业"]

@@ -1,6 +1,7 @@
 ---
 title: "Cursor编程工具深度评测：真的能提升10倍效率吗？"
 date: 2026-07-09
+lastmod: 2026-07-09
 description: "深度使用Cursor一个月，真实记录编程效率提升、实际使用场景和限制。"
 summary: "Cursor编程工具真实评测，告诉你是否真的值得。"
 categories: ["AI工具实测"]

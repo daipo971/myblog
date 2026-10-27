@@ -1,6 +1,7 @@
 ---
 title: "Anthropic Claude 入门完整指南（2026版）"
 date: 2026-07-05T00:00:00+08:00
+lastmod: 2026-07-05T00:00:00+08:00
 draft: false
 description: "从零开始学习 Anthropic Claude，包括 API 调用、Claude Pro 介绍、Claude Code CLI 使用、Artifacts 功能详解。适合新手入门。"
 categories: ["AI工具实测"]
@@ -517,3 +518,9 @@ Claude 已经成为我日常工作的核心工具。不管是写代码、写文�
 ---
 
 *有些外部工具链接是联盟链接，如果你通过这些链接购买，我会获得少量佣金（不影响你的价格）。所有推荐都是我亲自用过并觉得不错的产品。*
+
+## 相关阅读
+
+- [2026年AI Agent完全指南：从Claude Agent到OpenAI Agent SDK，手把手搭建AI智能体](/posts/ai-agent-complete-guide-2026/)
+- [2026年AI效率工作流搭建指南：把ChatGPT+Claude+Cursor串起来用才叫效率翻倍](/posts/ai-workflow-guide-2026/)
+- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

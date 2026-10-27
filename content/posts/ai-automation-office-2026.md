@@ -1,6 +1,7 @@
 ---
 title: "AI自动化办公指南 2026：用ChatGPT处理Excel、Word、邮件和会议纪要"
 date: 2026-07-21
+lastmod: 2026-07-21
 description: "AI自动化办公完整指南，教你用ChatGPT、Claude等AI工具处理Excel数据分析、Word文档撰写、邮件自动回复、会议纪要整理"
 summary: "2026年AI自动化办公指南，用ChatGPT+Claude处理Excel/Word/邮件/会议纪要，含可直接复用的提示词模板和实操案例"
 categories: ["AI应用场景"]

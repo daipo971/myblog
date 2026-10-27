@@ -1,6 +1,7 @@
 ---
 title: "2026年AI编程工具横向评测：Cursor vs Windsurf vs GitHub Copilot vs Claude，谁才是最强辅助？"
 date: 2026-07-16
+lastmod: 2026-07-16
 description: "2026年最热门的四款AI编程工具Cursor、Windsurf、GitHub Copilot、Claude Code横向深度对比。真实体验、优缺点分析、价格对比，帮你选对工具。"
 summary: "2026年四款主流AI编程工具Cursor、Windsurf、GitHub Copilot、Claude Code真实对比评测，含功能对比表和我的推荐组合。"
 categories: ["AI工具实测"]

@@ -1,6 +1,7 @@
 ---
 title: "Gemini App 上线 Task 模式：Spark agent 收进主 App，任务后台一直跑"
 date: 2026-10-14T21:35:00+08:00
+lastmod: 2026-10-14T21:35:00+08:00
 draft: false
 tags: ["快讯", "AI Agent", "Gemini", "Google"]
 categories: ["AI前沿动态"]

@@ -1,6 +1,7 @@
 ---
 title: "Muse Wonder 不免费：Meta 首个前沿模型定价对标 Opus，开源时代结束了？"
 date: 2026-10-13T15:45:00+08:00
+lastmod: 2026-10-13T15:45:00+08:00
 draft: false
 tags: ["快讯", "行业动态", "Meta", "Muse"]
 categories: ["AI前沿动态"]

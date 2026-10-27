@@ -1,6 +1,7 @@
 ---
 title: "Kimi K3.1 Pro 发布了：国产 3T 大模型，能跟 Claude Opus 掰手腕，普通人这样免费用上"
 date: 2026-10-27T07:35:00+08:00
+lastmod: 2026-10-27T07:35:00+08:00
 draft: false
 tags: ["教程", "国产大模型", "Kimi"]
 categories: ["中国与开源模型"]

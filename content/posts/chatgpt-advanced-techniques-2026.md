@@ -1,6 +1,7 @@
 ---
 title: "ChatGPT高级使用技巧：10个让你效率翻倍的方法"
 date: 2026-07-25T07:40:00+08:00
+lastmod: 2026-07-25T07:40:00+08:00
 description: "ChatGPT从入门到高级的10个实用技巧，包含Custom GPTs、Projects、自然语言编程、数据分析、联网搜索等进阶用法。"
 summary: "10个ChatGPT高级使用技巧，从Custom GPTs到Project管理、自然语言编程、数据分析，让你效率翻倍。"
 categories: ["AI工具实测"]

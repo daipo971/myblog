@@ -1,6 +1,7 @@
 ---
 title: "Claude Code和Codex CLI：AI编程的新范式，试了回不去"
 date: 2026-07-25
+lastmod: 2026-07-25
 description: "从Cursor到Claude Code再到Codex CLI，AI编程工具正在经历第三次进化。实测三款AI编程工具的区别和使用场景。"
 summary: "实测Claude Code、Codex CLI和Cursor三款AI编程工具，从自动补全到自主编程，看看AI编程的新范式长什么样。"
 categories: ["AI工具实测"]
@@ -156,3 +157,9 @@ npm install -g @openai/codex
 👉 更多：[AI编程工具对比](/posts/ai-coding-tools-comparison-2026/)
 
 *文章写于2026年7月，各工具版本和价格可能会有更新。*
+
+## 相关阅读
+
+- [Cursor vs Windsurf 2026深度对比：两个最强AI编程IDE到底怎么选？](/posts/cursor-vs-windsurf-2026/)
+- [ChatGPT vs Claude vs Cursor：2026年深度对比与选择指南](/posts/chatgpt-vs-claude-vs-cursor-guide/)
+- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

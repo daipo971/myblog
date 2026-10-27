@@ -1,6 +1,7 @@
 ---
 title: "Gate Card 虚拟卡教程：用 USDT 全球消费，最高 8% 返现"
 date: 2026-10-16T03:50:00+08:00
+lastmod: 2026-10-16T03:50:00+08:00
 draft: false
 tags: ["教程", "海外支付", "Gate Card"]
 categories: ["海外服务通关"]

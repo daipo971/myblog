@@ -1,6 +1,7 @@
 ---
 title: "OpenAI Codex 代码生成入门完整指南（2026版）"
 date: 2026-07-05T00:00:00+08:00
+lastmod: 2026-07-05T00:00:00+08:00
 draft: false
 description: "从零开始学习 OpenAI Codex，包括 API 调用、集成开发、代码生成技巧。Codex 是 OpenAI 的代码生成大模型，适合开发者快速上手。"
 categories: ["AI工具实测"]
@@ -442,3 +443,9 @@ Codex 已经成为我日常开发的核心工具。不管是从零写代码、�
 ---
 
 *有些外部工具链接是联盟链接，如果你通过这些链接购买，我会获得少量佣金（不影响你的价格）。所有推荐都是我亲自用过并觉得不错的产品。*
+
+## 相关阅读
+
+- [Claude Code和Codex CLI：AI编程的新范式，试了回不去](/posts/claude-code-codex-cli-2026/)
+- [2026年AI Agent完全指南：从Claude Agent到OpenAI Agent SDK，手把手搭建AI智能体](/posts/ai-agent-complete-guide-2026/)
+- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

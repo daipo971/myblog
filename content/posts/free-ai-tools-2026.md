@@ -1,6 +1,7 @@
 ---
 title: "2026年真正好用的免费AI工具：从ChatGPT到Claude"
 date: 2026-07-09
+lastmod: 2026-07-09
 description: "2026年经过实测的免费AI工具清单，每个工具都经过深度测试，告诉你哪些真正值得用。"
 summary: "2026年最好用的免费AI工具，实测推荐。"
 categories: ["AI工具实测"]
@@ -426,7 +427,6 @@ Suno AI 这个是做背景音乐的。写个描述就能生成一首完整的歌
 
 ---
 
-*关于作者：一个做了10年技术博客的程序员，专注于AI工具的实际应用评测。*
 
 *相关阅读：*
 - [ChatGPT 4o免费版真实体验](/posts/chatgpt-4o-real-experience)

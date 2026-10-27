@@ -1,6 +1,7 @@
 ---
 title: "国行 iPhone 终于有 AI 了：12 月 iOS 27.3，阿里百度双引擎，首批只有 4 个功能"
 date: 2026-10-15T17:25:00+08:00
+lastmod: 2026-10-15T17:25:00+08:00
 draft: false
 tags: ["快讯", "AI硬件", "Apple Intelligence"]
 categories: ["AI前沿动态"]

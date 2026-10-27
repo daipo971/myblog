@@ -2,6 +2,7 @@
 title: "2026年AI安全工具完全指南：从数据保护到模型安全"
 description: "AI 安全工具盘点：主要安全风险，IBM AI Fairness 360、各大云厂商 AI 安全方案，以及 TensorFlow Privacy、Opacus、ART 等开源工具，附数据安全实践。"
 date: 2026-07-12
+lastmod: 2026-07-12
 author: "网络安全专家"
 tags: ["指南", "AI安全", "技术开发"]
 categories: ["AI工具实测"]

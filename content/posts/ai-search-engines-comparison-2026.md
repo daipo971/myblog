@@ -1,6 +1,7 @@
 ---
 title: "2026年AI搜索引擎深度评测：Perplexity、Google AI Overviews、Bing Copilot、Komo，谁才是最佳AI搜索？"
 date: 2026-07-27
+lastmod: 2026-07-27
 description: "实测4大AI搜索引擎，从准确率、速度、免费额度到中文支持，看看哪个才是2026年最好用的AI搜索工具。"
 summary: "实测Perplexity、Google AI Overviews、Bing Copilot、Komo等AI搜索引擎，全面对比准确率、速度、免费额度和中文支持，帮你找到最适合的AI搜索工具。"
 tags: ["对比", "AI搜索", "Perplexity"]

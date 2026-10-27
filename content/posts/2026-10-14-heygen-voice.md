@@ -1,6 +1,7 @@
 ---
 title: "HeyGen 自研语音模型登顶 TTS 榜：短剧配音成本算到小数点后三位"
 date: 2026-10-14T15:00:00+08:00
+lastmod: 2026-10-14T15:00:00+08:00
 draft: false
 tags: ["快讯", "AI音频", "HeyGen"]
 categories: ["AI工具实测"]

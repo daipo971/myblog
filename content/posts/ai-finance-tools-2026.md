@@ -2,6 +2,7 @@
 title: "2026年AI金融工具革命：从投资决策到风险管理"
 description: "Wealthfront、Betterment、Robinhood 等智能投顾，以及 Bloomberg、BlackRock 等机构级 AI 金融工具盘点：能做什么、风险在哪、普通投资者该怎么看。"
 date: 2026-07-12
+lastmod: 2026-07-12
 author: "金融科技专家"
 tags: ["指南", "AI生活", "AI办公"]
 categories: ["AI应用场景"]

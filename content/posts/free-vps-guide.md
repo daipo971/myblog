@@ -1,6 +1,7 @@
 ---
 title: "免费 VPS 对比：Oracle Cloud 免费层完全指南（2026更新）"
 date: 2026-07-04T00:00:00+08:00
+lastmod: 2026-07-04T00:00:00+08:00
 draft: false
 description: "Oracle Cloud Free Tier 永久免费，Google Cloud Always Free 服务丰富。写一篇专业对比，适合建站、学习使用。"
 categories: ["建站与副业"]

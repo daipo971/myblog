@@ -1,6 +1,7 @@
 ---
 title: "Claude 全面杀入谷歌：办公套件、编程 IDE、企业云，三条线同时登陆"
 date: 2026-10-23T10:50:00+08:00
+lastmod: 2026-10-23T10:50:00+08:00
 draft: false
 description: "10 月 23 日谷歌云官宣：Anthropic 托管版 Claude 正式开放，企业在谷歌云上可用首日最新模型。这已是 Claude 本月第三次杀进谷歌地盘——10 月初进了 Docs/Sheets/Slides 侧边栏，10 月 20 日 Opus 5.5 与 Sonnet 5.5 登陆谷歌编程 IDE Antigravity。本文一次讲清三条线分别是什么、普通用户哪条最相关。"
 tags: ["快讯", "行业动态", "Claude", "Google"]

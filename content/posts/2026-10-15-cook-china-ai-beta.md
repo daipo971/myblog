@@ -1,6 +1,7 @@
 ---
 title: "库克亲口确认：国行 AI 本月先上测试版，实时翻译也在首批"
 date: 2026-10-15T20:38:00+08:00
+lastmod: 2026-10-15T20:38:00+08:00
 draft: false
 tags: ["快讯", "AI硬件", "Apple Intelligence"]
 categories: ["AI前沿动态"]
@@ -37,4 +38,6 @@ description: "库克访华期间亲口确认：国行 Apple Intelligence 首批�
 
 ## 相关阅读
 
+- [国行 Apple Intelligence 十月底开测：这份准备清单先收好](/posts/2026-10-20-apple-ai-prep-checklist/)
+- [OpenAI 又发新模型 GPT-6.1 Terra：不拼最强，拼每干一件事花多少钱](/posts/2026-10-27-gpt-6-1-terra-launch/)
 - 更多「AI前沿动态」文章：[/categories/ai前沿动态/](/categories/ai前沿动态/)

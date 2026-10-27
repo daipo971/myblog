@@ -1,6 +1,7 @@
 ---
 title: "Claude 要上市了：Anthropic 招股书 614 页，我帮你读完了"
 date: 2026-10-27T07:40:00+08:00
+lastmod: 2026-10-27T07:40:00+08:00
 draft: false
 categories: ["AI前沿动态"]
 tags: ["快讯", "行业动态", "Anthropic", "Claude"]

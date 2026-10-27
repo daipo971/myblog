@@ -1,6 +1,7 @@
 ---
 title: "AI PDF阅读工具实测：从文档里快速提取知识的6款神器"
 date: 2026-07-25
+lastmod: 2026-07-25
 description: "实测6款AI PDF阅读和文档分析工具，从ChatGPT文件上传到专业工具，看看哪个最能帮你快速吃透文档。"
 summary: "实测6款AI PDF阅读工具对比评测，帮你快速从文档中提取重点知识。有免费也有付费，看完就知道该用哪个。"
 categories: ["AI工具实测"]
@@ -162,3 +163,9 @@ Google 的 NotebookLM 不是传统的PDF阅读器，它更像一个**AI学习助
 👉 更多：[本地运行AI大模型教程](/posts/ai-local-llm-guide-2026/)
 
 *文章写于2026年7月，各工具免费政策可能会有调整。*
+
+## 相关阅读
+
+- [2026年AI数据分析工具评测：不会编程也能做数据分析](/posts/ai-data-analysis-tools-2026/)
+- [剪映收费潮？这个开源剪辑工具免费无水印，还能让 AI 直接剪片](/posts/2026-10-19-concat-open-source-video-editor/)
+- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

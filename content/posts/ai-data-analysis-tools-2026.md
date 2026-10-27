@@ -1,6 +1,7 @@
 ---
 title: "2026年AI数据分析工具评测：不会编程也能做数据分析"
 date: 2026-07-25T07:20:00+08:00
+lastmod: 2026-07-25T07:20:00+08:00
 description: "实测7款AI数据分析工具，从ChatGPT数据分析、Julius AI、Tableau AI到Google Sheets AI，覆盖数据分析全流程，零基础可用。"
 summary: "7款AI数据分析工具全面实测，含ChatGPT数据分析、Julius AI、Tableau AI、Google Sheets AI等，让数据分析不再需要编程基础。"
 categories: ["AI工具实测"]

@@ -1,6 +1,7 @@
 ---
 title: "AI工具更新：2026年7月最新变化和趋势"
 date: 2026-07-09
+lastmod: 2026-07-09
 description: "2026年7月AI工具最新更新，包括ChatGPT、Claude、Cursor等工具的最新功能和价格变化。"
 summary: "2026年7月AI工具更新，最新功能和价格变化分析。"
 categories: ["AI前沿动态"]

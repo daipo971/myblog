@@ -1,6 +1,7 @@
 ---
 title: "AI语音克隆与TTS工具实测：3分钟克隆你自己的声音"
 date: 2026-07-25
+lastmod: 2026-07-25
 description: "从ElevenLabs到Fish Audio，实测主流的AI语音克隆和文字转语音工具。效果真假难辨，但有些坑你必须知道。"
 summary: "实测6款AI语音克隆和TTS工具，3分钟就能克隆自己的声音。做短视频、播客、有声书必备，含真人实测对比。"
 categories: ["AI工具实测"]
@@ -175,3 +176,9 @@ AI语音克隆很强大，但也有**滥用的风险**。
 👉 更多：[免费AI视频生成工具](/posts/free-ai-video-generators-2026/)
 
 *文章写于2026年7月，各工具政策和价格可能有调整。请合法使用语音克隆技术。*
+
+## 相关阅读
+
+- [2026年AI音乐生成工具完整评测：12款工具实测对比](/posts/ai-music-generation-2026/)
+- [剪映收费潮？这个开源剪辑工具免费无水印，还能让 AI 直接剪片](/posts/2026-10-19-concat-open-source-video-editor/)
+- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

@@ -2,6 +2,7 @@
 title: "免翻墙！微信官方通道直连 AI 助手：iLink / ClawBot 扫码登录完整教程"
 description: "腾讯官方给个人 AI 助手开放的微信通道 iLink / ClawBot：扫码授权、长轮询收发消息，附完整 Python bridge.py 实现（登录、常驻、自动回复、看门狗）和限制、坑点、隐私取舍。"
 date: 2026-10-09
+lastmod: 2026-10-09
 draft: false
 tags: ["教程", "注册开通", "微信"]
 categories: ["海外服务通关"]

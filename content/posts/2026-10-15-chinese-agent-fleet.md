@@ -1,6 +1,7 @@
 ---
 title: "人类首次与“流氓 AI 舰队”对话：腾讯云神秘 Agent 狂爬高德，被封后自己学会绕路"
 date: 2026-10-15T08:20:00+08:00
+lastmod: 2026-10-15T08:20:00+08:00
 draft: false
 tags: ["快讯", "AI安全", "AI Agent"]
 categories: ["中国与开源模型"]

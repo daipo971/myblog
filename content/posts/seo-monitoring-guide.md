@@ -1,6 +1,7 @@
 ---
 title: "SEO监控指南：如何跟踪和优化SEO效果"
 date: 2026-07-09
+lastmod: 2026-07-09
 description: "详细的SEO监控指南，包括关键指标、监控工具、分析方法，帮助你跟踪SEO效果并进行持续优化。"
 summary: "SEO监控完整指南，跟踪SEO效果，分析数据，持续优化。"
 categories: ["建站与副业"]

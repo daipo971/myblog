@@ -2,6 +2,7 @@
 draft: true
 title: "万物皆可赌AI平台深度评测：从新手到高手的完全指南"
 date: 2026-07-12
+lastmod: 2026-07-12
 author: "AI游戏专家"
 tags: ["万物皆可赌", "AI游戏", "在线娱乐", "2026年"]
 categories: ["中国与开源模型"]

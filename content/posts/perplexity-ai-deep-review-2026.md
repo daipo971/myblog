@@ -1,6 +1,7 @@
 ---
 title: "Perplexity AI深度体验：用了一个月，我卸载了Google"
 date: 2026-07-12
+lastmod: 2026-07-12
 description: "一个月深度使用Perplexity AI，真实记录从Google切换到AI搜索的体验、优缺点和适用场景。"
 summary: "Perplexity AI一个月真实体验：它真的能取代Google吗？优缺点全记录。"
 categories: ["AI工具实测"]

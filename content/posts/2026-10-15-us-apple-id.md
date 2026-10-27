@@ -1,6 +1,7 @@
 ---
 title: "美区 Apple ID 注册保姆级教程：免信用卡，App Store 入口是关键"
 date: 2026-10-15T11:15:00+08:00
+lastmod: 2026-10-15T11:15:00+08:00
 draft: false
 tags: ["教程", "注册开通", "Apple ID"]
 categories: ["海外服务通关"]

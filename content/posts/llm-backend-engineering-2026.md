@@ -1,6 +1,7 @@
 ---
 title: "LLM 应用后端开发实战：构建生产级 AI 应用的工程实践"
 date: 2026-07-20
+lastmod: 2026-07-20
 description: "深入讲解如何从工程角度构建生产级LLM应用，包括RAG架构、流式响应、Token管理、错误处理、成本优化等核心工程实践"
 summary: "LLM应用后端开发完整指南，深度解析RAG检索增强生成、流式处理(SSE/WebSocket)、Token管理与成本控制、Prompt版本管理、并发限流等工程实践"
 categories: ["建站与副业"]

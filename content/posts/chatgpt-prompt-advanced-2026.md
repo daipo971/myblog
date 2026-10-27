@@ -1,6 +1,7 @@
 ---
 title: "ChatGPT提示词进阶技巧 2026：从能用到好用的10个Prompt秘诀"
 date: 2026-07-19
+lastmod: 2026-07-19
 description: "ChatGPT提示词进阶技巧，从基础的prompt engineering到高级技巧，包含角色扮演、思维链、few-shot等实用方法"
 summary: "10个ChatGPT提示词进阶技巧，角色扮演、思维链Chain-of-Thought、Few-Shot、结构化输出等高级Prompt Engineering方法实测"
 categories: ["AI应用场景"]
