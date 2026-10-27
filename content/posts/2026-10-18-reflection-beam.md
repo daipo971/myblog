@@ -2,6 +2,7 @@
 title: "Beam 开源了：美国公司做了个「对标中国」的 501B 模型，Apache 2.0 随便用"
 date: 2026-10-18T16:40:00+08:00
 description: "Reflection AI 10 月 16 日放出 Beam 完整权重：501B 参数 MoE，Apache 2.0 协议，号称「面向中国开源模型的美国本土替代方案」。代码能力是强项，但独立跑分没它自己说的那么神。"
+categories: ["中国与开源模型"]
 tags: ["开源模型", "Reflection", "Beam", "大模型"]
 ---
 
@@ -32,3 +33,10 @@ tags: ["开源模型", "Reflection", "Beam", "大模型"]
 - 这是今年"西方开源反击战"里分量最重的一款，但别被"对标中国"的叙事带跑——**选模型只看三件事：你的任务它强不强、跑起来贵不贵、许可证松不松**。Beam 许可证是最松的，代码任务强，综合能力待验证。
 - 对国内用户，它的最大价值可能是"又多了一个免费可商用的强代码模型"，而不是地缘政治大戏。
 - 如果你已经在用 Qwen、GLM、Kimi 系的开源模型，Beam 目前没有非换不可的理由；但做 Agent/代码场景的，值得蹲一下社区实测。
+
+## 相关阅读
+
+- [Reflection Beam 解析：501B 参数的「西方 DeepSeek」，权重还没发，先看懂这 8 件事](/posts/2026-10-08-reflection-beam-jiexi/)
+- [DeepSeek-V4.1-Flash 来了：更快更便宜，MIT 开源随便用，附国内使用指南](/posts/2026-10-18-deepseek-v41-flash/)
+- [Kimi K3.1 Pro 发布了：国产 3T 大模型，能跟 Claude Opus 掰手腕，普通人这样免费用上](/posts/2026-10-27-kimi-k3-1-pro-guide/)
+- 更多「中国与开源模型」文章：[/categories/中国与开源模型/](/categories/中国与开源模型/)

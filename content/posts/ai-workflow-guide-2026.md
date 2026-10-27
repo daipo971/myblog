@@ -3,11 +3,11 @@ title: "2026年AI效率工作流搭建指南：把ChatGPT+Claude+Cursor串起来
 date: 2026-07-19
 description: "AI效率工作流搭建教程，教你把ChatGPT、Claude、Cursor、Perplexity等工具组合起来使用，从内容创作到编程开发全覆盖"
 summary: "2026年AI效率工作流搭建指南，手把手教你组合ChatGPT+Claude+Cursor+Perplexity打造个人AI工作流，覆盖写作、编程、研究三大场景"
+categories: ["AI工具实测"]
 tags: ["AI工作流", "效率工具", "ChatGPT", "Claude", "Cursor", "自动化", "AI工具"]
 showtoc: true
 ---
 
-# 2026年AI效率工作流搭建指南：把ChatGPT+Claude+Cursor串起来用才叫效率翻倍
 
 ## 别让你的AI工具变成摆设
 
@@ -25,7 +25,7 @@ showtoc: true
 
 - [ChatGPT 4o免费版到底够不够用](/posts/chatgpt-4o-free-guide-2026/)
 - [Anthropic Claude 入门完整指南](/posts/claude-guide/)
-- [用了半年Cursor AI，有些话不吐不快](/posts/cursor-ai-tutorial-2026/)
+- [用了半年Cursor AI，有些话不吐不快](/posts/cursor-programming-tools/)
 
 好，现在开始说正经的。
 
@@ -119,7 +119,7 @@ Claude在校对这件事上比ChatGPT认真得多。它不会只是说"写得很
 
 想清楚要做什么。这个环节谁也帮不了你——你得知道自己要什么。
 
-但如果你思路还不清晰，可以先跟ChatGPT聊一聊。它擅长帮你梳理需求、提出你自己没想到的问题。我在写这篇文章的时候也提了[AI编程工具对比](/posts/cursor-ai-tutorial-2026/)的经验，建议看看。
+但如果你思路还不清晰，可以先跟ChatGPT聊一聊。它擅长帮你梳理需求、提出你自己没想到的问题。我在写这篇文章的时候也提了[AI编程工具对比](/posts/cursor-programming-tools/)的经验，建议看看。
 
 **第二步：技术设计（Claude）**
 
@@ -135,7 +135,7 @@ Claude在校对这件事上比ChatGPT认真得多。它不会只是说"写得很
 
 设计拿到手了，再交给Cursor去写代码。这时候每条指令都很明确——"根据这个设计，实现PostController的create方法"——Cursor能高效完成任务，而且出错概率小得多。
 
-关于Cursor的用法，我之前那篇[Cursor使用指南](/posts/cursor-ai-tutorial-2026/)说得很详细，这里不多重复。
+关于Cursor的用法，我之前那篇[Cursor使用指南](/posts/cursor-programming-tools/)说得很详细，这里不多重复。
 
 **第四步：代码审查（Claude + 人）**
 

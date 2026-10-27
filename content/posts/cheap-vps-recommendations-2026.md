@@ -3,6 +3,7 @@ title: "2026年千万别乱买VPS，这几家才是真便宜"
 date: 2026-07-12
 description: "2026年便宜VPS推荐：RackNerd、搬瓦工BandwagonHost、GreenCloud等商家真实使用评测，附配置价格和选购避坑指南。"
 summary: "折腾VPS七八年了，从几块钱的玩具机到生产环境都跑过。本文把2026年真正值得买的便宜VPS挨个扒一遍，RackNerd、搬瓦工、GreenCloud……哪些能买、哪些坑别踩，一次性说清楚。"
+categories: ["建站与副业"]
 tags: ["VPS", "服务器", "便宜VPS", "RackNerd", "BandwagonHost"]
 showtoc: true
 ---
@@ -182,3 +183,10 @@ RackNerd 和搬瓦工都有明确的退款政策，这也是我敢推荐给大�
 ---
 
 *部分链接是联盟链接，通过这些链接购买，我可能会获得少量佣金。价格对你来说是一样的，但能支持我继续写更多实用的内容。感谢你的支持。*
+
+## 相关阅读
+
+- [Linux服务器入门教程：零基础搭建网站和部署项目](/posts/linux-server-beginners-2026/)
+- [免费 VPS 对比：Oracle Cloud 免费层完全指南（2026更新）](/posts/free-vps-guide/)
+- [2026年网站推广完全指南：从SEO到社交媒体的全链路营销策略](/posts/website-promotion-strategy-2026/)
+- 更多「建站与副业」文章：[/categories/建站与副业/](/categories/建站与副业/)

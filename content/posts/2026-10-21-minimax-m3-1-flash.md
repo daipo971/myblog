@@ -4,7 +4,7 @@ date: 2026-10-21T22:55:00+08:00
 draft: false
 description: "上海 MiniMax 10 月 19 日发布 M3.1 Flash：100 万上下文、图文视频多模态、输出 200+ token/秒，API 输入价 $0.15/百万 token，只有 DeepSeek V4.1 Flash 的一半。独立测试智力分从 29 涨到 42，但幻觉率高达 93%。本文讲清它强在哪、坑在哪、怎么免费先试。"
 tags: ["MiniMax", "大模型", "国产模型", "API", "教程"]
-categories: ["AI工具"]
+categories: ["中国与开源模型"]
 ---
 
 国产模型的价格战又往前推了一步。上海 MiniMax 10 月 19 日发布 **M3.1 Flash**：主打一个「快而便宜」，API 输入价只要 **$0.15/百万 token**，正好是前几天刚发的 DeepSeek V4.1 Flash 的一半。先说清它强在哪、坑在哪，再说怎么免费用上。
@@ -44,3 +44,10 @@ categories: ["AI工具"]
 ## 总结
 
 **M3.1 Flash 的定位很清楚：便宜、快、上下文大，当 Agent 和代码场景的「干活模型」很合适；但它不是个老实的知识模型，幻觉率 93% 这条红线要记牢。** 先用免费路由跑两个你自己的真实任务测一测，比看任何跑分都准。周五权重开源后，如果许可证友好，本地部署又多一个高性价比选项。
+
+## 相关阅读
+
+- [MiniMax M3.1 Flash 权重今日放出：许可证已落地，商用门槛比预想低](/posts/2026-10-23-minimax-m3-1-weights/)
+- [DeepSeek-V4.1-Flash 来了：更快更便宜，MIT 开源随便用，附国内使用指南](/posts/2026-10-18-deepseek-v41-flash/)
+- [DeepSeek完全指南 2026：从入门到精通的免费AI模型使用教程](/posts/deepseek-complete-guide-2026/)
+- 更多「中国与开源模型」文章：[/categories/中国与开源模型/](/categories/中国与开源模型/)

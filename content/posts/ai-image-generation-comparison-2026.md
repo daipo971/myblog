@@ -3,6 +3,7 @@ title: "AI图片生成工具横评：Midjourney、DALL-E 3、Stable Diffusion我
 date: 2026-07-12
 description: "Midjourney、DALL-E 3、Stable Diffusion三款主流AI绘画工具的真实使用体验，包括付费方案对比和免费替代品推荐。"
 summary: "半年时间把Midjourney、DALL-E 3、Stable Diffusion全折腾了一遍。这篇告诉你每个工具到底好在哪、坑在哪，以及如果你是新手该从哪个开始。"
+categories: ["AI工具实测"]
 tags: ["AI图片生成", "Midjourney", "DALL-E", "Stable Diffusion", "免费AI工具"]
 showtoc: true
 ---
@@ -161,3 +162,10 @@ AI生图这半年的发展速度真的挺吓人的。我在写这篇文章的过
 所以如果你刚开始玩AI生图，不用纠结选哪个工具，随便选一个上手用起来就行。先用满1000张图，再回头看我上面写的这些东西，你会有完全不一样的理解。
 
 *部分链接是联盟链接，通过这些链接购买，我可能会获得少量佣金。价格对你来说是一样的。*
+
+## 相关阅读
+
+- [2026年AI设计工具横评：Canva AI vs 稿定AI vs 创客贴AI vs Midjourney，做图党必看](/posts/ai-design-tools-comparison-2026/)
+- [Midjourney V7完整教程 2026：从入门到精通的AI绘画实战指南](/posts/midjourney-complete-guide-2026/)
+- [2026免费AI视频生成工具实测：这5个真的能打](/posts/free-ai-video-generators-2026/)
+- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

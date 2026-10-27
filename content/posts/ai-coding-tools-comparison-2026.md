@@ -3,6 +3,7 @@ title: "2026年AI编程工具横向评测：Cursor vs Windsurf vs GitHub Copilot
 date: 2026-07-16
 description: "2026年最热门的四款AI编程工具Cursor、Windsurf、GitHub Copilot、Claude Code横向深度对比。真实体验、优缺点分析、价格对比，帮你选对工具。"
 summary: "2026年四款主流AI编程工具Cursor、Windsurf、GitHub Copilot、Claude Code真实对比评测，含功能对比表和我的推荐组合。"
+categories: ["AI工具实测"]
 tags: ["AI编程", "Cursor", "GitHub Copilot", "Claude", "Windsurf", "编程工具", "开发者工具"]
 showtoc: true
 ---
@@ -17,7 +18,7 @@ Cursor、Windsurf、GitHub Copilot、Claude Code，这四个名字你肯定都�
 
 先说Cursor。如果你问我"现在哪个AI编程工具综合最强"，我可能会犹豫一下，但大概率会说是Cursor。
 
-[我之前写过Cursor的详细教程](/posts/cursor-ai-tutorial-2026/)，那时候它已经很强了，但这半年更新了好几轮，现在更是夸张。
+[我之前写过Cursor的详细教程](/posts/cursor-programming-tools/)，那时候它已经很强了，但这半年更新了好几轮，现在更是夸张。
 
 核心体验分三层：
 
@@ -127,7 +128,7 @@ Cursor和Windsurf都在快速迭代，每个月都有新功能。GitHub Copilot�
 
 ### 相关阅读
 
-- [Cursor AI 教程：用了半年，有话不吐不快](/posts/cursor-ai-tutorial-2026/)
+- [Cursor AI 教程：用了半年，有话不吐不快](/posts/cursor-programming-tools/)
 - [Anthropic Claude 入门完整指南](/posts/claude-guide/)
 - [2026年AI代码编辑器深度评测](/posts/ai-code-editor-2026/)
 - [ChatGPT vs Claude vs Cursor：2026年深度对比](/posts/chatgpt-vs-claude-vs-cursor-guide/)

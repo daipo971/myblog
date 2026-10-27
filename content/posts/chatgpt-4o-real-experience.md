@@ -3,11 +3,11 @@ title: "ChatGPT 4o免费版三个月真实体验：我后悔了吗？"
 date: 2026-07-09
 description: "三个月深度使用ChatGPT 4o免费版，真实记录使用体验、限制和实际价值。"
 summary: "ChatGPT 4o免费版三个月真实体验，告诉你真相。"
+categories: ["AI工具实测"]
 tags: ["ChatGPT", "AI工具", "免费工具", "使用体验"]
 showtoc: true
 ---
 
-# ChatGPT 4o免费版三个月真实体验：我后悔了吗？
 
 三个月前，当我看到"ChatGPT 4o免费版"的消息时，我和大多数人一样怀疑这又是一个营销噱头。但作为一个每天都要和各种AI工具打交道的技术博主，我决定亲自测试一下。
 
@@ -188,8 +188,8 @@ showtoc: true
 *关于作者：一个做了10年技术博客的程序员，专注于AI工具的实际应用评测。*
 
 *相关阅读：*
-- [Claude 3.5 vs ChatGPT 4o：哪个更适合你？](/posts/claude-vs-chatgpt-2026)
-- [AI编程工具Cursor真实使用体验](/posts/cursor-real-experience)
+- [Claude 3.5 vs ChatGPT 4o：哪个更适合你？](/posts/chatgpt-vs-claude-vs-cursor-guide/)
+- [AI编程工具Cursor真实使用体验](/posts/cursor-programming-tools/)
 - [2026年最好用的免费AI工具](/posts/best-free-ai-tools-2026)
 
 ---

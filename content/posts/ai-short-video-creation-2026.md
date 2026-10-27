@@ -4,7 +4,7 @@ date: 2026-07-27
 description: "手把手教你用AI工具做短视频：AI写脚本、AI配音、AI数字人、AI自动字幕，全套工作流拆解，一条短视频10分钟出片。"
 summary: "实测AI短视频创作全流程，从脚本到成片全部用AI搞定。AI数字人、AI配音、AI自动剪辑，一条短视频10分钟搞定，适合抖音、小红书、视频号。"
 tags: ["AI短视频", "AI数字人", "短视频创作", "抖音", "小红书", "AI工具", "内容创作"]
-categories: ["AI工具"]
+categories: ["AI工具实测"]
 showtoc: true
 ---
 
@@ -258,3 +258,10 @@ AI工具已经把短视频创作的门槛降到了最低。一条10分钟的视�
 ---
 
 *你用AI做过短视频吗？有什么好用的工具推荐？欢迎在评论区分享你的AI短视频创作经验。*
+
+## 相关阅读
+
+- [2026年AI视频生成工具横评：Sora vs 可灵(Kling) vs Runway vs Pika 实测对比](/posts/ai-video-generation-comparison-2026/)
+- [2026年AI视频剪辑工具评测：10款工具从入门到专业级实测对比](/posts/ai-video-editing-tools-2026/)
+- [AI工具月度省钱攻略：2026年怎么用最少的钱配齐最强的AI组合](/posts/ai-tools-monthly-savings-2026/)
+- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

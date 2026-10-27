@@ -3,6 +3,7 @@ title: "不用联网也能用AI：本机运行大模型完整指南（Ollama + L
 date: 2026-07-25
 description: "完全免费、离线可用、隐私安全。手把手教你用Ollama和LM Studio在自己电脑上运行AI大模型，Mac和Windows都能用。"
 summary: "Ollama和LM Studio双教程，教你完全免费地在自己的电脑上运行AI大模型。离线可用、隐私安全、没有限额。"
+categories: ["中国与开源模型"]
 tags: ["Ollama", "LM Studio", "本机AI", "免费AI", "隐私", "大模型"]
 showtoc: true
 ---
@@ -151,7 +152,7 @@ Windows用户如果有NVIDIA显卡，LM Studio 会自动用CUDA加速。
 
 👉 [下载Ollama](https://ollama.com/)
 👉 [下载LM Studio](https://lmstudio.ai/)
-👉 相关阅读：[免费AI工具合集](/posts/7-free-ai-tools-2026/)
+👉 相关阅读：[免费AI工具合集](/posts/free-ai-tools-2026/)
 👉 更多：[Claude Code和Codex CLI指南](/posts/claude-code-codex-cli-2026/)
 
 *文章写于2026年7月，各工具版本可能会有更新。*

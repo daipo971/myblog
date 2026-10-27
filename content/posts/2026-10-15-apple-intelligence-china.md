@@ -3,7 +3,7 @@ title: "国行 iPhone 终于有 AI 了：12 月 iOS 27.3，阿里百度双引擎
 date: 2026-10-15T17:25:00+08:00
 draft: false
 tags: ["Apple", "Apple Intelligence", "国行", "阿里", "百度"]
-categories: ["AI前沿"]
+categories: ["中国与开源模型"]
 description: "苹果国行 AI 将于 12 月随 iOS 27.3 上线：阿里提供通义千问+通义万相底座模型，百度负责 Siri 语音与视觉智能，9 月 29 日已获监管许可。首批仅 4 个功能，新版 Siri AI 缺席。"
 ---
 
@@ -54,3 +54,10 @@ description: "苹果国行 AI 将于 12 月随 iOS 27.3 上线：阿里提供通
 ---
 
 *信息核实时间：2026-10-15 17:30（CST）。来源：彭博社、南华早报（10-14）、9to5Mac、新浪科技/快科技、新浪财经（10-15）。上线时间与功能清单为媒体引述知情人士消息，苹果官方尚未正式宣布。*
+
+## 相关阅读
+
+- [库克亲口确认：国行 AI 本月先上测试版，实时翻译也在首批](/posts/2026-10-15-cook-china-ai-beta/)
+- [国行 Apple Intelligence 十月底开测：这份准备清单先收好](/posts/2026-10-20-apple-ai-prep-checklist/)
+- [Kimi K3.1 Pro 发布：编程跑分超 GPT-6，11 月 4 日开源全部权重](/posts/2026-10-24-kimi-k3-1-pro-launch/)
+- 更多「中国与开源模型」文章：[/categories/中国与开源模型/](/categories/中国与开源模型/)

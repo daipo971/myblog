@@ -3,11 +3,11 @@ title: "AI编程入门到接单赚钱 2026：零基础也能用AI写出能卖钱
 date: 2026-07-21
 description: "零基础用AI编程入门并接单赚钱的完整指南，从学编程到接外包的全流程，包含Cursor使用、项目实战、接单平台推荐"
 summary: "零基础用AI编程从入门到接单赚钱完整指南，教你用Cursor等AI编程工具快速上手，接外包项目的实战经验分享"
+categories: ["建站与副业"]
 tags: ["AI编程", "Cursor", "接单", "副业", "赚钱", "编程入门", "自由职业"]
 showtoc: true
 ---
 
-# AI编程入门到接单赚钱 2026：零基础也能用AI写出能卖钱的项目
 
 ## 我不会写代码，但我靠编程赚到了钱
 
@@ -41,7 +41,7 @@ AI 编程改变了两件事：
 
 我做的一个企业官网项目，客户明确说"我不在乎你用不用AI，我只要交付物能用、能上线、能跑起来"。这才是真实的市场需求。
 
-当然，AI 编程也不是完全没有学习曲线。你需要学的是怎么用 AI，而不是怎么编程。我在[这篇Cursor教程]({{< ref "/posts/cursor-ai-tutorial-2026" >}})里详细写过，这里就不展开了。
+当然，AI 编程也不是完全没有学习曲线。你需要学的是怎么用 AI，而不是怎么编程。我在[这篇Cursor教程]({{< ref "/posts/cursor-programming-tools" >}})里详细写过，这里就不展开了。
 
 ---
 
@@ -209,7 +209,7 @@ AI 会给你生成一个完整的 HTML 文件。你保存到本地，双击打�
 
 这样写出来的代码不是黑盒，你知道每一段在干什么。万一需要手动修改，也不至于完全看不懂。
 
-我把 Cursor 里的[AI编程最佳实践]({{< ref "/posts/cursor-ai-tutorial-2026" >}})总结成了一个 checklist，每次做项目都过一遍，坑少踩了很多。
+我把 Cursor 里的[AI编程最佳实践]({{< ref "/posts/cursor-programming-tools" >}})总结成了一个 checklist，每次做项目都过一遍，坑少踩了很多。
 
 ### 3. 测试和上线
 
@@ -304,7 +304,7 @@ AI 编程接单这件事，说难也难，说简单也简单。
 最近我在国内服务器上搭东西，用的是 [RackNerd](https://my.racknerd.com/aff.php?aff=20566) 的 VPS，性价比不错，如果你有部署需求也可以看看。
 
 **延伸阅读：**
-- [用了半年Cursor AI，有些话不吐不快]({{< ref "/posts/cursor-ai-tutorial-2026" >}})
+- [用了半年Cursor AI，有些话不吐不快]({{< ref "/posts/cursor-programming-tools" >}})
 - [Cursor vs Windsurf 2026深度对比]({{< ref "/posts/cursor-vs-windsurf-2026" >}})
 - [AI编程工具详细对比评测]({{< ref "/posts/ai-coding-tools-comparison-2026" >}})
 - [用AI工具赚钱的5个真实方法]({{< ref "/posts/make-money-with-ai-2026" >}})
@@ -312,3 +312,10 @@ AI 编程接单这件事，说难也难，说简单也简单。
 - [个人博客用Affiliate赚钱完整指南]({{< ref "/posts/blog-affiliate-guide-2026" >}})
 
 如果你看完了觉得有用，欢迎分享给你的朋友。有问题可以直接在评论区留言，我看到了都会回。
+
+## 相关阅读
+
+- [用AI无代码搭建应用：零基础也能做出赚钱的产品](/posts/ai-no-code-app-2026/)
+- [用AI工具赚钱的5个真实方法：我的实操经验](/posts/make-money-with-ai-2026/)
+- [AI副业项目变现指南：5个已验证的赚钱模式](/posts/ai-side-project-monetize-2026/)
+- 更多「建站与副业」文章：[/categories/建站与副业/](/categories/建站与副业/)

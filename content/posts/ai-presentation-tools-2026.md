@@ -3,6 +3,7 @@ title: "AI自动生成PPT工具推荐 2026：Gamma、Tome、Beautiful.ai、讯�
 date: 2026-07-21
 description: "Gamma、Tome、Beautiful.ai、讯飞智文等AI自动生成PPT工具实测对比，从模板质量、生成速度、自定义程度等维度评测"
 summary: "2026年AI做PPT工具横评，Gamma、Tome、Beautiful.ai、讯飞智文四款一键生成PPT工具实测对比，附生成效果截图和推荐"
+categories: ["AI工具实测"]
 tags: ["AI工具", "PPT", "Gamma", "Tome", "AI演示", "效率工具", "职场工具"]
 showtoc: true
 ---
@@ -138,7 +139,7 @@ Beautiful.ai 的核心理念很简单：**你负责写内容，AI 负责排版**
 3. **手动微调**。改改措辞、换换图片、调整结构——这个过程已经从之前的3小时缩短到30分钟。
 4. **导出**。在线分享或导出 PPTX。
 
-之前写过一篇[2026年真正好用的免费AI工具](/posts/7-free-ai-tools-2026/)，里面有免费的 ChatGPT、Claude 用法，搭配这篇的 AI PPT 工具，一套免费+低成本的组合拳就打出来了。
+之前写过一篇[2026年真正好用的免费AI工具](/posts/free-ai-tools-2026/)，里面有免费的 ChatGPT、Claude 用法，搭配这篇的 AI PPT 工具，一套免费+低成本的组合拳就打出来了。
 
 如果你想花更少的钱配齐这些工具，可以看这篇：[AI工具月度省钱攻略](/posts/ai-tools-monthly-savings-2026/)，从0元到200元的不同预算方案都有。
 
@@ -153,6 +154,6 @@ AI PPT 工具现在的能力已经可以让你从"想标题找图做排版"的�
 AI 在 PPT 这件事上做得越来越好，但话说回来，**PPT 的主角永远是你站在台上讲的内容**，工具只是在帮你更好呈现你的价值。
 
 相关阅读：
-- [7个真正好用的免费AI工具推荐](/posts/7-free-ai-tools-2026/)
+- [7个真正好用的免费AI工具推荐](/posts/free-ai-tools-2026/)
 - [2026年最值得订阅的AI工具](/posts/best-ai-subscriptions-2026/)
 - [AI工具月度省钱攻略](/posts/ai-tools-monthly-savings-2026/)

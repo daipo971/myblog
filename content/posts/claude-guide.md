@@ -3,6 +3,7 @@ title: "Anthropic Claude 入门完整指南（2026版）"
 date: 2026-07-05T00:00:00+08:00
 draft: false
 description: "从零开始学习 Anthropic Claude，包括 API 调用、Claude Pro 介绍、Claude Code CLI 使用、Artifacts 功能详解。适合新手入门。"
+categories: ["AI工具实测"]
 tags: ["Anthropic", "Claude", "AI", "教程"]
 ---
 

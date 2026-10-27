@@ -2,7 +2,7 @@
 title: "Claude 要上市了：Anthropic 招股书 614 页，我帮你读完了"
 date: 2026-10-27T07:40:00+08:00
 draft: false
-categories: ["AI工具"]
+categories: ["AI工具实测"]
 tags: ["Claude", "Anthropic", "IPO", "招股书"]
 description: "Anthropic 10 月 26 日向美国 SEC 公开递交 S-1，计划以 ANT 在纳斯达克上市：上半年营收 163 亿美元、账面亏损 807 亿美元、未来算力最低付款 4170 亿美元、创始人一票握 50.1% 投票权。本文按章节拆解这份 614 页招股书，哪些是实锤、哪些还是传闻，一次讲清。"
 ---
@@ -87,3 +87,10 @@ description: "Anthropic 10 月 26 日向美国 SEC 公开递交 S-1，计划以 
 4. 如果你写 AI 内容、做 AI 选型，招股书里客户数、算力账单、治理结构这三节，比任何评测跑分都更能说明一家 AI 公司处在什么阶段。
 
 614 页读完，核心就一句话：**一家营收狂奔、主业刚扭亏、但背着 4000 多亿美元算力账单、创始人牢牢控盘的公司，正准备接受公开市场最严厉的一次考试。**
+
+## 相关阅读
+
+- [Anthropic Claude 入门完整指南（2026版）](/posts/claude-guide/)
+- [Claude Duet 发布：不等你开口先干活，主动型 Agent 大战开始了](/posts/2026-10-22-claude-duet-launch/)
+- [2026年AI编程工具横向评测：Cursor vs Windsurf vs GitHub Copilot vs Claude，谁才是最强辅助？](/posts/ai-coding-tools-comparison-2026/)
+- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

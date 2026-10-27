@@ -2,6 +2,7 @@
 title: "剪映收费潮？这个开源剪辑工具免费无水印，还能让 AI 直接剪片"
 date: 2026-10-19T17:45:00+08:00
 description: "Concat（jub0t/Concat）：免费开源的剪映/CapCut 平替，AGPL-3.0 协议。自动字幕、配音、去背全在本地跑，无水印无账号，4K60 导出，还自带 MCP server 让 AI 直接剪视频。附下载安装方法和实话实说的短板。"
+categories: ["AI工具实测"]
 tags: ["视频剪辑", "开源工具", "AI 工具", "免费资源", "剪映"]
 ---
 
@@ -70,3 +71,10 @@ AI 模型只需要在设置里下载一次，之后**断网也能用**。你的�
 ---
 
 *本文提到的版本号、功能以 GitHub 仓库 jub0t/Concat 为准，beta 软件更新快，下载前建议看一眼 Releases 页。*
+
+## 相关阅读
+
+- [2026年AI视频剪辑工具评测：10款工具从入门到专业级实测对比](/posts/ai-video-editing-tools-2026/)
+- [2026 免费 AI API 完整清单：从入门到实践](/posts/free-ai-api-guide/)
+- [2026年AI设计工具横评：Canva AI vs 稿定AI vs 创客贴AI vs Midjourney，做图党必看](/posts/ai-design-tools-comparison-2026/)
+- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

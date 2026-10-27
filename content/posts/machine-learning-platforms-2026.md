@@ -1,15 +1,15 @@
 ---
 title: "2026年机器学习平台对比：从入门到生产部署完整指南"
+description: "Google Cloud AI、SageMaker、Azure ML、Databricks 四大机器学习平台对比，加上 TFX、MLflow、Kubeflow 开源方案，从易用性、成本、功能三方面给出选择建议。"
 date: 2026-07-12
 author: "ML工程师"
 tags: ["机器学习", "AI平台", "深度学习", "2026年"]
-categories: ["机器学习"]
+categories: ["AI工具实测"]
 summary: "全面对比2026年主流机器学习平台，帮助你选择最适合的AI开发环境和部署方案。"
 showtoc: true
 disableShare: false
 ---
 
-# 2026年机器学习平台对比：从入门到生产部署完整指南
 
 ## 引言
 
@@ -224,3 +224,10 @@ disableShare: false
 ---
 
 *有些外部工具链接是联盟链接，如果你通过这些链接购买，我会获得少量佣金（不影响你的价格）。所有推荐都是我亲自用过并觉得不错的产品。*
+
+## 相关阅读
+
+- [2026年AI提示词工程完全指南：从入门到精通的完整教程](/posts/ai-prompt-engineering-guide-2026/)
+- [Midjourney V7完整教程 2026：从入门到精通的AI绘画实战指南](/posts/midjourney-complete-guide-2026/)
+- [2026 免费 AI API 完整清单：从入门到实践](/posts/free-ai-api-guide/)
+- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

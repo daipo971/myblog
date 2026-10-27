@@ -3,7 +3,7 @@ title: "开源倒计时：阶跃 Step 5 Preview 登顶 OpenRouter 趋势榜，10
 date: 2026-10-13T08:00:00+08:00
 description: "阶跃星辰旗舰模型 Step 5 Preview 10 月 10 日登顶 OpenRouter Trending 榜、日榜全球第二，官方确认 10 月 15 日开源权重。本文整理已核实的关键事实：600B 参数背后的效率叙事、AA 榜单全球开源前二、1/8 成本的真实含义，以及开源那天值得盯的三件事。"
 tags: ["AI大模型", "阶跃星辰", "Step 5", "开源模型", "解读"]
-categories: ["AI工具评测"]
+categories: ["中国与开源模型"]
 draft: false
 showTableOfContents: true
 ---
@@ -78,3 +78,10 @@ Step 5 的故事线很清晰：**旗舰级智能 + 1/8 成本 + 长周期 Agent 
 ---
 
 **核实说明**：发布信息来自 9 月 20 日环球网、上观新闻、澎湃新闻、上海证券报·中国证券网、IT 之家的报道；OpenRouter 榜单消息来自 10 月 10 日爱范儿、上观新闻、雷峰网的报道；WorkBuddy 独家限免消息来自 IT之家 10 月 12 日报道；实验数据（StepCodeBench、GPU Kernel、后训练）来自阶跃官方公布，实际使用效果受工具环境影响。
+
+## 相关阅读
+
+- [Step 5 开源复盘：协议改了、量化来了，“1/8 成本”到底经不经得起算](/posts/2026-10-15-step-5-review/)
+- [Reflection Beam 解析：501B 参数的「西方 DeepSeek」，权重还没发，先看懂这 8 件事](/posts/2026-10-08-reflection-beam-jiexi/)
+- [Kimi K3.1 Pro 发布：编程跑分超 GPT-6，11 月 4 日开源全部权重](/posts/2026-10-24-kimi-k3-1-pro-launch/)
+- 更多「中国与开源模型」文章：[/categories/中国与开源模型/](/categories/中国与开源模型/)

@@ -2,7 +2,7 @@
 title: "OpenAI 又发新模型 GPT-6.1 Terra：不拼最强，拼每干一件事花多少钱"
 date: 2026-10-27T10:55:00+08:00
 draft: false
-categories: ["AI工具"]
+categories: ["AI工具实测"]
 tags: ["OpenAI", "GPT-6.1 Terra", "快讯"]
 description: "OpenAI 10 月 27 日凌晨发布 GPT-6.1 Terra，定位是 GPT-5.6 Terra 的继任：给高频 agent 工作用的便宜快模型，API 只要 1 美元/5 美元每百万 token，任务速度比旗舰快 3 倍以上。先说清：跑分是 OpenAI 自家数据，国内能不能直连公告没写。"
 ---
@@ -33,3 +33,9 @@ OpenAI 今天凌晨又发了一个新模型：**GPT-6.1 Terra**。先别被名�
 ## 顺带说个选型麻烦
 
 Terra、Sol、Astra 三个名字一摆，选型本身就变难了。给新手一个粗线条：**偶尔用、要最强，找旗舰；天天批量跑 agent 任务、对账单敏感，Terra 这类便宜快模型才是为你准备的**。等独立评测出来，再看它到底值不值得换。
+
+## 相关阅读
+
+- [OpenAI Codex 代码生成入门完整指南（2026版）](/posts/codex-guide/)
+- [2026年AI Agent完全指南：从Claude Agent到OpenAI Agent SDK，手把手搭建AI智能体](/posts/ai-agent-complete-guide-2026/)
+- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

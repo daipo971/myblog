@@ -3,11 +3,11 @@ title: "DeepSeek完全指南 2026：从入门到精通的免费AI模型使用教
 date: 2026-07-19
 description: "DeepSeek V3完全免费使用教程，从注册到进阶技巧，对比ChatGPT和Claude，含编程写作实测体验"
 summary: "DeepSeek完全指南，覆盖注册、网页版App使用、V3 vs ChatGPT vs Claude对比、编程写作实测、R1深度思考模式技巧"
+categories: ["中国与开源模型"]
 tags: ["DeepSeek", "免费AI", "AI工具", "AI教程", "大模型"]
 showtoc: true
 ---
 
-# DeepSeek完全指南 2026：从入门到精通的免费AI模型使用教程
 
 去年我第一次用DeepSeek的时候，说实话没抱太大期望。国产大模型嘛，之前试过好几个，要么答非所问，要么用两天就收费了。结果这次不一样。
 
