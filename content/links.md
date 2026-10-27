@@ -10,11 +10,11 @@ disableShare: true
 
 ---
 
-## 💳 HopeX — 海外会员代充
+## 💳 欣淇AI网 — 海外会员代充
 
 海外会员代充与独享账号商城：ChatGPT Plus 官方代充、X Premium 蓝标、Google One、Muse 独享账号等，支持微信/支付宝付款，下单后邮箱交付，附新手图文教程。
 
-👉 **[访问 HopeX 代充商城 →](https://shop.xinqai.com)**
+👉 **[访问欣淇AI网 →](https://shop.xinqai.com)**
 
 ## 🔒 HopeX Chat — 加密聊天
 
