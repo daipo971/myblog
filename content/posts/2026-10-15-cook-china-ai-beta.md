@@ -36,6 +36,11 @@ description: "库克访华期间亲口确认：国行 Apple Intelligence 首批�
 
 *信息核实时间：2026-10-15 20:40（CST）。来源：新浪科技（10-15）。测试版具体推送日期库克未给出，仅为"本月晚些时候"。*
 
+## 参考来源
+
+- [Global Times：库克谈国行 Apple Intelligence（英文）](https://www.globaltimes.cn/page/202610/1372342.shtml)
+- [Emirates 247：库克称国行 AI 已获批，10 月推出测试版（英文）](https://www.emirates247.com/business/tim-cook-apple-intelligence-approved-in-china-test-version-coming-in-october/6786)
+
 ## 相关阅读
 
 - [国行 Apple Intelligence 十月底开测：这份准备清单先收好](/posts/2026-10-20-apple-ai-prep-checklist/)

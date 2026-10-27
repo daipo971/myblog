@@ -59,6 +59,12 @@ Duet 的定位人群是职场人和小企业主，官方给的示例都很「运
 
 **Claude Duet 的信号意义大于当下的可用性**：Anthropic 正式把「主动干活」做成了独立产品，和 Meta Muse、OpenAI Dots 正面开战。它的批准制和密码隔离是目前最稳妥的一套 Agent 安全设计；但额度共享加后台消耗、紧急判断不准、仅限美国订阅，这三条决定了它短期内还是个「值得看、慢慢等」的预览版。Agent 从「等你问」进化到「先干活」，这件事本身，才是今天真正的大新闻。
 
+## 参考来源
+
+- [TechCrunch：Claude Duet（英文）](https://techcrunch.com/?p=3180587)
+- [VKTR：Anthropic 预览会主动发消息的 AI Agent（英文）](https://www.vktr.com/ai-platforms/claude-duet-anthropic-previews-an-ai-agent-that-messages-you-first/)
+- [INSIDE：Claude Duet 是什么](https://www.inside.com.tw/article/42702-anthropic-claude-duet-proactive-ai-agent)
+
 ## 相关阅读
 
 - [Claude 要上市了：Anthropic 招股书 614 页，我帮你读完了](/posts/2026-10-27-anthropic-ipo-s1-analysis/)

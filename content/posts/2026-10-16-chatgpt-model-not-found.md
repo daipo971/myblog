@@ -50,6 +50,11 @@ description: "2026年10月15日起大批 ChatGPT 网页端用户报 Model not fo
 
 *信息核实时间：2026-10-16 04:35（CST）。来源：凤凰网（10-15）、OpenAI 开发者社区、OpenAI 状态页、V2EX。时区/UA 等解法为网友实测，非官方口径。*
 
+## 参考来源
+
+- [Gizmochina：OpenAI 10 月 14 日退役 GPT-5.5（英文）](https://www.gizmochina.com/2026/09/16/openai-retiring-gpt-5-5-on-october-14/)
+- [OpenAI 开发者社区：Model not found 报错讨论（英文）](https://community.openai.com/t/model-not-found-error-only-on-my-account/1346410)
+
 ## 相关阅读
 
 - [Gate Card 虚拟卡教程：用 USDT 全球消费，最高 8% 返现](/posts/2026-10-16-gate-card-tutorial/)

@@ -89,6 +89,11 @@ description: "Anthropic 10 月 26 日向美国 SEC 公开递交 S-1，计划以 
 
 614 页读完，核心就一句话：**一家营收狂奔、主业刚扭亏、但背着 4000 多亿美元算力账单、创始人牢牢控盘的公司，正准备接受公开市场最严厉的一次考试。**
 
+## 参考来源
+
+- [Allocations：Anthropic S-1 股权结构解读（英文）](https://www.allocations.com/insights/anthropic-s-1-cap-table-shares-outstanding-and-what-to-watch-before-the-ipo)
+- [Leverage Shares：Anthropic IPO 进度追踪（英文）](https://leverageshares.com/us/anthropic-ipo-tracker/)
+
 ## 相关阅读
 
 - [Anthropic Claude 入门完整指南（2026版）](/posts/claude-guide/)

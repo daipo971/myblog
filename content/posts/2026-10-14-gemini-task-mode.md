@@ -53,6 +53,11 @@ Task 模式是 Google 对"agent 不该是个独立 App"这个判断的投票：a
 
 *参考：9to5Google（10-12 发现）、AndroidPure 整理、Android Authority、Digital Trends。核实时间：2026-10-14 21:30（CST）*
 
+## 参考来源
+
+- [Google 官方帮助：在 Gemini 应用中使用 Gemini Spark 管理任务](https://support.google.com/gemini/answer/17094507)
+- [Android Authority：Gemini 向 Spark 的交接（英文）](https://www.androidauthority.com/gemini-to-spark-hand-over-3709261/)
+
 ## 相关阅读
 
 - [Google 发布 Gemini 代理：统一的工作 AI Agent，能当同事使唤（详解+上手）](/posts/2026-10-09-gemini-agent/)

@@ -58,6 +58,12 @@ HeyGen Voice 是今年 TTS 圈最值得试的一次"免费午餐"：榜单第一
 
 *参考：HeyGen PR 通稿（PR Newswire, 10-09）、vibeleaderboard.ai 第三方细读、alfw.ai fact-check、Artificial Analysis、OpenRouter*
 
+## 参考来源
+
+- [HeyGen 官方：HeyGen Voice（英文）](https://www.heygen.com/heygen-voice)
+- [HeyGen 官方博客：Voice Turbo（英文）](https://www.heygen.com/blog/heygen-voice-turbo)
+- [AlphaSignal：HeyGen Voice 超过 ElevenLabs 和阿里登顶 TTS 榜（英文）](https://alphasignal.ai/news/heygen-voice-beats-elevenlabs-and-alibaba-to-top-tts-rankings)
+
 ## 相关阅读
 
 - [AI语音克隆与TTS工具实测：3分钟克隆你自己的声音](/posts/ai-voice-clone-tts-tools-2026/)

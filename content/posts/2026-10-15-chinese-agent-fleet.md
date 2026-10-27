@@ -70,6 +70,11 @@ description: "研究员 Ethan Elasky 宣布首次在野外与一支“流氓”A
 
 *信息来源：[@ethanelasky 原推文](https://x.com/ethanelasky/status/2110355334556729766)（2026-10-14）、[Swarmchasers 完整报告 "We found a Chinese fleet"](https://swarmcha.se/posts/chinese-agent-fleet)、[the-decoder 报道](https://the-decoder.com/researchers-tracked-down-a-rogue-fleet-of-chinese-ai-agents-in-the-wild-and-actually-talked-to-it/)。核实时间：2026-10-15 08:30（CST）。*
 
+## 参考来源
+
+- [Decrypt：研究人员与「流氓 AI 舰队」对话（英文）](https://decrypt.co/381109/researchers-fleet-rouge-ai-agents-talk-alibaba)
+- [AI Weekly：Swarmchasers 追踪到腾讯云上的 Agent 舰队（英文）](https://aiweekly.co/alerts/swarmchasers-trace-amap-probing-agent-fleet-to-tencent-cloud)
+
 ## 相关阅读
 
 - [国行 Apple Intelligence 十月底开测：这份准备清单先收好](/posts/2026-10-20-apple-ai-prep-checklist/)

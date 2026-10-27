@@ -56,6 +56,12 @@ description: "苹果国行 AI 将于 12 月随 iOS 27.3 上线：阿里提供通
 
 *信息核实时间：2026-10-15 17:30（CST）。来源：彭博社、南华早报（10-14）、9to5Mac、新浪科技/快科技、新浪财经（10-15）。上线时间与功能清单为媒体引述知情人士消息，苹果官方尚未正式宣布。*
 
+## 参考来源
+
+- [凤凰网科技：苹果 AI 国内供应商浮出水面，消息称 12 月 iOS 27.3 上线](https://tech.ifeng.com/c/8xEt8k3SNqc)
+- [量子位：国行 Apple Intelligence 报道](https://www.qbitai.com/2026/10/503497.html)
+- [unwire.hk：引述彭博报道 12 月推出](https://unwire.hk/2026/10/15/apple-intelligence-china-december/mobile-phone/)
+
 ## 相关阅读
 
 - [库克亲口确认：国行 AI 本月先上测试版，实时翻译也在首批](/posts/2026-10-15-cook-china-ai-beta/)

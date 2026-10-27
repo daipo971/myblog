@@ -35,6 +35,12 @@ OpenAI 今天凌晨又发了一个新模型：**GPT-6.1 Terra**。先别被名�
 
 Terra、Sol、Astra 三个名字一摆，选型本身就变难了。给新手一个粗线条：**偶尔用、要最强，找旗舰；天天批量跑 agent 任务、对账单敏感，Terra 这类便宜快模型才是为你准备的**。等独立评测出来，再看它到底值不值得换。
 
+## 参考来源
+
+- [OpenAI 官方 X 账号：GPT-6.1 Terra 发布（英文）](https://x.com/OpenAI/status/2114780711664398349)
+- [BleepingComputer：OpenAI 发布 GPT-6.1 Terra（英文）](https://www.bleepingcomputer.com/news/artificial-intelligence/openai-launches-gpt-61-terra-with-3x-faster-ai-agents-50-percent-lower-pricing/)
+- [Artificial Analysis：GPT-6.1 Terra 性价比评测（英文）](https://artificialanalysis.ai/articles/gpt-6-1-terra-pushes-the-cost-efficiency-frontier)
+
 ## 相关阅读
 
 - [OpenAI Codex 代码生成入门完整指南（2026版）](/posts/codex-guide/)

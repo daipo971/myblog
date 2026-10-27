@@ -63,6 +63,11 @@ Muse Wonder 标志着 Meta 的彻底转向：从"Llama 普惠开源"到"前沿�
 
 *参考：Meta 官方模型卡、Artificial Analysis、TechCrunch、dev.to 实测汇总*
 
+## 参考来源
+
+- [TechCrunch：Meta 发布首个前沿模型 Muse Wonder（英文）](https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder)
+- [YourStory：Muse Wonder 让 Meta 重回 AI 竞赛（英文）](https://yourstory.com/ai-story/muse-wonder-meta-ai-race-frontier-models)
+
 ## 相关阅读
 
 - [开源倒计时：阶跃 Step 5 Preview 登顶 OpenRouter 趋势榜，10 月 15 日放出权重前先看懂这几件事](/posts/2026-10-13-step-5-preview/)

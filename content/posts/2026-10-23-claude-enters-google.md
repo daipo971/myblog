@@ -43,6 +43,11 @@ Antigravity 是谷歌的 Agent 编程平台（IDE + CLI + VS Code/JetBrains 插�
 
 「Claude 杀入谷歌」不是一句标题党：办公（Workspace）、编程（Antigravity）、企业云（Anthropic 托管部署）三条线在一个月内全部落地，而且全是谷歌官方官宣。AI 竞争的主战场，正在从「谁家模型强」变成「谁能住进用户的日常工作流」——这一局，Claude 选择直接住进谷歌家里。
 
+## 参考来源
+
+- [Claude 官方：Claude on Google Cloud（英文）](https://claude.com/partners/google-cloud)
+- [INSIDE：Google Antigravity 上架 Claude Opus 5.5 与 Sonnet 5.5](https://www.inside.com.tw/article/42558-google-antigravity-claude-opus-5-5-sonnet-5-5-gpt-oss-120b-retirement)
+
 ## 相关阅读
 
 - [Anthropic Claude 入门完整指南（2026版）](/posts/claude-guide/)

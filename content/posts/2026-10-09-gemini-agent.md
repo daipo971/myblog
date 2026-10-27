@@ -95,6 +95,11 @@ Gemini 代理是一个**通用工作 AI**：你给它一个目标，它自己规
 
 Google 这次把"AI 代理"从 demo 玩具变成了企业基础设施：统一入口、跨设备记忆、多代理协作、模型自由选、企业级治理。2026 年确实是 AI Agent 元年，各家都在抢"帮你干活"的定义权——Google 赌的是"你的工作本来就在 Workspace 里"。
 
+## 参考来源
+
+- [Reworked：谷歌在 Gemini at Work 发布通用工作 Agent（英文）](https://www.reworked.co/collaboration-productivity/google-debuts-its-all-purpose-gemini-agent-for-work/)
+- [Neoteo：Google Cloud 发布面向企业的 Gemini 工作代理（英文）](https://www.neoteo.com/en/google-cloud-announces-gemini-work-agent-for-business)
+
 ## 相关阅读
 
 - [Gemini App 上线 Task 模式：Spark agent 收进主 App，任务后台一直跑](/posts/2026-10-14-gemini-task-mode/)

@@ -52,6 +52,11 @@ Meta 的回应是：私人一对一的 AI 对话，和在公开社交网络上�
 
 真正值得记住的就一句话：**Meta 没有"放开"一个新功能，而是被实测证明它本来就没拦，然后亲口承认了。** 规则和产品对不上，才是这场争议到现在还没熄火的原因。
 
+## 参考来源
+
+- [Cybernews：Meta 认为 Muse 的成人对话没有问题（英文）](https://cybernews.com/ai-news/meta-muse-sexting-users/)
+- [AI Weekly：WIRED 实测后 Meta 为 Muse 辩护（英文）](https://aiweekly.co/alerts/meta-defends-muse-ais-sexting-after-wired-hands-on-test)
+
 ## 相关阅读
 
 - [Meta Muse 邀请码实测：注册领 10 亿 Token，双方各得（附兑换教程与避坑）](/posts/2026-10-09-muse-referral/)
