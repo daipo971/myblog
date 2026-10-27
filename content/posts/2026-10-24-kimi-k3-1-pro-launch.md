@@ -55,6 +55,14 @@ K3.1 Pro 不是从头训练的新模型，而是 K3 的「后训练升级版」�
 
 周二我会再出一篇保姆级上手教程：怎么在 App 里选对模型、长文档和编程任务分别怎么用、API 怎么接，手把手带一遍。这篇先把新闻和结论给大家——**国产模型这次是真的摸到天花板了，而且不用翻墙就能用。**
 
+## 参考来源
+
+- [MarkTechPost：Moonshot AI 发布 Kimi K3.1 Pro（英文）](https://www.marktechpost.com/2026/10/23/moonshot-ai-kimi-k3-1-pro-open-weight-model/)
+- [Digital Today：Kimi K3.1 Pro 发布报道](https://www.digitaltoday.co.kr/cn/view/119045/moonshot-ai-launches-kimi-k3-1-pro-llm-highlights-3d-modeling-and-finance-analysis-performance)
+- [Vals.ai：Kimi K3.1 Pro 第三方评测榜单（英文）](https://www.vals.ai/models/kimi_kimi-k3.1-pro)
+
+文中跑分、价格等数据多为厂商官方说法，以官方最新公布为准。
+
 ## 相关阅读
 
 - [Kimi 模型档案：全版本、价格、开源进度与国内用法](/posts/kimi-guide/)：这个模型的全部信息汇总，持续更新

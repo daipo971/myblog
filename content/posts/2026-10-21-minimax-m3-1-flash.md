@@ -45,6 +45,13 @@ categories: ["中国与开源模型"]
 
 **M3.1 Flash 的定位很清楚：便宜、快、上下文大，当 Agent 和代码场景的「干活模型」很合适；但它不是个老实的知识模型，幻觉率 93% 这条红线要记牢。** 先用免费路由跑两个你自己的真实任务测一测，比看任何跑分都准。周五权重开源后，如果许可证友好，本地部署又多一个高性价比选项。
 
+## 参考来源
+
+- [OpenRouter：MiniMax M3.1 Flash 模型页（价格、上下文）](https://openrouter.ai/minimax/minimax-m3.1-flash)
+- [TechNode：MiniMax 开放 4280 亿参数 M3.1 Flash 权重（英文）](https://technode.com/2026/10/23/minimax-releases-open-weights-for-428-billion-parameter-m3-1-flash-model/)
+
+文中跑分、价格等数据多为厂商官方说法，以官方最新公布为准。
+
 ## 相关阅读
 
 - [MiniMax 模型档案：规格、价格、许可证与国内用法](/posts/minimax-guide/)：这个模型的全部信息汇总，持续更新

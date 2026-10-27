@@ -51,6 +51,13 @@ DeepSeek 昨天（10 月 17 日）又放了个新模型：**DeepSeek-V4.1-Flash-
 
 DeepSeek 这波的思路很清楚：不跟你拼参数，拼的是"跑起来便宜"。对咱们这种要真刀真枪用的用户来说，这比榜单第一实在多了。
 
+## 参考来源
+
+- [TechNode：DeepSeek 发布 V4.1 Flash 1017（英文）](https://technode.com/2026/10/19/deepseek-releases-v4-1-flash-1017-with-stronger-coding-and-agent-capabilities/)
+- [凤凰网科技：DeepSeek V4.1 Flash 更新报道](https://tech.ifeng.com/c/8xIZufSArx4)
+
+文中跑分、价格等数据多为厂商官方说法，以官方最新公布为准。
+
 ## 相关阅读
 
 - [DeepSeek 完全指南与版本档案](/posts/deepseek-complete-guide-2026/)：这个模型的全部信息汇总，持续更新
