@@ -264,3 +264,8 @@ AI工具发展到2026年这个阶段，单打独斗的时代已经过去了。�
 ---
 
 *声明：这篇文章里提到的工具链接部分是联盟链接。如果你通过它们注册或购买服务，我会获得少量佣金，不影响你的使用价格。所有推荐都是基于真实使用体验。*
+
+## 相关阅读
+
+- [2026年AI Agent完全指南：从Claude Agent到OpenAI Agent SDK](/posts/ai-agent-complete-guide-2026/)：想让 AI 自己干活，看 Agent
+- [AI智能体实战指南：用n8n搭建AI自动化工作流](/posts/ai-agent-workflow-guide-2026/)：不写代码，拖拽搭自动化

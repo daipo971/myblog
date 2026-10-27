@@ -61,13 +61,13 @@
 
 ### 第 2 阶段：主题结构 + 英文首批（2026 年 11 月下半月至 12 月）
 
-- [ ] 4 个支柱中心页
-- [ ] 合并 AI Agent / 工作流三篇（概念一篇 + n8n 实操一篇）
-- [ ] 模型档案页：Kimi、MiniMax、Step、Reflection Beam、DeepSeek
+- [x] 4 个支柱中心页（PR #5，2026-10-28）
+- [x] AI Agent / 工作流三篇：检查后不合并（概念与框架、n8n 实操、现成工具组合是三种不同搜索意图），改为互相链接
+- [x] 模型档案页：kimi-guide、minimax-guide、stepfun-step-guide、reflection-beam-guide，DeepSeek 在完全指南里加版本档案（PR #6）
 - [ ] 英文第一批 10 篇（模型档案页）——英文分支负责
-- [ ] 「ChatGPT / Claude / Gemini 国内开通总纲」
+- [x] 「ChatGPT / Claude / Gemini 国内开通总纲」：chatgpt-claude-gemini-china-access-guide（PR #7）
 - [ ] 给 10 月快讯补一手来源链接
-- [ ] 给流量最高的 10 篇教程补截图
+- [ ] 给教程补截图（需要站长实际操作截图，清单见下文「待补截图」）
 
 ### 第 3 阶段：扩张与复盘（2027 年 1–3 月）
 
@@ -75,6 +75,25 @@
 - [ ] 标题写「2026」的常青文章更新为 2027（网址不动）
 - [ ] 每月用 Search Console / Bing Webmaster 数据找「有展现无点击」的页面优化
 - [ ] 按数据决定英文端投入和支柱调整
+
+## 待补截图
+
+截图需要真实操作界面，由站长提供。放在 `static/images/<slug>/`，用 webp，每个关键步骤一张，并写 alt 文字。按优先级：
+
+| 优先级 | 文章 | 需要截图的步骤 |
+| --- | --- | --- |
+| 1 | 2026-10-15-us-apple-id | App Store 入口、地区选择、付款方式选「无」、验证完成 |
+| 1 | 2026-10-15-google-play-region | 手机端与电脑端改地区的入口和确认页 |
+| 1 | 2026-10-15-us-apple-giftcard | 兑换入口、输入卡号、余额显示 |
+| 1 | 2026-10-21-muse-china-user-guide | Airtap 主推路线每一步、兑码页、申诉页 |
+| 2 | 2026-10-21-airtap-cloud-phone-tutorial | 注册、领取云手机、节点设置 |
+| 2 | 2026-10-20-wise-guide | 开户流程、身份验证、开卡 |
+| 2 | 2026-10-17-google-workspace-turkey-domain | 地区选择、域名购买、付款 |
+| 2 | 2026-10-16-gate-card-tutorial | 开卡、充值、绑定 |
+| 3 | free-blog-tutorial | VPS 控制台、域名解析、Cloudflare 设置 |
+| 3 | cloudflare-pages-tutorial-2026 | 连接 GitHub、构建设置、自定义域名 |
+| 3 | free-domain-guide | 注册、接入 Cloudflare |
+| 3 | free-vps-guide | Oracle Cloud 注册与创建实例 |
 
 ## 衡量指标（每月看一次）
 
