@@ -40,6 +40,7 @@ categories: ["中国与开源模型"]
 
 ## 相关阅读
 
+- [MiniMax 模型档案：规格、价格、许可证与国内用法](/posts/minimax-guide/)：这个模型的全部信息汇总，持续更新
 - [MiniMax M3.1 Flash 发布：价格只有 DeepSeek 的一半，但有个毛病得先说清](/posts/2026-10-21-minimax-m3-1-flash/)
 - [DeepSeek-V4.1-Flash 来了：更快更便宜，MIT 开源随便用，附国内使用指南](/posts/2026-10-18-deepseek-v41-flash/)
 - [Kimi K3.1 Pro 发布：编程跑分超 GPT-6，11 月 4 日开源全部权重](/posts/2026-10-24-kimi-k3-1-pro-launch/)

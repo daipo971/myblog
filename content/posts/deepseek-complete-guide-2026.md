@@ -1,6 +1,7 @@
 ---
 title: "DeepSeek完全指南 2026：从入门到精通的免费AI模型使用教程"
 date: 2026-07-19
+lastmod: 2026-10-28T06:40:00+08:00
 description: "DeepSeek V3完全免费使用教程，从注册到进阶技巧，对比ChatGPT和Claude，含编程写作实测体验"
 summary: "DeepSeek完全指南，覆盖注册、网页版App使用、V3 vs ChatGPT vs Claude对比、编程写作实测、R1深度思考模式技巧"
 categories: ["中国与开源模型"]
@@ -275,6 +276,27 @@ DeepSeek的内容审核比国外模型更严格，涉及某些话题会被直接
 这样一套组合下来，我基本不用操心AI工具的费用（DeepSeek永久免费），而且效率提升很明显。
 
 ---
+
+## 版本档案（2026 年 10 月更新）
+
+本文前半部分写于 2026 年 7 月，基于 DeepSeek V3 和 R1。之后 DeepSeek 又发布了新版本，这一节持续记录。
+
+| 时间 | 版本 | 要点 |
+| --- | --- | --- |
+| 2026-10-17 | DeepSeek-V4.1-Flash-1017 | 主打快和便宜，MIT 开源，100 万上下文，单次最多输出 38.4 万 token |
+| 2026-07 前 | V3 / R1 | 本文前文实测的版本，R1 即「深度思考」模式 |
+
+**V4.1 Flash 的 API 价格（每百万 token）**
+
+| 类型 | 闲时 | 高峰 |
+| --- | --- | --- |
+| 输入 | $0.15 | $0.30 |
+| 缓存输入 | $0.003 | $0.006 |
+| 输出 | $0.60 | $1.20 |
+
+高峰时段为工作日 06:30–09:30 和 11:30–15:30（印度时间），中国公共节假日除外。同时上线了 Search API 和 Fetch API，均为 $0.75 / 1000 次。权重可在 Hugging Face 或魔搭社区下载，MIT 协议商用无限制。详见 [DeepSeek-V4.1-Flash 发布与国内使用指南](/posts/2026-10-18-deepseek-v41-flash/)。
+
+想对比其他国产模型：[Kimi 模型档案](/posts/kimi-guide/) · [MiniMax 模型档案](/posts/minimax-guide/) · [阶跃 Step 模型档案](/posts/stepfun-step-guide/)。
 
 ## 总结
 

@@ -57,6 +57,7 @@ K3.1 Pro 不是从头训练的新模型，而是 K3 的「后训练升级版」�
 
 ## 相关阅读
 
+- [Kimi 模型档案：全版本、价格、开源进度与国内用法](/posts/kimi-guide/)：这个模型的全部信息汇总，持续更新
 - [Kimi K3.1 Pro 发布了：国产 3T 大模型，能跟 Claude Opus 掰手腕，普通人这样免费用上](/posts/2026-10-27-kimi-k3-1-pro-guide/)
 - [开源倒计时：阶跃 Step 5 Preview 登顶 OpenRouter 趋势榜，10 月 15 日放出权重前先看懂这几件事](/posts/2026-10-13-step-5-preview/)
 - [MiniMax M3.1 Flash 权重今日放出：许可证已落地，商用门槛比预想低](/posts/2026-10-23-minimax-m3-1-weights/)

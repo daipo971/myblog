@@ -36,6 +36,7 @@ tags: ["开源模型", "Reflection", "Beam", "大模型"]
 
 ## 相关阅读
 
+- [Reflection Beam 模型档案：规格、许可、跑分与部署门槛](/posts/reflection-beam-guide/)：这个模型的全部信息汇总，持续更新
 - [Reflection Beam 解析：501B 参数的「西方 DeepSeek」，权重还没发，先看懂这 8 件事](/posts/2026-10-08-reflection-beam-jiexi/)
 - [DeepSeek-V4.1-Flash 来了：更快更便宜，MIT 开源随便用，附国内使用指南](/posts/2026-10-18-deepseek-v41-flash/)
 - [Kimi K3.1 Pro 发布了：国产 3T 大模型，能跟 Claude Opus 掰手腕，普通人这样免费用上](/posts/2026-10-27-kimi-k3-1-pro-guide/)
