@@ -3,6 +3,7 @@ title: "AI工具月度省钱攻略：2026年怎么用最少的钱配齐最强的
 date: 2026-07-16
 description: "2026年AI订阅省钱指南：从月花费200美金到50块的实操方案，覆盖ChatGPT、Claude、Cursor等主流工具的最优搭配。"
 summary: "手把手教你搭AI工具组合方案：0元免费党、50元轻度付费、200元效率党，每套方案都有具体搭配和真实花费。"
+categories: ["AI工具实测"]
 tags: ["AI省钱", "AI工具", "订阅优化", "效率工具", "省钱攻略"]
 showtoc: true
 ---
@@ -25,7 +26,7 @@ ChatGPT Plus $20、Claude Pro $20、Cursor Pro $20、Midjourney $30、GitHub Cop
 
 适合人群：学生党、轻度使用者
 
-**说结论：如果你只是日常写写文章、查查资料、偶尔改个代码，免费版完全够用。** 我之前写过一篇 [试了20多个免费AI工具，这7个我留在了电脑上](/posts/7-free-ai-tools-2026/)，里面每个我都用了至少两个月。
+**说结论：如果你只是日常写写文章、查查资料、偶尔改个代码，免费版完全够用。** 我之前写过一篇 [试了20多个免费AI工具，这7个我留在了电脑上](/posts/free-ai-tools-2026/)，里面每个我都用了至少两个月。
 
 ### 免费组合搭配
 
@@ -229,7 +230,7 @@ ChatGPT Plus $20、Claude Pro $20、Cursor Pro $20、Midjourney $30、GitHub Cop
 ---
 
 **相关阅读：**
-- [试了20多个免费AI工具，这7个我留在了电脑上](/posts/7-free-ai-tools-2026/)
+- [试了20多个免费AI工具，这7个我留在了电脑上](/posts/free-ai-tools-2026/)
 - [2026年真正好用的免费AI工具：从ChatGPT到Claude](/posts/free-ai-tools-2026/)
 - [如何用AI工具每个月省下$100？我的省钱实操指南](/posts/save-money-with-ai/)
 - [最佳免费AI工具2026盘点](/posts/best-free-ai-tools-2026/)

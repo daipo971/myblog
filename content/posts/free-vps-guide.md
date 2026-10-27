@@ -3,6 +3,7 @@ title: "免费 VPS 对比：Oracle Cloud 免费层完全指南（2026更新）"
 date: 2026-07-04T00:00:00+08:00
 draft: false
 description: "Oracle Cloud Free Tier 永久免费，Google Cloud Always Free 服务丰富。写一篇专业对比，适合建站、学习使用。"
+categories: ["建站与副业"]
 tags: ["Oracle Cloud", "Free VPS", "云计算", "建站教程"]
 ---
 
@@ -285,3 +286,10 @@ A:
 - [Oracle Cloud Free Tier 官方页面](https://www.oracle.com/cloud/free/)
 - [Google Cloud Always Free 2026 更新](https://cloud.google.com/free)
 - [V2EX 免费 VPS 組](https://www.v2ex.com/go/freedom)
+
+## 相关阅读
+
+- [从零搭建个人博客：免费VPS + 免费域名 + Cloudflare托管](/posts/free-blog-tutorial/)
+- [Cloudflare Pages 完全教程：从部署到优化的全套指南](/posts/cloudflare-pages-tutorial-2026/)
+- [2026年网站推广完全指南：从SEO到社交媒体的全链路营销策略](/posts/website-promotion-strategy-2026/)
+- 更多「建站与副业」文章：[/categories/建站与副业/](/categories/建站与副业/)

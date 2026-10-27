@@ -2,9 +2,9 @@
 title: "AI模型量化指南：从理论到实践的完整解决方案"
 date: "2026-07-09"
 description: "AI 模型量化的理论基础与实践完整解决方案"
+categories: ["建站与副业"]
 ---
 
-# AI模型量化指南：从理论到实践的完整解决方案
 
 ## 引言
 
@@ -234,3 +234,10 @@ network = builder.create_network(1 << int(trt.NetworkDefinitionCreationFlag.EXPL
 ---
 
 *有些外部工具链接是联盟链接，如果你通过这些链接购买，我会获得少量佣金（不影响你的价格）。所有推荐都是我亲自用过并觉得不错的产品。*
+
+## 相关阅读
+
+- [2026年AI模型优化完全指南：从基础到高级的深度优化技术](/posts/ai-model-optimization-2026/)
+- [2026年AI内容营销策略：从内容创作到流量转化的完整指南](/posts/ai-content-strategy-2026/)
+- [SEO优化指南：如何提高欣淇AI网的搜索引擎排名](/posts/seo-optimization-guide/)
+- 更多「建站与副业」文章：[/categories/建站与副业/](/categories/建站与副业/)

@@ -3,6 +3,7 @@ title: "2026年推特(X)全自动化运营指南：用AI每天自动涨粉引流
 date: 2026-07-24
 description: "教你如何脱离Twitter API限制，利用AI和自动化脚本实现推特全自动运营、定时发推、自动追热点涨粉。"
 summary: "推特API太贵？不用怕，本文教你用自动化测试工具结合AI大模型，实现真正的Twitter零成本全自动化运营，每天只需5分钟，流量自动来。"
+categories: ["建站与副业"]
 tags: ["AI", "Twitter", "自动化", "运营", "引流"]
 showtoc: true
 ---
@@ -47,7 +48,7 @@ showtoc: true
 
 强烈建议使用 [Cursor](https://cursor.sh/) 进行开发，免费版完全够用！
 
-👉 相关阅读：[Cursor 编程神器终极教程](/posts/cursor-ai-tutorial-2026/)
+👉 相关阅读：[Cursor 编程神器终极教程](/posts/cursor-programming-tools/)
 
 ---
 

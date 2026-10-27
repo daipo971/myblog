@@ -3,6 +3,7 @@ title: "2026年最值得订阅的AI工具：这8个我每个月都花钱，但�
 date: 2026-07-16
 description: "每个月花在AI工具上快200美金，但说实话这8个我真舍不得退。写了篇真实的付费体验，帮你决定哪些该买、哪些可以省。"
 summary: "8个我每个月真金白银在续费的AI工具，从ChatGPT到Midjourney，有踩坑也有真香。想省钱的朋友可以重点看最后。"
+categories: ["AI工具实测"]
 tags: ["AI工具", "付费订阅", "ChatGPT", "Claude", "Cursor", "效率工具", "省钱"]
 showtoc: true
 ---
@@ -67,7 +68,7 @@ Claude最让我服气的两点：一是那个200K的上下文窗口，真的不�
 
 Cursor最牛逼的是那个Composer（Cmd+I），你可以在一整个文件甚至跨文件的情况下跟AI对话改代码。比如我说"把这个函数拆成两个模块，然后加个错误处理"，它直接就把活干完了。以前这种需求我得手动改半天，现在一句话搞定。
 
-我还写过一篇[Cursor的使用教程](/posts/cursor-ai-tutorial-2026/)，里面详细说了我怎么配置和用的。新手上路可以看看那篇。
+我还写过一篇[Cursor的使用教程](/posts/cursor-programming-tools/)，里面详细说了我怎么配置和用的。新手上路可以看看那篇。
 
 唯一要注意的是：别太依赖它。有时候AI生成的代码看起来对，但逻辑有问题。该review还是要review。
 
@@ -163,7 +164,7 @@ Perplexity Pro最让我上瘾的是：它帮你搜资料、整理、列来源，
 
 **Otter.ai** — 会议记录。如果你经常开会可以试试，但我用得不多，后来取消了。
 
-关于免费替代品，我写过一篇[7个免费AI工具推荐](/posts/7-free-ai-tools-2026/)，有些场景真的可以不花钱。
+关于免费替代品，我写过一篇[7个免费AI工具推荐](/posts/free-ai-tools-2026/)，有些场景真的可以不花钱。
 
 ---
 
@@ -186,7 +187,7 @@ Perplexity Pro最让我上瘾的是：它帮你搜资料、整理、列来源，
 
 我自己的策略是：保留ChatGPT Plus、Cursor Pro和Claude Pro，其他按需开关。这样每个月大概$60就够了，而不是之前的$200。
 
-如果你想看更全面的免费AI工具对比，可以看看我之前的文章：[免费AI工具大盘点](/posts/free-ai-tools-2026/) 和 [AI工具横评2026](/posts/ai-tools-comparison-2026/)。
+如果你想看更全面的免费AI工具对比，可以看看我之前的文章：[免费AI工具大盘点](/posts/free-ai-tools-2026/) 和 [AI工具横评2026](/posts/chatgpt-vs-claude-vs-cursor-guide/)。
 
 ---
 

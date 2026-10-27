@@ -4,7 +4,7 @@ date: 2026-10-09T08:00:00+08:00
 lastmod: 2026-10-09T08:00:00+08:00
 description: "Meta 个人 AI 助手 Muse 推荐计划详解：新用户 48 小时内兑换邀请码，双方各得 10 亿 Token。附完整兑换步骤、邀请码 K6MRW6，以及地区限制、等待名单等实话。 "
 tags: ["AI工具", "Muse", "Meta", "邀请码", "Token", "教程"]
-categories: ["AI工具评测"]
+categories: ["海外服务通关"]
 draft: false
 showTableOfContents: true
 ---
@@ -56,3 +56,10 @@ Token 是它的"燃料"，AI 干活都要消耗 Token。官方给的免费额度
 
 > 邀请码：**K6MRW6**
 > https://muse.ai/join
+
+## 相关阅读
+
+- [Muse 能聊成人话题、真人发帖却被删：Meta 这次的双标争议是怎么来的](/posts/2026-10-27-muse-nsfw-controversy/)
+- [Muse 大面积封号始末：邀请码羊毛薅崩了风控，申诉指南来了](/posts/2026-10-15-muse-ban-wave/)
+- [今天 Muse 大规模风控：已解除关联的按这 6 步申诉，非美日 IP 先停一停](/posts/2026-10-27-muse-risk-control-unlink-appeal/)
+- 更多「海外服务通关」文章：[/categories/海外服务通关/](/categories/海外服务通关/)

@@ -4,7 +4,7 @@ date: 2026-07-27
 description: "实测4大AI搜索引擎，从准确率、速度、免费额度到中文支持，看看哪个才是2026年最好用的AI搜索工具。"
 summary: "实测Perplexity、Google AI Overviews、Bing Copilot、Komo等AI搜索引擎，全面对比准确率、速度、免费额度和中文支持，帮你找到最适合的AI搜索工具。"
 tags: ["AI搜索", "搜索引擎", "Perplexity", "Google AI", "Bing Copilot", "Komo", "AI工具"]
-categories: ["AI工具"]
+categories: ["AI工具实测"]
 showtoc: true
 ---
 
@@ -259,3 +259,10 @@ Perplexity 处理需要深度的搜索，Google 处理快速查询。两者互�
 ---
 
 *你对AI搜索有什么看法？有没有其他好用的工具推荐？欢迎在评论区分享你的使用体验。*
+
+## 相关阅读
+
+- [Perplexity AI深度体验：用了一个月，我卸载了Google](/posts/perplexity-ai-deep-review-2026/)
+- [2026年AI编程工具横向评测：Cursor vs Windsurf vs GitHub Copilot vs Claude，谁才是最强辅助？](/posts/ai-coding-tools-comparison-2026/)
+- [2026年AI代码编辑器深度评测：从VS Code到Cursor的全面对比](/posts/ai-code-editor-2026/)
+- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

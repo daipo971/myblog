@@ -3,6 +3,7 @@ title: "2026年学生党AI工具组合：预算100块以内，把这些免费+�
 date: 2026-07-16
 description: "学生党预算有限怎么玩AI？100块以内的免费+低价AI工具搭配方案，ChatGPT免费版、Claude、DeepSeek、Cursor、Perplexity全攻略。"
 summary: "手把手教学生党用最少的钱组出最强AI工具组合。ChatGPT免费版、Claude、DeepSeek、Cursor、Perplexity怎么搭配最好用，全在这了。"
+categories: ["AI工具实测"]
 tags: ["AI工具", "学生党", "省钱", "免费AI", "效率工具", "ChatGPT", "Claude"]
 showtoc: true
 ---
@@ -90,7 +91,7 @@ Cursor 免费版每天 2000 次 AI 补全 + 500 次对话。说实话，我一�
 
 我之前写过一篇很详细的 Cursor 使用心得，踩坑和技巧都说了：
 
-👉 [用了半年Cursor AI，有些话不吐不快](/posts/cursor-ai-tutorial-2026/)
+👉 [用了半年Cursor AI，有些话不吐不快](/posts/cursor-programming-tools/)
 
 Cursor 默认用的模型是 GPT-4，但你去设置里换成 Claude 模型，写代码效果会好很多。这算是一个小 trick。
 
@@ -207,9 +208,9 @@ ChatGPT 免费版管日常，Claude 免费版管长篇写作和论文，DeepSeek
 
 **相关阅读：**
 
-- [试了20多个免费AI工具，这7个我留在了电脑上](/posts/7-free-ai-tools-2026/)
+- [试了20多个免费AI工具，这7个我留在了电脑上](/posts/free-ai-tools-2026/)
 - [ChatGPT 4o 免费版深度体验：不花钱真的够用吗？](/posts/chatgpt-4o-free-guide-2026/)
 - [ChatGPT vs Claude vs Cursor：2026年深度对比与选择指南](/posts/chatgpt-vs-claude-vs-cursor-guide/)
-- [我用了半年Cursor AI，有些话不吐不快](/posts/cursor-ai-tutorial-2026/)
+- [我用了半年Cursor AI，有些话不吐不快](/posts/cursor-programming-tools/)
 - [Perplexity AI深度体验：用了一个月，我卸载了Google](/posts/perplexity-ai-deep-review-2026/)
 *** End of File

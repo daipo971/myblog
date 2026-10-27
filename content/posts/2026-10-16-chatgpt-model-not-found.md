@@ -3,7 +3,7 @@ title: "ChatGPT 网页端大面积 \"Model not found\"：原因找到了，3 种
 date: 2026-10-16T04:30:00+08:00
 draft: false
 tags: ["ChatGPT", "OpenAI", "故障", "教程"]
-categories: ["AI前沿"]
+categories: ["海外服务通关"]
 description: "2026年10月15日起大批 ChatGPT 网页端用户报 Model not found。根本原因是 GPT-5.5 于 10 月 14 日退役，旧会话仍指向它。本文整理官方信息与网友实测解法。"
 ---
 
@@ -48,3 +48,10 @@ description: "2026年10月15日起大批 ChatGPT 网页端用户报 Model not fo
 ---
 
 *信息核实时间：2026-10-16 04:35（CST）。来源：凤凰网（10-15）、OpenAI 开发者社区、OpenAI 状态页、V2EX。时区/UA 等解法为网友实测，非官方口径。*
+
+## 相关阅读
+
+- [Gate Card 虚拟卡教程：用 USDT 全球消费，最高 8% 返现](/posts/2026-10-16-gate-card-tutorial/)
+- [Muse 大面积封号始末：邀请码羊毛薅崩了风控，申诉指南来了](/posts/2026-10-15-muse-ban-wave/)
+- [免翻墙！微信官方通道直连 AI 助手：iLink / ClawBot 扫码登录完整教程](/posts/2026-10-09-wechat-ilink-bridge/)
+- 更多「海外服务通关」文章：[/categories/海外服务通关/](/categories/海外服务通关/)

@@ -3,6 +3,7 @@ title: "Cursor vs Windsurf 2026深度对比：两个最强AI编程IDE到底怎�
 date: 2026-07-21
 description: "Cursor和Windsurf两款最热门AI编程IDE的深度对比评测，从代码补全、Composer/Cascade、价格、性能等全方位对比"
 summary: "Cursor vs Windsurf 2026深度对比，代码补全、Composer vs Cascade、Tab补全准确率、价格性价比、适用场景全方位评测"
+categories: ["AI工具实测"]
 tags: ["Cursor", "Windsurf", "AI编程", "编程工具", "IDE", "开发者工具", "代码编辑器"]
 showtoc: true
 ---
@@ -29,7 +30,7 @@ showtoc: true
 
 它的工作方式很简单：你在一个对话框里描述需求，它在多个文件里同步生成代码。改一个地方，它自动联动改好几个相关文件。我最近重构一个后端项目的时候，直接告诉 Composer "把这个 Express 的路由改成按模块目录结构组织"，它一下子生成了十几个文件，目录结构、路由注册、中间件链全自动搞好了。
 
-[我之前那篇Cursor教程](/posts/cursor-ai-tutorial-2026/)里写过Composer的用法，但那会儿版本还没现在这么强。2026年中的这个版本，Composer 已经支持了：
+[我之前那篇Cursor教程](/posts/cursor-programming-tools/)里写过Composer的用法，但那会儿版本还没现在这么强。2026年中的这个版本，Composer 已经支持了：
 - **Agent模式** — 自动运行终端命令、安装依赖、读文档
 - **上下文记忆** — 同一轮对话里它能记住之前说过的需求
 - **多模型支持** — 可以选Claude Sonnet、GPT-4o、甚至用本地模型
@@ -236,7 +237,6 @@ Cursor 和 Windsurf，谁更强？我的答案很直白：
 
 ### 相关阅读
 
-- [Cursor AI 详细教程 2026](/posts/cursor-ai-tutorial-2026/)
 - [2026年AI编程工具横向评测：Cursor vs Windsurf vs GitHub Copilot vs Claude](/posts/ai-coding-tools-comparison-2026/)
 - [2026年AI代码编辑器深度评测](/posts/ai-code-editor-2026/)
 - [Cursor编程工具深度评测：真的能提升10倍效率吗？](/posts/cursor-programming-tools/)

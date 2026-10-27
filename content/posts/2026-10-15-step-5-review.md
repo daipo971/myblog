@@ -3,7 +3,7 @@ title: "Step 5 开源复盘：协议改了、量化来了，“1/8 成本”到�
 date: 2026-10-15T16:05:00+08:00
 draft: false
 tags: ["AI大模型", "阶跃星辰", "Step 5", "开源模型"]
-categories: ["AI工具评测"]
+categories: ["中国与开源模型"]
 description: "阶跃 Step 5 Preview 权重开源复盘：许可证从 Apache 2.0 换成自研 StepFun 模型许可证意味着什么、官方仓库和第三方镜像怎么区分、社区 GGUF 进展、“1/8 成本”的官方口径与第三方质疑一次讲清。"
 ---
 

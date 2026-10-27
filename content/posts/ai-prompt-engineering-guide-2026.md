@@ -1,15 +1,15 @@
 ---
 title: "2026年AI提示词工程完全指南：从入门到精通的完整教程"
+description: "AI 提示词工程从入门到进阶：提示词基本要素、基础到高级技巧，以及内容创作、编程、学习、商业分析四类场景的可直接套用模板和优化方法。"
 date: 2026-07-14
 author: "AI专家"
 tags: ["AI提示词工程", "AI应用", "提示词技巧", "2026年"]
-categories: ["AI应用"]
+categories: ["AI工具实测"]
 summary: "全面介绍2026年AI提示词工程，从基础概念到高级技巧，帮助用户更好地使用AI工具。"
 showtoc: true
 disableShare: false
 ---
 
-# 2026年AI提示词工程完全指南：从入门到精通的完整教程
 
 ## 引言
 
@@ -555,3 +555,10 @@ disableShare: false
 ---
 
 *有些外部工具链接是联盟链接，如果你通过这些链接购买，我会获得少量佣金（不影响你的价格）。所有推荐都是我亲自用过并觉得不错的产品。*
+
+## 相关阅读
+
+- [Midjourney V7完整教程 2026：从入门到精通的AI绘画实战指南](/posts/midjourney-complete-guide-2026/)
+- [2026年AI安全工具完全指南：从数据保护到模型安全](/posts/ai-security-tools-2026/)
+- [2026年AI Agent完全指南：从Claude Agent到OpenAI Agent SDK，手把手搭建AI智能体](/posts/ai-agent-complete-guide-2026/)
+- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

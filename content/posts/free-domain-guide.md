@@ -2,7 +2,8 @@
 title: "搞了个免费域名，真香。手把手注册教程"
 date: 2026-07-03T22:00:00+08:00
 draft: false
-description: "最近白嫖了一个永久免费的域名，配合 Cloudflare 用起来贼爽。写篇教程分享给需要的朋友。"
+description: "手把手注册永久免费域名，并接入 Cloudflare 做解析和 HTTPS，零成本拥有自己的网址。附完整注册步骤和常见问题。"
+categories: ["建站与副业"]
 tags: ["域名", "教程", "免费资源", "Cloudflare"]
 ---
 
@@ -129,3 +130,10 @@ NS 记录可能有缓存，等 5-10 分钟。如果超过半小时还没生效�
 ---
 
 *有些外部工具链接是联盟链接，如果你通过这些链接购买，我会获得少量佣金（不影响你的价格）。所有推荐都是我亲自用过并觉得不错的产品。*
+
+## 相关阅读
+
+- [从零搭建个人博客：免费VPS + 免费域名 + Cloudflare托管](/posts/free-blog-tutorial/)
+- [Cloudflare Pages 完全教程：从部署到优化的全套指南](/posts/cloudflare-pages-tutorial-2026/)
+- [Linux服务器入门教程：零基础搭建网站和部署项目](/posts/linux-server-beginners-2026/)
+- 更多「建站与副业」文章：[/categories/建站与副业/](/categories/建站与副业/)

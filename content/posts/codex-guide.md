@@ -3,6 +3,7 @@ title: "OpenAI Codex 代码生成入门完整指南（2026版）"
 date: 2026-07-05T00:00:00+08:00
 draft: false
 description: "从零开始学习 OpenAI Codex，包括 API 调用、集成开发、代码生成技巧。Codex 是 OpenAI 的代码生成大模型，适合开发者快速上手。"
+categories: ["AI工具实测"]
 tags: ["OpenAI", "Codex", "AI", "代码生成", "教程"]
 ---
 

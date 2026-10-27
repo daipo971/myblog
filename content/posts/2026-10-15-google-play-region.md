@@ -3,7 +3,7 @@ title: "Google Play 商店改地区保姆级教程：手机+电脑两种方法�
 date: 2026-10-15T11:00:00+08:00
 draft: false
 tags: ["Google Play", "教程", "改地区", "Gmail"]
-categories: ["实战教程"]
+categories: ["海外服务通关"]
 description: "Google Play 商店怎么改地区？本文手把手教你手机端和电脑端两种改区方法，讲清 12 个月锁定、余额清零、支付方式等 6 个必知事项，以及“国家/地区选项不出现”怎么办。"
 ---
 
@@ -76,3 +76,10 @@ A：已安装的不受影响。新地区下架的应用，已安装的一般还�
 ---
 
 *教程核实时间：2026-10-15。流程依据 Google Play 官方帮助文档整理，界面文案以 App 实际显示为准（Google 偶尔会调整入口名称）*
+
+## 相关阅读
+
+- [美区 Apple ID 注册保姆级教程：免信用卡，App Store 入口是关键](/posts/2026-10-15-us-apple-id/)
+- [₺75/年拿下 .com：Google Workspace 土耳其区注册域名全流程避坑](/posts/2026-10-17-google-workspace-turkey-domain/)
+- [iPhone Duo 国行今日开售：纯 eSIM 无卡槽，购机+开卡保姆级攻略](/posts/2026-10-23-iphone-duo-esim-guide/)
+- 更多「海外服务通关」文章：[/categories/海外服务通关/](/categories/海外服务通关/)

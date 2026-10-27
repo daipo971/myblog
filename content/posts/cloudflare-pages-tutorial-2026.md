@@ -3,11 +3,11 @@ title: "Cloudflare Pages 完全教程：从部署到优化的全套指南"
 date: 2026-07-25T06:00:00+08:00
 description: "Cloudflare Pages 完整教程，涵盖部署Hugo/Next.js/React项目、自定义域名、CDN加速、Workers集成、数据分析等全部功能。"
 summary: "Cloudflare Pages 从入门到精通，包含部署、优化、域名、Workers、数据分析等全流程指南。"
+categories: ["建站与副业"]
 tags: ["Cloudflare", "部署", "建站", "CDN", "Hugo", "免费托管"]
 showtoc: true
 ---
 
-# Cloudflare Pages 完全教程：从部署到优化的全套指南
 
 我用 Cloudflare Pages 跑这个博客已经大半年了，可以说这是我用过**最省心的托管平台**。
 

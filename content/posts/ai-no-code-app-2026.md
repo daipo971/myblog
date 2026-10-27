@@ -3,11 +3,11 @@ title: "用AI无代码搭建应用：零基础也能做出赚钱的产品"
 date: 2026-07-25T06:00:00+08:00
 description: "2026年用AI无代码工具搭建应用的完整指南，零基础也能做出能赚钱的产品，包含工具推荐、案例分析和实操教程。"
 summary: "零基础用AI无代码工具搭建应用的完整指南，推荐Bolt.new、Cursor、Replit等工具和实操案例。"
+categories: ["建站与副业"]
 tags: ["无代码", "AI工具", "副业", "建站", "产品开发", "赚钱"]
 showtoc: true
 ---
 
-# 用AI无代码搭建应用：零基础也能做出赚钱的产品
 
 2026年最让我兴奋的趋势不是AI本身，而是**AI让不会编程的人也能做产品了**。
 
@@ -165,5 +165,5 @@ Bolt.new 内置了部署功能，一键就能发布到公开链接。
 **相关阅读：**
 - 👉 [用AI工具赚钱的5个真实方法](/posts/make-money-with-ai-2026/)
 - 👉 [零成本搭建个人博客完整教程](/posts/free-blog-tutorial/)
-- 👉 [Cursor AI编程工具完整教程](/posts/cursor-ai-tutorial-2026/)
+- 👉 [Cursor AI编程工具完整教程](/posts/cursor-programming-tools/)
 - 👉 [2026年免费AI工具清单](/posts/free-ai-tools-2026/)

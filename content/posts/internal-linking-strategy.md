@@ -3,11 +3,11 @@ title: "内链建设策略：如何通过内部链接提升SEO效果"
 date: 2026-07-09
 description: "详细的内链建设策略，包括内链规划、锚文本优化、页面权重分配等，帮助提升网站SEO效果。"
 summary: "内链建设完整策略，提升网站SEO效果和用户体验。"
+categories: ["建站与副业"]
 tags: ["内链建设", "SEO优化", "网站结构", "用户体验", "搜索引擎"]
 showtoc: true
 ---
 
-# 内链建设策略：如何通过内部链接提升SEO效果
 
 内链是SEO优化的重要组成部分，合理的内链结构可以提高网站权重分配，改善用户体验，提升搜索引擎排名。本文将详细介绍内链建设的策略和技巧。
 
@@ -361,8 +361,8 @@ a:hover {
 
 **相关文章推荐：**
 - [SEO优化指南：如何提高欣淇AI网的搜索引擎排名](/posts/seo-optimization-guide)
-- [2026年最热门的AI工具：从免费到付费，一篇搞定](/posts/hot-ai-tools-2026)
-- [AI工具大比拼：ChatGPT vs Claude vs Cursor，2026年怎么选？](/posts/ai-tools-comparison-2026)
+- [2026年最热门的AI工具：从免费到付费，一篇搞定](/posts/free-ai-tools-2026/)
+- [AI工具大比拼：ChatGPT vs Claude vs Cursor，2026年怎么选？](/posts/chatgpt-vs-claude-vs-cursor-guide/)
 
 **工具推荐：**
 - [Google Search Console](https://search.google.com/search-console)

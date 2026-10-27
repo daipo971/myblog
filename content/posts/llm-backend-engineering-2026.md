@@ -3,11 +3,11 @@ title: "LLM 应用后端开发实战：构建生产级 AI 应用的工程实践"
 date: 2026-07-20
 description: "深入讲解如何从工程角度构建生产级LLM应用，包括RAG架构、流式响应、Token管理、错误处理、成本优化等核心工程实践"
 summary: "LLM应用后端开发完整指南，深度解析RAG检索增强生成、流式处理(SSE/WebSocket)、Token管理与成本控制、Prompt版本管理、并发限流等工程实践"
+categories: ["建站与副业"]
 tags: ["LLM", "AI开发", "RAG", "后端开发", "Python", "向量数据库", "API设计"]
 showtoc: true
 ---
 
-# LLM 应用后端开发实战：构建生产级 AI 应用的工程实践
 
 ## 引言
 
@@ -793,3 +793,10 @@ async def generate_response(messages: list) -> str:
 ---
 
 *声明：本文中提到的各第三方服务的定价信息截至2026年7月，实际价格请以官方定价页面为准。*
+
+## 相关阅读
+
+- [实战：我用 AI + GitHub Actions 做了个全球疫情信息聚合站，开源、零成本](/posts/2026-10-07-plague-aggregator/)
+- [Rust 指令编程实战：从新手到精通的完整路线图](/posts/rust-programming-complete-guide-2026/)
+- [高并发系统设计实战：从单体到微服务的亿级流量架构演变](/posts/high-concurrency-system-design-2026/)
+- 更多「建站与副业」文章：[/categories/建站与副业/](/categories/建站与副业/)

@@ -3,6 +3,7 @@ title: "AI语音克隆与TTS工具实测：3分钟克隆你自己的声音"
 date: 2026-07-25
 description: "从ElevenLabs到Fish Audio，实测主流的AI语音克隆和文字转语音工具。效果真假难辨，但有些坑你必须知道。"
 summary: "实测6款AI语音克隆和TTS工具，3分钟就能克隆自己的声音。做短视频、播客、有声书必备，含真人实测对比。"
+categories: ["AI工具实测"]
 tags: ["AI语音", "语音克隆", "TTS", "ElevenLabs", "短视频", "内容创作"]
 showtoc: true
 ---

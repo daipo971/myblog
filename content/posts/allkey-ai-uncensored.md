@@ -4,6 +4,7 @@ title: "发现一个能无审查生成AI视频和图片的网站，用域名邮�
 date: 2026-07-09
 description: "最近发现了一个挺猛的AI网站，视频图片都能生成，关键是没那么多限制。更离谱的是用域名邮箱注册就能无限白嫖。"
 summary: "Allkey AI实测分享：无审查AI视频/图片生成，NSFW内容不封号，域名邮箱免费无限用。"
+categories: ["海外服务通关"]
 tags: ["AI工具", "AI视频", "AI图片", "免费资源", "NSFW"]
 showtoc: true
 ---

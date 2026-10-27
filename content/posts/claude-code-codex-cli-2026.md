@@ -3,6 +3,7 @@ title: "Claude Code和Codex CLI：AI编程的新范式，试了回不去"
 date: 2026-07-25
 description: "从Cursor到Claude Code再到Codex CLI，AI编程工具正在经历第三次进化。实测三款AI编程工具的区别和使用场景。"
 summary: "实测Claude Code、Codex CLI和Cursor三款AI编程工具，从自动补全到自主编程，看看AI编程的新范式长什么样。"
+categories: ["AI工具实测"]
 tags: ["Claude Code", "Codex CLI", "AI编程", "Cursor", "开发者工具", "效率工具"]
 showtoc: true
 ---
@@ -17,7 +18,7 @@ Claude Code 和 Codex CLI 是2026年最让人兴奋的两个工具。我用了�
 
 ## 第一代：Cursor — 智能代码编辑器
 
-如果你还没用过 Cursor，先去看看我之前写的 [Cursor教程](/posts/cursor-ai-tutorial-2026/)。它仍然是很多人的日常主力。
+如果你还没用过 Cursor，先去看看我之前写的 [Cursor教程](/posts/cursor-programming-tools/)。它仍然是很多人的日常主力。
 
 **核心能力：**
 - Tab补全：AI预测你接下来要写什么，按Tab接受
@@ -151,7 +152,7 @@ npm install -g @openai/codex
 👉 [下载Cursor](https://cursor.sh/)
 👉 [Claude Code](https://docs.anthropic.com/en/docs/claude-code)
 👉 [Codex CLI](https://github.com/openai/codex)
-👉 相关阅读：[Cursor完整教程](/posts/cursor-ai-tutorial-2026/)
+👉 相关阅读：[Cursor完整教程](/posts/cursor-programming-tools/)
 👉 更多：[AI编程工具对比](/posts/ai-coding-tools-comparison-2026/)
 
 *文章写于2026年7月，各工具版本和价格可能会有更新。*

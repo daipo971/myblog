@@ -2,6 +2,7 @@
 title: "国行 Apple Intelligence 十月底开测：这份准备清单先收好"
 date: 2026-10-20T15:10:00+08:00
 description: "库克亲口确认国行 AI 测试版十月底开测，首批只有实时翻译、写作工具、影像清理三个功能（新 Siri 缺席）。这篇讲：你的机型在不在名单里、系统要怎么准备、对「阿里双引擎」本地化意味着什么，以及别被「已上线」谣言忽悠。"
+categories: ["中国与开源模型"]
 tags: ["Apple", "Apple Intelligence", "国行", "iPhone", "AI 工具"]
 ---
 
@@ -48,3 +49,10 @@ tags: ["Apple", "Apple Intelligence", "国行", "iPhone", "AI 工具"]
 ---
 
 *信息来源：澎湃新闻/21 经济网 10 月 15 日库克上海采访、工信部入网许可公示。测试版具体细节以苹果官方公告为准，本文不编造未公开的版本号和日期。*
+
+## 相关阅读
+
+- [国行 iPhone 终于有 AI 了：12 月 iOS 27.3，阿里百度双引擎，首批只有 4 个功能](/posts/2026-10-15-apple-intelligence-china/)
+- [库克亲口确认：国行 AI 本月先上测试版，实时翻译也在首批](/posts/2026-10-15-cook-china-ai-beta/)
+- [人类首次与“流氓 AI 舰队”对话：腾讯云神秘 Agent 狂爬高德，被封后自己学会绕路](/posts/2026-10-15-chinese-agent-fleet/)
+- 更多「中国与开源模型」文章：[/categories/中国与开源模型/](/categories/中国与开源模型/)

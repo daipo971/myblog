@@ -3,11 +3,11 @@ title: "ChatGPT高级使用技巧：10个让你效率翻倍的方法"
 date: 2026-07-25T07:40:00+08:00
 description: "ChatGPT从入门到高级的10个实用技巧，包含Custom GPTs、Projects、自然语言编程、数据分析、联网搜索等进阶用法。"
 summary: "10个ChatGPT高级使用技巧，从Custom GPTs到Project管理、自然语言编程、数据分析，让你效率翻倍。"
+categories: ["AI工具实测"]
 tags: ["ChatGPT", "AI工具", "效率技巧", "提示词", "GPTs", "生产力"]
 showtoc: true
 ---
 
-# ChatGPT高级使用技巧：10个让你效率翻倍的方法
 
 用ChatGPT问"今天天气怎么样"和用ChatGPT做一整套自动化流程，是**两种完全不同的能力层级**。
 
@@ -270,4 +270,4 @@ ChatGPT从入门到高级的10个技巧，但核心只有一句话：**不要把
 - 👉 [ChatGPT vs Claude vs Cursor 2026 对比](/posts/chatgpt-vs-claude-vs-cursor-guide/)
 - 👉 [ChatGPT 4o免费版使用指南](/posts/chatgpt-4o-free-guide-2026/)
 - 👉 [AI提示词工程指南](/posts/ai-prompt-engineering-guide-2026/)
-- 👉 [Cursor AI编程工具教程](/posts/cursor-ai-tutorial-2026/)
+- 👉 [Cursor AI编程工具教程](/posts/cursor-programming-tools/)

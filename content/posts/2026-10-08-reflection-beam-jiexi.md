@@ -4,7 +4,7 @@ date: 2026-10-08T18:00:00+08:00
 lastmod: 2026-10-10T09:50:00+08:00
 description: "Reflection AI 首个开源模型 Beam（501B 参数、每任务激活 23B）权重仍未发布。本文整理已核实的关键事实：beta API 现状、官方跑分的真实含义、1M 上下文的出入、500GB 显存的硬件现实，以及它为什么被称为西方 DeepSeek。"
 tags: ["AI大模型", "Reflection", "Beam", "开源模型", "解读"]
-categories: ["AI工具评测"]
+categories: ["中国与开源模型"]
 draft: false
 showTableOfContents: true
 ---
@@ -77,3 +77,10 @@ Reflection 的真实目标客户也很直白：**那些因为合规原因不能�
 Beam 的故事线很清晰：**效率优先的开源大模型 + 吃"非中国"红利的商业叙事**。技术上有没有真东西，要等权重和技术报告放出、独立评测跑完才知道。
 
 另外 10 月 6 日 Mistral 发布了万亿参数的 Mistral Large 4（内部代号 "Le Chonk"，原生多模态），API 预览已上线、权重承诺 10 月底放出——"西方开源"一下从独角戏变成了双雄会。权重一发布，本博客会第一时间出**实测篇**：两家放一起，能跑多快、代码能力到底什么水平、和 GLM、Kimi、Qwen 再比一比。先收藏这篇，实测见。
+
+## 相关阅读
+
+- [Beam 开源了：美国公司做了个「对标中国」的 501B 模型，Apache 2.0 随便用](/posts/2026-10-18-reflection-beam/)
+- [开源倒计时：阶跃 Step 5 Preview 登顶 OpenRouter 趋势榜，10 月 15 日放出权重前先看懂这几件事](/posts/2026-10-13-step-5-preview/)
+- [DeepSeek-V4.1-Flash 来了：更快更便宜，MIT 开源随便用，附国内使用指南](/posts/2026-10-18-deepseek-v41-flash/)
+- 更多「中国与开源模型」文章：[/categories/中国与开源模型/](/categories/中国与开源模型/)

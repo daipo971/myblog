@@ -3,6 +3,7 @@ title: "2026年AI设计工具横评：Canva AI vs 稿定AI vs 创客贴AI vs Mid
 date: 2026-07-21
 description: "Canva AI、稿定AI、创客贴AI、Midjourney四款AI做图设计工具横评，从模板、AI生成、编辑功能、价格等维度对比"
 summary: "2026年AI设计工具横向对比，Canva AI、稿定AI、创客贴AI、Midjourney四款做图工具实测，含模板质量、AI生成效果、价格对比"
+categories: ["AI工具实测"]
 tags: ["AI设计", "Canva", "稿定设计", "创客贴", "Midjourney", "设计工具", "平面设计"]
 showtoc: true
 ---

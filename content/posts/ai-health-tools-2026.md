@@ -4,7 +4,7 @@ date: 2026-07-27
 description: "实测2026年主流AI健康管理工具，从AI健身教练到AI饮食规划，从AI睡眠分析到AI心理健康，看看AI到底能不能帮你变健康。"
 summary: "实测AI健康管理工具，涵盖AI健身教练、AI饮食规划、AI睡眠分析、AI心理健康四大场景。AI确实能帮你变健康，但有些坑你得知道。"
 tags: ["AI健康", "AI健身", "AI饮食", "AI睡眠", "心理健康", "健康管理", "AI工具"]
-categories: ["AI工具"]
+categories: ["AI工具实测"]
 showtoc: true
 ---
 
@@ -285,3 +285,10 @@ Headspace 是全球最知名的冥想App，2026年加入了AI个性推荐功能�
 ---
 
 *你用AI健康工具吗？觉得哪个最有用？欢迎在评论区分享。*
+
+## 相关阅读
+
+- [2026年AI电商工具实测：AI商品图、AI客服、AI选品，哪些工具真的能提升销量？](/posts/ai-ecommerce-tools-2026/)
+- [2026年AI数据分析工具评测：不会编程也能做数据分析](/posts/ai-data-analysis-tools-2026/)
+- [2026年AI视频剪辑工具评测：10款工具从入门到专业级实测对比](/posts/ai-video-editing-tools-2026/)
+- 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

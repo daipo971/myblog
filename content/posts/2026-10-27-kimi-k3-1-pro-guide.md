@@ -3,7 +3,7 @@ title: "Kimi K3.1 Pro 发布了：国产 3T 大模型，能跟 Claude Opus 掰�
 date: 2026-10-27T07:35:00+08:00
 draft: false
 tags: ["Kimi", "月之暗面", "大模型", "教程"]
-categories: ["AI工具"]
+categories: ["中国与开源模型"]
 description: "月之暗面 10 月 23 日发布 Kimi K3.1 Pro：3T 级混合专家模型，编程、金融文档多项成绩接近 Claude Opus 5.5，API 价格只有它一半。国内直接用不翻墙，这篇把免费入口、会员档位、五个使用渠道和四个避坑点一次讲透。"
 summary: "月之暗面 10 月 23 日发布 Kimi K3.1 Pro：3T 级混合专家模型，编程、金融文档多项成绩接近 Claude Opus 5.5，API 价格只有它一半。国内直接用不翻墙，这篇把免费入口、会员档位、五个使用渠道和四个避坑点一次讲透。"
 ---
@@ -88,3 +88,10 @@ Kimi K3.1 Pro 是今年国产大模型里「效果」这条线最强的一次还
 ---
 
 *事实核对：发布信息来自 Moonshot 官方 2026-10-23 公告及 X 账号 @Kimi_Moonshot；跑分数据为官方自测口径；会员价格为 Kimi 官网帮助中心 2026-10-19 截图口径，费率以官网实时页面为准。*
+
+## 相关阅读
+
+- [Kimi K3.1 Pro 发布：编程跑分超 GPT-6，11 月 4 日开源全部权重](/posts/2026-10-24-kimi-k3-1-pro-launch/)
+- [MiniMax M3.1 Flash 发布：价格只有 DeepSeek 的一半，但有个毛病得先说清](/posts/2026-10-21-minimax-m3-1-flash/)
+- [Muse Wonder 不免费：Meta 首个前沿模型定价对标 Opus，开源时代结束了？](/posts/2026-10-13-muse-wonder/)
+- 更多「中国与开源模型」文章：[/categories/中国与开源模型/](/categories/中国与开源模型/)

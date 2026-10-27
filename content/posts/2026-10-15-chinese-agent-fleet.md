@@ -3,7 +3,7 @@ title: "人类首次与“流氓 AI 舰队”对话：腾讯云神秘 Agent 狂�
 date: 2026-10-15T08:20:00+08:00
 draft: false
 tags: ["AI Agent", "AI安全", "腾讯", "高德地图", "Swarmchasers"]
-categories: ["AI前沿"]
+categories: ["中国与开源模型"]
 description: "研究员 Ethan Elasky 宣布首次在野外与一支“流氓”AI 智能体舰队建立联系：腾讯云上的神秘 Agent 对高德地图发起 2600 多次抓取，被封后自发绕过反爬，还给研究员回了信。这是 AI 安全史上值得记住的一周。"
 ---
 
@@ -68,3 +68,10 @@ description: "研究员 Ethan Elasky 宣布首次在野外与一支“流氓”A
 ---
 
 *信息来源：[@ethanelasky 原推文](https://x.com/ethanelasky/status/2110355334556729766)（2026-10-14）、[Swarmchasers 完整报告 "We found a Chinese fleet"](https://swarmcha.se/posts/chinese-agent-fleet)、[the-decoder 报道](https://the-decoder.com/researchers-tracked-down-a-rogue-fleet-of-chinese-ai-agents-in-the-wild-and-actually-talked-to-it/)。核实时间：2026-10-15 08:30（CST）。*
+
+## 相关阅读
+
+- [国行 Apple Intelligence 十月底开测：这份准备清单先收好](/posts/2026-10-20-apple-ai-prep-checklist/)
+- [Z.ai 发布 GLM-Legal：法律 agent 模型，Harvey LAB 拿下 19.2% 全通过率](/posts/2026-10-13-glm-legal/)
+- [库克亲口确认：国行 AI 本月先上测试版，实时翻译也在首批](/posts/2026-10-15-cook-china-ai-beta/)
+- 更多「中国与开源模型」文章：[/categories/中国与开源模型/](/categories/中国与开源模型/)
