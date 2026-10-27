@@ -81,6 +81,7 @@ Step 5 的故事线很清晰：**旗舰级智能 + 1/8 成本 + 长周期 Agent 
 
 ## 相关阅读
 
+- [阶跃 Step 模型档案：规格、许可证、价格与成本争议](/posts/stepfun-step-guide/)：这个模型的全部信息汇总，持续更新
 - [Step 5 开源复盘：协议改了、量化来了，“1/8 成本”到底经不经得起算](/posts/2026-10-15-step-5-review/)
 - [Reflection Beam 解析：501B 参数的「西方 DeepSeek」，权重还没发，先看懂这 8 件事](/posts/2026-10-08-reflection-beam-jiexi/)
 - [Kimi K3.1 Pro 发布：编程跑分超 GPT-6，11 月 4 日开源全部权重](/posts/2026-10-24-kimi-k3-1-pro-launch/)

@@ -80,6 +80,7 @@ Beam 的故事线很清晰：**效率优先的开源大模型 + 吃"非中国"�
 
 ## 相关阅读
 
+- [Reflection Beam 模型档案：规格、许可、跑分与部署门槛](/posts/reflection-beam-guide/)：这个模型的全部信息汇总，持续更新
 - [Beam 开源了：美国公司做了个「对标中国」的 501B 模型，Apache 2.0 随便用](/posts/2026-10-18-reflection-beam/)
 - [开源倒计时：阶跃 Step 5 Preview 登顶 OpenRouter 趋势榜，10 月 15 日放出权重前先看懂这几件事](/posts/2026-10-13-step-5-preview/)
 - [DeepSeek-V4.1-Flash 来了：更快更便宜，MIT 开源随便用，附国内使用指南](/posts/2026-10-18-deepseek-v41-flash/)

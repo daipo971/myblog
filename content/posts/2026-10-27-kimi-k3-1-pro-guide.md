@@ -91,6 +91,7 @@ Kimi K3.1 Pro 是今年国产大模型里「效果」这条线最强的一次还
 
 ## 相关阅读
 
+- [Kimi 模型档案：全版本、价格、开源进度与国内用法](/posts/kimi-guide/)：这个模型的全部信息汇总，持续更新
 - [Kimi K3.1 Pro 发布：编程跑分超 GPT-6，11 月 4 日开源全部权重](/posts/2026-10-24-kimi-k3-1-pro-launch/)
 - [MiniMax M3.1 Flash 发布：价格只有 DeepSeek 的一半，但有个毛病得先说清](/posts/2026-10-21-minimax-m3-1-flash/)
 - [Muse Wonder 不免费：Meta 首个前沿模型定价对标 Opus，开源时代结束了？](/posts/2026-10-13-muse-wonder/)
