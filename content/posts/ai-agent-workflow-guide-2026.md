@@ -153,3 +153,8 @@ n8n里就是拖几个节点的事情：
 👉 更多：[2026年免费AI工具](/posts/free-ai-tools-2026/)
 
 *文章写于2026年7月，工具版本和价格可能会有更新。*
+
+## 相关阅读
+
+- [2026年AI Agent完全指南：从Claude Agent到OpenAI Agent SDK](/posts/ai-agent-complete-guide-2026/)：先搞懂 Agent 是什么、有哪些框架
+- [AI效率工作流搭建指南：把ChatGPT+Claude+Cursor串起来用](/posts/ai-workflow-guide-2026/)：不搭自动化，只组合现成工具
