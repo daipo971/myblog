@@ -2,7 +2,7 @@
 title: "美区 Apple ID 礼品卡充值教程：哪里买、怎么充，黑卡千万别碰"
 date: 2026-10-15T11:18:00+08:00
 draft: false
-tags: ["Apple ID", "美区", "礼品卡", "充值", "教程"]
+tags: ["教程", "海外支付", "Apple ID"]
 categories: ["海外服务通关"]
 description: "美区 Apple ID 怎么充值？本文讲清美区礼品卡的 4 个购买渠道、iPhone/Mac 充值步骤、余额能买什么，以及黑卡、低价陷阱等 4 个必看避坑事项。"
 ---

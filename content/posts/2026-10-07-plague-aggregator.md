@@ -3,7 +3,7 @@ title: "实战：我用 AI + GitHub Actions 做了个全球疫情信息聚合站
 date: 2026-10-07T22:30:00+08:00
 lastmod: 2026-10-07T22:30:00+08:00
 description: "11 个官方/专业/媒体信源、每 30 分钟自动更新、智谱 GLM 生成中文摘要，纯静态页面托管零成本。项目已开源，一键 fork 即用。"
-tags: ["AI实战", "GitHub Actions", "开源项目"]
+tags: ["复盘", "建站", "自动化"]
 categories: ["建站与副业"]
 draft: false
 showTableOfContents: true

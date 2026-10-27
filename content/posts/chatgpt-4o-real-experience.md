@@ -4,7 +4,7 @@ date: 2026-07-09
 description: "三个月深度使用ChatGPT 4o免费版，真实记录使用体验、限制和实际价值。"
 summary: "ChatGPT 4o免费版三个月真实体验，告诉你真相。"
 categories: ["AI工具实测"]
-tags: ["ChatGPT", "AI工具", "免费工具", "使用体验"]
+tags: ["评测", "AI入门", "ChatGPT"]
 showtoc: true
 ---
 

@@ -4,7 +4,7 @@ date: 2026-07-21
 description: "Gamma、Tome、Beautiful.ai、讯飞智文等AI自动生成PPT工具实测对比，从模板质量、生成速度、自定义程度等维度评测"
 summary: "2026年AI做PPT工具横评，Gamma、Tome、Beautiful.ai、讯飞智文四款一键生成PPT工具实测对比，附生成效果截图和推荐"
 categories: ["AI工具实测"]
-tags: ["AI工具", "PPT", "Gamma", "Tome", "AI演示", "效率工具", "职场工具"]
+tags: ["合集", "AI办公", "Gamma"]
 showtoc: true
 ---
 

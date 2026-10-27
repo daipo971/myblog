@@ -4,7 +4,7 @@ date: 2026-07-25
 description: "把市面上主流的免费AI视频生成工具全部实测了一遍，从Sora到国产工具，分享我的真实使用体验和对比。"
 summary: "实测5款免费AI视频生成工具，从Sora、Runway到国产即梦和可灵。有惊喜也有踩坑，看完你就知道该用哪个。"
 categories: ["AI工具实测"]
-tags: ["AI视频生成", "Sora", "Runway", "免费AI工具", "即梦", "可灵AI"]
+tags: ["合集", "AI视频", "可灵", "即梦"]
 showtoc: true
 ---
 

@@ -4,7 +4,7 @@ date: 2026-07-21
 description: "零基础用AI编程入门并接单赚钱的完整指南，从学编程到接外包的全流程，包含Cursor使用、项目实战、接单平台推荐"
 summary: "零基础用AI编程从入门到接单赚钱完整指南，教你用Cursor等AI编程工具快速上手，接外包项目的实战经验分享"
 categories: ["建站与副业"]
-tags: ["AI编程", "Cursor", "接单", "副业", "赚钱", "编程入门", "自由职业"]
+tags: ["指南", "AI编程", "AI副业", "Cursor"]
 showtoc: true
 ---
 

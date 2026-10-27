@@ -4,7 +4,7 @@ date: 2026-07-16
 description: "学生党预算有限怎么玩AI？100块以内的免费+低价AI工具搭配方案，ChatGPT免费版、Claude、DeepSeek、Cursor、Perplexity全攻略。"
 summary: "手把手教学生党用最少的钱组出最强AI工具组合。ChatGPT免费版、Claude、DeepSeek、Cursor、Perplexity怎么搭配最好用，全在这了。"
 categories: ["AI应用场景"]
-tags: ["AI工具", "学生党", "省钱", "免费AI", "效率工具", "ChatGPT", "Claude"]
+tags: ["合集", "AI学习", "订阅省钱"]
 showtoc: true
 ---
 

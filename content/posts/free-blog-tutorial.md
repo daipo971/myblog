@@ -4,7 +4,7 @@ date: 2026-07-11
 description: "手把手教你从零搭建一个完全免费的Hugo博客，包含免费VPS、免费域名和Cloudflare Pages部署。"
 summary: "零成本搭建个人博客完整教程，从VPS到域名到部署全流程。"
 categories: ["建站与副业"]
-tags: ["博客搭建", "Hugo", "免费VPS", "Cloudflare", "免费域名", "建站教程"]
+tags: ["教程", "建站", "VPS", "Hugo"]
 showtoc: true
 ---
 

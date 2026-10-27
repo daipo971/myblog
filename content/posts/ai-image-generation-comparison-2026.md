@@ -4,7 +4,7 @@ date: 2026-07-12
 description: "Midjourney、DALL-E 3、Stable Diffusion三款主流AI绘画工具的真实使用体验，包括付费方案对比和免费替代品推荐。"
 summary: "半年时间把Midjourney、DALL-E 3、Stable Diffusion全折腾了一遍。这篇告诉你每个工具到底好在哪、坑在哪，以及如果你是新手该从哪个开始。"
 categories: ["AI工具实测"]
-tags: ["AI图片生成", "Midjourney", "DALL-E", "Stable Diffusion", "免费AI工具"]
+tags: ["对比", "AI绘画", "Midjourney", "Stable Diffusion"]
 showtoc: true
 ---
 

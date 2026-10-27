@@ -4,7 +4,7 @@ date: 2026-07-04T00:00:00+08:00
 draft: false
 description: "Oracle Cloud Free Tier 永久免费，Google Cloud Always Free 服务丰富。写一篇专业对比，适合建站、学习使用。"
 categories: ["建站与副业"]
-tags: ["Oracle Cloud", "Free VPS", "云计算", "建站教程"]
+tags: ["教程", "VPS", "Oracle Cloud"]
 ---
 
 这几年折腾技术博客、自建服务，最大的门槛就是服务器成本。一个 VPS 一年下来几十刀，搞多了也是笔开销。

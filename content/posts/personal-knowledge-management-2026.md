@@ -4,7 +4,7 @@ date: 2026-07-21
 description: "用Notion AI、Obsidian、Readwise等工具搭建个人知识管理体系，从信息收集到知识输出的完整工作流"
 summary: "2026年个人知识管理体系搭建指南，Notion AI + Obsidian + Readwise组合方案，信息收集到知识输出的完整工作流"
 categories: ["AI应用场景"]
-tags: ["知识管理", "Notion", "Obsidian", "Readwise", "第二大脑", "效率工具", "AI工具"]
+tags: ["教程", "知识管理", "Notion", "Obsidian"]
 showtoc: true
 ---
 

@@ -4,7 +4,7 @@ date: 2026-07-09
 description: "详细的SEO监控指南，包括关键指标、监控工具、分析方法，帮助你跟踪SEO效果并进行持续优化。"
 summary: "SEO监控完整指南，跟踪SEO效果，分析数据，持续优化。"
 categories: ["建站与副业"]
-tags: ["SEO监控", "数据分析", "搜索引擎优化", "流量分析", "效果跟踪"]
+tags: ["指南", "SEO", "建站"]
 showtoc: true
 ---
 

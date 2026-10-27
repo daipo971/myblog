@@ -4,7 +4,7 @@ date: 2026-07-05T00:00:00+08:00
 draft: false
 description: "从零开始学习 Anthropic Claude，包括 API 调用、Claude Pro 介绍、Claude Code CLI 使用、Artifacts 功能详解。适合新手入门。"
 categories: ["AI工具实测"]
-tags: ["Anthropic", "Claude", "AI", "教程"]
+tags: ["档案", "AI入门", "Claude", "Anthropic"]
 ---
 
 这两年 AI 工具发展太快，Anthropic 的 Claude 成了很多人首选的 AI 助手。相比其他模型，Claude 的优势很明显：

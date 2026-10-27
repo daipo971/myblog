@@ -4,7 +4,7 @@ date: 2026-07-19
 description: "AI效率工作流搭建教程，教你把ChatGPT、Claude、Cursor、Perplexity等工具组合起来使用，从内容创作到编程开发全覆盖"
 summary: "2026年AI效率工作流搭建指南，手把手教你组合ChatGPT+Claude+Cursor+Perplexity打造个人AI工作流，覆盖写作、编程、研究三大场景"
 categories: ["AI工具实测"]
-tags: ["AI工作流", "效率工具", "ChatGPT", "Claude", "Cursor", "自动化", "AI工具"]
+tags: ["教程", "自动化", "AI办公", "ChatGPT", "Claude"]
 showtoc: true
 ---
 

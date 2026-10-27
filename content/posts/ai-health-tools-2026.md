@@ -3,7 +3,7 @@ title: "2026年AI健康工具评测：AI健身教练、AI饮食规划、AI睡眠
 date: 2026-07-27
 description: "实测2026年主流AI健康管理工具，从AI健身教练到AI饮食规划，从AI睡眠分析到AI心理健康，看看AI到底能不能帮你变健康。"
 summary: "实测AI健康管理工具，涵盖AI健身教练、AI饮食规划、AI睡眠分析、AI心理健康四大场景。AI确实能帮你变健康，但有些坑你得知道。"
-tags: ["AI健康", "AI健身", "AI饮食", "AI睡眠", "心理健康", "健康管理", "AI工具"]
+tags: ["评测", "AI生活", "AI入门"]
 categories: ["AI应用场景"]
 showtoc: true
 ---

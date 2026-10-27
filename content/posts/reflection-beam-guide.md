@@ -4,7 +4,7 @@ date: 2026-10-28T06:30:00+08:00
 lastmod: 2026-10-28T06:30:00+08:00
 draft: false
 categories: ["中国与开源模型"]
-tags: ["Reflection AI", "Beam", "开源模型", "Apache 2.0"]
+tags: ["档案", "开源模型", "Reflection"]
 description: "美国 Reflection AI 开源模型 Beam 的持续更新档案：从 beta API 到权重开源的时间线、501B/23B MoE 规格、Apache 2.0 许可、官方跑分与独立评测差距、部署硬件门槛，以及它和国产开源模型怎么比。"
 showtoc: true
 ---

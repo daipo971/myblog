@@ -3,7 +3,7 @@ title: "Muse 能聊成人话题、真人发帖却被删：Meta 这次的双标�
 date: 2026-10-27T14:20:00+08:00
 draft: false
 categories: ["海外服务通关"]
-tags: ["Muse", "Meta", "NSFW", "争议"]
+tags: ["快讯", "风控申诉", "Muse", "Meta"]
 description: "WIRED 10 月 12 日实测：Meta 的 Muse 无需越狱就能和成年用户聊露骨性话题，Meta 回应称设计如此；但 Muse 公开规则明文禁止成人内容。10 月 18 日 OnlyFans 创作者回访更把争议推高：真人发擦边被限流，AI 却可以聊。本文把时间线、规则矛盾和隐私风险一次讲清。"
 ---
 

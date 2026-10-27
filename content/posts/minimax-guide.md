@@ -4,7 +4,7 @@ date: 2026-10-28T06:10:00+08:00
 lastmod: 2026-10-28T06:10:00+08:00
 draft: false
 categories: ["中国与开源模型"]
-tags: ["MiniMax", "国产大模型", "开源模型", "API"]
+tags: ["档案", "国产大模型", "开源模型", "MiniMax"]
 description: "上海 MiniMax 大模型的持续更新档案：M3.1 Flash 的发布与开源时间线、428B 参数规格、$0.15 输入价、社区许可证商用条件、93% 幻觉率的正确用法和国内使用渠道。"
 showtoc: true
 ---

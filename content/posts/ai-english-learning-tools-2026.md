@@ -4,7 +4,7 @@ date: 2026-07-21
 description: "用AI学英语的工具推荐，ChatGPT练口语、DeepL辅助阅读、多邻国AI版、有道词典AI功能实测对比"
 summary: "2026年AI学英语工具推荐，ChatGPT口语陪练、DeepL阅读辅助、多邻国AI版、有道词典AI功能实测，还有免费学习方案"
 categories: ["AI应用场景"]
-tags: ["AI学英语", "英语学习", "ChatGPT", "DeepL", "多邻国", "AI工具", "学习工具"]
+tags: ["合集", "AI学习", "AI翻译"]
 showtoc: true
 ---
 

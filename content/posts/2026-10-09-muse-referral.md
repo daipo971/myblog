@@ -3,7 +3,7 @@ title: "Meta Muse 邀请码实测：注册领 10 亿 Token，双方各得（附�
 date: 2026-10-09T08:00:00+08:00
 lastmod: 2026-10-09T08:00:00+08:00
 description: "Meta 个人 AI 助手 Muse 推荐计划详解：新用户 48 小时内兑换邀请码，双方各得 10 亿 Token。附完整兑换步骤、邀请码 K6MRW6，以及地区限制、等待名单等实话。 "
-tags: ["AI工具", "Muse", "Meta", "邀请码", "Token", "教程"]
+tags: ["教程", "注册开通", "Muse"]
 categories: ["海外服务通关"]
 draft: false
 showTableOfContents: true

@@ -4,7 +4,7 @@ date: 2026-07-12
 description: "2026年ChatGPT、Claude、Cursor三大AI工具深度对比，从功能、价格、适用场景多维度分析，帮你选择最适合的工具。"
 summary: "ChatGPT、Claude、Cursor三大AI工具2026年深度对比指南。"
 categories: ["AI工具实测"]
-tags: ["ChatGPT", "Claude", "Cursor", "AI工具对比", "效率工具"]
+tags: ["对比", "AI编程", "ChatGPT", "Claude"]
 showtoc: true
 ---
 

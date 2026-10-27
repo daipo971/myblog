@@ -4,7 +4,7 @@ date: 2026-07-25T06:00:00+08:00
 description: "实测12款AI音乐生成工具，从音质、创作自由度、价格、中文支持等维度全面对比。推荐Suno、Udio、Soundraw等工具。"
 summary: "2026年12款AI音乐生成工具全面评测，含Suno、Udio、Soundraw实测对比和使用教程。"
 categories: ["AI工具实测"]
-tags: ["AI音乐", "AI工具", "音频", "创作", "音乐生成", "工具评测"]
+tags: ["评测", "AI音频", "自媒体"]
 showtoc: true
 ---
 

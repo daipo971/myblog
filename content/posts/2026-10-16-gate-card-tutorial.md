@@ -2,7 +2,7 @@
 title: "Gate Card 虚拟卡教程：用 USDT 全球消费，最高 8% 返现"
 date: 2026-10-16T03:50:00+08:00
 draft: false
-tags: ["虚拟卡", "Gate", "加密货币", "教程"]
+tags: ["教程", "海外支付", "Gate Card"]
 categories: ["海外服务通关"]
 description: "Gate Card 申请全教程：Gate.io 推出的 Visa 加密货币借记卡，虚拟卡秒开，全球 1.5 亿商户可用，返现积分最高 8%，免申请费。附申请流程与注意事项。"
 ---

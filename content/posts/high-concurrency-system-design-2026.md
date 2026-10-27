@@ -4,7 +4,7 @@ date: 2026-07-20
 description: "深度解析高并发场景下的系统架构设计，包括缓存策略、数据库优化、消息队列、分布式事务、限流熔断等核心实践"
 summary: "高并发系统架构设计完整指南，覆盖Redis缓存架构、MySQL分库分表、Kafka消息队列、分布式事务Saga模式、Sentinel限流熔断等实战方案"
 categories: ["建站与副业"]
-tags: ["系统架构", "高并发", "Redis", "MySQL", "Kafka", "微服务", "分布式系统"]
+tags: ["指南", "技术开发", "建站"]
 showtoc: true
 ---
 

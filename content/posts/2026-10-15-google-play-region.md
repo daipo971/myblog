@@ -2,7 +2,7 @@
 title: "Google Play 商店改地区保姆级教程：手机+电脑两种方法，一年只能改一次别踩坑"
 date: 2026-10-15T11:00:00+08:00
 draft: false
-tags: ["Google Play", "教程", "改地区", "Gmail"]
+tags: ["教程", "注册开通", "Google Play"]
 categories: ["海外服务通关"]
 description: "Google Play 商店怎么改地区？本文手把手教你手机端和电脑端两种改区方法，讲清 12 个月锁定、余额清零、支付方式等 6 个必知事项，以及“国家/地区选项不出现”怎么办。"
 ---

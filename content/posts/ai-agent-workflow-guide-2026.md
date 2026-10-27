@@ -4,7 +4,7 @@ date: 2026-07-25
 description: "从零开始用n8n搭建AI智能体工作流，自动处理邮件、生成报告、监控数据。不需要写代码，拖拽就能用。"
 summary: "一步步教你用n8n搭建AI自动化工作流，自动处理重复任务。不用写代码，全是可视化拖拽操作。"
 categories: ["AI工具实测"]
-tags: ["AI智能体", "n8n", "自动化", "工作流", "效率工具", "AI Agent"]
+tags: ["教程", "AI Agent", "自动化", "n8n"]
 showtoc: true
 ---
 

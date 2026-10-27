@@ -4,7 +4,7 @@ date: 2026-07-21
 description: "Midjourney V7完整使用教程，从注册订阅到高级提示词技巧，涵盖文生图、图生图、参数调节、风格参考等实战技巧"
 summary: "Midjourney V7从零到精通完整教程，注册订阅、提示词技巧、参数调节、图生图、风格参考、V7新功能全覆盖"
 categories: ["AI工具实测"]
-tags: ["Midjourney", "AI绘画", "AI艺术", "图像生成", "设计工具", "AI教程", "创意工具"]
+tags: ["教程", "AI绘画", "Midjourney"]
 showtoc: true
 ---
 

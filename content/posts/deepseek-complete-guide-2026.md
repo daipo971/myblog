@@ -5,7 +5,7 @@ lastmod: 2026-10-28T06:40:00+08:00
 description: "DeepSeek V3完全免费使用教程，从注册到进阶技巧，对比ChatGPT和Claude，含编程写作实测体验"
 summary: "DeepSeek完全指南，覆盖注册、网页版App使用、V3 vs ChatGPT vs Claude对比、编程写作实测、R1深度思考模式技巧"
 categories: ["中国与开源模型"]
-tags: ["DeepSeek", "免费AI", "AI工具", "AI教程", "大模型"]
+tags: ["档案", "国产大模型", "开源模型", "DeepSeek"]
 showtoc: true
 ---
 

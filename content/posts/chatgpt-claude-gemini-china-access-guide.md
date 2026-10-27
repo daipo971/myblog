@@ -4,7 +4,7 @@ date: 2026-10-28T06:50:00+08:00
 lastmod: 2026-10-28T06:50:00+08:00
 draft: false
 categories: ["海外服务通关"]
-tags: ["ChatGPT", "Claude", "Gemini", "注册教程", "避坑"]
+tags: ["指南", "注册开通", "海外支付", "ChatGPT", "Claude"]
 description: "国内用户开通 ChatGPT、Claude、Gemini 要过账号、支付、网络环境、风控四关。本文讲清每一关卡在哪、三家各自的难点、有哪些可行路线和代价，以及不想折腾时的国产替代，附本站分步教程链接。"
 showtoc: true
 ---

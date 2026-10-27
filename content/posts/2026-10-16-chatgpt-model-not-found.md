@@ -2,7 +2,7 @@
 title: "ChatGPT 网页端大面积 \"Model not found\"：原因找到了，3 种解法"
 date: 2026-10-16T04:30:00+08:00
 draft: false
-tags: ["ChatGPT", "OpenAI", "故障", "教程"]
+tags: ["快讯", "风控申诉", "ChatGPT"]
 categories: ["海外服务通关"]
 description: "2026年10月15日起大批 ChatGPT 网页端用户报 Model not found。根本原因是 GPT-5.5 于 10 月 14 日退役，旧会话仍指向它。本文整理官方信息与网友实测解法。"
 ---

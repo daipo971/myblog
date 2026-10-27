@@ -4,7 +4,7 @@ date: 2026-07-16
 description: "每个月花在AI工具上快200美金，但说实话这8个我真舍不得退。写了篇真实的付费体验，帮你决定哪些该买、哪些可以省。"
 summary: "8个我每个月真金白银在续费的AI工具，从ChatGPT到Midjourney，有踩坑也有真香。想省钱的朋友可以重点看最后。"
 categories: ["AI工具实测"]
-tags: ["AI工具", "付费订阅", "ChatGPT", "Claude", "Cursor", "效率工具", "省钱"]
+tags: ["合集", "订阅省钱", "ChatGPT", "Claude"]
 showtoc: true
 ---
 

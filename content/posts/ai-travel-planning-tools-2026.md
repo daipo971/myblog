@@ -4,7 +4,7 @@ date: 2026-07-25
 description: "去日本玩了一趟，全程用AI规划行程。从订机票到每日行程安排，分享我的AI旅行规划全流程和工具推荐。"
 summary: "实测用AI规划日本旅行，5款AI旅行工具从行程安排到预算表全搞定。省时省力，比以前自己花一天做攻略高效太多了。"
 categories: ["AI应用场景"]
-tags: ["AI旅行", "旅行规划", "ChatGPT", "Trip Planner", "效率工具"]
+tags: ["评测", "AI生活", "ChatGPT"]
 showtoc: true
 ---
 

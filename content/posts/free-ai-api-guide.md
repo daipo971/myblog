@@ -4,7 +4,7 @@ date: 2026-07-06T00:00:00+08:00
 draft: false
 description: "整理全网免费 AI API，包括 OpenAI、Anthropic、Hugging Face、Groq 等，每天都能用的免费额度。"
 categories: ["AI工具实测"]
-tags: ["AI API", "免费", "开发", "教程"]
+tags: ["合集", "API", "订阅省钱"]
 ---
 
 这两年 AI API 发展太快，各种免费额度层出不穷。我花了几天时间研究市面上主要的免费 AI API，整理成这份完整清单。

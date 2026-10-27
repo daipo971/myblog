@@ -4,7 +4,7 @@ date: 2026-07-21
 description: "Cursor和Windsurf两款最热门AI编程IDE的深度对比评测，从代码补全、Composer/Cascade、价格、性能等全方位对比"
 summary: "Cursor vs Windsurf 2026深度对比，代码补全、Composer vs Cascade、Tab补全准确率、价格性价比、适用场景全方位评测"
 categories: ["AI工具实测"]
-tags: ["Cursor", "Windsurf", "AI编程", "编程工具", "IDE", "开发者工具", "代码编辑器"]
+tags: ["对比", "AI编程", "Cursor", "Windsurf"]
 showtoc: true
 ---
 

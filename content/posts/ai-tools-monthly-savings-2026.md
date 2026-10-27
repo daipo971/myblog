@@ -4,7 +4,7 @@ date: 2026-07-16
 description: "2026年AI订阅省钱指南：从月花费200美金到50块的实操方案，覆盖ChatGPT、Claude、Cursor等主流工具的最优搭配。"
 summary: "手把手教你搭AI工具组合方案：0元免费党、50元轻度付费、200元效率党，每套方案都有具体搭配和真实花费。"
 categories: ["AI工具实测"]
-tags: ["AI省钱", "AI工具", "订阅优化", "效率工具", "省钱攻略"]
+tags: ["合集", "订阅省钱", "ChatGPT"]
 showtoc: true
 ---
 

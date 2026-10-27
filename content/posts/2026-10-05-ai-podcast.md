@@ -3,7 +3,7 @@ title: "实测AI播客制作全流程：一个人30分钟，做出一档能发�
 date: 2026-10-05T10:00:00+08:00
 lastmod: 2026-10-05T10:00:00+08:00
 description: "从写稿、配音到剪辑发布，实测 NotebookLM、ElevenLabs、讯飞配音等 AI 播客工具，一个人半小时就能做出一档像样的播客节目。"
-tags: ["AI工具", "播客", "AI配音", "实测"]
+tags: ["教程", "AI音频", "自媒体"]
 categories: ["AI应用场景"]
 draft: false
 showTableOfContents: true

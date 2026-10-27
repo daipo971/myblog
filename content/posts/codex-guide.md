@@ -4,7 +4,7 @@ date: 2026-07-05T00:00:00+08:00
 draft: false
 description: "从零开始学习 OpenAI Codex，包括 API 调用、集成开发、代码生成技巧。Codex 是 OpenAI 的代码生成大模型，适合开发者快速上手。"
 categories: ["AI工具实测"]
-tags: ["OpenAI", "Codex", "AI", "代码生成", "教程"]
+tags: ["教程", "AI编程", "Codex", "OpenAI"]
 ---
 
 OpenAI 的 Codex 是基于 GPT-4 的代码生成模型，能写代码、改代码、解释代码，是程序员的必备工具。

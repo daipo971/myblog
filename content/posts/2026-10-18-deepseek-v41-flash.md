@@ -3,7 +3,7 @@ title: "DeepSeek-V4.1-Flash 来了：更快更便宜，MIT 开源随便用，附
 date: 2026-10-18T16:30:00+08:00
 description: "DeepSeek 10 月 17 日发布 V4.1-Flash-1017：MIT 协议开源权重，API 输入低至 $0.15/百万 token，附带 Search 和 Fetch 联网 API。国内直接可用，这篇讲清楚怎么用最划算。"
 categories: ["中国与开源模型"]
-tags: ["DeepSeek", "开源模型", "API", "大模型"]
+tags: ["快讯", "开源模型", "API", "DeepSeek"]
 ---
 
 DeepSeek 昨天（10 月 17 日）又放了个新模型：**DeepSeek-V4.1-Flash-1017**。名字里的 1017 就是发布日期。这次不是拼榜单，而是一门心思做"又快又便宜"——推理速度提上去，API 价格打下来，权重还直接 MIT 开源。 Bloomberg 都专门报了，标题就一句话：faster and leaner。

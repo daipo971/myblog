@@ -4,7 +4,7 @@ date: 2026-07-19
 description: "Sora、可灵Kling、Runway、Pika四款AI视频生成工具真实使用评测对比，含视频质量、生成速度、价格、中文支持等"
 summary: "2026年AI视频生成工具横向对比，Sora、可灵Kling、Runway Gen-3、Pika深度评测，含生成效果实测对比和推荐"
 categories: ["AI工具实测"]
-tags: ["AI视频", "Sora", "可灵", "Runway", "Pika", "AI工具", "视频生成"]
+tags: ["对比", "AI视频", "Sora", "可灵"]
 showtoc: true
 ---
 

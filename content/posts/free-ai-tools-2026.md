@@ -4,7 +4,7 @@ date: 2026-07-09
 description: "2026年经过实测的免费AI工具清单，每个工具都经过深度测试，告诉你哪些真正值得用。"
 summary: "2026年最好用的免费AI工具，实测推荐。"
 categories: ["AI工具实测"]
-tags: ["免费AI", "AI工具", "效率工具", "ChatGPT", "Claude"]
+tags: ["合集", "订阅省钱", "ChatGPT", "Claude"]
 showtoc: true
 ---
 

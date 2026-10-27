@@ -4,7 +4,7 @@ date: 2026-07-25
 description: "完全免费、离线可用、隐私安全。手把手教你用Ollama和LM Studio在自己电脑上运行AI大模型，Mac和Windows都能用。"
 summary: "Ollama和LM Studio双教程，教你完全免费地在自己的电脑上运行AI大模型。离线可用、隐私安全、没有限额。"
 categories: ["中国与开源模型"]
-tags: ["Ollama", "LM Studio", "本机AI", "免费AI", "隐私", "大模型"]
+tags: ["教程", "本地部署", "开源模型", "Ollama", "LM Studio"]
 showtoc: true
 ---
 

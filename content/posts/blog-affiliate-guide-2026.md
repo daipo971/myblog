@@ -4,7 +4,7 @@ date: 2026-07-19
 description: "个人博客通过Affiliate联盟营销赚钱的完整指南，分享如何选择联盟平台、自然嵌入推广链接、提升转化率的实战经验。"
 summary: "个人博客Affiliate赚钱完整教程，从联盟平台选择、推广链接布局、SEO流量获取到转化率提升的完整实战经验分享。"
 categories: ["建站与副业"]
-tags: ["Affiliate", "联盟营销", "博客赚钱", "SEO", "被动收入", "赚钱计划"]
+tags: ["指南", "AI副业", "SEO"]
 showtoc: true
 ---
 

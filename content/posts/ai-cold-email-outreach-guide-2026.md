@@ -4,7 +4,7 @@ date: 2026-07-25
 description: "用AI写冷邮件（Cold Email）到底能不能行？我连续测试了3个月，踩了很多坑后总结出一套有效的方法论。"
 summary: "3个月实测用AI写冷邮件，从回复率3%提升到18%。分享AI开发信写作的具体prompt、策略和避坑指南。"
 categories: ["建站与副业"]
-tags: ["冷邮件", "AI写作", "销售工具", "客户开发", "email", "商务"]
+tags: ["指南", "AI写作", "AI副业"]
 showtoc: true
 ---
 

@@ -4,7 +4,7 @@ date: 2026-07-25
 description: "从Cursor到Claude Code再到Codex CLI，AI编程工具正在经历第三次进化。实测三款AI编程工具的区别和使用场景。"
 summary: "实测Claude Code、Codex CLI和Cursor三款AI编程工具，从自动补全到自主编程，看看AI编程的新范式长什么样。"
 categories: ["AI工具实测"]
-tags: ["Claude Code", "Codex CLI", "AI编程", "Cursor", "开发者工具", "效率工具"]
+tags: ["对比", "AI编程", "Claude Code", "Codex"]
 showtoc: true
 ---
 

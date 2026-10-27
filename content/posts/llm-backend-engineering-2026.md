@@ -4,7 +4,7 @@ date: 2026-07-20
 description: "深入讲解如何从工程角度构建生产级LLM应用，包括RAG架构、流式响应、Token管理、错误处理、成本优化等核心工程实践"
 summary: "LLM应用后端开发完整指南，深度解析RAG检索增强生成、流式处理(SSE/WebSocket)、Token管理与成本控制、Prompt版本管理、并发限流等工程实践"
 categories: ["建站与副业"]
-tags: ["LLM", "AI开发", "RAG", "后端开发", "Python", "向量数据库", "API设计"]
+tags: ["指南", "技术开发", "API"]
 showtoc: true
 ---
 

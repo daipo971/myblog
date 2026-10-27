@@ -2,7 +2,7 @@
 title: "HeyGen 自研语音模型登顶 TTS 榜：短剧配音成本算到小数点后三位"
 date: 2026-10-14T15:00:00+08:00
 draft: false
-tags: ["AI大模型", "TTS", "HeyGen", "配音", "解读"]
+tags: ["快讯", "AI音频", "HeyGen"]
 categories: ["AI工具实测"]
 description: "HeyGen 10 月 9 日发布自研语音模型 HeyGen Voice，盲测登顶 Artificial Analysis TTS 榜（Elo 1201）。launch 价 $15/百万字符只到 10 月 31 日。我们拿短剧旁白算了一笔账：一集配音成本不到一分钱。"
 ---

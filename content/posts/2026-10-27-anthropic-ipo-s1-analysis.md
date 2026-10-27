@@ -3,7 +3,7 @@ title: "Claude 要上市了：Anthropic 招股书 614 页，我帮你读完了"
 date: 2026-10-27T07:40:00+08:00
 draft: false
 categories: ["AI前沿动态"]
-tags: ["Claude", "Anthropic", "IPO", "招股书"]
+tags: ["快讯", "行业动态", "Anthropic", "Claude"]
 description: "Anthropic 10 月 26 日向美国 SEC 公开递交 S-1，计划以 ANT 在纳斯达克上市：上半年营收 163 亿美元、账面亏损 807 亿美元、未来算力最低付款 4170 亿美元、创始人一票握 50.1% 投票权。本文按章节拆解这份 614 页招股书，哪些是实锤、哪些还是传闻，一次讲清。"
 ---
 

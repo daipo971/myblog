@@ -4,7 +4,7 @@ date: 2026-07-25
 description: "一条YouTube视频从脚本、配音、剪辑到封面，全部用AI工具完成。手把手拆解我的AI视频创作工作流。"
 summary: "手把手教你用AI做一条完整的YouTube视频。从选题、写脚本、配音、配素材到做封面，全部AI完成，一条视频不到2小时。"
 categories: ["建站与副业"]
-tags: ["YouTube", "视频创作", "AI视频", "内容创作", "AI工具", "短视频"]
+tags: ["指南", "AI视频", "自媒体"]
 showtoc: true
 ---
 

@@ -4,7 +4,7 @@ date: 2026-07-11
 description: "分享用AI工具赚钱的真实方法，包括AI写作、AI编程、AI设计等领域的实操经验和收入数据。"
 summary: "用AI工具赚钱的5个真实方法及实操经验。"
 categories: ["建站与副业"]
-tags: ["赚钱", "AI工具", "副业", "自由职业", "收入"]
+tags: ["指南", "AI副业", "自媒体"]
 showtoc: true
 ---
 

@@ -3,7 +3,7 @@ title: "Google 发布 Gemini 代理：统一的工作 AI Agent，能当同事使
 date: 2026-10-09T09:00:00+08:00
 lastmod: 2026-10-09T09:00:00+08:00
 description: "Google 在 2026 Gemini at Work 大会上发布全新 Gemini 代理：单一通用工作 AI，可做个人助理、可当团队同事，深度集成 Workspace。本文详解六大架构特性、三种使用方式与上手方法。"
-tags: ["AI工具", "Google", "Gemini", "AI Agent", "Workspace", "教程"]
+tags: ["快讯", "AI Agent", "Gemini", "Google"]
 categories: ["AI前沿动态"]
 draft: false
 showTableOfContents: true

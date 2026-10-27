@@ -3,7 +3,7 @@ title: "Hark Pro 首发实测：面板系统真香，登录先坑你三回（附
 date: 2026-10-07T08:00:00+08:00
 lastmod: 2026-10-07T08:00:00+08:00
 description: "Figure 创始人新作 Hark Pro 上线首日实测：免费档全功能、面板系统是亮点，但登录流程槽点密集。另附 Twilio 免费美国号完整翻车记录——教程没告诉你的 6 个坑。"
-tags: ["AI工具", "Hark", "Twilio", "实测", "避坑"]
+tags: ["评测", "注册开通", "Twilio"]
 categories: ["海外服务通关"]
 draft: false
 showTableOfContents: true

@@ -4,7 +4,7 @@ date: 2026-07-09
 description: "详细的SEO优化指南，包括关键词研究、内容优化、技术SEO、外链建设等方面，帮助你的AI工具博客获得更多流量。"
 summary: "SEO优化完整指南，提高AI工具博客的搜索引擎排名和流量。"
 categories: ["建站与副业"]
-tags: ["SEO优化", "搜索引擎", "流量提升", "AI工具", "博客优化"]
+tags: ["复盘", "SEO", "建站"]
 showtoc: true
 ---
 
