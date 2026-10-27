@@ -10,16 +10,19 @@
     <footer class="entry-footer">
         {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
     </footer>
+    {{- /* 商城面向中文用户，英文首页不显示 */}}
+    {{- if ne site.Language.Lang "en" }}
     <a class="shop-float-card" href="https://shop.xinqai.com" target="_blank" rel="noopener">
         <span class="shop-float-title">🛒 欣淇AI网</span>
         <span class="shop-float-desc">海外会员代充 · 极速发卡</span>
     </a>
+    {{- end }}
 
     {{- with site.Params.contact }}
     <div class="home-contact">
         <div class="home-contact-card">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span>联系我：</span>
+            <span>{{ .label | default "联系我：" }}</span>
             <a href="mailto:{{ .email }}" class="contact-email">{{ .email }}</a>
         </div>
     </div>

@@ -16,7 +16,8 @@ jobs:
           TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: |
             set -e
-            files=$(git diff --name-only --diff-filter=A HEAD~1 HEAD -- 'content/posts/*.md' || true)
+            # 英文译文（*.en.md）不推送到中文 TG 频道
+            files=$(git diff --name-only --diff-filter=A HEAD~1 HEAD -- 'content/posts/*.md' | grep -v '\.en\.md$' || true)
             if [ -z "$files" ]; then echo "没有新增文章"; exit 0; fi
             for f in $files; do
               [ -f "$f" ] || continue

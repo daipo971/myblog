@@ -1,0 +1,22 @@
+{{- /* 站点覆盖：sitemap 只收录值得被索引的页面（排除标签页、搜索页、noindex 页），并为有译文的页面标注 hreflang */ -}}
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{{- range where .Pages "Sitemap.Disable" "ne" true }}
+  {{- $skip := or (and (in (slice "term" "taxonomy") .Kind) (eq .Data.Plural "tags")) (eq .Layout "search") (eq .Params.robotsNoIndex true) }}
+  {{- if and .Permalink (not $skip) }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    {{- if not .Lastmod.IsZero }}
+    <lastmod>{{ safeHTML (.Lastmod.Format "2006-01-02T15:04:05-07:00") }}</lastmod>
+    {{- end }}
+    {{- if .IsTranslated }}
+    {{- range .AllTranslations }}
+    <xhtml:link rel="alternate" hreflang="{{ .Language.Params.hreflang | default .Lang }}" href="{{ .Permalink }}"/>
+    {{- end }}
+    {{- $xdefault := index (where .AllTranslations "Lang" "en") 0 | default . }}
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ $xdefault.Permalink }}"/>
+    {{- end }}
+  </url>
+  {{- end }}
+{{- end }}
+</urlset>

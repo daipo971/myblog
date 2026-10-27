@@ -1,0 +1,29 @@
+# {{ site.Title }} — robots.txt（由 layouts/robots.txt 生成）
+# 全站开放抓取。标签页、搜索页在页面里用 noindex,follow 控制，不在这里屏蔽，
+# 这样爬虫仍能顺着这些页面的链接发现文章。
+User-agent: *
+Allow: /
+Disallow: /search/
+Disallow: /en/search/
+
+# 主流搜索引擎与 AI 搜索爬虫：明确允许
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: Baiduspider
+User-agent: Sogou web spider
+User-agent: 360Spider
+User-agent: Bytespider
+User-agent: YandexBot
+User-agent: DuckDuckBot
+User-agent: Applebot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: PerplexityBot
+Allow: /
+Disallow: /search/
+Disallow: /en/search/
+
+Sitemap: {{ "sitemap.xml" | absURL }}

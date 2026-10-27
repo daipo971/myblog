@@ -1,4 +1,15 @@
-{{- /* Google Fonts: Outfit + JetBrains Mono + Noto Sans SC */}}
+{{- /* Google Fonts: Outfit + JetBrains Mono + Noto Sans SC
+     非阻塞加载：先用系统字体渲染，字体到了再替换，避免中文大字体拖慢首屏（LCP） */}}
+{{- $fonts := "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" }}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="{{ $fonts }}">
+<link rel="stylesheet" href="{{ $fonts }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ $fonts }}"></noscript>
+
+{{- /* RSS：每种语言都声明自己的订阅源，方便爬虫和阅读器发现 */}}
+{{- if .IsHome }}
+{{- range .Translations }}
+<link rel="alternate" type="application/rss+xml" hreflang="{{ .Language.Params.hreflang | default .Lang }}" href="{{ .Permalink }}index.xml" title="{{ .Site.Title }}">
+{{- end }}
+{{- end }}

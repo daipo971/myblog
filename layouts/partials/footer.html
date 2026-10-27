@@ -15,16 +15,16 @@
     {{- end }}
 
     <span>
-        联系我：
-        <a href="mailto:daipo971@outlook.com" title="发送邮件" style="color: var(--secondary); transition: color 0.3s ease;">
-            daipo971@outlook.com
+        {{ site.Params.contact.label | default "联系我：" }}
+        <a href="mailto:{{ site.Params.contact.email }}" title="Email" style="color: var(--secondary); transition: color 0.3s ease;">
+            {{ site.Params.contact.email }}
         </a>
         {{- print " · "}}
     </span>
 
     <span>
         
-        <span><a href="{{ "index.xml" | absURL }}" title="RSS 订阅" style="color: var(--secondary); transition: color 0.3s ease;">RSS 订阅</a>{{- print " · "}}</span>
+        <span><a href="{{ "index.xml" | absLangURL }}" title="RSS" style="color: var(--secondary); transition: color 0.3s ease;">{{ if eq site.Language.Lang "en" }}RSS feed{{ else }}RSS 订阅{{ end }}</a>{{- print " · "}}</span>
         Powered by
         <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>

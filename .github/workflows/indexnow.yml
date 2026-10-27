@@ -1,0 +1,47 @@
+name: IndexNow 通知搜索引擎（Bing / Yandex 等）
+# 文章新增或修改后，等 Cloudflare 部署完成，再把变动的网址主动推给 IndexNow，
+# 让 Bing 等搜索引擎尽快抓取，不用等它自己来爬。Google 不支持 IndexNow，靠 sitemap。
+on:
+  push:
+    branches: [main]
+    paths: ['content/**']
+  workflow_dispatch:
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: 收集变动的网址
+        id: urls
+        run: |
+            set -e
+            base="https://xinqai.com"
+            urls="$base/ $base/en/"
+            files=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'content/posts/*.md' || true)
+            for f in $files; do
+              [ -f "$f" ] || continue
+              grep -q '^draft: *true' "$f" && continue
+              name=$(basename "$f" .md)
+              prefix=""
+              case "$name" in *.en) name="${name%.en}"; prefix="/en" ;; esac
+              fslug=$(grep -m1 '^slug:' "$f" | sed -e 's/^slug:[[:space:]]*//' -e 's/^"//' -e 's/"$//' || true)
+              [ -n "$fslug" ] && name="$fslug"
+              urls="$urls $base$prefix/posts/$name/"
+            done
+            echo "list=$urls" >> "$GITHUB_OUTPUT"
+            echo "$urls" | tr ' ' '\n'
+      - name: 等待 Cloudflare 部署完成
+        run: sleep 180
+      - name: 提交到 IndexNow
+        env:
+          URLS: ${{ steps.urls.outputs.list }}
+        run: |
+            key="1c7364dc9795c3adb177487618558bc1"
+            json=$(printf '%s\n' $URLS | python3 -c 'import json,sys; print(json.dumps([l.strip() for l in sys.stdin if l.strip()]))')
+            body="{\"host\":\"xinqai.com\",\"key\":\"$key\",\"keyLocation\":\"https://xinqai.com/$key.txt\",\"urlList\":$json}"
+            code=$(curl -s -o /dev/null -w '%{http_code}' -X POST https://api.indexnow.org/indexnow \
+              -H 'Content-Type: application/json; charset=utf-8' -d "$body")
+            echo "IndexNow 返回 HTTP $code（200/202 表示成功）"
+            case "$code" in 200|202) ;; *) exit 1 ;; esac
