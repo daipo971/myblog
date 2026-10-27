@@ -3,7 +3,7 @@ title: "Kimi K3.1 Pro Is Out: China's 3T-Parameter Model Takes On Claude Opus, a
 date: 2026-10-27T07:35:00+08:00
 draft: false
 tags: ["Kimi", "Moonshot AI", "LLM", "Chinese AI models", "Guide"]
-categories: ["China AI"]
+categories: ["China and Open Models"]
 description: "Moonshot AI released Kimi K3.1 Pro on October 23: a ~3T-parameter mixture-of-experts model whose coding and financial-document scores come close to Claude Opus 5.5 at half the API price. Free entry points, membership tiers, five ways to access it, and four pitfalls."
 summary: "Moonshot AI released Kimi K3.1 Pro on October 23: a ~3T-parameter mixture-of-experts model whose coding and financial-document scores come close to Claude Opus 5.5 at half the API price. Free entry points, membership tiers, five ways to access it, and four pitfalls."
 ---

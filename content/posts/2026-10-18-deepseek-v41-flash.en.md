@@ -3,7 +3,7 @@ title: "DeepSeek-V4.1-Flash: Faster, Cheaper, MIT-Licensed, and How to Use It"
 date: 2026-10-18T16:30:00+08:00
 description: "DeepSeek released V4.1-Flash-1017 on October 17: MIT-licensed open weights, API input from $0.15 per million tokens, cached input at $0.003, plus new Search and Fetch web APIs. Pricing explained, peak hours, and how to get started."
 tags: ["DeepSeek", "Open-source models", "API", "LLM", "Chinese AI models"]
-categories: ["China AI"]
+categories: ["China and Open Models"]
 ---
 
 DeepSeek released another model yesterday (October 17): **DeepSeek-V4.1-Flash-1017**, where 1017 is the release date. This one is not chasing leaderboards. It is all about being fast and cheap: faster inference, lower API prices, and weights released under the MIT license. Bloomberg covered it in a single phrase: faster and leaner.
