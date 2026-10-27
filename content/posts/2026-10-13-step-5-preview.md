@@ -79,6 +79,14 @@ Step 5 的故事线很清晰：**旗舰级智能 + 1/8 成本 + 长周期 Agent 
 
 **核实说明**：发布信息来自 9 月 20 日环球网、上观新闻、澎湃新闻、上海证券报·中国证券网、IT 之家的报道；OpenRouter 榜单消息来自 10 月 10 日爱范儿、上观新闻、雷峰网的报道；WorkBuddy 独家限免消息来自 IT之家 10 月 12 日报道；实验数据（StepCodeBench、GPU Kernel、后训练）来自阶跃官方公布，实际使用效果受工具环境影响。
 
+## 参考来源
+
+- [阶跃星辰官方 GitHub：Step-5-Preview 仓库 README](https://github.com/stepfun-ai/Step-5-Preview)
+- [MarkTechPost：StepFun 发布 Step-5-Preview 开放权重（英文）](https://www.marktechpost.com/2026/10/16/stepfun-releases-step-5-preview-open-weights-600b-moe-27b-active-1m-context/)
+- [vLLM 官方部署配方：Step-5-Preview](https://recipes.vllm.ai/stepfun-ai/Step-5-Preview)
+
+文中跑分、价格等数据多为厂商官方说法，以官方最新公布为准。
+
 ## 相关阅读
 
 - [阶跃 Step 模型档案：规格、许可证、价格与成本争议](/posts/stepfun-step-guide/)：这个模型的全部信息汇总，持续更新

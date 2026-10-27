@@ -77,6 +77,10 @@ A：已安装的不受影响。新地区下架的应用，已安装的一般还�
 
 *教程核实时间：2026-10-15。流程依据 Google Play 官方帮助文档整理，界面文案以 App 实际显示为准（Google 偶尔会调整入口名称）*
 
+## 参考来源
+
+- [Google Play 官方帮助：更改 Google Play 国家/地区](https://support.google.com/googleplay/answer/7431675?hl=zh-Hans)
+
 ## 相关阅读
 
 - [美区 Apple ID 注册保姆级教程：免信用卡，App Store 入口是关键](/posts/2026-10-15-us-apple-id/)

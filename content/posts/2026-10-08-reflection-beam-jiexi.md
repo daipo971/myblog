@@ -78,6 +78,13 @@ Beam 的故事线很清晰：**效率优先的开源大模型 + 吃"非中国"�
 
 另外 10 月 6 日 Mistral 发布了万亿参数的 Mistral Large 4（内部代号 "Le Chonk"，原生多模态），API 预览已上线、权重承诺 10 月底放出——"西方开源"一下从独角戏变成了双雄会。权重一发布，本博客会第一时间出**实测篇**：两家放一起，能跑多快、代码能力到底什么水平、和 GLM、Kimi、Qwen 再比一比。先收藏这篇，实测见。
 
+## 参考来源
+
+- [VKTR：Reflection AI 发布 5010 亿参数开放权重模型 Beam（英文）](https://www.vktr.com/ai-platforms/reflection-ai-unveils-beam-a-501b-open-weight-model/)
+- [AI Magazine：Reflection AI 的 Beam 挑战中国开放权重模型（英文）](https://aimagazine.com/news/reflection-ais-beam-challenges-chinese-open-weight-models)
+
+文中跑分、价格等数据多为厂商官方说法，以官方最新公布为准。
+
 ## 相关阅读
 
 - [Reflection Beam 模型档案：规格、许可、跑分与部署门槛](/posts/reflection-beam-guide/)：这个模型的全部信息汇总，持续更新

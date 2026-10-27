@@ -38,6 +38,13 @@ categories: ["中国与开源模型"]
 
 接下来值得盯的两件事：Hugging Face 上的实际下载量与社区评测，以及 GLM、Kimi、Qwen 是否跟进打价格战。
 
+## 参考来源
+
+- [TechNode：MiniMax 开放 4280 亿参数 M3.1 Flash 权重（英文）](https://technode.com/2026/10/23/minimax-releases-open-weights-for-428-billion-parameter-m3-1-flash-model/)
+- [OpenRouter：MiniMax M3.1 Flash 模型页（价格、上下文）](https://openrouter.ai/minimax/minimax-m3.1-flash)
+
+文中跑分、价格等数据多为厂商官方说法，以官方最新公布为准。
+
 ## 相关阅读
 
 - [MiniMax 模型档案：规格、价格、许可证与国内用法](/posts/minimax-guide/)：这个模型的全部信息汇总，持续更新

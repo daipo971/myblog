@@ -74,6 +74,14 @@ Step 5 开源第一天，最大的新闻不是 600B 参数，而是**许可证**
 
 *信息核实时间：2026-10-15 16:00（CST）。官方仓库、许可证条款为人工核实；社区量化进展、第三方实测数据转述自公开报道，独立验证不足处已标注。ModelScope 镜像据官方及多家媒体报道已上线，未在本机验证打开。*
 
+## 参考来源
+
+- [阶跃星辰官方 GitHub：Step-5-Preview 仓库 README](https://github.com/stepfun-ai/Step-5-Preview)
+- [vLLM 官方部署配方：Step-5-Preview](https://recipes.vllm.ai/stepfun-ai/Step-5-Preview)
+- [MarkTechPost：StepFun 发布 Step-5-Preview 开放权重（英文）](https://www.marktechpost.com/2026/10/16/stepfun-releases-step-5-preview-open-weights-600b-moe-27b-active-1m-context/)
+
+文中跑分、价格等数据多为厂商官方说法，以官方最新公布为准。
+
 ## 相关阅读
 
 - [阶跃 Step 模型档案：规格、许可证、价格与成本争议](/posts/stepfun-step-guide/)：这个模型的全部信息汇总，持续更新

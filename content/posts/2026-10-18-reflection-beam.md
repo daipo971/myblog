@@ -34,6 +34,13 @@ tags: ["开源模型", "Reflection", "Beam", "大模型"]
 - 对国内用户，它的最大价值可能是"又多了一个免费可商用的强代码模型"，而不是地缘政治大戏。
 - 如果你已经在用 Qwen、GLM、Kimi 系的开源模型，Beam 目前没有非换不可的理由；但做 Agent/代码场景的，值得蹲一下社区实测。
 
+## 参考来源
+
+- [VKTR：Reflection AI 发布 5010 亿参数开放权重模型 Beam（英文）](https://www.vktr.com/ai-platforms/reflection-ai-unveils-beam-a-501b-open-weight-model/)
+- [AI Magazine：Reflection AI 的 Beam 挑战中国开放权重模型（英文）](https://aimagazine.com/news/reflection-ais-beam-challenges-chinese-open-weight-models)
+
+文中跑分、价格等数据多为厂商官方说法，以官方最新公布为准。
+
 ## 相关阅读
 
 - [Reflection Beam 模型档案：规格、许可、跑分与部署门槛](/posts/reflection-beam-guide/)：这个模型的全部信息汇总，持续更新

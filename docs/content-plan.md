@@ -66,7 +66,7 @@
 - [x] 模型档案页：kimi-guide、minimax-guide、stepfun-step-guide、reflection-beam-guide，DeepSeek 在完全指南里加版本档案（PR #6）
 - [ ] 英文第一批 10 篇（模型档案页）——英文分支负责
 - [x] 「ChatGPT / Claude / Gemini 国内开通总纲」：chatgpt-claude-gemini-china-access-guide（PR #7）
-- [ ] 给 10 月快讯补一手来源链接
+- [~] 给 10 月快讯补一手来源链接（2026-10-28 第一批：Kimi K3.1 Pro、MiniMax M3.1 Flash、Step-5、Reflection Beam、DeepSeek V4.1 Flash 共 9 篇 + Google Play 改区教程，加「参考来源」小节；其余快讯待补，GPT-6.1 Terra 暂无可靠来源不加）
 - [ ] 给教程补截图（需要站长实际操作截图，清单见下文「待补截图」）
 
 ### 第 3 阶段：扩张与复盘（2027 年 1–3 月）

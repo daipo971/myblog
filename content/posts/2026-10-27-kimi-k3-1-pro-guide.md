@@ -89,6 +89,13 @@ Kimi K3.1 Pro 是今年国产大模型里「效果」这条线最强的一次还
 
 *事实核对：发布信息来自 Moonshot 官方 2026-10-23 公告及 X 账号 @Kimi_Moonshot；跑分数据为官方自测口径；会员价格为 Kimi 官网帮助中心 2026-10-19 截图口径，费率以官网实时页面为准。*
 
+## 参考来源
+
+- [MarkTechPost：Moonshot AI 发布 Kimi K3.1 Pro（英文）](https://www.marktechpost.com/2026/10/23/moonshot-ai-kimi-k3-1-pro-open-weight-model/)
+- [Vals.ai：Kimi K3.1 Pro 第三方评测榜单（英文）](https://www.vals.ai/models/kimi_kimi-k3.1-pro)
+
+文中跑分、价格等数据多为厂商官方说法，以官方最新公布为准。
+
 ## 相关阅读
 
 - [Kimi 模型档案：全版本、价格、开源进度与国内用法](/posts/kimi-guide/)：这个模型的全部信息汇总，持续更新
