@@ -10,6 +10,10 @@
     <footer class="entry-footer">
         {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
     </footer>
+    <a class="shop-float-card" href="https://shop.xinqai.com" target="_blank" rel="noopener">
+        <span class="shop-float-title">🛒 欣淇AI网</span>
+        <span class="shop-float-desc">海外会员代充 · 极速发卡</span>
+    </a>
 
     {{- with site.Params.contact }}
     <div class="home-contact">
@@ -61,6 +65,48 @@
 
 .contact-email:hover {
     color: #1d4ed8;
+}
+
+.shop-float-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 24px;
+    padding: 14px 18px;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.shop-float-card:hover {
+    border-color: #2563eb;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.shop-float-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.shop-float-desc {
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+@media (min-width: 1150px) {
+    .shop-float-card {
+        position: fixed;
+        right: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 90;
+        margin-top: 0;
+        width: 170px;
+    }
 }
 </style>
 {{- end -}}
