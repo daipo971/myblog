@@ -143,5 +143,5 @@ Hark 和 Twilio 的实测，其实是同一个故事：**教程/宣传只告诉�
 
 - [Wise 多币种账户：大陆居民免费开户指南，顺带拆穿「包过」话术](/posts/2026-10-20-wise-guide/)
 - [₺75/年拿下 .com：Google Workspace 土耳其区注册域名全流程避坑](/posts/2026-10-17-google-workspace-turkey-domain/)
-- [Meta Muse 邀请码实测：注册领 10 亿 Token，双方各得（附兑换教程与避坑）](/posts/2026-10-09-muse-referral/)
+- [Muse 邀请码怎么兑换：10 亿 Token 奖励规则和步骤](/posts/2026-10-09-muse-referral/)
 - 更多「海外服务通关」文章：[/categories/海外服务通关/](/categories/海外服务通关/)
