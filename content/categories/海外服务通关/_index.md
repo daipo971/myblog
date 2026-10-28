@@ -40,6 +40,6 @@ description: "国内用户开通和使用海外 AI 服务的完整指南：美�
 
 - [ChatGPT 网页端「Model not found」的原因和解法](/posts/2026-10-16-chatgpt-model-not-found/)
 
-不想自己折腾账号和支付，也可以看看[欣淇AI网商城](https://shop.xinqai.com)的会员代充服务。
+不想自己折腾账号和支付，也可以看看 [欣淇AI网商城](https://shop.xinqai.com) 的会员代充服务。
 
 下面是本分类全部文章，按发布时间倒序排列。
