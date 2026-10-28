@@ -331,7 +331,7 @@ showtoc: true
 ---
 
 **相关文章推荐：**
-- [SEO优化指南：如何提高欣淇AI网的搜索引擎排名](/posts/seo-optimization-guide)
+- [博客 SEO 优化教程：收录、关键词、内链和 301 怎么做](/posts/seo-optimization-guide)
 - [2026年最热门的AI工具：从免费到付费，一篇搞定](/posts/free-ai-tools-2026/)
 - [AI工具大比拼：ChatGPT vs Claude vs Cursor，2026年怎么选？](/posts/chatgpt-vs-claude-vs-cursor-guide/)
 
