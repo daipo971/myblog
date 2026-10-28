@@ -273,7 +273,7 @@ AI工具已经把短视频创作的门槛降到了最低。一条10分钟的视�
 
 ## 相关阅读
 
-- [2026年AI视频生成工具横评：Sora vs 可灵(Kling) vs Runway vs Pika 实测对比](/posts/ai-video-generation-comparison-2026/)
+- [AI视频生成工具对比 2026：可灵、即梦、Veo、Runway、Pika怎么选](/posts/ai-video-generation-comparison-2026/)
 - [2026年AI视频剪辑工具评测：10款工具从入门到专业级实测对比](/posts/ai-video-editing-tools-2026/)
 - [AI工具月度省钱攻略：2026年怎么用最少的钱配齐最强的AI组合](/posts/ai-tools-monthly-savings-2026/)
 - 更多「AI应用场景」文章：[/categories/ai应用场景/](/categories/ai应用场景/)
