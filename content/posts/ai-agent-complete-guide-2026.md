@@ -286,7 +286,7 @@ print("审核结果：", check_result.final_output)
 
 **OpenAI Operator：** 2026年发布的浏览器Agent，可以在网页上完成订餐、购物、填表等任务。
 
-**Browser Use（开源）：** 一个开源项目，可以用GPT-4o或Claude控制浏览器。
+**Browser Use（开源）：** 一个开源项目，可以接入 GPT、Claude 等模型控制浏览器。
 
 ### 实战：用浏览器Agent自动填表
 
@@ -295,7 +295,7 @@ from browser_use import Agent
 
 agent = Agent(
     task="打开谷歌表单，填写姓名、邮箱、电话，然后提交",
-    llm="gpt-4o"
+    llm="<按官方文档填写模型>"
 )
 
 await agent.run()
