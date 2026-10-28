@@ -82,7 +82,7 @@ showtoc: true
 ### 锚文本类型
 #### 关键词锚文本
 ```
-示例：使用 <a href="/posts/chatgpt-4o-free-guide-2026">ChatGPT 免费版</a> 可以节省大量费用
+示例：使用 <a href="/posts/chatgpt-4o-real-experience/">ChatGPT 免费版</a> 可以节省大量费用
 ```
 - **优点**：强化关键词相关性
 - **缺点**：过度使用可能被惩罚
@@ -90,7 +90,7 @@ showtoc: true
 
 #### 长尾锚文本
 ```
-示例：了解 <a href="/posts/chatgpt-4o-free-guide-2026">ChatGPT 免费版的使用技巧</a>
+示例：了解 <a href="/posts/chatgpt-4o-real-experience/">ChatGPT 免费版的使用技巧</a>
 ```
 - **优点**：自然，用户体验好
 - **缺点**：关键词相关性较弱
@@ -106,7 +106,7 @@ showtoc: true
 
 #### URL锚文本
 ```
-示例：访问 <a href="/posts/chatgpt-4o-free-guide-2026">完整教程</a>
+示例：访问 <a href="/posts/chatgpt-4o-real-experience/">完整教程</a>
 ```
 - **优点**：自然
 - **缺点**：SEO效果最弱
@@ -389,4 +389,4 @@ a:hover {
 
 ## 更新记录
 
-- 2026-10-28：补充新站内链操作清单
+- 2026-10-28：补充新站内链操作清单；删除过时模型名称和失效链接
