@@ -190,7 +190,35 @@ def lint(path: pathlib.Path, is_new: bool):
     if len(lead) < 30:
         warns.append("开头 100 字内容太少，应先给结论")
 
+    # 以下规则来自 docs/framework/12-pitfalls.md（2026-10 全站审计）
+    prose = re.sub(r"```.*?```", "", section_free(body), flags=re.S)
+    for m in sorted(set(FAKE_EXPERIENCE.findall(prose))):
+        warns.append(f"疑似无法核实的个人经历「{m}」：没有真实测试就改成客观写法，见 12-pitfalls.md")
+    stale = sorted(set(STALE_MODEL.findall(prose)))
+    if stale:
+        warns.append(f"出现过时模型名 {'、'.join(stale)}：确认是否已标明过时，见 12-pitfalls.md")
+    if "Sora" in prose and not re.search(r"Sora[^。\n]{0,40}(停|关闭|下线)|(停|关闭|下线)[^。\n]{0,40}Sora", prose):
+        warns.append("提到 Sora 但没说明已停止服务（2026-03 宣布）")
+    if AFF_CLAIM.search(prose) and not AFF_LINK.search(body):
+        warns.append("写了联盟链接 / 佣金声明，但文中找不到联盟或推荐链接")
+
     return errors, warns
+
+
+def section_free(body: str) -> str:
+    """去掉「更新记录」一节，避免记录里描述旧问题时被重复报警。"""
+    return re.sub(r"^##\s*更新记录.*?(?=^##\s|\Z)", "", body, flags=re.S | re.M)
+
+
+FAKE_EXPERIENCE = re.compile(
+    r"用了(?:[一两三四五六七八九十半几]|\d+)(?:个)?(?:多)?(?:月|年|周|星期)"
+    r"|花了(?:[一两三四五六七八九十半几]|\d+)(?:个)?(?:多)?(?:月|周|星期|天)(?:时间)?(?:实测|测试|试)"
+    r"|我(?:实测|亲测|测试了|每天用|自己用|拿真实)"
+    r"|作为(?:一[个名]\S{0,8}(?:用户|程序员|开发者|博主|站长|工程师)|深度用户)|关于作者|笔者"
+)
+STALE_MODEL = re.compile(r"GPT-4o(?:-mini)?|4o-mini|Claude 3(?:\.5|\.7)?(?=\s|[^\d.])|DALL[-·]E ?3")
+AFF_CLAIM = re.compile(r"(?:我|本站)(?:可能)?会?获得(?:少量)?佣金|链接(?:是|为)(?:本站)?联盟链接")
+AFF_LINK = re.compile(r"[?&](?:aff|ref|via|affiliate)=|/aff\.php|/go/")
 
 
 def changed_files():
