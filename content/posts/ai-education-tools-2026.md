@@ -470,6 +470,6 @@ AI教育工具正在深刻改变传统教育模式。选择合适的工具需要
 ## 相关阅读
 
 - [2026年AI金融工具革命：从投资决策到风险管理](/posts/ai-finance-tools-2026/)
-- [2026年AI自动化工具对比：从零开始构建智能工作流](/posts/ai-automation-tools-2026/)
+- [Zapier、Make、n8n 怎么选：AI 自动化工具对比](/posts/ai-automation-tools-2026/)
 - [2026年AI安全工具完全指南：从数据保护到模型安全](/posts/ai-security-tools-2026/)
 - 更多「AI应用场景」文章：[/categories/ai应用场景/](/categories/ai应用场景/)
