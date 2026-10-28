@@ -1,7 +1,7 @@
 ---
 title: "Reflection Beam 模型档案：501B 开源模型的规格、Apache 2.0 许可、跑分与部署门槛"
 date: 2026-10-28T06:30:00+08:00
-lastmod: 2026-10-28T06:30:00+08:00
+lastmod: 2026-10-28T09:00:00+08:00
 draft: false
 categories: ["中国与开源模型"]
 tags: ["档案", "开源模型", "Reflection"]
@@ -12,6 +12,17 @@ showtoc: true
 **Beam 是美国 Reflection AI 的第一个开源大模型：10 月 5 日发布，10 月 16 日以 Apache 2.0 协议放出完整权重。** 它公开定位为「面向中国开源模型的美国替代方案」，代码和 Agent 任务是强项，但独立评测的综合排名明显落后于 GLM-5.3 和 Kimi K3。
 
 这一页是 Beam 的档案页。把它放在「中国与开源模型」里，是因为它的对标对象就是国产开源模型，每次有新版本或新消息都会更新。
+
+## 基本信息
+
+| 项目 | 内容 |
+| --- | --- |
+| 公司 | Reflection AI，美国 |
+| 当前模型 | Beam-501B-A23B（2026-10-05 发布） |
+| 开源状态 | 2026-10-16 放出完整权重 |
+| 许可证 | Apache 2.0 |
+| 使用入口 | Hugging Face 权重、官方 beta API（候补制） |
+| 国内可用 | 权重下载需海外网络，API 可用地区以官方为准 |
 
 ## 版本时间线
 
@@ -68,6 +79,32 @@ showtoc: true
 
 10 月初还有法国 Mistral Large 4（万亿参数、原生多模态）和德国 Kolibri 接连发布，标尺同样对准中国模型。Beam 是其中分量最重的一款。
 
+## 常见问题
+
+**Reflection AI 是中国公司吗？**
+不是。Reflection AI 是美国公司，创始人来自 Google DeepMind，Nvidia 参投。本站把 Beam 收在「中国与开源模型」里，是因为它公开对标的就是国产开源模型。
+
+**Beam 比国产开源模型强吗？**
+从现有数据看没有。官方榜单上它在 Terminal-Bench 和 DeepSWE 上落后于 Kimi K3、GLM-5.3；Artificial Analysis 的智能指数只有 30 分，低于 GLM-5.3 的 45 分和 Kimi K3 的 44 分。它最突出的优势是许可证。
+
+**Apache 2.0 意味着什么？**
+可以商用、修改、蒸馏，不需要署名，也没有营收门槛，是目前限制最少的开源许可证之一。相比之下，[MiniMax](/posts/minimax-guide/) 和 [阶跃 Step 5](/posts/stepfun-step-guide/) 的自研许可证都对大规模商用有额外要求。
+
+**能关闭推理模式吗？**
+不能。Beam 只提供五档 `reasoning_effort`（low 到 max），最低档也会推理。只要简单快速回答的场景，选 low 档或换别的模型。
+
+**普通人怎么用上？**
+官方 beta API 兼容 OpenAI 格式，需要申请候补；权重体积在 280GB 到 1TB 之间，个人电脑跑不动。比较现实的是等第三方 API 平台上架后再试。
+
+**中文能力怎么样？**
+官方没有单独公布中文评测，模型训练数据和测试以英文为主。中文场景建议先用自己的真实任务小规模对比，再决定是否替换国产模型。
+
+**Beam 的官方跑分可信吗？**
+目前只能当作参考。SWE-bench Verified 81.6% 等数字都是官方自报、尚未经独立复现；独立机构 Artificial Analysis 的综合分明显低于官方宣传给人的印象。选型时以独立评测和自己的实测为准。
+
+**为什么叫「西方 DeepSeek」？**
+这是媒体给的标签，指它走的是 DeepSeek 式路线：大规模稀疏 MoE、开放权重、主打性价比。实际能力和生态目前还没有达到 DeepSeek 的水平。
+
 ## 相关报道
 
 - [Reflection Beam 解析：501B 参数的「西方 DeepSeek」](/posts/2026-10-08-reflection-beam-jiexi/)
@@ -77,5 +114,6 @@ showtoc: true
 ## 更新记录
 
 - 2026-10-28：建立档案页，收录 Beam 发布、开源、跑分和部署信息。
+- 2026-10-28：补充常见问题
 
 *资料来源：Reflection AI 官方博客与文档（2026-10-06 读取）；TechCrunch、《华尔街日报》相关报道；Hugging Face 模型页；Artificial Analysis 独立评测。官方跑分未经独立验证。*
