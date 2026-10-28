@@ -10,6 +10,7 @@ description: "国内用户开通和使用海外 AI 服务的完整指南：美�
 ## 第一关：账号
 
 - [美区 Apple ID 注册教程](/posts/2026-10-15-us-apple-id/)：免信用卡，很多海外 App 的前提。
+- [任意国家 Apple ID 注册教程](/posts/apple-id-any-country-guide/)：不止美区，任意国家/地区注册、绑卡与使用的完整流程。
 - [Google Play 改地区教程](/posts/2026-10-15-google-play-region/)：一年只能改一次，先看清楚再操作。
 - [Google Workspace 土耳其区注册域名](/posts/2026-10-17-google-workspace-turkey-domain/)
 
@@ -39,6 +40,6 @@ description: "国内用户开通和使用海外 AI 服务的完整指南：美�
 
 - [ChatGPT 网页端「Model not found」的原因和解法](/posts/2026-10-16-chatgpt-model-not-found/)
 
-不想自己折腾账号和支付，也可以看看 [欣淇AI网商城](https://shop.xinqai.com) 的会员代充服务。
+不想自己折腾账号和支付，也可以看看[欣淇AI网商城](https://shop.xinqai.com)的会员代充服务。
 
 下面是本分类全部文章，按发布时间倒序排列。
