@@ -153,5 +153,5 @@ AI视频剪辑不是在取代剪辑师，而是在**消除重复劳动**。
 **相关阅读：**
 - 👉 [2026年AI视频生成工具对比评测](/posts/ai-video-generation-comparison-2026/)
 - 👉 [2026年AI音乐生成工具完整评测](/posts/ai-music-generation-2026/)
-- 👉 [用AI工具赚钱的5个真实方法](/posts/make-money-with-ai-2026/)
+- 👉 [用 AI 做副业的 9 种方式](/posts/make-money-with-ai-2026/)
 - 👉 [AI设计工具评测](/posts/ai-design-tools-comparison-2026/)

@@ -92,7 +92,7 @@ Cursor 免费版每天 2000 次 AI 补全 + 500 次对话。说实话，我一�
 
 我之前写过一篇很详细的 Cursor 使用心得，踩坑和技巧都说了：
 
-👉 [用了半年Cursor AI，有些话不吐不快](/posts/cursor-programming-tools/)
+👉 [Cursor 编程工具使用指南](/posts/cursor-programming-tools/)
 
 Cursor 默认用的模型是 GPT-4，但你去设置里换成 Claude 模型，写代码效果会好很多。这算是一个小 trick。
 
@@ -212,7 +212,7 @@ ChatGPT 免费版管日常，Claude 免费版管长篇写作和论文，DeepSeek
 - [试了20多个免费AI工具，这7个我留在了电脑上](/posts/free-ai-tools-2026/)
 - [ChatGPT 免费版深度体验：不花钱真的够用吗？](/posts/chatgpt-4o-free-guide-2026/)
 - [ChatGPT vs Claude vs Cursor：2026年深度对比与选择指南](/posts/chatgpt-vs-claude-vs-cursor-guide/)
-- [我用了半年Cursor AI，有些话不吐不快](/posts/cursor-programming-tools/)
+- [Cursor 编程工具使用指南](/posts/cursor-programming-tools/)
 - [Perplexity AI深度体验：用了一个月，我卸载了Google](/posts/perplexity-ai-deep-review-2026/)
 *** End of File
 

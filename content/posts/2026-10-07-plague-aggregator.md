@@ -65,5 +65,5 @@ API Key 存在仓库 Secrets 里，代码里见不到。从抓取到上线，全
 
 - [LLM 应用后端开发实战：构建生产级 AI 应用的工程实践](/posts/llm-backend-engineering-2026/)
 - [Rust 指令编程实战：从新手到精通的完整路线图](/posts/rust-programming-complete-guide-2026/)
-- [用AI工具赚钱的5个真实方法：我的实操经验](/posts/make-money-with-ai-2026/)
+- [用 AI 做副业的 9 种方式](/posts/make-money-with-ai-2026/)
 - 更多「建站与副业」文章：[/categories/建站与副业/](/categories/建站与副业/)

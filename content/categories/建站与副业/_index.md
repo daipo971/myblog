@@ -23,7 +23,7 @@ description: "零成本搭建个人网站、选 VPS、用 Cloudflare 托管、�
 ## 第三步：变现与副业
 
 - [个人博客用 Affiliate 赚钱](/posts/blog-affiliate-guide-2026/)
-- [用 AI 赚钱的 5 个方法](/posts/make-money-with-ai-2026/) · [AI 副业 5 个真实案例](/posts/make-money-with-ai-cases-2026/) · [AI 副业变现模式](/posts/ai-side-project-monetize-2026/)
+- [用 AI 做副业的 9 种方式](/posts/make-money-with-ai-2026/)：门槛、做法和现实预期
 - [AI 编程入门到接单](/posts/ai-programming-to-freelance-2026/) · [AI 无代码做产品](/posts/ai-no-code-app-2026/)
 - [AI 写开发信实测](/posts/ai-cold-email-outreach-guide-2026/)
 

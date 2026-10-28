@@ -164,7 +164,7 @@ Bolt.new 内置了部署功能，一键就能发布到公开链接。
 ---
 
 **相关阅读：**
-- 👉 [用AI工具赚钱的5个真实方法](/posts/make-money-with-ai-2026/)
+- 👉 [用 AI 做副业的 9 种方式](/posts/make-money-with-ai-2026/)
 - 👉 [零成本搭建个人博客完整教程](/posts/free-blog-tutorial/)
 - 👉 [Cursor AI编程工具完整教程](/posts/cursor-programming-tools/)
 - 👉 [2026年免费AI工具清单](/posts/free-ai-tools-2026/)

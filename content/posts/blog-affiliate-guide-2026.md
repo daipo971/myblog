@@ -136,6 +136,6 @@ Google 越来越看重内容的「有用性」。一篇写透的长文，通常�
 ## 相关阅读
 
 - [2026 年便宜 VPS 推荐](/posts/cheap-vps-recommendations-2026/)
-- [用 AI 工具赚钱的 5 个方法](/posts/make-money-with-ai-2026/)
-- [AI 副业真实案例](/posts/make-money-with-ai-cases-2026/)
+- [用 AI 做副业的 9 种方式](/posts/make-money-with-ai-2026/)
+- [AI 编程接单指南](/posts/ai-programming-to-freelance-2026/)
 - 更多「建站与副业」文章：[/categories/建站与副业/](/categories/建站与副业/)

@@ -184,6 +184,6 @@ AI会告诉你：**周二到周四的早上8-10点（目标时区）是打开率
 
 ## 相关阅读
 
-- [AI副业项目变现指南：5个已验证的赚钱模式](/posts/ai-side-project-monetize-2026/)
+- [用 AI 做副业的 9 种方式](/posts/make-money-with-ai-2026/)
 - [AI编程入门到接单赚钱 2026：零基础也能用AI写出能卖钱的项目](/posts/ai-programming-to-freelance-2026/)
 - 更多「建站与副业」文章：[/categories/建站与副业/](/categories/建站与副业/)
