@@ -22,7 +22,7 @@ description: "ChatGPT、Claude、Cursor、Midjourney 等 AI 工具的实测评�
 ## AI 编程
 
 - [AI 编程工具横向评测](/posts/ai-coding-tools-comparison-2026/)
-- [Cursor vs Windsurf](/posts/cursor-vs-windsurf-2026/) · [Cursor 深度评测](/posts/cursor-programming-tools/) · [AI 代码编辑器评测](/posts/ai-code-editor-2026/)
+- [Cursor vs Windsurf](/posts/cursor-vs-windsurf-2026/) · [Cursor 使用指南](/posts/cursor-programming-tools/) · [AI 代码编辑器评测](/posts/ai-code-editor-2026/)
 - [Claude Code 与 Codex CLI](/posts/claude-code-codex-cli-2026/) · [Codex 入门](/posts/codex-guide/)
 
 ## Agent 与自动化
@@ -39,7 +39,7 @@ description: "ChatGPT、Claude、Cursor、Midjourney 等 AI 工具的实测评�
 
 ## 搜索、阅读与办公工具
 
-- [AI 搜索引擎评测](/posts/ai-search-engines-comparison-2026/) · [Perplexity 深度体验](/posts/perplexity-ai-deep-review-2026/)
+- [AI 搜索引擎对比](/posts/ai-search-engines-comparison-2026/) · [Perplexity 使用指南](/posts/perplexity-ai-deep-review-2026/)
 - [AI 翻译工具横评](/posts/ai-translation-tools-comparison-2026/)
 - [AI 笔记软件对比](/posts/ai-note-taking-comparison-2026/) · [AI PDF 工具](/posts/ai-pdf-tools-comparison-2026/)
 - [AI 生成 PPT](/posts/ai-presentation-tools-2026/) · [AI 数据分析](/posts/ai-data-analysis-tools-2026/)

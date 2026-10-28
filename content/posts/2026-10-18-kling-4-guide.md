@@ -125,5 +125,5 @@ tags: ["教程", "AI视频", "可灵"]
 
 - [Seedance 3.0 没发布，别找了：真的 Seedance 在即梦一直能用](/posts/2026-10-14-seedance/)
 - [Kimi K3.1 Pro 发布了：国产 3T 大模型，能跟 Claude Opus 掰手腕，普通人这样免费用上](/posts/2026-10-27-kimi-k3-1-pro-guide/)
-- [DeepSeek完全指南 2026：从入门到精通的免费AI模型使用教程](/posts/deepseek-complete-guide-2026/)
+- [DeepSeek 模型档案：版本、价格、许可证与国内用法](/posts/deepseek-complete-guide-2026/)
 - 更多「中国与开源模型」文章：[/categories/中国与开源模型/](/categories/中国与开源模型/)

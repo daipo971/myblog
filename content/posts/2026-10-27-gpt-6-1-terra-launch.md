@@ -54,5 +54,5 @@ Terra、Sol、Astra 三个名字一摆，选型本身就变难了。给新手一
 ## 相关阅读
 
 - [OpenAI Codex 代码生成入门完整指南（2026版）](/posts/codex-guide/)
-- [2026年AI Agent完全指南：从Claude Agent到OpenAI Agent SDK，手把手搭建AI智能体](/posts/ai-agent-complete-guide-2026/)
+- [AI Agent 是什么：主流框架对比与入门搭建](/posts/ai-agent-complete-guide-2026/)
 - 更多「AI前沿动态」文章：[/categories/ai前沿动态/](/categories/ai前沿动态/)

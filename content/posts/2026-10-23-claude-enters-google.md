@@ -52,5 +52,5 @@ Antigravity 是谷歌的 Agent 编程平台（IDE + CLI + VS Code/JetBrains 插�
 
 - [Anthropic Claude 入门完整指南（2026版）](/posts/claude-guide/)
 - [ChatGPT vs Claude vs Cursor：2026年深度对比与选择指南](/posts/chatgpt-vs-claude-vs-cursor-guide/)
-- [AI翻译工具横评 2026：DeepL vs ChatGPT vs Claude vs Google翻译，哪个最准？](/posts/ai-translation-tools-comparison-2026/)
+- [AI翻译工具对比 2026：DeepL、ChatGPT、Claude、Google翻译怎么选](/posts/ai-translation-tools-comparison-2026/)
 - 更多「AI前沿动态」文章：[/categories/ai前沿动态/](/categories/ai前沿动态/)

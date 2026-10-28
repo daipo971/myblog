@@ -66,6 +66,6 @@ HeyGen Voice 是今年 TTS 圈最值得试的一次"免费午餐"：榜单第一
 
 ## 相关阅读
 
-- [AI语音克隆与TTS工具实测：3分钟克隆你自己的声音](/posts/ai-voice-clone-tts-tools-2026/)
+- [AI语音克隆与TTS工具对比：ElevenLabs、Fish Audio、Azure、CosyVoice](/posts/ai-voice-clone-tts-tools-2026/)
 - [Gemini App 上线 Task 模式：Spark agent 收进主 App，任务后台一直跑](/posts/2026-10-14-gemini-task-mode/)
 - 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

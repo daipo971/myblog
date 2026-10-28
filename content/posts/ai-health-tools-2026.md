@@ -310,7 +310,7 @@ Headspace 是全球最知名的冥想App，2026年加入了AI个性推荐功能�
 
 ## 相关阅读
 
-- [2026年AI电商工具实测：AI商品图、AI客服、AI选品，哪些工具真的能提升销量？](/posts/ai-ecommerce-tools-2026/)
-- [2026年AI数据分析工具评测：不会编程也能做数据分析](/posts/ai-data-analysis-tools-2026/)
-- [2026年AI视频剪辑工具评测：10款工具从入门到专业级实测对比](/posts/ai-video-editing-tools-2026/)
+- [电商卖家怎么用 AI：商品图、文案、客服、选品工具指南](/posts/ai-ecommerce-tools-2026/)
+- [AI 数据分析工具对比：不会编程也能做数据分析](/posts/ai-data-analysis-tools-2026/)
+- [AI 视频剪辑工具对比 2026：剪映、Descript、Opus Clip 怎么选](/posts/ai-video-editing-tools-2026/)
 - 更多「AI应用场景」文章：[/categories/ai应用场景/](/categories/ai应用场景/)

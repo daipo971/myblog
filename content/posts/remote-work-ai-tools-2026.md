@@ -592,5 +592,5 @@ disableShare: false
 
 - [2026年AI安全工具完全指南：从数据保护到模型安全](/posts/ai-security-tools-2026/)
 - [2026年AI提示词工程完全指南：从入门到精通的完整教程](/posts/ai-prompt-engineering-guide-2026/)
-- [2026年AI Agent完全指南：从Claude Agent到OpenAI Agent SDK，手把手搭建AI智能体](/posts/ai-agent-complete-guide-2026/)
+- [AI Agent 是什么：主流框架对比与入门搭建](/posts/ai-agent-complete-guide-2026/)
 - 更多「AI应用场景」文章：[/categories/ai应用场景/](/categories/ai应用场景/)

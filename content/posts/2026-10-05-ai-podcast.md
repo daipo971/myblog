@@ -136,7 +136,7 @@ AI 做播客真正的价值不是"代替你说话"，而是把制作成本降到
 
 ## 相关阅读
 
-- [2026年AI短视频创作全攻略：从脚本生成到AI数字人，一条视频10分钟搞定](/posts/ai-short-video-creation-2026/)
-- [AI语音克隆与TTS工具实测：3分钟克隆你自己的声音](/posts/ai-voice-clone-tts-tools-2026/)
-- [2026年个人知识管理体系搭建：用Notion AI + Obsidian + Readwise打造第二大脑](/posts/personal-knowledge-management-2026/)
+- [AI 做短视频全流程：脚本、配音、数字人、字幕和封面](/posts/ai-short-video-creation-2026/)
+- [AI语音克隆与TTS工具对比：ElevenLabs、Fish Audio、Azure、CosyVoice](/posts/ai-voice-clone-tts-tools-2026/)
+- [个人知识管理怎么搭：Notion AI + Obsidian + Readwise 工作流](/posts/personal-knowledge-management-2026/)
 - 更多「AI应用场景」文章：[/categories/ai应用场景/](/categories/ai应用场景/)

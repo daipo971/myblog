@@ -147,6 +147,6 @@ AI 搜索会引用结构清晰、有明确结论和一手数据的页面。写�
 ## 相关阅读
 
 - [Perplexity 怎么用：免费版和 Pro 的区别、优缺点与适合谁](/posts/perplexity-ai-deep-review-2026/)
-- [2026年AI编程工具横向评测：Cursor vs Windsurf vs GitHub Copilot vs Claude，谁才是最强辅助？](/posts/ai-coding-tools-comparison-2026/)
+- [AI编程工具横评 2026：Cursor、Windsurf、Copilot、Claude Code怎么选](/posts/ai-coding-tools-comparison-2026/)
 - [2026年AI代码编辑器深度评测：从VS Code到Cursor的全面对比](/posts/ai-code-editor-2026/)
 - 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

@@ -103,6 +103,6 @@ Google 这次把"AI 代理"从 demo 玩具变成了企业基础设施：统一�
 ## 相关阅读
 
 - [Gemini App 上线 Task 模式：Spark agent 收进主 App，任务后台一直跑](/posts/2026-10-14-gemini-task-mode/)
-- [2026年AI Agent完全指南：从Claude Agent到OpenAI Agent SDK，手把手搭建AI智能体](/posts/ai-agent-complete-guide-2026/)
+- [AI Agent 是什么：主流框架对比与入门搭建](/posts/ai-agent-complete-guide-2026/)
 - [Claude Duet 发布：不等你开口先干活，主动型 Agent 大战开始了](/posts/2026-10-22-claude-duet-launch/)
 - 更多「AI前沿动态」文章：[/categories/ai前沿动态/](/categories/ai前沿动态/)

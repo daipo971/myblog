@@ -150,7 +150,7 @@ Perplexity 更像搜索引擎，来源展示更清晰，适合调研；ChatGPT �
 
 ## 相关阅读
 
-- [2026年AI搜索引擎深度评测：Perplexity、Google AI Overviews、Bing Copilot、Komo，谁才是最佳AI搜索？](/posts/ai-search-engines-comparison-2026/)
+- [AI搜索引擎对比 2026：Perplexity、ChatGPT搜索、Google、秘塔怎么选](/posts/ai-search-engines-comparison-2026/)
 - [Google 发布 Gemini 代理：统一的工作 AI Agent，能当同事使唤（详解+上手）](/posts/2026-10-09-gemini-agent/)
-- [AI翻译工具横评 2026：DeepL vs ChatGPT vs Claude vs Google翻译，哪个最准？](/posts/ai-translation-tools-comparison-2026/)
+- [AI翻译工具对比 2026：DeepL、ChatGPT、Claude、Google翻译怎么选](/posts/ai-translation-tools-comparison-2026/)
 - 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

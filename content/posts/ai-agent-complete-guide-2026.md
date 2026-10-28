@@ -356,5 +356,5 @@ AI Agent不仅是技术趋势，也是**赚钱工具**。这里分享几个已�
 
 - [Claude Duet 发布：不等你开口先干活，主动型 Agent 大战开始了](/posts/2026-10-22-claude-duet-launch/)
 - [2026年AI效率工作流搭建指南：把ChatGPT+Claude+Cursor串起来用才叫效率翻倍](/posts/ai-workflow-guide-2026/)
-- [AI智能体实战指南：用n8n搭建你自己的AI自动化工作流](/posts/ai-agent-workflow-guide-2026/)
+- [n8n 教程：搭建 AI 自动化工作流（简报、邮件、监控）](/posts/ai-agent-workflow-guide-2026/)
 - 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

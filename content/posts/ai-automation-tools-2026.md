@@ -154,7 +154,7 @@ AI自动化工具正在快速发展，选择合适的工具需要考虑具体需
 
 ## 相关阅读
 
-- [AI智能体实战指南：用n8n搭建你自己的AI自动化工作流](/posts/ai-agent-workflow-guide-2026/)
+- [n8n 教程：搭建 AI 自动化工作流（简报、邮件、监控）](/posts/ai-agent-workflow-guide-2026/)
 - [2026年AI教育工具革命：从个性化学习到智能教学](/posts/ai-education-tools-2026/)
 - [2026年AI效率工作流搭建指南：把ChatGPT+Claude+Cursor串起来用才叫效率翻倍](/posts/ai-workflow-guide-2026/)
 - 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

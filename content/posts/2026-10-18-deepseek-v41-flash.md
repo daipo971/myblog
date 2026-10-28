@@ -63,6 +63,6 @@ DeepSeek 这波的思路很清楚：不跟你拼参数，拼的是"跑起来便�
 
 - [DeepSeek 完全指南与版本档案](/posts/deepseek-complete-guide-2026/)：这个模型的全部信息汇总，持续更新
 - [MiniMax M3.1 Flash 发布：价格只有 DeepSeek 的一半，但有个毛病得先说清](/posts/2026-10-21-minimax-m3-1-flash/)
-- [DeepSeek完全指南 2026：从入门到精通的免费AI模型使用教程](/posts/deepseek-complete-guide-2026/)
+- [DeepSeek 模型档案：版本、价格、许可证与国内用法](/posts/deepseek-complete-guide-2026/)
 - [Beam 开源了：美国公司做了个「对标中国」的 501B 模型，Apache 2.0 随便用](/posts/2026-10-18-reflection-beam/)
 - 更多「中国与开源模型」文章：[/categories/中国与开源模型/](/categories/中国与开源模型/)

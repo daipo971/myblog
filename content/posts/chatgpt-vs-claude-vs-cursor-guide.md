@@ -274,6 +274,6 @@ ChatGPT 和 Claude 都需要海外账号和网络环境，付费还需要海外�
 ## 相关阅读
 
 - [2026年AI效率工作流搭建指南：把ChatGPT+Claude+Cursor串起来用才叫效率翻倍](/posts/ai-workflow-guide-2026/)
-- [AI翻译工具横评 2026：DeepL vs ChatGPT vs Claude vs Google翻译，哪个最准？](/posts/ai-translation-tools-comparison-2026/)
-- [2026年AI编程工具横向评测：Cursor vs Windsurf vs GitHub Copilot vs Claude，谁才是最强辅助？](/posts/ai-coding-tools-comparison-2026/)
+- [AI翻译工具对比 2026：DeepL、ChatGPT、Claude、Google翻译怎么选](/posts/ai-translation-tools-comparison-2026/)
+- [AI编程工具横评 2026：Cursor、Windsurf、Copilot、Claude Code怎么选](/posts/ai-coding-tools-comparison-2026/)
 - 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

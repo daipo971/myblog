@@ -490,7 +490,7 @@ Codeium 团队后来推出了 Windsurf 编辑器，并把产品统一到 Windsur
 
 ## 相关阅读
 
-- [2026年AI编程工具横向评测：Cursor vs Windsurf vs GitHub Copilot vs Claude，谁才是最强辅助？](/posts/ai-coding-tools-comparison-2026/)
+- [AI编程工具横评 2026：Cursor、Windsurf、Copilot、Claude Code怎么选](/posts/ai-coding-tools-comparison-2026/)
 - [ChatGPT vs Claude vs Cursor：2026年深度对比与选择指南](/posts/chatgpt-vs-claude-vs-cursor-guide/)
 - [2026年AI效率工作流搭建指南：把ChatGPT+Claude+Cursor串起来用才叫效率翻倍](/posts/ai-workflow-guide-2026/)
 - 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

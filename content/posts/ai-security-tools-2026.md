@@ -361,5 +361,5 @@ AI安全已经成为企业数字化转型的重要组成部分。选择合适的
 
 - [2026年远程工作AI工具完全指南：打造高效远程工作环境](/posts/remote-work-ai-tools-2026/)
 - [2026年AI提示词工程完全指南：从入门到精通的完整教程](/posts/ai-prompt-engineering-guide-2026/)
-- [2026年AI Agent完全指南：从Claude Agent到OpenAI Agent SDK，手把手搭建AI智能体](/posts/ai-agent-complete-guide-2026/)
+- [AI Agent 是什么：主流框架对比与入门搭建](/posts/ai-agent-complete-guide-2026/)
 - 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

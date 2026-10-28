@@ -25,7 +25,7 @@ description: "零成本搭建个人网站、选 VPS、用 Cloudflare 托管、�
 - [个人博客用 Affiliate 赚钱](/posts/blog-affiliate-guide-2026/)
 - [用 AI 做副业的 9 种方式](/posts/make-money-with-ai-2026/)：门槛、做法和现实预期
 - [AI 编程入门到接单](/posts/ai-programming-to-freelance-2026/) · [AI 无代码做产品](/posts/ai-no-code-app-2026/)
-- [AI 写开发信实测](/posts/ai-cold-email-outreach-guide-2026/)
+- [AI 写开发信的方法](/posts/ai-cold-email-outreach-guide-2026/)
 
 ## 开发者进阶
 

@@ -150,7 +150,7 @@ ChatGPT 里的生图已经升级为新一代模型，一般用户直接在 ChatG
 
 ## 相关阅读
 
-- [2026年AI设计工具横评：Canva AI vs 稿定AI vs 创客贴AI vs Midjourney，做图党必看](/posts/ai-design-tools-comparison-2026/)
+- [AI设计工具对比 2026：Canva、稿定、创客贴、Midjourney怎么选](/posts/ai-design-tools-comparison-2026/)
 - [Midjourney V7完整教程 2026：从入门到精通的AI绘画实战指南](/posts/midjourney-complete-guide-2026/)
-- [2026免费AI视频生成工具实测：这5个真的能打](/posts/free-ai-video-generators-2026/)
+- [免费AI视频生成工具推荐 2026：可灵、即梦、海螺等5款对比](/posts/free-ai-video-generators-2026/)
 - 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

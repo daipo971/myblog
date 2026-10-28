@@ -58,5 +58,5 @@ categories: ["中国与开源模型"]
 - [MiniMax 模型档案：规格、价格、许可证与国内用法](/posts/minimax-guide/)：这个模型的全部信息汇总，持续更新
 - [MiniMax M3.1 Flash 权重今日放出：许可证已落地，商用门槛比预想低](/posts/2026-10-23-minimax-m3-1-weights/)
 - [DeepSeek-V4.1-Flash 来了：更快更便宜，MIT 开源随便用，附国内使用指南](/posts/2026-10-18-deepseek-v41-flash/)
-- [DeepSeek完全指南 2026：从入门到精通的免费AI模型使用教程](/posts/deepseek-complete-guide-2026/)
+- [DeepSeek 模型档案：版本、价格、许可证与国内用法](/posts/deepseek-complete-guide-2026/)
 - 更多「中国与开源模型」文章：[/categories/中国与开源模型/](/categories/中国与开源模型/)

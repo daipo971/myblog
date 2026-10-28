@@ -98,5 +98,5 @@ description: "Anthropic 10 月 26 日向美国 SEC 公开递交 S-1，计划以 
 
 - [Anthropic Claude 入门完整指南（2026版）](/posts/claude-guide/)
 - [Claude Duet 发布：不等你开口先干活，主动型 Agent 大战开始了](/posts/2026-10-22-claude-duet-launch/)
-- [2026年AI编程工具横向评测：Cursor vs Windsurf vs GitHub Copilot vs Claude，谁才是最强辅助？](/posts/ai-coding-tools-comparison-2026/)
+- [AI编程工具横评 2026：Cursor、Windsurf、Copilot、Claude Code怎么选](/posts/ai-coding-tools-comparison-2026/)
 - 更多「AI前沿动态」文章：[/categories/ai前沿动态/](/categories/ai前沿动态/)

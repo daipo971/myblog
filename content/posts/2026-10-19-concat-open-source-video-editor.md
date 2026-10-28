@@ -141,7 +141,7 @@ Concat 自带 MCP server，支持 MCP 的 AI 工具可以连接它来调用剪�
 
 ## 相关阅读
 
-- [2026年AI视频剪辑工具评测：10款工具从入门到专业级实测对比](/posts/ai-video-editing-tools-2026/)
+- [AI 视频剪辑工具对比 2026：剪映、Descript、Opus Clip 怎么选](/posts/ai-video-editing-tools-2026/)
 - [2026 免费 AI API 完整清单：从入门到实践](/posts/free-ai-api-guide/)
-- [2026年AI设计工具横评：Canva AI vs 稿定AI vs 创客贴AI vs Midjourney，做图党必看](/posts/ai-design-tools-comparison-2026/)
+- [AI设计工具对比 2026：Canva、稿定、创客贴、Midjourney怎么选](/posts/ai-design-tools-comparison-2026/)
 - 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

@@ -448,6 +448,6 @@ Codex 适合从零写代码、调试 bug 和重构优化，把它用好的关键
 
 ## 相关阅读
 
-- [Claude Code和Codex CLI：AI编程的新范式，试了回不去](/posts/claude-code-codex-cli-2026/)
-- [2026年AI Agent完全指南：从Claude Agent到OpenAI Agent SDK，手把手搭建AI智能体](/posts/ai-agent-complete-guide-2026/)
+- [Claude Code 和 Codex CLI 怎么选：终端编程智能体对比](/posts/claude-code-codex-cli-2026/)
+- [AI Agent 是什么：主流框架对比与入门搭建](/posts/ai-agent-complete-guide-2026/)
 - 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)
