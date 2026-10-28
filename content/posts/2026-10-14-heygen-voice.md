@@ -1,8 +1,9 @@
 ---
 title: "HeyGen 自研语音模型登顶 TTS 榜：短剧配音成本算到小数点后三位"
 date: 2026-10-14T15:00:00+08:00
+lastmod: 2026-10-14T15:00:00+08:00
 draft: false
-tags: ["AI大模型", "TTS", "HeyGen", "配音", "解读"]
+tags: ["快讯", "AI音频", "HeyGen"]
 categories: ["AI工具实测"]
 description: "HeyGen 10 月 9 日发布自研语音模型 HeyGen Voice，盲测登顶 Artificial Analysis TTS 榜（Elo 1201）。launch 价 $15/百万字符只到 10 月 31 日。我们拿短剧旁白算了一笔账：一集配音成本不到一分钱。"
 ---
@@ -57,8 +58,14 @@ HeyGen Voice 是今年 TTS 圈最值得试的一次"免费午餐"：榜单第一
 
 *参考：HeyGen PR 通稿（PR Newswire, 10-09）、vibeleaderboard.ai 第三方细读、alfw.ai fact-check、Artificial Analysis、OpenRouter*
 
+## 参考来源
+
+- [HeyGen 官方：HeyGen Voice（英文）](https://www.heygen.com/heygen-voice)
+- [HeyGen 官方博客：Voice Turbo（英文）](https://www.heygen.com/blog/heygen-voice-turbo)
+- [AlphaSignal：HeyGen Voice 超过 ElevenLabs 和阿里登顶 TTS 榜（英文）](https://alphasignal.ai/news/heygen-voice-beats-elevenlabs-and-alibaba-to-top-tts-rankings)
+
 ## 相关阅读
 
-- [AI语音克隆与TTS工具实测：3分钟克隆你自己的声音](/posts/ai-voice-clone-tts-tools-2026/)
+- [AI语音克隆与TTS工具对比：ElevenLabs、Fish Audio、Azure、CosyVoice](/posts/ai-voice-clone-tts-tools-2026/)
 - [Gemini App 上线 Task 模式：Spark agent 收进主 App，任务后台一直跑](/posts/2026-10-14-gemini-task-mode/)
 - 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

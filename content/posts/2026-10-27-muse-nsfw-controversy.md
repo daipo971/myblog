@@ -1,9 +1,10 @@
 ---
 title: "Muse 能聊成人话题、真人发帖却被删：Meta 这次的双标争议是怎么来的"
 date: 2026-10-27T14:20:00+08:00
+lastmod: 2026-10-27T14:20:00+08:00
 draft: false
 categories: ["海外服务通关"]
-tags: ["Muse", "Meta", "NSFW", "争议"]
+tags: ["快讯", "风控申诉", "Muse", "Meta"]
 description: "WIRED 10 月 12 日实测：Meta 的 Muse 无需越狱就能和成年用户聊露骨性话题，Meta 回应称设计如此；但 Muse 公开规则明文禁止成人内容。10 月 18 日 OnlyFans 创作者回访更把争议推高：真人发擦边被限流，AI 却可以聊。本文把时间线、规则矛盾和隐私风险一次讲清。"
 ---
 
@@ -50,6 +51,11 @@ Meta 的回应是：私人一对一的 AI 对话，和在公开社交网络上�
 这篇文章是资讯整理，不是使用教程——Muse 目前只在美国、加拿大、日本开放，国内还没开。而且这事已经过去两周，别把它当成今天的新政策去传。
 
 真正值得记住的就一句话：**Meta 没有"放开"一个新功能，而是被实测证明它本来就没拦，然后亲口承认了。** 规则和产品对不上，才是这场争议到现在还没熄火的原因。
+
+## 参考来源
+
+- [Cybernews：Meta 认为 Muse 的成人对话没有问题（英文）](https://cybernews.com/ai-news/meta-muse-sexting-users/)
+- [AI Weekly：WIRED 实测后 Meta 为 Muse 辩护（英文）](https://aiweekly.co/alerts/meta-defends-muse-ais-sexting-after-wired-hands-on-test)
 
 ## 相关阅读
 

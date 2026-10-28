@@ -31,14 +31,14 @@ description: "按身份和任务讲怎么用 AI：学生、职场、求职、学
 
 ## 生意与客服
 
-- [AI 电商工具实测](/posts/ai-ecommerce-tools-2026/)：商品图、客服、选品。
+- [电商卖家 AI 工具指南](/posts/ai-ecommerce-tools-2026/)：商品图、文案、客服、选品。
 - [AI 客服机器人搭建教程](/posts/ai-customer-service-bot-2026/)：用开源工具零成本搭客服。
 
 ## 生活与理财
 
-- [AI 理财工具实测](/posts/ai-personal-finance-management-2026/)：用了一圈留下的 4 个。
+- [用 AI 记账和管预算](/posts/ai-personal-finance-management-2026/)：导出账单后用 AI 分析收支。
 - [AI 金融工具](/posts/ai-finance-tools-2026/)：投资决策与风险管理。
-- [AI 健康工具评测](/posts/ai-health-tools-2026/)：健身、饮食、睡眠。
-- [AI 旅行规划工具](/posts/ai-travel-planning-tools-2026/)：实测 5 款，省下一天规划时间。
+- [AI 健康工具盘点](/posts/ai-health-tools-2026/)：健身、饮食、睡眠。
+- [用 AI 做旅行攻略](/posts/ai-travel-planning-tools-2026/)：提示词模板和需要核实的地方。
 
 下面是本分类全部文章，按发布时间倒序排列。

@@ -1,444 +1,112 @@
 ---
 title: "2026 免费 AI API 完整清单：从入门到实践"
 date: 2026-07-06T00:00:00+08:00
+lastmod: 2026-10-28T09:00:00+08:00
 draft: false
-description: "整理全网免费 AI API，包括 OpenAI、Anthropic、Hugging Face、Groq 等，每天都能用的免费额度。"
+description: "2026 年还能用的免费大模型 API 清单：Gemini、Groq、OpenRouter、Cloudflare、GitHub Models、Hugging Face 和国内的百灵、智谱，附额度对比、调用代码和组合用法。"
 categories: ["AI工具实测"]
-tags: ["AI API", "免费", "开发", "教程"]
+tags: ["合集", "API", "订阅省钱"]
 ---
+**结论先说：** 2026 年想免费调用大模型 API，海外首选 Google AI Studio（Gemini）和 Groq，用 OpenRouter、Cloudflare Workers AI、GitHub Models 做备用；国内首选蚂蚁百灵和智谱的免费模型，不用海外网络。Anthropic（Claude）和 OpenAI 目前没有常规的免费 API 额度。免费额度变化非常快，下面的数字都是写作时的大致情况，以各家官方文档为准。
 
-这两年 AI API 发展太快，各种免费额度层出不穷。我花了几天时间研究市面上主要的免费 AI API，整理成这份完整清单。
+## 免费 API 总览
 
-**先说结论：** 每天都能用的免费 AI，已经足够搞很多项目了。
+| 平台 | 免费方式 | 大致额度（以官方为准） | 国内直连 | 适合 |
+| --- | --- | --- | --- | --- |
+| Google AI Studio | Gemini API 免费层 | 按模型限速，Flash 类每天可达上千次请求 | 否 | 日常主力，长上下文 |
+| Groq | 免费层 | 按模型限速，开源模型每天约 1000 次请求 | 否 | 要速度的场景 |
+| Cerebras | 免费层 | 每天约 100 万 token | 否 | 大批量开源模型推理 |
+| OpenRouter | `:free` 后缀模型 | 免费模型每天约 50 次请求，充值后上调 | 否 | 一个 key 试多家模型 |
+| Cloudflare Workers AI | 免费额度 | 每天 10,000 Neurons，超出即停，不扣费 | 视网络 | 部署在 Workers 里的小应用 |
+| GitHub Models | GitHub 账号自带 | 小模型约 150 次/天，高阶模型约 50 次/天 | 视网络 | 原型测试 |
+| Hugging Face Inference Providers | 每月赠送额度 | 免费用户每月 0.10 美元，PRO 用户每月 2 美元 | 否 | 试用 Hub 上的各种模型 |
+| 蚂蚁百灵 Ling | 免费额度 | Ling-3.1-flash 每天 50 万 token | 是 | 国内批量任务 |
+| 智谱 GLM Flash | 免费模型 | GLM-4.7-Flash 等官方按 0 元计价 | 是 | 国内日常调用 |
 
-## 免费 API 总览表
+来源：[OpenRouter 免费 LLM API 对比](https://openrouter.ai/blog/tutorials/free-llm-apis-compared/)、[Hugging Face Inference Providers 计费说明](https://huggingface.co/docs/inference-providers/pricing)、各平台官方文档。
 
-| 提供商 | 免费额度 | 有效期 | 费用 | 推荐度 |
-|--------|----------|--------|------|--------|
-| **Hugging Face** | 500次/天 | 永久 | 完全免费 | ⭐⭐⭐⭐⭐ |
-| **Google Cloud** | 多种服务 | 永久 | 完全免费 | ⭐⭐⭐⭐ |
-| **Groq** | 免费 | 永久 | 完全免费 | ⭐⭐⭐⭐ |
-| **Anthropic Claude** | 3次试用 | 临时 | 免费 | ⭐⭐⭐⭐ |
-| **Together AI** | 200K tokens | 30天 | 免费 | ⭐⭐⭐ |
-| **Perplexity** | 有限 | 永久 | 免费 | ⭐⭐⭐ |
-| **Poe** | 部分免费 | 永久 | 免费 | ⭐⭐⭐ |
-| **DeepInfra** | 免费额度 | 临时 | 免费 | ⭐⭐⭐ |
-| **Replicate** | $5 额度 | 30天 | 免费 | ⭐⭐ |
-| **11Labs** | 30秒/月 | 临时 | 免费 | ⭐⭐ |
+## 海外免费 API
 
----
+### Google AI Studio：额度最大的主力
 
-## 1. Hugging Face Inference API —— **最推荐**
+在 [aistudio.google.com](https://aistudio.google.com) 用 Google 账号登录，点 Get API key 就能拿到 Gemini API 的 key，不用绑卡。免费层按模型分别限制每分钟和每天的请求数，Flash 级模型的额度最宽松，上下文长度也大。需要注意：免费层的输入输出可能被用于改进 Google 的产品，敏感数据不要走免费层。
 
-**Hugging Face** 是开源模型的最佳平台，提供免费的推理 API。
+### Groq：速度最快
 
-### 免费额度
+[console.groq.com](https://console.groq.com) 注册后创建 key，接口兼容 OpenAI 格式。Groq 用自研芯片跑 Llama、Qwen 等开源模型，生成速度很快，适合聊天机器人、实时翻译这类对延迟敏感的场景。免费层按模型限制每分钟请求数和每天 token 数。
 
-```
-┌─────────────────────────────────────────────────────────┐
-│              Hugging Face Free Tier                     │
-├─────────────────────────────────────────────────────────┤
-│  📝 免费调用次数：500 次/天                              │
-│  📂 免费模型：所有开源模型                                 │
-│  🚀 速度：共享 GPU（比自建快）                             │
-│  💾 存储空间：500MB                                      │
-│  🌐 支持语言：Python、JavaScript、REST API              │
-└─────────────────────────────────────────────────────────┘
-```
+### OpenRouter：一个 key 调多家
 
-### 适用场景
+OpenRouter 聚合了几百个模型，其中带 `:free` 后缀的可以免费调用，但每天请求数有限，高峰期可能排队或下架。适合快速对比不同模型的效果，再决定把钱花在哪家。
 
-- 调用开源大语言模型（Llama、Mistral、Qwen 等）
-- 图像识别（CLIP、DINO）
-- 语音识别（Whisper）
-- 代码模型（CodeLlama、StarCoder）
+### Cloudflare Workers AI：额度到顶硬停
 
-### 注册和获取 API Key
+如果你已经在用 Cloudflare（比如博客托管在 Pages），Workers AI 每天送 10,000 Neurons，可以在 Workers 里直接调用开源模型，额度用完就停止，不会意外扣费。
 
-1. 访问 https://huggingface.co
-2. 注册账号（邮箱即可）
-3. 进入 Settings → Access Tokens
-4. 创建新 Token → 复制到 `.env` 文件
+### Hugging Face：额度很小，适合试用
 
-### Python 调用示例
+Hugging Face 现在的推理服务叫 Inference Providers，免费用户每月只有 0.10 美元的赠送额度，PRO 用户每月 2 美元，用完要按量付费。它更适合试用 Hub 上的模型，不适合当主力。早年流传的「每天 500 次免费调用」已经不适用。
+
+## 国内免费 API 与 GitHub Models
+
+### 蚂蚁百灵 Ling：国内额度最大方之一
+
+蚂蚁的百灵大模型开放平台是目前国内最大方的免费额度之一：
+
+- **额度**：Ling-3.1-flash 每天 50 万免费 Token
+- **模型参数**：约 560B 总参数、每 Token 激活约 25B，免费期上下文开放 256K
+- **注册**：去 `chat.ant-ling.com/chat` 登录，创建 API Token 即可
+
+**接入 Muse 的方法**（来自 X 用户 @wquguru 分享的两步法）：
+
+1. 让 Muse 安装 Pi Agent
+2. 在百灵平台创建 API Token，配进 Pi Agent
+
+之后 Muse 就可以调用 Ling 干活了。注意一点：**flash 级别的模型适合干脏活累活**——大批量代码改写、文档整理、重复性任务扔给它，复杂推理和多轮规划还是切回主模型。
+
+同类还有**智谱的 GLM-4.7-Flash / GLM-4.5-Flash**，官方直接按 $0 计价，国内直连，注册简单，也值得备一个。
+
+### GitHub Models：GitHub 官方给开发者的免费额度
+
+**GitHub Models**（models.github.ai）是 GitHub 官方给开发者的免费福利：
+
+- **获取**：任何 GitHub 账号，在 Settings 里生成 Personal Access Token，勾选 `models:read` 权限
+- **接口**：`https://models.github.ai/inference`，兼容 OpenAI SDK
+- **额度**：小模型约 150 次/天（15 次/分钟），高阶模型约 50 次/天（10 次/分钟），单次请求上限 8K 输入 / 4K 输出
+- **模型**：gpt-4o 级、Llama、Mistral、DeepSeek-R1 等
+
+一句话评价：额度不算大，但胜在稳定、官方、可 OpenAI 格式直接调用。官方定位是"原型测试"，别拿去跑生产。
+
+## 国内其他选择
+
+除了百灵和智谱，国内多数大模型平台（DeepSeek、Kimi、通义、豆包等）没有长期免费的 API 额度，但新用户常有赠送 token，而且价格普遍比海外便宜很多。具体模型的价格和许可证见 [中国与开源模型](/categories/中国与开源模型/) 分类，例如 [DeepSeek 完整指南](/posts/deepseek-complete-guide-2026/)。
+
+## 通用调用方法
+
+上面大部分平台都兼容 OpenAI 的接口格式，用同一套代码，换 `base_url`、`api_key` 和模型名就能切换：
 
 ```python
-from huggingface_hub import InferenceClient
-
-# 初始化客户端
-client = InferenceClient(token="hf_xxx")
-
-# 文本生成
-response = client.text_generation(
-    model="microsoft/DialoGPT-large",
-    prompt="你好，请介绍一下自己",
-    max_new_tokens=200
-)
-
-print(response)
-
-# 对话模式
-messages = [
-    {"role": "user", "content": "什么是递归？"},
-]
-
-for message in client.chat_completion(
-    model="meta-llama/Llama-2-7b-chat-hf",
-    messages=messages,
-    max_tokens=300
-):
-    print(message.content[0].text)
-```
-
-### 推荐模型
-
-| 模型 | 用途 | 质量 |
-|------|------|------|
-| `meta-llama/Llama-3-8B` | 通用对话 | ⭐⭐⭐⭐ |
-| `mistralai/Mistral-7B` | 代码+对话 | ⭐⭐⭐⭐ |
-| `Qwen/Qwen2-7B` | 中文优化 | ⭐⭐⭐⭐ |
-| `NousResearch/Nous-Hermes-2-Mixtral` | OpenAI 风格 | ⭐⭐⭐⭐ |
-
-### Hugging Face Playground
-
-访问 https://huggingface.co/spaces，可以直接在网页上测试免费模型。
-
----
-
-## 2. Google Cloud Always Free —— **长期免费**
-
-Google Cloud 的免费层非常适合开发和学习。
-
-### 免费资源清单
-
-```
-┌─────────────────────────────────────────────────────────┐
-│         Google Cloud Always Free (2026)                  │
-├─────────────────────────────────────────────────────────┤
-│  🖥️  Compute Engine: 1个实例/月 (3vCPU + 13GB RAM)       │
-│  📦  Cloud Run: 250,000 请求/月                          │
-│  💾  Cloud Storage: 10GB/月                              │
-│  🗃️  Cloud SQL: 0.75 ECU-月/月                          │
-│  📊  BigQuery: 1TB 基础配额                              │
-│  🔍  Vision API: 1,000 请求/月                           │
-│  🔤  Translation API: 2M字符/月                          │
-└─────────────────────────────────────────────────────────┘
-```
-
-### 代码生成示例
-
-```python
-import google.auth
-from google.cloud import generativeai
-
-# 认证
-auth.authenticate_user()
-genai.configure(api_key="你的 API Key")
-
-# 使用 Gemini
-model = genai.GenerativeModel('gemini-1.5-flash')
-
-response = model.generate_content("写一个 Python 函数")
-
-print(response.text)
-```
-
----
-
-## 3. Groq —— **速度最快**
-
-Groq 使用自研的 LPU 芯片，推理速度极快。
-
-### 免费额度
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                  Groq Free Tier                          │
-├─────────────────────────────────────────────────────────┤
-│  🚀 速度：全球最快（LPU 加速）                            │
-│  💰 免费配额：每 3 分钟 60 次（可叠加）                   │
-│  🌐 免费模型：Llama 3、Mixtral、Gemma                  │
-│  📚 支持：REST API、OpenAI 兼容格式                       │
-└─────────────────────────────────────────────────────────┘
-```
-
-### Python 调用
-
-```python
-import requests
-
-url = "https://api.groq.com/openai/v1/chat/completions"
-
-headers = {
-    "Authorization": "Bearer gsk_xxx",
-    "Content-Type": "application/json"
-}
-
-data = {
-    "model": "llama3-8b-8192",
-    "messages": [
-        {"role": "user", "content": "写一首诗"}
-    ]
-}
-
-response = requests.post(url, headers=headers, json=data)
-print(response.json()['choices'][0]['message']['content'])
-```
-
-### Groq
-> 💡 **Groq 的推理速度是目前最快的免费 API，** 如果你想体验极速 AI 推理，可以直接去 [Groq Console](https://console.groq.com) 注册免费账号。
- 加速技巧
-
-- 使用 `llama3-8b-8192` 模型（速度快）
-- 同一会话内持续对话（更快）
-- 调用 LLM 而不是 VLM（更省资源）
-
----
-
-## 4. Anthropic Claude —— **注册送 3 次试用**
-
-Claude 的免费试用非常适合第一次使用。
-
-### 免费额度
-
-```
-┌─────────────────────────────────────────────────────────┐
-│            Anthropic Claude Free Trial                   │
-├─────────────────────────────────────────────────────────┤
-│  ✨ 试用次数：3次                                        │
-│  ⚡️ 模型：Claude Sonnet 4                                │
-│  📚 使用限额：每次 200K tokens                            │
-│  🌐 平台：Web、Desktop、API                             │
-└─────────────────────────────────────────────────────────┘
-```
-
-### API 调用
-
-```python
-from anthropic import Anthropic
-
-client = Anthropic(api_key="你的 API Key")
-
-message = client.messages.create(
-    model="claude-sonnet-4-20250514",
-    max_tokens=1024,
-    messages=[
-        {"role": "user", "content": "写一个 Python 函数"}
-    ]
-)
-
-print(message.content[0].text)
-```
-
----
-
-## 5. Together AI —— **30天免费试用**
-
-Together AI 提供开源模型的托管服务。
-
-### 免费额度
-
-```
-┌─────────────────────────────────────────────────────────┐
-│             Together AI Free Trial                       │
-├─────────────────────────────────────────────────────────┤
-│  🎯 免费试用：30天                                       │
-│  💾 存储空间：10GB                                       │
-│  🚀 支持：OpenAI 兼容 API                                │
-│  🌐 模型：Llama 3、Mistral、Mixtral                    │
-└─────────────────────────────────────────────────────────┘
-```
-
-### Python 调用
-
-```python
+# pip install openai
 import os
 from openai import OpenAI
 
 client = OpenAI(
-    api_key=os.getenv("TOGETHER_API_KEY"),
-    base_url="https://api.together.xyz/v1"
+    base_url="https://api.groq.com/openai/v1",  # 换成对应平台的地址
+    api_key=os.getenv("GROQ_API_KEY"),
 )
 
-response = client.chat.completions.create(
-    model="meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
-    messages=[
-        {"role": "user", "content": "写一个排序算法"}
-    ]
+resp = client.chat.completions.create(
+    model="llama-3.3-70b-versatile",  # 换成该平台支持的模型名
+    messages=[{"role": "user", "content": "用一句话解释什么是 API"}],
 )
-
-print(response.choices[0].message.content)
+print(resp.choices[0].message.content)
 ```
 
----
+各平台的 `base_url` 和模型名以官方文档为准，模型会不定期上新和下架。
 
-## 6. Perplexity —— **搜索引擎级 AI**
+## 限速和密钥安全
 
-Perplexity 结合了 AI 和搜索引擎，提供真实的搜索结果。
-
-### 免费额度
-
-```
-┌─────────────────────────────────────────────────────────┐
-│              Perplexity Free Plan                        │
-├─────────────────────────────────────────────────────────┤
-│  🔍 搜索次数：每天 有限（约 50 次）                       │
-│  📊 阅读深度：普通搜索                                    │
-│  🌐 支持格式：Web、PDF、代码                             │
-└─────────────────────────────────────────────────────────┘
-```
-
-### 使用方式
-
-1. 访问 https://www.perplexity.ai
-2. 输入问题，获得带来源的答案
-3. 复制结果或导出
-
----
-
-## 7. Poe —— **一站式 AI 平台**
-
-Poe 汇集了多种 AI 模型，部分免费。
-
-### 免费模型
-
-| 模型 | 免费额度 |
-|------|----------|
-| GPT-4 | 每天 10 次 |
-| Claude | 每天 10 次 |
-| Llama 3 | 无限次 |
-| Mistral | 无限次 |
-| 文心一言 | 无限次 |
-
-### Python 调用
-
-```python
-import requests
-
-url = "https://poe.com/api/v1/chat"
-
-headers = {
-    "Content-Type": "application/json",
-    "User-Agent": "Mozilla/5.0"
-}
-
-data = {
-    "bot": "GPT-4",
-    "message": "你好"
-}
-
-response = requests.post(url, headers=headers, json=data)
-print(response.json()['result'])
-```
-
----
-
-## 8. DeepInfra —— **GPU 渲染**
-
-DeepInfra 提供 GPU 资源和免费额度。
-
-### 免费额度
-
-```
-┌─────────────────────────────────────────────────────────┐
-│              DeepInfra Free Credits                      │
-├─────────────────────────────────────────────────────────┤
-│  💳 免费额度：$5（约 ¥35）                               │
-│  🚀 模型：Llama 3、Mistral、Qwen                      │
-│  ⏱️ 有效期：30天                                         │
-└─────────────────────────────────────────────────────────┘
-```
-
----
-
-## 9. Replicate —— **AI 模型市场**
-
-Replicate 提供各种 AI 模型的在线运行服务。
-
-### 免费额度
-
-```
-┌─────────────────────────────────────────────────────────┐
-│              Replicate Free Credits                      │
-├─────────────────────────────────────────────────────────┤
-│  💳 免费额度：$5 额度                                    │
-│  🎨 支持类型：图像生成、视频、NLP 等                    │
-│  ⏱️ 有效期：30天                                         │
-└─────────────────────────────────────────────────────────┘
-```
-
-### Python 调用
-
-```python
-import replicate
-
-# 文本生成
-output = replicate.run(
-    "meta-llama/llama-3-8b-instruct",
-    input={"prompt": "写一首诗"}
-)
-
-print(output[0])
-```
-
----
-
-## 10. 11Labs —— **AI 语音**
-
-11Labs 专注于 AI 语音合成。
-
-### 免费额度
-
-```
-┌─────────────────────────────────────────────────────────┐
-│             11Labs Free Credits                         │
-├─────────────────────────────────────────────────────────┤
-│  🔊 免费额度：30秒音频/月                                │
-│  🌍 支持语言：多语言                                     │
-│  🎵 质量：自然语音                                       │
-└─────────────────────────────────────────────────────────┘
-```
-
----
-
-## API 选择建议
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                  按需求选择 API                           │
-├─────────────────────────────────────────────────────────┤
-│  开源模型     → Hugging Face                             │
-│  速度快       → Groq                                      │
-│  长期开发     → Google Cloud Always Free                 │
-│  代码生成     → Together AI / Groq                        │
-│  搜索增强     → Perplexity                                │
-│  一站式使用   → Poe                                       │
-│  语音合成     → 11Labs                                    │
-│  视频图像     → Replicate                                  │
-└─────────────────────────────────────────────────────────┘
-```
-
-## 最佳实践
-
-### 1. 多 API 组合
-
-```python
-class FreeAIService:
-    def __init__(self):
-        self.huggingface = HuggingFaceClient()
-        self.groq = GroqClient()
-        self.together = TogetherClient()
-
-    def chat(self, prompt):
-        # 优先用 Hugging Face（免费）
-        try:
-            return self.huggingface.chat(prompt)
-        except:
-            # 降级到 Groq
-            return self.groq.chat(prompt)
-```
-
-### 2. 速率限制
+### 简单的限速器
 
 ```python
 import time
@@ -461,7 +129,7 @@ class RateLimiter:
         self.calls.append(now)
 ```
 
-### 3. API Key 安全
+### API Key 放在环境变量里
 
 ```python
 # 使用环境变量
@@ -475,127 +143,84 @@ API_KEY = os.getenv("HUGGINGFACE_API_KEY")
 # load_dotenv()
 ```
 
----
+## 按需求怎么选
+
+| 你的需求 | 首选 | 备选 | 原因 |
+| --- | --- | --- | --- |
+| 学习调用 API、写练手项目 | Google AI Studio | GitHub Models | 注册简单，额度够练手 |
+| 做聊天机器人，要回复快 | Groq | Cerebras | 生成速度快，延迟低 |
+| 想对比不同模型效果 | OpenRouter | Hugging Face | 一个 key 能调很多模型 |
+| 服务器在国内 | 智谱 GLM Flash | 百灵 Ling | 国内直连，不用海外网络 |
+| 批量处理大量文本 | 百灵 Ling | Cerebras | 每天的 token 额度大 |
+| 应用部署在 Cloudflare | Workers AI | Google AI Studio | 同一平台内调用，超额不扣费 |
+
+不管选哪家，都建议在代码里把模型调用封装成一个函数，`base_url` 和模型名写在配置里。这样某个平台额度用完或者调整政策时，改一行配置就能切换，不用重写代码。
+
+## 常见报错
+
+| 报错 | 原因 | 解决 |
+| --- | --- | --- |
+| 429 Too Many Requests | 超过每分钟或每天的免费额度 | 用上面的限速器降低频率，或切换到备用平台 |
+| 401 Unauthorized | key 填错、过期或没有对应权限 | 重新复制 key，检查环境变量名；GitHub Models 要勾选 `models:read` 权限 |
+| 404 model not found | 模型名写错，或该模型已下架 | 对照平台当前的模型列表更新模型名 |
+| 提示所在地区不支持 | 部分海外平台不对中国大陆和香港提供服务 | 换用国内平台，或在服务支持的地区部署 |
+
+## 组合策略：国内外搭配用
+
+单看每一家都不够用，组合起来就够日常开发和内容创作：
+
+- **日常主力**：Gemini Flash（量大）或 Groq（速度快）
+- **国内备用**：百灵 Ling + 智谱 Flash
+- **备用池**：GitHub Models、OpenRouter、Cerebras，按需切换
+
+思路是把免费额度当备用车队：量大、不敏感的任务交给免费额度，关键任务和涉及隐私的数据用付费的正式渠道。
+
+## 三个避坑提醒
+
+1. **免费额度变动快。** 有些平台的免费档要求同意用你的数据训练模型，有些免费模型会悄悄下架。用之前看一眼官方文档。
+2. **第三方「公益 API」要谨慎。** GitHub 上有不少送免费 key 的代理项目，来源不明、随时失效，不要在里面传敏感内容。
+3. **不要靠注册多个账号叠加额度。** 这违反多数平台的服务条款，可能导致账号被封。
 
 ## 常见问题
 
-**Q: 免费额度用完了怎么办？**
+**Claude 和 ChatGPT 有免费 API 吗？**
+没有常规的免费额度。Anthropic 和 OpenAI 的 API 都需要充值后按量计费；想免费体验同级别能力，可以先用 Gemini 免费层，或者用 Claude、ChatGPT 网页版的免费额度。
 
-A: 等待重置（Hugging Face 每天 500 次）或注册新账号。
+**免费额度用完了怎么办？**
+等额度重置（多数按分钟或按天重置），或者切换到组合里的下一家。长期用量大，就该考虑付费，国产模型 API 的价格通常比海外低很多。
 
-**Q: 免费 API 安全吗？**
+**免费 API 能商用吗？**
+看两层：平台的服务条款，以及所用模型的许可证。很多平台明确说免费档只用于开发测试，正式上线前务必确认。
 
-A: Hugging Face 和 Groq 比较安全，其他需要谨慎。
+**国内服务器能调用海外免费 API 吗？**
+大多不能直连，需要海外服务器或网络环境。纯国内场景优先用百灵、智谱这类国内平台。
 
-**Q: 可以商用吗？**
+**数据安全吗？**
+免费档的数据政策普遍比付费档宽松，部分会用于训练。商业代码、个人隐私、公司资料不要通过免费档发送。
 
-A: 查看各平台的服务条款，Hugging Face 的大部分模型可商用。
+## 付费 API 推荐
 
-**Q: 速度怎么样？**
+免费额度适合学习和原型开发，正式产品建议用付费方案：
 
-A: Hugging Face 和 Groq 较快，Google Cloud 中等。
+- [**Anthropic Claude API**](https://console.anthropic.com/)：写代码和长文本处理能力强，按 token 计费，价格见官方定价页
+- [**OpenAI API**](https://platform.openai.com/)：多模态能力全面，生态完善
+- 国产模型 API：价格低、国内直连，适合高频调用
 
-**Q: 支持中文吗？**
+## 更新记录
 
-A: 大部分模型都支持，但某些模型对中文优化更好。
+- 2026-10：补充国内免费 API 与 GitHub Models。
+- 2026-10-28：重写。删除已失效或无法核实的额度说法（Hugging Face 每天 500 次、Claude 注册送试用、Google Cloud Always Free 当作 AI API 等），按当前情况整理总览表，补充通用调用方法和常见问题。
 
----
+## 参考来源
 
-## 2026 年 10 月补充：国内免费 API 与 GitHub 官方额度
-
-最近在 X 上看到一条挺火的推：@wquguru 分享了一个"白嫖"套路——在 **Muse 里装上 Pi Agent，再接入蚂蚁集团的 Ling-3.1-flash**，用百灵开放平台每天 50 万的免费 Token，替自己省下 Muse 的用量。他还实测从零写了个"鹈鹕骑单车"小游戏（24KB，3 分钟搞定），配了完整录屏。
-
-这事儿让我想到，与其盯着某一家薅，不如把**当前真正能用的免费 AI API** 集中盘一遍。国内外加起来能用的额度其实相当可观，搭配得当，日常开发和内容创作基本不用花钱。
-
-### 一、国内免费：蚂蚁百灵 Ling（50 万 Token/天）
-
-蚂蚁的百灵大模型开放平台是目前国内最大方的免费额度之一：
-
-- **额度**：Ling-3.1-flash 每天 50 万免费 Token
-- **模型参数**：约 560B 总参数、每 Token 激活约 25B，免费期上下文开放 256K
-- **注册**：去 `chat.ant-ling.com/chat` 登录，创建 API Token 即可
-
-**接入 Muse 的方法**（来自那条推文的两步法）：
-
-1. 让 Muse 安装 Pi Agent
-2. 在百灵平台创建 API Token，配进 Pi Agent
-
-之后 Muse 就可以调用 Ling 干活了。注意一点：**flash 级别的模型适合干脏活累活**——大批量代码改写、文档整理、重复性任务扔给它，复杂推理和多轮规划还是切回主模型。
-
-同类还有**智谱的 GLM-4.7-Flash / GLM-4.5-Flash**，官方直接按 $0 计价，国内直连，注册简单，也值得备一个。
-
-### 二、海外免费：GitHub 官方给的羊毛
-
-**GitHub Models**（models.github.ai）是 GitHub 官方给开发者的免费福利：
-
-- **获取**：任何 GitHub 账号，在 Settings 里生成 Personal Access Token，勾选 `models:read` 权限
-- **接口**：`https://models.github.ai/inference`，兼容 OpenAI SDK
-- **额度**：小模型约 150 次/天（15 次/分钟），高阶模型约 50 次/天（10 次/分钟），单次请求上限 8K 输入 / 4K 输出
-- **模型**：gpt-4o 级、Llama、Mistral、DeepSeek-R1 等
-
-一句话评价：额度不算大，但胜在稳定、官方、可 OpenAI 格式直接调用。官方定位是"原型测试"，别拿去跑生产。
-
-### 三、海外免费：量最大的一批
-
-| 平台 | 免费额度 | 模型举例 | 特点 |
-|------|---------|---------|------|
-| Google AI Studio | 约 1500 次/天 | Gemini Flash | 量最大，上下文 1M |
-| Groq | 约 1000 次/天 / 10 万 token/天 | Llama 3.3 70B | 速度极快（约 300 token/秒） |
-| Cerebras | 约 100 万 token/天 | Llama、Qwen 等开源模型 | 推理速度全场最快 |
-| OpenRouter | 免费模型每天约 50 次请求 | 几十个 `:free` 模型 | 一个 key 调多家 |
-| Cloudflare Workers AI | 每天 10,000 Neurons，无需绑卡 | 20+ 模型 | 额度到顶硬停，不会扣费 |
-
-### 四、组合策略：国内外搭配用
-
-单看每一家都不够尽兴，但组合起来就很有战斗力：
-
-- **日常主力**：Gemini Flash（量最大）或 Groq（速度快）
-- **国内备胎**：百灵 Ling 每天 50 万 Token + 智谱 Flash
-- **备用池**：GitHub Models、OpenRouter、Cerebras，轮着用
-
-核心思路就一条：**把免费额度当"备胎车队"用**——免费额度干量大管饱的活，付费额度留给关键任务。
-
-### 五、三个避坑提醒
-
-1. **免费额度变动快**。比如 Mistral 的免费实验档需要你同意"允许用你的数据训练模型"；有些平台的免费模型会悄悄下架。薅之前先看一眼官方文档的最新说明。
-2. **第三方"公益 API"要谨慎**。GitHub 上有不少送免费 key 的代理项目，来源不明、随时可能失效，别在里面传敏感内容和重要账号信息。
-3. **隐私条款自己看一眼**。免费 tier 的数据政策各家不同，涉及商业代码或隐私内容，建议只用官方渠道。
-
-## 写在最后
-
-免费 AI API 已经足够做出很多项目了。Hugging Face 的每天 500 次免费调用，长期来看非常划算。
-
-**推荐使用顺序：**
-1. Hugging Face（主用）
-2. Groq（速度优先）
-3. Google Cloud Always Free（长期）
-4. 试用 Claude（体验）
-
-有问题欢迎留言，或者发邮件到 `daipo971@gmail.com`。
-
----
-
-**参考资料：**
-- [Hugging Face Inference API](https://huggingface.co/docs/inference)
-- [Groq Platform](https://console.groq.com)
-- [Google Cloud Always Free](https://cloud.google.com/free)
-
-### 💡 付费 API 推荐
-
-免费额度适合学习和原型开发。生产环境建议升级到付费方案：
-
-- [**Anthropic Claude API**](https://console.anthropic.com/) — 目前写代码和长文本处理最强，$0.003/1K token
-- [**OpenAI API**](https://platform.openai.com/) — 多模态能力最全面，生态最完善
-
-建议两个都注册，不同场景用不同的模型。
-
----
-
-*有些外部工具链接是联盟链接，如果你通过这些链接购买，我会获得少量佣金（不影响你的价格）。所有推荐都是我亲自用过并觉得不错的产品。*
+- [OpenRouter：免费 LLM API 对比（英文）](https://openrouter.ai/blog/tutorials/free-llm-apis-compared/)
+- [Hugging Face：Inference Providers 计费说明（英文）](https://huggingface.co/docs/inference-providers/pricing)
+- [Groq Console](https://console.groq.com)
+- [Google AI Studio](https://aistudio.google.com)
 
 ## 相关阅读
 
-- [Midjourney V7完整教程 2026：从入门到精通的AI绘画实战指南](/posts/midjourney-complete-guide-2026/)
 - [2026年AI提示词工程完全指南：从入门到精通的完整教程](/posts/ai-prompt-engineering-guide-2026/)
-- [2026年机器学习平台对比：从入门到生产部署完整指南](/posts/machine-learning-platforms-2026/)
+- [本地部署大模型教程](/posts/ai-local-llm-guide-2026/)
+- [DeepSeek 完整指南](/posts/deepseek-complete-guide-2026/)
 - 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

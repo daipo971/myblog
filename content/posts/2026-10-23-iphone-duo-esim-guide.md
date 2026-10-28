@@ -1,9 +1,10 @@
 ---
 title: "iPhone Duo 国行今日开售：纯 eSIM 无卡槽，购机+开卡保姆级攻略"
 date: 2026-10-23T09:35:00+08:00
+lastmod: 2026-10-23T09:35:00+08:00
 draft: false
 description: "苹果首款折叠屏 iPhone Duo 10 月 23 日国行开售：全球纯 eSIM 设计、无实体卡槽，国行版开卡必须本人带真机去营业厅线下办理。本文一次讲清四档价格、限购与取货规则、eSIM 开卡全流程、三大运营商差异，以及存卡上限、出国换卡这些实际用起来的坑。"
-tags: ["iPhone Duo", "eSIM", "iPhone", "国行", "教程"]
+tags: ["教程", "注册开通", "eSIM"]
 categories: ["海外服务通关"]
 ---
 

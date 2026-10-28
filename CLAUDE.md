@@ -3,7 +3,7 @@
 本文件是这个仓库的长期规则。任何人或 AI 在这里写文章、改文章、改结构，都按本文件执行。
 与 WORKFLOW.md（旧文件，已过时）冲突时，以本文件为准。
 完整运营框架见 [docs/framework/](docs/framework/README.md)（定位、选题地图、模板、SEO、运营、变现、数据、AI 执行手册），当前阶段任务见 [docs/content-plan.md](docs/content-plan.md)。
-AI 接手任务时先读 [docs/framework/09-ai-playbook.md](docs/framework/09-ai-playbook.md)。
+AI 接手任务时先读 [docs/framework/09-ai-playbook.md](docs/framework/09-ai-playbook.md) 和 [踩坑清单 12-pitfalls.md](docs/framework/12-pitfalls.md)。
 
 ## 站点概况
 
@@ -90,7 +90,9 @@ showtoc: true
 - 价格、跑分、日期等数据必须标注来源（链接），厂商自报的数据要写明「官方说法」。
 - 图片放 `static/images/<slug>/`，用 webp，写 alt 文字。
 - 不写和发布时间矛盾的经历（例如网站上线一个月却写「用了半年」）。
-- 联盟链接自然放在推荐处，文中注明可能有佣金。
+- 联盟链接自然放在推荐处，文中注明可能有佣金；**没有联盟链接的文章不写联盟声明**。
+- 没有亲自测试的不写「实测」「我用了」，改成「依据官网和文档整理（查阅时间）」；不编星级评分、效果数据和个人故事。
+- 写产品前核实它是否还在运营（如 Sora 已于 2026-03 宣布停止、Tome 已停止幻灯片业务），不把旧型号（GPT-4o、Claude 3.5、DALL-E 3）写成当前产品。
 
 ## 禁止事项
 

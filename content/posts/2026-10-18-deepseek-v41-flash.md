@@ -1,9 +1,10 @@
 ---
 title: "DeepSeek-V4.1-Flash 来了：更快更便宜，MIT 开源随便用，附国内使用指南"
 date: 2026-10-18T16:30:00+08:00
+lastmod: 2026-10-18T16:30:00+08:00
 description: "DeepSeek 10 月 17 日发布 V4.1-Flash-1017：MIT 协议开源权重，API 输入低至 $0.15/百万 token，附带 Search 和 Fetch 联网 API。国内直接可用，这篇讲清楚怎么用最划算。"
 categories: ["中国与开源模型"]
-tags: ["DeepSeek", "开源模型", "API", "大模型"]
+tags: ["快讯", "开源模型", "API", "DeepSeek"]
 ---
 
 DeepSeek 昨天（10 月 17 日）又放了个新模型：**DeepSeek-V4.1-Flash-1017**。名字里的 1017 就是发布日期。这次不是拼榜单，而是一门心思做"又快又便宜"——推理速度提上去，API 价格打下来，权重还直接 MIT 开源。 Bloomberg 都专门报了，标题就一句话：faster and leaner。
@@ -62,6 +63,6 @@ DeepSeek 这波的思路很清楚：不跟你拼参数，拼的是"跑起来便�
 
 - [DeepSeek 完全指南与版本档案](/posts/deepseek-complete-guide-2026/)：这个模型的全部信息汇总，持续更新
 - [MiniMax M3.1 Flash 发布：价格只有 DeepSeek 的一半，但有个毛病得先说清](/posts/2026-10-21-minimax-m3-1-flash/)
-- [DeepSeek完全指南 2026：从入门到精通的免费AI模型使用教程](/posts/deepseek-complete-guide-2026/)
+- [DeepSeek 模型档案：版本、价格、许可证与国内用法](/posts/deepseek-complete-guide-2026/)
 - [Beam 开源了：美国公司做了个「对标中国」的 501B 模型，Apache 2.0 随便用](/posts/2026-10-18-reflection-beam/)
 - 更多「中国与开源模型」文章：[/categories/中国与开源模型/](/categories/中国与开源模型/)

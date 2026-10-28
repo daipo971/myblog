@@ -37,6 +37,5 @@ description: "OpenAI、Anthropic、Google、Meta、苹果等海外 AI 公司的�
 
 ## 月度回顾
 
-- [2026 年 7 月 AI 工具更新与趋势](/posts/ai-tools-update-july-2026/)
 
 下面是本分类全部文章，按发布时间倒序排列。

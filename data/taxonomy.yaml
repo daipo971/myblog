@@ -39,12 +39,14 @@ topic_tags:
   - AI写作
   - AI翻译
   - AI学习
+  - AI生活            # 理财、健康、旅行等生活场景
   - 提示词
   - AI入门
   - AI安全
   - AI政策
   - AI硬件
   - 前沿研究
+  - 技术开发          # 存量技术类文章（不再新写，见 CLAUDE.md）
   - 行业动态
   - API
   - 订阅省钱
@@ -111,6 +113,9 @@ entity_tags:
   - Ollama
   - LM Studio
   - Muse
+  - Canva
+  - Gamma
+  - 剪映
   # 海外服务与基础设施
   - Apple ID
   - Google Play
@@ -118,6 +123,12 @@ entity_tags:
   - eSIM
   - RackNerd
   - Hugo
+  - WordPress
+  - Oracle Cloud
+  - Twilio
+  - Airtap
+  - Gate Card
+  - 微信
 
 # 近义词归并：左边的旧写法以后不再使用，统一改成右边
 synonyms:

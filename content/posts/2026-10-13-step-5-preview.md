@@ -1,8 +1,9 @@
 ---
 title: "开源倒计时：阶跃 Step 5 Preview 登顶 OpenRouter 趋势榜，10 月 15 日放出权重前先看懂这几件事"
 date: 2026-10-13T08:00:00+08:00
+lastmod: 2026-10-13T08:00:00+08:00
 description: "阶跃星辰旗舰模型 Step 5 Preview 10 月 10 日登顶 OpenRouter Trending 榜、日榜全球第二，官方确认 10 月 15 日开源权重。本文整理已核实的关键事实：600B 参数背后的效率叙事、AA 榜单全球开源前二、1/8 成本的真实含义，以及开源那天值得盯的三件事。"
-tags: ["AI大模型", "阶跃星辰", "Step 5", "开源模型", "解读"]
+tags: ["快讯", "国产大模型", "开源模型", "阶跃星辰"]
 categories: ["中国与开源模型"]
 draft: false
 showTableOfContents: true

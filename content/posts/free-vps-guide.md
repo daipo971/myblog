@@ -1,295 +1,164 @@
 ---
 title: "免费 VPS 对比：Oracle Cloud 免费层完全指南（2026更新）"
 date: 2026-07-04T00:00:00+08:00
+lastmod: 2026-10-28T09:00:00+08:00
 draft: false
-description: "Oracle Cloud Free Tier 永久免费，Google Cloud Always Free 服务丰富。写一篇专业对比，适合建站、学习使用。"
+description: "Oracle Cloud、Google Cloud、AWS、Azure 免费层对比：哪家能长期免费拿到一台服务器、具体配置和限制是什么，附 Oracle Always Free 注册和开机步骤、常见报错与安全设置。"
 categories: ["建站与副业"]
-tags: ["Oracle Cloud", "Free VPS", "云计算", "建站教程"]
+tags: ["教程", "VPS", "Oracle Cloud"]
 ---
+**结论先说：** 想长期免费拿到一台能跑服务的云服务器，目前最实在的是 **Oracle Cloud Always Free**：Arm 架构的 Ampere A1 实例合计 4 核 24GB 内存，外加 200GB 块存储和每月 10TB 出站流量。Google Cloud 只送一台很小的 e2-micro；AWS 从 2025 年 7 月起改成了抵扣金加 6 个月免费计划，不再是长期免费。只放静态博客的话，连服务器都不需要，直接用 [Cloudflare Pages](/posts/cloudflare-pages-tutorial-2026/)。
 
-这几年折腾技术博客、自建服务，最大的门槛就是服务器成本。一个 VPS 一年下来几十刀，搞多了也是笔开销。
+> 免费层的额度和规则会调整，本文按 2026 年 10 月能查到的官方说明整理，动手前以各家官网为准。
 
-于是我去研究了下各大云厂商的免费层，发现 Oracle Cloud 的免费层真的很香——**永久免费**，不用到期续费。
+## 四家免费层对比
 
-写篇指南，给想白嫖一台服务器建站或学习的兄弟们。
+| 提供商 | 免费方式 | 能拿到的服务器 | 期限 | 适合 |
+| --- | --- | --- | --- | --- |
+| **Oracle Cloud** | Always Free | Ampere A1（Arm）合计 4 OCPU + 24GB 内存，另有 2 台 AMD 微型实例（每台 1GB 内存） | 长期 | 建站、常驻服务、学习 |
+| **Google Cloud** | Always Free | 1 台 e2-micro（共享 vCPU，1GB 内存），仅限部分美国区域，含 30GB 标准硬盘 | 长期 | 轻量脚本、练手 |
+| **AWS** | 新账户抵扣金 + 免费计划 | 用抵扣金开 EC2 等服务 | 免费计划 6 个月 | 短期体验 AWS |
+| **Azure** | 新账户试用 | 试用期内的抵扣金和部分 12 个月免费服务 | 有期限 | 短期体验 Azure |
 
-## 免费层现状（2026 更新）
+来源：[Oracle Cloud Free Tier](https://www.oracle.com/cloud/free/)、[Google Cloud 免费计划](https://cloud.google.com/free/docs/compute-getting-started)、[AWS 2025 年 7 月免费层更新公告](https://aws.amazon.com/about-aws/whats-new/2025/07/aws-free-tier-credits-month-free-plan/)。
 
-先说结论：目前主流云厂商的免费层，**Oracle Cloud 的最实在**。
+## Oracle Always Free 到底送什么
 
-| 提供商 | 免费层级 | 有效期 | 核心配置 | 适用场景 |
-|--------|----------|--------|----------|----------|
-| **Oracle Cloud** | Always Free | 永久 | 2x AMD + 8x ARM | 建站、托管代码 |
-| **Google Cloud** | Always Free | 永久 | Compute Engine 3vCPU | 测试环境、开发 |
-| **AWS** | Free Tier | 12个月 | t2.micro/t3.micro | 短期测试 |
-| **Azure** | Free Trial | 30天 | B1s | 新手体验 |
+| 资源 | 免费额度 | 说明 |
+| --- | --- | --- |
+| Ampere A1 计算 | 每月 3000 OCPU 小时 + 18000 GB 小时 | 折合常开 4 OCPU + 24GB 内存，可以开 1 台，也可以拆成最多 4 台 |
+| AMD 微型实例 | 2 台 VM.Standard.E2.1.Micro | 每台 1/8 OCPU、1GB 内存，只适合很轻的服务 |
+| 块存储 | 合计 200GB | 包括每台实例的启动盘 |
+| 对象存储 | 20GB（标准 + 低频 + 归档合计） | 适合放备份 |
+| 出站流量 | 每月 10TB | 个人建站基本用不完 |
 
-Oracle 2026年的免费层配置基本没变，仍然非常划算。
+几个容易误解的地方：
 
-## Oracle Cloud Free Tier 详细说明
+- **Arm 不等于性能差。** Ampere A1 跑 Linux、Docker、Nginx、Node.js、Python 都没问题，只有少数只提供 x86 版本的老软件需要用 AMD 实例。
+- **AMD 微型实例很弱。** 1GB 内存装个面板或数据库就吃紧，建议主力用 A1。
+- **免费额度按租户算。** 拆成几台还是开一台，总量都不能超过上表。
 
-### 免费资源清单
+## 注册前准备
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    Oracle Cloud Always Free                   │
-├─────────────────────────────────────────────────────────────┤
-│  🖥️  AMD Compute Instances   (x86)      2 x 4 OCPU + 24 GB  │
-│  🖥️  ARM Compute Instances   (Ampere)   8 x 4 OCPU + 24 GB  │
-│  💾  Block Volume Storage     200 GB                       │
-│  🌐  General Purpose VNICs    2                       │
-│  📦  Object Storage           3 TB                       │
-│  📊  Data Transfer (Outbound)  10 Mbps                    │
-│  🔍  Backup (Branding)        10 GB                       │
-└─────────────────────────────────────────────────────────────┘
-```
+- 一个常用邮箱。
+- 一张能付外币的信用卡或借记卡。注册时会做小额预授权验证，验证后撤销，Always Free 资源本身不扣费。
+- 能收验证短信的手机号。
+- 选好**主区域（Home Region）**。注册后不能修改，Always Free 的 A1 实例只能开在主区域。离国内较近的东京、首尔、新加坡等区域热门，容易出现容量不足；冷门区域更容易开出机器。
 
-### AMD vs ARM 实例
+## 注册与开机步骤
 
-| 特性 | AMD 实例 | ARM 实例 |
-|------|----------|----------|
-| 架构 | x86_64 | ARM64 |
-| 处理器 | x86 芯片 | Ampere A1 |
-| 免费额度 | 2个 | 8个 |
-| 适用 | 兼容性要求高 | 现代 Linux/容器 |
-| 性能 | 略强 | 能效比高 |
+### 第 1 步：注册账号
 
-**选择建议：**
-- 默认选 **ARM 实例**，Ubuntu/Debian 原生支持更好，容器化部署更省资源
-- 如果跑的是老软件或特殊依赖，选 AMD
+打开 [Oracle Cloud Free Tier](https://www.oracle.com/cloud/free/) 点击开始免费使用，按页面填写邮箱、国家或地区、姓名和地址，选择主区域，然后验证手机号和银行卡。信息要和卡片一致，乱填地址是注册失败最常见的原因之一。
 
-### 关键注意事项
+### 第 2 步：生成 SSH 密钥
 
-**⚠️ 第一年激活时间限制**
-
-注册后需要在 **12 个月内** 激活 2 个 AMD 实例，否则会取消免费额度。
-
-**⚠️ 限制 Egress 流量**
-
-每月 10Mbps 出站带宽，足够建站 + 拉取 GitHub 代码，但不要开什么 BT 下载。
-
-**⚠️ 2 个 ARM 实例同时运行**
-
-官方限制是"最多 2 个"同时运行，其他会自动停止。批量跑任务的话要注意。
-
-**⚠️ 项目关联规则**
-
-Oracle 要求你关联 2 个项目才能保留免费额度，用来管理不同环境很方便。
-
-## Google Cloud Always Free
-
-Google Cloud 的免费层更偏「服务型」，不是直接给你一台 VPS，而是免费额度可以用来跑各种云服务。
-
-### 可用服务（2026）
-
-| 服务 | 免费额度 | 说明 |
-|------|----------|------|
-| Compute Engine | 1个实例/月 | 3 vCPU + 13GB RAM |
-| Cloud Run | 250,000请求/月 | 无服务器容器 |
-| Cloud SQL | 0.75 ECU-月/月 | MySQL/PostgreSQL |
-| Cloud Storage | 10GB/月 | 对象存储 |
-| BigQuery | 1 TB 基础配额 | 数据分析 |
-| Cloud Vision API | 1,000请求/月 | 图像识别 |
-| Translation API | 2M字符/月 | 翻译 |
-
-### 适用场景对比
-
-```
-┌─────────────────────────┬─────────────────────────────┐
-│   Oracle Cloud          │    Google Cloud             │
-├─────────────────────────┼─────────────────────────────┤
-│ 拿到一台完整服务器        │ 服务调用额度                 │
-│ 托管博客、自建服务        │ 无服务器应用、API 调用      │
-│ 适合长期运行             │ 适合测试、开发               │
-└─────────────────────────┴─────────────────────────────┘
-```
-
-## 如何注册 Oracle Cloud Free Tier
-
-### 第一步：准备账号
-
-你需要：
-- 有效邮箱
-- 国际信用卡（不用扣款，只验证）
-- 手机号（可接收短信）
-
-⚠️ **注意**：Oracle 支持部分中国号码，如果收不到短信就换个临时手机号。
-
-### 第二步：创建账号
-
-1. 访问 https://www.oracle.com/cloud/free/
-2. 点击 "Get Started Free"
-3. 填写注册信息，绑定 Oracle Account
-
-### 第三步：完成 KYC
-
-提交个人信息后，等待审批（通常几分钟到几小时）。邮件通知即可。
-
-### 第四步：创建 OCID 和密钥
-
-注册完成后：
-1. 登录控制台
-2. 点击右上角头像 → Account → Account Settings
-3. 复制 "OCID" 和 "Region"
-4. 生成 SSH 密钥（Linux 生成命令：`ssh-keygen -t ed25519 -C "your_email@example.com"`）
-
-### 第五步：创建实例
-
-1. 进入 Compute → Create Instance
-2. 基础配置：
-   - Name: `hugo-blog`
-   - Shape: Arm Shape A1.Flex (1/2 OCPU + 12GB RAM)
-   - Image: Ubuntu 24.04 LTS
-   - SSH Keys: 粘贴公钥
-3. Network: 选择默认虚拟云网络
-4. 硬盘：不用改，200GB 自动分配
-5. 点击 Create
-
-等待 1-3 分钟实例启动完成。
-
-## 部署到 Cloudflare Pages（推荐）
-
-既然有公网 IP，最佳方案是：VPS 作为 Git 仓库，推送到 Cloudflare Pages 自动部署。
-
-### 方案架构
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  本地电脑                                                     │
-│         ↓                                                    │
-│  Git Push → VPS (Gitea/Gogs) → Cloudflare Pages 构建部署    │
-└─────────────────────────────────────────────────────────────┘
-```
-
-### 步骤
-
-**1. 在 VPS 上安装 Gitea**
+在自己电脑的终端运行：
 
 ```bash
-docker run -d \
-  --name=gitea \
-  -p 2222:22 \
-  -p 3000:3000 \
-  -v /var/lib/gitea:/data \
-  -v ~/.ssh:/etc/ssh \
-  -e USER_UID=1000 \
-  -e USER_GID=1000 \
-  gitea/gitea:latest
+ssh-keygen -t ed25519 -C "oracle-free"
+cat ~/.ssh/id_ed25519.pub
 ```
 
-**2. 配置 SSH 访问**
+复制输出的公钥，下一步要用。私钥（不带 .pub 的文件）留在本机，不要发给任何人。
+
+### 第 3 步：创建 A1 实例
+
+1. 控制台进入 **Compute → Instances → Create instance**。
+2. Image 选 **Ubuntu 24.04**（或 Oracle Linux）。
+3. Shape 点 **Change shape**，选 **Ampere → VM.Standard.A1.Flex**，OCPU 和内存在免费额度内自定，比如 2 OCPU + 12GB，或者一次给满 4 OCPU + 24GB。
+4. Networking 保持默认新建虚拟云网络，确认勾选分配公网 IPv4。
+5. SSH keys 选择粘贴公钥，粘贴第 2 步的内容。
+6. Boot volume 默认约 47GB，可以调大，但所有实例的磁盘合计不能超过 200GB。
+7. 点击 **Create**，等实例状态变成 Running。
+
+### 第 4 步：登录
 
 ```bash
-# 在本地添加 VPS 的 SSH 密钥
-cat ~/.ssh/id_ed25519.pub | ssh root@YOUR_VPS_IP "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+ssh ubuntu@你的公网IP
 ```
 
-**3. 部署 Cloudflare Pages**
+Ubuntu 镜像的默认用户名是 `ubuntu`，Oracle Linux 是 `opc`。
 
-```bash
-# 安装 Wrangler
-npm install -g wrangler
+### 第 5 步：放行端口
 
-# 创建项目
-wrangler pages project create myblog \
-  --production-branch=main \
-  --git-deployment
+要对外提供网页服务，需要放行两层防火墙：
 
-# 将 VPS 上的 Gitea 仓库推送到 Pages
-cd /var/lib/gitea/git/myblog.git
-git push -u origin main --mirror
-```
+1. **云端安全列表**：进入实例所在子网的 Security List，添加入站规则，放行 TCP 80 和 443。
+2. **系统防火墙**：Oracle 的 Ubuntu 镜像默认用 iptables 拦截了大部分入站端口，需要在系统里另外放行 80 和 443 并保存规则。
 
-完成后，每次你推送到 VPS 的 Gitea 仓库，Cloudflare Pages 就会自动触发构建和部署。
+只做了第一层是新手打不开网页最常见的原因。
 
-## 免费 VPS 使用建议
+## 常见报错与解决
 
-### 适合做的事情
+| 报错或现象 | 原因 | 解决 |
+| --- | --- | --- |
+| Out of capacity for shape VM.Standard.A1.Flex | 所在区域的免费 A1 资源暂时用完 | 换一个可用域（AD）重试、降低 OCPU 数，或隔几个小时再试 |
+| 注册时银行卡验证失败 | 卡不支持外币、预授权被拒，或信息不一致 | 换一张支持外币的卡，地址和姓名与卡片保持一致 |
+| SSH 连接超时 | 实例没有公网 IP，或安全列表没放行 22 端口 | 检查实例详情里的公网 IP 和子网安全列表 |
+| 网页打不开但服务在跑 | 只放行了安全列表，系统 iptables 仍在拦截 | 在系统内放行 80、443 端口 |
+| 实例被停止 | 长期闲置的免费实例可能被回收 | 让实例承担真实的服务负载，并把数据定期备份到别处 |
 
-| 类型 | 说明 | 示例 |
-|------|------|------|
-| 技术博客 | Hugo/VuePress + Cloudflare Pages | 你现在的博客 |
-| 开发环境 | Git 仓库、CI/CD 服务器 | Gitea + Actions |
-| 学习实验 | 搭建各种服务 | 5MChatGPT、各种开源项目 |
-| 内网穿透 | 部署到 Cloudflare Tunnel | 随时随地访问内网服务 |
+## 拿来做什么合适
 
-### 不建议做的事情
+| 适合 | 不适合 |
+| --- | --- |
+| 跑 Telegram 机器人、定时脚本、个人 API 服务 | 重要业务的唯一生产环境 |
+| 自建 Git 服务、笔记服务、RSS 阅读器 | 违反服务条款的用途，比如挖矿、批量注册 |
+| 学 Linux、Docker、Nginx | 存放唯一一份重要数据 |
+| 博客的动态部分（评论、统计） | 纯静态博客（用 Cloudflare Pages 更省事） |
 
-| 类型 | 原因 |
-|------|------|
-| BT 下载 | 带宽限制 + 会影响邻居 |
-| 大文件托管 | 10Mbps 出站会爆表 |
-| 高并发服务 | 免费层性能有限 |
-| 长期存储 | 数据安全靠不住 |
+静态博客的搭建方式见 [从零搭建个人博客](/posts/free-blog-tutorial/)；想先打好命令行基础，可以看 [Linux 服务器入门](/posts/linux-server-beginners-2026/)。
 
-### 安全建议
+## 安全设置清单
 
-1. **防火墙**：只开放必要端口（22 SSH, 80 8080 HTTP, 443 HTTPS）
-2. **SSH 密钥**：禁用密码登录，只用密钥
-3. **系统更新**：定期 `apt update && apt upgrade`
-4. **备份**：Object Storage 定期备份重要数据
-5. **监控**：设置简单的日志监控
+1. **只用密钥登录**，在 `/etc/ssh/sshd_config` 里关闭密码登录。
+2. **只开放需要的端口**，不用的服务不要监听公网。
+3. **定期更新系统**：`sudo apt update && sudo apt upgrade`。
+4. **备份**：重要数据定期同步到对象存储或本地，免费资源随时可能因规则调整被回收。
+5. **开启账户的多因素认证**，控制台密码不要和其他网站相同。
 
 ## 常见问题
 
-**Q: 免费层真的永久吗？**
+**Always Free 真的永久免费吗？**
+官方称 Always Free 资源没有时间限制，但条款可以调整，闲置实例也可能被回收。当作免费的学习和个人项目服务器很合适，不要把它当成唯一的生产环境。
 
-A: 目前是永久的，但条款可能随时变化。用着放心，用完再删也不可惜。
+**升级成付费账户（PAYG）还免费吗？**
+升级后 Always Free 额度仍然保留，超出额度的部分才会计费，开 A1 实例时容量也通常更容易拿到。但要自己盯紧用量，避免误开付费资源。
 
-**Q: 可以申请多个账号吗？**
+**可以注册多个账号吗？**
+不要这样做。多账号违反 Oracle 的服务条款，一旦被识别可能全部封停。
 
-A: 理论上可以，但 Oracle 会限制同一身份证号能申请的数量。多账号风险自己承担。
+**国内访问速度怎么样？**
+取决于所选区域和线路，海外机房国内晚高峰普遍不稳定。对外的网站可以套 Cloudflare 改善访问；需要稳定国内线路的，考虑付费 VPS，见 [便宜 VPS 推荐](/posts/cheap-vps-recommendations-2026/)。
 
-**Q: 速度怎么样？**
+**Google Cloud 的免费机器值得开吗？**
+e2-micro 只有 1GB 内存，而且只在指定的美国区域免费，超出 1GB 的出站流量要计费。跑一个小脚本可以，建站和常驻服务首选 Oracle。
 
-A: Oracle 的线路质量因地区而异，国内访问有时会慢。部署到 Cloudflare Pages 可以解决访问问题。
+## 付费 VPS 推荐
 
-**Q: 硬盘空间够用吗？**
+免费服务器适合学习和个人项目，需要稳定性时再考虑付费 VPS：
 
-A: 200GB 很充裕，放代码库、Docker 镜像都够用。但别当网盘用。
+| 推荐 | 适合人群 |
+| --- | --- |
+| [**RackNerd**](https://my.racknerd.com/aff.php?aff=20566) | 新手入门、预算有限，常有年付促销 |
+| 搬瓦工 BandwagonHost | 需要稳定国内线路的老手，详见 [便宜 VPS 推荐](/posts/cheap-vps-recommendations-2026/) |
 
-**Q: 遇到问题去哪问？**
+> 披露：RackNerd 链接为本站联盟链接，通过链接购买本站可能获得佣金，价格不变。
 
-A:
-- Oracle 官方文档：https://docs.oracle.com/en-us/iaas/
-- GitHub Issues：https://github.com/oracle/oci-cli/issues
-- V2EX: [免费 VPS 組](https://www.v2ex.com/go/freedom)
+## 更新记录
 
-## 💡 付费 VPS 推荐
+- 2026-10-28：重写。更正 Oracle、Google Cloud 免费层配置和流量限制的错误数据，补充 AWS 2025 年 7 月新规、详细开机步骤、常见报错和安全清单，删除无法实现的 Gitea 推送 Pages 方案。
 
-免费 VPS 适合学习和测试，生产环境建议用付费 VPS，稳定性更有保障。
+## 参考来源
 
-| 推荐 | 价格 | 适合人群 |
-|------|------|----------|
-| [**RackNerd**](https://my.racknerd.com/aff.php?aff=20566) 🏆 | 年付 $10.88 起 | 新手首选，性价比最高 |
-| [**搬瓦工 BandwagonHost**](https://bandwagonhost.com/aff.php?aff=20566) | 年付 $49.99 起 | 需要稳定线路的老手 |
-
-## 写在最后
-
-免费 VPS 真的香，特别是 Oracle Cloud 这种「拿来就能用」的。
-
-这篇文章的主要内容来自我的亲测经验 + 官方文档 + 2026年的最新更新。如果发现过时的信息，欢迎在评论区指出。
-
-**推荐行动路线：**
-1. 立刻去注册一个 Oracle 账号
-2. 花 10 分钟完成 KYC
-3. 创建第一个免费实例
-4. 开始你的建站之旅
-
-**我的分享链接**：https://www.oracle.com/cloud/free/
-
-有问题欢迎留言，或者直接发邮件到 `daipo971@gmail.com`。
-
----
-
-**参考资料：**
 - [Oracle Cloud Free Tier 官方页面](https://www.oracle.com/cloud/free/)
-- [Google Cloud Always Free 2026 更新](https://cloud.google.com/free)
-- [V2EX 免费 VPS 組](https://www.v2ex.com/go/freedom)
+- [Google Cloud：免费层 Compute Engine 说明](https://cloud.google.com/free/docs/compute-getting-started)
+- [AWS：免费层新增 200 美元抵扣金和 6 个月免费计划（2025-07）](https://aws.amazon.com/about-aws/whats-new/2025/07/aws-free-tier-credits-month-free-plan/)
 
 ## 相关阅读
 
 - [从零搭建个人博客：免费VPS + 免费域名 + Cloudflare托管](/posts/free-blog-tutorial/)
 - [Cloudflare Pages 完全教程：从部署到优化的全套指南](/posts/cloudflare-pages-tutorial-2026/)
-- [2026年网站推广完全指南：从SEO到社交媒体的全链路营销策略](/posts/website-promotion-strategy-2026/)
+- [2026 年便宜 VPS 推荐](/posts/cheap-vps-recommendations-2026/)
 - 更多「建站与副业」文章：[/categories/建站与副业/](/categories/建站与副业/)

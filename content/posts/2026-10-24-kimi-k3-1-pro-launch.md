@@ -1,9 +1,10 @@
 ---
 title: "Kimi K3.1 Pro 发布：编程跑分超 GPT-6，11 月 4 日开源全部权重"
 date: 2026-10-24T10:38:00+08:00
+lastmod: 2026-10-24T10:38:00+08:00
 draft: false
 categories: ["中国与开源模型"]
-tags: ["Kimi", "月之暗面", "国产大模型", "开源模型"]
+tags: ["快讯", "国产大模型", "开源模型", "Kimi"]
 description: "月之暗面 10 月 23 日发布 Kimi K3.1 Pro：2.8 万亿参数、100 万 token 上下文，编程测试超过 GPT-6 Astra、只差 Claude Opus 5.5 零点几分；国内直连免翻墙就能用，11 月 4 日前还会开源全部权重。"
 ---
 

@@ -1,8 +1,9 @@
 ---
 title: "库克亲口确认：国行 AI 本月先上测试版，实时翻译也在首批"
 date: 2026-10-15T20:38:00+08:00
+lastmod: 2026-10-28T09:00:00+08:00
 draft: false
-tags: ["Apple", "Apple Intelligence", "国行", "库克"]
+tags: ["快讯", "AI硬件", "Apple Intelligence"]
 categories: ["AI前沿动态"]
 description: "库克访华期间亲口确认：国行 Apple Intelligence 首批功能包括实时翻译、照片消除工具、写作工具，测试版本月晚些时候推送。本文是对《国行 iPhone 终于有 AI 了》的跟进。"
 ---
@@ -35,6 +36,33 @@ description: "库克访华期间亲口确认：国行 Apple Intelligence 首批�
 
 *信息核实时间：2026-10-15 20:40（CST）。来源：新浪科技（10-15）。测试版具体推送日期库克未给出，仅为"本月晚些时候"。*
 
+## 时间线
+
+| 时间 | 进展 | 消息性质 |
+| --- | --- | --- |
+| 10 月 15 日早些时候 | 媒体报道国行 Apple 智能获批，首批 4 项功能，12 月随 iOS 27.3 上线 | 知情人士爆料 |
+| 10 月 15 日 | 库克访华期间接受采访，确认获批，测试版本月晚些时候推出，实时翻译在首批 | CEO 公开表态 |
+| 10 月下旬（预计） | 测试版推送 | 具体日期未公布 |
+| 12 月（预计） | iOS 27.3 正式版上线 | 以苹果官方发布为准 |
+
+## 对普通用户意味着什么
+
+- **国行 iPhone 用户：** 测试版大概率先面向开发者或公测用户推送，正式版仍按 12 月 iOS 27.3 的时间线。不想折腾的，等正式版更稳妥；想尝鲜的，先备份手机再装测试版。
+- **能不能用，要看机型。** Apple 智能对芯片和内存有要求，旧机型即使升级系统也不会出现这些功能。准备工作见 [国行 Apple 智能准备清单](/posts/2026-10-20-apple-ai-prep-checklist/)。
+- **功能会分批上线。** 首批是实时翻译、照片消除、写作工具等核心功能，不代表海外版的全部能力都会同步到国行。
+- **现在不用急着换设备或改区。** 官方渠道已经明确，等推送比绕路更省心。
+
+## 更新记录
+
+- 2026-10-28：补充对普通用户的影响
+
+## 参考来源
+
+- [Global Times：库克谈国行 Apple Intelligence（英文）](https://www.globaltimes.cn/page/202610/1372342.shtml)
+- [Emirates 247：库克称国行 AI 已获批，10 月推出测试版（英文）](https://www.emirates247.com/business/tim-cook-apple-intelligence-approved-in-china-test-version-coming-in-october/6786)
+
 ## 相关阅读
 
+- [国行 Apple Intelligence 十月底开测：这份准备清单先收好](/posts/2026-10-20-apple-ai-prep-checklist/)
+- [OpenAI 又发新模型 GPT-6.1 Terra：不拼最强，拼每干一件事花多少钱](/posts/2026-10-27-gpt-6-1-terra-launch/)
 - 更多「AI前沿动态」文章：[/categories/ai前沿动态/](/categories/ai前沿动态/)

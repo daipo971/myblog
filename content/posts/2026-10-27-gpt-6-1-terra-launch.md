@@ -1,9 +1,10 @@
 ---
 title: "OpenAI 又发新模型 GPT-6.1 Terra：不拼最强，拼每干一件事花多少钱"
 date: 2026-10-27T10:55:00+08:00
+lastmod: 2026-10-28T09:00:00+08:00
 draft: false
 categories: ["AI前沿动态"]
-tags: ["OpenAI", "GPT-6.1 Terra", "快讯"]
+tags: ["快讯", "行业动态", "OpenAI", "ChatGPT"]
 description: "OpenAI 10 月 27 日凌晨发布 GPT-6.1 Terra，定位是 GPT-5.6 Terra 的继任：给高频 agent 工作用的便宜快模型，API 只要 1 美元/5 美元每百万 token，任务速度比旗舰快 3 倍以上。先说清：跑分是 OpenAI 自家数据，国内能不能直连公告没写。"
 ---
 
@@ -34,8 +35,24 @@ OpenAI 今天凌晨又发了一个新模型：**GPT-6.1 Terra**。先别被名�
 
 Terra、Sol、Astra 三个名字一摆，选型本身就变难了。给新手一个粗线条：**偶尔用、要最强，找旗舰；天天批量跑 agent 任务、对账单敏感，Terra 这类便宜快模型才是为你准备的**。等独立评测出来，再看它到底值不值得换。
 
+## 对普通用户意味着什么
+
+- **只在网页上聊天的人，基本感觉不到变化。** Terra 主打的是 agent 和批量任务的单位成本，日常问答、写作继续用 ChatGPT 默认模型即可。
+- **用 API 做自动化、跑 Codex 的人值得试。** 如果你的任务是大量重复的整理、分类、改代码，先拿几十个真实任务对比 Terra 和现在用的模型，看完成率和账单，再决定要不要切换。
+- **等独立测评再下结论。** 目前的价格优势有官方定价可查，但准确率和速度数据都是 OpenAI 说法，过几周看第三方测试会更稳妥。
+
+## 更新记录
+
+- 2026-10-28：补充对普通用户的影响
+
+## 参考来源
+
+- [OpenAI 官方 X 账号：GPT-6.1 Terra 发布（英文）](https://x.com/OpenAI/status/2114780711664398349)
+- [BleepingComputer：OpenAI 发布 GPT-6.1 Terra（英文）](https://www.bleepingcomputer.com/news/artificial-intelligence/openai-launches-gpt-61-terra-with-3x-faster-ai-agents-50-percent-lower-pricing/)
+- [Artificial Analysis：GPT-6.1 Terra 性价比评测（英文）](https://artificialanalysis.ai/articles/gpt-6-1-terra-pushes-the-cost-efficiency-frontier)
+
 ## 相关阅读
 
 - [OpenAI Codex 代码生成入门完整指南（2026版）](/posts/codex-guide/)
-- [2026年AI Agent完全指南：从Claude Agent到OpenAI Agent SDK，手把手搭建AI智能体](/posts/ai-agent-complete-guide-2026/)
+- [AI Agent 是什么：主流框架对比与入门搭建](/posts/ai-agent-complete-guide-2026/)
 - 更多「AI前沿动态」文章：[/categories/ai前沿动态/](/categories/ai前沿动态/)

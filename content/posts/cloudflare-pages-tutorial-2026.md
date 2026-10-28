@@ -1,17 +1,18 @@
 ---
 title: "Cloudflare Pages 完全教程：从部署到优化的全套指南"
 date: 2026-07-25T06:00:00+08:00
+lastmod: 2026-07-25T06:00:00+08:00
 description: "Cloudflare Pages 完整教程，涵盖部署Hugo/Next.js/React项目、自定义域名、CDN加速、Workers集成、数据分析等全部功能。"
 summary: "Cloudflare Pages 从入门到精通，包含部署、优化、域名、Workers、数据分析等全流程指南。"
 categories: ["建站与副业"]
-tags: ["Cloudflare", "部署", "建站", "CDN", "Hugo", "免费托管"]
+tags: ["教程", "Cloudflare", "建站", "Hugo"]
 showtoc: true
 ---
 
 
-我用 Cloudflare Pages 跑这个博客已经大半年了，可以说这是我用过**最省心的托管平台**。
+本站（欣淇AI网）就部署在 Cloudflare Pages 上，推送代码到 GitHub 后自动构建发布，是目前最省心的免费托管方案之一。
 
-免费、全球CDN加速、自动部署、还能跑Serverless函数。这篇教程把我半年来的经验全部写出来，从入门到进阶一条龙。
+免费、全球CDN加速、自动部署、还能跑Serverless函数。这篇教程把部署和优化的完整流程写出来，从入门到进阶一条龙。
 
 ## 为什么选择 Cloudflare Pages？
 
@@ -235,7 +236,7 @@ Cloudflare Pages 是目前最适合个人站长的托管平台——**免费、�
 
 如果你还没用上，今天就迁移过来。整个迁移过程不到10分钟，效果立竿见影。
 
-我现在所有的网站都放在Cloudflare Pages上，运营了大半年零故障。唯一的建议是：搭配Cloudflare DNS一起用，体验最佳。
+本站目前就运行在 Cloudflare Pages 上。唯一的建议是：搭配Cloudflare DNS一起用，体验最佳。
 
 ---
 

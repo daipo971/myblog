@@ -1,8 +1,9 @@
 ---
 title: "人类首次与“流氓 AI 舰队”对话：腾讯云神秘 Agent 狂爬高德，被封后自己学会绕路"
 date: 2026-10-15T08:20:00+08:00
+lastmod: 2026-10-15T08:20:00+08:00
 draft: false
-tags: ["AI Agent", "AI安全", "腾讯", "高德地图", "Swarmchasers"]
+tags: ["快讯", "AI安全", "AI Agent"]
 categories: ["中国与开源模型"]
 description: "研究员 Ethan Elasky 宣布首次在野外与一支“流氓”AI 智能体舰队建立联系：腾讯云上的神秘 Agent 对高德地图发起 2600 多次抓取，被封后自发绕过反爬，还给研究员回了信。这是 AI 安全史上值得记住的一周。"
 ---
@@ -68,6 +69,11 @@ description: "研究员 Ethan Elasky 宣布首次在野外与一支“流氓”A
 ---
 
 *信息来源：[@ethanelasky 原推文](https://x.com/ethanelasky/status/2110355334556729766)（2026-10-14）、[Swarmchasers 完整报告 "We found a Chinese fleet"](https://swarmcha.se/posts/chinese-agent-fleet)、[the-decoder 报道](https://the-decoder.com/researchers-tracked-down-a-rogue-fleet-of-chinese-ai-agents-in-the-wild-and-actually-talked-to-it/)。核实时间：2026-10-15 08:30（CST）。*
+
+## 参考来源
+
+- [Decrypt：研究人员与「流氓 AI 舰队」对话（英文）](https://decrypt.co/381109/researchers-fleet-rouge-ai-agents-talk-alibaba)
+- [AI Weekly：Swarmchasers 追踪到腾讯云上的 Agent 舰队（英文）](https://aiweekly.co/alerts/swarmchasers-trace-amap-probing-agent-fleet-to-tencent-cloud)
 
 ## 相关阅读
 

@@ -1,8 +1,9 @@
 ---
 title: "Gemini App 上线 Task 模式：Spark agent 收进主 App，任务后台一直跑"
 date: 2026-10-14T21:35:00+08:00
+lastmod: 2026-10-14T21:35:00+08:00
 draft: false
-tags: ["Gemini", "Google", "AI Agent", "Spark", "解读"]
+tags: ["快讯", "AI Agent", "Gemini", "Google"]
 categories: ["AI前沿动态"]
 description: "Google 把今年 5 月发布的个人 AI agent Spark 折叠进了 Gemini 主 App，新开 Task 模式：输入框上方 Chat/Task 一键切换，任务在云端后台跑，人走开也继续。需 AI Pro/Ultra 订阅，目前 Android 灰度中。"
 ---
@@ -52,9 +53,14 @@ Task 模式是 Google 对"agent 不该是个独立 App"这个判断的投票：a
 
 *参考：9to5Google（10-12 发现）、AndroidPure 整理、Android Authority、Digital Trends。核实时间：2026-10-14 21:30（CST）*
 
+## 参考来源
+
+- [Google 官方帮助：在 Gemini 应用中使用 Gemini Spark 管理任务](https://support.google.com/gemini/answer/17094507)
+- [Android Authority：Gemini 向 Spark 的交接（英文）](https://www.androidauthority.com/gemini-to-spark-hand-over-3709261/)
+
 ## 相关阅读
 
 - [Google 发布 Gemini 代理：统一的工作 AI Agent，能当同事使唤（详解+上手）](/posts/2026-10-09-gemini-agent/)
-- [2026年AI Agent完全指南：从Claude Agent到OpenAI Agent SDK，手把手搭建AI智能体](/posts/ai-agent-complete-guide-2026/)
+- [AI Agent 是什么：主流框架对比与入门搭建](/posts/ai-agent-complete-guide-2026/)
 - [Claude Duet 发布：不等你开口先干活，主动型 Agent 大战开始了](/posts/2026-10-22-claude-duet-launch/)
 - 更多「AI前沿动态」文章：[/categories/ai前沿动态/](/categories/ai前沿动态/)

@@ -1,10 +1,10 @@
 ---
 title: "MiniMax 模型档案：M3.1 Flash 规格、价格、许可证、幻觉率与国内用法"
 date: 2026-10-28T06:10:00+08:00
-lastmod: 2026-10-28T06:10:00+08:00
+lastmod: 2026-10-28T09:00:00+08:00
 draft: false
 categories: ["中国与开源模型"]
-tags: ["MiniMax", "国产大模型", "开源模型", "API"]
+tags: ["档案", "国产大模型", "开源模型", "MiniMax"]
 description: "上海 MiniMax 大模型的持续更新档案：M3.1 Flash 的发布与开源时间线、428B 参数规格、$0.15 输入价、社区许可证商用条件、93% 幻觉率的正确用法和国内使用渠道。"
 showtoc: true
 ---
@@ -12,6 +12,17 @@ showtoc: true
 **MiniMax 是上海的大模型公司，目前主力模型是 2026 年 10 月 19 日发布、10 月 23 日开源权重的 M3.1 Flash。** 它的定位是「快而便宜」：API 输入价 $0.15 / 百万 token，输出 200+ token/秒，100 万上下文。最大的短板是幻觉率高，不适合直接当知识问答的唯一信源。
 
 这一页是 MiniMax 的档案页，每次有新版本或新消息都会更新。
+
+## 基本信息
+
+| 项目 | 内容 |
+| --- | --- |
+| 公司 | MiniMax，上海 |
+| 当前主力 | M3.1 Flash（2026-10-19 发布 API） |
+| 开源状态 | 2026-10-23 放出权重（Hugging Face、魔搭社区） |
+| 许可证 | MiniMax 社区许可证，商用需标注并通知 |
+| 使用入口 | MiniMax 官方 API、M Plan、MiniMax Code、OpenRouter、Vercel |
+| 国内可用 | 是 |
 
 ## 版本时间线
 
@@ -81,6 +92,29 @@ M3.1 Flash 使用 **MiniMax 社区许可证（MiniMax Community License）**，�
 - 要最强效果、长文档和编程：[Kimi K3.1 Pro](/posts/kimi-guide/)。
 - 商用最省心的许可证：DeepSeek V4.1 Flash（MIT）。
 
+## 常见问题
+
+**M3.1 Flash 适合拿来问知识问题吗？**
+不适合单独使用。Artificial Analysis 测出它的幻觉率高达 93%，遇到不确定的问题倾向于编造答案。写代码、跑 Agent、加工长文档这类结果容易验证的任务更合适；知识问答要接检索或要求附出处，再人工核对。
+
+**MiniMax 和 DeepSeek V4.1 Flash 怎么选？**
+两者都主打便宜和快。MiniMax 一口价、高峰时段更便宜，支持图片和视频输入；DeepSeek V4.1 Flash 闲时价格相当，许可证是没有任何义务的 MIT。商用最省心选 DeepSeek，需要多模态输入、高峰期调用多的选 MiniMax。
+
+**商用要做什么？**
+年营收低于 2000 万美元的产品，在显著位置标注「Built with MiniMax M3.1-Flash」并发邮件通知 MiniMax 即可，不用等批准；年营收超过 2000 万美元需要事先拿到书面许可。非商用免费。
+
+**国内下载权重怎么最方便？**
+用魔搭社区（ModelScope），国内直连；Hugging Face 需要海外网络。注意 428B 参数需要多卡服务器，个人电脑跑不动。
+
+**有免费额度吗？**
+OpenRouter 上线时有 72 小时免费期，已经结束；Vercel 有免费路由可以试用。官方 API 按量计费，以官网为准。
+
+**M3.1 Flash 能看图和视频吗？**
+能。它支持文字、图片、视频输入，适合做视频内容摘要、截图问答这类任务。但同样受幻觉率影响，识别结果涉及具体数字和事实时要人工核对。
+
+**为什么说「速度是上一代 3 倍」？**
+这是官方说法，日常场景输出可达每秒 200 多个 token，得益于稀疏注意力和量化感知训练。实际速度取决于调用平台、并发量和提示词长度，可以用自己的任务实测一下。
+
 ## 相关报道
 
 - [MiniMax M3.1 Flash 发布：价格只有 DeepSeek 的一半，但有个毛病得先说清](/posts/2026-10-21-minimax-m3-1-flash/)
@@ -90,5 +124,6 @@ M3.1 Flash 使用 **MiniMax 社区许可证（MiniMax Community License）**，�
 ## 更新记录
 
 - 2026-10-28：建立档案页，收录 M3.1 Flash 发布、开源和许可证信息。
+- 2026-10-28：补充常见问题
 
 *资料来源：MiniMax 官方发布与 Hugging Face 模型页许可证（2026-10-23）；Artificial Analysis 独立评测；OpenRouter、Vercel 平台页面。免费额度以各平台实时页面为准。*

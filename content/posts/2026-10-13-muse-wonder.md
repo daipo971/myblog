@@ -1,8 +1,9 @@
 ---
 title: "Muse Wonder 不免费：Meta 首个前沿模型定价对标 Opus，开源时代结束了？"
 date: 2026-10-13T15:45:00+08:00
+lastmod: 2026-10-13T15:45:00+08:00
 draft: false
-tags: ["AI大模型", "Meta", "Muse", "定价", "解读"]
+tags: ["快讯", "行业动态", "Meta", "Muse"]
 categories: ["AI前沿动态"]
 description: "Meta 昨日发布首个前沿模型 Muse Wonder / Wonder Full，API 定价 $4/$20 每百万 token，直接对标 Claude Opus 5.5——是上一代 Muse Spark 1.3 的三倍。本文解析它的能力、定价和背后的转向。"
 ---
@@ -61,6 +62,11 @@ Muse Wonder 标志着 Meta 的彻底转向：从"Llama 普惠开源"到"前沿�
 ---
 
 *参考：Meta 官方模型卡、Artificial Analysis、TechCrunch、dev.to 实测汇总*
+
+## 参考来源
+
+- [TechCrunch：Meta 发布首个前沿模型 Muse Wonder（英文）](https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder)
+- [YourStory：Muse Wonder 让 Meta 重回 AI 竞赛（英文）](https://yourstory.com/ai-story/muse-wonder-meta-ai-race-frontier-models)
 
 ## 相关阅读
 

@@ -1,9 +1,10 @@
 ---
 title: "Claude 全面杀入谷歌：办公套件、编程 IDE、企业云，三条线同时登陆"
 date: 2026-10-23T10:50:00+08:00
+lastmod: 2026-10-23T10:50:00+08:00
 draft: false
 description: "10 月 23 日谷歌云官宣：Anthropic 托管版 Claude 正式开放，企业在谷歌云上可用首日最新模型。这已是 Claude 本月第三次杀进谷歌地盘——10 月初进了 Docs/Sheets/Slides 侧边栏，10 月 20 日 Opus 5.5 与 Sonnet 5.5 登陆谷歌编程 IDE Antigravity。本文一次讲清三条线分别是什么、普通用户哪条最相关。"
-tags: ["Claude", "Google", "Antigravity", "Google Workspace", "谷歌云"]
+tags: ["快讯", "行业动态", "Claude", "Google"]
 categories: ["AI前沿动态"]
 ---
 
@@ -42,9 +43,14 @@ Antigravity 是谷歌的 Agent 编程平台（IDE + CLI + VS Code/JetBrains 插�
 
 「Claude 杀入谷歌」不是一句标题党：办公（Workspace）、编程（Antigravity）、企业云（Anthropic 托管部署）三条线在一个月内全部落地，而且全是谷歌官方官宣。AI 竞争的主战场，正在从「谁家模型强」变成「谁能住进用户的日常工作流」——这一局，Claude 选择直接住进谷歌家里。
 
+## 参考来源
+
+- [Claude 官方：Claude on Google Cloud（英文）](https://claude.com/partners/google-cloud)
+- [INSIDE：Google Antigravity 上架 Claude Opus 5.5 与 Sonnet 5.5](https://www.inside.com.tw/article/42558-google-antigravity-claude-opus-5-5-sonnet-5-5-gpt-oss-120b-retirement)
+
 ## 相关阅读
 
 - [Anthropic Claude 入门完整指南（2026版）](/posts/claude-guide/)
 - [ChatGPT vs Claude vs Cursor：2026年深度对比与选择指南](/posts/chatgpt-vs-claude-vs-cursor-guide/)
-- [AI翻译工具横评 2026：DeepL vs ChatGPT vs Claude vs Google翻译，哪个最准？](/posts/ai-translation-tools-comparison-2026/)
+- [AI翻译工具对比 2026：DeepL、ChatGPT、Claude、Google翻译怎么选](/posts/ai-translation-tools-comparison-2026/)
 - 更多「AI前沿动态」文章：[/categories/ai前沿动态/](/categories/ai前沿动态/)
