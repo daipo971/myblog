@@ -316,6 +316,6 @@ AI 编程接单这件事，说难也难，说简单也简单。
 
 ## 相关阅读
 
-- [用AI无代码搭建应用：零基础也能做出赚钱的产品](/posts/ai-no-code-app-2026/)
+- [AI 无代码做应用教程：用 Bolt、Lovable 做出第一个小工具](/posts/ai-no-code-app-2026/)
 - [用 AI 做副业的 9 种方式](/posts/make-money-with-ai-2026/)
 - 更多「建站与副业」文章：[/categories/建站与副业/](/categories/建站与副业/)
