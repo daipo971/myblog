@@ -37,7 +37,7 @@ showtoc: true
 - 效率工具
 
 ### 长尾关键词
-- ChatGPT 4o免费版使用教程
+- ChatGPT 免费版使用教程
 - Claude 3.5 vs ChatGPT对比
 - 免费AI工具推荐2026
 - AI编程工具Cursor评测
@@ -225,7 +225,7 @@ showtoc: true
 **相关文章推荐：**
 - [2026年最热门的AI工具：从免费到付费，一篇搞定](/posts/free-ai-tools-2026/)
 - [AI工具大比拼：ChatGPT vs Claude vs Cursor，2026年怎么选？](/posts/chatgpt-vs-claude-vs-cursor-guide/)
-- [ChatGPT 4o免费版使用指南](/posts/chatgpt-4o-free-guide-2026)
+- [ChatGPT 免费版使用指南](/posts/chatgpt-4o-free-guide-2026)
 
 **SEO工具推荐：**
 - [Google Search Console](https://search.google.com/search-console)

@@ -169,7 +169,7 @@ AI会自动模仿示例里的回答结构——先总结核心，再分点展开
 }
 ```
 
-如果你想要表格，直接说"请用Markdown表格输出，列为A/B/C，行为1/2/3"就行。对于需要程序化处理的任务，JSON格式直接可以省去你手动整理的时间。这是我之前在[ChatGPT 4o免费版三个月真实体验](/posts/chatgpt-4o-real-experience/)里提到的"批量提问策略"的升级版——不光量要大，格式也要精准。
+如果你想要表格，直接说"请用Markdown表格输出，列为A/B/C，行为1/2/3"就行。对于需要程序化处理的任务，JSON格式直接可以省去你手动整理的时间。这是我之前在[ChatGPT 免费版三个月真实体验](/posts/chatgpt-4o-real-experience/)里提到的"批量提问策略"的升级版——不光量要大，格式也要精准。
 
 ---
 
@@ -355,7 +355,7 @@ ChatGPT的"温度"参数控制输出随机性：
 
 这10个技巧我都贴了可以直接用的模板。别收藏了吃灰，打开[ChatGPT](https://chatgpt.com)或者[Claude](https://claude.ai/)，随便找一个你之前问过但结果不理想的提示词，套上这些模板改一改，你会立刻感受到差别。
 
-如果想看更多类似的实战内容，欢迎翻翻我之前的文章——[《ChatGPT vs Claude vs Cursor 2026深度对比》](/posts/chatgpt-vs-claude-vs-cursor-guide/)和[《ChatGPT 4o免费版三个月真实体验》](/posts/chatgpt-4o-real-experience/)，都是掏心窝子的使用心得。
+如果想看更多类似的实战内容，欢迎翻翻我之前的文章——[《ChatGPT vs Claude vs Cursor 2026深度对比》](/posts/chatgpt-vs-claude-vs-cursor-guide/)和[《ChatGPT 免费版三个月真实体验》](/posts/chatgpt-4o-real-experience/)，都是掏心窝子的使用心得。
 
 ---
 

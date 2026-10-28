@@ -29,7 +29,7 @@ tags: ["教程", "建站", "Cloudflare"]
 
 我这个教程里就用 `.dpdns.org`，完全免费，一年后续期也是免费的，只剩 180 天的时候可以续。
 
-配合 Cloudflare 的免费 DNS 解析 + 免费 CDN，零成本跑一个个人站完全没问题——比如我这个博客就是 Hugo + Cloudflare Pages 搭的，域名再白嫖一个，成本为零。
+配合 Cloudflare 的免费 DNS 解析 + 免费 CDN，零成本跑一个个人站完全没问题。Hugo + Cloudflare Pages 托管免费，域名也用免费的，练手阶段成本可以做到零。
 
 ## 注册步骤
 
@@ -107,7 +107,7 @@ NS 记录可能有缓存，等 5-10 分钟。如果超过半小时还没生效�
 - **反向代理自建服务**，配合 Cloudflare Tunnel 不用暴露家里 IP
 - **临时邮箱 / 短链接 / 图床** 等自建小工具
 
-我自己是绑了 Cloudflare Pages，Hugo 构建完推送 GitHub 自动部署，域名也是白嫖的——整条链路花销为零。
+绑 Cloudflare Pages 是最省事的组合：Hugo 构建完推送 GitHub 自动部署，再加上免费域名，整条链路花销为零。正式长期做站，建议换成一个便宜的 .com（本站 xinqai.com 就是付费域名）。
 
 ## 写在最后
 

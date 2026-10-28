@@ -23,7 +23,7 @@ showtoc: true
 
 如果你还没看过下面这几篇文章，可以先打个底：
 
-- [ChatGPT 4o免费版到底够不够用](/posts/chatgpt-4o-free-guide-2026/)
+- [ChatGPT 免费版到底够不够用](/posts/chatgpt-4o-free-guide-2026/)
 - [Anthropic Claude 入门完整指南](/posts/claude-guide/)
 - [用了半年Cursor AI，有些话不吐不快](/posts/cursor-programming-tools/)
 

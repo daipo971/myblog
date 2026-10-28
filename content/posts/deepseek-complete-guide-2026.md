@@ -94,9 +94,9 @@ DeepSeek支持上传文本文件（txt、md）、PDF、Word、Excel、PPT格式�
 
 **免费+无限制**这五个字的分量，你用一段时间就知道有多重要了。
 
-我常跟朋友说，DeepSeek适合当"主力干将"——日常的常规任务全扔给它做，不用心疼额度。而ChatGPT和Claude的免费额度是有上限的，尤其是ChatGPT 4o免费版，3小时只能用10-20条，真的不太够用。
+我常跟朋友说，DeepSeek适合当"主力干将"——日常的常规任务全扔给它做，不用心疼额度。而ChatGPT和Claude的免费额度是有上限的，尤其是ChatGPT 免费版，3小时只能用10-20条，真的不太够用。
 
-我之前写过一篇[ChatGPT 4o免费版的真实使用体验](/posts/chatgpt-4o-free-guide-2026/)，里面讲了免费额度怎么省着用——但说实话，省钱不如直接换DeepSeek，省心省力。
+我之前写过一篇[ChatGPT 免费版的真实使用体验](/posts/chatgpt-4o-free-guide-2026/)，里面讲了免费额度怎么省着用——但说实话，省钱不如直接换DeepSeek，省心省力。
 
 ### DeepSeek的短板
 
@@ -307,7 +307,7 @@ DeepSeek V3是2026年最让我惊喜的AI产品，没有之一。一个完全免
 最后，如果你想了解更多AI工具的选择，可以看看我之前的几篇文章：
 
 - [2026年真正好用的免费AI工具：从ChatGPT到Claude](/posts/free-ai-tools-2026/)
-- [ChatGPT 4o免费版的真实使用体验](/posts/chatgpt-4o-free-guide-2026/)
+- [ChatGPT 免费版的真实使用体验](/posts/chatgpt-4o-free-guide-2026/)
 - [Claude完整入门指南](/posts/codex-guide/)
 
 直接去 [DeepSeek官网](https://chat.deepseek.com) 注册开用，别犹豫了。

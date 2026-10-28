@@ -269,6 +269,6 @@ ChatGPT从入门到高级的10个技巧，但核心只有一句话：**不要把
 
 **相关阅读：**
 - 👉 [ChatGPT vs Claude vs Cursor 2026 对比](/posts/chatgpt-vs-claude-vs-cursor-guide/)
-- 👉 [ChatGPT 4o免费版使用指南](/posts/chatgpt-4o-free-guide-2026/)
+- 👉 [ChatGPT 免费版使用指南](/posts/chatgpt-4o-free-guide-2026/)
 - 👉 [AI提示词工程指南](/posts/ai-prompt-engineering-guide-2026/)
 - 👉 [Cursor AI编程工具教程](/posts/cursor-programming-tools/)

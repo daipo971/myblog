@@ -53,14 +53,14 @@ showtoc: true
 这类关键词反映了用户的特定问题，转化率较高：
 
 #### ChatGPT相关问题
-- "ChatGPT 4o免费版真的能用吗？" - 高转化率
+- "ChatGPT 免费版真的能用吗？" - 高转化率
 - "ChatGPT Plus值得购买吗？" - 商业价值高
 - "ChatGPT 4o使用技巧" - 实用性强
 - "ChatGPT 4o限制和解决方案" - 解决痛点
 
 #### Claude相关问题
 - "Claude 3.5 vs ChatGPT对比" - 对比需求
-- "Claude 3.5免费版限制" - 免费需求
+- "Claude 免费版限制" - 免费需求
 - "Claude写作能力如何" - 功能需求
 - "Claude API调用方法" - 技术需求
 

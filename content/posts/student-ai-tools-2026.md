@@ -1,7 +1,7 @@
 ---
 title: "2026年学生党AI工具组合：预算100块以内，把这些免费+低价工具用到极致"
 date: 2026-07-16
-lastmod: 2026-07-16
+lastmod: 2026-10-28T09:00:00+08:00
 description: "学生党预算有限怎么玩AI？100块以内的免费+低价AI工具搭配方案，ChatGPT免费版、Claude、DeepSeek、Cursor、Perplexity全攻略。"
 summary: "手把手教学生党用最少的钱组出最强AI工具组合。ChatGPT免费版、Claude、DeepSeek、Cursor、Perplexity怎么搭配最好用，全在这了。"
 categories: ["AI应用场景"]
@@ -35,7 +35,7 @@ ChatGPT 免费版现在给的是 GPT-4o 模型——不是阉割版，是正儿�
 
 我之前写过一篇更详细的免费版使用指南，里面有怎么延长时间的实操技巧：
 
-👉 [ChatGPT 4o 免费版深度体验：不花钱真的够用吗？](/posts/chatgpt-4o-free-guide-2026/)
+👉 [ChatGPT 免费版深度体验：不花钱真的够用吗？](/posts/chatgpt-4o-free-guide-2026/)
 
 👉 [chatgpt.com](https://chatgpt.com/)
 
@@ -210,11 +210,32 @@ ChatGPT 免费版管日常，Claude 免费版管长篇写作和论文，DeepSeek
 **相关阅读：**
 
 - [试了20多个免费AI工具，这7个我留在了电脑上](/posts/free-ai-tools-2026/)
-- [ChatGPT 4o 免费版深度体验：不花钱真的够用吗？](/posts/chatgpt-4o-free-guide-2026/)
+- [ChatGPT 免费版深度体验：不花钱真的够用吗？](/posts/chatgpt-4o-free-guide-2026/)
 - [ChatGPT vs Claude vs Cursor：2026年深度对比与选择指南](/posts/chatgpt-vs-claude-vs-cursor-guide/)
 - [我用了半年Cursor AI，有些话不吐不快](/posts/cursor-programming-tools/)
 - [Perplexity AI深度体验：用了一个月，我卸载了Google](/posts/perplexity-ai-deep-review-2026/)
 *** End of File
+
+## 常见问题
+
+**用 AI 写作业、写论文算作弊吗？**
+看学校和课程的规定，不同学校差别很大。普遍能接受的是用 AI 查资料、讲解概念、检查语法；直接提交 AI 生成的作业或论文，在很多学校属于学术不端。使用前查清楚规定，并保留自己的写作过程。
+
+**AI 给的参考文献能直接用吗？**
+不能。AI 可能编造不存在的论文和作者。每一条文献都要在知网、Google Scholar 等数据库里核实，再按格式引用。Perplexity 带来源链接，相对方便核对，但同样要点开确认。
+
+**学生有优惠吗？**
+部分产品有教育优惠或学生免费计划，比如 GitHub 学生包里包含 Copilot。各家活动经常变化，以官方页面为准。
+
+**只有 100 元预算买哪个？**
+本文的建议是先把免费版用满。写论文、读文献多的同学，优先考虑 Claude Pro；需要语音练习和图片分析的，选 ChatGPT Plus。不要同时订多个。
+
+**国内学生没有海外账号怎么办？**
+DeepSeek、Kimi 等国产模型可以直接用，免费额度也比较宽松，能满足大部分学习需求。
+
+## 更新记录
+
+- 2026-10-28：补充常见问题
 
 ## 相关阅读
 

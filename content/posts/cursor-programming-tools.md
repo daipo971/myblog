@@ -346,7 +346,7 @@ Cursor是一个优秀的AI编程工具，适合大多数开发场景。但它不
 *关于作者：一个写了15年代码的全栈工程师，专注于开发效率工具评测。*
 
 *相关阅读：*
-- [ChatGPT 4o免费版真实体验](/posts/chatgpt-4o-real-experience)
+- [ChatGPT 免费版真实体验](/posts/chatgpt-4o-real-experience)
 - [Claude 3.5编程能力评测](/posts/claude-code-codex-cli-2026/)
 - [2026年最好用的编程AI工具](/posts/ai-coding-tools-comparison-2026/)
 

@@ -104,45 +104,45 @@ Cursor是专为编程设计的工具：
 
 日常办公主要是各种文字处理、快速问答、邮件撰写等，ChatGPT的灵活性和对话式交互最适合这类场景。
 
-**组合建议**：ChatGPT 4o免费版就够用
+**组合建议**：ChatGPT 免费版就够用
 
 ### 场景二：内容创作
 **推荐工具**：Claude
 
 写文章、做研究、分析文档，Claude的长上下文和深度推理能力是其他工具无法比拟的。
 
-**组合建议**：Claude 3.5免费版 + ChatGPT 4o免费版
+**组合建议**：Claude 免费版 + ChatGPT 免费版
 
 ### 场景三：软件开发
 **推荐工具**：Cursor
 
 专业编程场景下，Cursor的项目理解和代码生成能力远超通用AI工具。
 
-**组合建议**：Cursor Pro + Claude 3.5免费版（用来理解需求和设计）
+**组合建议**：Cursor Pro + Claude 免费版（用来理解需求和设计）
 
 ### 场景四：学习研究
 **推荐工具**：Claude + ChatGPT
 
 学习新知识时，先用ChatGPT快速了解，再用Claude深入研究。
 
-**组合建议**：ChatGPT 4o免费版 + Claude 3.5免费版
+**组合建议**：ChatGPT 免费版 + Claude 免费版
 
 ## 价格方案对比
 
 ### 零成本方案（强烈推荐）
-- ChatGPT 4o免费版：10-20条/3小时，够日常用
-- Claude 3.5免费版：200K token上下文，非常慷慨
+- ChatGPT 免费版：10-20条/3小时，够日常用
+- Claude 免费版：200K token上下文，非常慷慨
 - Cursor免费版：每天2000次补全，轻度编程够用
 
 **总花费：$0**
 
-👉 [使用ChatGPT 4o免费版](https://chatgpt.com/)
-👉 [使用Claude 3.5免费版](https://claude.ai/)
+👉 [使用ChatGPT 免费版](https://chatgpt.com/)
+👉 [使用Claude 免费版](https://claude.ai/)
 👉 [下载Cursor免费版](https://cursor.sh/)
 
 ### 均衡方案（最推荐）
-- ChatGPT 4o免费版：日常对话和快速问答
-- Claude 3.5免费版：写作和研究
+- ChatGPT 免费版：日常对话和快速问答
+- Claude 免费版：写作和研究
 - Cursor Pro（$20/月）：编程开发
 
 **总花费：$20/月**
@@ -192,7 +192,7 @@ Cursor是专为编程设计的工具：
 如果你刚开始接触AI工具，我的建议是：
 
 ### 第一周：从免费开始
-- ChatGPT 4o免费版 + Claude 3.5免费版
+- ChatGPT 免费版 + Claude 免费版
 - 熟悉基本用法
 - 找到主要使用场景
 
@@ -264,8 +264,8 @@ ChatGPT我不太满意的点是，写长文章容易"飘"，写到后面忘了�
 
 2026年选AI工具不需要纠结。我的简单建议：
 
-- **日常对话**：ChatGPT 4o免费版
-- **写作研究**：Claude 3.5免费版
+- **日常对话**：ChatGPT 免费版
+- **写作研究**：Claude 免费版
 - **编程开发**：Cursor Pro（唯一值得付费的）
 - **省钱方案**：三个免费版就够了
 

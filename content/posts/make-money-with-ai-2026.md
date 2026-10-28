@@ -19,7 +19,7 @@ showtoc: true
 这个最容易上手，门槛最低。
 
 ### 怎么操作
-用Claude 3.5或ChatGPT 4o写初稿，然后自己修改。Claude 3.5免费版就够用。
+用Claude 3.5或ChatGPT 4o写初稿，然后自己修改。Claude 免费版就够用。
 
 **接单渠道：**
 - 知乎投稿（一篇$10-50）
@@ -33,11 +33,11 @@ showtoc: true
 一个月认真做，接10-20单，收入$200-500。
 
 **需要工具：**
-- Claude 3.5免费版：长文写作
-- ChatGPT 4o免费版：短视频文案
+- Claude 免费版：长文写作
+- ChatGPT 免费版：短视频文案
 
-👉 [使用Claude 3.5免费版](https://claude.ai/)
-👉 [使用ChatGPT 4o免费版](https://chatgpt.com/)
+👉 [使用Claude 免费版](https://claude.ai/)
+👉 [使用ChatGPT 免费版](https://chatgpt.com/)
 
 ## 2. AI编程：接外包项目
 
@@ -208,8 +208,8 @@ AI工具每月都在更新，保持学习才能保持优势。
 一个月赚$100-200并不难，难的是坚持和持续优化。
 
 **免费AI工具推荐：**
-- [ChatGPT 4o免费版](https://chatgpt.com/)
-- [Claude 3.5免费版](https://claude.ai/)
+- [ChatGPT 免费版](https://chatgpt.com/)
+- [Claude 免费版](https://claude.ai/)
 - [Cursor免费版](https://cursor.sh/)
 - [Perplexity免费版](https://www.perplexity.ai/)
 

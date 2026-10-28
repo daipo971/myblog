@@ -115,7 +115,7 @@ Gmail 和 Outlook 都有自带分类，但不够智能。我的做法是把每�
 >
 > {draft content}"
 
-关于 [ChatGPT 4o 免费版](/posts/chatgpt-4o-free-guide-2026/)的额度，每天处理几十封邮件完全够用。免费用户每 3 小时有大约 10-20 条消息额度，配合 GPT-4o-mini 处理简单任务，日常办公绰绰有余。
+关于 [ChatGPT 免费版](/posts/chatgpt-4o-free-guide-2026/)的额度，每天处理几十封邮件完全够用。免费用户每 3 小时有大约 10-20 条消息额度，配合 GPT-4o-mini 处理简单任务，日常办公绰绰有余。
 
 ---
 

@@ -23,7 +23,7 @@ showtoc: true
 
 ## 1. 用免费AI工具替代付费服务
 
-### ChatGPT 4o免费版 vs ChatGPT Plus
+### ChatGPT 免费版 vs ChatGPT Plus
 
 **免费版能干什么：**
 - 每天10-20条GPT-4o消息
@@ -41,9 +41,9 @@ showtoc: true
 
 **节省：$20/月**
 
-👉 [开始使用ChatGPT 4o免费版](https://chatgpt.com/)
+👉 [开始使用ChatGPT 免费版](https://chatgpt.com/)
 
-### Claude 3.5免费版 vs Claude Pro
+### Claude 免费版 vs Claude Pro
 
 **免费版能干什么：**
 - 200K上下文窗口
@@ -60,7 +60,7 @@ Claude的免费版非常慷慨，写作和研究完全够用。
 
 **节省：$20/月**
 
-👉 [使用Claude 3.5免费版](https://claude.ai/)
+👉 [使用Claude 免费版](https://claude.ai/)
 
 ## 2. 用AI替代付费服务
 
@@ -117,8 +117,8 @@ Claude的免费版非常慷慨，写作和研究完全够用。
 ## 4. 省钱组合方案
 
 ### 0元方案（学生党）
-- ChatGPT 4o免费版：文字处理
-- Claude 3.5免费版：写作和研究
+- ChatGPT 免费版：文字处理
+- Claude 免费版：写作和研究
 - Perplexity免费版：搜索和研究
 - Cursor免费版：每天2000次补全
 
@@ -126,8 +126,8 @@ Claude的免费版非常慷慨，写作和研究完全够用。
 **每月节省：$100-200**
 
 ### 性价比方案（职场人士）
-- ChatGPT 4o免费版：日常使用
-- Claude 3.5免费版：写作和研究（其实免费版够用）
+- ChatGPT 免费版：日常使用
+- Claude 免费版：写作和研究（其实免费版够用）
 - Cursor Pro（$20/月）：编程开发
 
 **月花费：$20**
@@ -169,8 +169,8 @@ Claude的免费版非常慷慨，写作和研究完全够用。
 - 合计：$100-180/月
 
 **现在**：
-- ChatGPT 4o免费版：$0
-- Claude 3.5免费版：$0
+- ChatGPT 免费版：$0
+- Claude 免费版：$0
 - GitHub Copilot免费：$0
 - 合计：$0
 
@@ -243,13 +243,13 @@ AI生成的内容需要人工审核，否则可能出大问题。
 ---
 
 **相关阅读：**
-- [ChatGPT 4o免费版三个月真实体验](/posts/chatgpt-4o-real-experience)
+- [ChatGPT 免费版三个月真实体验](/posts/chatgpt-4o-real-experience)
 - [Cursor编程工具深度评测](/posts/cursor-programming-tools)
 - [2026年真正好用的免费AI工具推荐](/posts/free-ai-tools-2026)
 
 **推荐的免费工具：**
-- [ChatGPT 4o免费版](https://chatgpt.com/)
-- [Claude 3.5免费版](https://claude.ai/)
+- [ChatGPT 免费版](https://chatgpt.com/)
+- [Claude 免费版](https://claude.ai/)
 - [Perplexity免费版](https://www.perplexity.ai/)
 - [Cursor免费版](https://cursor.sh/)
 
