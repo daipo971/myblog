@@ -219,7 +219,12 @@ def main():
     elif a.files:
         tracked = subprocess.run(["git", "ls-files", "--", *a.files], cwd=ROOT,
                                  capture_output=True, text=True).stdout.split()
-        targets = [(pathlib.Path(f).resolve(), f not in tracked) for f in a.files]
+        def rel(f):
+            try:
+                return str(pathlib.Path(f).resolve().relative_to(ROOT))
+            except ValueError:
+                return f
+        targets = [(pathlib.Path(f).resolve(), rel(f) not in tracked) for f in a.files]
     else:
         targets = changed_files()
     targets = [(p, new) for p, new in targets
