@@ -33,7 +33,7 @@ showtoc: true
 | Claude 免费版 | 否 | 额度较少 | 写作、长文档、代码 | 免费额度少 |
 | Gemini 免费版 | 否 | 有额度 | 和 Google 服务联动 | 需海外账号 |
 
-**选择建议：** 国内用户以 DeepSeek 或 Kimi 为主力；有海外账号的，ChatGPT 和 Claude 二选一作为补充即可。ChatGPT 免费版的具体限制见 [ChatGPT 免费版能做什么](/posts/chatgpt-4o-real-experience/)。
+**选择建议：** 国内用户以 DeepSeek 或 Kimi 为主力，两者都可以上传 PDF、Word 等文件，日常写作、总结、翻译、讲解概念都能胜任，遇到需要严谨推理的问题打开深度思考模式；有海外账号的，ChatGPT 和 Claude 二选一作为补充即可。ChatGPT 免费版的具体限制见 [ChatGPT 免费版能做什么](/posts/chatgpt-4o-real-experience/)。
 
 ## 编程
 
