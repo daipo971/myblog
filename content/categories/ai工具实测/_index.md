@@ -16,7 +16,7 @@ description: "ChatGPT、Claude、Cursor、Midjourney 等 AI 工具的实测评�
 
 - [真正好用的免费 AI 工具](/posts/free-ai-tools-2026/)
 - [最值得订阅的 AI 工具](/posts/best-ai-subscriptions-2026/)
-- [AI 工具月度省钱攻略](/posts/ai-tools-monthly-savings-2026/) · [每月省下 $100 的方法](/posts/save-money-with-ai/)
+- [AI 工具月度省钱攻略](/posts/ai-tools-monthly-savings-2026/)
 - [免费 AI API 完整清单](/posts/free-ai-api-guide/)
 
 ## AI 编程

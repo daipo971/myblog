@@ -167,7 +167,6 @@ AI 汇总的金额要抽查几项，用表格软件的求和核对总数，避�
 
 ## 相关阅读
 
-- [AI 省钱攻略](/posts/save-money-with-ai/)
 - [AI 订阅省钱指南](/posts/ai-tools-monthly-savings-2026/)
 - [AI 自动化办公指南](/posts/ai-automation-office-2026/)
 - 更多「AI应用场景」文章：[/categories/ai应用场景/](/categories/ai应用场景/)
