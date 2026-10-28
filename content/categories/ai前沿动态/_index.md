@@ -23,6 +23,7 @@ description: "OpenAI、Anthropic、Google、Meta、苹果等海外 AI 公司的�
 ## Meta
 
 - [Muse Wonder 不免费：Meta 首个前沿模型的定价](/posts/2026-10-13-muse-wonder/)
+- [Muse 正式上线新加坡：四种官方语言全支持](/posts/muse-singapore-launch/)
 
 ## 苹果与 AI 硬件
 
