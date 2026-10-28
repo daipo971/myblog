@@ -1,7 +1,7 @@
 ---
-title: "2026年AI Agent完全指南：从Claude Agent到OpenAI Agent SDK，手把手搭建AI智能体"
+title: "AI Agent 是什么：主流框架对比与入门搭建"
 date: 2026-07-27
-lastmod: 2026-07-27
+lastmod: 2026-10-28T09:00:00+08:00
 description: "2026年最火的AI Agent（智能体）到底是什么？从Anthropic Agent SDK到OpenAI Agents SDK，从浏览器Agent到代码Agent，完整指南和实战教程。"
 summary: "2026年AI Agent最全指南：Anthropic Agent SDK、OpenAI Agents SDK、浏览器Agent、代码Agent，从概念到实战，手把手教你搭建自己的AI智能体。"
 tags: ["科普", "AI Agent", "自动化", "Anthropic", "OpenAI"]
@@ -9,18 +9,20 @@ categories: ["AI工具实测"]
 showtoc: true
 ---
 
-如果说2025年是"AI对话"的元年，那么2026年就是"AI Agent（智能体）"的元年。
+**一句话说明：** AI Agent（智能体）不是「你问它答」的聊天机器人，而是给它一个目标后，能自己规划步骤、调用工具、检查结果并修正，直到完成任务的 AI 系统。普通用户最常接触的 Agent 是 Claude Code、Codex 这类编程智能体和 ChatGPT 的 Agent 模式；开发者可以用 Claude Agent SDK、OpenAI Agents SDK、Google ADK 或 LangGraph 等框架自己搭建。
+
+从 2025 年起，主流 AI 公司陆续推出了面向开发者的 Agent 框架，Agent 成为行业最受关注的方向之一。
 
 **什么是AI Agent？** 简单说，AI Agent不是"你问它答"的聊天机器人，而是**能自己干活、自己决策、自己执行任务的AI**。
 
 你给Agent一个目标，它会自己规划步骤、调用工具、执行任务、修正错误，直到完成目标。这跟ChatGPT那种"你问一句它答一句"的模式，是完全不同的体验。
 
-2026年，各大AI公司都在Agent上疯狂发力：
+主要框架和发布时间：
 
-- **Anthropic** 推出了 Claude Agent SDK
-- **OpenAI** 发布了 Agents SDK
-- **Google** 的 ADK 也在快速迭代
-- 还有各种开源Agent框架
+- **OpenAI Agents SDK**：2025 年 3 月发布（[官方文档](https://openai.github.io/openai-agents-python/)）
+- **Google ADK**：2025 年 4 月发布（[官方文档](https://google.github.io/adk-docs/)）
+- **Claude Agent SDK**：Anthropic 在 2025 年把 Claude Code 的底层能力开放为 SDK（[官方文档](https://code.claude.com/docs/en/agent-sdk)）
+- 以及 LangGraph、CrewAI、AutoGen 等开源框架
 
 这篇就带你从零开始，全面了解AI Agent的世界，以及如何自己动手搭建一个。
 
@@ -42,7 +44,7 @@ showtoc: true
 
 一个基本的AI Agent由三部分组成：
 
-1. **大脑（LLM）**：GPT-4o、Claude 4等大模型，负责理解和决策
+1. **大脑（LLM）**：GPT、Claude、Gemini、DeepSeek 等大模型，负责理解和决策
 2. **工具集（Tools）**：能调用的API、函数、软件
 3. **记忆（Memory）**：短期记忆（当前任务上下文）+ 长期记忆（知识库）
 
@@ -52,25 +54,20 @@ showtoc: true
 
 ## 主流的AI Agent 框架
 
-### 1. Anthropic Claude Agent SDK
+### 1. Anthropic：Claude API 工具调用与 Claude Agent SDK
 
-**Type：** Claude Agent SDK（官方Python SDK）
-**适用场景：** 需要深度推理、复杂任务拆解
+Anthropic 提供两种搭建 Agent 的方式，名字相近但不是同一个东西：
 
-Anthropic 在2026年推出了官方的Agent SDK，让开发者可以轻松构建基于Claude的AI Agent。
+- **Claude API + 工具调用**（`pip install anthropic`）：你定义工具，模型决定什么时候调用，你的代码执行工具并把结果传回。SDK 还提供 Tool Runner 帮你自动循环。适合需要完全控制流程的场景。
+- **Claude Agent SDK**（`pip install claude-agent-sdk`，另有 TypeScript 版）：把 Claude Code 的整套能力打包成库，内置读写文件、执行命令、搜索网页等工具，以及上下文管理、权限控制和子代理。适合想快速得到一个「能操作文件和命令行」的 Agent。用法以[官方文档](https://code.claude.com/docs/en/agent-sdk)为准。
 
 **核心特性：**
-- **工具调用（Tool Use）：** Agent可以调用你定义的任何API或函数
-- **多步骤推理：** Agent会自己拆解任务，一步步执行
-- **错误恢复：** Agent执行出错时能自己发现并修正
-- **持久化会话：** Agent可以记住之前的对话和任务状态
+- **工具调用（Tool Use）：** 模型可以调用你定义的 API 或函数
+- **多步骤推理：** 自己拆解任务，一步步执行
+- **MCP 支持：** 通过 MCP 协议接入外部工具和数据源
+- **权限控制：** Agent SDK 可以限制 Agent 能使用哪些工具
 
-**安装：**
-```bash
-pip install anthropic
-```
-
-**简单示例：**
+**Claude API 工具调用的最小示例**（模型只会「请求」调用工具，真正执行工具和循环需要你的代码或 Tool Runner 完成）：
 ```python
 import anthropic
 
@@ -85,14 +82,15 @@ tools = [
             "type": "object",
             "properties": {
                 "query": {"type": "string", "description": "搜索关键词"}
-            }
+            },
+            "required": ["query"]
         }
     }
 ]
 
-# 创建一个Agent
-response = client.beta.messages.create(
-    model="claude-sonnet-4-20250514",
+# 发起请求，模型如需搜索会返回 tool_use 内容块
+response = client.messages.create(
+    model="claude-opus-5-5",
     max_tokens=4096,
     tools=tools,
     system="你是一个研究助手。搜索信息时，先确认理解用户需求，再分步骤搜索。",
@@ -101,10 +99,11 @@ response = client.beta.messages.create(
     ]
 )
 
+print(response.stop_reason)  # 为 "tool_use" 时，执行工具后把结果发回
 print(response.content)
 ```
 
-**Claude Agent SDK 的强项：** Claude的推理能力非常强，适合需要复杂决策和深度分析的任务。
+**强项：** 适合需要复杂推理、长上下文和编程能力的任务；Agent SDK 与 Claude Code 同源，文件和命令行操作能力成熟。
 
 **适合场景：** 研究分析、报告生成、数据分析、代码开发。
 
@@ -113,7 +112,7 @@ print(response.content)
 **Type：** Python SDK
 **适用场景：** 多Agent协作、复杂工作流
 
-OpenAI 在2026年发布的 Agents SDK 是目前最成熟的Agent框架之一。
+OpenAI 在 2025 年 3 月发布的 Agents SDK（`pip install openai-agents`）是使用较广的 Agent 框架之一。
 
 **核心特性：**
 - **Agent编排：** 支持多个Agent协作，一个主Agent可以调用子Agent
@@ -152,7 +151,7 @@ print(result.final_output)
 **Type：** Python SDK
 **适用场景：** 需要与Google生态集成
 
-Google的ADK（Agent Development Kit）在2026年也成为了主流选择，特别是需要与Google生态（Gmail、Google Drive、Google Calendar等）集成时。
+Google 的 ADK（Agent Development Kit）于 2025 年 4 月开源发布，适合使用 Gemini 模型或需要与 Google Cloud 生态集成的场景。
 
 **核心特性：**
 - 深度集成Google Workspace
@@ -173,7 +172,7 @@ Google的ADK（Agent Development Kit）在2026年也成为了主流选择，特�
 
 ## 实战：搭建一个智能研究助手Agent
 
-下面我手把手教你用 OpenAI Agents SDK 搭建一个"研究助手"Agent，它能自动搜索信息、分析结果、生成报告。
+下面用 OpenAI Agents SDK 演示搭建一个「研究助手」Agent 的基本结构：它能搜索信息、分析结果、生成报告。代码仅作演示，运行前请对照官方文档确认接口。
 
 ### 第一步：安装
 
@@ -221,7 +220,7 @@ research_agent = Agent(
 - 信息来源
 """,
     tools=[search_web, analyze_text],
-    model="gpt-4o"
+    # 不指定 model 时使用 SDK 默认模型，可按需改成官方文档列出的模型名
 )
 ```
 
@@ -336,7 +335,7 @@ AI Agent不仅是技术趋势，也是**赚钱工具**。这里分享几个已�
 
 2026年，AI Agent 的爆发才刚刚开始。
 
-**对于普通用户：** 学会用Agent工具，可以让你的工作效率翻倍。什么都不用做，只需要告诉AI"帮我做这个"，它就自动完成了。
+**对于普通用户：** Agent 工具可以把多步骤的重复任务交给 AI 完成，但它仍会出错，涉及付款、发送消息、删除文件等不可撤销的操作，要保留人工确认。
 
 **对于开发者：** 现在是最好的入场时机。Agent框架已经成熟，但应用场景还远未被发掘。每个领域都值得用Agent重做一遍。
 
@@ -348,7 +347,10 @@ AI Agent不仅是技术趋势，也是**赚钱工具**。这里分享几个已�
 
 ---
 
-*你对AI Agent有什么看法？有没有搭建过自己的Agent？欢迎在评论区分享你的经验。*
+
+## 更新记录
+
+- 2026-10-28：更正各 Agent 框架发布时间；区分 Claude API 工具调用与 Claude Agent SDK 并修正示例代码；删除过时模型名和夸大表述
 
 ## 相关阅读
 
