@@ -59,7 +59,7 @@ Meta 的回应是：私人一对一的 AI 对话，和在公开社交网络上�
 
 ## 相关阅读
 
-- [Meta Muse 邀请码实测：注册领 10 亿 Token，双方各得（附兑换教程与避坑）](/posts/2026-10-09-muse-referral/)
-- [今天 Muse 大规模风控：已解除关联的按这 6 步申诉，非美日 IP 先停一停](/posts/2026-10-27-muse-risk-control-unlink-appeal/)
+- [Muse 邀请码怎么兑换：10 亿 Token 奖励规则和步骤](/posts/2026-10-09-muse-referral/)
+- [Muse 风控「已解除关联」怎么申诉：6 步工单和防风控清单](/posts/2026-10-27-muse-risk-control-unlink-appeal/)
 - [Muse 大面积封号始末：邀请码羊毛薅崩了风控，申诉指南来了](/posts/2026-10-15-muse-ban-wave/)
 - 更多「海外服务通关」文章：[/categories/海外服务通关/](/categories/海外服务通关/)

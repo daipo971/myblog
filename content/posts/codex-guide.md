@@ -1,453 +1,172 @@
 ---
-title: "OpenAI Codex 代码生成入门完整指南（2026版）"
+title: "OpenAI Codex 使用教程：CLI、IDE 插件和云端任务上手"
 date: 2026-07-05T00:00:00+08:00
 lastmod: 2026-10-28T09:00:00+08:00
 draft: false
-description: "从零开始学习 OpenAI Codex，包括 API 调用、集成开发、代码生成技巧。Codex 是 OpenAI 的代码生成大模型，适合开发者快速上手。"
+description: "OpenAI Codex 现在是 ChatGPT 付费套餐附带的编程智能体，有命令行、IDE 插件和云端三种用法。本文讲清安装登录、审批模式、AGENTS.md、云端任务和代码审查、计费方式，附常见报错和常见问题。"
 categories: ["AI工具实测"]
 tags: ["教程", "AI编程", "Codex", "OpenAI"]
+showtoc: true
 ---
 
-OpenAI 的 Codex 是基于 GPT-4 的代码生成模型，能写代码、改代码、解释代码，是程序员的必备工具。
+**结论先说：** 现在说的 OpenAI Codex，已经不是 2021 年那个代码补全模型（旧 Codex 模型早已停用），而是 OpenAI 的**编程智能体**：你用自然语言交代任务，它读代码、改文件、跑命令和测试。它有三种用法：**终端里的 Codex CLI**、**VS Code 等编辑器里的插件**、**在云端并行执行任务的 Codex 网页版**。有 ChatGPT Plus 及以上订阅就能直接用，不需要额外付费；也可以用 API Key 按量计费。
 
-这篇教程从零教你使用 Codex，包括 API 调用、VS Code 插件、GitHub Copilot 等，让你快速掌握代码生成能力。
+**说明：** 本文依据 [Codex 官方文档](https://developers.openai.com/codex) 和 [GitHub 仓库](https://github.com/openai/codex) 整理（2026 年 10 月查阅）。Codex 更新很快，命令和套餐范围以官方说明为准。和 Claude Code 的对比见 [Claude Code 和 Codex CLI 怎么选](/posts/claude-code-codex-cli-2026/)。
 
-## Codex 是什么？
+## 前置条件
 
-### Codex vs GPT-4
+| 项目 | 要求 |
+| --- | --- |
+| 账号 | ChatGPT Plus、Pro、Business、Edu、Enterprise 等付费套餐；或 OpenAI API Key |
+| 电脑 | macOS、Linux，或 Windows（推荐在 WSL 中使用 CLI） |
+| 工具 | 安装了 Node.js（用 npm 安装时）或 Homebrew；项目用 Git 管理 |
+| 网络 | 能访问 OpenAI 服务；国内用户见 [海外服务通关](/categories/海外服务通关/) 分类 |
 
-| 特性 | GPT-4 | Codex |
-|------|-------|-------|
-| 通用能力 | ✅ | ✅ |
-| 代码生成 | ✅ | ✅✅✅ |
-| 代码调试 | ✅ | ✅ |
-| 代码解释 | ✅ | ✅ |
-| 成本 | 较高 | 较低 |
-| 速度 | 慢 | 快 |
+## Codex 的三种用法
 
-**简单理解：**
-- GPT-4 是「全能选手」
-- Codex 是「代码专项选手」，写代码更快、更准
+| 用法 | 在哪里运行 | 适合 |
+| --- | --- | --- |
+| Codex CLI | 你电脑的终端，直接改本地文件 | 习惯命令行，在本地项目里交代任务 |
+| IDE 插件 | VS Code 以及 Cursor、Windsurf 等兼容编辑器的侧边栏 | 边看代码边让它修改 |
+| Codex 云端 | 浏览器打开 ChatGPT 的 Codex 页面，在 OpenAI 的云端沙箱运行 | 连接 GitHub 仓库，后台并行跑多个任务并生成 PR |
 
-### Codex 的特点
+三种入口用同一个 ChatGPT 账号登录，可以按场景混用：本地小改用 CLI 或插件，耗时的独立任务丢给云端。
 
-1. **多语言支持**
-   - Python, JavaScript, TypeScript, Java, C++, Go, Rust, PHP, Ruby, Swift 等 30+ 语言
+## 第一步：安装 Codex CLI
 
-2. **代码理解**
-   - 读代码 → 解释逻辑
-   - 找 bug → 提供修复方案
-   - 重构代码 → 提升性能
+```bash
+# 方式一：npm
+npm install -g @openai/codex
 
-3. **自动补全**
-   - IDE 插件实时补全
-   - 上下文感知
-   - 智能建议
-
-## 使用方式概览
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    Codex 使用方式                            │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│   ┌─────────────┐    ┌─────────────┐    ┌─────────────┐  │
-│   │   API 调用  │───▶│  VS Code   │───▶│  GitHub     │  │
-│   │   程序化    │    │  插件       │    │  Copilot    │  │
-│   └─────────────┘    └─────────────┘    └─────────────┘  │
-│         │                  │                  │           │
-│         └──────────────────┴──────────────────┘           │
-│                          ↓                                │
-│                   OpenAI Platform                         │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
+# 方式二：Homebrew（macOS）
+brew install codex
 ```
 
-## 方式一：OpenAI Platform API
+安装后进入项目目录启动：
 
-### 1. 注册并获取 API Key
-
-1. 访问 https://platform.openai.com
-2. 使用 Google / Microsoft / Email 注册
-3. 进入 API Keys 页面 → Create new secret key
-4. 复制 Key（格式：`sk-...`）
-
-### 2. 选择 Codex 模型
-
-| 模型 | 说明 | 适用场景 |
-|------|------|----------|
-| `code-davinci-002` | 旧版 Codex | 不推荐 |
-| `code-cushman-001` | 旧版 | 不推荐 |
-| `gpt-3.5-turbo-instruct` | Codex 风格 | 代码任务 |
-| `gpt-4-turbo` | GPT-4 | 最强代码能力 |
-
-**推荐使用 `gpt-4-turbo`**，它是目前最强的代码模型。
-
-### 3. Python API 调用示例
-
-```python
-import openai
-
-# 初始化
-openai.api_key = "你的 API Key"
-
-# 代码生成
-response = openai.ChatCompletion.create(
-    model="gpt-4-turbo",
-    messages=[
-        {
-            "role": "system",
-            "content": "你是一位专业的 Python 开发者"
-        },
-        {
-            "role": "user",
-            "content": """写一个快速排序算法
-            要求：
-            1. 使用递归实现
-            2. 包含类型注解
-            3. 添加 Docstring"""
-        }
-    ]
-)
-
-print(response.choices[0].message.content)
+```bash
+cd your-project
+codex
 ```
 
-### 4. 代码解释示例
+第一次运行会提示登录：选择用 **ChatGPT 账号登录**（使用订阅额度），或者填入 **API Key**（按 token 计费）。
 
-```python
-response = openai.ChatCompletion.create(
-    model="gpt-4-turbo",
-    messages=[
-        {
-            "role": "user",
-            "content": """请解释这段代码的功能：
-            def fib(n):
-                if n <= 1: return n
-                return fib(n-1) + fib(n-2)
-            """
-        }
-    ]
-)
-```
+## 第二步：选择审批模式
 
-### 5. 代码调试示例
+Codex 会读文件、改文件、执行命令。为了安全，它有不同的审批级别，可以在会话中用 `/approvals` 切换：
 
-```python
-response = openai.ChatCompletion.create(
-    model="gpt-4-turbo",
-    messages=[
-        {
-            "role": "system",
-            "content": """你是一位代码调试专家。
-            遇到错误时，请：
-            1. 指出问题所在
-            2. 提供修复代码
-            3. 解释为什么这样修复"""
-        },
-        {
-            "role": "user",
-            "content": """这段代码有 bug：
-            def sum_list(lst):
-                total = 0
-                for i in range(len(lst)):
-                    total += lst[i]
-                return total
-            报错：IndexError: list index out of range"""
-        }
-    ]
-)
-```
+| 模式 | Codex 可以做什么 | 适合 |
+| --- | --- | --- |
+| 只读 | 只能读代码和回答问题，改动和命令都要你批准 | 第一次用、读陌生项目 |
+| 自动（默认） | 在当前工作目录内自动读写和运行命令，访问网络或目录外文件需批准 | 日常开发 |
+| 完全访问 | 不再询问，可以访问网络和目录外文件 | 只在隔离环境里使用 |
 
-## 方式二：GitHub Copilot（推荐）
+建议：第一次在一个项目里用 Codex 时先用只读模式，让它解释项目结构，熟悉后再切换到自动模式。不要在有生产环境密钥的机器上开启完全访问。
 
-GitHub Copilot 是最流行的代码助手，基于 Codex 技术构建。
+## 第三步：交代第一个任务
 
-### 1. 注册 GitHub Copilot
-
-1. 访问 https://github.com/features/copilot
-2. 加入等待名单或直接购买
-3. 订阅后安装 VS Code 插件
-
-### 2. 安装和配置
-
-**VS Code 中安装：**
-```
-快捷键：Ctrl+Shift+X → 搜索 "GitHub Copilot"
-点击 "Install" → 授权登录
-```
-
-### 3. 基础使用
+好的任务描述包括四部分：**做什么、改哪里、不能动什么、怎么验证**。例如：
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│  ┌───────────────────────────────────────────────────┐  │
-│  │  def hello():                                      │  │
-│  │      # 光标放在这里，开始输入                      │  │
-│  │      p                                          │  │
-│  └───────────────────────────────────────────────────┘  │
-│                          ↓                               │
-│  ┌───────────────────────────────────────────────────┐  │
-│  │  def hello():                                      │  │
-│  │      print("Hello, Copilot!")  ← 自动补全         │  │
-│  └───────────────────────────────────────────────────┘  │
-└─────────────────────────────────────────────────────────┘
+给 utils/date.py 里的 parse_date 函数补充单元测试，
+覆盖空字符串、非法格式和时区三种情况。
+不要修改 parse_date 本身。完成后运行 pytest 并告诉我结果。
 ```
 
-### 4. 文件级建议
+Codex 会先读相关文件，给出计划，再修改并运行测试。每次改动结束后，用 `git diff` 检查它到底改了什么，满意再提交。
 
-在文件中点击 `Cmd+I` (Mac) / `Ctrl+I` (Windows)：
+一些实用的会话命令（以 CLI 内 `/` 菜单为准）：
 
-```python
-# 光标在文件任意位置按 Cmd+I
-# Copilot 会建议整个文件的改进
-```
+| 命令 | 作用 |
+| --- | --- |
+| `/model` | 切换模型和推理强度 |
+| `/approvals` | 切换审批模式 |
+| `/diff` | 查看本次会话的改动 |
+| `/review` | 让 Codex 审查当前改动 |
+| `/new` | 开始新会话 |
 
-### 5. 自然语言生成代码
+非交互场景（脚本、CI）可以用 `codex exec "任务描述"` 直接执行一次任务。
 
-**输入注释，生成代码：**
+## 第四步：写 AGENTS.md 让它记住项目约定
 
-```python
-# 创建一个函数，计算两个数字的平均值
-def average(a, b):
-    # Copilot 会自动补全整个函数体
-```
-
-### 6. 重构建议
-
-```
-选中代码 → Cmd+I (macOS) / Ctrl+I (Windows)
-Copilot 会建议更好的写法
-```
-
-## 方式三：OpenAI Codex API（直接调用）
-
-### 1. 直接调用 Codex 模型
-
-```python
-response = openai.Completion.create(
-    model="gpt-3.5-turbo-instruct",
-    prompt="写一个 Python 函数，用递归计算阶乘",
-    max_tokens=500,
-    temperature=0.2  # 代码生成用较低温度
-)
-
-print(response.choices[0].text)
-```
-
-### 2. 批量代码生成
-
-```python
-prompts = [
-    "写一个 Python 快速排序",
-    "写一个 JavaScript 防抖函数",
-    "写一个 Go 的 HTTP 服务器",
-    "写一个 C++ 的二分查找",
-]
-
-for i, prompt in enumerate(prompts):
-    print(f"\n=== Prompt {i+1}: {prompt} ===")
-    response = openai.Completion.create(
-        model="gpt-3.5-turbo-instruct",
-        prompt=prompt,
-        max_tokens=300
-    )
-    print(response.choices[0].text)
-```
-
-## Codenew 模式
-
-### 什么是 Codenew？
-
-Codewhisperer 是 AWS 的代码助手，但 Codenew 更接近传统 Codex。
-
-### 使用方式
-
-1. 访问 https://openai.com/codenew
-2. 进入 Playground
-3. 输入提示词，实时查看结果
-
-### Playground 使用
-
-```
-┌─────────────────────────────────────────────────────────┐
-│  Playground 面板                                         │
-├─────────────────────────────────────────────────────────┤
-│  ┌──────────────┐  ┌─────────────────────────────────┐ │
-│  │ 模型选择     │  │ 输入区域                         │ │
-│  │ gpt-4-turbo  │  │ prompt:                          │ │
-│  └──────────────┘  │                                 │ │
-│                    │  写一个 Flask REST API         │ │
-│  ┌──────────────┐  └─────────────────────────────────┘ │
-│  │ Temperature │  ┌─────────────────────────────────┐ │
-│  │ 0.2         │  │ 输出区域                         │ │
-│  └──────────────┘  │                                 │ │
-│                    │  from flask import Flask, ...  │ │
-│  ┌──────────────┐  │                                 │ │
-│  │ Max Tokens   │  │  app = Flask(__name__)         │ │
-│  │ 500          │  │                                 │ │
-│  └──────────────┘  │  @app.route('/')               │ │
-│                    │  def home(): ...                │ │
-│                    │  return "Hello, World!"        │ │
-│                    └─────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────┘
-```
-
-## VS Code 最佳实践
-
-### 1. 配置 OpenAI API
-
-打开 VS Code 设置（`Cmd+,` / `Ctrl+,`），搜索 `openai`：
-
-```json
-{
-  "openai.apiKey": "你的 API Key",
-  "openai.model": "gpt-4-turbo",
-  "openai.temperature": 0.2,
-  "openai.maxTokens": 1000
-}
-```
-
-### 2. 常用快捷键
-
-| 操作 | 快捷键 | 说明 |
-|------|--------|------|
-| 生成代码 | `Cmd+I` / `Ctrl+I` | 在光标处生成代码 |
-| 解释代码 | `Cmd+Shift+I` / `Ctrl+Shift+I` | 解释当前代码 |
-| 重构 | `Cmd+Shift+R` / `Ctrl+Shift+R` | 重构建议 |
-| 完成单词 | `Tab` | 完成自动补全 |
-
-### 3. 代码审查技巧
-
-```
-你：请审查这段代码
-
-AI：（详细分析）
-1. 代码风格
-2. 潜在 bug
-3. 性能问题
-4. 安全问题
-5. 改进建议
-```
-
-## 编写好的 Prompt
-
-### 模板 1：生成代码
+在项目根目录放一个 `AGENTS.md`，Codex 每次启动都会读取。写进去的内容相当于给新同事的项目说明：
 
 ```markdown
-# 任务
-写一个 [编程语言] 的 [功能]，要求：
-1. [要求1]
-2. [要求2]
-3. [要求3]
-
-# 示例
-输入：[输入示例]
-输出：[期望输出]
+# 项目说明
+- 技术栈：Python 3.12 + FastAPI，依赖用 uv 管理
+- 运行测试：uv run pytest
+- 代码风格：ruff format；函数必须有类型注解
+- 不要修改 migrations/ 目录下已有的文件
+- 提交前必须让测试全部通过
 ```
 
-### 模板 2：调试代码
+AGENTS.md 是多家编程智能体通用的格式。写得越具体，需要你反复纠正的地方越少。
 
-```markdown
-# 代码
-[粘贴代码]
+## 第五步：在编辑器里使用
 
-# 报错
-[粘贴错误信息]
+在 VS Code 扩展市场搜索 OpenAI 官方的 Codex 扩展并安装（Cursor、Windsurf 等兼容编辑器同样可用），登录后在侧边栏打开 Codex 面板。它会把当前打开的文件和选中的代码作为上下文，适合「选中一段代码，让它重构或解释」的场景。插件里也可以把任务发送到云端执行。
 
-# 问题
-这段代码有什么问题？如何修复？
-```
+## 第六步：用云端 Codex 跑后台任务
 
-### 模板 3：代码解释
+1. 在 ChatGPT 里打开 Codex 页面，连接 GitHub 账号并授权仓库；
+2. 为仓库配置运行环境（安装依赖的命令、测试命令等）；
+3. 输入任务，Codex 会在云端沙箱里克隆仓库、修改、运行测试；
+4. 完成后查看改动和日志，满意就一键创建 Pull Request。
 
-```markdown
-# 代码
-[粘贴代码]
+云端任务的好处是可以同时开多个任务，不占用你本地电脑。连接 GitHub 后，还可以在 PR 评论里让 Codex 审查代码。具体开通范围以官方说明为准。
 
-# 请求
-请逐行解释这段代码的作用，并在最后总结核心功能。
-```
+## 计费方式
 
-### 模板 4：批量任务
+| 方式 | 说明 |
+| --- | --- |
+| ChatGPT 订阅 | Plus、Pro、Business 等套餐包含 Codex 使用额度，套餐越高额度越多，用完需等待额度恢复 |
+| API Key | 按模型的 token 价格计费，适合脚本化、自动化场景 |
 
-```markdown
-# 任务
-请完成以下任务：
-1. [任务1]
-2. [任务2]
-3. [任务3]
+各套餐额度见 [ChatGPT 定价页](https://chatgpt.com/pricing)。按 API 计费时，大任务会消耗大量 token，建议在 OpenAI 平台设置用量上限。
 
-# 上下文
-我在做 [项目类型]，使用 [技术栈]
-```
+## 常见报错与解决
+
+| 现象 | 原因 | 解决 |
+| --- | --- | --- |
+| `command not found: codex` | npm 全局目录不在 PATH 中 | 检查 `npm config get prefix`，把对应的 bin 目录加入 PATH，或改用 Homebrew 安装 |
+| 登录页面打不开或登录失败 | 网络无法访问 OpenAI，或浏览器回调被拦截 | 检查网络；无图形界面的服务器上可改用 API Key 登录 |
+| 提示额度用完 | 订阅的使用额度达到上限 | 等待额度恢复、升级套餐，或改用 API Key |
+| 每一步都要确认，很慢 | 处于只读或需要审批的模式 | 用 `/approvals` 切到自动模式 |
+| 改完代码测试失败 | 任务描述没有说明验证方式 | 在任务里写明测试命令，并要求它修到测试通过 |
+| Windows 下命令执行异常 | 原生 Windows 环境支持有限 | 在 WSL 中安装和运行 |
+
+## 用好 Codex 的几条原则
+
+1. **先提交再让它大改。** 出问题时 `git checkout .` 就能回退。
+2. **一次一个任务。** 范围小、边界清楚的任务成功率最高，大需求拆成几步。
+3. **让它跑测试。** 不要只看代码「看起来对」，要求它运行测试和 lint。
+4. **认真看 diff。** 它可能为了让测试通过而修改测试本身，或顺手改了无关文件。
+5. **敏感信息不给它。** `.env`、密钥、客户数据不要放在它能读的地方，也不要粘贴到对话里。
 
 ## 常见问题
 
-**Q: Codex 和 GitHub Copilot 有什么区别？**
+**现在的 Codex 和以前的 Codex 模型是一回事吗？**
+不是。2021 年的 Codex 是一个代码补全模型（曾驱动早期的 GitHub Copilot），已经停用。现在的 Codex 是 OpenAI 的编程智能体产品，背后使用 OpenAI 当前的模型。
 
-A:
-- Codex 是底层的模型
-- GitHub Copilot 是基于 Codex 的产品，有更多功能
+**免费账号能用吗？**
+Codex 主要面向 ChatGPT 付费套餐和 API 用户，免费账号的可用范围以官方说明为准。
 
-**Q: API 按什么收费？**
+**Codex 和 GitHub Copilot 有什么区别？**
+Copilot 是 GitHub 的编程助手，以编辑器补全和对话为主，也有 Agent 功能，支持多家模型；Codex 是 OpenAI 自己的编程智能体，主打交代任务后自主完成多步骤修改。详见 [AI 编程工具横评](/posts/ai-coding-tools-comparison-2026/)。
 
-A: 按 Token 计费，输入/输出价格不同。
+**Codex CLI 开源，是不是就不用付费、代码不出电脑？**
+不是。开源的是命令行工具本身，默认调用的是 OpenAI 的云端模型，需要订阅或 API 费用，相关代码会发送给 OpenAI 处理。
 
-**Q: 有免费额度吗？**
-
-A: 新账号有 $5 免费额度。
-
-**Q: 代码安全性如何？**
-
-A: OpenAI 不会存储你的代码，但要注意不要上传敏感数据。
-
-**Q: 怎么提高代码生成质量？**
-
-A: 使用清晰的 Prompt，提供上下文，多轮迭代。
-
-**Q: 能否集成到自己的应用？**
-
-A: 可以，通过 OpenAI API 调用 Codex 模型。
-
-## 写在最后
-
-Codex 适合从零写代码、调试 bug 和重构优化，把它用好的关键是写清楚任务边界，并让它改完后运行测试。
-
-**推荐学习路线：**
-1. 注册 GitHub Copilot（最方便）
-2. 了解 OpenAI API（最灵活）
-3. 实践各种代码任务
-4. 打造自己的 Prompt 模板库
-
-**官方资源：**
-- OpenAI Platform：https://platform.openai.com
-- OpenAI API 文档：https://platform.openai.com/docs
-- GitHub Copilot：https://github.com/features/copilot
-
-有问题欢迎留言，或者发邮件到 `daipo971@gmail.com`。
-
----
-
-**相关文章：**
-- [Anthropic Claude 入门指南](/posts/claude-guide/)
-- [免费 VPS 对比指南](/posts/free-vps-guide/)
-
-### 💡 AI 编程工具推荐
-
-- [**Cursor**](https://cursor.sh/) — 目前最火的 AI IDE，内置 Claude/GPT-4，写代码效率翻倍。免费版每天 2000 次补全
-- [**Claude Code**](https://claude.ai/) — Anthropic 官方 CLI 工具，直接在终端里和 AI 结对编程
-
-两款都值得试试，看哪个更适合你的工作流。
-
----
+**公司代码能用吗？**
+先确认公司是否允许使用外部 AI 工具。企业场景使用 Business 或 Enterprise 套餐，并确认数据使用条款。
 
 ## 更新记录
 
-- 2026-10-28：结尾改为客观写法；删除不实的联盟链接声明（本文没有联盟链接）
+- 2026-10-28：按 Codex 现状全面重写：旧版 Codex 模型（code-davinci-002 等）早已停用，改为介绍 Codex CLI、IDE 插件、云端任务、审批模式、AGENTS.md 和计费方式；删除不存在的「Codenew 模式」和过时的 API 示例；补充常见报错和常见问题；正文联系方式改为评论区
 
 ## 相关阅读
 
-- [Claude Code 和 Codex CLI 怎么选：终端编程智能体对比](/posts/claude-code-codex-cli-2026/)
-- [AI Agent 是什么：主流框架对比与入门搭建](/posts/ai-agent-complete-guide-2026/)
+- [Claude Code 和 Codex CLI 怎么选](/posts/claude-code-codex-cli-2026/)
+- [AI 编程工具横评：Cursor、Windsurf、Copilot、Claude Code 怎么选](/posts/ai-coding-tools-comparison-2026/)
+- [Claude 入门指南](/posts/claude-guide/)
 - 更多「AI工具实测」文章：[/categories/ai工具实测/](/categories/ai工具实测/)

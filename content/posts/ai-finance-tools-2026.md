@@ -565,5 +565,5 @@ AI金融工具正在深刻改变金融行业的格局。选择合适的工具需
 
 - [2026年AI教育工具革命：从个性化学习到智能教学](/posts/ai-education-tools-2026/)
 - [2026年AI安全工具完全指南：从数据保护到模型安全](/posts/ai-security-tools-2026/)
-- [2026年AI自动化工具对比：从零开始构建智能工作流](/posts/ai-automation-tools-2026/)
+- [Zapier、Make、n8n 怎么选：AI 自动化工具对比](/posts/ai-automation-tools-2026/)
 - 更多「AI应用场景」文章：[/categories/ai应用场景/](/categories/ai应用场景/)

@@ -177,7 +177,7 @@ Muse 的正确打开方式不是「聊天」，是「派活」。下面按生活
 - 官网：https://muse.ai/
 - 注册页：https://muse.ai/join
 - Mac 客户端下载：https://ai.meta.com/muse/download/
-- 本站邀请码详解：[Meta Muse 邀请码实测：注册领 10 亿 Token](/posts/2026-10-09-muse-referral/)
+- 本站邀请码详解：[Muse 邀请码怎么兑换：10 亿 Token 奖励规则和步骤](/posts/2026-10-09-muse-referral/)
 
 *声明：本文方法整理自 V2EX、YouTube 等社区公开教程（2026 年 9 月底实测），Meta 的地区与风控政策随时可能调整，操作前请以官方页面实际提示为准。*
 
