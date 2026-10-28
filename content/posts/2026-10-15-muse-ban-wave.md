@@ -122,6 +122,6 @@ Thank you.
 
 ## 相关阅读
 
-- [今天 Muse 大规模风控：已解除关联的按这 6 步申诉，非美日 IP 先停一停](/posts/2026-10-27-muse-risk-control-unlink-appeal/)
+- [Muse 风控「已解除关联」怎么申诉：6 步工单和防风控清单](/posts/2026-10-27-muse-risk-control-unlink-appeal/)
 - [Muse 能聊成人话题、真人发帖却被删：Meta 这次的双标争议是怎么来的](/posts/2026-10-27-muse-nsfw-controversy/)
 - 更多「海外服务通关」文章：[/categories/海外服务通关/](/categories/海外服务通关/)

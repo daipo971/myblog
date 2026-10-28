@@ -156,5 +156,5 @@ A：不会。改的是 Google 付款资料和 Play 商店的地区，Gmail、云
 
 - [美区 Apple ID 注册保姆级教程：免信用卡，App Store 入口是关键](/posts/2026-10-15-us-apple-id/)
 - [₺75/年拿下 .com：Google Workspace 土耳其区注册域名全流程避坑](/posts/2026-10-17-google-workspace-turkey-domain/)
-- [iPhone Duo 国行今日开售：纯 eSIM 无卡槽，购机+开卡保姆级攻略](/posts/2026-10-23-iphone-duo-esim-guide/)
+- [iPhone Duo 国行 eSIM 开卡攻略：纯 eSIM 无卡槽怎么办](/posts/2026-10-23-iphone-duo-esim-guide/)
 - 更多「海外服务通关」文章：[/categories/海外服务通关/](/categories/海外服务通关/)
