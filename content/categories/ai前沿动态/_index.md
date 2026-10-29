@@ -8,6 +8,7 @@ description: "OpenAI、Anthropic、Google、Meta、苹果等海外 AI 公司的�
 ## OpenAI
 
 - [GPT-6.1 Terra 发布：不拼最强，拼每件事的成本](/posts/2026-10-27-gpt-6-1-terra-launch/)
+- [路透：DeepSeek、月之暗面被指蒸馏 Astra](/posts/deepseek-moonshot-distillation-report/)
 
 ## Anthropic（Claude）
 
