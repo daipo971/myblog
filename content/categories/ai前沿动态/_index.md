@@ -19,6 +19,7 @@ description: "OpenAI、Anthropic、Google、Meta、苹果等海外 AI 公司的�
 
 - [Gemini 代理：统一的工作 AI Agent](/posts/2026-10-09-gemini-agent/)
 - [Gemini App 上线 Task 模式](/posts/2026-10-14-gemini-task-mode/)
+- [谷歌 Gemini 4 Carbon 发布：专攻网络安全](/posts/gemini-4-carbon-launch/)
 
 ## Google DeepMind
 - [谷歌 Genie 4 发布：会说话的世界模型](/posts/genie-4-launch/)
