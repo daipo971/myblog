@@ -40,6 +40,10 @@ description: "OpenAI、Anthropic、Google、Meta、苹果等海外 AI 公司的�
 
 - [ARTEX：AI 自主渗透测试系统解析](/posts/2026-10-09-artex-ai-pentest/)
 
+## 具身智能与机器人
+
+- [智元 GO-3 Preview：具身基座模型年底开源](/posts/agibot-go-3-preview-launch/)
+
 ## 月度回顾
 
 
