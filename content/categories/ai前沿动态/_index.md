@@ -30,6 +30,10 @@ description: "OpenAI、Anthropic、Google、Meta、苹果等海外 AI 公司的�
 - [Muse Wonder 不免费：Meta 首个前沿模型的定价](/posts/2026-10-13-muse-wonder/)
 - [Muse 正式上线新加坡：四种官方语言全支持](/posts/muse-singapore-launch/)
 
+## Mistral
+
+- [Mistral Large 4 权重开源：万亿参数](/posts/mistral-large-4-open-weights/)
+
 ## 苹果与 AI 硬件
 
 - [国行 iPhone 的 AI：阿里百度双引擎](/posts/2026-10-15-apple-intelligence-china/)
