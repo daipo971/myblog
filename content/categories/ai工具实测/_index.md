@@ -35,7 +35,7 @@ description: "ChatGPT、Claude、Cursor、Midjourney 等 AI 工具的实测评�
 
 - [AI 图片生成横评](/posts/ai-image-generation-comparison-2026/) · [Midjourney 完整教程](/posts/midjourney-complete-guide-2026/) · [AI 设计工具横评](/posts/ai-design-tools-comparison-2026/)
 - [AI 视频生成横评](/posts/ai-video-generation-comparison-2026/) · [免费 AI 视频生成工具](/posts/free-ai-video-generators-2026/) · [AI 视频剪辑工具](/posts/ai-video-editing-tools-2026/)
-- [AI 语音克隆与 TTS](/posts/ai-voice-clone-tts-tools-2026/) · [AI 音乐生成](/posts/ai-music-generation-2026/)
+- [AI 语音克隆与 TTS](/posts/ai-voice-clone-tts-tools-2026/) · [AI 音乐生成](/posts/ai-music-generation-2026/) · [ElevenLabs SFX v3：文字生成音效](/posts/elevenlabs-sfx-v3/)
 
 ## 搜索、阅读与办公工具
 
