@@ -34,6 +34,9 @@ description: "DeepSeek、Kimi、MiniMax、阶跃 Step、智谱 GLM、可灵等�
 **智谱 GLM**
 - [GLM-Legal：法律 agent 模型解读](/posts/2026-10-13-glm-legal/)
 
+**通义千问 Qwen**
+- [通义千问 Qwen 模型档案](/posts/qwen-guide/)：Qwen3.8 版本、价格、许可证与国内用法，先看这页
+
 **视频模型：可灵、Seedance**
 - [可灵 Kling 4.0 上手指南](/posts/2026-10-18-kling-4-guide/)
 - [Seedance 在即梦里怎么用](/posts/2026-10-14-seedance/)
