@@ -39,6 +39,7 @@ description: "OpenAI、Anthropic、Google、Meta、苹果等海外 AI 公司的�
 - [国行 iPhone 的 AI：阿里百度双引擎](/posts/2026-10-15-apple-intelligence-china/)
 - [库克确认国行 AI 先上测试版](/posts/2026-10-15-cook-china-ai-beta/)
 - [国行 Apple Intelligence 准备清单](/posts/2026-10-20-apple-ai-prep-checklist/)
+- [国行 Apple 智能定了：11月4日开测，12月正式版](/posts/apple-intelligence-china-launch/)
 
 ## 安全与研究
 
