@@ -3,6 +3,15 @@
 // 文章深链：非首页路径额外显示"在新站阅读本文"按钮（同路径指向新域名），老链接可找回对应文章。
 export async function onRequest(context) {
   const url = new URL(context.request.url);
+  // Pages 默认域名只是部署镜像，统一 301 到主域名，避免搜索引擎收录重复站
+  if (url.hostname === 'myblog-ba7.pages.dev') {
+    return Response.redirect('https://xinqai.com' + url.pathname + url.search, 301);
+  }
+  // /zh-cn/ 前缀路径：默认语言内容实际在无前缀路径下，301 过去（sitemap 文件除外）
+  if (url.hostname === 'xinqai.com' && url.pathname !== '/zh-cn/sitemap.xml' &&
+      (url.pathname === '/zh-cn' || url.pathname.startsWith('/zh-cn/'))) {
+    return Response.redirect('https://xinqai.com' + url.pathname.slice('/zh-cn'.length) + url.search, 301);
+  }
   if (url.hostname === 'www.xinqai.com') {
     return Response.redirect('https://xinqai.com' + url.pathname + url.search, 301);
   }
