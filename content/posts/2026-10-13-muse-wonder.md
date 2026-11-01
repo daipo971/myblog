@@ -5,7 +5,7 @@ lastmod: 2026-10-13T15:45:00+08:00
 draft: false
 tags: ["快讯", "行业动态", "Meta", "Muse"]
 categories: ["AI前沿动态"]
-description: "Meta 昨日发布首个前沿模型 Muse Wonder / Wonder Full，API 定价 $4/$20 每百万 token，直接对标 Claude Opus 5.5——是上一代 Muse Spark 1.3 的三倍。本文解析它的能力、定价和背后的转向。"
+description: "Meta 昨日发布首个前沿模型 Muse Wonder / Wonder Full，API 定价 $4/$20 每百万 token，直接对标 Claude Opus 5.5——是上一代 Muse Spark 1.3 的三倍。"
 ---
 
 昨天（10 月 12 日），Meta 的超级智能实验室发布了 **Muse Wonder** 和加强版 **Wonder Full**——公司首个真正意义上的前沿（frontier）大模型。但比跑分更值得聊的，是价格：**$4 / $20 每百万 token**，和 Claude Opus 5.5 一个价，直接是上一代 Muse Spark 1.3（$1.25/$4.25）的三倍。

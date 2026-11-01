@@ -2,7 +2,7 @@
 title: "本地运行大模型教程：Ollama 和 LM Studio 离线用 AI"
 date: 2026-07-25
 lastmod: 2026-10-28T09:00:00+08:00
-description: "在自己电脑上离线运行开源大模型的完整教程：Ollama 和 LM Studio 的安装、选模型（Qwen3、Gemma 3、gpt-oss、DeepSeek-R1 蒸馏版）、按内存选尺寸、量化怎么选、Open WebUI 界面和本地 API，附常见报错和常见问题。"
+description: "在自己电脑上离线运行开源大模型的完整教程：Ollama 和 LM Studio 的安装、选模型（Qwen3、Gemma 3、gpt-oss、DeepSeek-R1 蒸馏版）、按内存选尺寸、量化怎么选"
 summary: "Ollama 和 LM Studio 本地运行大模型：安装、选模型、硬件要求、量化、常见报错。"
 categories: ["中国与开源模型"]
 tags: ["教程", "本地部署", "开源模型", "Ollama", "LM Studio"]

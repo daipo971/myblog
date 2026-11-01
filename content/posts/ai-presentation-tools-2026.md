@@ -2,7 +2,7 @@
 title: "AI 做 PPT 工具推荐 2026：Gamma、讯飞智文、Kimi 等怎么选"
 date: 2026-07-21
 lastmod: 2026-10-28T09:00:00+08:00
-description: "AI 自动生成 PPT 工具对比：Gamma、Beautiful.ai、Canva、Microsoft Copilot，以及讯飞智文、Kimi PPT、WPS AI 等国产工具。讲清各自的生成方式、中文效果、导出格式、免费额度和适合场景，并说明 Tome 已停止幻灯片业务。"
+description: "AI 自动生成 PPT 工具对比：Gamma、Beautiful.ai、Canva、Microsoft Copilot，以及讯飞智文、Kimi PPT、WPS AI 等国产工具。"
 summary: "AI 做 PPT 工具对比：海外与国产各几款，生成方式、中文效果、导出格式、免费额度和怎么选。"
 categories: ["AI工具实测"]
 tags: ["合集", "AI办公", "Gamma"]

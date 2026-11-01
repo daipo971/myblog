@@ -3,7 +3,7 @@ title: "MiniMax M3.1 Flash 发布：价格只有 DeepSeek 的一半，但有个�
 date: 2026-10-21T22:55:00+08:00
 lastmod: 2026-10-21T22:55:00+08:00
 draft: false
-description: "上海 MiniMax 10 月 19 日发布 M3.1 Flash：100 万上下文、图文视频多模态、输出 200+ token/秒，API 输入价 $0.15/百万 token，只有 DeepSeek V4.1 Flash 的一半。独立测试智力分从 29 涨到 42，但幻觉率高达 93%。本文讲清它强在哪、坑在哪、怎么免费先试。"
+description: "上海 MiniMax 10 月 19 日发布 M3.1 Flash：100 万上下文、图文视频多模态、输出 200+ token/秒，API 输入价 $0.15/百万 token，只有 DeepSeek V4.1 Flash 的一半。"
 tags: ["快讯", "国产大模型", "API", "MiniMax"]
 categories: ["中国与开源模型"]
 ---

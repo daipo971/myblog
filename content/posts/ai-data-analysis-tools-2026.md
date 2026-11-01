@@ -2,7 +2,7 @@
 title: "AI 数据分析工具对比：不会编程也能做数据分析"
 date: 2026-07-25T07:20:00+08:00
 lastmod: 2026-10-28T09:00:00+08:00
-description: "不会编程怎么用 AI 做数据分析？对比 ChatGPT 数据分析、WPS AI、飞书、DeepSeek、Julius AI、Excel Copilot、Google 表格和 Tableau 等工具的用法、免费情况和适合人群，附完整分析流程和核对方法。"
+description: "不会编程怎么用 AI 做数据分析？对比 ChatGPT 数据分析、WPS AI、飞书、DeepSeek、Julius AI、Excel Copilot、Google 表格和 Tableau 等工具的用法、免费情况和适合人群"
 summary: "AI 数据分析工具对比：个人、国内办公、企业报表分别用什么，附分析流程。"
 categories: ["AI工具实测"]
 tags: ["对比", "AI办公", "ChatGPT"]

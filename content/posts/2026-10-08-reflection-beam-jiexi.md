@@ -2,7 +2,7 @@
 title: "Reflection Beam 解析：501B 参数的「西方 DeepSeek」，权重还没发，先看懂这 8 件事"
 date: 2026-10-08T18:00:00+08:00
 lastmod: 2026-10-10T09:50:00+08:00
-description: "Reflection AI 首个开源模型 Beam（501B 参数、每任务激活 23B）权重仍未发布。本文整理已核实的关键事实：beta API 现状、官方跑分的真实含义、1M 上下文的出入、500GB 显存的硬件现实，以及它为什么被称为西方 DeepSeek。"
+description: "Reflection AI 首个开源模型 Beam（501B 参数、每任务激活 23B）权重仍未发布。本文整理已核实的关键事实：beta API 现状、官方跑分的真实含义、1M 上下文的出入、500GB 显存的硬件现实"
 tags: ["快讯", "开源模型", "Reflection"]
 categories: ["中国与开源模型"]
 draft: false

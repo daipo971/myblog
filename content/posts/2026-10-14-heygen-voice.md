@@ -5,7 +5,7 @@ lastmod: 2026-10-14T15:00:00+08:00
 draft: false
 tags: ["快讯", "AI音频", "HeyGen"]
 categories: ["AI工具实测"]
-description: "HeyGen 10 月 9 日发布自研语音模型 HeyGen Voice，盲测登顶 Artificial Analysis TTS 榜（Elo 1201）。launch 价 $15/百万字符只到 10 月 31 日。我们拿短剧旁白算了一笔账：一集配音成本不到一分钱。"
+description: "HeyGen 10 月 9 日发布自研语音模型 HeyGen Voice，盲测登顶 Artificial Analysis TTS 榜（Elo 1201）。launch 价 $15/百万字符只到 10 月 31 日。"
 ---
 
 10 月 9 日，做 AI 数字人的 HeyGen 发布了自研语音模型 **HeyGen Voice**，号称"不靠外部 TTS，自己从头训了一个"。上线 5 天，独立盲测榜单 Artificial Analysis 的 Controlled Voice TTS Arena 上它 Elo **1201 排第一**，压过了 Qwen 和 ElevenLabs。10 月 13 日又加了个 Turbo 版。

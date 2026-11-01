@@ -2,7 +2,7 @@
 title: "Cloudflare Pages 教程：免费部署 Hugo 博客和静态网站"
 date: 2026-07-25T06:00:00+08:00
 lastmod: 2026-10-28T09:00:00+08:00
-description: "Cloudflare Pages 完整教程：连接 GitHub 自动部署 Hugo、Vite、Next.js 等项目，指定 Hugo 版本，绑定自定义域名，配置 _redirects 和 _headers、Pages Functions、Web Analytics，附构建失败等常见报错和常见问题。"
+description: "Cloudflare Pages 完整教程：连接 GitHub 自动部署 Hugo、Vite、Next.js 等项目，指定 Hugo 版本，绑定自定义域名，配置 _redirects 和 _headers、Pages Functions"
 summary: "Cloudflare Pages 从部署到优化：自动构建、自定义域名、重定向、请求头、Functions、统计和常见报错。"
 categories: ["建站与副业"]
 tags: ["教程", "Cloudflare", "建站", "Hugo"]
