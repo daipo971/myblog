@@ -41,3 +41,7 @@ disableShare: true
 
 - 邮箱：daipo971@outlook.com
 - Telegram 频道：[欣淇AI工具](https://t.me/xinqiaigongju)，第一时间推送新文章、AI 技术指导和工具使用分享。
+
+## 隐私政策
+
+本站如何处理访问日志、评论信息，以及广告 Cookie 的使用方式，见 [隐私政策](/privacy/) 页面。
