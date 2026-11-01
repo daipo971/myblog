@@ -3,7 +3,7 @@ title: "Claude Duet 发布：不等你开口先干活，主动型 Agent 大战�
 date: 2026-10-22T11:58:00+08:00
 lastmod: 2026-10-22T11:58:00+08:00
 draft: false
-description: "Anthropic 10 月 21 日发布 Claude Duet 研究预览：每天先给你一份简报、全天盯着你的应用、关掉 App 还在云端电脑上继续干活，动手前先请示。由 Opus 5.5 驱动，6000+ 连接器，能追发票、做工资表、还能付款。本文讲清它能干什么、代价是什么，以及与 Meta Muse、OpenAI Dots 的正面竞争。"
+description: "Anthropic 10 月 21 日发布 Claude Duet 研究预览：每天先给你一份简报、全天盯着你的应用、关掉 App 还在云端电脑上继续干活，动手前先请示。"
 tags: ["快讯", "AI Agent", "Claude", "Anthropic"]
 categories: ["AI前沿动态"]
 ---

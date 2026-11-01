@@ -2,7 +2,7 @@
 title: "AI语音克隆与TTS工具对比：ElevenLabs、Fish Audio、Azure、CosyVoice"
 date: 2026-07-25
 lastmod: 2026-10-28T09:00:00+08:00
-description: "主流 AI 语音克隆和文字转语音工具对比：ElevenLabs、Fish Audio、微软 Azure 语音、阿里开源 CosyVoice 和 ChatGPT 语音模式的功能、免费额度、中文效果和国内可用性，附短视频配音流程和声音授权的法律提醒。"
+description: "主流 AI 语音克隆和文字转语音工具对比：ElevenLabs、Fish Audio、微软 Azure 语音、阿里开源 CosyVoice 和 ChatGPT 语音模式的功能、免费额度、中文效果和国内可用性"
 summary: "AI 语音克隆和 TTS 工具对比：功能、免费额度、中文效果、适合场景和法律提醒。"
 categories: ["AI工具实测"]
 tags: ["对比", "AI音频", "ElevenLabs"]

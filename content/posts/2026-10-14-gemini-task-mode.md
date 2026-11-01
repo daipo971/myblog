@@ -5,7 +5,7 @@ lastmod: 2026-10-14T21:35:00+08:00
 draft: false
 tags: ["快讯", "AI Agent", "Gemini", "Google"]
 categories: ["AI前沿动态"]
-description: "Google 把今年 5 月发布的个人 AI agent Spark 折叠进了 Gemini 主 App，新开 Task 模式：输入框上方 Chat/Task 一键切换，任务在云端后台跑，人走开也继续。需 AI Pro/Ultra 订阅，目前 Android 灰度中。"
+description: "Google 把今年 5 月发布的个人 AI agent Spark 折叠进了 Gemini 主 App，新开 Task 模式：输入框上方 Chat/Task 一键切换，任务在云端后台跑，人走开也继续。"
 ---
 
 10 月 12 日，9to5Google 发现 Gemini App 开始灰度一个新东西：**Task 模式**。Google 把今年 5 月 I/O 大会上发布的个人 AI agent **Spark**，直接收进了 Gemini 主 App——输入框上方出现 Chat / Task 切换，导航抽屉里的 Spark 入口正在消失。

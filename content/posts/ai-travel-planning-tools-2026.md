@@ -2,7 +2,7 @@
 title: "用 AI 做旅行攻略：提示词模板、工具选择和避坑"
 date: 2026-07-25
 lastmod: 2026-10-28T09:00:00+08:00
-description: "用 AI 规划旅行的实用指南：豆包、DeepSeek、Kimi、ChatGPT 等对话 AI 怎么写行程提示词，携程等旅行平台的 AI 助手和 NotebookLM 怎么用，地图核实、预约、签证等 AI 容易出错的地方，附国内游和出境游两套模板。"
+description: "用 AI 规划旅行的实用指南：豆包、DeepSeek、Kimi、ChatGPT 等对话 AI 怎么写行程提示词，携程等旅行平台的 AI 助手和 NotebookLM 怎么用，地图核实、预约、签证等 AI 容易出错的地方"
 summary: "AI 做旅行攻略指南：提示词模板、工具组合、逐步流程和 AI 最容易出错的地方。"
 categories: ["AI应用场景"]
 tags: ["指南", "AI生活", "提示词"]

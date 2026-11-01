@@ -2,7 +2,7 @@
 title: "AI绘图工具对比 2026：Midjourney、ChatGPT、即梦、Stable Diffusion怎么选"
 date: 2026-07-12
 lastmod: 2026-10-28T09:00:00+08:00
-description: "2026 年主流 AI 绘图工具对比：Midjourney 审美最好，ChatGPT 和 Gemini 擅长理解和改图，即梦等国产工具中文好且国内直连，Stable Diffusion 与 Flux 最可控。附价格、国内可用性和按场景选择建议。"
+description: "2026 年主流 AI 绘图工具对比：Midjourney 审美最好，ChatGPT 和 Gemini 擅长理解和改图，即梦等国产工具中文好且国内直连，Stable Diffusion 与 Flux 最可控。"
 summary: "AI 绘图工具对比：Midjourney、ChatGPT 生图、Gemini、即梦、Stable Diffusion，按场景怎么选。"
 categories: ["AI工具实测"]
 tags: ["对比", "AI绘画", "Midjourney", "Stable Diffusion"]

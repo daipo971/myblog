@@ -1,7 +1,7 @@
 ---
 title: "I Tested 20+ Free AI Tools So You Don't Have To"
 date: 2026-07-08
-description: "I spent three months stress-testing free AI tools. Here's which ones survived my daily workflow — and which ones are overhyped."
+description: "I spent three months stress-testing free AI tools. Here's which ones survived my daily workflow — and which ones are ove"
 summary: "Three months testing 20+ free AI tools. My honest picks: what's actually useful, what's overhyped, and what I use daily."
 tags: ["AI", "free tools", "productivity"]
 showtoc: false

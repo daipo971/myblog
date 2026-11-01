@@ -5,7 +5,7 @@ lastmod: 2026-10-28T09:00:00+08:00
 draft: false
 categories: ["AI前沿动态"]
 tags: ["快讯", "行业动态", "OpenAI", "ChatGPT"]
-description: "OpenAI 10 月 27 日凌晨发布 GPT-6.1 Terra，定位是 GPT-5.6 Terra 的继任：给高频 agent 工作用的便宜快模型，API 只要 1 美元/5 美元每百万 token，任务速度比旗舰快 3 倍以上。先说清：跑分是 OpenAI 自家数据，国内能不能直连公告没写。"
+description: "OpenAI 10 月 27 日凌晨发布 GPT-6.1 Terra，定位是 GPT-5.6 Terra 的继任：给高频 agent 工作用的便宜快模型，API 只要 1 美元/5 美元每百万 token，任务速度比旗舰快 3 倍以上。"
 ---
 
 OpenAI 今天凌晨又发了一个新模型：**GPT-6.1 Terra**。先别被名字绕晕，一句话定位：**它不是新旗舰，是给天天跑 agent 任务的人准备的便宜快模型**，接替之前的 GPT-5.6 Terra。最难的任务还是归 GPT-6.1 Sol 和 GPT-6 Astra。

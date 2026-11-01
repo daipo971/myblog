@@ -2,7 +2,7 @@
 title: "AI笔记软件对比 2026：Notion AI、Obsidian、飞书等怎么选"
 date: 2026-07-25T07:10:00+08:00
 lastmod: 2026-10-28T09:00:00+08:00
-description: "2026 年 AI 笔记软件对比：Notion AI、Obsidian、Logseq、Craft、Mem、Bear 等海外工具，以及飞书、语雀、flomo、ima 等国内工具的 AI 能力、离线与数据归属、免费版和价格，附按场景推荐和迁移避坑。"
+description: "2026 年 AI 笔记软件对比：Notion AI、Obsidian、Logseq、Craft、Mem、Bear 等海外工具，以及飞书、语雀、flomo、ima 等国内工具的 AI 能力、离线与数据归属、免费版和价格"
 summary: "AI 笔记软件对比：海外与国内工具的 AI 能力、离线、数据归属、价格和怎么选。"
 categories: ["AI工具实测"]
 tags: ["对比", "知识管理", "Notion", "Obsidian"]
