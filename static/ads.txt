@@ -1,6 +1,5 @@
 # 广告变现配置文件
-# 启用 Google AdSense 后取消注释下面的行
-# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, fXXXXXXXXX
+google.com, pub-4294293566195122, DIRECT, f08c47fec0942fa0
 
 # 联盟平台记录
 # RackNerd: https://my.racknerd.com/aff.php?aff=20566
