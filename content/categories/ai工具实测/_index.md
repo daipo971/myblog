@@ -30,6 +30,7 @@ description: "ChatGPT、Claude、Cursor、Midjourney 等 AI 工具的实测评�
 - [AI Agent 完全指南](/posts/ai-agent-complete-guide-2026/)
 - [用 n8n 搭建 AI 自动化工作流](/posts/ai-agent-workflow-guide-2026/)
 - [AI 效率工作流搭建](/posts/ai-workflow-guide-2026/) · [AI 自动化工具对比](/posts/ai-automation-tools-2026/)
+- [Hermes Agent 手机版开公测](/posts/hermes-agent-mobile-beta/)：官方手机遥控端开启测试，安卓名额已满，附商店同名应用避坑
 
 ## 图片、视频与声音
 
