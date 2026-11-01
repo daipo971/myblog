@@ -31,6 +31,7 @@ description: "ChatGPT、Claude、Cursor、Midjourney 等 AI 工具的实测评�
 - [用 n8n 搭建 AI 自动化工作流](/posts/ai-agent-workflow-guide-2026/)
 - [AI 效率工作流搭建](/posts/ai-workflow-guide-2026/) · [AI 自动化工具对比](/posts/ai-automation-tools-2026/)
 - [Hermes Agent 手机版开公测](/posts/hermes-agent-mobile-beta/)：官方手机遥控端开启测试，安卓名额已满，附商店同名应用避坑
+- [从零手写一个会干活的 AI Agent：零框架完整教程](/posts/build-your-own-ai-agent-tutorial/)：零框架 Python 教程，用 DeepSeek 等国产模型 API 搭建带查天气、计算、读文件三件工具的 Agent，含完整代码逐段讲解与报错排查表
 
 ## 图片、视频与声音
 
