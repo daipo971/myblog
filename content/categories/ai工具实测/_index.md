@@ -43,6 +43,7 @@ description: "ChatGPT、Claude、Cursor、Midjourney 等 AI 工具的实测评�
 - [AI 翻译工具横评](/posts/ai-translation-tools-comparison-2026/)
 - [AI 笔记软件对比](/posts/ai-note-taking-comparison-2026/) · [AI PDF 工具](/posts/ai-pdf-tools-comparison-2026/)
 - [AI 生成 PPT](/posts/ai-presentation-tools-2026/) · [AI 数据分析](/posts/ai-data-analysis-tools-2026/)
+- [Gemini 在聊天里生成和编辑文件](/posts/gemini-edit-files-in-chat/)：PDF、文档、表格、幻灯片生成后直接在对话里改
 
 ## 工具新品
 
