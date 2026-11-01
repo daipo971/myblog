@@ -26,4 +26,7 @@ Allow: /
 Disallow: /search/
 Disallow: /en/search/
 
+# AI 训练用途：统一屏蔽信号（参与公司据此不将抓取内容用于训练；不影响搜索收录与 AI 搜索引用）
+User-agent: __usage_ai-training
+Disallow: /
 Sitemap: {{ "sitemap.xml" | absURL }}
