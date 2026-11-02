@@ -82,7 +82,7 @@
     {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}
     {{- end }}
   ],
-  "wordCount" : "{{ .WordCount }}",
+  "wordCount" : {{ .WordCount }},
   "inLanguage": {{ .Language.LanguageCode | default .Language.Lang }},
   {{ if .Params.cover.image -}}
   "image":
