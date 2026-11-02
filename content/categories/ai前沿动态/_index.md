@@ -43,7 +43,8 @@ description: "OpenAI、Anthropic、Google、Meta、苹果等海外 AI 公司的�
 
 ## 安全与研究
 
-- [ARTEX：AI 自主渗透测试系统解析](/posts/2026-10-09-artex-ai-pentest/)
+- [SemiAnalysis 新基准：最强模型只拿 12 分](/posts/gdpx-benchmark-launch/)
+-    [ARTEX：AI 自主渗透测试系统解析](/posts/2026-10-09-artex-ai-pentest/)
 
 ## 具身智能与机器人
 
