@@ -34,6 +34,9 @@ description: "DeepSeek、Kimi、MiniMax、阶跃 Step、智谱 GLM、可灵等�
 **智谱 GLM**
 - [GLM-Legal：法律 agent 模型解读](/posts/2026-10-13-glm-legal/)
 
+**美团 LongCat**
+- [LongCat-2.5 发布：万亿参数的长程 Agent 模型](/posts/longcat-2-5-launch/)
+
 **通义千问 Qwen**
 - [通义千问 Qwen 模型档案](/posts/qwen-guide/)：Qwen3.8 版本、价格、许可证与国内用法，先看这页
 
