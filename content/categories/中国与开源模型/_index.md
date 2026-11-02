@@ -54,5 +54,6 @@ description: "DeepSeek、Kimi、MiniMax、阶跃 Step、智谱 GLM、可灵等�
 ## 行业观察
 
 - [腾讯云神秘 Agent 爬高德事件](/posts/2026-10-15-chinese-agent-fleet/)
+- [DeepSeek 开源超级 Agent 原型](/posts/deepseek-superagent-prototype/)：内部同款 Agent 系统改版开源，两天近万星，研究原型限定先说清
 
 下面是本分类全部文章，按发布时间倒序排列。
