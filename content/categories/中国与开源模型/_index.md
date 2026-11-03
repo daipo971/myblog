@@ -32,6 +32,7 @@ description: "DeepSeek、Kimi、MiniMax、阶跃 Step、智谱 GLM、可灵等�
 - [Step 5 开源复盘：协议、量化与成本](/posts/2026-10-15-step-5-review/)
 
 **智谱 GLM**
+- [智谱 GLM 模型档案](/posts/glm-guide/)：从 4.5 到 5.3-Flash 全版本、价格、MIT 许可证与国内用法，先看这页
 - [GLM-Legal：法律 agent 模型解读](/posts/2026-10-13-glm-legal/)
 
 **美团 LongCat**
