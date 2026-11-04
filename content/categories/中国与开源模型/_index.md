@@ -56,7 +56,7 @@ description: "DeepSeek、Kimi、MiniMax、阶跃 Step、智谱 GLM、可灵等�
 
 ## 相关支柱
 
-- 国行 iPhone 的 Apple Intelligence、OpenAI / Anthropic / Google / Meta 等海外闭源模型的动态， 见[AI前沿动态](/categories/ai前沿动态/)。
+- 国行 iPhone 的 Apple Intelligence、OpenAI / Anthropic / Google / Meta 等海外闭源模型的动态，见 [AI前沿动态](/categories/ai前沿动态/)。
 
 ## 行业观察
 
