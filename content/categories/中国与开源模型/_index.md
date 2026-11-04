@@ -41,6 +41,9 @@ description: "DeepSeek、Kimi、MiniMax、阶跃 Step、智谱 GLM、可灵等�
 **通义千问 Qwen**
 - [通义千问 Qwen 模型档案](/posts/qwen-guide/)：Qwen3.8 版本、价格、许可证与国内用法，先看这页
 
+**腾讯混元**
+- [腾讯混元 Hy4 正式版发布：首次带视觉，还能操作电脑](/posts/hunyuan-hy4-launch/)
+
 **视频模型：可灵、Seedance**
 - [可灵 Kling 4.0 上手指南](/posts/2026-10-18-kling-4-guide/)
 - [Seedance 在即梦里怎么用](/posts/2026-10-14-seedance/)
@@ -53,7 +56,7 @@ description: "DeepSeek、Kimi、MiniMax、阶跃 Step、智谱 GLM、可灵等�
 
 ## 相关支柱
 
-- 国行 iPhone 的 Apple Intelligence、OpenAI / Anthropic / Google / Meta 等海外闭源模型的动态，见 [AI前沿动态](/categories/ai前沿动态/)。
+- 国行 iPhone 的 Apple Intelligence、OpenAI / Anthropic / Google / Meta 等海外闭源模型的动态，见[AI前沿动态](/categories/ai前沿动态/)。
 
 ## 行业观察
 
