@@ -45,6 +45,9 @@ description: "DeepSeek、Kimi、MiniMax、阶跃 Step、智谱 GLM、可灵等�
 **腾讯混元**
 - [腾讯混元 Hy4 正式版发布：首次带视觉，还能操作电脑](/posts/hunyuan-hy4-launch/)
 
+**豆包**
+- [豆包大模型檔案](/posts/doubao-guide/)：從 1.8 到 Seed 2.1 全版本、價格、許可證與國內用法，先看這頁
+
 **视频模型：可灵、Seedance**
 - [可灵 Kling 4.0 上手指南](/posts/2026-10-18-kling-4-guide/)
 - [Seedance 在即梦里怎么用](/posts/2026-10-14-seedance/)
