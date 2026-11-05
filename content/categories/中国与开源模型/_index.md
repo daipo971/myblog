@@ -20,7 +20,7 @@ description: "DeepSeek、Kimi、MiniMax、阶跃 Step、智谱 GLM、可灵等�
 - [Kimi 模型档案](/posts/kimi-guide/)：全版本、价格、开源进度，先看这页
 - [Kimi K3.1 Pro 发布：跑分与开源时间表](/posts/2026-10-24-kimi-k3-1-pro-launch/)
 - [Kimi K3.1 Pro 普通人上手指南](/posts/2026-10-27-kimi-k3-1-pro-guide/)
-- - [Kimi K3.1 Pro 权重开源了：本地部署完整教学](/posts/kimi-k3-1-pro-local-deploy/)：权重与授权已公开，8 卡集群 vLLM 部署步骤与硬件账）
+- [Kimi K3.1 Pro 权重开源了：本地部署完整教学](/posts/kimi-k3-1-pro-local-deploy/)：权重与授权已公开，8 卡集群 vLLM 部署步骤与硬件账）
 
 **MiniMax**
 - [MiniMax 模型档案](/posts/minimax-guide/)
