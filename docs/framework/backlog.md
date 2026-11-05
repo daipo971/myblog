@@ -46,6 +46,44 @@ slug 是建议，动笔前再查一次重。目标关键词用来防止两篇文
 | T14 | P2 | 对比 | AI 音乐生成工具对比 | — | AI 音乐 | 更新旧文（ai-music-generation-2026） |
 | T15 | P2 | 评测 | 秘塔 AI 搜索评测 | metaso-review | 秘塔 AI 搜索 | 待写 |
 
+## GitHub 开源项目精选（系列）
+
+本节是跨分类聚合系列：已发布文章先入库中心页，选题本身仍按 G 编号管理；每篇都要满足选题标准，排除清单里的不收。中心页与本节的文章范围保持一致：中心页收 7 篇（G01–G05、G07、G08），G06 不进中心页。
+
+### 选题标准
+
+- 必须是开源项目（有公开仓库与许可证），不是闭源工具评测。
+- 必须能自己动手装：有可验证的安装与跑起来步骤，不只讲新闻。
+- 优先国内用户可用的：网络、模型接入、报错问题在教程里写清。
+- 优先有明确受众与场景：不是「这个项目很火」就收。
+- 优先已有同类文章可互链：部署、评测、场景指南之间形成闭环。
+
+### 排除清单
+
+- 闭源、需邀请码或仅内测的项目。
+- 只有新闻稿、没有安装步骤的项目。
+- 已被收录过的同类项目重复选题（先查中心页与本节表格）。
+- 需要付费订阅才能跑通核心功能的项目（API 按量付费除外）。
+- 安全、隐私风险未核实的项目（先核实再入库，见 G06）。
+
+### 轮换关系
+
+- 本节只管选题与入库，不排发布顺序；发布顺序按中心页与各分类的更新节奏走。
+- G01–G05 已发布且已进中心页；G06 暂缓（安全核实未完成）；G07、G08 已发布且已进中心页；G09 待写。
+- 中心页新增或删除一篇时，本节表格的状态与中心页范围要同步改，不要只改一处。
+
+| ID | 优先级 | 类型 | 暂定标题 | slug | 目标关键词 | 状态 |
+| --- | --- | --- | --- | --- | --- | --- |
+| G01 | P0 | 教程 | n8n 教程：搭建 AI 自动化工作流 | ai-agent-workflow-guide-2026 | n8n 自动化 | 已发布（/posts/ai-agent-workflow-guide-2026/） |
+| G02 | P0 | 教程 | 本地运行大模型教程：Ollama 和 LM Studio 离线用 AI | ai-local-llm-guide-2026 | 本地大模型 | 已发布（/posts/ai-local-llm-guide-2026/） |
+| G03 | P0 | 教程 | 用 Dify 搭建 AI 客服机器人 | ai-customer-service-bot-2026 | Dify 客服机器人 | 已发布（/posts/ai-customer-service-bot-2026/） |
+| G04 | P1 | 评测 | Concat：免费开源剪辑工具（剪映平替） | 2026-10-19-concat-open-source-video-editor | Concat 开源剪辑 | 已发布（/posts/2026-10-19-concat-open-source-video-editor/） |
+| G05 | P1 | 解析 | DeepSeek 开源超级 Agent 原型 dsh-superagent | deepseek-superagent-prototype | DeepSeek 超级 Agent | 已发布（/posts/deepseek-superagent-prototype/） |
+| G06 | P1 | 评测 | 开源 Agent 安全核查：先核实再入库 | — | Agent 安全 | 暂缓（安全核实未完成） |
+| G07 | P0 | 教程 | Open WebUI 部署教程：接 DeepSeek 告别订阅费 | open-webui-deploy-guide | Open WebUI 部署 | 已发布（/posts/open-webui-deploy-guide/） |
+| G08 | P0 | 教程 | markitdown 教程：一键转 Markdown 喂给 AI | markitdown-guide | markitdown | 已发布（/posts/markitdown-guide/） |
+| G09 | P1 | 教程 | 本地知识库问答：RAGFlow / AnythingLLM 二选一 | ragflow-anythingllm-guide | 本地知识库 | 待写 |
+
 ## AI应用场景
 
 | ID | 优先级 | 类型 | 暂定标题 | slug | 目标关键词 | 状态 |

@@ -33,11 +33,24 @@ description: "ChatGPT、Claude、Cursor、Midjourney 等 AI 工具的实测评�
 - [Hermes Agent 手机版开公测](/posts/hermes-agent-mobile-beta/)：官方手机遥控端开启测试，安卓名额已满，附商店同名应用避坑
 - [从零手写一个会干活的 AI Agent：零框架完整教程](/posts/build-your-own-ai-agent-tutorial/)：零框架 Python 教程，用 DeepSeek 等国产模型 API 搭建带查天气、计算、读文件三件工具的 Agent，含完整代码逐段讲解与报错排查表
 
+## GitHub 开源项目精选
+
+GitHub 上真正值得自己动手装的开源 AI 项目：不收只发新闻的，每个都配从安装到跑起来的保姆级教程，国内用户会遇到的网络、模型接入、报错问题都写清。这一节跨分类聚合，部署教程为主，项目解析和评测为辅。
+
+- [Open WebUI 部署教程：接 DeepSeek 告别订阅费](/posts/open-webui-deploy-guide/)：15.7 万星的自托管聊天界面，一条 Docker 命令装好，接国产模型 API 按量付费，记录全存本地
+- [markitdown 教程：一键转 Markdown 喂给 AI](/posts/markitdown-guide/)：微软开源工具，PDF、Word、PPT、Excel 一键转干净 Markdown，附真实转换输出与批量脚本
+- [n8n 教程：搭建 AI 自动化工作流](/posts/ai-agent-workflow-guide-2026/)：用 Docker 自托管 n8n，接入国产模型搭简报、邮件、监控、内容分发四个工作流，附报错与安全提醒
+- [本地运行大模型教程：Ollama 和 LM Studio 离线用 AI](/posts/ai-local-llm-guide-2026/)：两个开源本地方案的安装、选模型、量化与报错排查，断网也能用
+- [用 Dify 搭建 AI 客服机器人](/posts/ai-customer-service-bot-2026/)：开源平台 Dify 云端版与 Docker 自部署两种路线，知识库问答接入网站全流程
+- [Concat：免费开源的剪辑工具](/posts/2026-10-19-concat-open-source-video-editor/)：剪映平替，字幕、配音、去背全在本地跑，无水印无账号，附下载安装与实话短板
+- [DeepSeek 开源超级 Agent 原型](/posts/deepseek-superagent-prototype/)：DeepSeek 内部同款 Agent 的开源研究原型，两天近万星，先看清它能干什么、普通人为什么还用不上
+
 ## 图片、视频与声音
 
 - [AI 图片生成横评](/posts/ai-image-generation-comparison-2026/) · [Midjourney 完整教程](/posts/midjourney-complete-guide-2026/) · [AI 设计工具横评](/posts/ai-design-tools-comparison-2026/)
 - [AI 视频生成横评](/posts/ai-video-generation-comparison-2026/) · [免费 AI 视频生成工具](/posts/free-ai-video-generators-2026/) · [AI 视频剪辑工具](/posts/ai-video-editing-tools-2026/)
 - [AI 语音克隆与 TTS](/posts/ai-voice-clone-tts-tools-2026/) · [AI 音乐生成](/posts/ai-music-generation-2026/) · [ElevenLabs SFX v3：文字生成音效](/posts/elevenlabs-sfx-v3/)
+- [ChatGPT 能做 GIF 了：免费号实测教程](/posts/chatgpt-gif-guide/)：聊天框里一句话或一张照片生成可调速的 GIF，附照片模式会重绘构图的实测提醒
 
 ## 搜索、阅读与办公工具
 
