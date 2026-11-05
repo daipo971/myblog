@@ -51,6 +51,7 @@ GitHub 上真正值得自己动手装的开源 AI 项目：不收只发新闻的
 - [AI 视频生成横评](/posts/ai-video-generation-comparison-2026/) · [免费 AI 视频生成工具](/posts/free-ai-video-generators-2026/) · [AI 视频剪辑工具](/posts/ai-video-editing-tools-2026/)
 - [AI 语音克隆与 TTS](/posts/ai-voice-clone-tts-tools-2026/) · [AI 音乐生成](/posts/ai-music-generation-2026/) · [ElevenLabs SFX v3：文字生成音效](/posts/elevenlabs-sfx-v3/)
 - [ChatGPT 能做 GIF 了：免费号实测教程](/posts/chatgpt-gif-guide/)：聊天框里一句话或一张照片生成可调速的 GIF，附照片模式会重绘构图的实测提醒
+- [让 Claude 当导演：AI 视频省钱工作流全拆解](/posts/ai-video-workflow-claude-seedance/)：Claude Code 导演、Codex 画首尾帧、Seedance 出片，三道检查关把抽卡成本压下来
 
 ## 搜索、阅读与办公工具
 
