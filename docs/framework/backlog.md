@@ -14,7 +14,7 @@ slug 是建议，动笔前再查一次重。目标关键词用来防止两篇文
 | C02 | P0 | 档案 | 智谱 GLM 模型档案 | glm-guide | 智谱 GLM、GLM-5 | 已发布（2026-11-03，/posts/glm-guide/） |
 | C03 | P0 | 档案 | 豆包大模型档案：豆包 App、火山方舟 API 与价格 | doubao-guide | 豆包大模型、火山方舟 | 待写 |
 | C04 | P0 | 档案 | 可灵 AI 档案：版本、价格、国内外怎么用 | kling-guide | 可灵 AI | 待写 |
-| C05 | P0 | 数据页 | 中国大模型 API 价格表（每月更新） | china-llm-api-pricing | 大模型 API 价格 | 待写 |
+| C05 | P0 | 数据页 | 中国大模型 API 价格表（每月更新） | china-llm-api-pricing | 大模型 API 价格 | 已发布（2026-11-07，/posts/china-llm-api-pricing/） |
 | C06 | P1 | 档案 | 即梦与 Seedance 档案 | jimeng-seedance-guide | 即梦、Seedance | 待写 |
 | C07 | P1 | 档案 | 腾讯混元档案 | hunyuan-guide | 腾讯混元 | 待写 |
 | C08 | P1 | 档案 | Llama 开源模型档案 | llama-guide | Llama | 待写 |
