@@ -9,6 +9,7 @@ description: "DeepSeek、Kimi、MiniMax、阶跃 Step、智谱 GLM、可灵等�
 
 - [DeepSeek 完全指南](/posts/deepseek-complete-guide-2026/)：最常用的免费国产模型，从注册到 API 一篇讲完。
 - [本机运行大模型完整指南](/posts/ai-local-llm-guide-2026/)：用 Ollama 和 LM Studio 在自己电脑上跑开源模型。
+- [中国大模型 API 价格表](/posts/china-llm-api-pricing/)：8 家旗舰模型输入输出价、缓存价对照，每月更新。
 
 ## 按模型看
 
