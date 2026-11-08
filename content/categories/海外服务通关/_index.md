@@ -23,6 +23,7 @@ description: "国内用户开通和使用海外 AI 服务的完整指南：美�
 - [没有海外信用卡怎么开海外会员](/posts/2026-10-23-hopex-membership-store-guide/)
 - [Claude、ChatGPT 代充靠谱吗？先看清这 6 个坑](/posts/daichong-reliability-guide/)：四种代充形态、六个风险点和付款前判断清单，长期用的主力号别走代充
 - [Grok 和 X Premium 支持支付宝了：银联也能付](/posts/grok-x-premium-alipay/)：官方结算页直付，不用再绕虚拟卡和代充（2026-10-31 起）
+- [Grok 国内怎么用？免费版够不够用](/posts/grok-china-free-guide/)：三个入口、免费额度的真实口径、2026 年 10 月改版后的 X Subscription 新价格一次说清
 
 ## 第三关：设备与网络环境
 
