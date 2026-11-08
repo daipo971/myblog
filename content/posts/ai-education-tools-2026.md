@@ -3,7 +3,6 @@ title: "2026年AI教育工具革命：从个性化学习到智能教学"
 description: "Khan Academy AI、Duolingo Max、Coursera、Squirrel AI 等 AI 教育工具对比，加上 Open edX、Moodle 等开源方案，告诉学生、老师和家长各自该怎么选。"
 date: 2026-07-12
 lastmod: 2026-10-28T09:00:00+08:00
-author: "教育技术专家"
 tags: ["指南", "AI学习", "AI入门"]
 categories: ["AI应用场景"]
 summary: "深度分析2026年AI教育工具市场，从K12到高等教育，为教育工作者和学习者提供全面指导。"
@@ -458,7 +457,7 @@ AI教育工具正在深刻改变传统教育模式。选择合适的工具需要
 
 ---
 
-*本文由教育技术专家原创，如需转载请注明出处*
+*本文由欣淇原创，如需转载请注明出处*
 
 ---
 
