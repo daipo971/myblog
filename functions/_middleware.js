@@ -12,9 +12,11 @@ export async function onRequest(context) {
       (url.pathname === '/zh-cn' || url.pathname.startsWith('/zh-cn/'))) {
     return Response.redirect('https://xinqai.com' + url.pathname.slice('/zh-cn'.length) + url.search, 301);
   }
-  // 百度站点文件验证：www 下的验证文件不跳转、直接返回（百度验证程序不跟 301）
-  if (url.hostname === 'www.xinqai.com' && url.pathname.startsWith('/baidu_verify_')) {
-    return await context.next();
+    // 百度站点文件验证：验证文件由中间件直接返回内容——Pages 对 .html 会 308 跳到无后缀地址，百度验证程序不跟任何跳转
+  if (url.pathname === '/baidu_verify_codeva-2tcsQBKu9E.html') {
+    return new Response('365d7a74ed5703b55091e293a771531d', {
+      headers: { 'Content-Type': 'text/html; charset=utf-8' }
+    });
   }
   if (url.hostname === 'www.xinqai.com') {
     return Response.redirect('https://xinqai.com' + url.pathname + url.search, 301);
