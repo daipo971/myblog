@@ -82,6 +82,11 @@ A：日常问答和实时信息可以，长文档、代码、生态工具链上 
 - [SuperGrok Limits: No Published Count（whizi.io，2026-10-18 汇编）](https://whizi.io/resources/supergrok-limits/)：2026-10-12 X Subscription 改版、各档价格与倍数、每周额度池口径
 - [Grok Usage Limits（fast.io，2026-09-25 核对）](https://fast.io/resources/grok-limits/)：免费版滚动窗口的社区实测口径
 
-## 更新记录
+## 信息核验与更新记录
+
+- 核对日期：2026-11-08
+- 官方来源：[xAI 官方定价页](https://x.ai/pricing)；改版与额度口径对照 [whizi.io 汇编](https://whizi.io/resources/supergrok-limits/)（2026-10-18，汇编自 xAI 定价页与结算页）。
+- 经验与估算：xAI 官方未公布任何档位的具体条数，文中免费版的条数、窗口均为社区实测口径，会随官方动态调整而变化，请以你自己账号的实际提示为准。
+- 更新记录：
 
 - 2026-11-08：首发。付费体系以 2026-10-12 改版后的 X Subscription 为准；免费限额官方未公布数字，文中均为社区实测口径，后续有官方数字会更新本文。
