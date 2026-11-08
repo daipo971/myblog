@@ -21,6 +21,7 @@ description: "国内用户开通和使用海外 AI 服务的完整指南：美�
 - [Wise 多币种账户开户指南](/posts/2026-10-20-wise-guide/)
 - [Gate Card 虚拟卡教程](/posts/2026-10-16-gate-card-tutorial/)
 - [没有海外信用卡怎么开海外会员](/posts/2026-10-23-hopex-membership-store-guide/)
+- [Claude、ChatGPT 代充靠谱吗？先看清这 6 个坑](/posts/daichong-reliability-guide/)：四种代充形态、六个风险点和付款前判断清单，长期用的主力号别走代充
 - [Grok 和 X Premium 支持支付宝了：银联也能付](/posts/grok-x-premium-alipay/)：官方结算页直付，不用再绕虚拟卡和代充（2026-10-31 起）
 
 ## 第三关：设备与网络环境
