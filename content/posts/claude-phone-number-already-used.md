@@ -72,6 +72,11 @@ A：大概率是触发了频率限制。停手，等几个小时到一天再试�
 - [Verify your phone number｜Claude 官方帮助中心](https://support.claude.com/en/articles/8287232-verify-your-phone-number)：3 个账号上限、解绑路径、不接受的号码类型，本文核心口径来源（查阅于 2026-11-08）
 - [Claude Phone Verification Not Working? 6 Errors and Fixes｜whizi.io](https://whizi.io/resources/claude-phone-verification/)：各类验证报错与官方帮助口径的对照整理（查阅于 2026-11-08）
 
-## 更新记录
+## 信息核验与更新记录
+
+- 核对日期：2026-11-08
+- 官方来源：[Verify your phone number｜Claude 官方帮助中心](https://support.claude.com/en/articles/8287232-verify-your-phone-number)（3 个账号上限、不接受的号码类型、解绑路径均已逐条对照原文）。
+- 经验与估算：验证码延迟的等待时长、二手回收号占用名额等情形，为结合官方规则与公开案例的经验判断；具体个案以官方 Support 的处理结果为准。
+- 更新记录：
 
 - 2026-11-08：首发。规则口径以 Claude 官方帮助中心现行版本为准，后续如有调整会更新本文。
