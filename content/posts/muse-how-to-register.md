@@ -70,6 +70,11 @@ A：Meta 没有公布过时间表，也没有官方候补名单可以排队。�
 - [Muse 现在开放哪些国家和地区（易联指南，2026-11-05 核对）](https://voguesly.com/guides/muse-available-countries/zh-hant/)：四国上线时间与官方依据对照
 - [Where Is Meta Muse Available?（useCarly，2026-09-30 核对）](https://www.usecarly.com/blog/meta-muse-availability/)：注册条件——18 岁、Meta 账号、免费版绑卡，及帮助中心「有限测试」口径
 
-## 更新记录
+## 信息核验与更新记录
+
+- 核对日期：2026-11-08
+- 官方来源：Meta 官方 Newsroom 四地上线公告（美、加、日、新）；注册条件对照 [useCarly 可用性追踪](https://www.usecarly.com/blog/meta-muse-availability/)（2026-09-30 核对版）与 Meta 帮助中心「有限测试」口径。
+- 经验与估算：墨西哥已开放一说来自海外追踪站记录，Meta 未发布完整国家清单，以官方口径为准；「国内可行的三条路」的推荐顺序为本站判断。
+- 更新记录：
 
 - 2026-11-08：首发。开放国家以 Meta 官方宣布的四国为准（美、加、日、新）；旧总纲主推的 Airtap 路线已关停，本文已剔除。后续新增开放国家会更新本文。
