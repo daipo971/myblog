@@ -42,6 +42,7 @@ description: "国内用户开通和使用海外 AI 服务的完整指南：美�
 ## 常见故障
 
 - [ChatGPT 网页端「Model not found」的原因和解法](/posts/2026-10-16-chatgpt-model-not-found/)
+- [注册 Claude 提示手机号已被使用怎么办](/posts/claude-phone-number-already-used/)：一个号码最多验证 3 个账号，超限就报这个错；解绑旧账号、号码类型清单、收不到验证码的处理都在这篇
 
 不想自己折腾账号和支付，也可以看看 [欣淇AI网商城](https://shop.xinqai.com) 的会员代充服务。
 
