@@ -12,6 +12,10 @@ export async function onRequest(context) {
       (url.pathname === '/zh-cn' || url.pathname.startsWith('/zh-cn/'))) {
     return Response.redirect('https://xinqai.com' + url.pathname.slice('/zh-cn'.length) + url.search, 301);
   }
+  // 百度站点文件验证：www 下的验证文件不跳转、直接返回（百度验证程序不跟 301）
+  if (url.hostname === 'www.xinqai.com' && url.pathname.startsWith('/baidu_verify_')) {
+    return await context.next();
+  }
   if (url.hostname === 'www.xinqai.com') {
     return Response.redirect('https://xinqai.com' + url.pathname + url.search, 301);
   }
