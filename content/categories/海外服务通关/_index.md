@@ -13,6 +13,7 @@ description: "国内用户开通和使用海外 AI 服务的完整指南：美�
 - [任意国家 Apple ID 注册教程](/posts/apple-id-any-country-guide/)：不止美区，任意国家/地区注册、绑卡与使用的完整流程。
 - [Google Play 改地区教程](/posts/2026-10-15-google-play-region/)：一年只能改一次，先看清楚再操作。
 - [任意国家谷歌账号注册教程](/posts/google-account-any-country-guide/)：谷歌账号注册、Play 国家与付款方式的完整流程。
+- [Muse 怎么注册？国内能直接注册吗](/posts/muse-how-to-register/)：官方只开放美、加、日、新四国，国内注册会提示地区不可用；注册条件、官方五步和国内可行的三条路都在这篇
 - [Google Workspace 土耳其区注册域名](/posts/2026-10-17-google-workspace-turkey-domain/)
 
 ## 第二关：支付
