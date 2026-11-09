@@ -1,7 +1,7 @@
 ---
 title: "2026 免费 AI API 完整清单：从入门到实践"
 date: 2026-07-06T00:00:00+08:00
-lastmod: 2026-10-28T09:00:00+08:00
+lastmod: 2026-11-09T12:45:00+08:00
 draft: false
 description: "2026 年还能用的免费大模型 API 清单：Gemini、Groq、OpenRouter、Cloudflare、GitHub Models、Hugging Face 和国内的百灵、智谱，附额度对比、调用代码和组合用法。"
 categories: ["AI工具实测"]
@@ -38,6 +38,7 @@ tags: ["合集", "API", "订阅省钱"]
 ### OpenRouter：一个 key 调多家
 
 OpenRouter 聚合了几百个模型，其中带 `:free` 后缀的可以免费调用，但每天请求数有限，高峰期可能排队或下架。适合快速对比不同模型的效果，再决定把钱花在哪家。
+（2026-11-09 核对：免费名单仍为 14 个左右、每天 50 次，最新实测名单见 [OpenRouter免费模型真能随便用吗？](/posts/openrouter-free-models/)）
 
 ### Cloudflare Workers AI：额度到顶硬停
 
