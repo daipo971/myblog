@@ -43,6 +43,7 @@ GitHub 上真正值得自己动手装的开源 AI 项目：不收只发新闻的
 - [markitdown 教程：一键转 Markdown 喂给 AI](/posts/markitdown-guide/)：微软开源工具，PDF、Word、PPT、Excel 一键转干净 Markdown，附真实转换输出与批量脚本
 - [MoneyPrinterTurbo 教程：一键自动生成短视频](/posts/moneyprinterturbo-guide/)：近 14 万星的开源短视频流水线，输个主题自动写脚本、配素材、配音、字幕并合成成片
 - [MinerU 教程：复杂 PDF 一键转 Markdown](/posts/mineru-guide/)：8.3 万星的文档解析工具，带表格、公式、扫描件的 PDF 也能转成干净 Markdown，沙箱实测表格还原一格不错
+- [Intelligent Terminal 0.3：关窗不断任务](/posts/intelligent-terminal-guide/)：微软开源实验终端，侧边栏集中管理多个编程 Agent，无头模式关掉窗口任务继续在后台跑
 - [n8n 教程：搭建 AI 自动化工作流](/posts/ai-agent-workflow-guide-2026/)：用 Docker 自托管 n8n，接入国产模型搭简报、邮件、监控、内容分发四个工作流，附报错与安全提醒
 - [本地运行大模型教程：Ollama 和 LM Studio 离线用 AI](/posts/ai-local-llm-guide-2026/)：两个开源本地方案的安装、选模型、量化与报错排查，断网也能用
 - [用 Dify 搭建 AI 客服机器人](/posts/ai-customer-service-bot-2026/)：开源平台 Dify 云端版与 Docker 自部署两种路线，知识库问答接入网站全流程
