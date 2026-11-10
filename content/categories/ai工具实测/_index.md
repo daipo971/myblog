@@ -25,6 +25,7 @@ description: "ChatGPT、Claude、Cursor、Midjourney 等 AI 工具的实测评�
 - [AI 编程工具横向评测](/posts/ai-coding-tools-comparison-2026/)
 - [Cursor vs Windsurf](/posts/cursor-vs-windsurf-2026/) · [Cursor 使用指南](/posts/cursor-programming-tools/) · [AI 代码编辑器评测](/posts/ai-code-editor-2026/)
 - [Claude Code 与 Codex CLI](/posts/claude-code-codex-cli-2026/) · [Codex 入门](/posts/codex-guide/)
+- [Anthropic 内部怎么用 Claude Code](/posts/how-anthropic-teams-use-claude-code/)：官方复盘自家六大用法，新人导航、排障、测试、原型、文档、自动化，附能直接抄的要点
 - [Cursor 用户注意：11月12日起 GPT 模型可能停用](/posts/openai-cursor-model-cutoff)：OpenAI 拟议停止向 Cursor 供应模型，日期尚未定局，默认模型是 GPT 的先切到 Claude
 
 ## Agent 与自动化
