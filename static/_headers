@@ -1,0 +1,18 @@
+# RSS 订阅文件（index.xml）不让搜索引擎当网页收录，避免 Search Console
+# 把几百个标签/分类订阅文件报成「重复网页」。只加响应头，不影响订阅阅读器抓取。
+/index.xml
+  X-Robots-Tag: noindex
+/:section/index.xml
+  X-Robots-Tag: noindex
+/tags/:term/index.xml
+  X-Robots-Tag: noindex
+/categories/:term/index.xml
+  X-Robots-Tag: noindex
+/en/index.xml
+  X-Robots-Tag: noindex
+/en/:section/index.xml
+  X-Robots-Tag: noindex
+/en/tags/:term/index.xml
+  X-Robots-Tag: noindex
+/en/categories/:term/index.xml
+  X-Robots-Tag: noindex
