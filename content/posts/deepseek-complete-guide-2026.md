@@ -1,7 +1,7 @@
 ---
 title: "DeepSeek 模型档案：版本、价格、许可证与国内用法"
 date: 2026-07-19
-lastmod: 2026-10-28T09:00:00+08:00
+lastmod: 2026-11-10T09:10:00+08:00
 description: "DeepSeek 模型档案：从 V3、R1 到 V4、V4.1-Flash 的版本时间线，API 价格、MIT 许可证、网页版/App/API 三种国内用法，深度思考模式什么时候开，以及它的局限和适合谁。"
 summary: "DeepSeek 档案页：版本时间线、API 价格、许可证、国内怎么用、深度思考模式、局限与常见问题，有新版本就更新。"
 categories: ["中国与开源模型"]
@@ -9,7 +9,7 @@ tags: ["档案", "国产大模型", "开源模型", "DeepSeek"]
 showtoc: true
 ---
 
-**结论先说：** DeepSeek（深度求索）是国内最值得先用的通用大模型之一。网页版和 App 免费，用手机号就能注册，国内直连。开发者可以用价格很低的 API，也可以下载 MIT 协议的开源权重自己部署。它适合中文写作、编程辅助、长文档阅读和需要推理的问题。联网搜索和图片理解不是它的强项。这一页按档案格式整理版本、价格、许可证和用法，有新版本时会更新。
+**结论先说：** DeepSeek（深度求索）是国内最值得先用的通用大模型之一。网页版和 App 免费，用手机号就能注册，国内直连。开发者可以用价格很低的 API，也可以下载 MIT 协议的开源权重自己部署。它适合中文写作、编程辅助、长文档阅读和需要推理的问题。联网搜索不算强项；图片理解新版已原生支持，但还不是顶尖水平。这一页按档案格式整理版本、价格、许可证和用法，有新版本时会更新。
 
 ## 基本信息
 
@@ -19,7 +19,7 @@ showtoc: true
 | 官方网页版 | [chat.deepseek.com](https://chat.deepseek.com) |
 | 官方 API 文档 | [api-docs.deepseek.com](https://api-docs.deepseek.com/zh-cn/) |
 | 手机 App | iOS / Android 应用商店搜索「DeepSeek」 |
-| 当前最新版本 | DeepSeek-V4.1-Flash-1017（2026-10-17） |
+| 当前最新版本 | DeepSeek-V4.1-Flash-1017（2026-10-17），API 模型名 `deepseek-flash`（[官方价格页](https://api-docs.deepseek.com/quick_start/pricing)） |
 | 开源协议 | 近期主力版本权重采用 MIT 协议，允许商用 |
 | 普通用户价格 | 网页版和 App 免费 |
 | 国内能否直连 | 能，支持 +86 手机号注册 |
@@ -31,7 +31,8 @@ showtoc: true
 
 | 时间 | 版本 | 要点 | 来源 |
 | --- | --- | --- | --- |
-| 2026-10-17 | DeepSeek-V4.1-Flash-1017 | 主打更快、更便宜；MIT 开源；100 万 token 上下文，单次最多输出 38.4 万 token；同时上线 Search / Fetch API | [本站快讯](/posts/2026-10-18-deepseek-v41-flash/) · [TechNode](https://technode.com/2026/10/19/deepseek-releases-v4-1-flash-1017-with-stronger-coding-and-agent-capabilities/) |
+| 2026-10-17 | DeepSeek-V4.1-Flash-1017 | 主打更快、更便宜；MIT 开源；100 万 token 上下文，单次最多输出 38.4 万 token；同时上线 Search / Fetch API | [官方价格页](https://api-docs.deepseek.com/quick_start/pricing) · [TechNode](https://technode.com/2026/10/19/deepseek-releases-v4-1-flash-1017-with-stronger-coding-and-agent-capabilities/) |
+| 2026-08-13 | DeepSeek-V4-Pro | 与 Flash 并列的当前 API 模型（模型名 `deepseek-v4-pro`），能力更强、价格更高，不支持图片输入 | [官方价格页](https://api-docs.deepseek.com/quick_start/pricing) |
 | 2026-04-24 | DeepSeek-V4 | 第四代主力模型发布 | [官方公告](https://api-docs.deepseek.com/zh-cn/news/news260424) |
 | 2025-03-25 | DeepSeek-V3-0324 | V3 小版本更新，官方称推理、前端开发和中文写作能力提升 | [官方公告](https://api-docs.deepseek.com/zh-cn/news/news250325) |
 | 2025-01 | DeepSeek-R1 | 推理模型，网页版里对应「深度思考」开关，让 DeepSeek 在全球出圈 | [官方 API 文档](https://api-docs.deepseek.com/zh-cn/) |
@@ -51,7 +52,9 @@ showtoc: true
 | 缓存命中输入 | $0.003 | $0.006 |
 | 输出 | $0.60 | $1.20 |
 
-高峰时段为工作日 06:30–09:30 和 11:30–15:30（印度时间），中国公共节假日除外。同时上线的 Search API 和 Fetch API 均为 $0.75 / 1000 次。以上数据来自官方发布信息，整理见 [V4.1-Flash 快讯](/posts/2026-10-18-deepseek-v41-flash/)，实际以 [官方价格页](https://api-docs.deepseek.com/zh-cn/) 为准。
+高峰时段为工作日 09:00–12:00 和 14:00–18:00（北京时间），周末与中国法定节假日全天按闲时计价。同时上线的 Search API 和 Fetch API 均为 $0.75 / 1000 次。以上价格逐项引自 [官方价格页](https://api-docs.deepseek.com/quick_start/pricing)（核对日期：2026-11-10），官方可能调价，接入前再看一眼官方页。
+
+调用时用模型名 `deepseek-flash`。旧名 `deepseek-v4-flash`、`deepseek-v4-flash-vision-exp` 仍可调用，但对应模型已退役，请求实际由 V4.1-Flash-1017 处理、按 Flash 价格计费（官方价格页注记），新代码直接用新名。
 
 和海外大模型相比，这个价格低一个数量级左右，所以很多国内外开发者把 DeepSeek 当作「默认便宜模型」，只把少数难任务交给更贵的模型。
 
@@ -116,7 +119,7 @@ DeepSeek 近期的主力版本（包括 V4.1-Flash）在 Hugging Face 和魔搭�
 | 局限 | 具体表现 | 怎么办 |
 | --- | --- | --- |
 | 联网搜索不稳定 | 有时搜不到最新信息，或引用不准确 | 重要信息自己点开来源核对；或换 Perplexity 等专门的 AI 搜索 |
-| 图片理解弱 | 网页版上传图片主要提取其中文字，看图描述能力不如 ChatGPT、Gemini | 需要识图时换用支持多模态的模型 |
+| 图片理解不是顶尖 | V4.1-Flash 已是原生多模态，能直接看图；但看图描述与细节识别仍不如 ChatGPT、Gemini | 精细识图任务换用多模态更强的模型 |
 | 高峰期繁忙 | 网页版可能提示服务器繁忙 | 错峰使用，或改用 API |
 | 内容审核严格 | 部分话题会拒答或回答很保守 | 换话题或换工具，不要尝试绕过 |
 | 知识有截止时间 | 不开联网时不知道最近发生的事 | 时效性问题打开联网搜索 |
@@ -156,8 +159,17 @@ DeepSeek 近期的主力版本（包括 V4.1-Flash）在 Hugging Face 和魔搭�
 - [Claude 入门指南](/posts/claude-guide/)
 - [2026 年免费 AI 工具盘点](/posts/free-ai-tools-2026/)
 
-## 更新记录
+## 信息核验与更新记录
+
+- 核对日期：2026-11-10（官方价格页当日实读）
+- 官方来源：[DeepSeek API 价格页](https://api-docs.deepseek.com/quick_start/pricing)（价格、高峰时段、上下文与最大输出、旧模型名退役注记）；[Hugging Face 模型卡](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash)（MIT 协议、原生多模态、1M 上下文）；版本时间线各行所链的官方公告。
+- 经验与估算：文中「服务器繁忙」「图片理解不如 ChatGPT、Gemini」等为本站经验与公开评测口径，无官方统计；价格、版本、许可证等硬参数均为官方口径。
+- 利益披露：本站与 DeepSeek 无合作、返佣或利益关系。
+
+更新记录：
+
 
 - 2026-07-19：首次发布。
 - 2026-10-18：新增 V4.1-Flash 版本和 API 价格。
 - 2026-10-28：改为档案页结构；删除过时说法（「完全免费无限制」、旧版竞品额度表、旧知识截止日期）；补充版本时间线、许可证、国内用法、局限和常见问题；修正 Claude 指南链接。
+- 2026-11-10：逐项对官方源核验硬参数：高峰时段改写为北京时间并链官方价格页；价格表与版本时间线改以官方源为主来源；时间线补 V4-Pro（2026-08-13）；补旧模型名已退役说明；图片理解一段按原生多模态改写；新增本核验块。
