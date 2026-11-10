@@ -13,6 +13,7 @@ description: "OpenAI、Anthropic、Google、Meta、苹果等海外 AI 公司的�
 
 ## Anthropic（Claude）
 
+- [Claude Fable 5.2 发布：更快、更便宜](/posts/claude-fable-mythos-5-2-launch/)
 - [你复制的 Claude 文字，带着隐形水印](/posts/claude-text-watermark/)
 - [Anthropic 招股书解读：Claude 要上市了](/posts/2026-10-27-anthropic-ipo-s1-analysis/)
 - [Claude 全面进入谷歌：办公、编程、企业云](/posts/2026-10-23-claude-enters-google/)
