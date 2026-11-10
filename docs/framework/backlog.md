@@ -31,7 +31,7 @@ slug 是建议，动笔前再查一次重。目标关键词用来防止两篇文
 | ID | 优先级 | 类型 | 暂定标题 | slug | 目标关键词 | 状态 |
 | --- | --- | --- | --- | --- | --- | --- |
 | T01 | P0 | 档案 | Claude Code 完全指南：安装、用法、价格与技巧 | claude-code-guide | Claude Code 教程 | 待写（与 claude-code-codex-cli-2026 互链） |
-| T02 | P0 | 档案 | ChatGPT 完全指南：版本、会员、功能一览 | chatgpt-guide | ChatGPT 怎么用 | 待写 |
+| T02 | P0 | 档案 | ChatGPT 完全指南：版本、会员、功能一览 | chatgpt-guide | ChatGPT 怎么用 | 已发布（2026-11-10，/posts/chatgpt-guide/） |
 | T03 | P0 | 档案 | Gemini 完全指南 | gemini-guide | Gemini 怎么用 | 待写 |
 | T04 | P0 | 对比 | ChatGPT、Claude、Gemini、Kimi、DeepSeek 五大 AI 助手横评 | ai-assistant-comparison | AI 助手 哪个好 | 更新旧文（chatgpt-vs-claude-vs-cursor-guide 评估是否扩写） |
 | T05 | P1 | 对比 | Claude Code vs Codex vs Cursor：AI 编程工具季度对比 | — | AI 编程工具 对比 | 更新旧文（ai-coding-tools-comparison-2026） |
