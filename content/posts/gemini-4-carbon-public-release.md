@@ -9,7 +9,7 @@ description: "Google 11 月 10 日把最強模型 Gemini 4 Carbon 全面開放�
 showtoc: true
 ---
 
-先給結論：**Google 在 11 月 10 日把 Gemini 4 Carbon 全面開放了。**這是 Google 目前最強的模型，兩週前只給網路安全防禦者試用，現在付費開發者、企業和 Google AI Ultra 訂閱用戶都能用。入門價每百萬 tokens 輸入 2 美元、輸出 10 美元，只到 11 月 30 日，12 月 1 日起漲一倍。免費版用戶暫時還用不上。
+先給結論：**Google 在 11 月 10 日把 Gemini 4 Carbon 全面開放了**。這是 Google 目前最強的模型，兩週前只給網路安全防禦者試用，現在付費開發者、企業和 Google AI Ultra 訂閱用戶都能用。入門價每百萬 tokens 輸入 2 美元、輸出 10 美元，只到 11 月 30 日，12 月 1 日起漲一倍。免費版用戶暫時還用不上。
 
 ![插畫：深色碳晶核心向外放射光線，象徵 Gemini 4 Carbon 全面開放](/images/gemini-4-carbon-public-release/cover.webp)
 
