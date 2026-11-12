@@ -51,6 +51,7 @@ description: "DeepSeek、Kimi、MiniMax、阶跃 Step、智谱 GLM、可灵等�
 - [豆包大模型檔案](/posts/doubao-guide/)：從 1.8 到 Seed 2.1 全版本、價格、許可證與國內用法，先看這頁
 
 **视频模型：可灵、Seedance**
+- [可灵 AI 模型档案](/posts/kling-guide/)：从 1.0 到 4.0 全版本、价格、许可证与国内外用法，先看这页
 - [可灵 Kling 4.0 上手指南](/posts/2026-10-18-kling-4-guide/)
 - [Seedance 在即梦里怎么用](/posts/2026-10-14-seedance/)
 
