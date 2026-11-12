@@ -42,6 +42,7 @@ description: "DeepSeek、Kimi、MiniMax、阶跃 Step、智谱 GLM、可灵等�
 
 **通义千问 Qwen**
 - [通义千问 Qwen 模型档案](/posts/qwen-guide/)：Qwen3.8 版本、价格、许可证与国内用法，先看这页
+- [Qwen4-Max 预览上线：百万上下文、只开 15 天](/posts/qwen4-max-preview-launch/)：Qwen4 家族首个可用模型，11 月 25 日到期下线
 
 **腾讯混元**
 - [腾讯混元 Hy4 正式版发布：首次带视觉，还能操作电脑](/posts/hunyuan-hy4-launch/)
