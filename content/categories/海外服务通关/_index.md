@@ -33,6 +33,7 @@ description: "国内用户开通和使用海外 AI 服务的完整指南：美�
 - [Airtap 美国云手机注册教程](/posts/2026-10-21-airtap-cloud-phone-tutorial/)
 - [iPhone Duo 国行 eSIM 开卡攻略](/posts/2026-10-23-iphone-duo-esim-guide/)
 - [Hark Pro 与 Twilio 美国号实测](/posts/2026-10-07-hark-twilio/)
+- [国内办美国电话卡：Tello 实测全流程](/posts/tello-us-number-guide/)：国行 iPhone XR + 空白 eSIM 卡，5 美元/月长期持有美国号收银行验证码。
 - [微信官方通道直连 AI 助手](/posts/2026-10-09-wechat-ilink-bridge/)
 
 ## 第四关：风控与申诉（以 Muse 为例）
