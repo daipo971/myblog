@@ -50,11 +50,13 @@ description: "OpenAI、Anthropic、Google、Meta、苹果等海外 AI 公司的�
 
 ## 安全与研究
 
+- [Cursor 遭供應鏈攻擊：毒擴充套件進市集](/posts/cursor-security-incident-fireworks/)
 - [SemiAnalysis 新基准：最强模型只拿 12 分](/posts/gdpx-benchmark-launch/)
 -    [ARTEX：AI 自主渗透测试系统解析](/posts/2026-10-09-artex-ai-pentest/)
 
 ## 具身智能与机器人
 
+- [OpenAI 解散機器人團隊：通用模型接手](/posts/openai-disbands-robotics-team/)
 - [智元 GO-3 Preview：具身基座模型年底开源](/posts/agibot-go-3-preview-launch/)
 
 ## 月度回顾
