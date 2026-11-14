@@ -16,6 +16,7 @@ description: "DeepSeek、Kimi、MiniMax、阶跃 Step、智谱 GLM、可灵等�
 **DeepSeek**
 - [DeepSeek 完全指南与版本档案](/posts/deepseek-complete-guide-2026/)
 - [DeepSeek-V4.1-Flash 发布与国内使用指南](/posts/2026-10-18-deepseek-v41-flash/)
+  - [六款中国模型被指用禁运芯片](/posts/blackwell-fingerprint-chinese-models/)：前 OpenAI 研究员的权重指纹报告，未证实违法，四家公司未回应
 
 **Kimi（月之暗面）**
 - [Kimi 模型档案](/posts/kimi-guide/)：全版本、价格、开源进度，先看这页
