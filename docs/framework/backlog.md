@@ -91,7 +91,7 @@ slug 是建议，动笔前再查一次重。目标关键词用来防止两篇文
 | S01 | P0 | 页面 | 新手从这里开始：普通人学 AI 的路线图 | start（/start/） | AI 入门 | 待写 |
 | S02 | P0 | 科普 | AI 术语表：50 个常见词一句话讲清 | ai-glossary | AI 术语 | 待写 |
 | S03 | P0 | 科普 | 大模型是什么：普通人能懂的解释 | what-is-llm | 大模型是什么 | 待写 |
-| S04 | P0 | 科普 | token 是什么，为什么 AI 按 token 收费 | what-is-token | token 是什么 | 待写 |
+| S04 | P0 | 科普 | token 是什么，为什么 AI 按 token 收费 | what-is-token | token 是什么 | 已发布（2026-11-14，/posts/what-is-token/） |
 | S05 | P0 | 科普 | AI 幻觉是什么，怎么避免被 AI 骗 | ai-hallucination | AI 幻觉 | 待写 |
 | S06 | P0 | 指南 | 用 AI 做 PPT 的完整流程 | ai-ppt-workflow | AI 做 PPT | 待写（与 ai-presentation-tools-2026 区分：工具清单 vs 流程） |
 | S07 | P0 | 指南 | 用 AI 写周报、总结、汇报 | ai-weekly-report | AI 写周报 | 待写 |
