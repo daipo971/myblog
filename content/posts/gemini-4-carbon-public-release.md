@@ -83,7 +83,7 @@ API 價格和 Argon 的入門價相同：
 
 ## 相關閱讀
 
-- [AI前沿動態](/categories/ai前沿動態/)：本分類全部文章。
+- [AI前沿动态](/categories/ai前沿动态/)：本分類全部文章。
 - [谷歌 Gemini 4 Carbon 發布：專攻網路安全](/posts/gemini-4-carbon-launch/)：10 月 28 日首發快訊，講 Carbon 的安全基準成績與 Fairwind 計畫。
 - [Claude Fable 5.2 發布：更快、更便宜](/posts/claude-fable-mythos-5-2-launch/)：前一天發布的對手，綜合榜上剛反超 Carbon。
 - [Gemini Omni 1.2 發布：15 秒影片，降價 30%](/posts/gemini-omni-1-2-flash-launch/)：Google 另一條 Gemini 產品線的最新動態。

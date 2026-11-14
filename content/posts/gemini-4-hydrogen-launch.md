@@ -65,7 +65,7 @@ Google 在同一天還為搜尋單獨發了一篇公告，稱這是「搜尋至�
 
 ## 相關閱讀
 
-- [AI前沿動態](/categories/ai前沿動態/)：本分類全部文章。
+- [AI前沿动态](/categories/ai前沿动态/)：本分類全部文章。
 - [Gemini 4 Carbon 全面開放：價格與入口](/posts/gemini-4-carbon-public-release/)：11 月 10 日開放的家族旗艦，入門價輸入 2 美元、輸出 10 美元，只到 11 月 30 日。
 - [谷歌 Gemini 4 Carbon 發布：專攻網絡安全](/posts/gemini-4-carbon-launch/)：10 月 28 日首發快訊，講 Carbon 的安全基準成績。
 - [Claude Fable 5.2 發布：更快、更便宜](/posts/claude-fable-mythos-5-2-launch/)：11 月 9 日發布的對手，綜合榜上剛反超 Carbon。
