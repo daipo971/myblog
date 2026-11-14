@@ -8,6 +8,7 @@ description: "按身份和任务讲怎么用 AI：学生、职场、求职、学
 ## 先打基础：AI 入门与提示词
 
 - [AI 新纪元：从深度学习到大语言模型](/posts/my-first-post/)：AI 这几年是怎么发展过来的。
+- [Token 是什么？AI 按 Token 收费一次讲清](/posts/what-is-token/)：token 怎么切分、一次对话花多少钱、上下文窗口怎么算。
 - [AI 提示词工程完全指南](/posts/ai-prompt-engineering-guide-2026/)：从入门到熟练，提示词怎么写。
 - [ChatGPT 提示词进阶技巧](/posts/chatgpt-prompt-advanced-2026/)：10 个从「能用」到「好用」的写法。
 
