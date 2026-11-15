@@ -2,6 +2,14 @@
 
 本文件是这个仓库的长期规则。任何人或 AI 在这里写文章、改文章、改结构，都按本文件执行。
 与 WORKFLOW.md（旧文件，已过时）冲突时，以本文件为准。
+
+> 🚨 **【CRITICAL】Google AdSense 满分合规发文与防封终极准则**：
+> 全站运营与内容生产必须严格遵循根目录下的 [ADSENSE_COMPLIANCE_AND_ROADMAP.md](ADSENSE_COMPLIANCE_AND_ROADMAP.md)。
+> 1. 全站页脚与导航必须永久保持 4 大法律信任页面：`/privacy/`（隐私政策，含 Google DoubleClick Cookie 与 DAA/NAI 退出条款）、`/about/`（关于我们，权威 E-E-A-T 人设）、`/contact/`（联系方式，含 `admin666@xinqai.com`）、`/terms/`（服务条款与免责声明）。
+> 2. 新撰写的任何文章总字数严禁低于 1800 字，杜绝低价值空壳资讯与未经消化的公关通稿；
+> 3. 杜绝同一语言版本内简繁杂糅，中文版（zh-cn）统一采用规范简体中文；
+> 4. 严禁任何形式的诱导点击与密集广告投放，维护长期高单价海外广告收益。
+
 完整运营框架见 [docs/framework/](docs/framework/README.md)（定位、选题地图、模板、SEO、运营、变现、数据、AI 执行手册），当前阶段任务见 [docs/content-plan.md](docs/content-plan.md)。
 AI 接手任务时先读 [docs/framework/09-ai-playbook.md](docs/framework/09-ai-playbook.md) 和 [踩坑清单 12-pitfalls.md](docs/framework/12-pitfalls.md)。
 

@@ -1,37 +1,38 @@
 {{- if not (.Param "hideFooter") }}
 <footer class="footer">
-    {{- if not site.Params.footer.hideCopyright }}
-        {{- if site.Copyright }}
-        <span>{{ site.Copyright | markdownify }}</span>
-        {{- else }}
-        <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
+    <div style="margin-bottom: 8px;">
+        {{- if not site.Params.footer.hideCopyright }}
+            {{- if site.Copyright }}
+            <span>{{ site.Copyright | markdownify }}</span>
+            {{- else }}
+            <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}" style="font-weight: 600; color: var(--primary);">{{ site.Title }}</a></span>
+            {{- end }}
+            {{- print " · "}}
         {{- end }}
-        {{- print " · "}}
-    {{- end }}
 
-    {{- with site.Params.footer.text }}
-        {{ . | markdownify }}
-        {{- print " · "}}
-    {{- end }}
+        {{- with site.Params.footer.text }}
+            <span>{{ . | markdownify }}</span>
+            {{- print " · "}}
+        {{- end }}
 
-    <span>
-        {{ site.Params.contact.label | default "联系我：" }}
-        <a href="mailto:{{ site.Params.contact.email }}" title="Email" style="color: var(--secondary); transition: color 0.3s ease;">
-            {{ site.Params.contact.email }}
-        </a>
-        {{- print " · "}}
-    </span>
+        <span>
+            {{ site.Params.contact.label | default "服务支持：" }}
+            <a href="mailto:{{ site.Params.contact.email | default "admin666@xinqai.com" }}" title="Email" style="color: var(--secondary); transition: color 0.3s ease;">
+                {{ site.Params.contact.email | default "admin666@xinqai.com" }}
+            </a>
+        </span>
+    </div>
 
-    <span>
-        
-        <span><a href="{{ "index.xml" | absLangURL }}" title="RSS" style="color: var(--secondary); transition: color 0.3s ease;">{{ if eq site.Language.Lang "en" }}RSS feed{{ else }}RSS 订阅{{ end }}</a>{{- print " · "}}</span>
-        <span><a href="{{ "/privacy/" | absURL }}" title="隐私政策" style="color: var(--secondary); transition: color 0.3s ease;">{{ if eq site.Language.Lang "en" }}Privacy Policy{{ else }}隐私政策{{ end }}</a>{{- print " · "}}</span>
-        Powered by
-        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
+    <!-- 谷歌 AdSense 与国际合规核心信任链接矩阵 -->
+    <div style="font-size: 13px; color: var(--secondary); opacity: 0.9; margin-top: 6px;">
+        <span><a href="{{ "/about/" | absURL }}" style="color: inherit; text-decoration: underline;">{{ if eq site.Language.Lang "en" }}About Us{{ else }}关于我们{{ end }}</a> · </span>
+        <span><a href="{{ "/contact/" | absURL }}" style="color: inherit; text-decoration: underline;">{{ if eq site.Language.Lang "en" }}Contact Us{{ else }}联系我们{{ end }}</a> · </span>
+        <span><a href="{{ "/privacy/" | absURL }}" style="color: inherit; text-decoration: underline;">{{ if eq site.Language.Lang "en" }}Privacy Policy{{ else }}隐私政策{{ end }}</a> · </span>
+        <span><a href="{{ "/terms/" | absURL }}" style="color: inherit; text-decoration: underline;">{{ if eq site.Language.Lang "en" }}Terms of Service{{ else }}服务条款{{ end }}</a> · </span>
+        <span><a href="{{ "index.xml" | absLangURL }}" style="color: inherit; text-decoration: underline;">{{ if eq site.Language.Lang "en" }}RSS Feed{{ else }}RSS 订阅{{ end }}</a> · </span>
+        <span><a href="{{ "/sitemap.xml" | absURL }}" style="color: inherit; text-decoration: underline;">{{ if eq site.Language.Lang "en" }}Sitemap{{ else }}站点地图{{ end }}</a></span>
+    </div>
 </footer>
-
 {{- end }}
 
 {{- if (not site.Params.disableScrollToTop) }}
