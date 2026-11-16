@@ -37,6 +37,7 @@ description: "ChatGPT、Claude、Cursor、Midjourney 等 AI 工具的实测评�
 - [Hermes Agent 手机版开公测](/posts/hermes-agent-mobile-beta/)：官方手机遥控端开启测试，安卓名额已满，附商店同名应用避坑
 - [从零手写一个会干活的 AI Agent：零框架完整教程](/posts/build-your-own-ai-agent-tutorial/)：零框架 Python 教程，用 DeepSeek 等国产模型 API 搭建带查天气、计算、读文件三件工具的 Agent，含完整代码逐段讲解与报错排查表
 - [Simular Box 教程：给 AI 配一台免费云电脑](/posts/simular-box-guide/)：Beta 免费期的云端 Linux 电脑，MCP 接入 Claude、ChatGPT、Claude Code，AI 自己开浏览器、点鼠标、跑命令
+- [Gemini Decisions API 实测：判题不生成文字，一次问 6 道题只花 448 个 token](/posts/gemini-decisions-api-hands-on/)：真实 Key 实测，是非、单选、打分全对，答不出的题不拒答只给低置信度，打分是 0–4 加权平均
 
 ## GitHub 开源项目精选
 

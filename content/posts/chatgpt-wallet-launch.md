@@ -3,7 +3,7 @@ title: "ChatGPT Wallet 上線：AI 幫你結帳"
 date: 2026-11-14T09:40:00+08:00
 lastmod: 2026-11-14T09:40:00+08:00
 draft: false
-categories: ["AI前沿动态"]
+categories: ["海外服务通关"]
 tags: ["快讯", "行业动态", "ChatGPT", "OpenAI"]
 description: "OpenAI 11 月 13 日推出 ChatGPT Wallet：dots 智能體可在用戶逐筆授權後代為結帳，卡號以代碼化憑證取代、不交給商家與智能體。初期只限美國 Pro 訂戶，國內用戶暫時用不上。"
 showtoc: true
@@ -73,7 +73,7 @@ OpenAI 坦承，智能體商務還在早期。很多網站與支付風控系統�
 
 ## 相關閱讀
 
-- [AI前沿動態](/categories/ai前沿動態/)：本分類全部文章。
+- [AI前沿动态](/categories/ai前沿动态/)：本分類全部文章。
 - [ChatGPT 完全指南](/posts/chatgpt-guide/)：ChatGPT 各版本功能、訂閱方案與使用技巧總整理。
 - [ChatGPT、Claude、Gemini 國內開通總綱](/posts/chatgpt-claude-gemini-china-access-guide/)：國內用戶開通海外 AI 服務的總整理。
 - [OpenAI GPT-6 Cyber 發布：專攻網絡安全](/posts/gpt-6-cyber-launch/)：OpenAI 11 月初發布的安全向模型，只開放給獲批客戶。
