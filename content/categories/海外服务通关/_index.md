@@ -43,6 +43,7 @@ description: "国内用户开通和使用海外 AI 服务的完整指南：美�
 - [Muse 大面积封号始末与申诉](/posts/2026-10-15-muse-ban-wave/)
 - [Muse 大规模风控：解除关联后的 6 步申诉](/posts/2026-10-27-muse-risk-control-unlink-appeal/)
 - [Claude 新规 11 月 12 日生效：支付规避、多开、转售明文可封号](/posts/anthropic-openai-account-policy-update/)：账号风控快报首篇，附两家官方申诉路径
+- [OpenAI 新规 11 月 20 日生效：中转网关须先获批](/posts/openai-usage-policy-intermediary-approval/)：模型中转与网关服务须经 OpenAI 事先审批，普通用户与自用 API 应用不受影响
 - [Muse 成人内容双标争议](/posts/2026-10-27-muse-nsfw-controversy/)
 
 ## 常见故障
