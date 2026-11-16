@@ -40,6 +40,7 @@ description: "DeepSeek、Kimi、MiniMax、阶跃 Step、智谱 GLM、可灵等�
 
 **美团 LongCat**
 - [LongCat-2.5 发布：万亿参数的长程 Agent 模型](/posts/longcat-2-5-launch/)
+- [LongCat-2.5 权重开源：1.6 万亿参数能下载，3.56TB 却拦住大多数人](/posts/longcat-2-5-open-weights/)：MIT 可商用，终端编码榜 88.4 分，BF16 约 3.56TB、示例部署 194 块国产加速器
 
 **通义千问 Qwen**
 - [通义千问 Qwen 模型档案](/posts/qwen-guide/)：Qwen3.8 版本、价格、许可证与国内用法，先看这页
