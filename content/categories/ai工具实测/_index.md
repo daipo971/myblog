@@ -27,6 +27,7 @@ description: "ChatGPT、Claude、Cursor、Midjourney 等 AI 工具的实测评�
 - [Claude Code 与 Codex CLI](/posts/claude-code-codex-cli-2026/) · [Codex 入门](/posts/codex-guide/)
 - [Anthropic 内部怎么用 Claude Code](/posts/how-anthropic-teams-use-claude-code/)：官方复盘自家六大用法，新人导航、排障、测试、原型、文档、自动化，附能直接抄的要点
 - [Cursor 用户注意：11月12日起 GPT 模型可能停用](/posts/openai-cursor-model-cutoff)：OpenAI 拟议停止向 Cursor 供应模型，日期尚未定局，默认模型是 GPT 的先切到 Claude
+- [Cursor 遭供应链攻击：毒扩展套件进市场](/posts/cursor-security-incident-fireworks/)：供应链攻击完整调查，毒扩展套件进市场缓存 11 小时
 
 ## Agent 与自动化
 
@@ -76,5 +77,6 @@ GitHub 上真正值得自己动手装的开源 AI 项目：不收只发新闻的
 ## 其他
 
 - [机器学习平台对比](/posts/machine-learning-platforms-2026/) · [AI 安全工具指南](/posts/ai-security-tools-2026/)
+- [OpenAI 解散机器人团队：通用模型接手](/posts/openai-disbands-robotics-team/)：独立机器人团队解散，通用模型直接开机器人
 
 下面是本分类全部文章，按发布时间倒序排列。

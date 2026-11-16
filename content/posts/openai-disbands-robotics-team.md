@@ -1,76 +1,77 @@
 ---
-title: "OpenAI 解散機器人團隊：通用模型接手"
+title: "OpenAI 解散机器人团队：通用模型接手"
 date: 2026-11-14T21:10:00+08:00
-lastmod: 2026-11-14T21:10:00+08:00
+lastmod: 2026-11-16T09:16:47+08:00
 draft: false
-categories: ["AI前沿动态"]
+categories: ["AI工具实测"]
 tags: ["快讯", "行业动态", "OpenAI"]
-description: "Fortune 11 月 13 日獨家、OpenAI 發言人證實：獨立機器人團隊解散，研究併入主研究團隊、硬體併入 Applied 部門。理由是 GPT-6 Astra 等通用模型已能直接開機器人，人形演示仍以 2027 年為目標。"
+description: "Fortune 11 月 13 日独家、OpenAI 发言人证实：独立机器人团队解散，研究并入主研究团队、硬体并入 Applied 部门。理由是 GPT-6 Astra 等通用模型已能直接开机器人，人形演示仍以 2027 年为目标。"
+summary: "OpenAI 第二次解散机器人团队：研究并入主研究团队，应用与硬件并入 Applied 部门。理由是 GPT-6 Astra 这类通用模型已经能直接开机器人，人形演示仍以2027年为目标。本文讲清分流去向、时间线，以及 74.8% 的模拟基准到底意味着什么。"
 showtoc: true
 ---
 
-先說結論：**OpenAI 解散了獨立的機器人團隊**。Fortune 11 月 13 日獨家報導、OpenAI 發言人證實：研究人員併入首席研究官 Mark Chen 的主研究團隊，應用機器人與硬體團隊併入總裁 Greg Brockman 的 Applied 部門。理由很直接——GPT-6 Astra 這類通用模型已經能直接開機器人，不必再養一個專門做「機器人大腦」的團隊。這是 OpenAI 第二次解散機器人團隊，但發言人強調機器人仍是長期願景，人形機器人演示仍以 2027 年為目標，不是放棄。
+先说结论：**OpenAI 解散了独立的机器人团队**。Fortune 11 月 13 日独家报道、OpenAI 发言人证实：研究人员并入首席研究官 Mark Chen 的主研究团队，应用机器人与硬体团队并入总裁 Greg Brockman 的 Applied 部门。理由很直接——GPT-6 Astra 这类通用模型已经能直接开机器人，不必再养一个专门做「机器人大脑」的团队。这是 OpenAI 第二次解散机器人团队，但发言人强调机器人仍是长期愿景，人形机器人演示仍以 2027 年为目标，不是放弃。
 
-![插畫：人形機器人身影逐漸化作神經網路節點與數據流，象徵通用模型接手機器人控制](/images/openai-disbands-robotics-team/cover.webp)
+![插画：人形机器人身影逐渐化作神经网络节点与数据流，象征通用模型接手机器人控制](/images/openai-disbands-robotics-team/cover.webp)
 
-## 發生了什麼
+## 发生了什么
 
-| 項目 | 內容 |
+| 项目 | 内容 |
 | --- | --- |
-| 報導方 | Fortune（11 月 13 日獨家），OpenAI 發言人證實 |
-| 變動 | 獨立機器人團隊解散 |
-| 人員去向 | 研究團隊 → 首席研究官 Mark Chen 的主研究團隊；應用機器人與硬體團隊 → 總裁 Greg Brockman 的 Applied 部門 |
-| 官方理由 | GPT-6 Astra 等通用模型已能直接用於機器人控制 |
-| 後續目標 | 人形機器人演示仍以 2027 年為目標 |
+| 报道方 | Fortune（11 月 13 日独家），OpenAI 发言人证实 |
+| 变动 | 独立机器人团队解散 |
+| 人员去向 | 研究团队 → 首席研究官 Mark Chen 的主研究团队；应用机器人与硬体团队 → 总裁 Greg Brockman 的 Applied 部门 |
+| 官方理由 | GPT-6 Astra 等通用模型已能直接用于机器人控制 |
+| 后续目标 | 人形机器人演示仍以 2027 年为目标 |
 
-## 為什麼是現在：一個模擬基準改寫了路線
+## 为什么是现在：一个模拟基准改写了路线
 
-觸發這次改組的數字，來自 NVIDIA 研究團隊 10 月 14 日的一項研究。研究人員把 GPT-6 Astra 當作機器人控制器，放到模擬操作基準 RoboLab-120 上測試——沒有做任何針對機器人的專門訓練，成功率 74.8%，對照組裡表現最好的專用機器人模型只有 51.0%。
+触发这次改组的数字，来自 NVIDIA 研究团队 10 月 14 日的一项研究。研究人员把 GPT-6 Astra 当作机器人控制器，放到模拟操作基准 RoboLab-120 上测试——没有做任何针对机器人的专门训练，成功率 74.8%，对照组里表现最好的专用机器人模型只有 51.0%。
 
-這個對比要寫準：**74.8% 是模擬成績，不是實體機器人的實測**。RoboLab-120 是模擬的抓取放置基準，測的是模型在模擬環境裡完成操作任務的能力，不能直接等同於真機表現。Fortune 報導裡引用的成本也不低：每次嘗試約 36.4 美元 token 費用、每次模型呼叫約 18.56 秒——離即時控制還有距離。
+这个对比要写准：**74.8% 是模拟成绩，不是实体机器人的实测**。RoboLab-120 是模拟的抓取放置基准，测的是模型在模拟环境里完成操作任务的能力，不能直接等同于真机表现。Fortune 报道里引用的成本也不低：每次尝试约 36.4 美元 token 费用、每次模型调用约 18.56 秒——离即时控制还有距离。
 
-但方向已經很清楚：OpenAI 內部原先假設要靠影片模型打底再做機器人，後來發現通用前沿模型直接就能用，專門團隊的邊際價值就沒了。
+但方向已经很清楚：OpenAI 内部原先假设要靠视频模型打底再做机器人，后来发现通用前沿模型直接就能用，专门团队的边际价值就没了。
 
-## 不是第一次：OpenAI 的機器人團隊來來去去
+## 不是第一次：OpenAI 的机器人团队来来去去
 
-這是 OpenAI 第二次關掉機器人團隊，時間線值得寫下來：
+这是 OpenAI 第二次关掉机器人团队，时间线值得写下来：
 
-- **2020 年**：OpenAI 關掉第一代機器人團隊，當時共同創辦人 Wojciech Zaremba 給出的理由是機器人數據太少，換條路更划算。
-- **2024 年**：重建獨立機器人團隊，並宣布與 Figure 合作開發人形機器人模型。
-- **2026 年 11 月 13 日**：再度解散，團隊併入主研究團隊與 Applied 部門。
+- **2020 年**：OpenAI 关掉第一代机器人团队，当时共同创办人 Wojciech Zaremba 给出的理由是机器人数据太少，换条路更划算。
+- **2024 年**：重建独立机器人团队，并宣布与 Figure 合作开发人形机器人模型。
+- **2026 年 11 月 13 日**：再度解散，团队并入主研究团队与 Applied 部门。
 
-兩次解散的理由正好相反：第一次是「數據不夠、做不動」，這次是「通用模型已經夠用、不必單獨做」。同一批人沒有離開公司，只是換了匯報線——這也是發言人強調「加速、不是收縮」的原因。
+两次解散的理由正好相反：第一次是「数据不够、做不动」，这次是「通用模型已经够用、不必单独做」。同一批人没有离开公司，只是换了汇报线——这也是发言人强调「加速、不是收缩」的原因。
 
-## 邊界要說清
+## 边界要说清
 
-- **沒有官方部落格**：OpenAI 自己沒有為這次改組發公告，也沒有公布受影響人數，所有細節都來自 Fortune 的報導與發言人回應。
-- **不是放棄機器人**：發言人向 Fortune 表示，機器人仍是公司長期願景的一部分，人形機器人演示仍以 2027 年為目標。
-- **財務數字是 Fortune 口徑**：同篇報導稱 OpenAI 上季營運虧損 109 億美元、可能 2027 年初 IPO——這是 Fortune 的說法，OpenAI 未在本次回應中確認。
+- **没有官方博客**：OpenAI 自己没有为这次改组发公告，也没有公布受影响人数，所有细节都来自 Fortune 的报道与发言人回应。
+- **不是放弃机器人**：发言人向 Fortune 表示，机器人仍是公司长期愿景的一部分，人形机器人演示仍以 2027 年为目标。
+- **财务数字是 Fortune 口径**：同篇报道称 OpenAI 上季营运亏损 109 亿美元、可能 2027 年初 IPO——这是 Fortune 的说法，OpenAI 未在本次回应中确认。
 
-## 對普通用戶意味著什麼
+## 对普通用户意味着什么
 
-- **短期沒有產品變化**：這是組織調整，沒有新產品、也沒有產品下線。普通用戶今天打開 ChatGPT 不會看到任何不同。
-- **長期看，機器人可能來得更快、也更「通用」**：如果通用模型真的能直接開機器人，人形機器人的門檻就從「專門訓練」變成「模型夠不夠強」。2027 年的人形演示是下一個驗證點。
-- **別把模擬成績當實機成績**：74.8% 對 51.0% 聽起來差距很大，但那是模擬環境、且成本與延遲都還很高。寫給讀者時要留這個保留。
+- **短期没有产品变化**：这是组织调整，没有新产品、也没有产品下线。普通用户今天打开 ChatGPT 不会看到任何不同。
+- **长期看，机器人可能来得更快、也更「通用」**：如果通用模型真的能直接开机器人，人形机器人的门槛就从「专门训练」变成「模型够不够强」。2027 年的人形演示是下一个验证点。
+- **别把模拟成绩当实机成绩**：74.8% 对 51.0% 听起来差距很大，但那是模拟环境、且成本与延迟都还很高。写给读者时要留这个保留。
 
-## 國內用戶注意
+## 国内用户注意
 
-這次改組對國內用戶沒有直接影響：沒有產品上下線、沒有服務範圍變化，ChatGPT 與相關服務的國內使用方式不變。本文依據 Fortune 獨家報導的二次整理（查閱於 2026-11-14），Fortune 原文為付費獨家，細節來自授權引述的整理報導；OpenAI 未發布自己的公告，國內可用性未變。
+这次改组对国内用户没有直接影响：没有产品上下线、没有服务范围变化，ChatGPT 与相关服务的国内使用方式不变。本文依据 Fortune 独家报道的二次整理（查阅于 2026-11-14），Fortune 原文为付费独家，细节来自授权引述的整理报道；OpenAI 未发布自己的公告，国内可用性未变。
 
 ## 参考来源
 
-- [ExplainX：OpenAI Disbands Robotics Team: GPT-6 Astra Bet](https://explainx.ai/blog/openai-disbands-robotics-team-gpt-6-astra-robots-fortune-2026)：Fortune 獨家內容整理、人員去向、RoboLab-120 數據（查閱於 2026-11-14）
-- [Dev.to：OpenAI Disbanded Its Robotics Team. GPT-6 Astra Is the Robot Now](https://dev.to/paullovelace/openai-disbanded-its-robotics-team-gpt-6-astra-is-the-robot-now-3678)：改組細節、模擬基準說明（查閱於 2026-11-14）
-- [PakTechStan：OpenAI Disbands Its Standalone Robotics Team](https://paktechstan.com/openai-disbands-its-standalone-robotics-team-betting-gpt-6-astra-can-run-robots-on-its-own)：時間線、2027 年演示目標（查閱於 2026-11-14）
+- [ExplainX：OpenAI Disbands Robotics Team: GPT-6 Astra Bet](https://explainx.ai/blog/openai-disbands-robotics-team-gpt-6-astra-robots-fortune-2026)：Fortune 独家内容整理、人员去向、RoboLab-120 数据（查阅于 2026-11-14）
+- [Dev.to：OpenAI Disbanded Its Robotics Team. GPT-6 Astra Is the Robot Now](https://dev.to/paullovelace/openai-disbanded-its-robotics-team-gpt-6-astra-is-the-robot-now-3678)：改组细节、模拟基准说明（查阅于 2026-11-14）
+- [PakTechStan：OpenAI Disbands Its Standalone Robotics Team](https://paktechstan.com/openai-disbands-its-standalone-robotics-team-betting-gpt-6-astra-can-run-robots-on-its-own)：时间线、2027 年演示目标（查阅于 2026-11-14）
 
 ## 核验记录
 
-- 核對日期：2026-11-14。改組事實與人員去向以 Fortune 報導（經二次整理交叉確認）為準；OpenAI 未發布官方公告、未公布受影響人數。
-- 74.8% 對 51.0% 是 NVIDIA 研究的模擬基準 RoboLab-120 成績，不是實體機器人實測；每次嘗試成本與延遲為研究報導數據。
+- 核对日期：2026-11-14。改组事实与人员去向以 Fortune 报道（经二次整理交叉确认）为准；OpenAI 未发布官方公告、未公布受影响人数。
+- 74.8% 对 51.0% 是 NVIDIA 研究的模拟基准 RoboLab-120 成绩，不是实体机器人实测；每次尝试成本与延迟为研究报道数据。
 
 ## 相关阅读
 
-- [OpenAI GPT-6 Cyber 发布：专攻网络安全](/posts/gpt-6-cyber-launch/)：OpenAI 11 月初發布的安全向模型。
-- [智元 GO-3 Preview：具身基座模型年底开源](/posts/agibot-go-3-preview-launch/)：國內具身智能的最新進展。
-- [OpenAI 又发新模型 GPT-6.1 Terra：不拼最强，拼每干一件事花多少钱](/posts/2026-10-27-gpt-6-1-terra-launch/)：OpenAI 上一款模型發布。
-- 更多前沿動態見 [AI前沿动态](/categories/ai前沿动态/)。
+- [OpenAI GPT-6 Cyber 发布：专攻网络安全](/posts/gpt-6-cyber-launch/)：OpenAI 11 月初发布的安全向模型。
+- [智元 GO-3 Preview：具身基座模型年底开源](/posts/agibot-go-3-preview-launch/)：国内具身智能的最新进展。
+- [OpenAI 又发新模型 GPT-6.1 Terra：不拼最强，拼每干一件事花多少钱](/posts/2026-10-27-gpt-6-1-terra-launch/)：OpenAI 上一款模型发布。
+- 更多工具实测见 [AI工具实测](/categories/ai工具实测/)。
