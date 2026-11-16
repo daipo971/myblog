@@ -5,12 +5,12 @@ lastmod: 2026-11-16T09:16:47+08:00
 draft: false
 categories: ["AI工具实测"]
 tags: ["快讯", "行业动态", "OpenAI"]
-description: "Fortune 11 月 13 日独家、OpenAI 发言人证实：独立机器人团队解散，研究并入主研究团队、硬体并入 Applied 部门。理由是 GPT-6 Astra 等通用模型已能直接开机器人，人形演示仍以 2027 年为目标。"
+description: "Fortune 11 月 13 日独家、OpenAI 发言人证实：独立机器人团队解散，研究并入主研究团队、硬件并入 Applied 部门。理由是 GPT-6 Astra 等通用模型已能直接开机器人，人形演示仍以 2027 年为目标。"
 summary: "OpenAI 第二次解散机器人团队：研究并入主研究团队，应用与硬件并入 Applied 部门。理由是 GPT-6 Astra 这类通用模型已经能直接开机器人，人形演示仍以2027年为目标。本文讲清分流去向、时间线，以及 74.8% 的模拟基准到底意味着什么。"
 showtoc: true
 ---
 
-先说结论：**OpenAI 解散了独立的机器人团队**。Fortune 11 月 13 日独家报道、OpenAI 发言人证实：研究人员并入首席研究官 Mark Chen 的主研究团队，应用机器人与硬体团队并入总裁 Greg Brockman 的 Applied 部门。理由很直接——GPT-6 Astra 这类通用模型已经能直接开机器人，不必再养一个专门做「机器人大脑」的团队。这是 OpenAI 第二次解散机器人团队，但发言人强调机器人仍是长期愿景，人形机器人演示仍以 2027 年为目标，不是放弃。
+先说结论：**OpenAI 解散了独立的机器人团队**。Fortune 11 月 13 日独家报道、OpenAI 发言人证实：研究人员并入首席研究官 Mark Chen 的主研究团队，应用机器人与硬件团队并入总裁 Greg Brockman 的 Applied 部门。理由很直接——GPT-6 Astra 这类通用模型已经能直接开机器人，不必再养一个专门做「机器人大脑」的团队。这是 OpenAI 第二次解散机器人团队，但发言人强调机器人仍是长期愿景，人形机器人演示仍以 2027 年为目标，不是放弃。
 
 ![插画：人形机器人身影逐渐化作神经网络节点与数据流，象征通用模型接手机器人控制](/images/openai-disbands-robotics-team/cover.webp)
 
@@ -20,7 +20,7 @@ showtoc: true
 | --- | --- |
 | 报道方 | Fortune（11 月 13 日独家），OpenAI 发言人证实 |
 | 变动 | 独立机器人团队解散 |
-| 人员去向 | 研究团队 → 首席研究官 Mark Chen 的主研究团队；应用机器人与硬体团队 → 总裁 Greg Brockman 的 Applied 部门 |
+| 人员去向 | 研究团队 → 首席研究官 Mark Chen 的主研究团队；应用机器人与硬件团队 → 总裁 Greg Brockman 的 Applied 部门 |
 | 官方理由 | GPT-6 Astra 等通用模型已能直接用于机器人控制 |
 | 后续目标 | 人形机器人演示仍以 2027 年为目标 |
 
