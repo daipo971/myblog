@@ -9,6 +9,7 @@ description: "ChatGPT、Claude、Cursor、Midjourney 等 AI 工具的实测评�
 
 - [ChatGPT vs Claude vs Cursor 深度对比](/posts/chatgpt-vs-claude-vs-cursor-guide/)：三个最常用工具怎么选、怎么搭配。
 - [ChatGPT 完全指南：版本、会员、功能一览](/posts/chatgpt-guide/)：现在是哪个模型、免费版够不够用、Plus 与 Pro 三档怎么选。
+- [Gemini 完全指南：版本、会员、功能一览](/posts/gemini-guide/)：Gemini 4 三模型分工、订阅五档与 API 价格，附 12 月涨价提醒。
 - [Claude 入门完整指南](/posts/claude-guide/)
 - [ChatGPT 免费版三个月真实体验](/posts/chatgpt-4o-real-experience/)
 - [ChatGPT 高级使用技巧](/posts/chatgpt-advanced-techniques-2026/)
