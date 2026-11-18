@@ -73,6 +73,7 @@ GitHub 上真正值得自己动手装的开源 AI 项目：不收只发新闻的
 
 ## 工具新品
 
+- [GPT-6.2 Astra 与 Sol 发布：旗舰降价两成，独立评测排第二](/posts/gpt-6-2-astra-sol-launch/)：Astra API 降价 20%、综合指数 62 分，Sol 价格不变、能力接近 Astra，附入口、价格与选型建议
 - [Manus Cue](/posts/2026-10-14-manus-cue/) · [HeyGen 语音模型](/posts/2026-10-14-heygen-voice/)
 - 更多大厂新模型、新功能见 [AI前沿动态](/categories/ai前沿动态/)。
 
