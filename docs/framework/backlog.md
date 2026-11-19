@@ -126,7 +126,7 @@ slug 是建议，动笔前再查一次重。目标关键词用来防止两篇文
 | ID | 优先级 | 类型 | 暂定标题 | slug | 目标关键词 | 状态 |
 | --- | --- | --- | --- | --- | --- | --- |
 | O01 | P0 | 教程 | Gemini 国内怎么用：账号、地区与会员开通 | gemini-china-guide | Gemini 国内 | 需站长（截图） |
-| O02 | P0 | 指南 | 海外 AI 账号被封汇总：原因、申诉模板与预防 | ai-account-ban-appeal | ChatGPT 封号 申诉 | 待写 |
+| O02 | P0 | 指南 | 海外 AI 账号被封汇总：原因、申诉模板与预防 | ai-account-ban-appeal | ChatGPT 封号 申诉 | 进行中（2026-11-19 自动发文） |
 | O03 | P1 | 对比 | 海外 AI 会员付款方式对比 | overseas-ai-payment-comparison | ChatGPT 付款方式 | 待写 |
 | O04 | P1 | 教程 | Claude 国内注册教程 | claude-china-register | Claude 注册 | 需站长（截图） |
 | O05 | P1 | 教程 | ChatGPT Plus 开通教程 | chatgpt-plus-subscribe | ChatGPT Plus 开通 | 需站长（截图） |
