@@ -45,6 +45,7 @@ description: "国内用户开通和使用海外 AI 服务的完整指南：美�
 - [海外 AI 账号被封怎么办：申诉模板与预防清单](/posts/ai-account-ban-appeal/)：ChatGPT、Claude、Google 三家官方申诉通道横评，附中英文申诉模板、被封常见原因与预防清单
 - [Claude 新规 11 月 12 日生效：支付规避、多开、转售明文可封号](/posts/anthropic-openai-account-policy-update/)：账号风控快报首篇，附两家官方申诉路径
 - [OpenAI 新规 11 月 20 日生效：中转网关须先获批](/posts/openai-usage-policy-intermediary-approval/)：模型中转与网关服务须经 OpenAI 事先审批，普通用户与自用 API 应用不受影响
+- [BIS 新规 11 月 19 日生效：新加坡等五国先进芯片须持证](/posts/bis-remote-access-advanced-chips-rule/)：全球数据中心向 D:5 集团企业提供超 1200 万 TPP 算力须许可，新加坡政府称已与美方谈妥推进可信准入
 - [Muse 成人内容双标争议](/posts/2026-10-27-muse-nsfw-controversy/)
 
 ## 常见故障
