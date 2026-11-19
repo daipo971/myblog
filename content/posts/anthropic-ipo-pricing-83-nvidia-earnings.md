@@ -2,11 +2,11 @@
 title: "Anthropic 83 美元定价：1.5 万亿的算力账本"
 description: "Anthropic 以每股 83 美元定价 IPO，高出 70 至 78 美元区间，完全稀释估值约 1.5 万亿美元。本文核对 EDGAR 定价状态，拆解 9009 亿美元算力账本，并与英伟达 1158 亿美元财报合读。"
 date: 2026-11-19T06:50:00+08:00
-lastmod: 2026-11-19T06:50:00+08:00
+lastmod: 2026-11-19T10:50:00+08:00
 slug: "anthropic-ipo-pricing-83-nvidia-earnings"
 showtoc: true
 draft: false
-summary: "Anthropic IPO 每股定价 83 美元，高出区间顶端 5 美元，完全稀释估值约 1.5 万亿美元；但截至发稿还没有写入招股书的 424B4，价格仍是路透与彭博引知情人士的报导。9009 亿美元算力承诺里，SpaceX 一项上限 1205 亿美元、可提前 90 天解约；英伟达财报的 1158 亿美元营收，另一面就是这张账单。"
+summary: "Anthropic IPO 每股定价 83 美元，高出区间顶端 5 美元，完全稀释估值约 1.5 万亿美元；发行规模据报扩大至 9.8 亿股、公开募资约 813 亿美元。但截至发稿还没有写入招股书的 424B4，价格与股数仍是路透与彭博引知情人士的报导。9009 亿美元算力承诺里，SpaceX 一项上限 1205 亿美元、可提前 90 天解约；英伟达财报的 1158 亿美元营收，另一面就是这张账单。"
 categories: ["AI工具实测"]
 tags: ["快讯", "行业动态", "AI政策", "Anthropic"]
 ---
@@ -23,14 +23,14 @@ Anthropic 的 IPO 价格定了：每股 83 美元，高出 70 至 78 美元的�
 | --- | --- | --- |
 | 发行价 | 每股 83 美元 | 路透、彭博、CNBC 引知情人士；未写入 424B4 |
 | 发行区间 | 每股 70 至 78 美元 | S-1/A 第 3 号（11 月 17 日），未改动 |
-| 公开发售股数 | 8.25 亿股 | 公司出售约 8.01 亿股、老股东出售约 0.24 亿股 |
-| 公开募资 | 约 685 亿美元 | 按 8.25 亿股 × 83 美元换算，税前总额 |
+| 公开发售股数 | 9.8 亿股 | 公司出售约 9.564 亿股、老股东出售约 0.236 亿股；路透引知情人士，filing 原定 8.25 亿股 |
+| 公开募资 | 约 813 亿美元 | 路透引知情人士：9.8 亿股 × 83 美元，税前总额；超过 SpaceX，史上最大 IPO |
 | 私募配售 | 260 亿美元 | 与公开募资分开算，按 IPO 价向七家科技公司出售无投票权股份 |
-| 绿鞋（超额配售） | 最多 1.2375 亿股 | 约 103 亿美元，承销商 30 天内可行使 |
+| 绿鞋（超额配售） | 最多约 1.47 亿股 | 约 122 亿美元（按扩大后股数的 15% 换算），承销商 30 天内可行使 |
 | 完全稀释估值 | 约 1.5 万亿美元 | 计入期权与未归属股票；已发行口径约 1.09 万亿美元 |
 | 上市时间 | 11 月 19 日（美东） | 纳斯达克，代码 ANT；台北时间 19 日晚开盘 |
 
-几个数字要分开算。第一，公开募资约 685 亿美元是按原定 8.25 亿股换算的，但多家报导说发行规模扩大了，最终股数 Anthropic 还没有公布，所以 685 亿是下限，不是定数。第二，260 亿美元私募是另外一笔钱：谷歌、英伟达各约 100 亿美元，AMD 约 25 亿美元，博通、美光、微软各约 10 亿美元，台积电约 5 亿美元，七家公司按 IPO 价认购无投票权 N 类股份，交易以 IPO 成交为前提。第三，公开 685 亿加私募 260 亿约 945 亿美元，绿鞋全行使再加约 103 亿，总计约 1048 亿美元，超过 1000 亿美元大关——这正是 FT 此前报导的"总募资可能超过 1000 亿"的算法。
+几个数字要分开算。第一，公开募资约 813 亿美元是路透 11 月 18 日晚引知情人士的数字：发行规模从原定的 8.25 亿股扩大到 9.8 亿股（公司约 9.564 亿股、老股东约 0.236 亿股），按 83 美元算税前总额约 813.1 亿美元，超过 SpaceX 成为史上最大 IPO——但这仍是报导口径，424B4 尚未出现，最终以招股书补充文件为准。第二，260 亿美元私募是另外一笔钱：谷歌、英伟达各约 100 亿美元，AMD 约 25 亿美元，博通、美光、微软各约 10 亿美元，台积电约 5 亿美元，七家公司按 IPO 价认购无投票权 N 类股份，交易以 IPO 成交为前提。第三，公开 813 亿加私募 260 亿约 1073 亿美元，绿鞋全行使再加约 122 亿，总计约 1195 亿美元。
 
 估值也要分两个口径写。完全稀释口径约 1.5 万亿美元，是计入期权与未归属股票后的数字；只按已发行股数算，83 美元对应的估值约 1.09 万亿美元。11 月 10 日 filing 的区间顶端 78 美元对应完全稀释约 1.405 万亿、已发行约 1.02 万亿，所以 83 美元比区间顶端贵了约 6.4%，估值上了一个台阶，但不是翻倍。
 
@@ -73,7 +73,7 @@ Anthropic 的 S-1/A 里最吓人的数字不是估值，是承诺：采购承诺
 
 ## 对读者意味着什么
 
-第一，83 美元是报导价，不是招股书价。等 424B4 出来再看最终股数与绿鞋细节；今晚开盘价会不会守住 83 美元，比定价本身更值得看。
+第一，83 美元与 9.8 亿股都是报导价、报导数，不是招股书价。路透称公开募资 813.1 亿美元、史上最大，但 424B4 仍未出现，等它出来再核对最终股数与绿鞋细节；今晚开盘价会不会守住 83 美元，比定价本身更值得看。
 
 第二，估值写 1.5 万亿时要写清是完全稀释口径。只按已发行股数算约 1.09 万亿，两个数字差了约 4000 亿美元，写稿时不能只给一个。
 
@@ -85,12 +85,12 @@ Anthropic 的 S-1/A 里最吓人的数字不是估值，是承诺：采购承诺
 
 ## 参考来源
 
-- 核对日期：2026-11-19。定价消息以路透、彭博、CNBC 引知情人士的报导为准；截至发稿，EDGAR 上尚未出现 424B4，最新文件仍为 11 月 17 日的 S-1/A 第 3 号修订（文件号 333-299633）与同日 Form 8-A，本文作者直接查阅了 data.sec.gov 的提交记录。
-- 定价报导：[路透：Anthropic 以每股 83 美元定价 IPO（经 WIXX 转载）](https://wixx.com/2026/11/18/anthropic-prices-blockbuster-ipo-at-83-a-share-source-says/)；[Motley Fool：定价确认与未知数](https://www.fool.com/investing/2026/11/18/it-s-official-anthropic-prices-its-ipo-at-usd83-a-share-here-s-what-we-know-and-what-we-don-t/)；[Finwire：424B4 尚未出现](https://finwire.io/news/stock-markets-news/anthropic-ipo-prices-at-83-a-share-as-ant-debuts-thursday)；[私募拆分：谷歌与英伟达各 100 亿美元](https://www.scommerce.com/anthropic-ipo-2/)。
+- 核对日期：2026-11-19 上午。定价与扩规模消息以路透引知情人士的报导为准（公开募资 813.1 亿美元、9.8 亿股，史上最大）；截至本次复查，EDGAR 检索仍未见 424B4，最新文件仍为 11 月 17 日的 S-1/A 第 3 号修订（文件号 333-299633）与同日 Form 8-A；加拿大最终招股书已于 11 月 18 日备案，注册声明同日获 SEC 宣布生效。
+- 定价报导：[路透：Anthropic 以每股 83 美元定价 IPO（经 WIXX 转载）](https://wixx.com/2026/11/18/anthropic-prices-blockbuster-ipo-at-83-a-share-source-says/)；[路透：813 亿美元史上最大 IPO](https://www.reuters.com/business/anthropic-clinches-biggest-ever-ipo-with-81-billion-offering-2026-11-18/)；[Motley Fool：定价确认与未知数](https://www.fool.com/investing/2026/11/18/it-s-official-anthropic-prices-its-ipo-at-usd83-a-share-here-s-what-we-know-and-what-we-don-t/)；[Finwire：424B4 尚未出现](https://finwire.io/news/stock-markets-news/anthropic-ipo-prices-at-83-a-share-as-ant-debuts-thursday)；[私募拆分：谷歌与英伟达各 100 亿美元](https://www.scommerce.com/anthropic-ipo-2/)。
 - 算力账本：[MLQ：9009 亿美元承诺拆解](https://mlq.ai/news/anthropics-compute-bill-901-billion-of-cloud-chip-and-data-center-commitments-against-an-81-billion-run-rate/)；[FourWeekMBA：SpaceX 账单升至每月 31 亿美元](https://fourweekmba.com/ai-anthropics-spacex-bill-set-to-reach-3-1b-a-month-up-2-5x/)；[FourWeekMBA：S-1/A 第 3 号 RSU 与持股](https://fourweekmba.com/ai-anthropic-keeps-70-78-ipo-range-adds-6-5b-stock-pay-cost/)。
 - 英伟达中国线与开源路线：[The Verge 经转述：Hopper 停运](https://www.wyx.asia/article/f81b73acf7ef36a763f0a6bed68424bf?lang=en)；[TradersUnion：克雷斯重申开源与 Hugging Face 收购](https://tradersunion.com/news/companies/show/4293844-nvidia-open-source-ai-huggingface/)；[Asia Daily：Hopper 停运与听证时间表](https://asiadaily.org/news/19116/)。
-- 经验与估算标注：公开募资 685 亿、私募加总 945 亿、绿鞋后约 1048 亿，均为本文按 filing 条款的换算（税前总额，未扣承销折扣与费用）；完全稀释与已发行两个估值口径按 78 美元顶端的已报导数字等比换算；"约 6.4%"为 83 美元相对 78 美元的涨幅。
-- 未核实：最终公开发售股数（报导称已扩大，Anthropic 未公布）、424B4 的提交时间、SEC 对英伟达调查的具体指向、黄仁勋 12 月 1 日听证的具体议程。
+- 经验与估算标注：公开募资 813 亿（路透报导口径）、私募加总约 1073 亿、绿鞋后约 1195 亿，均为本文按报导股数与 filing 条款的换算（税前总额，未扣承销折扣与费用）；绿鞋 1.47 亿股为按扩大后股数 15% 的换算；完全稀释与已发行两个估值口径按 78 美元顶端的已报导数字等比换算；"约 6.4%"为 83 美元相对 78 美元的涨幅。
+- 未核实：424B4 的提交时间与最终绿鞋股数、SEC 对英伟达调查的具体指向、黄仁勋 12 月 1 日听证的具体议程。
 
 ## 相关阅读
 
