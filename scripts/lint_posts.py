@@ -32,8 +32,9 @@ ENTITY_TAGS = set(TAX["entity_tags"])
 ALL_TAGS = TYPE_TAGS | TOPIC_TAGS | ENTITY_TAGS
 SYNONYMS = TAX.get("synonyms") or {}
 
-# 类型标签 → 最低正文字数（CLAUDE.md「文章完整度标准」与 04-content-system.md）
-MIN_LEN = {"快讯": 800, "档案": 1500, "教程": 2000, "评测": 2500, "对比": 2500,
+# 类型标签 → 最低正文字数（CLAUDE.md「文章完整度标准」与 AdSense 防低价值内容红线）
+# 所有公开文章严禁低于 1500 字（快讯亦需补充深度分析与行业背景）
+MIN_LEN = {"快讯": 1500, "档案": 1500, "教程": 2000, "评测": 2500, "对比": 2500,
            "合集": 2500, "指南": 2000, "复盘": 2000, "科普": 1500}
 
 YEAR_SLUG = re.compile(r"(^\d{4}-\d{2}-\d{2}-)|(-20\d\d$)|(-20\d\d-)")
@@ -154,6 +155,8 @@ def lint(path: pathlib.Path, is_new: bool):
         errors.append("slug 只能用小写英文、数字和短横线")
 
     n = text_len(body)
+    if not fm.get("draft") and n < 1200:
+        errors.append(f"AdSense 合规红线一票否决：正文仅约 {n} 字（< 1200 字），易触发「低价值内容」拒审！必须扩写至 1500 字以上或设为 draft: true")
     kind = types[0] if len(types) == 1 else None
     if kind and n < MIN_LEN[kind]:
         errors.append(f"{kind}正文约 {n} 字，标准 ≥ {MIN_LEN[kind]}")

@@ -20,3 +20,4 @@ Thumbs.db
 # Local
 .env
 *.local
+__pycache__/

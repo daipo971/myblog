@@ -1,55 +1,51 @@
-# Agent Reach — 互联网能力路由器
+# 欣淇AI网 (xinqai.com) AI 维护与全站合规最高纲领 (AGENTS.md)
 
-你的 Agent Reach（版本 1.5.0）已安装完成。
+本文件是任何 AI 助手（包括 Antigravity、Claude Code、Cursor、Codex 等）或团队成员在此仓库中工作时的**最高优先级硬性规则**。任何操作、发文、代码改动均不得违反本文档中的规定。
 
-## 安装位置
+---
 
-- **Skill 文件**：`~/.agents/skills/agent-reach/SKILL.md`
-- **配置目录**：`~/.agent-reach/`
-- **工具目录**：`~/.agent-reach/tools/`
+## 1. Google AdSense 审核与合规终极红线 (一票否决项)
 
-## 可用渠道（10/15）
+### 1.1 零容忍低价值单薄内容 (Zero Thin Content Policy)
+- **字数硬性底线**：所有公开展示的文章（`draft: false`）正文字数**严禁低于 1500 字**（教程/评测/对比类文章标准 ≥ 2000~2500 字，快讯类亦必须补充行业背景、技术深度与避坑指导至 ≥ 1500 字）。
+- **强制草稿下架机制**：
+  - **凡正文不足 1200 字的文章，必须强制设置 `draft: true` 隐藏**，绝对禁止公开生成进入 `sitemap.xml` 或首页！
+  - 严禁出现测试性、草稿级占位文章（如 `my-first-post.md` 等占位符）。
+- **多语言与语言纯净度**：
+  - 中文端（`zh-cn`）：必须采用纯正规范简体中文，严禁大段繁体字，**严禁将未经翻译的纯英文短篇直接发布在中文根目录下**。
+  - 英文端（`en`）：必须规范命名为 `<slug>.en.md` 走 `/en/` 目录，必须配齐 `categories` 和 `tags`，严禁无分类孤岛页面。
 
-| 渠道 | 状态 | 用法 |
-|------|------|------|
-| 🌐 任意网页 (Jina Reader) | ✅ 即用 | `curl -s "https://r.jina.ai/URL"` |
-| 🔍 全网语义搜索 (Exa) | ✅ 即用 | `mcporter call 'exa.web_search_exa(...)'` |
-| 📡 RSS/Atom | ✅ 即用 | `python3 -c "import feedparser; ..."` |
-| 💻 V2EX | ✅ 即用 | 公开 API |
-| 🐦 Twitter/X | ✅ 已装 | `opencli twitter search ... -f yaml` |
-| 📘 Facebook | ✅ 已装 | `opencli facebook search ... -f yaml` |
-| 📷 Instagram | ✅ 已装 | `opencli instagram search ... -f yaml` |
-| 📺 B站 | ✅ 已装 | `opencli bilibili search ... -f yaml` |
-| 📕 小红书 | ✅ 已装 | `opencli xiaohongshu search ... -f yaml` |
-| 📖 Reddit | ✅ 已装 | `opencli reddit search ... -f yaml` |
-| 🐙 GitHub | ⚠️ 需认证 | `gh auth login` |
-| ▶️ YouTube | ❌ 未装 | `pip install yt-dlp` |
+### 1.2 全站 4 大法律合规页面神圣不可侵犯
+全站页脚与导航必须永久保持 4 大法律信任页面直达链接，HTTP 状态码必须永久保持 200：
+1. `/privacy/`（隐私政策）：包含 Google DoubleClick DART Cookie、第三方广告个性化推荐、以及前往 `myadcenter.google.com` 和 `aboutads.info/choices` 停用 Cookie 的国际标准条款。
+2. `/about/`（关于我们）：建立专业合法的站长/团队人设，展示测试方法论与 E-E-A-T 真实性。
+3. `/contact/`（联系我们）：提供真实可达的官方邮箱（`admin666@xinqai.com`）与 Telegram 交流通道。
+4. `/terms/`（服务条款与免责声明）：阐明版权归属、AI 时效性免责及商业推广披露。
 
-## 触发规则
+### 1.3 商业变现与广告规范
+- 变现配置文件 `ads.txt` 必须常驻站点根目录：`google.com, pub-4294293566195122, DIRECT, f08c47fec0942fa0`。
+- 严禁任何形式的自我点击与诱导点击（如“点击广告支持站长”等文字）。
+- 文章正文中广告间距保持 600px 以上。
 
-当用户需要以下操作时，**必须引用 agent-reach skill**（`~/.agents/skills/agent-reach/SKILL.md`）：
+---
 
-- **调研/搜索**：全网调研、查资料、搜信息
-- **社交媒体**：小红书、Twitter/X、B站、Reddit、Facebook、Instagram、V2EX
-- **招聘/职位**：LinkedIn
-- **GitHub**：代码搜索、仓库、Issue、PR
-- **网页/文章**：RSS、链接阅读
-- **视频**：YouTube、B站视频、播客、字幕
+## 2. Google Search Console (GSC) 索引与巡检避坑准则
 
-## 快速命令
+- **`noindex` 机制**：全站 `/tags/`（标签聚合页）和 `/search/`（搜索页）故意配置了 `noindex, follow`，以防止单薄聚合页稀释整站 SEO 权重。**严禁在 GSC 里面对其点击“验证修正”**！
+- **301 重定向机制**：老旧文章合并、重构、改名后在 `static/_redirects` 中返回 301 重定向是标准且必要的行为。**严禁在 GSC 里面对 301 重定向链接点击“验证修正”**！
+- **404 状态机制**：历史上删除的废弃测试页面返回 404 是正常的注销协议，Google 爬虫确认后会自动注销索引，无需恐慌。
 
-```bash
-# 健康检查
-agent-reach doctor
-agent-reach doctor --json    # JSON 格式（含 active_backend）
+---
 
-# 安装更多渠道
-agent-reach install --channels=all
-agent-reach install --channels=twitter,xiaohongshu,...
+## 3. 发文与代码提交流程门禁
 
-# 检查更新
-agent-reach check-update
-
-# 升级（复制这句话给 Agent）
-帮我更新 Agent Reach：https://raw.githubusercontent.com/Panniantong/agent-reach/main/docs/update.md
-```
+每次新增或修改文章后，在 `git commit` 前必须运行：
+1. **文章完整度与字数门禁**：
+   ```bash
+   python3 scripts/lint_posts.py
+   ```
+   **ERROR 必须为 0**（字数不足 1500 字或缺少分类将直接报错阻断）。
+2. **死链检查**：
+   确保站内没有出现 404 内部死链。
+3. **查重原则**：
+   写新文章前先搜索 `content/posts/` 是否有同类文章，避免重复开文导致内容竞争。
