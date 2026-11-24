@@ -93,13 +93,13 @@ slug 是建议，动笔前再查一次重。目标关键词用来防止两篇文
 | S03 | P0 | 科普 | 大模型是什么：普通人能懂的解释 | what-is-llm | 大模型是什么 | 待写 |
 | S04 | P0 | 科普 | token 是什么，为什么 AI 按 token 收费 | what-is-token | token 是什么 | 已发布（2026-11-14，/posts/what-is-token/） |
 | S05 | P0 | 科普 | AI 幻觉是什么，怎么避免被 AI 骗 | ai-hallucination | AI 幻觉 | 待写 |
-| S06 | P0 | 指南 | 用 AI 做 PPT 的完整流程 | ai-ppt-workflow | AI 做 PPT | 待写（与 ai-presentation-tools-2026 区分：工具清单 vs 流程） |
-| S07 | P0 | 指南 | 用 AI 写周报、总结、汇报 | ai-weekly-report | AI 写周报 | 待写 |
-| S08 | P0 | 指南 | 用 AI 整理会议纪要 | ai-meeting-notes | AI 会议纪要 | 待写 |
+| S06 | P0 | 指南 | 用 AI 做 PPT 的完整流程 | ai-ppt-workflow | AI 做 PPT | 已发布（2026-11-24，/posts/ai-ppt-workflow/；英文版待写） |
+| S07 | P0 | 指南 | 用 AI 写周报、总结、汇报 | ai-weekly-report | AI 写周报 | 待写（中英双语） |
+| S08 | P0 | 指南 | 用 AI 整理会议纪要 | ai-meeting-notes | AI 会议纪要 | 待写（中英双语） |
 | S09 | P1 | 科普 | 上下文窗口是什么 | context-window | 上下文长度 | 待写 |
 | S10 | P1 | 科普 | RAG 是什么：让 AI 读你的资料 | what-is-rag | RAG 是什么 | 待写 |
 | S11 | P1 | 科普 | AI Agent 是什么 | — | AI Agent 是什么 | 更新旧文（ai-agent-complete-guide-2026） |
-| S12 | P1 | 指南 | 用 AI 处理 Excel：公式、清洗、图表 | ai-excel | AI Excel | 待写 |
+| S12 | P0 | 指南 | 用 AI 处理 Excel：公式、清洗、图表 | ai-excel | AI Excel | 待写（中英双语） |
 | S13 | P1 | 指南 | 用 AI 读论文、写文献综述（注意学术诚信） | ai-paper-reading | AI 读论文 | 待写 |
 | S14 | P1 | 指南 | 程序员的 AI 工具组合 | ai-for-developers | 程序员 AI 工具 | 待写 |
 | S15 | P1 | 指南 | 自媒体人的 AI 工具组合 | ai-for-creators | 自媒体 AI 工具 | 待写 |
@@ -108,6 +108,10 @@ slug 是建议，动笔前再查一次重。目标关键词用来防止两篇文
 | S18 | P2 | 指南 | 识别 AI 诈骗与深度伪造 | ai-scam-deepfake | AI 诈骗 | 待写 |
 | S19 | P2 | 指南 | AI 隐私设置：别让聊天记录被拿去训练 | ai-privacy-settings | AI 隐私 | 待写 |
 | S20 | P2 | 指南 | 老年人用 AI 入门 | ai-for-seniors | 老人 用 AI | 待写 |
+| S21 | P1 | 指南 | 用 AI 对账：银行流水与账本核对 | ai-reconciliation | AI 对账 | 待写（中英双语） |
+| S22 | P1 | 指南 | 用 AI 写简历：从经历到能投递的版本 | ai-resume | AI 写简历 | 待写（中英双语） |
+| S23 | P1 | 指南 | 用 AI 审合同：签字前先看懂关键条款 | ai-contract-review | AI 审合同 | 待写（中英双语，不做法律建议） |
+| S24 | P2 | 指南 | 用 AI 整理报销单据：发票识别与汇总 | ai-expense-receipts | AI 报销 | 待写（中英双语） |
 
 ## AI前沿动态
 
