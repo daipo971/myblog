@@ -37,6 +37,7 @@ description: "DeepSeek、Kimi、MiniMax、阶跃 Step、智谱 GLM、可灵等�
 **智谱 GLM**
 - [智谱 GLM 模型档案](/posts/glm-guide/)：从 4.5 到 5.3-Flash 全版本、价格、MIT 许可证与国内用法，先看这页
 - [GLM-Legal：法律 agent 模型解读](/posts/2026-10-13-glm-legal/)
+- [智谱 GLM-5.4 发布：28 层跑两遍的旗舰模型](/posts/glm-5-4-loop-transformer/)：首个 Loop Transformer 旗舰，750B 参数、视觉理解与 1M 上下文，Coding Plan 已上，API 与权重待定
 
 **美团 LongCat**
 - [LongCat-2.5 发布：万亿参数的长程 Agent 模型](/posts/longcat-2-5-launch/)
