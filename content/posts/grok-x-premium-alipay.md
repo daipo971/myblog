@@ -1,7 +1,7 @@
 ---
 title: "Grok 和 X Premium 支持支付宝了：银联也能付"
 date: 2026-11-01T06:50:00+08:00
-draft: false
+draft: true
 categories: ["海外服务通关"]
 tags: ["快讯", "海外支付", "Grok"]
 description: "IT之家 10 月 31 日实查：Grok 订阅已支持银联和支付宝付款，地区可选中国大陆及港澳台；X 与 Grok 共享支付系统，X Premium 也能用支付宝订，首次订阅 Grok 首月半价。xAI 暂无官方公告，以结算页为准。"

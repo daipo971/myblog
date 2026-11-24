@@ -2,7 +2,7 @@
 title: "谷歌 Genie 4 发布：会说话的世界模型"
 date: 2026-10-28T12:00:00+08:00
 lastmod: 2026-10-28T12:00:00+08:00
-draft: false
+draft: true
 categories: ["AI前沿动态"]
 tags: ["快讯", "行业动态", "Google"]
 description: "谷歌 DeepMind 昨天发布世界模型 Genie 4：一句话生成可探索的世界，键盘能走、打字能改，声音和对话与画面同步生成。本文讲清它能做到什么、比 Genie 3 强在哪，以及普通人现在能不能用。"

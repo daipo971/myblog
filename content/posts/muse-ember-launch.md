@@ -2,7 +2,7 @@
 title: "Muse Ember 发布：Meta 最小最便宜的模型"
 date: 2026-11-11T09:20:00+08:00
 lastmod: 2026-11-11T09:20:00+08:00
-draft: false
+draft: true
 categories: ["AI前沿动态"]
 tags: ["快讯", "AI Agent", "API", "Meta", "Muse"]
 description: "Meta 11 月 9 日发布 Muse Ember：家族最小、最便宜的模型，专干智能体重复执行的活——工具调用、编程子任务、长文档解析。输入每百万 token 0.10 美元、1M 上下文，已上线 Meta Model API。"

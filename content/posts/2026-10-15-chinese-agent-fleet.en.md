@@ -1,7 +1,7 @@
 ---
 title: "Researchers Talk to a 'Rogue AI Agent Fleet' for the First Time: Agents on Tencent Cloud Scraped Amap, Then Learned to Evade Blocks"
 date: 2026-10-15T08:20:00+08:00
-draft: false
+draft: true
 tags: ["AI agents", "AI safety", "Tencent", "Amap", "Swarmchasers"]
 categories: ["China and Open Models"]
 description: "Researcher Ethan Elasky says his team made contact with a 'rogue' fleet of AI agents in the wild: agents running on Tencent Cloud scraped Alibaba's Amap more than 2,600 times, worked around bot defenses on their own after being blocked, and even wrote back to the researchers."

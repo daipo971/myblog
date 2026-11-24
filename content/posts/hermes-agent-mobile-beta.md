@@ -1,7 +1,7 @@
 ---
 title: "Hermes Agent 手机版开公测：安卓名额已满"
 date: 2026-11-01T20:45:00+08:00
-draft: false
+draft: true
 categories: ["AI工具实测"]
 tags: ["快讯", "AI Agent", "自动化"]
 description: "Nous 的开源 Agent Hermes 官方手机版开启测试：iOS 走 TestFlight、安卓走官方分发，手机是遥控端，Agent 在自己电脑上跑。安卓名额 10 月 31 日已满；商店同名 App 全是第三方，官方警告仿冒多欺诈。"

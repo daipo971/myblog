@@ -2,7 +2,7 @@
 title: "谷歌 Gemini 4 Carbon 发布：专攻网络安全"
 date: 2026-10-29T10:20:00+08:00
 lastmod: 2026-10-29T10:20:00+08:00
-draft: false
+draft: true
 categories: ["AI前沿动态"]
 tags: ["快讯", "行业动态", "Google"]
 description: "谷歌昨天发布前沿模型 Gemini 4 Carbon，主攻网络安全：找漏洞、利用、打补丁都是官方口径的 SOTA，安全代码生成成功率是 Argon 的两倍多。本文讲清它强在哪、先给谁用、定价多少，以及国内能不能用。"

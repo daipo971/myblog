@@ -5,6 +5,7 @@ description: "I spent three months stress-testing free AI tools. Here's which on
 summary: "Three months testing 20+ free AI tools. My honest picks: what's actually useful, what's overhyped, and what I use daily."
 tags: ["AI", "free tools", "productivity"]
 showtoc: false
+draft: true
 ---
 
 Every week there's a new "best AI tools" list. Most of them read like press releases.

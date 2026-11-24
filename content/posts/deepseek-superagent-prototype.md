@@ -5,6 +5,7 @@ description: "DeepSeek 10 月 31 日在 GitHub 开源内部同款超级 Agent �
 categories: ["中国与开源模型"]
 tags: ["快讯", "AI Agent", "开源模型", "DeepSeek"]
 showtoc: true
+draft: true
 ---
 
 DeepSeek 又开源了，不过这次不是模型。

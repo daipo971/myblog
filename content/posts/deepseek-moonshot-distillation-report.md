@@ -2,7 +2,7 @@
 title: "路透：DeepSeek、月之暗面被指蒸馏 Astra"
 date: 2026-10-29T14:05:00+08:00
 lastmod: 2026-10-29T14:05:00+08:00
-draft: false
+draft: true
 categories: ["AI前沿动态"]
 tags: ["快讯", "行业动态", "DeepSeek", "Kimi"]
 description: "路透社 10 月 29 日转引 The Information 报道称，DeepSeek 与月之暗面训练模型时大量依赖了 GPT-6 Astra 的输出。三方未回应置评，蒸馏细节未披露，本文按「据报道、未证实」口径讲清这件事的来龙去脉。"

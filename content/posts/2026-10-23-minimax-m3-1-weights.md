@@ -2,7 +2,7 @@
 title: "MiniMax M3.1 Flash 权重今日放出：许可证已落地，商用门槛比预想低"
 date: 2026-10-23T09:40:00+08:00
 lastmod: 2026-10-23T09:40:00+08:00
-draft: false
+draft: true
 description: "MiniMax 10 月 23 日放出 M3.1 Flash 模型权重：总参数 428B、激活 23B，上线 72 小时真实用户 token 超 1 万亿，首日即获 vLLM、SGLang 与多家国产芯片支持。"
 tags: ["快讯", "开源模型", "国产大模型", "MiniMax"]
 categories: ["中国与开源模型"]

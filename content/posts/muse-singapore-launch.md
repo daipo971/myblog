@@ -2,7 +2,7 @@
 title: "Muse 正式上线新加坡：四种官方语言全支持"
 date: 2026-10-28T10:35:00+08:00
 lastmod: 2026-10-28T10:35:00+08:00
-draft: false
+draft: true
 categories: ["AI前沿动态"]
 tags: ["快讯", "行业动态", "Muse"]
 description: "Muse 今天官宣进入新加坡：iOS、安卓和网页端同步上线，本地接通 Shopee、Grab、新航等服务。本文讲清新加坡用户能用到什么、免费还是收费，以及和国内用户的关系。"

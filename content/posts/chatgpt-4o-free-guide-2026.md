@@ -5,6 +5,7 @@ description: "Can you really use ChatGPT 4o without paying? After three months o
 summary: "Three months using ChatGPT 4o free tier — what works, what doesn't, and whether you actually need Plus."
 tags: ["ChatGPT", "OpenAI", "free", "AI"]
 showtoc: false
+draft: true
 ---
 
 I kept seeing people say "you need ChatGPT Plus or you're missing out." So I decided to test that claim.

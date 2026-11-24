@@ -2,7 +2,7 @@
 title: "Claude 上线 Sheets 和 Whiteboards"
 date: 2026-11-12T14:15:00+08:00
 lastmod: 2026-11-12T14:15:00+08:00
-draft: false
+draft: true
 categories: ["AI前沿动态"]
 tags: ["快讯", "行业动态", "Claude"]
 description: "Anthropic 11 月 10 日发布 Claude Sheets、Whiteboards 与 Claude Data：表格、白板、数据故事都能在 Claude 里直接做，全部付费计划可用。Meetings 还在路上，免费版没有。"

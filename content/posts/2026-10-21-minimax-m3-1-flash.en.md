@@ -1,7 +1,7 @@
 ---
 title: "MiniMax M3.1 Flash: Half the Price of DeepSeek, With One Big Caveat"
 date: 2026-10-21T22:55:00+08:00
-draft: false
+draft: true
 description: "Shanghai-based MiniMax released M3.1 Flash on October 19: 1M context, text/image/video input, 200+ tokens per second, and $0.15 per million input tokens, half of DeepSeek V4.1 Flash. Its independent intelligence score rose from 29 to 42, but its hallucination rate is 93%. What it is good at, where it fails, and how to try it free."
 tags: ["MiniMax", "LLM", "Chinese AI models", "API", "Guide"]
 categories: ["China and Open Models"]

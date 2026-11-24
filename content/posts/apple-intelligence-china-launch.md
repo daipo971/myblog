@@ -2,7 +2,7 @@
 title: "国行 Apple 智能定了：11月4日开测，12月正式版"
 date: 2026-10-31T21:50:00+08:00
 lastmod: 2026-10-31T21:50:00+08:00
-draft: false
+draft: true
 categories: ["AI前沿动态"]
 tags: ["快讯", "AI硬件", "Apple Intelligence", "通义千问"]
 description: "苹果 10 月 31 日官宣：国行 Apple 智能首批 11 月 4 日随开发者 Beta 开测，12 月随 iOS 27.3 正式推出。Siri、写作工具、视觉智能接入阿里千问（可选开通），讲清时间表、支持机型、首批功能与未包含项。"
