@@ -80,7 +80,7 @@ That sentence is the anchor for the whole deck. Example: "Q3 growth came mostly 
 
 ### Step 2: Let a chat AI draft the outline — then fix it yourself
 
-Hand the conclusion and your materials to a chat AI (ChatGPT, Claude, DeepSeek, or Kimi — see our [Kimi K3.1 Pro guide](/en/posts/2026-10-27-kimi-k3-1-pro-guide/) for how Kimi works), using the prompt template below. The key is **pasting real data and materials** — never just a topic. Give it only a topic and it has to invent.
+Hand the conclusion and your materials to a chat AI (ChatGPT, Claude, DeepSeek, or Kimi — see our [Kimi model profile](/posts/kimi-guide/) (in Chinese) for versions, pricing, and how to use it in China), using the prompt template below. The key is **pasting real data and materials** — never just a topic. Give it only a topic and it has to invent.
 
 ```
 I need to make a slide deck. Here is the information:
@@ -194,7 +194,7 @@ First check in PowerPoint or WPS whether fonts were replaced or text is overflow
 
 ## Related reading
 
-- [Kimi K3.1 Pro: China's 3T-parameter model and how to use it for free](/en/posts/2026-10-27-kimi-k3-1-pro-guide/)
+- [Kimi model profile: K3 to K3.1 Pro versions, pricing, and open-source status](/posts/kimi-guide/) (in Chinese)
 - [AI slide-generator comparison: Gamma, Xunfei Zhiwen, Kimi, and more](/posts/ai-presentation-tools-2026/) (in Chinese)
 - [AI office automation: meeting notes, weekly reports, and document organization](/posts/ai-automation-office-2026/) (in Chinese)
 - More AI Tools Hands-On articles: [/en/categories/ai-tools-hands-on/](/en/categories/ai-tools-hands-on/)
