@@ -39,6 +39,9 @@ description: "DeepSeek、Kimi、MiniMax、阶跃 Step、智谱 GLM、可灵等�
 - [GLM-Legal：法律 agent 模型解读](/posts/2026-10-13-glm-legal/)
 - [智谱 GLM-5.4 发布：28 层跑两遍的旗舰模型](/posts/glm-5-4-loop-transformer/)：首个 Loop Transformer 旗舰，750B 参数、视觉理解与 1M 上下文，Coding Plan 已上，API 与权重待定
 
+**百度文心**
+- [百度 ERNIE 5.5 Flash 权重开源了](/posts/ernie-5-5-flash-preview-open-weights/)：280B 总参数、每 token 激活 14B、100 万上下文，Apache 2.0 协议，11 月 24 日上架 Hugging Face 与 ModelScope
+
 **美团 LongCat**
 - [LongCat-2.5 发布：万亿参数的长程 Agent 模型](/posts/longcat-2-5-launch/)
 - [LongCat-2.5 权重开源：1.6 万亿参数能下载，3.56TB 却拦住大多数人](/posts/longcat-2-5-open-weights/)：MIT 可商用，终端编码榜 88.4 分，BF16 约 3.56TB、示例部署 194 块国产加速器
