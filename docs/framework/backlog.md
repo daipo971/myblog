@@ -95,7 +95,7 @@ slug 是建议，动笔前再查一次重。目标关键词用来防止两篇文
 | S05 | P0 | 科普 | AI 幻觉是什么，怎么避免被 AI 骗 | ai-hallucination | AI 幻觉 | 待写 |
 | S06 | P0 | 指南 | 用 AI 做 PPT 的完整流程 | ai-ppt-workflow | AI 做 PPT | 已发布（2026-11-24，中英双语） |
 | S07 | P0 | 指南 | 用 AI 写周报、总结、汇报 | ai-weekly-report | AI 写周报 | 已发布（2026-11-24，中英双语） |
-| S08 | P0 | 指南 | 用 AI 整理会议纪要 | ai-meeting-notes | AI 会议纪要 | 待写（中英双语） |
+| S08 | P0 | 指南 | 用 AI 整理会议纪要 | ai-meeting-notes | AI 会议纪要 | 已发布（2026-11-25，https://xinqai.com/posts/ai-meeting-notes/） |
 | S09 | P1 | 科普 | 上下文窗口是什么 | context-window | 上下文长度 | 待写 |
 | S10 | P1 | 科普 | RAG 是什么：让 AI 读你的资料 | what-is-rag | RAG 是什么 | 待写 |
 | S11 | P1 | 科普 | AI Agent 是什么 | — | AI Agent 是什么 | 更新旧文（ai-agent-complete-guide-2026） |
