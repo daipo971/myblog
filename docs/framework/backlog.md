@@ -99,7 +99,7 @@ slug 是建议，动笔前再查一次重。目标关键词用来防止两篇文
 | S09 | P1 | 科普 | 上下文窗口是什么 | context-window | 上下文长度 | 待写 |
 | S10 | P1 | 科普 | RAG 是什么：让 AI 读你的资料 | what-is-rag | RAG 是什么 | 待写 |
 | S11 | P1 | 科普 | AI Agent 是什么 | — | AI Agent 是什么 | 更新旧文（ai-agent-complete-guide-2026） |
-| S12 | P0 | 指南 | 用 AI 处理 Excel：公式、清洗、图表 | ai-excel | AI Excel | 待写（中英双语） |
+| S12 | P0 | 指南 | 用 AI 处理 Excel：公式、清洗、图表 | ai-excel | AI Excel | 已发布（2026-11-26，中文版，https://xinqai.com/posts/ai-excel/；英文版待补） |
 | S13 | P1 | 指南 | 用 AI 读论文、写文献综述（注意学术诚信） | ai-paper-reading | AI 读论文 | 待写 |
 | S14 | P1 | 指南 | 程序员的 AI 工具组合 | ai-for-developers | 程序员 AI 工具 | 待写 |
 | S15 | P1 | 指南 | 自媒体人的 AI 工具组合 | ai-for-creators | 自媒体 AI 工具 | 待写 |
