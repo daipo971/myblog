@@ -75,7 +75,8 @@ GitHub 上真正值得自己动手装的开源 AI 项目：不收只发新闻的
 
 ## 工具新品
 
-- [快讯：OpenAI 公开预训练曲线，0.76 是数学突破线](/posts/openai-pachocki-perplexity-intelligence/)
+[FCC 批了：SpaceX 太空建 100 万颗数据中心](/posts/spacex-starmind-fcc-approval/)：美国史上首个太空数据中心星座授权，首星目标 2027 年，2040 年前布满 100 万颗
+- - [快讯：OpenAI 公开预训练曲线，0.76 是数学突破线](/posts/openai-pachocki-perplexity-intelligence/)
 - [快讯：Claude 宣称证明黎曼猜想，独立核查通过](/posts/claude-riemann-hypothesis-proof-claim/)
   - [Gemini 4 Neon 发布：快而强的中间档](/posts/gemini-4-neon-launch/)：Gemini 4 家族第四个模型，输入 3 美元、综合指数 61 分排第三，11 月 30 日后比涨价的 Carbon 便宜 25%
 - [英伟达财报超预期：营收1158亿美元，董事会不让黄仁勋回任](/posts/nvidia-q3-fy2027-earnings-results/)：Q3营收1158亿美元、同比增103%，Q4指引1300亿美元，董事会明确不让黄仁勋回任
