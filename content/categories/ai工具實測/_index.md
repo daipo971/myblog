@@ -70,6 +70,7 @@ GitHub 上真正值得自己动手装的开源 AI 项目：不收只发新闻的
 - [AI 翻译工具横评](/posts/ai-translation-tools-comparison-2026/)
 - [AI 笔记软件对比](/posts/ai-note-taking-comparison-2026/) · [AI PDF 工具](/posts/ai-pdf-tools-comparison-2026/)
 - [AI 生成 PPT](/posts/ai-presentation-tools-2026/) · [AI 数据分析](/posts/ai-data-analysis-tools-2026/)
+- [怎么用 AI 处理 Excel：公式、清洗、图表全攻略](/posts/ai-excel/)：不用背函数，让 AI 写公式、洗数据、画图表，附三套能直接复制的提示词模板
 - [用 AI 做 PPT 的完整流程：从大纲到能汇报的成稿](/posts/ai-ppt-workflow/)：先定结论再出大纲，五步走完出能汇报的成稿，附工作汇报、学术答辩、对外路演三套打法与可直接抄的提示词
 - [Gemini 在聊天里生成和编辑文件](/posts/gemini-edit-files-in-chat/)：PDF、文档、表格、幻灯片生成后直接在对话里改
 
